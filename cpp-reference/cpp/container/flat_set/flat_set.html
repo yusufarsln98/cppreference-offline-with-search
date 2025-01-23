@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>std::flat_set&lt;Key,Compare,KeyContainer&gt;::flat_set - cppreference.com</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="shortcut icon" href="../../.././common/favicon.ico">
+<link rel="stylesheet" href="../../.././common/ext.css">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="../../.././common/site_modules.css">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="../../.././common/startup_scripts.js"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/container/flat_set/flat_set","wgTitle":"cpp/container/flat set/flat set","wgCurRevisionId":171782,"wgArticleId":22675,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo no example"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/container/flat_set/flat_set","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-cpp {line-height: normal;}
+.source-cpp li, .source-cpp pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for cpp
+ * CSS class: source-cpp, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.cpp.source-cpp .de1, .cpp.source-cpp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.cpp.source-cpp  {font-family:monospace;}
+.cpp.source-cpp .imp {font-weight: bold; color: red;}
+.cpp.source-cpp li, .cpp.source-cpp .li1 {font-weight: normal; vertical-align:top;}
+.cpp.source-cpp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.cpp.source-cpp .li2 {font-weight: bold; vertical-align:top;}
+.cpp.source-cpp .kw1 {color: #0000dd;}
+.cpp.source-cpp .kw2 {color: #0000ff;}
+.cpp.source-cpp .kw3 {color: #0000dd;}
+.cpp.source-cpp .kw4 {color: #0000ff;}
+.cpp.source-cpp .co1 {color: #909090;}
+.cpp.source-cpp .co2 {color: #339900;}
+.cpp.source-cpp .coMULTI {color: #ff0000; font-style: italic;}
+.cpp.source-cpp .es0 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es1 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es2 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es3 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es4 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es5 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .br0 {color: #008000;}
+.cpp.source-cpp .sy0 {color: #008000;}
+.cpp.source-cpp .sy1 {color: #000080;}
+.cpp.source-cpp .sy2 {color: #000040;}
+.cpp.source-cpp .sy3 {color: #000040;}
+.cpp.source-cpp .sy4 {color: #008080;}
+.cpp.source-cpp .st0 {color: #008000;}
+.cpp.source-cpp .nu0 {color: #000080;}
+.cpp.source-cpp .nu6 {color: #000080;}
+.cpp.source-cpp .nu8 {color: #000080;}
+.cpp.source-cpp .nu12 {color: #000080;}
+.cpp.source-cpp .nu16 {color:#000080;}
+.cpp.source-cpp .nu17 {color:#000080;}
+.cpp.source-cpp .nu18 {color:#000080;}
+.cpp.source-cpp .nu19 {color:#000080;}
+.cpp.source-cpp .ln-xtra, .cpp.source-cpp li.ln-xtra, .cpp.source-cpp div.ln-xtra {background-color: #ffc;}
+.cpp.source-cpp span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_container_flat_set_flat_set skin-cppreference2 action-view cpp-page-template cpp-navbar">
+        <!-- header -->
+        <!-- /header -->
+        <!-- content -->
+<div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::flat_set&lt;Key,Compare,KeyContainer&gt;::</span>flat_set</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../../cpp.html" title="cpp">cpp</a>‎ | <a href="../../container.html" title="cpp/container">container</a>‎ | <a href="../flat_set.html" title="cpp/container/flat set">flat set</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-page-template" style="">
+<p>
+</p>
+</div><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../container.html" title="cpp/container">Containers library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Sequence_containers" title="cpp/container">Sequence</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../array.html" title="cpp/container/array"><span class="t-lines"><span>array</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../vector.html" title="cpp/container/vector"><span class="t-lines"><span>vector</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../vector.html" title="cpp/container/vector"><span class="t-lines"><span>vector<span class="t-dsc-small">&lt;bool&gt;</span></span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../inplace_vector.html" title="cpp/container/inplace vector"><span class="t-lines"><span>inplace_vector</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../deque.html" title="cpp/container/deque"><span class="t-lines"><span>deque</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../forward_list.html" title="cpp/container/forward list"><span class="t-lines"><span>forward_list</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../list.html" title="cpp/container/list"><span class="t-lines"><span>list</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Associative_containers" title="cpp/container">Associative</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../set.html" title="cpp/container/set"><span class="t-lines"><span>set</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../multiset.html" title="cpp/container/multiset"><span class="t-lines"><span>multiset</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../map.html" title="cpp/container/map"><span class="t-lines"><span>map</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../multimap.html" title="cpp/container/multimap"><span class="t-lines"><span>multimap</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Unordered_associative_containers_.28since_C.2B.2B11.29" title="cpp/container">Unordered associative</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_set.html" title="cpp/container/unordered set"><span class="t-lines"><span>unordered_set</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_multiset.html" title="cpp/container/unordered multiset"><span class="t-lines"><span>unordered_multiset</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_map.html" title="cpp/container/unordered map"><span class="t-lines"><span>unordered_map</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_multimap.html" title="cpp/container/unordered multimap"><span class="t-lines"><span>unordered_multimap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Container_adaptors" title="cpp/container">Adaptors</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../stack.html" title="cpp/container/stack"><span class="t-lines"><span>stack</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../queue.html" title="cpp/container/queue"><span class="t-lines"><span>queue</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../priority_queue.html" title="cpp/container/priority queue"><span class="t-lines"><span>priority_queue</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_set.html" title="cpp/container/flat set"><span class="t-lines"><span>flat_set</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_multiset.html" title="cpp/container/flat multiset"><span class="t-lines"><span>flat_multiset</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_map.html" title="cpp/container/flat map"><span class="t-lines"><span>flat_map</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_multimap.html" title="cpp/container/flat multimap"><span class="t-lines"><span>flat_multimap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Views" title="cpp/container">Views</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../span.html" title="cpp/container/span"><span class="t-lines"><span>span</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../mdspan.html" title="cpp/container/mdspan"><span class="t-lines"><span>mdspan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Tables</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../../container.html#Iterator_invalidation" title="cpp/container">Iterator invalidation</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../../container.html#Member_function_table" title="cpp/container">Member function table</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../../container.html#Non-member_function_table" title="cpp/container">Non-member function table</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../flat_set.html" title="cpp/container/flat set"><tt>std::flat_set</tt></a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../flat_set.html#Member_types" title="cpp/container/flat set">Member types</a></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../flat_set.html#Member_functions" title="cpp/container/flat set">Member functions</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>flat_set::flat_set</span></span></strong></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator%3D.html" title="cpp/container/flat set/operator="><span class="t-lines"><span>flat_set::operator=</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../flat_set.html#Iterators" title="cpp/container/flat set">Iterators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="begin.html" title="cpp/container/flat set/begin"><span class="t-lines"><span>flat_set::begin</span><span>flat_set::cbegin</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="end.html" title="cpp/container/flat set/end"><span class="t-lines"><span>flat_set::end</span><span>flat_set::cend</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rbegin.html" title="cpp/container/flat set/rbegin"><span class="t-lines"><span>flat_set::rbegin</span><span>flat_set::crbegin</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rend.html" title="cpp/container/flat set/rend"><span class="t-lines"><span>flat_set::rend</span><span>flat_set::crend</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../flat_set.html#Capacity" title="cpp/container/flat set">Capacity</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="size.html" title="cpp/container/flat set/size"><span class="t-lines"><span>flat_set::size</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="max_size.html" title="cpp/container/flat set/max size"><span class="t-lines"><span>flat_set::max_size</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="empty.html" title="cpp/container/flat set/empty"><span class="t-lines"><span>flat_set::empty</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../flat_set.html#Observers" title="cpp/container/flat set">Observers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="key_comp.html" title="cpp/container/flat set/key comp"><span class="t-lines"><span>flat_set::key_comp</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="value_comp.html" title="cpp/container/flat set/value comp"><span class="t-lines"><span>flat_set::value_comp</span></span></a></div><div><span class="t-lines"><span>    </span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../flat_set.html#Modifiers" title="cpp/container/flat set">Modifiers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="clear.html" title="cpp/container/flat set/clear"><span class="t-lines"><span>flat_set::clear</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="insert.html" title="cpp/container/flat set/insert"><span class="t-lines"><span>flat_set::insert</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="insert_range.html" title="cpp/container/flat set/insert range"><span class="t-lines"><span>flat_set::insert_range</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="emplace.html" title="cpp/container/flat set/emplace"><span class="t-lines"><span>flat_set::emplace</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="emplace_hint.html" title="cpp/container/flat set/emplace hint"><span class="t-lines"><span>flat_set::emplace_hint</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="erase.html" title="cpp/container/flat set/erase"><span class="t-lines"><span>flat_set::erase</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap.html" title="cpp/container/flat set/swap"><span class="t-lines"><span>flat_set::swap</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="extract.html" title="cpp/container/flat set/extract"><span class="t-lines"><span>flat_set::extract</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="replace.html" title="cpp/container/flat set/replace"><span class="t-lines"><span>flat_set::replace</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../flat_set.html#Lookup" title="cpp/container/flat set">Lookup</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="count.html" title="cpp/container/flat set/count"><span class="t-lines"><span>flat_set::count</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="find.html" title="cpp/container/flat set/find"><span class="t-lines"><span>flat_set::find</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="contains.html" title="cpp/container/flat set/contains"><span class="t-lines"><span>flat_set::contains</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="equal_range.html" title="cpp/container/flat set/equal range"><span class="t-lines"><span>flat_set::equal_range</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="lower_bound.html" title="cpp/container/flat set/lower bound"><span class="t-lines"><span>flat_set::lower_bound</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="upper_bound.html" title="cpp/container/flat set/upper bound"><span class="t-lines"><span>flat_set::upper_bound</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../flat_set.html#Non-member_functions" title="cpp/container/flat set">Non-member functions</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_cmp.html" title="cpp/container/flat set/operator cmp"><span class="t-lines"><span>operator==</span><span>operator&lt;=&gt;</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap2.html" title="cpp/container/flat set/swap2"><span class="t-lines"><span>swap<span class="t-dsc-small">(std::flat_set)</span></span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="erase_if.html" title="cpp/container/flat set/erase if"><span class="t-lines"><span>erase_if<span class="t-dsc-small">(std::flat_set)</span></span></span></a></div></div></td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../flat_set.html#Helper_classes" title="cpp/container/flat set">Helper classes</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="uses_allocator.html" title="cpp/container/flat set/uses allocator"><span class="t-lines"><span>uses_allocator<span class="t-dsc-small">&lt;std::flat_set&gt;</span></span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../flat_set.html#Tags" title="cpp/container/flat set">Tags</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../sorted_unique.html" title="cpp/container/sorted unique"><span class="t-lines"><span>sorted_unique</span></span></a></div><div><span class="t-lines"><span><code>    </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../sorted_unique.html" title="cpp/container/sorted unique"><span class="t-lines"><span>sorted_unique_t</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="deduction_guides.html" title="cpp/container/flat set/deduction guides">Deduction guides</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
+<table class="t-dcl-begin"><tbody>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp">flat_set<span class="br0">(</span><span class="br0">)</span><br>
+    <span class="sy4">:</span> flat_set<span class="br0">(</span>key_compare<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="br0">}</span></span></div></td>
+<td> (1) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+flat_set<span class="br0">(</span> <span class="kw4">const</span> flat_set<span class="sy3">&amp;</span> other, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (2) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+flat_set<span class="br0">(</span> flat_set<span class="sy3">&amp;&amp;</span> other, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (3) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">explicit</span> flat_set<span class="br0">(</span> container_type cont,<br>
+                   <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp <span class="sy1">=</span> key_compare<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (4) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+flat_set<span class="br0">(</span> <span class="kw4">const</span> container_type<span class="sy3">&amp;</span> cont, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (5) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+<p>flat_set<span class="br0">(</span> <span class="kw4">const</span> container_type<span class="sy3">&amp;</span> cont, <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp,<br>
+</p>
+          <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (6) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp">flat_set<span class="br0">(</span> <a href="../sorted_unique.html"><span class="kw3381">std::<span class="me2">sorted_unique_t</span></span></a> s, container_type cont,<br>
+<p>          <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp <span class="sy1">=</span> key_compare<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><br>
+</p>
+    <span class="sy4">:</span> c<span class="br0">(</span>std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>cont<span class="br0">)</span><span class="br0">)</span>, compare<span class="br0">(</span>comp<span class="br0">)</span> <span class="br0">{</span> <span class="br0">}</span></span></div></td>
+<td> (7) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+<p>flat_set<span class="br0">(</span> <a href="../sorted_unique.html"><span class="kw3381">std::<span class="me2">sorted_unique_t</span></span></a> s, <span class="kw4">const</span> container_type<span class="sy3">&amp;</span> cont,<br>
+</p>
+          <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (8) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+<p>flat_set<span class="br0">(</span> <a href="../sorted_unique.html"><span class="kw3381">std::<span class="me2">sorted_unique_t</span></span></a> s, <span class="kw4">const</span> container_type<span class="sy3">&amp;</span> cont,<br>
+</p>
+          <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (9) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">explicit</span> flat_set<span class="br0">(</span> <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp <span class="br0">)</span><br>
+    <span class="sy4">:</span> c<span class="br0">(</span><span class="br0">)</span>, compare<span class="br0">(</span>comp<span class="br0">)</span> <span class="br0">{</span> <span class="br0">}</span></span></div></td>
+<td> (10) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+flat_set<span class="br0">(</span> <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (11) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+<span class="kw1">explicit</span> flat_set<span class="br0">(</span> <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (12) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIter <span class="sy1">&gt;</span><br>
+<p>flat_set<span class="br0">(</span> InputIter first, InputIter last,<br>
+          <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp <span class="sy1">=</span> key_compare<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><br>
+</p>
+    <span class="sy4">:</span> c<span class="br0">(</span><span class="br0">)</span>, compare<span class="br0">(</span>comp<span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (13) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIter, <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+<p>flat_set<span class="br0">(</span> InputIter first, InputIter last,<br>
+</p>
+          <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (14) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIter, <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+flat_set<span class="br0">(</span> InputIter first, InputIter last, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (15) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../../ranges/to.html"><span class="kw100">container-compatible-range</span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> R <span class="sy1">&gt;</span><br>
+<p>flat_set<span class="br0">(</span> <a href="../../ranges/from_range.html"><span class="kw3603">std::<span class="me2">from_range_t</span></span></a>, R<span class="sy3">&amp;&amp;</span> rg, <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp <span class="br0">)</span><br>
+</p>
+    <span class="sy4">:</span> flat_set<span class="br0">(</span>comp<span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (16) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../../ranges/to.html"><span class="kw100">container-compatible-range</span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> R <span class="sy1">&gt;</span><br>
+<p>flat_set<span class="br0">(</span> <a href="../../ranges/from_range.html"><span class="kw3603">std::<span class="me2">from_range_t</span></span></a> fr, R<span class="sy3">&amp;&amp;</span> rg <span class="br0">)</span><br>
+</p>
+    <span class="sy4">:</span> flat_set<span class="br0">(</span> fr, <a href="../../utility/forward.html"><span class="kw1125">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span><span class="br0">(</span>rg<span class="br0">)</span>, key_compare<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span> <span class="br0">{</span> <span class="br0">}</span></span></div></td>
+<td> (17) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../../ranges/to.html"><span class="kw100">container-compatible-range</span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> R, <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+flat_set<span class="br0">(</span> <a href="../../ranges/from_range.html"><span class="kw3603">std::<span class="me2">from_range_t</span></span></a>, R<span class="sy3">&amp;&amp;</span> rg, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (18) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../../ranges/to.html"><span class="kw100">container-compatible-range</span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> R, <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+<p>flat_set<span class="br0">(</span> <a href="../../ranges/from_range.html"><span class="kw3603">std::<span class="me2">from_range_t</span></span></a>, R<span class="sy3">&amp;&amp;</span> rg, <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp,<br>
+</p>
+          <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (19) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIter <span class="sy1">&gt;</span><br>
+<p>flat_set<span class="br0">(</span> <a href="../sorted_unique.html"><span class="kw3381">std::<span class="me2">sorted_unique_t</span></span></a> s, InputIter first, InputIter last,<br>
+          <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp <span class="sy1">=</span> key_compare<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><br>
+</p>
+    <span class="sy4">:</span> c<span class="br0">(</span>first, last<span class="br0">)</span>, compare<span class="br0">(</span>comp<span class="br0">)</span> <span class="br0">{</span> <span class="br0">}</span></span></div></td>
+<td> (20) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIter, <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+<p>flat_set<span class="br0">(</span> <a href="../sorted_unique.html"><span class="kw3381">std::<span class="me2">sorted_unique_t</span></span></a> s, InputIter first, InputIter last,<br>
+</p>
+          <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (21) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIter, <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+<p>flat_set<span class="br0">(</span> <a href="../sorted_unique.html"><span class="kw3381">std::<span class="me2">sorted_unique_t</span></span></a> s, InputIter first, InputIter last,<br>
+</p>
+          <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (22) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp">flat_set<span class="br0">(</span> <a href="../../utility/initializer_list.html"><span class="kw964">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> init,<br>
+<p>          <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp <span class="sy1">=</span> key_compare<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><br>
+</p>
+    <span class="sy4">:</span> flat_set<span class="br0">(</span>init.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, init.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>, comp<span class="br0">)</span> <span class="br0">{</span> <span class="br0">}</span></span></div></td>
+<td> (23) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+<p>flat_set<span class="br0">(</span> <a href="../../utility/initializer_list.html"><span class="kw964">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> init, <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp,<br>
+</p>
+          <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (24) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+flat_set<span class="br0">(</span> <a href="../../utility/initializer_list.html"><span class="kw964">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> init, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (25) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp">flat_set<span class="br0">(</span> <a href="../sorted_unique.html"><span class="kw3381">std::<span class="me2">sorted_unique_t</span></span></a> s, <a href="../../utility/initializer_list.html"><span class="kw964">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> init,<br>
+<p>          <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp <span class="sy1">=</span> key_compare<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><br>
+</p>
+    <span class="sy4">:</span> flat_set<span class="br0">(</span>s, init.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, init.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>, comp<span class="br0">)</span> <span class="br0">{</span> <span class="br0">}</span></span></div></td>
+<td> (26) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+<p>flat_set<span class="br0">(</span> <a href="../sorted_unique.html"><span class="kw3381">std::<span class="me2">sorted_unique_t</span></span></a> s, <a href="../../utility/initializer_list.html"><span class="kw964">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> init,<br>
+</p>
+          <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (27) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> Allocator <span class="sy1">&gt;</span><br>
+<p>flat_set<span class="br0">(</span> <a href="../sorted_unique.html"><span class="kw3381">std::<span class="me2">sorted_unique_t</span></span></a> s, <a href="../../utility/initializer_list.html"><span class="kw964">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> init,<br>
+</p>
+          <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (28) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
+</tbody></table>
+<p>Constructs new container adaptor from a variety of data sources and optionally provided comparison function object <span class="t-c"><span class="mw-geshi cpp source-cpp">comp</span></span> and/or allocator <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc</span></span>.
+</p>
+<div class="t-li1"><span class="t-li">1)</span> A default constructor. Constructs an empty container adaptor.</div>
+<div class="t-li1"><span class="t-li">2)</span> A <a href="../../language/copy_constructor.html" title="cpp/language/copy constructor">copy constructor</a>. Constructs <a href="../flat_set.html#Member_objects" title="cpp/container/flat set"><code><i>c</i></code></a> with the copy of the contents of <span class="t-c"><span class="mw-geshi cpp source-cpp">other.<span class="me1">c</span></span></span> and <a href="../flat_set.html#Member_objects" title="cpp/container/flat set"><code><i>compare</i></code></a> with <span class="t-c"><span class="mw-geshi cpp source-cpp">other.<span class="me1">compare</span></span></span>.
+See <a href="flat_set.html#Allocator_usage_note">allocator usage note</a> below.</div>
+<div class="t-li1"><span class="t-li">3)</span> A <a href="../../language/move_constructor.html" title="cpp/language/move constructor">move constructor</a>. Constructs the container adaptor with the contents of <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span> using move semantics.
+See <a href="flat_set.html#Allocator_usage_note">allocator usage note</a> below.</div>
+<div class="t-li1"><span class="t-li">4)</span> Constructs the underlying container with the contents of the container <span class="t-c"><span class="mw-geshi cpp source-cpp">cont</span></span>. First, initializes <a href="../flat_set.html#Member_objects" title="cpp/container/flat set"><code><i>c</i></code></a> with <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>cont<span class="br0">)</span></span></span> and <a href="../flat_set.html#Member_objects" title="cpp/container/flat set"><code><i>compare</i></code></a> with <span class="t-c"><span class="mw-geshi cpp source-cpp">comp</span></span>. Then sorts the <a href="../flat_set.html#Member_objects" title="cpp/container/flat set"><code><i>c</i></code></a> with respect to <code>comp</code>. Finally, makes elements unique, i.e. erases all but the first element from each group of consecutive equivalent elements.</div>
+<div class="t-li1"><span class="t-li">5)</span> Same as <span class="t-v">(4)</span>, equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp">flat_set<span class="br0">(</span>cont<span class="br0">)</span><span class="sy4">;</span></span></span>.
+See <a href="flat_set.html#Allocator_usage_note">allocator usage note</a> below.</div>
+<div class="t-li1"><span class="t-li">6)</span> Same as <span class="t-v">(4)</span>, equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp">flat_set<span class="br0">(</span>cont, comp<span class="br0">)</span><span class="sy4">;</span></span></span>.
+See <a href="flat_set.html#Allocator_usage_note">allocator usage note</a> below.</div>
+<div class="t-li1"><span class="t-li">7)</span> Constructs the underlying container with the contents of the other container <span class="t-c"><span class="mw-geshi cpp source-cpp">cont</span></span>. Initializes <a href="../flat_set.html#Member_objects" title="cpp/container/flat set"><code><i>c</i></code></a> with <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>cont<span class="br0">)</span></span></span> and <a href="../flat_set.html#Member_objects" title="cpp/container/flat set"><code><i>compare</i></code></a> with <span class="t-c"><span class="mw-geshi cpp source-cpp">comp</span></span>.</div>
+<div class="t-li1"><span class="t-li">8)</span> Same as <span class="t-v">(7)</span>, equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp">flat_set<span class="br0">(</span>s, cont<span class="br0">)</span><span class="sy4">;</span></span></span>.
+See <a href="flat_set.html#Allocator_usage_note">allocator usage note</a> below.</div>
+<div class="t-li1"><span class="t-li">9)</span> Same as <span class="t-v">(7)</span>, equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp">flat_set<span class="br0">(</span>s, cont, comp<span class="br0">)</span><span class="sy4">;</span></span></span>.
+See <a href="flat_set.html#Allocator_usage_note">allocator usage note</a> below.</div>
+<div class="t-li1"><span class="t-li">10)</span> Constructs an empty container adaptor.</div>
+<div class="t-li1"><span class="t-li">11,12)</span> Constructs an empty container adaptor.
+See <a href="flat_set.html#Allocator_usage_note">allocator usage note</a> below.</div>
+<div class="t-li1"><span class="t-li">13)</span> Constructs the container adaptor with the contents of the range <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span><code>)</code>, equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp">insert<span class="br0">(</span>first, last<span class="br0">)</span><span class="sy4">;</span></span></span>.</div>
+<div class="t-li1"><span class="t-li">14,15)</span> Same as <span class="t-v">(13)</span>.
+See <a href="flat_set.html#Allocator_usage_note">allocator usage note</a> below.</div>
+<div class="t-li1"><span class="t-li">16)</span> Constructs the container adaptor with the contents of the range <span class="t-c"><span class="mw-geshi cpp source-cpp">rg</span></span>. First, uses <span class="t-v">(10)</span> as <a href="../../language/initializer_list.html#Delegating_constructor" title="cpp/language/constructor">delegating constructor</a>. Then initializes <a href="../flat_set.html#Member_objects" title="cpp/container/flat set"><code><i>c</i></code></a> with the contents of <span class="t-c"><span class="mw-geshi cpp source-cpp">rg</span></span> as if by <span class="t-c"><span class="mw-geshi cpp source-cpp">insert_range<span class="br0">(</span><a href="../../utility/forward.html"><span class="kw1125">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span><span class="br0">(</span>rg<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span></span></span>.</div>
+<div class="t-li1"><span class="t-li">17)</span> Same as <span class="t-v">(16)</span> using it as <a href="../../language/initializer_list.html#Delegating_constructor" title="cpp/language/constructor">delegating constructor</a>.</div>
+<div class="t-li1"><span class="t-li">18,19)</span> Same as <span class="t-v">(16)</span>.
+See <a href="flat_set.html#Allocator_usage_note">allocator usage note</a> below.</div>
+<div class="t-li1"><span class="t-li">20)</span> Constructs the underlying container with the contents of the range <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span><code>)</code>. Initializes <a href="../flat_set.html#Member_objects" title="cpp/container/flat set"><code><i>c</i></code></a> with <span class="t-c"><span class="mw-geshi cpp source-cpp">c<span class="br0">(</span>first, last<span class="br0">)</span></span></span> and <a href="../flat_set.html#Member_objects" title="cpp/container/flat set"><code><i>compare</i></code></a> with <span class="t-c"><span class="mw-geshi cpp source-cpp">compare<span class="br0">(</span>comp<span class="br0">)</span></span></span>.</div>
+<div class="t-li1"><span class="t-li">21,22)</span> Same as <span class="t-v">(20)</span>.
+See <a href="flat_set.html#Allocator_usage_note">allocator usage note</a> below.</div>
+<div class="t-li1"><span class="t-li">23)</span> An <a href="../../language/list_initialization.html" title="cpp/language/list initialization">initializer-list constructor</a>. Constructs the underlying container with the contents of the initializer list <span class="t-c"><span class="mw-geshi cpp source-cpp">init</span></span>, using <span class="t-v">(13)</span> as <a href="../../language/initializer_list.html#Delegating_constructor" title="cpp/language/constructor">delegating constructor</a>.</div>
+<div class="t-li1"><span class="t-li">24,25)</span> Same as <span class="t-v">(23)</span>.
+See <a href="flat_set.html#Allocator_usage_note">allocator usage note</a> below.</div>
+<div class="t-li1"><span class="t-li">26)</span> An <a href="../../language/list_initialization.html" title="cpp/language/list initialization">initializer-list constructor</a>. Constructs the underlying container with the contents of the initializer list <span class="t-c"><span class="mw-geshi cpp source-cpp">init</span></span>, using <span class="t-v">(20)</span> as <a href="../../language/initializer_list.html#Delegating_constructor" title="cpp/language/constructor">delegating constructor</a>.</div>
+<div class="t-li1"><span class="t-li">27,28)</span> Save as <span class="t-v">(26)</span>.
+See <a href="flat_set.html#Allocator_usage_note">allocator usage note</a> below.</div>
+<p>Note for overloads <span class="t-v">(13-15,20-22)</span>: If <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span><code>)</code> is not a <a href="../../iterator.html#Ranges" title="cpp/iterator">valid range</a>, the behavior is undefined.
+</p>
+<p>Note for overloads <span class="t-v">(4-6,13-19,23-25)</span>: If multiple elements in the range have keys that compare equivalent, it is unspecified which element is inserted (pending <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2844">LWG2844</a>).
+</p><h5><span class="mw-headline" id="Allocator_usage_note">Allocator usage note</span></h5>
+<p>The constructors <span class="t-v">(2,3,5,6,8,9,11,12,14,15,17,19,21,22,24,25,27,28)</span> are equivalent to the corresponding non-allocator constructors except that <a href="../flat_set.html#Member_objects" title="cpp/container/flat set"><code><i>c</i></code></a> is constructed with <a href="../../memory/uses_allocator.html#Uses-allocator_construction" title="cpp/memory/uses allocator">uses-allocator construction</a>.
+These overloads participate in overload resolution only if <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../memory/uses_allocator.html"><span class="kw709">std::<span class="me2">uses_allocator_v</span></span></a><span class="sy1">&lt;</span>container_type, Allocator<span class="sy1">&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+<h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
+<table class="t-par-begin">
+
+
+<tr class="t-par">
+<td> cont
+</td>
+<td> -
+</td>
+<td> a container to be used as source to initialize the underlying container
+</td></tr>
+<tr class="t-par">
+<td> other
+</td>
+<td> -
+</td>
+<td> another <code>flat_set</code> to be used as source to initialize the elements of the underlying container with
+</td></tr>
+<tr class="t-par">
+<td> alloc
+</td>
+<td> -
+</td>
+<td> an allocator to use for all memory allocations of the underlying container
+</td></tr>
+<tr class="t-par">
+<td> comp
+</td>
+<td> -
+</td>
+<td> a function object to be used for all comparisons of keys
+</td></tr>
+<tr class="t-par">
+<td> first, last
+</td>
+<td> -
+</td>
+<td> a range to copy the elements from
+</td></tr>
+<tr class="t-par">
+<td> init
+</td>
+<td> -
+</td>
+<td> an initializer list to initialize the elements of the underlying container with
+</td></tr>
+<tr class="t-par">
+<td> rg
+</td>
+<td> -
+</td>
+<td> a <a href="../../ranges/to.html#container_compatible_range" title="cpp/ranges/to">container compatible range</a> (that is, an <a href="../../ranges/input_range.html" title="cpp/ranges/input range"><code>input_range</code></a> whose elements are convertible to <a href="../flat_set.html#Member_types" title="cpp/container/flat set"><code>value_type</code></a>) to be used as source to initialize the underlying container
+</td></tr>
+<tr class="t-par">
+<td> fr
+</td>
+<td> -
+</td>
+<td> a <a href="../../ranges/from_range.html" title="cpp/ranges/from range">disambiguation tag</a> that indicates that the contained member should be range constructed
+</td></tr>
+<tr class="t-par">
+<td> s
+</td>
+<td> -
+</td>
+<td> a <a href="../sorted_unique.html" title="cpp/container/sorted unique">disambiguation tag</a> that indicates that the input sequence is sorted with respect to <a href="../flat_set.html#Member_objects" title="cpp/container/flat set"><code><i>compare</i></code></a> and all its elements are unique
+</td></tr>
+<tr class="t-par-hitem">
+<td colspan="3"> Type requirements
+</td></tr>
+<tr class="t-par-req">
+<td colspan="3"> -<div class="spacer"></div><code>InputIt</code> must meet the requirements of <a href="../../named_req/InputIterator.html" title="cpp/named req/InputIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyInputIterator</span></a>.
+</td></tr>
+<tr class="t-par-req">
+<td colspan="3"> -<div class="spacer"></div><code>Compare</code> must meet the requirements of <a href="../../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a>.
+</td></tr>
+<tr class="t-par-req">
+<td colspan="3"> -<div class="spacer"></div><code>Allocator</code> must meet the requirements of <a href="../../named_req/Allocator.html" title="cpp/named req/Allocator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Allocator</span></a>.
+</td></tr></table>
+<h3><span class="mw-headline" id="Complexity">Complexity</span></h3>
+<div class="t-li1"><span class="t-li">1)</span> Constant.</div>
+<div class="t-li1"><span class="t-li">2)</span> Linear in size of <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span>.</div>
+<div class="t-li1"><span class="t-li">3)</span> Same as the corresponding move-constructor of the wrapped container, i.e. constant or linear in size of <span class="t-c"><span class="mw-geshi cpp source-cpp">cont</span></span>.</div>
+<div class="t-li1"><span class="t-li">4-6)</span> Linear in <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">cont</span></span> is sorted with respect to <span class="t-c"><span class="mw-geshi cpp source-cpp">compare</span></span>, otherwise <span class="mjax" style="display:none">\(\scriptsize \mathcal{O}(N\cdot\log{(N)})\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">𝓞(N·log(N))</span>, where <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> is the value of <span class="t-c"><span class="mw-geshi cpp source-cpp">cont.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span></span></span> before this call.</div>
+<div class="t-li1"><span class="t-li">7-9)</span> Same as the corresponding move-constructor of the wrapped container, i.e. constant or linear in size of <span class="t-c"><span class="mw-geshi cpp source-cpp">cont</span></span>.</div>
+<div class="t-li1"><span class="t-li">10-12)</span> Constant.</div>
+<div class="t-li1"><span class="t-li">13-15)</span> Linear in <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> if the input range <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span><code>)</code> is sorted with respect to <span class="t-c"><span class="mw-geshi cpp source-cpp">compare</span></span>, otherwise <span class="mjax" style="display:none">\(\scriptsize \mathcal{O}(N\cdot\log{(N)})\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">𝓞(N·log(N))</span>, where <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> is the value of <span class="t-c"><span class="mw-geshi cpp source-cpp">cont.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span></span></span> before this call.</div>
+<div class="t-li1"><span class="t-li">16-19)</span> Linear in <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> if the input range <span class="t-c"><span class="mw-geshi cpp source-cpp">rg</span></span> is sorted with respect to <span class="t-c"><span class="mw-geshi cpp source-cpp">compare</span></span>, otherwise <span class="mjax" style="display:none">\(\scriptsize \mathcal{O}(N\cdot\log{(N)})\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">𝓞(N·log(N))</span>, where <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> is the value of <span class="t-c"><span class="mw-geshi cpp source-cpp">cont.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span></span></span> before this call.</div>
+<div class="t-li1"><span class="t-li">20-22)</span> Linear in size of <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span><code>)</code>.</div>
+<div class="t-li1"><span class="t-li">23-25)</span> Linear in <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> if the elements of <span class="t-c"><span class="mw-geshi cpp source-cpp">init</span></span> are sorted with respect to <span class="t-c"><span class="mw-geshi cpp source-cpp">compare</span></span>, otherwise <span class="mjax" style="display:none">\(\scriptsize \mathcal{O}(N\cdot\log{(N)})\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">𝓞(N·log(N))</span>, where <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> is the value of <span class="t-c"><span class="mw-geshi cpp source-cpp">cont.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span></span></span> before this call.</div>
+<div class="t-li1"><span class="t-li">26-28)</span> Linear in size of <span class="t-c"><span class="mw-geshi cpp source-cpp">init</span></span>.</div>
+<h3><span class="mw-headline" id="Exceptions">Exceptions</span></h3>
+<p>Calls to <code>Allocator::allocate</code> may throw.
+</p>
+<h3><span class="mw-headline" id="Notes">Notes</span></h3>
+<p>After container move construction (overload <span class="t-v">(3,16-19)</span>), references, pointers, and iterators (other than the end iterator) to <code>other</code> remain valid, but refer to elements that are now in <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. The current standard makes this guarantee via the blanket statement in <a rel="nofollow" class="external text" href="https://eel.is/c++draft/container.reqmts#67">[container.reqmts]/67</a>, and a more direct guarantee is under consideration via <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2321">LWG issue 2321</a>.
+</p>
+<h3><span class="mw-headline" id="Example">Example</span></h3>
+<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: no example </td></tr></table>
+<h3><span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="operator%3D.html" title="cpp/container/flat set/operator="> <span class="t-lines"><span>operator=</span></span></a></div></div>
+</td>
+<td>  assigns values to the container adaptor <br> <span class="t-mark">(public member function)</span> </td></tr>
+</table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 12273/1000000
+Preprocessor generated node count: 18085/1000000
+Post‐expand include size: 310501/4194304 bytes
+Template argument size: 44676/4194304 bytes
+Highest expansion depth: 23/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:22675-0!*!0!!en!*!* and timestamp 20241109034631 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/flat_set/flat_set&amp;oldid=171782">https://en.cppreference.com/mwiki/index.php?title=cpp/container/flat_set/flat_set&amp;oldid=171782</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/container/flat_set/flat_set">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 15 May 2024, at 15:10.</li>
+                            </ul>
+                    </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="../../.././common/skin_scripts.js"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
+}</script>
+<script src="../../.././common/site_scripts.js"></script>
+<!-- Served in 6.351 secs. -->
+	</body>
+<!-- Cached 20241109034631 -->
+</html>

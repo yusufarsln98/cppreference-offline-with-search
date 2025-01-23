@@ -4,20 +4,20 @@
 <title>std::basic_stringbuf&lt;CharT,Traits,Allocator&gt;::seekoff - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../../common/favicon.ico">
-<link rel="stylesheet" href="../../../common/ext.css">
+<link rel="shortcut icon" href="../../.././common/favicon.ico">
+<link rel="stylesheet" href="../../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../../common/site_modules.css">
+<link rel="stylesheet" href="../../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../../common/startup_scripts.js"></script>
+<script src="../../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/io/basic_stringbuf/seekoff","wgTitle":"cpp/io/basic stringbuf/seekoff","wgCurRevisionId":80458,"wgArticleId":12871,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/io/basic_stringbuf/seekoff","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/io/basic_stringbuf/seekoff","wgTitle":"cpp/io/basic stringbuf/seekoff","wgCurRevisionId":148675,"wgArticleId":12871,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/io/basic_stringbuf/seekoff","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -108,7 +108,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::basic_stringbuf&lt;CharT,Traits,Allocator&gt;::</span>seekoff</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::basic_stringbuf&lt;CharT,Traits,Allocator&gt;::</span>seekoff</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -119,164 +127,179 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../../cpp.html" title="cpp">cpp</a>‎ | <a href="../../io.html" title="cpp/io">io</a>‎ | <a href="../basic_stringbuf.html" title="cpp/io/basic stringbuf">basic stringbuf</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../io.html" title="cpp/io"> Input/output library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="../manip.html" title="cpp/io/manip"> I/O manipulators</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../c.html" title="cpp/io/c"> C-style I/O</a></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Buffers </td></tr>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../io.html" title="cpp/io">Input/output library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="../manip.html" title="cpp/io/manip">I/O manipulators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../io.html#Print_functions_.28since_C.2B.2B23.29" title="cpp/io">Print functions</a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../c.html" title="cpp/io/c">C-style I/O</a></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Buffers</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_streambuf.html" title="cpp/io/basic streambuf"><span class="t-lines"><span>basic_streambuf</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_filebuf.html" title="cpp/io/basic filebuf"><span class="t-lines"><span>basic_filebuf</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_stringbuf.html" title="cpp/io/basic stringbuf"><span class="t-lines"><span>basic_stringbuf</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../strstreambuf.html" title="cpp/io/strstreambuf"><span class="t-lines"><span>strstreambuf</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-deprecated-cxx98">(deprecated in C++98)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_spanbuf.html" title="cpp/io/basic spanbuf"><span class="t-lines"><span>basic_spanbuf</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../strstreambuf.html" title="cpp/io/strstreambuf"><span class="t-lines"><span>strstreambuf</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++98, removed in C++26">C++98/26*</span>)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_syncbuf.html" title="cpp/io/basic syncbuf"><span class="t-lines"><span>basic_syncbuf</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Streams </td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Abstractions </td></tr>
+<tr class="t-nv-h1"><td colspan="5">Streams</td></tr>
+<tr class="t-nv-h2"><td colspan="5">Abstractions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ios_base.html" title="cpp/io/ios base"><span class="t-lines"><span>ios_base</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ios.html" title="cpp/io/basic ios"><span class="t-lines"><span>basic_ios</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_istream.html" title="cpp/io/basic istream"><span class="t-lines"><span>basic_istream</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ostream.html" title="cpp/io/basic ostream"><span class="t-lines"><span>basic_ostream</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_iostream.html" title="cpp/io/basic iostream"><span class="t-lines"><span>basic_iostream</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> File I/O </td></tr>
+<tr class="t-nv-h2"><td colspan="5">File I/O</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ifstream.html" title="cpp/io/basic ifstream"><span class="t-lines"><span>basic_ifstream</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ofstream.html" title="cpp/io/basic ofstream"><span class="t-lines"><span>basic_ofstream</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_fstream.html" title="cpp/io/basic fstream"><span class="t-lines"><span>basic_fstream</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> String I/O </td></tr>
+<tr class="t-nv-h2"><td colspan="5">String I/O</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_istringstream.html" title="cpp/io/basic istringstream"><span class="t-lines"><span>basic_istringstream</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ostringstream.html" title="cpp/io/basic ostringstream"><span class="t-lines"><span>basic_ostringstream</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_stringstream.html" title="cpp/io/basic stringstream"><span class="t-lines"><span>basic_stringstream</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Array I/O </td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../istrstream.html" title="cpp/io/istrstream"><span class="t-lines"><span>istrstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-deprecated-cxx98">(deprecated in C++98)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ostrstream.html" title="cpp/io/ostrstream"><span class="t-lines"><span>ostrstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-deprecated-cxx98">(deprecated in C++98)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../strstream.html" title="cpp/io/strstream"><span class="t-lines"><span>strstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-deprecated-cxx98">(deprecated in C++98)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Synchronized Output</td></tr>
+<tr class="t-nv-h2"><td colspan="5">Array I/O</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ispanstream.html" title="cpp/io/basic ispanstream"><span class="t-lines"><span>basic_ispanstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ospanstream.html" title="cpp/io/basic ospanstream"><span class="t-lines"><span>basic_ospanstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_spanstream.html" title="cpp/io/basic spanstream"><span class="t-lines"><span>basic_spanstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../istrstream.html" title="cpp/io/istrstream"><span class="t-lines"><span>istrstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++98, removed in C++26">C++98/26*</span>)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ostrstream.html" title="cpp/io/ostrstream"><span class="t-lines"><span>ostrstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++98, removed in C++26">C++98/26*</span>)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../strstream.html" title="cpp/io/strstream"><span class="t-lines"><span>strstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++98, removed in C++26">C++98/26*</span>)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Synchronized Output</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_osyncstream.html" title="cpp/io/basic osyncstream"><span class="t-lines"><span>basic_osyncstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Types </td></tr>
+<tr class="t-nv-h1"><td colspan="5">Types</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../streamoff.html" title="cpp/io/streamoff"><span class="t-lines"><span>streamoff</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../streamsize.html" title="cpp/io/streamsize"><span class="t-lines"><span>streamsize</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../fpos.html" title="cpp/io/fpos"><span class="t-lines"><span>fpos</span></span></a></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Error category interface </td></tr>
+<tr class="t-nv-h1"><td colspan="5">Error category interface</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../iostream_category.html" title="cpp/io/iostream category"><span class="t-lines"><span>iostream_category</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../io_errc.html" title="cpp/io/io errc"><span class="t-lines"><span>io_errc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../basic_stringbuf.html" title="cpp/io/basic stringbuf"><tt>std::basic_stringbuf</tt></a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5"> Public member functions</td></tr>
+<tr class="t-nv-h1"><td colspan="5">Public member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_stringbuf.html" title="cpp/io/basic stringbuf/basic stringbuf"><span class="t-lines"><span>basic_stringbuf::basic_stringbuf</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator%3D.html" title="cpp/io/basic stringbuf/operator="><span class="t-lines"><span>basic_stringbuf::operator=</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap.html" title="cpp/io/basic stringbuf/swap"><span class="t-lines"><span>basic_stringbuf::swap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="str.html" title="cpp/io/basic stringbuf/str"><span class="t-lines"><span>basic_stringbuf::str</span></span></a></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Protected member functions</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="get_allocator.html" title="cpp/io/basic stringbuf/get allocator"><span class="t-lines"><span>basic_stringbuf::get_allocator</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="view.html" title="cpp/io/basic stringbuf/view"><span class="t-lines"><span>basic_stringbuf::view</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Protected member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="underflow.html" title="cpp/io/basic stringbuf/underflow"><span class="t-lines"><span>basic_stringbuf::underflow</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="pbackfail.html" title="cpp/io/basic stringbuf/pbackfail"><span class="t-lines"><span>basic_stringbuf::pbackfail</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="overflow.html" title="cpp/io/basic stringbuf/overflow"><span class="t-lines"><span>basic_stringbuf::overflow</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="setbuf.html" title="cpp/io/basic stringbuf/setbuf"><span class="t-lines"><span>basic_stringbuf::setbuf</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>basic_stringbuf::seekoff</span></span></strong></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="seekpos.html" title="cpp/io/basic stringbuf/seekpos"><span class="t-lines"><span>basic_stringbuf::seekpos</span></span></a></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Non-member functions</td></tr>
+<tr class="t-nv-h1"><td colspan="5">Non-member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap2.html" title="cpp/io/basic stringbuf/swap2"><span class="t-lines"><span>swap<span class="t-dsc-small">(std::basic_stringbuf)</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Exposition-only member functions</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="init_buf_ptrs.html" title="cpp/io/basic stringbuf/init buf ptrs"><span class="t-lines"><span>basic_stringbuf::<i>init_buf_ptrs</i></span></span></a></div></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <table class="t-dcl-begin"><tbody>
 
 <tr class="t-dcl">
 <td class="t-dcl-nopad"> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">protected</span><span class="sy4">:</span><br>
-<p><span class="kw1">virtual</span> pos_type seekoff<span class="br0">(</span>off_type off,<br>
-                         ios_base<span class="sy4">::</span><span class="me2">seekdir</span> dir,<br>
+<p><span class="kw1">virtual</span> pos_type seekoff<span class="br0">(</span> off_type off,<br>
+                          <a href="../ios_base/seekdir.html"><span class="kw1719">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">seekdir</span></span></a> dir,<br>
 </p>
-                         ios_base<span class="sy4">::</span><span class="me2">openmode</span> which <span class="sy1">=</span> ios_base<span class="sy4">::</span><span class="me2">in</span> <span class="sy3">|</span> ios_base<span class="sy4">::</span><span class="me2">out</span><span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                          <a href="../ios_base/openmode.html"><span class="kw1688">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">openmode</span></span></a> which <span class="sy1">=</span> <a href="../ios_base/openmode.html"><span class="kw1691">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">in</span></span></a> <span class="sy3">|</span> <a href="../ios_base/openmode.html"><span class="kw1692">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">out</span></span></a> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Repositions <span class="t-lc"><a href="../basic_streambuf/gptr.html" title="cpp/io/basic streambuf/gptr">std::basic_streambuf::gptr</a></span> and/or <span class="t-lc"><a href="../basic_streambuf/pptr.html" title="cpp/io/basic streambuf/pptr">std::basic_streambuf::pptr</a></span>, if possible, to the position that corresponds to exactly <code>off</code> characters from beginning, end, or current position of the get and/or put area of the buffer.
+<p>Repositions <span class="t-lc"><a href="../basic_streambuf/gptr.html" title="cpp/io/basic streambuf/gptr">std::basic_streambuf::gptr</a></span> and/or <span class="t-lc"><a href="../basic_streambuf/pptr.html" title="cpp/io/basic streambuf/pptr">std::basic_streambuf::pptr</a></span>, if possible, to the position that corresponds to exactly <span class="t-c"><span class="mw-geshi cpp source-cpp">off</span></span> characters from beginning, end, or current position of the get and/or put area of the buffer.
 </p>
-<ul><li> If <code>which</code> includes <code>ios_base::in</code> and this buffer is open for reading (that is, if <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">(</span><span class="br0">(</span>which <span class="sy3">&amp;</span> ios_base<span class="sy4">::</span><span class="me2">in</span><span class="br0">)</span> <span class="sy1">==</span> ios_base<span class="sy4">::</span><span class="me2">in</span></span></span>), then repositions the read pointer <span class="t-lc"><a href="../basic_streambuf/gptr.html" title="cpp/io/basic streambuf/gptr">std::basic_streambuf::gptr</a></span> inside the get area as described below
-</li><li> If <code>which</code> includes <code>ios_base::out</code> and this buffer is open for writing (that is, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">(</span>which <span class="sy3">&amp;</span> ios_base<span class="sy4">::</span><span class="me2">out</span><span class="br0">)</span> <span class="sy1">==</span> ios_base<span class="sy4">::</span><span class="me2">out</span></span></span>), then repositions the write pointer <span class="t-lc"><a href="../basic_streambuf/pptr.html" title="cpp/io/basic streambuf/pptr">std::basic_streambuf::pptr</a></span> inside the put area as described below
-</li><li> If <code>which</code> includes both  <code>ios_base::in</code> and  <code>ios_base::out</code> and the buffer is open for both reading and writing (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">(</span>which <span class="sy3">&amp;</span> <span class="br0">(</span>ios_base<span class="sy4">::</span><span class="me2">in</span><span class="sy3">|</span>ios_base<span class="sy4">::</span><span class="me2">out</span><span class="br0">)</span><span class="br0">)</span> <span class="sy1">==</span><span class="br0">(</span>ios_base<span class="sy4">::</span><span class="me2">in</span><span class="sy3">|</span>ios_base<span class="sy4">::</span><span class="me2">out</span><span class="br0">)</span></span></span>), and <code>dir</code> is either <span class="t-c"><span class="mw-geshi cpp source-cpp">ios_base<span class="sy4">::</span><span class="me2">beg</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">ios_base<span class="sy4">::</span><span class="me2">end</span></span></span>, then repositions both read and write pointers as described below.
+<ul><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">which</span></span> includes <span class="t-lc"><a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode">std::ios_base::in</a></span> and this buffer is open for reading (that is, if <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">(</span>which <span class="sy3">&amp;</span> <a href="../ios_base/openmode.html"><span class="kw1691">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">in</span></span></a><span class="br0">)</span> <span class="sy1">==</span> <a href="../ios_base/openmode.html"><span class="kw1691">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">in</span></span></a></span></span>), then repositions the read pointer <span class="t-lc"><a href="../basic_streambuf/gptr.html" title="cpp/io/basic streambuf/gptr">std::basic_streambuf::gptr</a></span> inside the get area as described below
+</li><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">which</span></span> includes <span class="t-lc"><a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode">std::ios_base::out</a></span> and this buffer is open for writing (that is, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">(</span>which <span class="sy3">&amp;</span> <a href="../ios_base/openmode.html"><span class="kw1692">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">out</span></span></a><span class="br0">)</span> <span class="sy1">==</span> <a href="../ios_base/openmode.html"><span class="kw1692">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">out</span></span></a></span></span>), then repositions the write pointer <span class="t-lc"><a href="../basic_streambuf/pptr.html" title="cpp/io/basic streambuf/pptr">std::basic_streambuf::pptr</a></span> inside the put area as described below
+</li><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">which</span></span> includes both  <span class="t-lc"><a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode">std::ios_base::in</a></span> and  <span class="t-lc"><a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode">std::ios_base::out</a></span> and the buffer is open for both reading and writing (that is, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">(</span>which <span class="sy3">&amp;</span> <span class="br0">(</span><a href="../ios_base/openmode.html"><span class="kw1691">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">in</span></span></a> <span class="sy3">|</span> <a href="../ios_base/openmode.html"><span class="kw1692">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">out</span></span></a><span class="br0">)</span><span class="br0">)</span> <span class="sy1">==</span> <span class="br0">(</span><a href="../ios_base/openmode.html"><span class="kw1691">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">in</span></span></a> <span class="sy3">|</span> <a href="../ios_base/openmode.html"><span class="kw1692">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">out</span></span></a><span class="br0">)</span></span></span>), and <span class="t-c"><span class="mw-geshi cpp source-cpp">dir</span></span> is either <span class="t-lc"><a href="../ios_base/seekdir.html" title="cpp/io/ios base/seekdir">std::ios_base::beg</a></span> or <span class="t-lc"><a href="../ios_base/seekdir.html" title="cpp/io/ios base/seekdir">std::ios_base::end</a></span>, then repositions both read and write pointers as described below.
 </li><li> Otherwise, this function fails.
 </li></ul>
-<p>If the pointer (either <code>gptr</code> or <code>pptr</code> or both) is repositioned, it is done as follows:
+<p>If <a href="../basic_streambuf.html" title="cpp/io/basic streambuf"><tt>gptr</tt></a> and/or <a href="../basic_streambuf.html" title="cpp/io/basic streambuf"><tt>pptr</tt></a> is repositioned, it is done as follows:
 </p>
-<div class="t-li1"><span class="t-li">1)</span> If the pointer to be repositioned is a null pointer and the new offset <code>newoff</code> would be non-zero, this function fails.</div>
-<div class="t-li1"><span class="t-li">2)</span> The new pointer offset <code>newoff</code> of type <code>off_type</code> is determined</div>
-<div class="t-li2"><span class="t-li">a)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">dir <span class="sy1">==</span> ios_base<span class="sy4">::</span><span class="me2">beg</span></span></span>, then <code>newoff</code> is zero</div>
-<div class="t-li2"><span class="t-li">b)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">dir <span class="sy1">==</span> ios_base<span class="sy4">::</span><span class="me2">cur</span></span></span>, then <code>newoff</code> is the current position of the pointer (<span class="t-c"><span class="mw-geshi cpp source-cpp">gptr<span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span>eback<span class="br0">(</span><span class="br0">)</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">pptr<span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span>pbase<span class="br0">(</span><span class="br0">)</span></span></span>)</div>
-<div class="t-li2"><span class="t-li">c)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">dir <span class="sy1">==</span> ios_base<span class="sy4">::</span><span class="me2">end</span></span></span>, then <code>newoff</code> is the length of the entire initialized part of the buffer (if overallocation is used, the high watermark pointer minus the beginning pointer)</div>
-<div class="t-li1"><span class="t-li">3)</span> If <span class="t-c"><span class="mw-geshi cpp source-cpp">newoff <span class="sy2">+</span> off <span class="sy1">&lt;</span> <span class="nu0">0</span></span></span> (the repositioning would move the pointer to before the beginning of the buffer) or if <span class="t-c"><span class="mw-geshi cpp source-cpp">newoff <span class="sy2">+</span> off</span></span> would point past the end of the buffer (or past the last initialized character in the buffer if overallocation is used), the function fails</div>
-<div class="t-li1"><span class="t-li">4)</span> Otherwise, the pointer is assigned as if by <span class="t-c"><span class="mw-geshi cpp source-cpp">gptr<span class="br0">(</span><span class="br0">)</span> <span class="sy1">=</span> eback<span class="br0">(</span><span class="br0">)</span> <span class="sy2">+</span> newoff <span class="sy2">+</span> off</span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">pptr<span class="br0">(</span><span class="br0">)</span> <span class="sy1">=</span> pbase<span class="br0">(</span><span class="br0">)</span> <span class="sy2">+</span> newoff <span class="sy2">+</span> off</span></span></div>
+<div class="t-li1"><span class="t-li">1)</span> The new pointer offset <span class="t-c"><span class="mw-geshi cpp source-cpp">newoff</span></span> of type <code>off_type</code> is determined</div>
+<div class="t-li2"><span class="t-li">a)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">dir <span class="sy1">==</span> <a href="../ios_base/seekdir.html"><span class="kw1720">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">beg</span></span></a></span></span>, then <span class="t-c"><span class="mw-geshi cpp source-cpp">newoff</span></span> is zero</div>
+<div class="t-li2"><span class="t-li">b)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">dir <span class="sy1">==</span> <a href="../ios_base/seekdir.html"><span class="kw1721">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">cur</span></span></a></span></span>, then <span class="t-c"><span class="mw-geshi cpp source-cpp">newoff</span></span> is the current position of the pointer (<span class="t-c"><span class="mw-geshi cpp source-cpp">gptr<span class="br0">(</span><span class="br0">)</span> <span class="sy2">-</span> eback<span class="br0">(</span><span class="br0">)</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">pptr<span class="br0">(</span><span class="br0">)</span> <span class="sy2">-</span> pbase<span class="br0">(</span><span class="br0">)</span></span></span>)</div>
+<div class="t-li2"><span class="t-li">c)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">dir <span class="sy1">==</span> <a href="../ios_base/seekdir.html"><span class="kw1722">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">end</span></span></a></span></span>, then <span class="t-c"><span class="mw-geshi cpp source-cpp">newoff</span></span> is the length of the entire initialized part of the buffer (if <a href="str.html" title="cpp/io/basic stringbuf/str">over-allocation</a> is used, the high watermark pointer minus the beginning pointer)</div>
+<div class="t-li1"><span class="t-li">2)</span> If the pointer to be repositioned is a null pointer and <span class="t-c"><span class="mw-geshi cpp source-cpp">newoff</span></span> would be non-zero, this function fails.</div>
+<div class="t-li1"><span class="t-li">3)</span> If <span class="t-c"><span class="mw-geshi cpp source-cpp">newoff <span class="sy2">+</span> off <span class="sy1">&lt;</span> <span class="nu0">0</span></span></span> (the repositioning would move the pointer to before the beginning of the buffer) or if <span class="t-c"><span class="mw-geshi cpp source-cpp">newoff <span class="sy2">+</span> off</span></span> would point past the end of the buffer (or past the last initialized character in the buffer if <a href="str.html" title="cpp/io/basic stringbuf/str">over-allocation</a> is used), the function fails.</div>
+<div class="t-li1"><span class="t-li">4)</span> Otherwise, the pointer is assigned as if by <span class="t-c"><span class="mw-geshi cpp source-cpp">gptr<span class="br0">(</span><span class="br0">)</span> <span class="sy1">=</span> eback<span class="br0">(</span><span class="br0">)</span> <span class="sy2">+</span> newoff <span class="sy2">+</span> off</span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">pptr<span class="br0">(</span><span class="br0">)</span> <span class="sy1">=</span> pbase<span class="br0">(</span><span class="br0">)</span> <span class="sy2">+</span> newoff <span class="sy2">+</span> off</span></span>.</div>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  off
+<td> off
 </td>
 <td> -
 </td>
-<td>  relative position to set the next pointer(s) to
+<td> relative position to set the next pointer(s) to
 </td></tr>
 <tr class="t-par">
-<td>  dir
+<td> dir
 </td>
 <td> -
 </td>
-<td>  defines base position to apply the relative offset to. It can be one of the following constants:
+<td> defines base position to apply the relative offset to. It can be one of the following constants:
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Constant
+<td> Constant
 </td>
-<td>  Explanation
+<td> Explanation
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="../ios_base/seekdir.html" title="cpp/io/ios base/seekdir"><tt>beg</tt></a>
+<td> <a href="../ios_base/seekdir.html" title="cpp/io/ios base/seekdir"><tt>beg</tt></a>
 </td>
-<td>  the beginning of a stream
+<td> the beginning of a stream
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="../ios_base/seekdir.html" title="cpp/io/ios base/seekdir"><tt>end</tt></a>
+<td> <a href="../ios_base/seekdir.html" title="cpp/io/ios base/seekdir"><tt>end</tt></a>
 </td>
-<td>  the ending of a stream
+<td> the ending of a stream
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="../ios_base/seekdir.html" title="cpp/io/ios base/seekdir"><tt>cur</tt></a>
+<td> <a href="../ios_base/seekdir.html" title="cpp/io/ios base/seekdir"><tt>cur</tt></a>
 </td>
-<td>  the current position of stream position indicator
+<td> the current position of stream position indicator
 </td></tr>
 
 </table>
 </td></tr>
 <tr class="t-par">
-<td>  which
+<td> which
 </td>
 <td> -
 </td>
-<td>  defines whether the input sequences, the output sequence, or both are affected. It can be one or a combination of the following constants:
+<td> defines whether the input sequences, the output sequence, or both are affected. It can be one or a combination of the following constants:
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
@@ -302,7 +325,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table>
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
-<p><span class="t-c"><span class="mw-geshi cpp source-cpp">pos_type<span class="br0">(</span>newoff<span class="br0">)</span></span></span> on success, <span class="t-c"><span class="mw-geshi cpp source-cpp">pos_type<span class="br0">(</span>off_type<span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span></span></span> on failure and if pos_type cannot represent the resulting stream position.
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp">pos_type<span class="br0">(</span>newoff<span class="br0">)</span></span></span> on success, <span class="t-c"><span class="mw-geshi cpp source-cpp">pos_type<span class="br0">(</span>off_type<span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span></span></span> on failure or if <code>pos_type</code> cannot represent the resulting stream position.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -311,32 +334,33 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../basic_stringstream.html"><span class="kw1734">std::<span class="me2">stringstream</span></span></a> ss<span class="br0">(</span><span class="st0">"123"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// in/out</span>
-    <a href="../cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"put pos = "</span> <span class="sy1">&lt;&lt;</span> ss.<span class="me1">tellp</span><span class="br0">(</span><span class="br0">)</span>
+    <a href="../basic_stringstream.html"><span class="kw1754">std::<span class="me2">stringstream</span></span></a> ss<span class="br0">(</span><span class="st0">"123"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// in/out</span>
+    <a href="../cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"put pos = "</span> <span class="sy1">&lt;&lt;</span> ss.<span class="me1">tellp</span><span class="br0">(</span><span class="br0">)</span>
               <span class="sy1">&lt;&lt;</span> <span class="st0">" get pos = "</span> <span class="sy1">&lt;&lt;</span> ss.<span class="me1">tellg</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
  
     <span class="co1">// absolute positioning both pointers</span>
-    ss.<span class="me1">rdbuf</span><span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>pubseekoff<span class="br0">(</span><span class="nu0">1</span>, <a href="../ios_base/seekdir.html"><span class="kw1700">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">beg</span></span></a><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// move both 1 forward</span>
-    <a href="../cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"put pos = "</span> <span class="sy1">&lt;&lt;</span> ss.<span class="me1">tellp</span><span class="br0">(</span><span class="br0">)</span>
+    ss.<span class="me1">rdbuf</span><span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>pubseekoff<span class="br0">(</span><span class="nu0">1</span>, <a href="../ios_base/seekdir.html"><span class="kw1720">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">beg</span></span></a><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// move both 1 forward</span>
+    <a href="../cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"put pos = "</span> <span class="sy1">&lt;&lt;</span> ss.<span class="me1">tellp</span><span class="br0">(</span><span class="br0">)</span>
               <span class="sy1">&lt;&lt;</span> <span class="st0">" get pos = "</span> <span class="sy1">&lt;&lt;</span> ss.<span class="me1">tellg</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
  
     <span class="co1">// try to move both pointers 1 forward from current position</span>
-    <span class="kw1">if</span><span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span> <span class="sy1">==</span> ss.<span class="me1">rdbuf</span><span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>pubseekoff<span class="br0">(</span><span class="nu0">1</span>, <a href="../ios_base/seekdir.html"><span class="kw1701">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">cur</span></span></a><span class="br0">)</span><span class="br0">)</span>
-        <a href="../cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"moving both pointers from current position failed<span class="es1">\n</span>"</span><span class="sy4">;</span>
-    <a href="../cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"put pos = "</span> <span class="sy1">&lt;&lt;</span> ss.<span class="me1">tellp</span><span class="br0">(</span><span class="br0">)</span>
+    <span class="kw1">if</span> <span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span> <span class="sy1">==</span> ss.<span class="me1">rdbuf</span><span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>pubseekoff<span class="br0">(</span><span class="nu0">1</span>, <a href="../ios_base/seekdir.html"><span class="kw1721">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">cur</span></span></a><span class="br0">)</span><span class="br0">)</span>
+        <a href="../cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"moving both pointers from current position failed<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    <a href="../cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"put pos = "</span> <span class="sy1">&lt;&lt;</span> ss.<span class="me1">tellp</span><span class="br0">(</span><span class="br0">)</span>
               <span class="sy1">&lt;&lt;</span> <span class="st0">" get pos = "</span> <span class="sy1">&lt;&lt;</span> ss.<span class="me1">tellg</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
  
     <span class="co1">// move the write pointer 1 forward, but not the read pointer</span>
     <span class="co1">// can also be called as ss.seekp(1, std::ios_base::cur);</span>
-    ss.<span class="me1">rdbuf</span><span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>pubseekoff<span class="br0">(</span><span class="nu0">1</span>, <a href="../ios_base/seekdir.html"><span class="kw1701">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">cur</span></span></a>, <a href="../ios_base/openmode.html"><span class="kw1672">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">out</span></span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"put pos = "</span> <span class="sy1">&lt;&lt;</span> ss.<span class="me1">tellp</span><span class="br0">(</span><span class="br0">)</span>
+    ss.<span class="me1">rdbuf</span><span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>pubseekoff<span class="br0">(</span><span class="nu0">1</span>, <a href="../ios_base/seekdir.html"><span class="kw1721">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">cur</span></span></a>, <a href="../ios_base/openmode.html"><span class="kw1692">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">out</span></span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"put pos = "</span> <span class="sy1">&lt;&lt;</span> ss.<span class="me1">tellp</span><span class="br0">(</span><span class="br0">)</span>
               <span class="sy1">&lt;&lt;</span> <span class="st0">" get pos = "</span> <span class="sy1">&lt;&lt;</span> ss.<span class="me1">tellg</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
  
     ss <span class="sy1">&lt;&lt;</span> <span class="st0">'a'</span><span class="sy4">;</span> <span class="co1">// write at put position</span>
-    <a href="../cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Wrote 'a' at put position, the buffer is now "</span> <span class="sy1">&lt;&lt;</span> ss.<span class="me1">str</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <a href="../cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Wrote 'a' at put position, the buffer is now "</span> <span class="sy1">&lt;&lt;</span> ss.<span class="me1">str</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+ 
     <span class="kw4">char</span> ch<span class="sy4">;</span>
     ss <span class="sy1">&gt;&gt;</span> ch<span class="sy4">;</span>
-    <a href="../cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"reading at get position gives '"</span> <span class="sy1">&lt;&lt;</span> ch <span class="sy1">&lt;&lt;</span> <span class="st0">"'<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    <a href="../cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"reading at get position gives '"</span> <span class="sy1">&lt;&lt;</span> ch <span class="sy1">&lt;&lt;</span> <span class="st0">"'<span class="es1">\n</span>"</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -348,40 +372,103 @@ put pos = 2 get pos = 1
 Wrote 'a' at put position, the buffer is now 12a
 reading at get position gives '2'</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th>DR
+</th>
+<th>Applied to
+</th>
+<th>Behavior as published
+</th>
+<th>Correct behavior
+</th></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue55">LWG 55</a>
+</td>
+<td>C++98
+</td>
+<td><code>seekoff</code> returned an undefined<br>invalid stream position on failure
+</td>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">pos_type<span class="br0">(</span>off_type<span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span></span></span><br>is returned on failure
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue375">LWG 375</a>
+</td>
+<td>C++98
+</td>
+<td>static constant members of <span class="t-lc"><a href="../ios_base.html" title="cpp/io/ios base">std::ios_base</a></span> were<br>misspecified as members of <span class="t-lc"><a href="../basic_ios.html" title="cpp/io/basic ios">std::basic_ios</a></span>
+</td>
+<td>corrected
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue432">LWG 432</a>
+</td>
+<td>C++98
+</td>
+<td><code>seekoff</code> might succeed even if <span class="t-c"><span class="mw-geshi cpp source-cpp">newoff <span class="sy2">+</span> off</span></span><br>would point past the last initialized character
+</td>
+<td><code>seekoff</code> fails<br>in this case
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue453">LWG 453</a>
+</td>
+<td>C++98
+</td>
+<td>repositioning null <span class="t-c"><span class="mw-geshi cpp source-cpp">gptr<span class="br0">(</span><span class="br0">)</span></span></span> and/or null <span class="t-c"><span class="mw-geshi cpp source-cpp">pptr<span class="br0">(</span><span class="br0">)</span></span></span><br>with a new offset of zero always failed
+</td>
+<td>it can succeed in this case
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue563">LWG 563</a>
+</td>
+<td>C++98
+</td>
+<td>the end pointer could not be used to calculate <span class="t-c"><span class="mw-geshi cpp source-cpp">newoff</span></span> because it could<br>not be precisely controlled by the program after resolving <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue432">LWG issue 432</a>
+</td>
+<td>use the high watermark<br>pointer instead
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../basic_streambuf/pubseekpos.html" title="cpp/io/basic streambuf/pubseekpos"> <span class="t-lines"><span>seekpos</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../basic_streambuf/pubseekoff.html" title="cpp/io/basic streambuf/pubseekoff"> <span class="t-lines"><span>pubseekoff</span></span></a></div></div>
 </td>
-<td>   repositions the next pointer in the input sequence, output sequence, or both using absolute addressing <br> <span class="t-mark">(virtual protected member function of <code>std::basic_streambuf&lt;CharT,Traits&gt;</code>)</span> </td></tr>
+<td>  invokes <span class="t-c"><span class="mw-geshi cpp source-cpp">seekoff<span class="br0">(</span><span class="br0">)</span></span></span> <br> <span class="t-mark">(public member function of <code>std::basic_streambuf&lt;CharT,Traits&gt;</code>)</span> </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../basic_streambuf/pubseekoff.html" title="cpp/io/basic streambuf/pubseekoff"> <span class="t-lines"><span>seekoff</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="seekpos.html" title="cpp/io/basic stringbuf/seekpos"> <span class="t-lines"><span>seekpos</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
 </td>
-<td>   repositions the next pointer in the input sequence, output sequence, or both, using relative addressing <br> <span class="t-mark">(virtual protected member function of <code>std::basic_streambuf&lt;CharT,Traits&gt;</code>)</span> </td></tr>
+<td>  repositions the next pointer in the input sequence, output sequence, or both using absolute addressing <br> <span class="t-mark">(virtual protected member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../basic_filebuf/seekoff.html" title="cpp/io/basic filebuf/seekoff"> <span class="t-lines"><span>seekoff</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
 </td>
-<td>   repositions the file position, using relative addressing <br> <span class="t-mark">(virtual protected member function of <code>std::basic_filebuf&lt;CharT,Traits&gt;</code>)</span> </td></tr>
+<td>  repositions the file position, using relative addressing <br> <span class="t-mark">(virtual protected member function of <code>std::basic_filebuf&lt;CharT,Traits&gt;</code>)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../strstreambuf/seekoff.html" title="cpp/io/strstreambuf/seekoff"> <span class="t-lines"><span>seekoff</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
+</td>
+<td>  repositions the next pointer in the input sequence, output sequence, or both, using relative addressing <br> <span class="t-mark">(virtual protected member function of <code>std::strstreambuf</code>)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4561/1000000
-Preprocessor generated node count: 9419/1000000
-Post‐expand include size: 115358/2097152 bytes
-Template argument size: 26900/2097152 bytes
+Preprocessor visited node count: 6126/1000000
+Preprocessor generated node count: 11638/1000000
+Post‐expand include size: 148523/4194304 bytes
+Template argument size: 34237/4194304 bytes
 Highest expansion depth: 32/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:12871-0!*!0!!en!*!* and timestamp 20190601211621 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:12871-0!*!0!!en!*!* and timestamp 20241004084608 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/io/basic_stringbuf/seekoff&amp;oldid=80458">https://en.cppreference.com/mwiki/index.php?title=cpp/io/basic_stringbuf/seekoff&amp;oldid=80458</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/io/basic_stringbuf/seekoff&amp;oldid=148675">https://en.cppreference.com/mwiki/index.php?title=cpp/io/basic_stringbuf/seekoff&amp;oldid=148675</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -394,21 +481,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/io/basic_stringbuf/seekoff">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 28 February 2023, at 01:45.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../../common/skin_scripts.js"></script>
+<script src="../../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 1.963 secs. -->
+<script src="../../.././common/site_scripts.js"></script>
+<!-- Served in 3.290 secs. -->
 	</body>
-<!-- Cached 20190601211621 -->
+<!-- Cached 20241004084608 -->
 </html>

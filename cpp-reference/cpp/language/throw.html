@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="client-nojs">
 <head>
-<title>throw expression - cppreference.com</title>
+<title>Throwing exceptions - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../common/favicon.ico">
-<link rel="stylesheet" href="../../common/ext.css">
+<link rel="shortcut icon" href="../.././common/favicon.ico">
+<link rel="stylesheet" href="../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../common/site_modules.css">
+<link rel="stylesheet" href="../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../common/startup_scripts.js"></script>
+<script src="../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/throw","wgTitle":"cpp/language/throw","wgCurRevisionId":106483,"wgArticleId":714,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed CWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/throw","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/throw","wgTitle":"cpp/language/throw","wgCurRevisionId":176676,"wgArticleId":714,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/throw","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -108,7 +108,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading">throw expression</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading">Throwing exceptions</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -119,41 +127,331 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../language.html" title="cpp/language">language</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../language.html" title="cpp/language"> C++ language</a></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="exceptions.html" title="cpp/language/exceptions"> Exceptions</a><div class="t-navbar-menu"><div><div style="display:inline-block">
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../language.html" title="cpp/language">C++ language</a><div class="t-navbar-menu"><div><div style="display:inline-block">
 <div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <strong class="selflink"> throw-expression</strong></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="function-try-block.html" title="cpp/language/function-try-block"> function-try-block</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="try_catch.html" title="cpp/language/try catch"> try/catch block</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="noexcept_spec.html" title="cpp/language/noexcept spec"> noexcept specifier</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="noexcept.html" title="cpp/language/noexcept"> noexcept operator</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="except_spec.html" title="cpp/language/except spec"> Dynamic exception specification</a><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
+<tr class="t-nv-h1"><td colspan="5">General topics</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="../preprocessor.html" title="cpp/preprocessor">Preprocessor</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../comments.html" title="cpp/comment">Comments</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="../keywords.html" title="cpp/keyword">Keywords</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="escape.html" title="cpp/language/escape">Escape sequences</a></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="statements.html" title="cpp/language/statements">Flow control</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Conditional execution statements</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="if.html" title="cpp/language/if"><tt>if</tt></a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="switch.html" title="cpp/language/switch"><tt>switch</tt></a></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Iteration statements (loops)</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="for.html" title="cpp/language/for"><tt>for</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="range-for.html" title="cpp/language/range-for">range-<code>for</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="while.html" title="cpp/language/while"><tt>while</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="do.html" title="cpp/language/do"><code>do-while</code></a></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Jump statements</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="continue.html" title="cpp/language/continue"><tt>continue</tt></a> - <a href="break.html" title="cpp/language/break"><tt>break</tt></a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="goto.html" title="cpp/language/goto"><tt>goto</tt></a> - <a href="return.html" title="cpp/language/return"><tt>return</tt></a></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="functions.html" title="cpp/language/functions">Functions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="function.html" title="cpp/language/function">Function declaration</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="lambda.html" title="cpp/language/lambda">Lambda function expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="inline.html" title="cpp/language/inline"><span class="mw-geshi cpp source-cpp"><span class="kw1">inline</span></span> specifier</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="except_spec.html" title="cpp/language/except spec">Dynamic exception specifications</a> <span class="t-mark">(<span title="deprecated in C++11">until C++17*</span>)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="noexcept_spec.html" title="cpp/language/noexcept spec"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span></span> specifier</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Exceptions</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><strong class="selflink"><span class="mw-geshi cpp source-cpp"><span class="kw1">throw</span></span>-expression</strong></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="try.html" title="cpp/language/try"><span class="mw-geshi cpp source-cpp"><span class="kw1">try</span></span> block</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="catch.html" title="cpp/language/catch">handler</a></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Namespaces</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="namespace.html" title="cpp/language/namespace">Namespace declaration</a><code>  </code></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="namespace_alias.html" title="cpp/language/namespace alias">Namespace aliases</a></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Types</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="types.html" title="cpp/language/types">Fundamental types</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="enum.html" title="cpp/language/enum">Enumeration types</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="function.html" title="cpp/language/function">Function types</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="class.html" title="cpp/language/class">Class/struct types</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="union.html" title="cpp/language/union">Union types</a></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Specifiers</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="cv.html" title="cpp/language/cv"><code>const</code>/<code>volatile</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="decltype.html" title="cpp/language/decltype"><tt>decltype</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="auto.html" title="cpp/language/auto"><tt>auto</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="constexpr.html" title="cpp/language/constexpr"><tt>constexpr</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="consteval.html" title="cpp/language/consteval"><tt>consteval</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="constinit.html" title="cpp/language/constinit"><tt>constinit</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+</table></div></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="storage_duration.html" title="cpp/language/storage duration">Storage duration specifiers</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="initialization.html" title="cpp/language/initialization">Initialization</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="default_initialization.html" title="cpp/language/default initialization">Default-initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="value_initialization.html" title="cpp/language/value initialization">Value-initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="zero_initialization.html" title="cpp/language/zero initialization">Zero-initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="copy_initialization.html" title="cpp/language/copy initialization">Copy-initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="direct_initialization.html" title="cpp/language/direct initialization">Direct-initialization</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="aggregate_initialization.html" title="cpp/language/aggregate initialization">Aggregate initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="list_initialization.html" title="cpp/language/list initialization">List-initialization</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><code>  </code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="constant_initialization.html" title="cpp/language/constant initialization">Constant initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="reference_initialization.html" title="cpp/language/reference initialization">Reference initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+</table></div>
+</div>
+<div style="display:inline-block">
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="expressions.html" title="cpp/language/expressions">Expressions</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="value_category.html" title="cpp/language/value category">Value categories</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="eval_order.html" title="cpp/language/eval order">Order of evaluation</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="operators.html" title="cpp/language/operators">Operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_precedence.html" title="cpp/language/operator precedence">Operator precedence</a></td></tr>
+</table></div></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_alternative.html" title="cpp/language/operator alternative">Alternative representations</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="expressions.html#Literals" title="cpp/language/expressions">Literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="bool_literal.html" title="cpp/language/bool literal">Boolean</a> - <a href="integer_literal.html" title="cpp/language/integer literal">Integer</a> - <a href="floating_literal.html" title="cpp/language/floating literal">Floating-point</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="character_literal.html" title="cpp/language/character literal">Character</a> - <a href="string_literal.html" title="cpp/language/string literal">String</a> - <a href="nullptr.html" title="cpp/language/nullptr"><tt>nullptr</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="user_literal.html" title="cpp/language/user literal">User-defined</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Utilities</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="attributes.html" title="cpp/language/attributes">Attributes</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Types</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="typedef.html" title="cpp/language/typedef"><code>typedef</code> declaration</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="type_alias.html" title="cpp/language/type alias">Type alias declaration</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Casts</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="implicit_cast.html" title="cpp/language/implicit conversion">Implicit conversions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="static_cast.html" title="cpp/language/static cast"><tt>static_cast</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="const_cast.html" title="cpp/language/const cast"><tt>const_cast</tt></a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="explicit_cast.html" title="cpp/language/explicit cast">Explicit conversions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="dynamic_cast.html" title="cpp/language/dynamic cast"><tt>dynamic_cast</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"><tt>reinterpret_cast</tt></a></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Memory allocation</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="new.html" title="cpp/language/new"><code>new</code> expression</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="delete.html" title="cpp/language/delete"><code>delete</code> expression</a></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="classes.html" title="cpp/language/classes">Classes</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="class.html" title="cpp/language/class">Class declaration</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="initializer_list.html" title="cpp/language/constructor">Constructors</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="this.html" title="cpp/language/this"><code>this</code> pointer</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="access.html" title="cpp/language/access">Access specifiers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="friend.html" title="cpp/language/friend"><span class="mw-geshi cpp source-cpp"><span class="kw1">friend</span></span> specifier</a></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Class-specific function properties</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="virtual.html" title="cpp/language/virtual">Virtual function</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="override.html" title="cpp/language/override"><span class="mw-geshi cpp source-cpp">override</span> specifier</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><code>  </code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="final.html" title="cpp/language/final"><span class="mw-geshi cpp source-cpp">final</span> specifier</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="explicit.html" title="cpp/language/explicit"><tt>explicit</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="static.html" title="cpp/language/static"><tt>static</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Special member functions</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="default_constructor.html" title="cpp/language/default constructor">Default constructor</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="copy_constructor.html" title="cpp/language/copy constructor">Copy constructor</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="move_constructor.html" title="cpp/language/move constructor">Move constructor</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="as_operator.html" title="cpp/language/as operator" class="mw-redirect">Copy assignment</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="move_operator.html" title="cpp/language/move operator" class="mw-redirect">Move assignment</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="destructor.html" title="cpp/language/destructor">Destructor</a></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="templates.html" title="cpp/language/templates">Templates</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="class_template.html" title="cpp/language/class template">Class template</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="function_template.html" title="cpp/language/function template">Function template</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="template_specialization.html" title="cpp/language/template specialization">Template specialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="parameter_pack.html" title="cpp/language/parameter pack">Parameter packs</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Miscellaneous</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="asm.html" title="cpp/language/asm">Inline assembly</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="history.html" title="cpp/language/history">History of C++</a></td></tr>
+</table></div></td></tr>
+</table></div>
+</div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="expressions.html" title="cpp/language/expressions"> Expressions</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5">General</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="value_category.html" title="cpp/language/value category">Value categories</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="eval_order.html" title="cpp/language/eval order">Order of evaluation</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="constant_expression.html" title="cpp/language/constant expression">Constant expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="expressions.html#Primary_expressions" title="cpp/language/expressions">Primary expressions</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="lambda.html" title="cpp/language/lambda">Lambda expressions</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="requires.html" title="cpp/language/requires">Requires expressions</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="pack_indexing.html#Pack_indexing_expression" title="cpp/language/pack indexing">Pack indexing expression</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="expressions.html#Potentially-evaluated_expressions" title="cpp/language/expressions">Potentially-evaluated expressions</a></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Literals</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="integer_literal.html" title="cpp/language/integer literal">Integer literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="floating_literal.html" title="cpp/language/floating literal">Floating-point literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="bool_literal.html" title="cpp/language/bool literal">Boolean literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="character_literal.html" title="cpp/language/character literal">Character literals</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="escape.html" title="cpp/language/escape">Escape sequences</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="string_literal.html" title="cpp/language/string literal">String literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="nullptr.html" title="cpp/language/nullptr">Null pointer literal</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="user_literal.html" title="cpp/language/user literal">User-defined literal</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Operators</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="operator_assignment.html" title="cpp/language/operator assignment">Assignment operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_incdec.html" title="cpp/language/operator incdec">Increment and decrement</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_arithmetic.html" title="cpp/language/operator arithmetic">Arithmetic operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_logical.html" title="cpp/language/operator logical">Logical operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_comparison.html" title="cpp/language/operator comparison">Comparison operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_member_access.html" title="cpp/language/operator member access">Member access operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_other.html" title="cpp/language/operator other">Other operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="new.html" title="cpp/language/new"><code>new</code>-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="delete.html" title="cpp/language/delete"><code>delete</code>-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><strong class="selflink"><code>throw</code>-expression</strong></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="alignof.html" title="cpp/language/alignof"><code>alignof</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="sizeof.html" title="cpp/language/sizeof"><code>sizeof</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="sizeof....html" title="cpp/language/sizeof..."><code>sizeof...</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="typeid.html" title="cpp/language/typeid"><code>typeid</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="noexcept.html" title="cpp/language/noexcept"><code>noexcept</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="fold.html" title="cpp/language/fold">Fold expressions</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_alternative.html" title="cpp/language/operator alternative">Alternative representations of operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_precedence.html" title="cpp/language/operator precedence">Precedence and associativity</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operators.html" title="cpp/language/operators">Operator overloading</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="default_comparisons.html" title="cpp/language/default comparisons">Default comparisons</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Conversions</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="implicit_cast.html" title="cpp/language/implicit conversion">Implicit conversions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="explicit_cast.html" title="cpp/language/explicit cast">Explicit conversions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="usual_arithmetic_conversions.html" title="cpp/language/usual arithmetic conversions">Usual arithmetic conversions</a>    </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cast_operator.html" title="cpp/language/cast operator">User-defined conversion</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="const_cast.html" title="cpp/language/const cast"><code>const_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="static_cast.html" title="cpp/language/static cast"><code>static_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="dynamic_cast.html" title="cpp/language/dynamic cast"><code>dynamic_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"><code>reinterpret_cast</code></a></td></tr>
+</table></div></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="exceptions.html" title="cpp/language/exceptions"> Exceptions</a><div class="t-navbar-menu"><div><div style="display:inline-block">
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="try.html" title="cpp/language/try"><span class="mw-geshi cpp source-cpp"><span class="kw1">try</span></span> block</a></td></tr>
+<tr class="t-nv"><td colspan="5"><strong class="selflink">Throwing exceptions</strong></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="catch.html" title="cpp/language/catch">Handling exceptions</a></td></tr>
+<tr class="t-nv"><td colspan="5">Exception specification</td></tr>
+<tr class="t-nv"><td colspan="5">    <a href="noexcept_spec.html" title="cpp/language/noexcept spec"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span></span> specification</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5">    <a href="except_spec.html" title="cpp/language/except spec">dynamic specification</a> <span class="t-mark">(<span title="deprecated in C++11">until C++17*</span>)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="noexcept.html" title="cpp/language/noexcept"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span></span> operator</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
-<p>Signals an erroneous condition and executes an error handler.
+<p>Throwing an <a href="exceptions.html" title="cpp/language/exceptions">exception</a> transfers control to a <a href="catch.html" title="cpp/language/catch">handler</a>.
+</p><p>An exception can be thrown from <a href="throw.html#throw_expressions"><span class="mw-geshi cpp source-cpp"><span class="kw1">throw</span></span> expressions</a>, the following contexts may also throw exceptions:
 </p>
-<h3><span class="mw-headline" id="Syntax">Syntax</span></h3>
+<ul><li> <a href="../memory/new/operator_new.html" title="cpp/memory/new/operator new">allocation functions</a>
+</li><li> <a href="dynamic_cast.html" title="cpp/language/dynamic cast"><code>dynamic_cast</code></a>
+</li><li> <a href="typeid.html" title="cpp/language/typeid"><code>typeid</code></a>
+</li><li> <a href="new.html" title="cpp/language/new"><span class="mw-geshi cpp source-cpp">new</span> expressions</a>
+</li><li> <a href="../standard_library.html" title="cpp/standard library">standard library</a> functions
+</li></ul>
+<h3><span class="mw-headline" id="Exception_object">Exception object</span></h3>
+<p>Throwing an exception initializes an object with dynamic <a href="storage_duration.html" title="cpp/language/storage duration">storage duration</a>, called the <i>exception object</i>.
+</p><p>If the type of the exception object would be one of the following types, the program is ill-formed:
+</p>
+<ul><li> an <a href="type-id.html#Incomplete_type" title="cpp/language/type">incomplete type</a>
+</li><li> an <a href="abstract_class.html" title="cpp/language/abstract class">abstract class type</a>
+</li><li> a pointer to an incomplete type other than (possibly cv-qualified) <span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span>
+</li></ul>
+<h4><span class="mw-headline" id="Constructing_and_destructing_exception_objects">Constructing and destructing exception objects</span></h4>
+<p>Given the type of the exception object as <code>T</code>:
+</p>
+<ul><li> Let <span class="t-c"><span class="mw-geshi cpp source-cpp">obj</span></span> be an lvalue of type <span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> T</span>, the <a href="copy_initialization.html" title="cpp/language/copy initialization">copy-initialization</a> of an object of type <code>T</code> from <span class="t-c"><span class="mw-geshi cpp source-cpp">obj</span></span> must be well-formed.
+</li><li> If <code>T</code> is a class type:
+</li></ul>
+<dl><dd><ul><li> The selected <a href="initializer_list.html" title="cpp/language/constructor">constructor</a> is <a href="definition.html#ODR-use" title="cpp/language/definition">odr-used</a>.
+</li><li> The <a href="destructor.html" title="cpp/language/destructor">destructor</a> of <code>T</code> is <a href="destructor.html#Potentially-invoked_constructor" title="cpp/language/destructor">potentially invoked</a>.
+</li></ul>
+</dd></dl>
+<p>The memory for the exception object is allocated in an unspecified way. The only guarantee is that the storage will never be allocated by global <a href="../memory/new/operator_new.html" title="cpp/memory/new/operator new">allocation functions</a>.
+</p><p>If a <a href="catch.html" title="cpp/language/catch">handler</a> exits by <a href="throw.html#throw_expressions">rethrowing</a>, control is passed to another handler for the same exception object. The exception object is not destructed in this case.
+</p>
+<table class="t-rev-begin">
+<tr class="t-rev t-until-cxx11"><td>
+<p>When the last remaining active handler for the exception exits by any means other than rethrowing, the exception object is destroyed and the implementation may deallocate the memory for the temporary object in an unspecified way.
+</p><p>The destruction occurs immediately after the destruction of the object declared in the “parameter list” in the handler.
+</p>
+</td>
+<td><span class="t-mark-rev t-until-cxx11">(until C++11)</span></td></tr>
+<tr class="t-rev t-since-cxx11"><td>
+<p>The points of potential destruction for the exception object are:
+</p>
+<ul><li> When an active handler for the exception exits by any means other than rethrowing, immediately after the destruction of the object (if any) declared in the “parameter list” in the handler.
+</li><li> When an object of type <span class="t-lc"><a href="../error/exception_ptr.html" title="cpp/error/exception ptr">std::exception_ptr</a></span> that refers to the exception object is destroyed, before the destructor of <span class="t-lc"><a href="../error/exception_ptr.html" title="cpp/error/exception ptr">std::exception_ptr</a></span> returns.
+</li></ul>
+<p>Among all points of potential destruction for the exception object, there is an unspecified last one where the exception object is destroyed. All other points <a href="multithread.html" title="cpp/language/multithread">happen before</a> that last one. The implementation may then deallocate the memory for the exception object in an unspecified way.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
+</table>
+<p><span id="throw_expressions"></span>
+</p>
+<h3><span class="mw-headline" id="throw_expressions"><span class="mw-geshi cpp source-cpp"><span class="kw1">throw</span></span> expressions</span></h3>
 <table class="t-sdsc-begin">
 
 <tr>
@@ -185,55 +483,88 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr></table>
-<h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
-<dl><dd><span style="font-size:0.7em; line-height:130%">See <a href="try_catch.html" title="cpp/language/try catch"> try-catch block</a> for more information about <i>try</i> and <i>catch</i> (exception handler) blocks</span> 
+<div class="t-li1"><span class="t-li">1)</span> Throws a new exception.</div>
+<div class="t-li1"><span class="t-li">2)</span> Rethrows the exception currently being handled.</div>
+<table class="t-par-begin">
+
+
+<tr class="t-par">
+<td> <span class="t-spar">expression</span>
+</td>
+<td> -
+</td>
+<td> the expression used to construct the exception object
+</td></tr></table>
+<p><br>
+When a new exception is thrown, its exception object is determined as follows:
+</p>
+<ol><li> The <a href="implicit_cast.html#Array-to-pointer_conversion" title="cpp/language/implicit conversion">array-to-pointer</a> and <a href="implicit_cast.html#Function-to-pointer_conversion" title="cpp/language/implicit conversion">function-to-pointer</a> standard conversions are performed on <span class="t-spar">expression</span> ﻿.
+</li><li> Let <span class="t-c"><span class="mw-geshi cpp source-cpp">ex</span></span> be the conversion result:
+</li></ol>
+<dl><dd><dl><dd><ul><li> The type of the exception object is determined by removing any top-level cv-qualifiers from the type of <span class="t-c"><span class="mw-geshi cpp source-cpp">ex</span></span>.
+</li><li> The exception object is <a href="copy_initialization.html" title="cpp/language/copy initialization">copy-initialized</a> from <span class="t-c"><span class="mw-geshi cpp source-cpp">ex</span></span>.
+</li></ul>
 </dd></dl>
-<div class="t-li1"><span class="t-li">1)</span> First, <a href="copy_initialization.html" title="cpp/language/copy initialization">copy-initializes</a> the <i>exception object</i> from <span class="t-spar">expression</span> (this may call the move constructor for rvalue expression, and the copy/move may be subject to <a href="copy_elision.html" title="cpp/language/copy elision">copy elision</a>), then transfers control to the  <a href="try_catch.html" title="cpp/language/try catch">exception handler</a> with the matching type whose compound statement or member initializer list was most recently entered and not exited by this thread of execution. <span class="t-rev-inl t-since-cxx14"><span> Even if copy initialization selects the move constructor, copy initialization from lvalue must be well-formed, and the destructor must be accessible</span> <span><span class="t-mark-rev t-since-cxx14">(since C++14)</span></span></span></div>
-<div class="t-li1"><span class="t-li">2)</span> Rethrows the currently handled exception. Abandons the execution of the current catch block and passes control to the next matching exception handler (but not to another catch clause after the same try block: its compound-statement is considered to have been 'exited'), reusing the existing exception object: no new objects are made. This form is only allowed when an exception is presently being handled (it calls <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> if used otherwise). The catch clause associated with a <a href="function-try-block.html" title="cpp/language/function-try-block">function-try-block</a> must exit via rethrowing if used on a constructor.</div>
-<p>See <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> and <span class="t-lc"><a href="../error/exception/unexpected.html" title="cpp/error/unexpected">std::unexpected</a></span> for the handling of errors that arise during exception handling.
+</dd></dl>
+<p>If a program attempts to rethrow an exception when no exception is presently being handled, <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> will be invoked. Otherwise, the exception is reactivated with the existing exception object (no new exception object is created), and the exception is no longer
+considered to be caught.
 </p>
-<h3><span class="mw-headline" id="The_exception_object">The exception object</span></h3>
-<p>The exception object is a temporary object in unspecified storage that is constructed by the <code>throw</code> expression. 
-</p><p>The type of the <i>exception object</i> is the static type of <span class="t-spar">expression</span> with top-level <a href="cv.html" title="cpp/language/cv">cv-qualifiers</a> removed. Array and function types are adjusted to pointer and pointer to function types, respectively. If the type of the exception object would be an <a href="incomplete_type.html" title="cpp/language/incomplete type" class="mw-redirect">incomplete type</a>, an <a href="abstract_class.html" title="cpp/language/abstract class">abstract class</a> type, or pointer to incomplete type other than pointer to (cv-qualified) void, the throw-expression is a compile-time error. If the type of <span class="t-spar">expression</span> is a class type, its copy/move constructor and destructor must be accessible even if <a href="copy_elision.html" title="cpp/language/copy elision">copy elision</a> takes place.
-</p><p>Unlike other temporary objects, the exception object is considered to be an lvalue argument when initializing the catch clause parameters, so it can be caught by lvalue reference, modified, and rethrown.
-</p><p>The exception object persists until the last catch clause exits other than by rethrowing (if not by rethrowing, it is destroyed immediately after the destruction of the catch clause's parameter), or until the last <span class="t-lc"><a href="../error/exception_ptr.html" title="cpp/error/exception ptr">std::exception_ptr</a></span> that references this object is destroyed (in which case the exception object is destroyed just before the destructor of <span class="t-lc"><a href="../error/exception_ptr.html" title="cpp/error/exception ptr">std::exception_ptr</a></span> returns.
-</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">try</span>
+<span class="br0">{</span>
+    <span class="co1">// throwing a new exception 123</span>
+    <span class="kw1">throw</span> <span class="nu0">123</span><span class="sy4">;</span>
+<span class="br0">}</span>
+<span class="kw1">catch</span> <span class="br0">(</span>...<span class="br0">)</span> <span class="co1">// catch all exceptions</span>
+<span class="br0">{</span>
+    <span class="co1">// respond (partially) to exception 123</span>
+    <span class="kw1">throw</span><span class="sy4">;</span> <span class="co1">// pass the exception to some other handler</span>
+<span class="br0">}</span></pre></div></div>
 <h3><span class="mw-headline" id="Stack_unwinding">Stack unwinding</span></h3>
-<p>Once the exception object is constructed, the control flow works backwards (up the call stack) until it reaches the start of a <a href="try_catch.html" title="cpp/language/try catch">try block</a>, at which point the parameters of all associated <code>catch</code> blocks are compared, in order of appearance, with the type of the exception object to find a match (see <a href="try_catch.html" title="cpp/language/try catch">try-catch</a> for details on this process). If no match is found, the control flow continues to unwind the stack until the next <code>try</code> block, and so on. If a match is found, the control flow jumps to the matching <code>catch</code> block.
-</p><p>As the control flow moves up the call stack, destructors are invoked for all objects with <a href="storage_duration.html" title="cpp/language/storage duration">automatic storage duration</a> constructed, but not yet destroyed, since the corresponding try-block was entered, in reverse order of completion of their constructors. <span class="t-rev-inl t-since-cxx14"><span> If an exception is thrown from a destructor of a local variable or of a temporary used in a <a href="return.html" title="cpp/language/return">return</a> statement, the destructor for the object returned from the function is also invoked.</span> <span><span class="t-mark-rev t-since-cxx14">(since C++14)</span></span></span>
-</p><p>If an exception is thrown from a constructor or (rare) from a destructor of an object (regardless of the object's storage duration), destructors are called for all fully-constructed non-static <span class="t-rev-inl t-until-cxx14"><span>non-variant </span> <span><span class="t-mark-rev t-until-cxx14">(until C++14)</span></span></span>members and base classes, in reverse order of completion of their constructors. <span class="t-rev-inl t-since-cxx14"><span> Variant members of union-like classes are only destroyed in the case of unwinding from constructor, and if the active member changed between initialization and destruction, the behavior is undefined.</span> <span><span class="t-mark-rev t-since-cxx14">(since C++14)</span></span></span>
+<p>Once the exception object is constructed, the control flow works backwards (up the call stack) until it reaches the start of a <a href="try.html" title="cpp/language/try"><span class="mw-geshi cpp source-cpp"><span class="kw1">try</span></span> block</a>, at which point the parameters of all associated handlers are compared, in order of appearance, with the type of the exception object to find a <a href="catch.html#Matching_exceptions" title="cpp/language/catch">match</a>. If no match is found, the control flow continues to unwind the stack until the next <span class="mw-geshi cpp source-cpp"><span class="kw1">try</span></span> block, and so on. If a match is found, the control flow jumps to the matching handler.
+</p><p>As the control flow moves up the call stack, destructors are invoked for all objects with <a href="storage_duration.html" title="cpp/language/storage duration">automatic storage duration</a> that are constructed, but not yet destroyed, since the corresponding <span class="mw-geshi cpp source-cpp"><span class="kw1">try</span></span> block was entered, in reverse order of completion of their constructors. If an exception is thrown from a destructor of a local variable or of a temporary used in a <a href="return.html" title="cpp/language/return">return</a> statement, the destructor for the object returned from the function is also invoked.
+</p><p>If an exception is thrown from a constructor or (rare) from a destructor of an object (regardless of the object's storage duration), destructors are called for all fully-constructed non-static non-variant members and base classes, in reverse order of completion of their constructors. Variant members of <a href="union.html#Union-like_classes" title="cpp/language/union">union-like classes</a> are only destroyed in the case of unwinding from constructor, and if the active member changed between initialization and destruction, the behavior is undefined.
 </p>
- <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx11"><td> If a delegating constructor exits with an exception after the non-delegating constructor successfully completed, the destructor for this object is called.</td>
+<table class="t-rev-begin">
+<tr class="t-rev t-since-cxx11"><td>
+<p>If a delegating constructor exits with an exception after the non-delegating constructor successfully completed, the destructor for this object is called.
+</p>
+</td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
 <p>If the exception is thrown from a constructor that is invoked by a <a href="new.html" title="cpp/language/new">new-expression</a>, the matching <a href="../memory/new/operator_delete.html" title="cpp/memory/new/operator delete">deallocation function</a> is called, if available.
 </p><p>This process is called <i>stack unwinding</i>.
-</p><p>If any function that is called directly by the stack unwinding mechanism, after initialization of the exception object and before the start of the exception handler, exits with an exception, <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> is called. Such functions include <a href="destructor.html" title="cpp/language/destructor">destructors</a> of objects with automatic storage duration whose scopes are exited, and the copy constructor of the exception object that is called (<a href="copy_elision.html" title="cpp/language/copy elision">if not elided</a>) to initialize catch-by-value arguments.
+</p><p>If any function that is called directly by the stack unwinding mechanism, after initialization of the exception object and before the start of the exception handler, exits with an exception, <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> is called. Such functions include <a href="destructor.html" title="cpp/language/destructor">destructors</a> of objects with automatic storage duration whose scopes are exited, and the copy constructor of the exception object that is called (if not <a href="copy_elision.html" title="cpp/language/copy elision">elided</a>) to initialize catch-by-value arguments.
 </p><p>If an exception is thrown and not caught, including exceptions that escape the initial function of <span class="t-lc"><a href="../thread/thread.html" title="cpp/thread/thread">std::thread</a></span>, the main function, and the constructor or destructor of any static or thread-local objects, then <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> is called. It is implementation-defined whether any stack unwinding takes place for uncaught exceptions.
 </p>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
 <p>When rethrowing exceptions, the second form must be used to avoid object slicing in the (typical) case where exception objects use inheritance:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">try</span> <span class="br0">{</span>
-    <a href="../string/basic_string.html"><span class="kw1227">std::<span class="me2">string</span></span></a><span class="br0">(</span><span class="st0">"abc"</span><span class="br0">)</span>.<span class="me1">substr</span><span class="br0">(</span><span class="nu0">10</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// throws std::length_error</span>
-<span class="br0">}</span> <span class="kw1">catch</span><span class="br0">(</span><span class="kw4">const</span> <a href="../error/exception.html"><span class="kw759">std::<span class="me2">exception</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span> <span class="br0">{</span>
-    <a href="../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> e.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">try</span>
+<span class="br0">{</span>
+    <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="br0">(</span><span class="st0">"abc"</span><span class="br0">)</span>.<span class="me1">substr</span><span class="br0">(</span><span class="nu0">10</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// throws std::out_of_range</span>
+<span class="br0">}</span>
+<span class="kw1">catch</span> <span class="br0">(</span><span class="kw4">const</span> <a href="../error/exception.html"><span class="kw768">std::<span class="me2">exception</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> e.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="co1">//  throw e; // copy-initializes a new exception object of type std::exception</span>
-    <span class="kw1">throw</span><span class="sy4">;</span>   <span class="co1">// rethrows the exception object of type std::length_error</span>
+    <span class="kw1">throw</span><span class="sy4">;</span>   <span class="co1">// rethrows the exception object of type std::out_of_range</span>
 <span class="br0">}</span></pre></div></div>
-<p>The throw-expression is classified as <a href="value_category.html" title="cpp/language/value category">prvalue expression</a> of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span>. Like any other expression, it may be a sub-expression in another expression, most commonly in the <a href="operator_other.html#Conditional_operator" title="cpp/language/operator other">conditional operator</a>:
+<p>The <span class="mw-geshi cpp source-cpp"><span class="kw1">throw</span></span>-expression is classified as <a href="value_category.html" title="cpp/language/value category">prvalue expression</a> of type <span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span>. Like any other expression, it may be a sub-expression in another expression, most commonly in the <a href="operator_other.html#Conditional_operator" title="cpp/language/operator other">conditional operator</a>:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">double</span> f<span class="br0">(</span><span class="kw4">double</span> d<span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">return</span> d <span class="sy1">&gt;</span> <span class="nu19">1e7</span> <span class="sy4">?</span> <span class="kw1">throw</span> <a href="../error/overflow_error.html"><span class="kw767">std::<span class="me2">overflow_error</span></span></a><span class="br0">(</span><span class="st0">"too big"</span><span class="br0">)</span> <span class="sy4">:</span> d<span class="sy4">;</span>
+    <span class="kw1">return</span> d <span class="sy1">&gt;</span> <span class="nu19">1e7</span> <span class="sy4">?</span> <span class="kw1">throw</span> <a href="../error/overflow_error.html"><span class="kw776">std::<span class="me2">overflow_error</span></span></a><span class="br0">(</span><span class="st0">"too big"</span><span class="br0">)</span> <span class="sy4">:</span> d<span class="sy4">;</span>
 <span class="br0">}</span>
-<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>  
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">try</span> <span class="br0">{</span>
-        <a href="../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> f<span class="br0">(</span><span class="nu19">1e10</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-    <span class="br0">}</span> <span class="kw1">catch</span> <span class="br0">(</span><span class="kw4">const</span> <a href="../error/overflow_error.html"><span class="kw767">std::<span class="me2">overflow_error</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span> <span class="br0">{</span>
-        <a href="../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> e.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <span class="kw1">try</span>
+    <span class="br0">{</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> f<span class="br0">(</span><span class="nu19">1e10</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+    <span class="kw1">catch</span> <span class="br0">(</span><span class="kw4">const</span> <a href="../error/overflow_error.html"><span class="kw776">std::<span class="me2">overflow_error</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span>
+    <span class="br0">{</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> e.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
     <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
 <h3><span class="mw-headline" id="Keywords">Keywords</span></h3>
@@ -244,34 +575,47 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;stdexcept&gt;</span>
  
-<span class="kw1">struct</span> A <span class="br0">{</span>
+<span class="kw1">struct</span> A
+<span class="br0">{</span>
     <span class="kw4">int</span> n<span class="sy4">;</span>
-    A<span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">0</span><span class="br0">)</span><span class="sy4">:</span> n<span class="br0">(</span>n<span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"A("</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">") constructed successfully<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span>
-    ~A<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"A("</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">") destroyed<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+    A<span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">0</span><span class="br0">)</span><span class="sy4">:</span> n<span class="br0">(</span>n<span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"A("</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">") constructed successfully<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span>
+    ~A<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"A("</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">") destroyed<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw4">int</span> foo<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">throw</span> <a href="../error/runtime_error.html"><span class="kw765">std::<span class="me2">runtime_error</span></span></a><span class="br0">(</span><span class="st0">"error"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">throw</span> <a href="../error/runtime_error.html"><span class="kw774">std::<span class="me2">runtime_error</span></span></a><span class="br0">(</span><span class="st0">"error"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
-<span class="kw1">struct</span> B <span class="br0">{</span>
+<span class="kw1">struct</span> B
+<span class="br0">{</span>
     A a1, a2, a3<span class="sy4">;</span>
-    B<span class="br0">(</span><span class="br0">)</span> <span class="kw1">try</span> <span class="sy4">:</span> a1<span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span>, a2<span class="br0">(</span>foo<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>, a3<span class="br0">(</span><span class="nu0">3</span><span class="br0">)</span> <span class="br0">{</span>
-        <a href="../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"B constructed successfully<span class="es1">\n</span>"</span><span class="sy4">;</span>
-    <span class="br0">}</span> <span class="kw1">catch</span><span class="br0">(</span>...<span class="br0">)</span> <span class="br0">{</span>
-    	<a href="../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"B::B() exiting with exception<span class="es1">\n</span>"</span><span class="sy4">;</span>
+ 
+    B<span class="br0">(</span><span class="br0">)</span> <span class="kw1">try</span> <span class="sy4">:</span> a1<span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span>, a2<span class="br0">(</span>foo<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>, a3<span class="br0">(</span><span class="nu0">3</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"B constructed successfully<span class="es1">\n</span>"</span><span class="sy4">;</span>
     <span class="br0">}</span>
-    ~B<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"B destroyed<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw1">catch</span><span class="br0">(</span>...<span class="br0">)</span>
+    <span class="br0">{</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"B::B() exiting with exception<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+ 
+    ~B<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"B destroyed<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
-<span class="kw1">struct</span> C <span class="sy4">:</span> A, B <span class="br0">{</span>
-    C<span class="br0">(</span><span class="br0">)</span> <span class="kw1">try</span> <span class="br0">{</span>
-        <a href="../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"C::C() completed successfully<span class="es1">\n</span>"</span><span class="sy4">;</span>
-    <span class="br0">}</span> <span class="kw1">catch</span><span class="br0">(</span>...<span class="br0">)</span> <span class="br0">{</span>
-        <a href="../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"C::C() exiting with exception<span class="es1">\n</span>"</span><span class="sy4">;</span>
+<span class="kw1">struct</span> C <span class="sy4">:</span> A, B
+<span class="br0">{</span>
+    C<span class="br0">(</span><span class="br0">)</span> <span class="kw1">try</span>
+    <span class="br0">{</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"C::C() completed successfully<span class="es1">\n</span>"</span><span class="sy4">;</span>
     <span class="br0">}</span>
-    ~C<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"C destroyed<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw1">catch</span><span class="br0">(</span>...<span class="br0">)</span>
+    <span class="br0">{</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"C::C() exiting with exception<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+ 
+    ~C<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"C destroyed<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw4">int</span> main <span class="br0">(</span><span class="br0">)</span> <span class="kw1">try</span>
@@ -282,8 +626,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="co1">// unwinding destroys the a1 member of B</span>
     <span class="co1">// unwinding destroys the A base subobject</span>
     C c<span class="sy4">;</span>
-<span class="br0">}</span> <span class="kw1">catch</span> <span class="br0">(</span><span class="kw4">const</span> <a href="../error/exception.html"><span class="kw759">std::<span class="me2">exception</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span> <span class="br0">{</span>
-    <a href="../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"main() failed to create C with: "</span> <span class="sy1">&lt;&lt;</span> e.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span>
+<span class="kw1">catch</span> <span class="br0">(</span><span class="kw4">const</span> <a href="../error/exception.html"><span class="kw768">std::<span class="me2">exception</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"main() failed to create C with: "</span> <span class="sy1">&lt;&lt;</span> e.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -300,62 +646,193 @@ main() failed to create C with: error</pre></div></div>
 </p>
 <table class="dsctable" style="font-size:0.8em">
 <tr>
-<th> DR
+<th>DR
 </th>
-<th> Applied to
+<th>Applied to
 </th>
-<th> Behavior as published
+<th>Behavior as published
 </th>
-<th> Correct behavior
+<th>Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.link/cwg1866">CWG 1866</a>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/499.html">CWG 499</a>
 </td>
-<td> C++14
+<td>C++98
 </td>
-<td> variant members were leaked on stack unwinding from constructor
+<td>an array with unknown bound could not be thrown because<br>its type is incomplete, but an exception object can be<br>created from the decayed pointer without any problem
 </td>
-<td> variant members destroyed
+<td>apply the type completion<br>requirement to the<br>exception object instead
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.link/cwg1863">CWG 1863</a>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/668.html">CWG 668</a>
 </td>
-<td> C++14
+<td>C++98
 </td>
-<td> copy constructor was not required for move-only exception objects when thrown, but copying allowed later
+<td><span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> was not called if an exception is thrown<br>from the destructor of a local non-automatic object
 </td>
-<td> copy constructor required
+<td>call <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span><br>in this case
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.link/cwg2176">CWG 2176</a>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1863.html">CWG 1863</a>
 </td>
-<td> C++14
+<td>C++11
 </td>
-<td> throw from a local variable dtor could skip return value destructor
+<td>copy constructor was not required for move-only<br>exception objects when thrown, but copying allowed later
 </td>
-<td> function return value added to unwinding
+<td>copy constructor required
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1866.html">CWG 1866</a>
+</td>
+<td>C++98
+</td>
+<td>variant members were leaked on stack unwinding from constructor
+</td>
+<td>variant members destroyed
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2176.html">CWG 2176</a>
+</td>
+<td>C++98
+</td>
+<td>throw from a local variable destructor<br>could skip return value destructor
+</td>
+<td>function return value<br>added to unwinding
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2699.html">CWG 2699</a>
+</td>
+<td>C++98
+</td>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">throw</span> <span class="st0">"EX"</span></span></span> would actually throw <span class="mw-geshi cpp source-cpp"><span class="kw4">char</span><span class="sy2">*</span></span> rather than <span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span></span>
+</td>
+<td>corrected
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2711.html">CWG 2711</a>
+</td>
+<td>C++98
+</td>
+<td>the source of the copy-initialization of<br>the exception object was not specified
+</td>
+<td>copy-initialized<br>from <span class="t-spar">expression</span>
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2775.html">CWG 2775</a>
+</td>
+<td>C++98
+</td>
+<td>the exception object copy-initialization requirement was unclear
+</td>
+<td>made clear
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2854.html">CWG 2854</a>
+</td>
+<td>C++98
+</td>
+<td>the storage duration of exception objects was unclear
+</td>
+<td>made clear
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://wg21.link/P1825R0">P1825R0</a>
+</td>
+<td>C++11
+</td>
+<td>implicit move from parameters was forbidden in <code>throw</code>
+</td>
+<td>allowed
 </td></tr></table>
-<h3><span class="mw-headline" id="See_also">See also</span></h3>
-<ul><li> <a href="try_catch.html" title="cpp/language/try catch"> try-catch block</a>
-</li><li> <a href="noexcept_spec.html" title="cpp/language/noexcept spec"> noexcept specifier</a>
-</li><li> <a href="except_spec.html" title="cpp/language/except spec"> exception specifications</a>
+<h3><span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-c++23">
+<ul><li> C++23 standard (ISO/IEC 14882:2024): 
 </li></ul>
+<dl><dd><ul><li> 7.6.18 Throwing an exception [expr.throw] 
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 14.2 Throwing an exception [except.throw] 
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c++20">
+<ul><li> C++20 standard (ISO/IEC 14882:2020): 
+</li></ul>
+<dl><dd><ul><li> 7.6.18 Throwing an exception [expr.throw] 
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 14.2 Throwing an exception [except.throw] 
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c++17">
+<ul><li> C++17 standard (ISO/IEC 14882:2017): 
+</li></ul>
+<dl><dd><ul><li> 8.17 Throwing an exception [expr.throw] 
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 18.1 Throwing an exception [except.throw] 
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c++14">
+<ul><li> C++14 standard (ISO/IEC 14882:2014): 
+</li></ul>
+<dl><dd><ul><li> 15.1 Throwing an exception [except.throw] 
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c++11">
+<ul><li> C++11 standard (ISO/IEC 14882:2011): 
+</li></ul>
+<dl><dd><ul><li> 15.1 Throwing an exception [except.throw] 
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c++03">
+<ul><li> C++03 standard (ISO/IEC 14882:2003): 
+</li></ul>
+<dl><dd><ul><li> 15.1 Throwing an exception [except.throw] 
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c++98">
+<ul><li> C++98 standard (ISO/IEC 14882:1998): 
+</li></ul>
+<dl><dd><ul><li> 15.1 Throwing an exception [except.throw] 
+</li></ul>
+</dd></dl>
+</div>
+<h3><span class="mw-headline" id="See_also">See also</span></h3>
+<ul><li> <a href="copy_elision.html" title="cpp/language/copy elision">copy elision</a>
+</li><li> <a href="try.html" title="cpp/language/try"><span class="mw-geshi cpp source-cpp"><span class="kw1">try</span></span> block</a>
+</li><li> <a href="catch.html" title="cpp/language/catch">handler</a>
+</li><li> <a href="noexcept_spec.html" title="cpp/language/noexcept spec"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span></span> specifier</a>
+</li><li> <a href="../error.html#Exception_handling" title="cpp/error">Exception handling</a>
+</li></ul>
+<table class="t-rev-begin">
+<tr class="t-rev t-until-cxx17"><td>
+<ul><li> <a href="except_spec.html" title="cpp/language/except spec">dynamic exception specifications</a>
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-until-cxx17">(until C++17)</span></td></tr>
+</table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 1673/1000000
-Preprocessor generated node count: 4819/1000000
-Post‐expand include size: 32345/2097152 bytes
-Template argument size: 9753/2097152 bytes
-Highest expansion depth: 15/40
+Preprocessor visited node count: 5003/1000000
+Preprocessor generated node count: 11377/1000000
+Post‐expand include size: 179800/4194304 bytes
+Template argument size: 27028/4194304 bytes
+Highest expansion depth: 16/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:714-0!*!0!!en!*!* and timestamp 20190507093907 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:714-0!*!0!!en!*!* and timestamp 20241003214312 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/throw&amp;oldid=106483">https://en.cppreference.com/mwiki/index.php?title=cpp/language/throw&amp;oldid=106483</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/throw&amp;oldid=176676">https://en.cppreference.com/mwiki/index.php?title=cpp/language/throw&amp;oldid=176676</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -368,21 +845,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/throw">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 3 October 2024, at 08:16.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../common/skin_scripts.js"></script>
+<script src="../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 1.037 secs. -->
+<script src="../.././common/site_scripts.js"></script>
+<!-- Served in 4.045 secs. -->
 	</body>
-<!-- Cached 20190507093908 -->
+<!-- Cached 20241003214313 -->
 </html>

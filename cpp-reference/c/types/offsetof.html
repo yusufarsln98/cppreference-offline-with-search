@@ -4,20 +4,20 @@
 <title>offsetof - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../common/favicon.ico">
-<link rel="stylesheet" href="../../common/ext.css">
+<link rel="shortcut icon" href="../.././common/favicon.ico">
+<link rel="stylesheet" href="../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../common/site_modules.css">
+<link rel="stylesheet" href="../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../common/startup_scripts.js"></script>
+<script src="../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/types/offsetof","wgTitle":"c/types/offsetof","wgCurRevisionId":96811,"wgArticleId":9390,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/types/offsetof","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/types/offsetof","wgTitle":"c/types/offsetof","wgCurRevisionId":170432,"wgArticleId":9390,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/types/offsetof","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -108,7 +108,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading">offsetof</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading">offsetof</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -120,29 +128,32 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../language.html" title="c/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="c/header"> Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../types.html" title="c/types"> Type support</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../program.html" title="c/program"> Program utilities</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../variadic.html" title="c/variadic"> Variadic function support</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="c/error"> Error handling</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../memory.html" title="c/memory"> Dynamic memory management</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../chrono.html" title="c/chrono"> Date and time utilities</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../string.html" title="c/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="c/algorithm"> Algorithms</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="c/numeric"> Numerics</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../io.html" title="c/io"> Input/output support</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="c/locale"> Localization support</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="c/atomic"> Atomic operations</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="c/thread"> Thread support</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="c/experimental"> Technical Specifications</a> </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="c/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../language.html" title="c/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../header.html" title="c/header">Headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../types.html" title="c/types">Type support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../program.html" title="c/program">Program utilities</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../variadic.html" title="c/variadic">Variadic function support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../error.html" title="c/error">Error handling</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../memory.html" title="c/memory">Dynamic memory management</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../string.html" title="c/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="c/algorithm">Algorithms</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="c/numeric">Numerics</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../chrono.html" title="c/chrono">Date and time utilities</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../io.html" title="c/io">Input/output support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="c/locale">Localization support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="c/thread">Concurrency support</a> <span class="t-mark-rev t-since-c11">(C11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="c/experimental">Technical Specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../index.html" title="c/symbol index">Symbol index</a></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../types.html" title="c/types"> Type support</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="size_t.html" title="c/types/size t"><span class="t-lines"><span>size_t</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ptrdiff_t.html" title="c/types/ptrdiff t"><span class="t-lines"><span>ptrdiff_t</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="nullptr_t.html" title="c/types/nullptr t"><span class="t-lines"><span>nullptr_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="NULL.html" title="c/types/NULL"><span class="t-lines"><span>NULL</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="max_align_t.html" title="c/types/max align t"><span class="t-lines"><span>max_align_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="max_align_t.html" title="c/types/max align t"><span class="t-lines"><span>max_align_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>offsetof</span></span></strong></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="limits.html" title="c/types/limits"> Numeric limits</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="integer.html" title="c/types/integer"> Fixed width integer types</a> <span class="t-mark-rev t-since-c99">(C99)</span></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
@@ -158,8 +169,28 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>The macro <span class="t-lc"><strong class="selflink">offsetof</strong></span> expands to an <a href="../language/constant_expression.html#Integer_constant_expression" title="c/language/constant expression">integer constant expression</a> of type <span class="t-lc"><a href="size_t.html" title="c/types/size t">size_t</a></span>, the value of which is the offset, in bytes, from the beginning of an object of specified type to its specified member, including padding if any.
+<p>The macro <span class="t-lc"><strong class="selflink">offsetof</strong></span> expands to an <a href="../language/constant_expression.html#Integer_constant_expression" title="c/language/constant expression">integer constant expression</a> of type <span class="t-lc"><a href="size_t.html" title="c/types/size t">size_t</a></span>, the value of which is the offset, in bytes, from the beginning of an object of specified type to its specified subobject, including padding if any.
+</p><p>Given an object <code>o</code> of type <code>type</code> with static storage duration, <span class="t-c"><span class="mw-geshi c source-c"><span class="sy3">&amp;</span><span class="br0">(</span>o.<span class="me1">member</span><span class="br0">)</span></span></span> shall be an address constant expression and point to a subobject of <code>o</code>. Otherwise, the behavior is undefined.
 </p>
+<table class="t-rev-begin">
+<tr class="t-rev t-since-c23"><td>
+<p>If the type name specified in <code>type</code> contains a comma not between matching parentheses, the behavior is undefined.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
+</table>
+<h3><span class="mw-headline" id="Notes">Notes</span></h3>
+<p>If <code>offsetof</code> is applied to a bit-field member, the behavior is undefined, because the address of a bit-field cannot be taken.
+</p><p><code>member</code> is not restricted to a direct member. It can denote a subobject of a given member, such as an element of an array member.
+</p><p>Even though it is specified in C23 that specifying a new type containing an unparenthesized comma in <code>offsetof</code> is undefined behavior, such usage is generally not supported even in earlier modes: <span class="t-c"><span class="mw-geshi c source-c">offsetof<span class="br0">(</span><span class="kw1">struct</span> Foo <span class="br0">{</span> <span class="kw4">int</span> a, b<span class="sy4">;</span> <span class="br0">}</span>, a<span class="br0">)</span></span></span> generally fails to compile.
+</p>
+<table class="t-rev-begin">
+<tr class="t-rev t-since-c23"><td>
+<p><a href="../language/typeof_unqual.html" title="c/language/typeof"><tt>typeof</tt></a> can be used to avoid the bad effect of commas in the definition of a new type, e.g. <span class="t-c"><span class="mw-geshi c source-c">offsetof<span class="br0">(</span>typeof<span class="br0">(</span><span class="kw1">struct</span> <span class="br0">{</span> <span class="kw4">int</span> i, j<span class="sy4">;</span> <span class="br0">}</span><span class="br0">)</span>, i<span class="br0">)</span></span></span> is well-defined.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
+</table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
@@ -180,6 +211,28 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">the first element is at offset 0
 the double is at offset 8</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th>DR
+</th>
+<th>Applied to
+</th>
+<th>Behavior as published
+</th>
+<th>Correct behavior
+</th></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://www.open-std.org/jtc1/sc22/wg14/www/docs/n2396.htm#dr_496">DR 496</a>
+</td>
+<td>C89
+</td>
+<td>only structs and struct members were mentioned
+</td>
+<td>unions and other subobjects are also supported
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
@@ -188,23 +241,27 @@ the double is at offset 8</pre></div></div>
 </td>
 <td>   unsigned integer type returned by the <a href="../language/sizeof.html" title="c/language/sizeof"><tt>sizeof</tt></a> operator <br> <span class="t-mark">(typedef)</span> </td></tr>
 
+<tr class="t-dsc">
+<td colspan="2"> <div class="t-dsc-see"><span><a href="../../cpp/types/offsetof.html" title="cpp/types/offsetof">C++ documentation</a></span> for <span class="t-dsc-see-tt"><span>offsetof</span></span></div>
+</td></tr>
+
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 1017/1000000
-Preprocessor generated node count: 5761/1000000
-Post‐expand include size: 26651/2097152 bytes
-Template argument size: 4246/2097152 bytes
+Preprocessor visited node count: 1549/1000000
+Preprocessor generated node count: 7403/1000000
+Post‐expand include size: 33109/4194304 bytes
+Template argument size: 5859/4194304 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9390-0!*!0!!*!*!* and timestamp 20190111195602 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9390-0!*!0!!en!*!* and timestamp 20240801004047 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/types/offsetof&amp;oldid=96811">https://en.cppreference.com/mwiki/index.php?title=c/types/offsetof&amp;oldid=96811</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/types/offsetof&amp;oldid=170432">https://en.cppreference.com/mwiki/index.php?title=c/types/offsetof&amp;oldid=170432</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -217,21 +274,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/c/types/offsetof">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 26 March 2024, at 16:33.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../common/skin_scripts.js"></script>
+<script src="../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 0.293 secs. -->
+<script src="../.././common/site_scripts.js"></script>
+<!-- Served in 0.313 secs. -->
 	</body>
-<!-- Cached 20190111195602 -->
+<!-- Cached 20240801004047 -->
 </html>

@@ -4,20 +4,20 @@
 <title>std::mblen - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../../common/favicon.ico">
-<link rel="stylesheet" href="../../../common/ext.css">
+<link rel="shortcut icon" href="../../.././common/favicon.ico">
+<link rel="stylesheet" href="../../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../../common/site_modules.css">
+<link rel="stylesheet" href="../../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../../common/startup_scripts.js"></script>
+<script src="../../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/string/multibyte/mblen","wgTitle":"cpp/string/multibyte/mblen","wgCurRevisionId":97098,"wgArticleId":4582,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/string/multibyte/mblen","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/string/multibyte/mblen","wgTitle":"cpp/string/multibyte/mblen","wgCurRevisionId":153040,"wgArticleId":4582,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/string/multibyte/mblen","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -108,7 +108,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>mblen</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>mblen</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -119,39 +127,45 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../../cpp.html" title="cpp">cpp</a>‎ | <a href="../../string.html" title="cpp/string">string</a>‎ | <a href="../multibyte.html" title="cpp/string/multibyte">multibyte</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../string.html" title="cpp/string"> Strings library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5"> Null-terminated strings</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../byte.html" title="cpp/string/byte"> Byte strings</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../multibyte.html" title="cpp/string/multibyte"> Multibyte strings</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../wide.html" title="cpp/string/wide"> Wide strings</a> </td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Classes</td></tr>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../string.html" title="cpp/string">Strings library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../../string.html#Null-terminated_strings" title="cpp/string">Null-terminated strings</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../byte.html" title="cpp/string/byte">Byte strings</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../multibyte.html" title="cpp/string/multibyte">Multibyte strings</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../wide.html" title="cpp/string/wide">Wide strings</a></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Classes</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_string.html" title="cpp/string/basic string"><span class="t-lines"><span>basic_string</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_string_view.html" title="cpp/string/basic string view"><span class="t-lines"><span>basic_string_view</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../char_traits.html" title="cpp/string/char traits"><span class="t-lines"><span>char_traits</span></span></a></div></div></td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../multibyte.html" title="cpp/string/multibyte"> Null-terminated multibyte strings</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"> Wide/multibyte conversions</td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../multibyte.html" title="cpp/string/multibyte">Null-terminated multibyte strings</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5">Wide/multibyte conversions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbsinit.html" title="cpp/string/multibyte/mbsinit"><span class="t-lines"><span>mbsinit</span></span></a></div></div></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbtowc.html" title="cpp/string/multibyte/mbtowc"><span class="t-lines"><span>mbtowc</span></span></a></div></div></td></tr>
@@ -161,7 +175,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbsrtowcs.html" title="cpp/string/multibyte/mbsrtowcs"><span class="t-lines"><span>mbsrtowcs</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbrtoc8.html" title="cpp/string/multibyte/mbrtoc8"><span class="t-lines"><span>mbrtoc8</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbrtoc16.html" title="cpp/string/multibyte/mbrtoc16"><span class="t-lines"><span>mbrtoc16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbrtoc32.html" title="cpp/string/multibyte/mbrtoc32"><span class="t-lines"><span>mbrtoc32</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbrtoc32.html" title="cpp/string/multibyte/mbrtoc32"><span class="t-lines"><span>mbrtoc32</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span>    </span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>mblen</span></span></strong></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wctomb.html" title="cpp/string/multibyte/wctomb"><span class="t-lines"><span>wctomb</span></span></a></div></div></td></tr>
@@ -174,7 +188,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="c32rtomb.html" title="cpp/string/multibyte/c32rtomb"><span class="t-lines"><span>c32rtomb</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbrlen.html" title="cpp/string/multibyte/mbrlen"><span class="t-lines"><span>mbrlen</span></span></a></div></div></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Types</td></tr>
+<tr class="t-nv-h2"><td colspan="5">Types</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbstate_t.html" title="cpp/string/multibyte/mbstate t"><span class="t-lines"><span>mbstate_t</span></span></a></div></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <table class="t-dcl-begin"><tbody>
@@ -185,15 +199,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl">
-<td class="t-dcl-nopad"> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> mblen<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s, <a href="../../types/size_t.html"><span class="kw100">std::<span class="me2">size_t</span></span></a> n <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad"> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> mblen<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s, <a href="../../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Determines the size, in bytes, of the multibyte character whose first byte is pointed to by <code>s</code>. 
-</p><p>If <code>s</code> is a null pointer, resets the global conversion state and determines whether shift sequences are used.
-</p><p>This function is equivalent to the call <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="mbtowc.html"><span class="kw1159">std::<span class="me2">mbtowc</span></span></a><span class="br0">(</span><span class="br0">(</span><span class="kw4">wchar_t</span><span class="sy2">*</span><span class="br0">)</span><span class="nu0">0</span>, s, n<span class="br0">)</span></span></span>, except that conversion state of <span class="t-lc"><a href="mbtowc.html" title="cpp/string/multibyte/mbtowc">std::mbtowc</a></span> is unaffected.
+<p>Determines the size, in bytes, of the multibyte character whose first byte is pointed to by <span class="t-c"><span class="mw-geshi cpp source-cpp">s</span></span>.
+</p><p>If <span class="t-c"><span class="mw-geshi cpp source-cpp">s</span></span> is a null pointer, resets the global conversion state and determines whether shift sequences are used.
+</p><p>This function is equivalent to the call <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="mbtowc.html"><span class="kw1170">std::<span class="me2">mbtowc</span></span></a><span class="br0">(</span>nullptr, s, n<span class="br0">)</span></span></span>, except that conversion state of <span class="t-lc"><a href="mbtowc.html" title="cpp/string/multibyte/mbtowc">std::mbtowc</a></span> is unaffected.
 </p>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
 <p>Each call to <code>mblen</code> updates the internal global conversion state (a static object of type <span class="t-lc"><a href="mbstate_t.html" title="cpp/string/multibyte/mbstate t">std::mbstate_t</a></span>, only known to this function). If the multibyte encoding uses shift states, care must be taken to avoid backtracking or multiple scans. In any case, multiple threads should not call <code>mblen</code> without synchronization: <span class="t-lc"><a href="mbrlen.html" title="cpp/string/multibyte/mbrlen">std::mbrlen</a></span> may be used instead.
@@ -203,62 +217,70 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  s
+<td> s
 </td>
 <td> -
 </td>
-<td>  pointer to the multibyte character
+<td> pointer to the multibyte character
 </td></tr>
 <tr class="t-par">
-<td>  n
+<td> n
 </td>
 <td> -
 </td>
-<td>  limit on the number of bytes in s that can be examined
+<td> limit on the number of bytes in s that can be examined
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
-<p>If <code>s</code> is not a null pointer, returns the number of bytes that are contained in the multibyte character or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">-</span><span class="nu0">1</span></span></span> if the first bytes pointed to by <code>s</code> do not form a valid multibyte character or <span class="t-c"><span class="mw-geshi cpp source-cpp">​<span class="nu0">0</span>​</span></span> if <code>s</code> is pointing at the null charcter <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">'<span class="es5">\0</span>'</span></span></span>.
-</p><p>If <code>s</code> is a null pointer, resets its internal conversion state to represent the initial shift state and returns <span class="t-c"><span class="mw-geshi cpp source-cpp">​<span class="nu0">0</span>​</span></span> if the current multibyte encoding is not state-dependent (does not use shift sequences) or a non-zero value if the current multibyte encoding is state-dependent (uses shift sequences).
+<p>If <span class="t-c"><span class="mw-geshi cpp source-cpp">s</span></span> is not a null pointer, returns the number of bytes that are contained in the multibyte character or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">-</span><span class="nu0">1</span></span></span> if the first bytes pointed to by <span class="t-c"><span class="mw-geshi cpp source-cpp">s</span></span> do not form a valid multibyte character or <span class="t-c"><span class="mw-geshi cpp source-cpp">​<span class="nu0">0</span>​</span></span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">s</span></span> is pointing at the null character <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">'<span class="es5">\0</span>'</span></span></span>.
+</p><p>If <span class="t-c"><span class="mw-geshi cpp source-cpp">s</span></span> is a null pointer, resets its internal conversion state to represent the initial shift state and returns <span class="t-c"><span class="mw-geshi cpp source-cpp">​<span class="nu0">0</span>​</span></span> if the current multibyte encoding is not state-dependent (does not use shift sequences) or a non-zero value if the current multibyte encoding is state-dependent (uses shift sequences).
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;clocale&gt;</span>
-<span class="co2">#include &lt;string&gt;</span>
-<span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;cstdlib&gt;</span>
+<span class="co2">#include &lt;iomanip&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;stdexcept&gt;</span>
+<span class="co2">#include &lt;string_view&gt;</span>
  
 <span class="co1">// the number of characters in a multibyte string is the sum of mblen()'s</span>
-<span class="co1">// note: the simpler approach is std::mbstowcs(NULL, s.c_str(), s.size())</span>
-<a href="../../types/size_t.html"><span class="kw100">std::<span class="me2">size_t</span></span></a> strlen_mb<span class="br0">(</span><span class="kw4">const</span> <a href="../basic_string.html"><span class="kw1226">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> s<span class="br0">)</span>
+<span class="co1">// note: the simpler approach is std::mbstowcs(nullptr, s.c_str(), s.size())</span>
+<a href="../../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> strlen_mb<span class="br0">(</span><span class="kw4">const</span> <a href="../basic_string_view.html"><span class="kw1255">std::<span class="me2">string_view</span></span></a> s<span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../types/size_t.html"><span class="kw100">std::<span class="me2">size_t</span></span></a> result <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="me2">mblen</span><span class="br0">(</span>nullptr, <span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// reset the conversion state</span>
+    <a href="../../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> result <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
     <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> ptr <span class="sy1">=</span> s.<span class="me1">data</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> end <span class="sy1">=</span> ptr <span class="sy2">+</span> s.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="me2">mblen</span><span class="br0">(</span><a href="../../types/NULL.html"><span class="kw103">NULL</span></a>, <span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// reset the conversion state</span>
-    <span class="kw1">while</span> <span class="br0">(</span>ptr <span class="sy1">&lt;</span> end<span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw4">int</span> next <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">mblen</span><span class="br0">(</span>ptr, end<span class="sy2">-</span>ptr<span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">if</span> <span class="br0">(</span>next <span class="sy1">==</span> <span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
-            <span class="kw1">throw</span> <a href="../../error/runtime_error.html"><span class="kw765">std::<span class="me2">runtime_error</span></span></a><span class="br0">(</span><span class="st0">"strlen_mb(): conversion error"</span><span class="br0">)</span><span class="sy4">;</span>
-        <span class="br0">}</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">const</span> end <span class="sy1">=</span> ptr <span class="sy2">+</span> s.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> ptr <span class="sy1">&lt;</span> end<span class="sy4">;</span> <span class="sy2">++</span>result<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw4">const</span> <span class="kw4">int</span> next <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">mblen</span><span class="br0">(</span>ptr, end <span class="sy2">-</span> ptr<span class="br0">)</span><span class="sy4">;</span>
+        <span class="kw1">if</span> <span class="br0">(</span>next <span class="sy1">==</span> <span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span>
+            <span class="kw1">throw</span> <a href="../../error/runtime_error.html"><span class="kw774">std::<span class="me2">runtime_error</span></span></a><span class="br0">(</span><span class="st0">"strlen_mb(): conversion error"</span><span class="br0">)</span><span class="sy4">;</span>
         ptr <span class="sy2">+</span><span class="sy1">=</span> next<span class="sy4">;</span>
-        <span class="sy2">++</span>result<span class="sy4">;</span>
     <span class="br0">}</span>
     <span class="kw1">return</span> result<span class="sy4">;</span>
+<span class="br0">}</span>
+ 
+<span class="kw4">void</span> dump_bytes<span class="br0">(</span><span class="kw4">const</span> <a href="../basic_string_view.html"><span class="kw1255">std::<span class="me2">string_view</span></span></a> str<span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../../io/cout.html"><span class="kw1774">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/hex.html"><span class="kw1798">std::<span class="me2">hex</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/uppercase.html"><span class="kw1790">std::<span class="me2">uppercase</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/setfill.html"><span class="kw1811">std::<span class="me2">setfill</span></span></a><span class="br0">(</span><span class="st0">'0'</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">char</span> c <span class="sy4">:</span> str<span class="br0">)</span>
+        <a href="../../io/cout.html"><span class="kw1774">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/setw.html"><span class="kw1813">std::<span class="me2">setw</span></span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">(</span>c<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1774">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/hex.html"><span class="kw1797">std::<span class="me2">dec</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="co1">// allow mblen() to work with UTF-8 multibyte encoding</span>
-    <a href="../../locale/setlocale.html"><span class="kw1986">std::<span class="me2">setlocale</span></span></a><span class="br0">(</span><a href="../../locale/LC_categories.html"><span class="kw1989">LC_ALL</span></a>, <span class="st0">"en_US.utf8"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../locale/setlocale.html"><span class="kw2006">std::<span class="me2">setlocale</span></span></a><span class="br0">(</span><a href="../../locale/LC_categories.html"><span class="kw2009">LC_ALL</span></a>, <span class="st0">"en_US.utf8"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="co1">// UTF-8 narrow multibyte encoding</span>
-    <a href="../basic_string.html"><span class="kw1226">std::<span class="me2">string</span></span></a> str <span class="sy1">=</span> u8<span class="st0">"z<span class="es3">\u00df</span><span class="es3">\u6c34</span><span class="es4">\U0001f34c</span>"</span><span class="sy4">;</span> <span class="co1">// or u8"zß水🍌"</span>
-    <a href="../../io/cout.html"><span class="kw1754">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> str <span class="sy1">&lt;&lt;</span> <span class="st0">" is "</span> <span class="sy1">&lt;&lt;</span> str.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" bytes, but only "</span>
-              <span class="sy1">&lt;&lt;</span> strlen_mb<span class="br0">(</span>str<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" characters<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    <span class="kw4">const</span> <a href="../basic_string_view.html"><span class="kw1255">std::<span class="me2">string_view</span></span></a> str <span class="sy1">=</span> <span class="st0">"z<span class="es3">\u00df</span><span class="es3">\u6c34</span><span class="es4">\U0001f34c</span>"</span><span class="sy4">;</span> <span class="co1">// or u8"zß水🍌"</span>
+    <a href="../../io/cout.html"><span class="kw1774">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/quoted.html"><span class="kw1818">std::<span class="me2">quoted</span></span></a><span class="br0">(</span>str<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" is "</span> <span class="sy1">&lt;&lt;</span> strlen_mb<span class="br0">(</span>str<span class="br0">)</span>
+              <span class="sy1">&lt;&lt;</span> <span class="st0">" characters, but as much as "</span> <span class="sy1">&lt;&lt;</span> str.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" bytes: "</span><span class="sy4">;</span>
+    dump_bytes<span class="br0">(</span>str<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
-<p>Output:
+<p>Possible output:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">zß水🍌 is 10 bytes, but only 4 characters</pre></div></div> 
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">"zß水🍌" is 4 characters, but as much as 10 bytes: 7A C3 9F E6 B0 B4 F0 9F 8D 8C</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
@@ -266,30 +288,34 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="mbtowc.html" title="cpp/string/multibyte/mbtowc"> <span class="t-lines"><span>mbtowc</span></span></a></div></div>
 </td>
-<td>   converts the next multibyte character to wide character <br> <span class="t-mark">(function)</span> </td></tr>
+<td>  converts the next multibyte character to wide character <br> <span class="t-mark">(function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="mbrlen.html" title="cpp/string/multibyte/mbrlen"> <span class="t-lines"><span>mbrlen</span></span></a></div></div>
 </td>
-<td>   returns the number of bytes in the next multibyte character, given state <br> <span class="t-mark">(function)</span> </td></tr>
+<td>  returns the number of bytes in the next multibyte character, given state <br> <span class="t-mark">(function)</span> </td></tr>
+
+<tr class="t-dsc">
+<td colspan="2"> <div class="t-dsc-see"><span><a href="../../../c/string/multibyte/mblen.html" title="c/string/multibyte/mblen">C documentation</a></span> for <span class="t-dsc-see-tt"><span>mblen</span></span></div>
+</td></tr>
 
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2616/1000000
-Preprocessor generated node count: 7015/1000000
-Post‐expand include size: 72927/2097152 bytes
-Template argument size: 14244/2097152 bytes
+Preprocessor visited node count: 2978/1000000
+Preprocessor generated node count: 7860/1000000
+Post‐expand include size: 78476/4194304 bytes
+Template argument size: 15783/4194304 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:4582-0!*!0!!en!*!* and timestamp 20190111190439 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:4582-0!*!0!!en!*!* and timestamp 20241004014534 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/multibyte/mblen&amp;oldid=97098">https://en.cppreference.com/mwiki/index.php?title=cpp/string/multibyte/mblen&amp;oldid=97098</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/multibyte/mblen&amp;oldid=153040">https://en.cppreference.com/mwiki/index.php?title=cpp/string/multibyte/mblen&amp;oldid=153040</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -302,21 +328,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/string/multibyte/mblen">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 9 June 2023, at 03:04.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../../common/skin_scripts.js"></script>
+<script src="../../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 1.022 secs. -->
+<script src="../../.././common/site_scripts.js"></script>
+<!-- Served in 1.511 secs. -->
 	</body>
-<!-- Cached 20190111190439 -->
+<!-- Cached 20241004014534 -->
 </html>

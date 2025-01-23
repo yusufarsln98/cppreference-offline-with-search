@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Standard library header &lt;mdspan&gt;Â (C++23) - cppreference.com</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="shortcut icon" href="../.././common/favicon.ico">
+<link rel="stylesheet" href="../.././common/ext.css">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="../.././common/site_modules.css">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="../.././common/startup_scripts.js"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/header/mdspan","wgTitle":"cpp/header/mdspan","wgCurRevisionId":173198,"wgArticleId":21130,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/header/mdspan","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-cpp {line-height: normal;}
+.source-cpp li, .source-cpp pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for cpp
+ * CSS class: source-cpp, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.cpp.source-cpp .de1, .cpp.source-cpp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.cpp.source-cpp  {font-family:monospace;}
+.cpp.source-cpp .imp {font-weight: bold; color: red;}
+.cpp.source-cpp li, .cpp.source-cpp .li1 {font-weight: normal; vertical-align:top;}
+.cpp.source-cpp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.cpp.source-cpp .li2 {font-weight: bold; vertical-align:top;}
+.cpp.source-cpp .kw1 {color: #0000dd;}
+.cpp.source-cpp .kw2 {color: #0000ff;}
+.cpp.source-cpp .kw3 {color: #0000dd;}
+.cpp.source-cpp .kw4 {color: #0000ff;}
+.cpp.source-cpp .co1 {color: #909090;}
+.cpp.source-cpp .co2 {color: #339900;}
+.cpp.source-cpp .coMULTI {color: #ff0000; font-style: italic;}
+.cpp.source-cpp .es0 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es1 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es2 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es3 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es4 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es5 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .br0 {color: #008000;}
+.cpp.source-cpp .sy0 {color: #008000;}
+.cpp.source-cpp .sy1 {color: #000080;}
+.cpp.source-cpp .sy2 {color: #000040;}
+.cpp.source-cpp .sy3 {color: #000040;}
+.cpp.source-cpp .sy4 {color: #008080;}
+.cpp.source-cpp .st0 {color: #008000;}
+.cpp.source-cpp .nu0 {color: #000080;}
+.cpp.source-cpp .nu6 {color: #000080;}
+.cpp.source-cpp .nu8 {color: #000080;}
+.cpp.source-cpp .nu12 {color: #000080;}
+.cpp.source-cpp .nu16 {color:#000080;}
+.cpp.source-cpp .nu17 {color:#000080;}
+.cpp.source-cpp .nu18 {color:#000080;}
+.cpp.source-cpp .nu19 {color:#000080;}
+.cpp.source-cpp .ln-xtra, .cpp.source-cpp li.ln-xtra, .cpp.source-cpp div.ln-xtra {background-color: #ffc;}
+.cpp.source-cpp span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_header_mdspan skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        <!-- /header -->
+        <!-- content -->
+<div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">Standard library header</span> &lt;mdspan&gt; <span class="t-mark-rev t-since-cxx23">(C++23)</span></h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../headers.html" title="cpp/header">header</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../headers.html" title="cpp/header">Standard library headers</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#Language_support_library" title="cpp/header">Language support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cfloat.html" title="cpp/header/cfloat"><tt>&lt;cfloat&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="climits.html" title="cpp/header/climits"><tt>&lt;climits&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="compare.html" title="cpp/header/compare"><tt>&lt;compare&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="coroutine.html" title="cpp/header/coroutine"><tt>&lt;coroutine&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="csetjmp.html" title="cpp/header/csetjmp"><tt>&lt;csetjmp&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="csignal.html" title="cpp/header/csignal"><tt>&lt;csignal&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cstdarg.html" title="cpp/header/cstdarg"><tt>&lt;cstdarg&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cstddef.html" title="cpp/header/cstddef"><tt>&lt;cstddef&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cstdint.html" title="cpp/header/cstdint"><tt>&lt;cstdint&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cstdlib.html" title="cpp/header/cstdlib"><tt>&lt;cstdlib&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="exception.html" title="cpp/header/exception"><tt>&lt;exception&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="initializer_list.html" title="cpp/header/initializer list"><tt>&lt;initializer_list&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><code>   </code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="limits.html" title="cpp/header/limits"><tt>&lt;limits&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="new.html" title="cpp/header/new"><tt>&lt;new&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="source_location.html" title="cpp/header/source location"><tt>&lt;source_location&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="stdfloat.html" title="cpp/header/stdfloat"><tt>&lt;stdfloat&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="typeinfo.html" title="cpp/header/typeinfo"><tt>&lt;typeinfo&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="version.html" title="cpp/header/version"><tt>&lt;version&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#Concepts_library" title="cpp/header">Concepts</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="concepts.html" title="cpp/header/concepts"><tt>&lt;concepts&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#Diagnostics_library" title="cpp/header">Diagnostics</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cassert.html" title="cpp/header/cassert"><tt>&lt;cassert&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cerrno.html" title="cpp/header/cerrno"><tt>&lt;cerrno&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="debugging.html" title="cpp/header/debugging"><tt>&lt;debugging&gt;</tt></a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="stacktrace.html" title="cpp/header/stacktrace"><tt>&lt;stacktrace&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="stdexcept.html" title="cpp/header/stdexcept"><tt>&lt;stdexcept&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="system_error.html" title="cpp/header/system error"><tt>&lt;system_error&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#Memory_management_library" title="cpp/header">Memory management</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="memory.html" title="cpp/header/memory"><tt>&lt;memory&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="memory_resource.html" title="cpp/header/memory resource"><tt>&lt;memory_resource&gt;</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="scoped_allocator.html" title="cpp/header/scoped allocator"><tt>&lt;scoped_allocator&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#Metaprogramming_library" title="cpp/header">Metaprogramming</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="type_traits.html" title="cpp/header/type traits"><tt>&lt;type_traits&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="ratio.html" title="cpp/header/ratio"><tt>&lt;ratio&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#General_utilities_library" title="cpp/header">General utilities</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="any.html" title="cpp/header/any"><tt>&lt;any&gt;</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="bitset.html" title="cpp/header/bitset"><tt>&lt;bitset&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="bit.html" title="cpp/header/bit"><tt>&lt;bit&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="charconv.html" title="cpp/header/charconv"><tt>&lt;charconv&gt;</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="expected.html" title="cpp/header/expected"><tt>&lt;expected&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="format.html" title="cpp/header/format"><tt>&lt;format&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="functional.html" title="cpp/header/functional"><tt>&lt;functional&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="optional.html" title="cpp/header/optional"><tt>&lt;optional&gt;</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="tuple.html" title="cpp/header/tuple"><tt>&lt;tuple&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="typeindex.html" title="cpp/header/typeindex"><tt>&lt;typeindex&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="utility.html" title="cpp/header/utility"><tt>&lt;utility&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="variant.html" title="cpp/header/variant"><tt>&lt;variant&gt;</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#Containers_library" title="cpp/header">Containers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="array.html" title="cpp/header/array"><tt>&lt;array&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="deque.html" title="cpp/header/deque"><tt>&lt;deque&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="flat_map.html" title="cpp/header/flat map"><tt>&lt;flat_map&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="flat_set.html" title="cpp/header/flat set"><tt>&lt;flat_set&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="forward_list.html" title="cpp/header/forward list"><tt>&lt;forward_list&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="inplace_vector.html" title="cpp/header/inplace vector"><tt>&lt;inplace_vector&gt;</tt></a> <span class="t-mark-rev t-since-cxx26">(C++26)</span><code>   </code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="list.html" title="cpp/header/list"><tt>&lt;list&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="map.html" title="cpp/header/map"><tt>&lt;map&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><strong class="selflink"><tt>&lt;mdspan&gt;</tt></strong> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="queue.html" title="cpp/header/queue"><tt>&lt;queue&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="set.html" title="cpp/header/set"><tt>&lt;set&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="span.html" title="cpp/header/span"><tt>&lt;span&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="stack.html" title="cpp/header/stack"><tt>&lt;stack&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="unordered_map.html" title="cpp/header/unordered map"><tt>&lt;unordered_map&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="unordered_set.html" title="cpp/header/unordered set"><tt>&lt;unordered_set&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="vector.html" title="cpp/header/vector"><tt>&lt;vector&gt;</tt></a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#Iterators_library" title="cpp/header">Iterators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="iterator.html" title="cpp/header/iterator"><tt>&lt;iterator&gt;</tt></a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#Ranges_library" title="cpp/header">Ranges</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="generator.html" title="cpp/header/generator"><tt>&lt;generator&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="ranges.html" title="cpp/header/ranges"><tt>&lt;ranges&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#Algorithms_library" title="cpp/header">Algorithms</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="algorithm.html" title="cpp/header/algorithm"><tt>&lt;algorithm&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="numeric.html" title="cpp/header/numeric"><tt>&lt;numeric&gt;</tt></a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#Strings_library" title="cpp/header">Strings</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cctype.html" title="cpp/header/cctype"><tt>&lt;cctype&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cstring.html" title="cpp/header/cstring"><tt>&lt;cstring&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cuchar.html" title="cpp/header/cuchar"><tt>&lt;cuchar&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cwchar.html" title="cpp/header/cwchar"><tt>&lt;cwchar&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cwctype.html" title="cpp/header/cwctype"><tt>&lt;cwctype&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="string_view.html" title="cpp/header/string view"><tt>&lt;string_view&gt;</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="string.html" title="cpp/header/string"><tt>&lt;string&gt;</tt></a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#Text_processing_library" title="cpp/header">Text processing</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="clocale.html" title="cpp/header/clocale"><tt>&lt;clocale&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="codecvt.html" title="cpp/header/codecvt"><tt>&lt;codecvt&gt;</tt></a> <span class="t-mark">(<span title="deprecated in C++17, removed in C++26">C++11/17/26*</span>)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="locale.html" title="cpp/header/locale"><tt>&lt;locale&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="regex.html" title="cpp/header/regex"><tt>&lt;regex&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="text_encoding.html" title="cpp/header/text encoding"><tt>&lt;text_encoding&gt;</tt></a> <span class="t-mark-rev t-since-cxx26">(C++26)</span><code>   </code></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#Numerics_library" title="cpp/header">Numerics</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cfenv.html" title="cpp/header/cfenv"><tt>&lt;cfenv&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cmath.html" title="cpp/header/cmath"><tt>&lt;cmath&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="complex.html" title="cpp/header/complex"><tt>&lt;complex&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="linalg.html" title="cpp/header/linalg"><tt>&lt;linalg&gt;</tt></a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="numbers.html" title="cpp/header/numbers"><tt>&lt;numbers&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="random.html" title="cpp/header/random"><tt>&lt;random&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="valarray.html" title="cpp/header/valarray"><tt>&lt;valarray&gt;</tt></a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#Time_library" title="cpp/header">Time</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="chrono.html" title="cpp/header/chrono"><tt>&lt;chrono&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="ctime.html" title="cpp/header/ctime"><tt>&lt;ctime&gt;</tt></a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#C_compatibility_headers" title="cpp/header">C compatibility</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="ccomplex.html" title="cpp/header/ccomplex"><tt>&lt;ccomplex&gt;</tt></a> <span class="t-mark">(<span title="deprecated in C++17, removed in C++20">C++11/17/20*</span>)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="ciso646.html" title="cpp/header/ciso646"><tt>&lt;ciso646&gt;</tt></a> <span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cstdalign.html" title="cpp/header/cstdalign"><tt>&lt;cstdalign&gt;</tt></a> <span class="t-mark">(<span title="deprecated in C++17, removed in C++20">C++11/17/20*</span>)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cstdbool.html" title="cpp/header/cstdbool"><tt>&lt;cstdbool&gt;</tt></a> <span class="t-mark">(<span title="deprecated in C++17, removed in C++20">C++11/17/20*</span>)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="ctgmath.html" title="cpp/header/ctgmath"><tt>&lt;ctgmath&gt;</tt></a> <span class="t-mark">(<span title="deprecated in C++17, removed in C++20">C++11/17/20*</span>)</span></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#Input.2Foutput_library" title="cpp/header">Input/output</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cinttypes.html" title="cpp/header/cinttypes"><tt>&lt;cinttypes&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cstdio.html" title="cpp/header/cstdio"><tt>&lt;cstdio&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="filesystem.html" title="cpp/header/filesystem"><tt>&lt;filesystem&gt;</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="fstream.html" title="cpp/header/fstream"><tt>&lt;fstream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="iomanip.html" title="cpp/header/iomanip"><tt>&lt;iomanip&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="iosfwd.html" title="cpp/header/iosfwd"><tt>&lt;iosfwd&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="iostream.html" title="cpp/header/iostream"><tt>&lt;iostream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="ios.html" title="cpp/header/ios"><tt>&lt;ios&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="istream.html" title="cpp/header/istream"><tt>&lt;istream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="ostream.html" title="cpp/header/ostream"><tt>&lt;ostream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="print.html" title="cpp/header/print"><tt>&lt;print&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="spanstream.html" title="cpp/header/spanstream"><tt>&lt;spanstream&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="sstream.html" title="cpp/header/sstream"><tt>&lt;sstream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="streambuf.html" title="cpp/header/streambuf"><tt>&lt;streambuf&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="strstream.html" title="cpp/header/strstream"><tt>&lt;strstream&gt;</tt></a> <span class="t-mark">(<span title="deprecated in C++98, removed in C++26">C++98/26*</span>)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="syncstream.html" title="cpp/header/syncstream"><tt>&lt;syncstream&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#Concurrency_support_library" title="cpp/header">Concurrency support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="atomic.html" title="cpp/header/atomic"><tt>&lt;atomic&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="barrier.html" title="cpp/header/barrier"><tt>&lt;barrier&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="condition_variable.html" title="cpp/header/condition variable"><tt>&lt;condition_variable&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="future.html" title="cpp/header/future"><tt>&lt;future&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="hazard_pointer.html" title="cpp/header/hazard pointer"><tt>&lt;hazard_pointer&gt;</tt></a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="latch.html" title="cpp/header/latch"><tt>&lt;latch&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="mutex.html" title="cpp/header/mutex"><tt>&lt;mutex&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="rcu.html" title="cpp/header/rcu"><tt>&lt;rcu&gt;</tt></a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="semaphore.html" title="cpp/header/semaphore"><tt>&lt;semaphore&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="shared_mutex.html" title="cpp/header/shared mutex"><tt>&lt;shared_mutex&gt;</tt></a> <span class="t-mark-rev t-since-cxx14">(C++14)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="stdatomic.h.html" title="cpp/header/stdatomic.h"><tt>&lt;stdatomic.h&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="stop_token.html" title="cpp/header/stop token"><tt>&lt;stop_token&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="thread.html" title="cpp/header/thread"><tt>&lt;thread&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../headers.html#Multi-purpose_headers" title="cpp/header">Execution support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="execution.html" title="cpp/header/execution"><tt>&lt;execution&gt;</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
+<p>This header is part of the <a href="../container.html" title="cpp/container">containers</a> library.
+</p>
+<table class="t-dsc-begin">
+
+<tr>
+<td colspan="2"> <h3> <span class="mw-headline" id="Classes">Classes</span></h3>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../container/mdspan.html" title="cpp/container/mdspan"> <span class="t-lines"><span>mdspan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div>
+</td>
+<td>  a multi-dimensional non-owning array view <br> <span class="t-mark">(class template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../container/mdspan/extents.html" title="cpp/container/mdspan/extents"> <span class="t-lines"><span>extents</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div>
+</td>
+<td>  a descriptor of a multidimensional index space of some rank <br> <span class="t-mark">(class template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../container/mdspan/layout_left.html" title="cpp/container/mdspan/layout left"> <span class="t-lines"><span>layout_left</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div>
+</td>
+<td>  column-major multidimensional array layout mapping policy; leftmost extent has stride <code>1</code> <br> <span class="t-mark">(class)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../container/mdspan/layout_right.html" title="cpp/container/mdspan/layout right"> <span class="t-lines"><span>layout_right</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div>
+</td>
+<td>  row-major multidimensional array layout mapping policy; rightmost extent has stride <code>1</code> <br> <span class="t-mark">(class)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../container/mdspan/layout_stride.html" title="cpp/container/mdspan/layout stride"> <span class="t-lines"><span>layout_stride</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div>
+</td>
+<td>  a layout mapping policy with user-defined strides <br> <span class="t-mark">(class)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../container/mdspan/layout_left_padded.html" title="cpp/container/mdspan/layout left padded"> <span class="t-lines"><span>layout_left_padded</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  column-major layout mapping policy with padding stride that can be greater than or equal to the leftmost extent <br> <span class="t-mark">(class template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../container/mdspan/layout_right_padded.html" title="cpp/container/mdspan/layout right padded"> <span class="t-lines"><span>layout_right_padded</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  row-major layout mapping policy with padding stride that can be greater than or equal to the rightmost extent <br> <span class="t-mark">(class template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../container/mdspan/default_accessor.html" title="cpp/container/mdspan/default accessor"> <span class="t-lines"><span>default_accessor</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div>
+</td>
+<td>  a type for indexed access to elements of <code>mdspan</code> <br> <span class="t-mark">(class template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../container/mdspan/strided_slice.html" title="cpp/container/mdspan/strided slice"> <span class="t-lines"><span>strided_slice</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  a slice specifier representing a set of regularly spaced indices as indicated by an offset, an extent, and a stride <br> <span class="t-mark">(class template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../container/mdspan/submdspan_mapping_result.html" title="cpp/container/mdspan/submdspan mapping result"> <span class="t-lines"><span>submdspan_mapping_result</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  a return type of the overloads of <code>submdspan_mapping</code> <br> <span class="t-mark">(class template)</span> </td></tr>
+
+
+<tr>
+<td colspan="2"> <h3> <span class="mw-headline" id="Alias_templates">Alias templates</span></h3>
+</td></tr>
+
+<tr class="t-dsc">
+<td> <div class="t-dsc-member-div"><div><a href="../container/mdspan/extents.html" title="cpp/container/mdspan/extents"> <span class="t-lines"><span>dextents</span><span>dims</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td> convenience alias template for an all-dynamic <span class="t-lc">std::extents</span><br><span class="t-mark">(alias template)</span></td></tr>
+
+
+<tr>
+<td colspan="2"> <h3> <span class="mw-headline" id="Functions">Functions</span></h3>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/mdspan/submdspan_extents&amp;action=edit&amp;redlink=1" class="new" title="cpp/container/mdspan/submdspan extents (page does not exist)"> <span class="t-lines"><span>submdspan_extents</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  creates new extents from the existing extents and slice specifiers <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/mdspan/submdspan&amp;action=edit&amp;redlink=1" class="new" title="cpp/container/mdspan/submdspan (page does not exist)"> <span class="t-lines"><span>submdspan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  returns a view of a subset of an existing <code>mdspan</code> <br> <span class="t-mark">(function template)</span> </td></tr>
+
+
+<tr>
+<td colspan="2"> <h3> <span class="mw-headline" id="Tags">Tags</span></h3>
+</td></tr>
+
+<tr class="t-dsc">
+<td> <div class="t-dsc-member-div"><div><a href="../container/mdspan/full_extent.html" title="cpp/container/mdspan/full extent"> <span class="t-lines"><span>full_extent</span><span>full_extent_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td> a slice specifier tag describing full range of indices in the specified extent<br><span class="t-mark">(tag)</span></td></tr>
+</table>
+<h3><span class="mw-headline" id="Synopsis">Synopsis</span></h3>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// all freestanding</span>
+<span class="kw1">namespace</span> std <span class="br0">{</span>
+  <span class="co1">// class template extents</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> IndexType, size_t... <span class="me1">Extents</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> extents<span class="sy4">;</span>
+ 
+  <span class="co1">// alias template dextents</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> IndexType, size_t Rank<span class="sy1">&gt;</span>
+  <span class="kw1">using</span> dextents <span class="sy1">=</span> <span class="coMULTI">/* see description */</span><span class="sy4">;</span>
+ 
+  <span class="co1">// alias template dims</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span>size_t Rank, <span class="kw1">class</span> IndexType <span class="sy1">=</span> size_t<span class="sy1">&gt;</span>
+  <span class="kw1">using</span> dims <span class="sy1">=</span> <span class="coMULTI">/* see description */</span><span class="sy4">;</span>
+ 
+  <span class="co1">// layout mapping</span>
+  <span class="kw1">struct</span> layout_left<span class="sy4">;</span>
+  <span class="kw1">struct</span> layout_right<span class="sy4">;</span>
+  <span class="kw1">struct</span> layout_stride<span class="sy4">;</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span>size_t PaddingValue <span class="sy1">=</span> dynamic_extent<span class="sy1">&gt;</span>
+  <span class="kw1">struct</span> layout_left_padded<span class="sy4">;</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span>size_t PaddingValue <span class="sy1">=</span> dynamic_extent<span class="sy1">&gt;</span>
+  <span class="kw1">struct</span> layout_right_padded<span class="sy4">;</span>
+ 
+  <span class="co1">// class template default_accessor</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> ElementType<span class="sy1">&gt;</span>
+  <span class="kw1">class</span> default_accessor<span class="sy4">;</span>
+ 
+  <span class="co1">// class template mdspan</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> ElementType,
+           <span class="kw1">class</span> Extents,
+           <span class="kw1">class</span> LayoutPolicy   <span class="sy1">=</span> layout_right,
+           <span class="kw1">class</span> AccessorPolicy <span class="sy1">=</span> default_accessor<span class="sy1">&lt;</span>ElementType<span class="sy1">&gt;&gt;</span>
+  <span class="kw1">class</span> mdspan<span class="sy4">;</span>
+ 
+  <span class="co1">// submdspan creation</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OffsetType, <span class="kw1">class</span> LengthType, <span class="kw1">class</span> StrideType<span class="sy1">&gt;</span>
+  <span class="kw1">struct</span> strided_slice<span class="sy4">;</span>
+ 
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> LayoutMapping<span class="sy1">&gt;</span>
+  <span class="kw1">struct</span> submdspan_mapping_result<span class="sy4">;</span>
+ 
+  <span class="kw1">struct</span> full_extent_t
+  <span class="br0">{</span>
+    <span class="kw1">explicit</span> full_extent_t<span class="br0">(</span><span class="br0">)</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+  <span class="kw1">inline</span> <span class="kw4">constexpr</span> full_extent_t full_extent<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+ 
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> IndexType, <span class="kw1">class</span>... <span class="me1">Extents</span>, <span class="kw1">class</span>... <span class="me1">SliceSpecifiers</span><span class="sy1">&gt;</span>
+  <span class="kw4">constexpr</span> <span class="kw4">auto</span> submdspan_extents<span class="br0">(</span><span class="kw4">const</span> extents<span class="sy1">&lt;</span>IndexType, Extents...<span class="sy1">&gt;</span><span class="sy3">&amp;</span>,
+                                   SliceSpecifiers...<span class="br0">)</span><span class="sy4">;</span>
+ 
+  <span class="co1">// submdspan function template</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> ElementType,
+           <span class="kw1">class</span> Extents,
+           <span class="kw1">class</span> LayoutPolicy,
+           <span class="kw1">class</span> AccessorPolicy,
+           <span class="kw1">class</span>... <span class="me1">SliceSpecifiers</span><span class="sy1">&gt;</span>
+  <span class="kw4">constexpr</span> <span class="kw4">auto</span> submdspan<span class="br0">(</span>
+    <span class="kw4">const</span> mdspan<span class="sy1">&lt;</span>ElementType, Extents, LayoutPolicy, AccessorPolicy<span class="sy1">&gt;</span><span class="sy3">&amp;</span> src,
+    SliceSpecifiers... <span class="me1">slices</span><span class="br0">)</span> <span class="sy2">-</span><span class="sy1">&gt;</span> <span class="coMULTI">/* see description */</span><span class="sy4">;</span>
+ 
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T, <span class="kw1">class</span> IndexType<span class="sy1">&gt;</span>
+  concept <span class="coMULTI">/*index-pair-like*/</span> <span class="sy1">=</span> <span class="co1">// exposition only</span>
+    <span class="coMULTI">/*pair-like*/</span><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> convertible_to<span class="sy1">&lt;</span>tuple_element_t<span class="sy1">&lt;</span><span class="nu0">0</span>, T<span class="sy1">&gt;</span>, IndexType<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
+    convertible_to<span class="sy1">&lt;</span>tuple_element_t<span class="sy1">&lt;</span><span class="nu0">1</span>, T<span class="sy1">&gt;</span>, IndexType<span class="sy1">&gt;</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<h4><span class="mw-headline" id="Class_template_std::mdspan">Class template <span class="t-lc">std::mdspan</span></span></h4>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">namespace</span> std <span class="br0">{</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> ElementType,
+           <span class="kw1">class</span> Extents,
+           <span class="kw1">class</span> LayoutPolicy   <span class="sy1">=</span> layout_right,
+           <span class="kw1">class</span> AccessorPolicy <span class="sy1">=</span> default_accessor<span class="sy1">&lt;</span>ElementType<span class="sy1">&gt;&gt;</span>
+  <span class="kw1">class</span> mdspan
+  <span class="br0">{</span>
+  <span class="kw1">public</span><span class="sy4">:</span>
+    <span class="kw1">using</span> extents_type     <span class="sy1">=</span> Extents<span class="sy4">;</span>
+    <span class="kw1">using</span> layout_type      <span class="sy1">=</span> LayoutPolicy<span class="sy4">;</span>
+    <span class="kw1">using</span> accessor_type    <span class="sy1">=</span> AccessorPolicy<span class="sy4">;</span>
+    <span class="kw1">using</span> mapping_type     <span class="sy1">=</span> <span class="kw1">typename</span> layout_type<span class="sy4">::</span><span class="kw1">template</span> mapping<span class="sy1">&lt;</span>extents_type<span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw1">using</span> element_type     <span class="sy1">=</span> ElementType<span class="sy4">;</span>
+    <span class="kw1">using</span> value_type       <span class="sy1">=</span> remove_cv_t<span class="sy1">&lt;</span>element_type<span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw1">using</span> index_type       <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">index_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> size_type        <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">size_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> rank_type        <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">rank_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> data_handle_type <span class="sy1">=</span> <span class="kw1">typename</span> accessor_type<span class="sy4">::</span><span class="me2">data_handle_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> reference        <span class="sy1">=</span> <span class="kw1">typename</span> accessor_type<span class="sy4">::</span><span class="me2">reference</span><span class="sy4">;</span>
+ 
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> rank_type rank<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> extents_type<span class="sy4">::</span><span class="me2">rank</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> rank_type rank_dynamic<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span>
+    <span class="br0">{</span>
+      <span class="kw1">return</span> extents_type<span class="sy4">::</span><span class="me2">rank_dynamic</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> size_t static_extent<span class="br0">(</span>rank_type r<span class="br0">)</span> <span class="kw1">noexcept</span>
+    <span class="br0">{</span>
+      <span class="kw1">return</span> extents_type<span class="sy4">::</span><span class="me2">static_extent</span><span class="br0">(</span>r<span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+    <span class="kw4">constexpr</span> index_type extent<span class="br0">(</span>rank_type r<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span>
+    <span class="br0">{</span>
+      <span class="kw1">return</span> extents<span class="br0">(</span><span class="br0">)</span>.<span class="me1">extent</span><span class="br0">(</span>r<span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+ 
+    <span class="co1">// constructors</span>
+    <span class="kw4">constexpr</span> mdspan<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> mdspan<span class="br0">(</span><span class="kw4">const</span> mdspan<span class="sy3">&amp;</span> rhs<span class="br0">)</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> mdspan<span class="br0">(</span>mdspan<span class="sy3">&amp;&amp;</span> rhs<span class="br0">)</span>      <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">OtherIndexTypes</span><span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span> mdspan<span class="br0">(</span>data_handle_type ptr, OtherIndexTypes... <span class="me1">exts</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherIndexType, size_t N<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span>N <span class="sy3">!</span><span class="sy1">=</span> rank_dynamic<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+      mdspan<span class="br0">(</span>data_handle_type p, span<span class="sy1">&lt;</span>OtherIndexType, N<span class="sy1">&gt;</span> exts<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherIndexType, size_t N<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span>N <span class="sy3">!</span><span class="sy1">=</span> rank_dynamic<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+      mdspan<span class="br0">(</span>data_handle_type p, <span class="kw4">const</span> array<span class="sy1">&lt;</span>OtherIndexType, N<span class="sy1">&gt;</span><span class="sy3">&amp;</span> exts<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> mdspan<span class="br0">(</span>data_handle_type p, <span class="kw4">const</span> extents_type<span class="sy3">&amp;</span> ext<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> mdspan<span class="br0">(</span>data_handle_type p, <span class="kw4">const</span> mapping_type<span class="sy3">&amp;</span> m<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> mdspan<span class="br0">(</span>data_handle_type p, <span class="kw4">const</span> mapping_type<span class="sy3">&amp;</span> m, <span class="kw4">const</span> accessor_type<span class="sy3">&amp;</span> a<span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherElementType,
+             <span class="kw1">class</span> OtherExtents,
+             <span class="kw1">class</span> OtherLayoutPolicy,
+             <span class="kw1">class</span> OtherAccessorPolicy<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span><span class="coMULTI">/* see description */</span><span class="br0">)</span>
+      mdspan<span class="br0">(</span><span class="kw4">const</span> mdspan<span class="sy1">&lt;</span>OtherElementType,
+                          OtherExtents,
+                          OtherLayoutPolicy,
+                          OtherAccessorPolicy<span class="sy1">&gt;</span><span class="sy3">&amp;</span> other<span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="kw4">constexpr</span> mdspan<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">(</span><span class="kw4">const</span> mdspan<span class="sy3">&amp;</span> rhs<span class="br0">)</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> mdspan<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">(</span>mdspan<span class="sy3">&amp;&amp;</span> rhs<span class="br0">)</span>      <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+ 
+    <span class="co1">// members</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">OtherIndexTypes</span><span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> reference operator<span class="br0">[</span><span class="br0">]</span><span class="br0">(</span>OtherIndexTypes... <span class="me1">indices</span><span class="br0">)</span> <span class="kw4">const</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherIndexType<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> reference operator<span class="br0">[</span><span class="br0">]</span><span class="br0">(</span>span<span class="sy1">&lt;</span>OtherIndexType, rank<span class="br0">(</span><span class="br0">)</span><span class="sy1">&gt;</span> indices<span class="br0">)</span> <span class="kw4">const</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherIndexType<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> reference operator<span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><span class="kw4">const</span> array<span class="sy1">&lt;</span>OtherIndexType, rank<span class="br0">(</span><span class="br0">)</span><span class="sy1">&gt;</span><span class="sy3">&amp;</span> indices<span class="br0">)</span> <span class="kw4">const</span><span class="sy4">;</span>
+ 
+    <span class="kw4">constexpr</span> size_type size<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">bool</span> empty<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw1">friend</span> <span class="kw4">constexpr</span> <span class="kw4">void</span> swap<span class="br0">(</span>mdspan<span class="sy3">&amp;</span> x, mdspan<span class="sy3">&amp;</span> y<span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw4">constexpr</span> <span class="kw4">const</span> extents_type<span class="sy3">&amp;</span> extents<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="coMULTI">/*map_*/</span>.<span class="me1">extents</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">constexpr</span> <span class="kw4">const</span> data_handle_type<span class="sy3">&amp;</span> data_handle<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="coMULTI">/*ptr_*/</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">constexpr</span> <span class="kw4">const</span> mapping_type<span class="sy3">&amp;</span> mapping<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="coMULTI">/*map_*/</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">constexpr</span> <span class="kw4">const</span> accessor_type<span class="sy3">&amp;</span> accessor<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="coMULTI">/*acc_*/</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_unique<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> mapping_type<span class="sy4">::</span><span class="me2">is_always_unique</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_exhaustive<span class="br0">(</span><span class="br0">)</span>
+    <span class="br0">{</span>
+      <span class="kw1">return</span> mapping_type<span class="sy4">::</span><span class="me2">is_always_exhaustive</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_strided<span class="br0">(</span><span class="br0">)</span>
+    <span class="br0">{</span>
+      <span class="kw1">return</span> mapping_type<span class="sy4">::</span><span class="me2">is_always_strided</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+ 
+    <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_unique<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="coMULTI">/*map_*/</span>.<span class="me1">is_unique</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_exhaustive<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="coMULTI">/*map_*/</span>.<span class="me1">is_exhaustive</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_strided<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="coMULTI">/*map_*/</span>.<span class="me1">is_strided</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">constexpr</span> index_type stride<span class="br0">(</span>rank_type r<span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="coMULTI">/*map_*/</span>.<span class="me1">stride</span><span class="br0">(</span>r<span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+  <span class="kw1">private</span><span class="sy4">:</span>
+    accessor_type <span class="coMULTI">/*acc_*/</span><span class="sy4">;</span>    <span class="co1">// exposition only</span>
+    mapping_type <span class="coMULTI">/*map_*/</span><span class="sy4">;</span>     <span class="co1">// exposition only</span>
+    data_handle_type <span class="coMULTI">/*ptr_*/</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+ 
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> CArray<span class="sy1">&gt;</span>
+    requires<span class="br0">(</span>is_array_v<span class="sy1">&lt;</span>CArray<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> rank_v<span class="sy1">&lt;</span>CArray<span class="sy1">&gt;</span> <span class="sy1">==</span> <span class="nu0">1</span><span class="br0">)</span>
+  mdspan<span class="br0">(</span>CArray<span class="sy3">&amp;</span><span class="br0">)</span>
+    <span class="sy2">-</span><span class="sy1">&gt;</span> mdspan<span class="sy1">&lt;</span>remove_all_extents_t<span class="sy1">&lt;</span>CArray<span class="sy1">&gt;</span>, extents<span class="sy1">&lt;</span>size_t, extent_v<span class="sy1">&lt;</span>CArray, <span class="nu0">0</span><span class="sy1">&gt;&gt;&gt;</span><span class="sy4">;</span>
+ 
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Pointer<span class="sy1">&gt;</span>
+    requires<span class="br0">(</span>is_pointer_v<span class="sy1">&lt;</span>remove_reference_t<span class="sy1">&lt;</span>Pointer<span class="sy1">&gt;&gt;</span><span class="br0">)</span>
+  mdspan<span class="br0">(</span>Pointer<span class="sy3">&amp;&amp;</span><span class="br0">)</span>
+    <span class="sy2">-</span><span class="sy1">&gt;</span> mdspan<span class="sy1">&lt;</span>remove_pointer_t<span class="sy1">&lt;</span>remove_reference_t<span class="sy1">&lt;</span>Pointer<span class="sy1">&gt;&gt;</span>, extents<span class="sy1">&lt;</span>size_t<span class="sy1">&gt;&gt;</span><span class="sy4">;</span>
+ 
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> ElementType, <span class="kw1">class</span>... <span class="me1">Integrals</span><span class="sy1">&gt;</span>
+    requires<span class="br0">(</span><span class="br0">(</span>is_convertible_v<span class="sy1">&lt;</span>Integrals, size_t<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> ...<span class="br0">)</span> <span class="sy3">&amp;&amp;</span> sizeof...<span class="br0">(</span>Integrals<span class="br0">)</span> <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span>
+  <span class="kw1">explicit</span> mdspan<span class="br0">(</span>ElementType<span class="sy2">*</span>, Integrals...<span class="br0">)</span>
+    <span class="sy2">-</span><span class="sy1">&gt;</span> mdspan<span class="sy1">&lt;</span>ElementType, extents<span class="sy1">&lt;</span>size_t, <span class="coMULTI">/*maybe-static-ext*/</span><span class="sy1">&lt;</span>Integrals<span class="sy1">&gt;</span>...<span class="sy1">&gt;&gt;</span><span class="sy4">;</span>
+ 
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> ElementType, <span class="kw1">class</span> OtherIndexType, size_t N<span class="sy1">&gt;</span>
+  mdspan<span class="br0">(</span>ElementType<span class="sy2">*</span>, span<span class="sy1">&lt;</span>OtherIndexType, N<span class="sy1">&gt;</span><span class="br0">)</span>
+    <span class="sy2">-</span><span class="sy1">&gt;</span> mdspan<span class="sy1">&lt;</span>ElementType, dextents<span class="sy1">&lt;</span>size_t, N<span class="sy1">&gt;&gt;</span><span class="sy4">;</span>
+ 
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> ElementType, <span class="kw1">class</span> OtherIndexType, size_t N<span class="sy1">&gt;</span>
+  mdspan<span class="br0">(</span>ElementType<span class="sy2">*</span>, <span class="kw4">const</span> array<span class="sy1">&lt;</span>OtherIndexType, N<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span>
+    <span class="sy2">-</span><span class="sy1">&gt;</span> mdspan<span class="sy1">&lt;</span>ElementType, dextents<span class="sy1">&lt;</span>size_t, N<span class="sy1">&gt;&gt;</span><span class="sy4">;</span>
+ 
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> ElementType, <span class="kw1">class</span> IndexType, size_t... <span class="me1">ExtentsPack</span><span class="sy1">&gt;</span>
+  mdspan<span class="br0">(</span>ElementType<span class="sy2">*</span>, <span class="kw4">const</span> extents<span class="sy1">&lt;</span>IndexType, ExtentsPack...<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span>
+    <span class="sy2">-</span><span class="sy1">&gt;</span> mdspan<span class="sy1">&lt;</span>ElementType, extents<span class="sy1">&lt;</span>IndexType, ExtentsPack...<span class="sy1">&gt;&gt;</span><span class="sy4">;</span>
+ 
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> ElementType, <span class="kw1">class</span> MappingType<span class="sy1">&gt;</span>
+  mdspan<span class="br0">(</span>ElementType<span class="sy2">*</span>, <span class="kw4">const</span> MappingType<span class="sy3">&amp;</span><span class="br0">)</span> <span class="sy2">-</span><span class="sy1">&gt;</span> mdspan<span class="sy1">&lt;</span>ElementType,
+                                                     <span class="kw1">typename</span> MappingType<span class="sy4">::</span><span class="me2">extents_type</span>,
+                                                     <span class="kw1">typename</span> MappingType<span class="sy4">::</span><span class="me2">layout_type</span><span class="sy1">&gt;</span><span class="sy4">;</span>
+ 
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> MappingType, <span class="kw1">class</span> AccessorType<span class="sy1">&gt;</span>
+  mdspan<span class="br0">(</span><span class="kw4">const</span> <span class="kw1">typename</span> AccessorType<span class="sy4">::</span><span class="me2">data_handle_type</span><span class="sy3">&amp;</span>,
+         <span class="kw4">const</span> MappingType<span class="sy3">&amp;</span>,
+         <span class="kw4">const</span> AccessorType<span class="sy3">&amp;</span><span class="br0">)</span> <span class="sy2">-</span><span class="sy1">&gt;</span> mdspan<span class="sy1">&lt;</span><span class="kw1">typename</span> AccessorType<span class="sy4">::</span><span class="me2">element_type</span>,
+                                        <span class="kw1">typename</span> MappingType<span class="sy4">::</span><span class="me2">extents_type</span>,
+                                        <span class="kw1">typename</span> MappingType<span class="sy4">::</span><span class="me2">layout_type</span>,
+                                        AccessorType<span class="sy1">&gt;</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<h4><span class="mw-headline" id="Class_template_std::extents">Class template <span class="t-lc">std::extents</span></span></h4>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">namespace</span> std <span class="br0">{</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> IndexType, size_t... <span class="me1">Extents</span><span class="sy1">&gt;</span>
+  <span class="kw1">class</span> extents
+  <span class="br0">{</span>
+  <span class="kw1">public</span><span class="sy4">:</span>
+    <span class="kw1">using</span> index_type <span class="sy1">=</span> IndexType<span class="sy4">;</span>
+    <span class="kw1">using</span> size_type  <span class="sy1">=</span> make_unsigned_t<span class="sy1">&lt;</span>index_type<span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw1">using</span> rank_type  <span class="sy1">=</span> size_t<span class="sy4">;</span>
+ 
+    <span class="co1">// observers of the multidimensional index space</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> rank_type rank<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> sizeof...<span class="br0">(</span>Extents<span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> rank_type rank_dynamic<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span>
+    <span class="br0">{</span>
+      <span class="kw1">return</span> <span class="coMULTI">/*dynamic-index*/</span><span class="br0">(</span>rank<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> size_t static_extent<span class="br0">(</span>rank_type<span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> index_type extent<span class="br0">(</span>rank_type<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="co1">// constructors</span>
+    <span class="kw4">constexpr</span> extents<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherIndexType, size_t... <span class="me1">OtherExtents</span><span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span><span class="coMULTI">/* see description */</span><span class="br0">)</span>
+      extents<span class="br0">(</span><span class="kw4">const</span> extents<span class="sy1">&lt;</span>OtherIndexType, OtherExtents...<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">OtherIndexTypes</span><span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span> extents<span class="br0">(</span>OtherIndexTypes...<span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherIndexType, size_t N<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span>N <span class="sy3">!</span><span class="sy1">=</span> rank_dynamic<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> extents<span class="br0">(</span>span<span class="sy1">&lt;</span>OtherIndexType, N<span class="sy1">&gt;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherIndexType, size_t N<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span>N <span class="sy3">!</span><span class="sy1">=</span> rank_dynamic<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+      extents<span class="br0">(</span><span class="kw4">const</span> array<span class="sy1">&lt;</span>OtherIndexType, N<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="co1">// comparison operators</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherIndexType, size_t... <span class="me1">OtherExtents</span><span class="sy1">&gt;</span>
+    <span class="kw1">friend</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> operator<span class="sy1">==</span><span class="br0">(</span>
+      <span class="kw4">const</span> extents<span class="sy3">&amp;</span>,
+      <span class="kw4">const</span> extents<span class="sy1">&lt;</span>OtherIndexType, OtherExtents...<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="co1">// exposition only helpers</span>
+    <span class="kw4">constexpr</span> size_t <span class="coMULTI">/*fwd-prod-of-extents*/</span><span class="br0">(</span>rank_type<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+    <span class="kw4">constexpr</span> size_t <span class="coMULTI">/*rev-prod-of-extents*/</span><span class="br0">(</span>rank_type<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherIndexType<span class="sy1">&gt;</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">auto</span> <span class="coMULTI">/*index-cast*/</span><span class="br0">(</span>OtherIndexType<span class="sy3">&amp;&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+ 
+  <span class="kw1">private</span><span class="sy4">:</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> rank_type <span class="coMULTI">/*dynamic-index*/</span><span class="br0">(</span>rank_type<span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> rank_type <span class="coMULTI">/*dynamic-index-inv*/</span><span class="br0">(</span>
+      rank_type<span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>                                   <span class="co1">// exposition only</span>
+    array<span class="sy1">&lt;</span>index_type, rank_dynamic<span class="br0">(</span><span class="br0">)</span><span class="sy1">&gt;</span> <span class="coMULTI">/*dynamic-extents*/</span><span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+ 
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">Integrals</span><span class="sy1">&gt;</span>
+  <span class="kw1">explicit</span> extents<span class="br0">(</span>Integrals...<span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span><span class="coMULTI">/* see description */</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<h4><span class="mw-headline" id="Layout_mapping_policies">Layout mapping policies</span></h4>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">namespace</span> std <span class="br0">{</span>
+  <span class="kw1">struct</span> layout_left
+  <span class="br0">{</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Extents<span class="sy1">&gt;</span>
+    <span class="kw1">class</span> mapping<span class="sy4">;</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+  <span class="kw1">struct</span> layout_right
+  <span class="br0">{</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Extents<span class="sy1">&gt;</span>
+    <span class="kw1">class</span> mapping<span class="sy4">;</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+  <span class="kw1">struct</span> layout_stride
+  <span class="br0">{</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Extents<span class="sy1">&gt;</span>
+    <span class="kw1">class</span> mapping<span class="sy4">;</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+ 
+  <span class="kw1">template</span><span class="sy1">&lt;</span>size_t PaddingValue<span class="sy1">&gt;</span>
+  <span class="kw1">struct</span> layout_left_padded
+  <span class="br0">{</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Extents<span class="sy1">&gt;</span>
+    <span class="kw1">class</span> mapping<span class="sy4">;</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span>size_t PaddingValue<span class="sy1">&gt;</span>
+  <span class="kw1">struct</span> layout_right_padded
+  <span class="br0">{</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Extents<span class="sy1">&gt;</span>
+    <span class="kw1">class</span> mapping<span class="sy4">;</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<h4><span class="mw-headline" id="Class_template_std::layout_left::mapping">Class template <span class="t-lc">std::layout_left::mapping</span></span></h4>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">namespace</span> std <span class="br0">{</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Extents<span class="sy1">&gt;</span>
+  <span class="kw1">class</span> layout_left<span class="sy4">::</span><span class="me2">mapping</span>
+  <span class="br0">{</span>
+  <span class="kw1">public</span><span class="sy4">:</span>
+    <span class="kw1">using</span> extents_type <span class="sy1">=</span> Extents<span class="sy4">;</span>
+    <span class="kw1">using</span> index_type   <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">index_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> size_type    <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">size_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> rank_type    <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">rank_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> layout_type  <span class="sy1">=</span> layout_left<span class="sy4">;</span>
+ 
+    <span class="co1">// constructors</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span>               <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="kw4">const</span> extents_type<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherExtents<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span><span class="sy3">!</span>is_convertible_v<span class="sy1">&lt;</span>OtherExtents, extents_type<span class="sy1">&gt;</span><span class="br0">)</span>
+      mapping<span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy1">&lt;</span>OtherExtents<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherExtents<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span><span class="sy3">!</span>is_convertible_v<span class="sy1">&lt;</span>OtherExtents, extents_type<span class="sy1">&gt;</span><span class="br0">)</span>
+      mapping<span class="br0">(</span><span class="kw4">const</span> layout_right<span class="sy4">::</span><span class="me2">mapping</span><span class="sy1">&lt;</span>OtherExtents<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> LayoutLeftPaddedMapping<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span>
+      <span class="sy3">!</span>is_convertible_v<span class="sy1">&lt;</span><span class="kw1">typename</span> LayoutLeftPaddedMapping<span class="sy4">::</span><span class="me2">extents_type</span>, extents_type<span class="sy1">&gt;</span><span class="br0">)</span>
+      mapping<span class="br0">(</span><span class="kw4">const</span> LayoutLeftPaddedMapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherExtents<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span>extents_type<span class="sy4">::</span><span class="me2">rank</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span>
+      mapping<span class="br0">(</span><span class="kw4">const</span> layout_stride<span class="sy4">::</span><span class="me2">mapping</span><span class="sy1">&lt;</span>OtherExtents<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="kw4">constexpr</span> mapping<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+ 
+    <span class="co1">// observers</span>
+    <span class="kw4">constexpr</span> <span class="kw4">const</span> extents_type<span class="sy3">&amp;</span> extents<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="coMULTI">/*extents_*/</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw4">constexpr</span> index_type required_span_size<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">Indices</span><span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> index_type operator<span class="br0">(</span><span class="br0">)</span><span class="br0">(</span>Indices...<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_unique<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_exhaustive<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_strided<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_unique<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_exhaustive<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_strided<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw4">constexpr</span> index_type stride<span class="br0">(</span>rank_type<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherExtents<span class="sy1">&gt;</span>
+    <span class="kw1">friend</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> operator<span class="sy1">==</span><span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span>,
+                                     <span class="kw4">const</span> mapping<span class="sy1">&lt;</span>OtherExtents<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+  <span class="kw1">private</span><span class="sy4">:</span>
+    extents_type <span class="coMULTI">/*extents_*/</span><span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+ 
+    <span class="co1">// submdspan mapping specialization</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">SliceSpecifiers</span><span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">auto</span> <span class="coMULTI">/*submdspan-mapping-impl*/</span><span class="br0">(</span>SliceSpecifiers...<span class="br0">)</span> <span class="kw4">const</span> <span class="co1">// exposition only</span>
+      <span class="sy2">-</span><span class="sy1">&gt;</span> <span class="coMULTI">/* see description */</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">SliceSpecifiers</span><span class="sy1">&gt;</span>
+    <span class="kw1">friend</span> <span class="kw4">constexpr</span> <span class="kw4">auto</span> submdspan_mapping<span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span> src, SliceSpecifiers... <span class="me1">slices</span><span class="br0">)</span>
+    <span class="br0">{</span>
+      <span class="kw1">return</span> src.<span class="coMULTI">/*submdspan-mapping-impl*/</span><span class="br0">(</span>slices...<span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<h4><span class="mw-headline" id="Class_template_std::layout_right::mapping">Class template <span class="t-lc">std::layout_right::mapping</span></span></h4>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">namespace</span> std <span class="br0">{</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Extents<span class="sy1">&gt;</span>
+  <span class="kw1">class</span> layout_right<span class="sy4">::</span><span class="me2">mapping</span>
+  <span class="br0">{</span>
+  <span class="kw1">public</span><span class="sy4">:</span>
+    <span class="kw1">using</span> extents_type <span class="sy1">=</span> Extents<span class="sy4">;</span>
+    <span class="kw1">using</span> index_type   <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">index_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> size_type    <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">size_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> rank_type    <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">rank_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> layout_type  <span class="sy1">=</span> layout_right<span class="sy4">;</span>
+ 
+    <span class="co1">// constructors</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span>               <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="kw4">const</span> extents_type<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherExtents<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span><span class="sy3">!</span>is_convertible_v<span class="sy1">&lt;</span>OtherExtents, extents_type<span class="sy1">&gt;</span><span class="br0">)</span>
+      mapping<span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy1">&lt;</span>OtherExtents<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherExtents<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span><span class="sy3">!</span>is_convertible_v<span class="sy1">&lt;</span>OtherExtents, extents_type<span class="sy1">&gt;</span><span class="br0">)</span>
+      mapping<span class="br0">(</span><span class="kw4">const</span> layout_left<span class="sy4">::</span><span class="me2">mapping</span><span class="sy1">&lt;</span>OtherExtents<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> LayoutRightPaddedMapping<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span>
+      <span class="sy3">!</span>is_convertible_v<span class="sy1">&lt;</span><span class="kw1">typename</span> LayoutRightPaddedMapping<span class="sy4">::</span><span class="me2">extents_type</span>, extents_type<span class="sy1">&gt;</span><span class="br0">)</span>
+      mapping<span class="br0">(</span><span class="kw4">const</span> LayoutRightPaddedMapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherExtents<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span>extents_type<span class="sy4">::</span><span class="me2">rank</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span>
+      mapping<span class="br0">(</span><span class="kw4">const</span> layout_stride<span class="sy4">::</span><span class="me2">mapping</span><span class="sy1">&lt;</span>OtherExtents<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw4">constexpr</span> mapping<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+ 
+    <span class="co1">// observers</span>
+    <span class="kw4">constexpr</span> <span class="kw4">const</span> extents_type<span class="sy3">&amp;</span> extents<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="coMULTI">/*extents_*/</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw4">constexpr</span> index_type required_span_size<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">Indices</span><span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> index_type operator<span class="br0">(</span><span class="br0">)</span><span class="br0">(</span>Indices...<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_unique<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_exhaustive<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_strided<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_unique<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_exhaustive<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_strided<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw4">constexpr</span> index_type stride<span class="br0">(</span>rank_type<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherExtents<span class="sy1">&gt;</span>
+    <span class="kw1">friend</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> operator<span class="sy1">==</span><span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span>,
+                                     <span class="kw4">const</span> mapping<span class="sy1">&lt;</span>OtherExtents<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+  <span class="kw1">private</span><span class="sy4">:</span>
+    extents_type <span class="coMULTI">/*extents_*/</span><span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+ 
+    <span class="co1">// submdspan mapping specialization</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">SliceSpecifiers</span><span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">auto</span> <span class="coMULTI">/*submdspan-mapping-impl*/</span><span class="br0">(</span>SliceSpecifiers...<span class="br0">)</span> <span class="kw4">const</span> <span class="co1">// exposition only</span>
+      <span class="sy2">-</span><span class="sy1">&gt;</span> <span class="coMULTI">/* see description */</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">SliceSpecifiers</span><span class="sy1">&gt;</span>
+    <span class="kw1">friend</span> <span class="kw4">constexpr</span> <span class="kw4">auto</span> submdspan_mapping<span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span> src, SliceSpecifiers... <span class="me1">slices</span><span class="br0">)</span>
+    <span class="br0">{</span>
+      <span class="kw1">return</span> src.<span class="coMULTI">/*submdspan-mapping-impl*/</span><span class="br0">(</span>slices...<span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<h4><span class="mw-headline" id="Class_template_std::layout_stride::mapping">Class template <span class="t-lc">std::layout_stride::mapping</span></span></h4>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">namespace</span> std <span class="br0">{</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Extents<span class="sy1">&gt;</span>
+  <span class="kw1">class</span> layout_stride<span class="sy4">::</span><span class="me2">mapping</span>
+  <span class="br0">{</span>
+  <span class="kw1">public</span><span class="sy4">:</span>
+    <span class="kw1">using</span> extents_type <span class="sy1">=</span> Extents<span class="sy4">;</span>
+    <span class="kw1">using</span> index_type   <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">index_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> size_type    <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">size_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> rank_type    <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">rank_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> layout_type  <span class="sy1">=</span> layout_stride<span class="sy4">;</span>
+ 
+  <span class="kw1">private</span><span class="sy4">:</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> rank_type <span class="coMULTI">/*rank_*/</span> <span class="sy1">=</span> extents_type<span class="sy4">::</span><span class="me2">rank</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+ 
+  <span class="kw1">public</span><span class="sy4">:</span>
+    <span class="co1">// constructors</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherIndexType<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="kw4">const</span> extents_type<span class="sy3">&amp;</span>, span<span class="sy1">&lt;</span>OtherIndexType, <span class="coMULTI">/*rank_*/</span><span class="sy1">&gt;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherIndexType<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="kw4">const</span> extents_type<span class="sy3">&amp;</span>,
+                      <span class="kw4">const</span> array<span class="sy1">&lt;</span>OtherIndexType, <span class="coMULTI">/*rank_*/</span><span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> StridedLayoutMapping<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span><span class="coMULTI">/* see description */</span><span class="br0">)</span>
+      mapping<span class="br0">(</span><span class="kw4">const</span> StridedLayoutMapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw4">constexpr</span> mapping<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+ 
+    <span class="co1">// observers</span>
+    <span class="kw4">constexpr</span> <span class="kw4">const</span> extents_type<span class="sy3">&amp;</span> extents<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="coMULTI">/*extents_*/</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">constexpr</span> array<span class="sy1">&lt;</span>index_type, <span class="coMULTI">/*rank_*/</span><span class="sy1">&gt;</span> strides<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span>
+    <span class="br0">{</span>
+      <span class="kw1">return</span> <span class="coMULTI">/*strides_*/</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+ 
+    <span class="kw4">constexpr</span> index_type required_span_size<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">Indices</span><span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> index_type operator<span class="br0">(</span><span class="br0">)</span><span class="br0">(</span>Indices...<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_unique<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_exhaustive<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">false</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_strided<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_unique<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_exhaustive<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_strided<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw4">constexpr</span> index_type stride<span class="br0">(</span>rank_type i<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="coMULTI">/*strides_*/</span><span class="br0">[</span>i<span class="br0">]</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherMapping<span class="sy1">&gt;</span>
+    <span class="kw1">friend</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> operator<span class="sy1">==</span><span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span>, <span class="kw4">const</span> OtherMapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+  <span class="kw1">private</span><span class="sy4">:</span>
+    extents_type <span class="coMULTI">/*extents_*/</span><span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>                 <span class="co1">// exposition only</span>
+    array<span class="sy1">&lt;</span>index_type, <span class="coMULTI">/*rank_*/</span><span class="sy1">&gt;</span> <span class="coMULTI">/*strides_*/</span><span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+ 
+    <span class="co1">// submdspan mapping specialization</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">SliceSpecifiers</span><span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">auto</span> <span class="coMULTI">/*submdspan-mapping-impl*/</span><span class="br0">(</span>SliceSpecifiers...<span class="br0">)</span> <span class="kw4">const</span> <span class="co1">// exposition only</span>
+      <span class="sy2">-</span><span class="sy1">&gt;</span> <span class="coMULTI">/* see description */</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">SliceSpecifiers</span><span class="sy1">&gt;</span>
+    <span class="kw1">friend</span> <span class="kw4">constexpr</span> <span class="kw4">auto</span> submdspan_mapping<span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span> src, SliceSpecifiers... <span class="me1">slices</span><span class="br0">)</span>
+    <span class="br0">{</span>
+      <span class="kw1">return</span> src.<span class="coMULTI">/*submdspan-mapping-impl*/</span><span class="br0">(</span>slices...<span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<h4><span class="mw-headline" id="Class_template_std::layout_left_padded::mapping">Class template <span class="t-lc">std::layout_left_padded::mapping</span></span></h4>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">namespace</span> std <span class="br0">{</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span>size_t PaddingValue<span class="sy1">&gt;</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Extents<span class="sy1">&gt;</span>
+  <span class="kw1">class</span> layout_left_padded<span class="sy1">&lt;</span>PaddingValue<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">mapping</span>
+  <span class="br0">{</span>
+  <span class="kw1">public</span><span class="sy4">:</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> size_t padding_value <span class="sy1">=</span> PaddingValue<span class="sy4">;</span>
+ 
+    <span class="kw1">using</span> extents_type                    <span class="sy1">=</span> Extents<span class="sy4">;</span>
+    <span class="kw1">using</span> index_type                      <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">index_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> size_type                       <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">size_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> rank_type                       <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">rank_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> layout_type                     <span class="sy1">=</span> layout_left_padded<span class="sy1">&lt;</span>PaddingValue<span class="sy1">&gt;</span><span class="sy4">;</span>
+ 
+  <span class="kw1">private</span><span class="sy4">:</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> size_t <span class="coMULTI">/*rank_*/</span> <span class="sy1">=</span> extents_type<span class="sy4">::</span><span class="me2">rank</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> size_t <span class="coMULTI">/*first-static-extent*/</span> <span class="sy1">=</span>         <span class="co1">// exposition only</span>
+      extents_type<span class="sy4">::</span><span class="me2">static_extent</span><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="co1">// exposition only members</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> size_t <span class="coMULTI">/*static-padding-stride*/</span> <span class="sy1">=</span>
+      <span class="coMULTI">/* see description */</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+ 
+  <span class="kw1">public</span><span class="sy4">:</span>
+    <span class="co1">// constructors</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span>
+      <span class="sy4">:</span> mapping<span class="br0">(</span>extents_type<span class="br0">{</span><span class="br0">}</span><span class="br0">)</span>
+    <span class="br0">{</span>
+    <span class="br0">}</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="kw4">const</span> extents_type<span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherIndexType<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="kw4">const</span> extents_type<span class="sy3">&amp;</span>, OtherIndexType<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherExtents<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span><span class="sy3">!</span>is_convertible_v<span class="sy1">&lt;</span>OtherExtents, extents_type<span class="sy1">&gt;</span><span class="br0">)</span>
+      mapping<span class="br0">(</span><span class="kw4">const</span> layout_left<span class="sy4">::</span><span class="me2">mapping</span><span class="sy1">&lt;</span>OtherExtents<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherExtents<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span>extents_type<span class="sy4">::</span><span class="me2">rank</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span>
+      mapping<span class="br0">(</span><span class="kw4">const</span> layout_stride<span class="sy4">::</span><span class="me2">mapping</span><span class="sy1">&lt;</span>OtherExtents<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> LayoutLeftPaddedMapping<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span><span class="coMULTI">/* see description */</span><span class="br0">)</span> mapping<span class="br0">(</span><span class="kw4">const</span> LayoutLeftPaddedMapping<span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> LayoutRightPaddedMapping<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span><span class="coMULTI">/* see description */</span><span class="br0">)</span>
+      mapping<span class="br0">(</span><span class="kw4">const</span> LayoutRightPaddedMapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw4">constexpr</span> mapping<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+ 
+    <span class="co1">// observers</span>
+    <span class="kw4">constexpr</span> <span class="kw4">const</span> extents_type<span class="sy3">&amp;</span> extents<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="coMULTI">/*extents_*/</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">constexpr</span> array<span class="sy1">&lt;</span>index_type, rank_<span class="sy1">&gt;</span> strides<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw4">constexpr</span> index_type required_span_size<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">Indices</span><span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> index_type operator<span class="br0">(</span><span class="br0">)</span><span class="br0">(</span>Indices...<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_unique<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_exhaustive<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_strided<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_unique<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_exhaustive<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_strided<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw4">constexpr</span> index_type stride<span class="br0">(</span>rank_type<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> LayoutLeftPaddedMapping<span class="sy1">&gt;</span>
+    <span class="kw1">friend</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> operator<span class="sy1">==</span><span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span>,
+                                     <span class="kw4">const</span> LayoutLeftPaddedMapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+  <span class="kw1">private</span><span class="sy4">:</span>
+    <span class="co1">// exposition only members</span>
+    index_type <span class="coMULTI">/*stride-1*/</span> <span class="sy1">=</span> <span class="coMULTI">/*static-padding-stride*/</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+    extents_type <span class="coMULTI">/*extents_*/</span><span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>                         <span class="co1">// exposition only</span>
+    <span class="co1">// submdspan mapping specialization</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">SliceSpecifiers</span><span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">auto</span> <span class="coMULTI">/*submdspan-mapping-impl*/</span><span class="br0">(</span>SliceSpecifiers...<span class="br0">)</span> <span class="kw4">const</span> <span class="co1">// exposition only</span>
+      <span class="sy2">-</span><span class="sy1">&gt;</span> <span class="coMULTI">/* see description */</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">SliceSpecifiers</span><span class="sy1">&gt;</span>
+    <span class="kw1">friend</span> <span class="kw4">constexpr</span> <span class="kw4">auto</span> submdspan_mapping<span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span> src, SliceSpecifiers... <span class="me1">slices</span><span class="br0">)</span>
+    <span class="br0">{</span>
+      <span class="kw1">return</span> src.<span class="coMULTI">/*submdspan-mapping-impl*/</span><span class="br0">(</span>slices...<span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<h4><span class="mw-headline" id="Class_template_std::layout_right_padded::mapping">Class template <span class="t-lc">std::layout_right_padded::mapping</span></span></h4>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">namespace</span> std <span class="br0">{</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span>size_t PaddingValue<span class="sy1">&gt;</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Extents<span class="sy1">&gt;</span>
+  <span class="kw1">class</span> layout_right_padded<span class="sy1">&lt;</span>PaddingValue<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">mapping</span>
+  <span class="br0">{</span>
+  <span class="kw1">public</span><span class="sy4">:</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> size_t padding_value <span class="sy1">=</span> PaddingValue<span class="sy4">;</span>
+ 
+    <span class="kw1">using</span> extents_type                    <span class="sy1">=</span> Extents<span class="sy4">;</span>
+    <span class="kw1">using</span> index_type                      <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">index_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> size_type                       <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">size_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> rank_type                       <span class="sy1">=</span> <span class="kw1">typename</span> extents_type<span class="sy4">::</span><span class="me2">rank_type</span><span class="sy4">;</span>
+    <span class="kw1">using</span> layout_type                     <span class="sy1">=</span> layout_right_padded<span class="sy1">&lt;</span>PaddingValue<span class="sy1">&gt;</span><span class="sy4">;</span>
+ 
+  <span class="kw1">private</span><span class="sy4">:</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> size_t <span class="coMULTI">/*rank_*/</span> <span class="sy1">=</span> extents_type<span class="sy4">::</span><span class="me2">rank</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> size_t <span class="coMULTI">/*last-static-extent*/</span> <span class="sy1">=</span>          <span class="co1">// exposition only</span>
+      extents_type<span class="sy4">::</span><span class="me2">static_extent</span><span class="br0">(</span><span class="coMULTI">/*rank_*/</span> <span class="sy2">-</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="co1">// exposition only members</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> size_t <span class="coMULTI">/*static-padding-stride*/</span> <span class="sy1">=</span>
+      <span class="coMULTI">/* see description */</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+ 
+  <span class="kw1">public</span><span class="sy4">:</span>
+    <span class="co1">// constructors</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span>
+      <span class="sy4">:</span> mapping<span class="br0">(</span>extents_type<span class="br0">{</span><span class="br0">}</span><span class="br0">)</span>
+    <span class="br0">{</span>
+    <span class="br0">}</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="kw4">const</span> extents_type<span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherIndexType<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> mapping<span class="br0">(</span><span class="kw4">const</span> extents_type<span class="sy3">&amp;</span>, OtherIndexType<span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherExtents<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span><span class="sy3">!</span>is_convertible_v<span class="sy1">&lt;</span>OtherExtents, extents_type<span class="sy1">&gt;</span><span class="br0">)</span>
+      mapping<span class="br0">(</span><span class="kw4">const</span> layout_right<span class="sy4">::</span><span class="me2">mapping</span><span class="sy1">&lt;</span>OtherExtents<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherExtents<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span>rank_ <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span> mapping<span class="br0">(</span><span class="kw4">const</span> layout_stride<span class="sy4">::</span><span class="me2">mapping</span><span class="sy1">&lt;</span>OtherExtents<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> LayoutRightPaddedMapping<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span><span class="coMULTI">/* see description */</span><span class="br0">)</span> mapping<span class="br0">(</span><span class="kw4">const</span> LayoutRightPaddedMapping<span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> LayoutLeftPaddedMapping<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span><span class="br0">(</span><span class="coMULTI">/* see description */</span><span class="br0">)</span>
+      mapping<span class="br0">(</span><span class="kw4">const</span> LayoutLeftPaddedMapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw4">constexpr</span> mapping<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+ 
+    <span class="co1">// observers</span>
+    <span class="kw4">constexpr</span> <span class="kw4">const</span> extents_type<span class="sy3">&amp;</span> extents<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> extents_<span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">constexpr</span> array<span class="sy1">&lt;</span>index_type, rank_<span class="sy1">&gt;</span> strides<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw4">constexpr</span> index_type required_span_size<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">Indices</span><span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> index_type operator<span class="br0">(</span><span class="br0">)</span><span class="br0">(</span>Indices...<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_unique<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_exhaustive<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_always_strided<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_unique<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_exhaustive<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw4">static</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_strided<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw4">constexpr</span> index_type stride<span class="br0">(</span>rank_type<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> LayoutRightPaddedMapping<span class="sy1">&gt;</span>
+    <span class="kw1">friend</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> operator<span class="sy1">==</span><span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span>,
+                                     <span class="kw4">const</span> LayoutRightPaddedMapping<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+ 
+  <span class="kw1">private</span><span class="sy4">:</span>
+    <span class="co1">// exposition only members</span>
+    index_type <span class="coMULTI">/*stride-rm2*/</span> <span class="sy1">=</span> <span class="coMULTI">/*static-padding-stride*/</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+    extents_type <span class="coMULTI">/*extents_*/</span><span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>                           <span class="co1">// exposition only</span>
+ 
+    <span class="co1">// submdspan mapping specialization</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">SliceSpecifiers</span><span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">auto</span> <span class="coMULTI">/*submdspan-mapping-impl*/</span><span class="br0">(</span>SliceSpecifiers...<span class="br0">)</span> <span class="kw4">const</span> <span class="co1">// exposition only</span>
+      <span class="sy2">-</span><span class="sy1">&gt;</span> <span class="coMULTI">/* see description */</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">SliceSpecifiers</span><span class="sy1">&gt;</span>
+    <span class="kw1">friend</span> <span class="kw4">constexpr</span> <span class="kw4">auto</span> submdspan_mapping<span class="br0">(</span><span class="kw4">const</span> mapping<span class="sy3">&amp;</span> src, SliceSpecifiers... <span class="me1">slices</span><span class="br0">)</span>
+    <span class="br0">{</span>
+      <span class="kw1">return</span> src.<span class="coMULTI">/*submdspan-mapping-impl*/</span><span class="br0">(</span>slices...<span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<h4><span class="mw-headline" id="Exposition-only_helpers">Exposition-only helpers</span></h4>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
+<span class="kw4">constexpr</span> <span class="kw4">bool</span> <span class="coMULTI">/*is-extents*/</span> <span class="sy1">=</span> <span class="kw2">false</span><span class="sy4">;</span> <span class="co1">// exposition only</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> IndexType, size_t... <span class="me1">Args</span><span class="sy1">&gt;</span>
+<span class="kw4">constexpr</span> <span class="kw4">bool</span> <span class="coMULTI">/*is-extents*/</span><span class="sy1">&lt;</span>extents<span class="sy1">&lt;</span>IndexType, Args...<span class="sy1">&gt;&gt;</span> <span class="sy1">=</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="co1">// exposition only;</span>
+ 
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> M<span class="sy1">&gt;</span>
+concept <span class="coMULTI">/*layout-mapping-alike*/</span> <span class="sy1">=</span> requires <span class="br0">{</span> <span class="co1">// exposition only</span>
+  requires <span class="coMULTI">/*is-extents*/</span><span class="sy1">&lt;</span><span class="kw1">typename</span> M<span class="sy4">::</span><span class="me2">extents_type</span><span class="sy1">&gt;</span><span class="sy4">;</span>
+  <span class="br0">{</span>
+    M<span class="sy4">::</span><span class="me2">is_always_strided</span><span class="br0">(</span><span class="br0">)</span>
+  <span class="br0">}</span> <span class="sy2">-</span><span class="sy1">&gt;</span> same_as<span class="sy1">&lt;</span><span class="kw4">bool</span><span class="sy1">&gt;</span><span class="sy4">;</span>
+  <span class="br0">{</span>
+    M<span class="sy4">::</span><span class="me2">is_always_exhaustive</span><span class="br0">(</span><span class="br0">)</span>
+  <span class="br0">}</span> <span class="sy2">-</span><span class="sy1">&gt;</span> same_as<span class="sy1">&lt;</span><span class="kw4">bool</span><span class="sy1">&gt;</span><span class="sy4">;</span>
+  <span class="br0">{</span>
+    M<span class="sy4">::</span><span class="me2">is_always_unique</span><span class="br0">(</span><span class="br0">)</span>
+  <span class="br0">}</span> <span class="sy2">-</span><span class="sy1">&gt;</span> same_as<span class="sy1">&lt;</span><span class="kw4">bool</span><span class="sy1">&gt;</span><span class="sy4">;</span>
+  bool_constant<span class="sy1">&lt;</span>M<span class="sy4">::</span><span class="me2">is_always_strided</span><span class="br0">(</span><span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value</span><span class="sy4">;</span>
+  bool_constant<span class="sy1">&lt;</span>M<span class="sy4">::</span><span class="me2">is_always_exhaustive</span><span class="br0">(</span><span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value</span><span class="sy4">;</span>
+  bool_constant<span class="sy1">&lt;</span>M<span class="sy4">::</span><span class="me2">is_always_unique</span><span class="br0">(</span><span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value</span><span class="sy4">;</span>
+<span class="br0">}</span><span class="sy4">;</span>
+ 
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
+<span class="kw4">constexpr</span> T
+<span class="coMULTI">/*de-ice*/</span><span class="br0">(</span>T val<span class="br0">)</span>
+<span class="br0">{</span>
+  <span class="kw1">return</span> val<span class="sy4">;</span>
+<span class="br0">}</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="coMULTI">/*integral-constant-like*/</span> T<span class="sy1">&gt;</span>
+<span class="kw4">constexpr</span> <span class="kw4">auto</span>
+<span class="coMULTI">/*de-ice*/</span><span class="br0">(</span>T<span class="br0">)</span>
+<span class="br0">{</span>
+  <span class="kw1">return</span> T<span class="sy4">::</span><span class="me2">value</span><span class="sy4">;</span>
+<span class="br0">}</span>
+ 
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> IndexType, size_t k, <span class="kw1">class</span>... <span class="me1">SliceSpecifiers</span><span class="sy1">&gt;</span>
+<span class="kw4">constexpr</span> IndexType
+<span class="coMULTI">/*first_*/</span><span class="br0">(</span>SliceSpecifiers... <span class="me1">slices</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+<span class="kw1">template</span><span class="sy1">&lt;</span>size_t k, <span class="kw1">class</span> Extents, <span class="kw1">class</span>... <span class="me1">SliceSpecifiers</span><span class="sy1">&gt;</span>
+<span class="kw4">constexpr</span> <span class="kw4">auto</span>
+<span class="coMULTI">/*last_*/</span><span class="br0">(</span><span class="kw4">const</span> Extents<span class="sy3">&amp;</span> src, SliceSpecifiers... <span class="me1">slices</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> IndexType, size_t N, <span class="kw1">class</span>... <span class="me1">SliceSpecifiers</span><span class="sy1">&gt;</span>
+<span class="kw4">constexpr</span> array<span class="sy1">&lt;</span>IndexType, sizeof...<span class="br0">(</span>SliceSpecifiers<span class="br0">)</span><span class="sy1">&gt;</span>
+<span class="coMULTI">/*src-indices*/</span><span class="br0">(</span><span class="kw4">const</span> array<span class="sy1">&lt;</span>IndexType, N<span class="sy1">&gt;</span><span class="sy3">&amp;</span> indices, SliceSpecifiers... <span class="me1">slices</span><span class="br0">)</span><span class="sy4">;</span></pre></div></div>    
+<h4><span class="mw-headline" id="Class_template_std::default_accessor">Class template <span class="t-lc">std::default_accessor</span></span></h4>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">namespace</span> std <span class="br0">{</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> ElementType<span class="sy1">&gt;</span>
+  <span class="kw1">struct</span> default_accessor
+  <span class="br0">{</span>
+    <span class="kw1">using</span> offset_policy                   <span class="sy1">=</span> default_accessor<span class="sy4">;</span>
+    <span class="kw1">using</span> element_type                    <span class="sy1">=</span> ElementType<span class="sy4">;</span>
+    <span class="kw1">using</span> reference                       <span class="sy1">=</span> ElementType<span class="sy3">&amp;</span><span class="sy4">;</span>
+    <span class="kw1">using</span> data_handle_type                <span class="sy1">=</span> ElementType<span class="sy2">*</span><span class="sy4">;</span>
+ 
+    <span class="kw4">constexpr</span> default_accessor<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OtherElementType<span class="sy1">&gt;</span>
+    <span class="kw4">constexpr</span> default_accessor<span class="br0">(</span>default_accessor<span class="sy1">&lt;</span>OtherElementType<span class="sy1">&gt;</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> reference access<span class="br0">(</span>data_handle_type p, size_t i<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> data_handle_type offset<span class="br0">(</span>data_handle_type p, size_t i<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<h4><span class="mw-headline" id="Class_template_std::strided_slice">Class template <span class="t-lc">std::strided_slice</span></span></h4>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">namespace</span> std <span class="br0">{</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> OffsetType, <span class="kw1">class</span> ExtentType, <span class="kw1">class</span> StrideType<span class="sy1">&gt;</span>
+  <span class="kw1">struct</span> strided_slice
+  <span class="br0">{</span>
+    <span class="kw1">using</span> offset_type <span class="sy1">=</span> OffsetType<span class="sy4">;</span>
+    <span class="kw1">using</span> extent_type <span class="sy1">=</span> ExtentType<span class="sy4">;</span>
+    <span class="kw1">using</span> stride_type <span class="sy1">=</span> StrideType<span class="sy4">;</span>
+ 
+    <span class="br0">[</span><span class="br0">[</span>no_unique_address<span class="br0">]</span><span class="br0">]</span> offset_type offset<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+    <span class="br0">[</span><span class="br0">[</span>no_unique_address<span class="br0">]</span><span class="br0">]</span> extent_type extent<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+    <span class="br0">[</span><span class="br0">[</span>no_unique_address<span class="br0">]</span><span class="br0">]</span> stride_type stride<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<h4><span class="mw-headline" id="Class_template_std::submdspan_mapping_result">Class template <span class="t-lc">std::submdspan_mapping_result</span></span></h4>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">namespace</span> std <span class="br0">{</span>
+  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> LayoutMapping<span class="sy1">&gt;</span>
+  <span class="kw1">struct</span> submdspan_mapping_result
+  <span class="br0">{</span>
+    <span class="br0">[</span><span class="br0">[</span>no_unique_address<span class="br0">]</span><span class="br0">]</span> LayoutMapping mapping <span class="sy1">=</span> LayoutMapping<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    size_t offset<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<h3><span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-c++23">
+<ul><li> C++23 standard (ISO/IEC 14882:2024): 
+</li></ul>
+<dl><dd><ul><li> 24.7.4 Header <code>&lt;mdspan&gt;</code> synopsis [mdspan.syn] 
+</li></ul>
+</dd></dl>
+</div>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 9374/1000000
+Preprocessor generated node count: 9788/1000000
+Postâexpand include size: 249405/4194304 bytes
+Template argument size: 74683/4194304 bytes
+Highest expansion depth: 20/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:21130-0!*!0!!en!*!* and timestamp 20241103002609 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/header/mdspan&amp;oldid=173198">https://en.cppreference.com/mwiki/index.php?title=cpp/header/mdspan&amp;oldid=173198</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/header/mdspan">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 2 July 2024, at 08:00.</li>
+                            </ul>
+                    </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="../.././common/skin_scripts.js"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
+}</script>
+<script src="../.././common/site_scripts.js"></script>
+<!-- Served in 4.264 secs. -->
+	</body>
+<!-- Cached 20241103002609 -->
+</html>

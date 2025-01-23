@@ -4,20 +4,20 @@
 <title>std::lerp - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../common/favicon.ico">
-<link rel="stylesheet" href="../../common/ext.css">
+<link rel="shortcut icon" href="../.././common/favicon.ico">
+<link rel="stylesheet" href="../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../common/site_modules.css">
+<link rel="stylesheet" href="../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../common/startup_scripts.js"></script>
+<script src="../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/numeric/lerp","wgTitle":"cpp/numeric/lerp","wgCurRevisionId":109963,"wgArticleId":18425,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo no example"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/numeric/lerp","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/numeric/lerp","wgTitle":"cpp/numeric/lerp","wgCurRevisionId":160721,"wgArticleId":18425,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/numeric/lerp","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -74,6 +74,30 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 .cpp.source-cpp span.xtra { display:block; }
 
 /*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-text {line-height: normal;}
+.source-text li, .source-text pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for text
+ * CSS class: source-text, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.text.source-text .de1, .text.source-text .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.text.source-text  {font-family:monospace;}
+.text.source-text .imp {font-weight: bold; color: red;}
+.text.source-text li, .text.source-text .li1 {font-weight: normal; vertical-align:top;}
+.text.source-text .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.text.source-text .li2 {font-weight: bold; vertical-align:top;}
+.text.source-text .ln-xtra, .text.source-text li.ln-xtra, .text.source-text div.ln-xtra {background-color: #ffc;}
+.text.source-text span.xtra { display:block; }
+
+/*]]>*/
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_numeric_lerp skin-cppreference2 action-view cpp-navbar">
         <!-- header -->
@@ -84,7 +108,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>lerp</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>lerp</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -95,60 +127,100 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../numeric.html" title="cpp/numeric">numeric</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../numeric.html" title="cpp/numeric"> Numerics library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="math.html" title="cpp/numeric/math">Common mathematical functions</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="special_math.html" title="cpp/numeric/special math">Special mathematical functions</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="fenv.html" title="cpp/numeric/fenv">Floating-point environment</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="complex.html" title="cpp/numeric/complex">Complex numbers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="valarray.html" title="cpp/numeric/valarray">Numeric arrays</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="random.html" title="cpp/numeric/random">Pseudo-random number generation</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="ratio.html" title="cpp/numeric/ratio"> Compile-time rational arithmetic</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Numeric algorithms </td></tr>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../numeric.html" title="cpp/numeric">Numerics library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="math.html" title="cpp/numeric/math">Common mathematical functions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="special_functions.html" title="cpp/numeric/special functions">Mathematical special functions</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="constants.html" title="cpp/numeric/constants">Mathematical constants</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="linalg.html" title="cpp/numeric/linalg">Basic linear algebra algorithms</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="fenv.html" title="cpp/numeric/fenv">Floating-point environment</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="complex.html" title="cpp/numeric/complex">Complex numbers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="valarray.html" title="cpp/numeric/valarray">Numeric array (<code>valarray</code>)</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="random.html" title="cpp/numeric/random">Pseudo-random number generation</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../numeric.html#Factor_operations" title="cpp/numeric">Factor operations</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="gcd.html" title="cpp/numeric/gcd"><span class="t-lines"><span>gcd</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="lcm.html" title="cpp/numeric/lcm"><span class="t-lines"><span>lcm</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Interpolations </td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../numeric.html#Interpolation_operations" title="cpp/numeric">Interpolations</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="midpoint.html" title="cpp/numeric/midpoint"><span class="t-lines"><span>midpoint</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>lerp</span></span></strong></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Generic numeric operations </td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../numeric.html#Saturation_arithmetic_.28since_C.2B.2B26.29" title="cpp/numeric">Saturation arithmetic</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="add_sat.html" title="cpp/numeric/add sat"><span class="t-lines"><span>add_sat</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="sub_sat.html" title="cpp/numeric/sub sat"><span class="t-lines"><span>sub_sat</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="saturate_cast.html" title="cpp/numeric/saturate cast"><span class="t-lines"><span>saturate_cast</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mul_sat.html" title="cpp/numeric/mul sat"><span class="t-lines"><span>mul_sat</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="div_sat.html" title="cpp/numeric/div sat"><span class="t-lines"><span>div_sat</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../numeric.html#Numeric_operations" title="cpp/numeric">Generic numeric operations</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/iota.html" title="cpp/algorithm/iota"><span class="t-lines"><span>iota</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/ranges/iota.html" title="cpp/algorithm/ranges/iota"><span class="t-lines"><span>ranges::iota</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/accumulate.html" title="cpp/algorithm/accumulate"><span class="t-lines"><span>accumulate</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/inner_product.html" title="cpp/algorithm/inner product"><span class="t-lines"><span>inner_product</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/adjacent_difference.html" title="cpp/algorithm/adjacent difference"><span class="t-lines"><span>adjacent_difference</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/partial_sum.html" title="cpp/algorithm/partial sum"><span class="t-lines"><span>partial_sum</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/reduce.html" title="cpp/algorithm/reduce"><span class="t-lines"><span>reduce</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/transform_reduce.html" title="cpp/algorithm/transform reduce"><span class="t-lines"><span>transform_reduce</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/inclusive_scan.html" title="cpp/algorithm/inclusive scan"><span class="t-lines"><span>inclusive_scan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/exclusive_scan.html" title="cpp/algorithm/exclusive scan"><span class="t-lines"><span>exclusive_scan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/transform_inclusive_scan.html" title="cpp/algorithm/transform inclusive scan"><span class="t-lines"><span>transform_inclusive_scan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/transform_exclusive_scan.html" title="cpp/algorithm/transform exclusive scan"><span class="t-lines"><span>transform_exclusive_scan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Bit operations</td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../numeric.html#Bit_manipulation_.28since_C.2B.2B20.29" title="cpp/numeric">Bit operations</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="has_single_bit.html" title="cpp/numeric/has single bit"><span class="t-lines"><span>has_single_bit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span>    </span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="bit_cast.html" title="cpp/numeric/bit cast"><span class="t-lines"><span>bit_cast</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ispow2.html" title="cpp/numeric/ispow2"><span class="t-lines"><span>ispow2</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ceil2.html" title="cpp/numeric/ceil2"><span class="t-lines"><span>ceil2</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="floor2.html" title="cpp/numeric/floor2"><span class="t-lines"><span>floor2</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="log2p1.html" title="cpp/numeric/log2p1"><span class="t-lines"><span>log2p1</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="bit_ceil.html" title="cpp/numeric/bit ceil"><span class="t-lines"><span>bit_ceil</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="bit_floor.html" title="cpp/numeric/bit floor"><span class="t-lines"><span>bit_floor</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="bit_width.html" title="cpp/numeric/bit width"><span class="t-lines"><span>bit_width</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rotl.html" title="cpp/numeric/rotl"><span class="t-lines"><span>rotl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rotr.html" title="cpp/numeric/rotr"><span class="t-lines"><span>rotr</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="popcount.html" title="cpp/numeric/popcount"><span class="t-lines"><span>popcount</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="countl_zero.html" title="cpp/numeric/countl zero"><span class="t-lines"><span>countl_zero</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="countl_one.html" title="cpp/numeric/countl one"><span class="t-lines"><span>countl_one</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="countr_zero.html" title="cpp/numeric/countr zero"><span class="t-lines"><span>countr_zero</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="countr_one.html" title="cpp/numeric/countr one"><span class="t-lines"><span>countr_one</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="byteswap.html" title="cpp/numeric/byteswap"><span class="t-lines"><span>byteswap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../types/endian.html" title="cpp/types/endian"><span class="t-lines"><span>endian</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
@@ -157,71 +229,189 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 <td></td>
 </tr>
-<tr class="t-dcl t-since-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">constexpr</span> <span class="kw4">float</span>       lerp<span class="br0">(</span> <span class="kw4">float</span> a, <span class="kw4">float</span> b, <span class="kw4">float</span> t <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (1) </td>
-<td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
+</tbody>
+<tbody class="t-dcl-rev t-dcl-rev-num"><tr class="t-dcl-rev-aux">
+<td></td>
+<td rowspan="142">(1)</td>
+<td></td>
+</tr>
+<tr class="t-dcl t-since-cxx20 t-until-cxx23">
+<td><div><span class="mw-geshi cpp source-cpp"><span class="kw4">constexpr</span> <span class="kw4">float</span>       lerp<span class="br0">(</span> <span class="kw4">float</span> a, <span class="kw4">float</span> b, <span class="kw4">float</span> t <span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span><br>
+<p><span class="kw4">constexpr</span> <span class="kw4">double</span>      lerp<span class="br0">(</span> <span class="kw4">double</span> a, <span class="kw4">double</span> b, <span class="kw4">double</span> t <span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span><br>
+<span class="kw4">constexpr</span> <span class="kw4">long</span> <span class="kw4">double</span> lerp<span class="br0">(</span> <span class="kw4">long</span> <span class="kw4">double</span> a, <span class="kw4">long</span> <span class="kw4">double</span> b,<br>
+</p>
+                            <span class="kw4">long</span> <span class="kw4">double</span> t <span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad"> </td>
+<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span> <br><span class="t-mark-rev t-until-cxx23">(until C++23)</span></td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">constexpr</span> <span class="coMULTI">/* floating-point-type */</span><br>
+<p>    lerp<span class="br0">(</span> <span class="coMULTI">/* floating-point-type */</span> a,<br>
+          <span class="coMULTI">/* floating-point-type */</span> b,<br>
+</p>
+          <span class="coMULTI">/* floating-point-type */</span> t <span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+</tbody><tbody>
+<tr class="t-dcl-h">
+<td> <div><a href="lerp.html#Notes">Additional overloads</a></div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/cmath.html" title="cpp/header/cmath">&lt;cmath&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="t-dcl t-since-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">constexpr</span> <span class="kw4">double</span>      lerp<span class="br0">(</span> <span class="kw4">double</span> a, <span class="kw4">double</span> b, <span class="kw4">double</span> t <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (2) </td>
-<td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
-</tr>
-<tr class="t-dcl t-since-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">constexpr</span> <span class="kw4">long</span> <span class="kw4">double</span> lerp<span class="br0">(</span> <span class="kw4">long</span> <span class="kw4">double</span> a, <span class="kw4">long</span> <span class="kw4">double</span> b, <span class="kw4">long</span> <span class="kw4">double</span> t <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (3) </td>
-<td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
-</tr>
-<tr class="t-dcl t-since-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">constexpr</span> Promoted    lerp<span class="br0">(</span> Arithmetic1 a, Arithmetic2 b, Arithmetic3 t <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (4) </td>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> Arithmetic1, <span class="kw1">class</span> Arithmetic2, <span class="kw1">class</span> Arithmetic3 <span class="sy1">&gt;</span><br>
+<p><span class="kw4">constexpr</span> <span class="coMULTI">/* common-floating-point-type */</span><br>
+</p>
+    lerp<span class="br0">(</span> Arithmetic1 a, Arithmetic2 b, Arithmetic3 t <span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span></span></div></td>
+<td> (A) </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<div class="t-li1"><span class="t-li">1-3)</span> Computes <span class="t-c"><span class="mw-geshi cpp source-cpp">a<span class="sy2">+</span>t<span class="sy2">*</span><span class="br0">(</span>b−a<span class="br0">)</span></span></span>, i.e. the linear interpolation between <code>a</code> and <code>b</code> for the parameter <code>t</code> (or extrapolation, when <code>t</code> is outside the range <code>[0,1]</code>).</div>
-<div class="t-li1"><span class="t-li">4)</span> A set of overloads or a function template for all combinations of arguments of <a href="../types/is_arithmetic.html" title="cpp/types/is arithmetic">arithmetic type</a> not covered by 1-3). If any argument has <a href="../types/is_integral.html" title="cpp/types/is integral">integral type</a>, it is cast to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span></span>. If any other argument is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">double</span></span></span>, then the return type is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">double</span></span></span>, otherwise it is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span></span>.</div>
+<div class="t-li1"><span class="t-li">1)</span> Computes the <a href="https://en.wikipedia.org/wiki/Linear_interpolation" class="extiw" title="enwiki:Linear interpolation">linear interpolation</a> between <span class="t-c"><span class="mw-geshi cpp source-cpp">a</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">b</span></span>, if the parameter <span class="t-c"><span class="mw-geshi cpp source-cpp">t</span></span> is inside <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp">​<span class="nu0">0</span>​</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span><code>)</code> (the <a href="https://en.wikipedia.org/wiki/Extrapolation#Linear" class="extiw" title="enwiki:Extrapolation">linear extrapolation</a> otherwise), i.e. the result of <span class="mjax" style="display:none">\(a+t(b−a)\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">a+t(b−a)</span> with accounting for floating-point calculation imprecision.<span class="t-rev-inl t-since-cxx23"><span> The library provides overloads for all cv-unqualified floating-point types as the type of the parameters <span class="t-c"><span class="mw-geshi cpp source-cpp">a</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">b</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">t</span></span>.</span><span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span></div>
+<div class="t-li1"><span class="t-li">A)</span> Additional overloads are provided for all other combinations of arithmetic types.</div>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  a, b, t
+<td> a, b, t
 </td>
 <td> -
 </td>
-<td>  values of floating-point or <a href="../types/is_integral.html" title="cpp/types/is integral">integral types</a>
+<td> floating-point or integer values
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
-<p><span class="t-c"><span class="mw-geshi cpp source-cpp">a<span class="sy2">+</span>t<span class="sy2">*</span><span class="br0">(</span>b−a<span class="br0">)</span></span></span>
-</p><p>When <code>isfinite(a) &amp;&amp; isfinite(b)</code>, the following properties are guaranteed:
+<p><span class="mjax" style="display:none">\(a + t(b − a)\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">a + t(b − a)</span>
+</p><p>When <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="math/isfinite.html"><span class="kw1377">std::<span class="me2">isfinite</span></span></a><span class="br0">(</span>a<span class="br0">)</span> <span class="sy3">&amp;&amp;</span> <a href="math/isfinite.html"><span class="kw1377">std::<span class="me2">isfinite</span></span></a><span class="br0">(</span>b<span class="br0">)</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>, the following properties are guaranteed:
 </p>
-<ul><li> If <code>t == 0</code>, the result is equal to <code>a</code>.
-</li><li> If <code>t == 1</code>, the result is equal to <code>b</code>.
-</li><li> If <code>t &gt;= 0 &amp;&amp; t &lt;= 1</code>, the result is finite.
-</li><li> If <code>isfinite(t) &amp;&amp; a == b</code>, the result is equal to <code>a</code>.
-</li><li> If <code>isfinite(t) || (!isnan(t) &amp;&amp; b-a != 0)</code>, the result is not <code>NaN</code>.
+<ul><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">t <span class="sy1">==</span> <span class="nu0">0</span></span></span>, the result is equal to <span class="t-c"><span class="mw-geshi cpp source-cpp">a</span></span>.
+</li><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">t <span class="sy1">==</span> <span class="nu0">1</span></span></span>, the result is equal to <span class="t-c"><span class="mw-geshi cpp source-cpp">b</span></span>.
+</li><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">t <span class="sy1">&gt;=</span> <span class="nu0">0</span> <span class="sy3">&amp;&amp;</span> t <span class="sy1">&lt;=</span> <span class="nu0">1</span></span></span>, the result is finite.
+</li><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="math/isfinite.html"><span class="kw1377">std::<span class="me2">isfinite</span></span></a><span class="br0">(</span>t<span class="br0">)</span> <span class="sy3">&amp;&amp;</span> a <span class="sy1">==</span> b</span></span>, the result is equal to <span class="t-c"><span class="mw-geshi cpp source-cpp">a</span></span>.
+</li><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="math/isfinite.html"><span class="kw1377">std::<span class="me2">isfinite</span></span></a><span class="br0">(</span>t<span class="br0">)</span> <span class="sy3">||</span> <span class="br0">(</span>b <span class="sy2">-</span> a <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">0</span> <span class="sy3">&amp;&amp;</span> <a href="math/isinf.html"><span class="kw1378">std::<span class="me2">isinf</span></span></a><span class="br0">(</span>t<span class="br0">)</span><span class="br0">)</span></span></span>, the result is not <a href="math/NAN.html" title="cpp/numeric/math/NAN"><tt>NaN</tt></a>.
 </li></ul>
-<p>Let <code>CMP(x,y)</code> be <code>1</code> if <code>x &gt; y</code>, <code>-1</code> if <code>x &lt; y</code>, and <code>0</code> otherwise. For any <code>t1</code> and <code>t2</code>, the product of <code>CMP(lerp(a, b, t2), lerp(a, b, t1))</code>, <code>CMP(t2, t1)</code>, and <code>CMP(b, a)</code> is non-negative. (That is, <code>lerp</code> is monotonic.)
+<p>Let <span class="t-c"><span class="mw-geshi cpp source-cpp">CMP<span class="br0">(</span>x, y<span class="br0">)</span></span></span> be <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">x <span class="sy1">&gt;</span> y</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">-</span><span class="nu0">1</span></span></span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">x <span class="sy1">&lt;</span> y</span></span>, and <span class="t-c"><span class="mw-geshi cpp source-cpp">​<span class="nu0">0</span>​</span></span> otherwise. For any <span class="t-c"><span class="mw-geshi cpp source-cpp">t1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">t2</span></span>, the product of
 </p>
-<h3><span class="mw-headline" id="Examples"> Examples </span></h3>
-<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: no example </td></tr></table>
+<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">CMP<span class="br0">(</span>std<span class="sy4">::</span><span class="me2">lerp</span><span class="br0">(</span>a, b, t2<span class="br0">)</span>, std<span class="sy4">::</span><span class="me2">lerp</span><span class="br0">(</span>a, b, t1<span class="br0">)</span><span class="br0">)</span></span></span>,
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">CMP<span class="br0">(</span>t2, t1<span class="br0">)</span></span></span>, and
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">CMP<span class="br0">(</span>b, a<span class="br0">)</span></span></span>
+</li></ul>
+<p>is non-negative. (That is, <code>std::lerp</code> is monotonic.)
+</p>
+<h3><span class="mw-headline" id="Notes">Notes</span></h3>
+<p>The additional overloads are not required to be provided exactly as <span class="t-v">(A)</span>. They only need to be sufficient to ensure that for their first argument <span class="t-c"><span class="mw-geshi cpp source-cpp">num1</span></span>, second argument <span class="t-c"><span class="mw-geshi cpp source-cpp">num2</span></span> and third argument <span class="t-c"><span class="mw-geshi cpp source-cpp">num3</span></span>:
+</p>
+<table class="t-rev-begin">
+<tr class="t-rev t-until-cxx23"><td>
+<ul><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">num1</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">num2</span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">num3</span></span> has type <span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">double</span></span>, then <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">lerp</span><span class="br0">(</span>num1, num2, num3<span class="br0">)</span></span></span> has the same effect as <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">lerp</span><span class="br0">(</span><span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">long</span> <span class="kw4">double</span><span class="sy1">&gt;</span><span class="br0">(</span>num1<span class="br0">)</span>,</span><br><span class="mw-geshi cpp source-cpp">          <span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">long</span> <span class="kw4">double</span><span class="sy1">&gt;</span><span class="br0">(</span>num2<span class="br0">)</span>,</span><br><span class="mw-geshi cpp source-cpp">          <span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">long</span> <span class="kw4">double</span><span class="sy1">&gt;</span><span class="br0">(</span>num3<span class="br0">)</span><span class="br0">)</span></span></span>.
+</li><li> Otherwise, if <span class="t-c"><span class="mw-geshi cpp source-cpp">num1</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">num2</span></span> and/or <span class="t-c"><span class="mw-geshi cpp source-cpp">num3</span></span> has type <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span> or an integer type, then <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">lerp</span><span class="br0">(</span>num1, num2, num3<span class="br0">)</span></span></span> has the same effect as <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">lerp</span><span class="br0">(</span><span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">double</span><span class="sy1">&gt;</span><span class="br0">(</span>num1<span class="br0">)</span>,</span><br><span class="mw-geshi cpp source-cpp">          <span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">double</span><span class="sy1">&gt;</span><span class="br0">(</span>num2<span class="br0">)</span>,</span><br><span class="mw-geshi cpp source-cpp">          <span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">double</span><span class="sy1">&gt;</span><span class="br0">(</span>num3<span class="br0">)</span><span class="br0">)</span></span></span>.
+</li><li> Otherwise, if <span class="t-c"><span class="mw-geshi cpp source-cpp">num1</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">num2</span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">num3</span></span> has type <span class="mw-geshi cpp source-cpp"><span class="kw4">float</span></span>, then <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">lerp</span><span class="br0">(</span>num1, num2, num3<span class="br0">)</span></span></span> has the same effect as <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">lerp</span><span class="br0">(</span><span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">float</span><span class="sy1">&gt;</span><span class="br0">(</span>num1<span class="br0">)</span>,</span><br><span class="mw-geshi cpp source-cpp">          <span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">float</span><span class="sy1">&gt;</span><span class="br0">(</span>num2<span class="br0">)</span>,</span><br><span class="mw-geshi cpp source-cpp">          <span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">float</span><span class="sy1">&gt;</span><span class="br0">(</span>num3<span class="br0">)</span><span class="br0">)</span></span></span>.
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-until-cxx23">(until C++23)</span></td></tr>
+<tr class="t-rev t-since-cxx23"><td>
+<p>If <span class="t-c"><span class="mw-geshi cpp source-cpp">num1</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">num2</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">num3</span></span> have arithmetic types, then <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">lerp</span><span class="br0">(</span>num1, num2, num3<span class="br0">)</span></span></span> has the same effect as <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">lerp</span><span class="br0">(</span><span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="coMULTI">/* common-floating-point-type */</span><span class="sy1">&gt;</span><span class="br0">(</span>num1<span class="br0">)</span>,</span><br><span class="mw-geshi cpp source-cpp">          <span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="coMULTI">/* common-floating-point-type */</span><span class="sy1">&gt;</span><span class="br0">(</span>num2<span class="br0">)</span>,</span><br><span class="mw-geshi cpp source-cpp">          <span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="coMULTI">/* common-floating-point-type */</span><span class="sy1">&gt;</span><span class="br0">(</span>num3<span class="br0">)</span><span class="br0">)</span></span></span>, where <span class="mw-geshi cpp source-cpp"><span class="coMULTI">/* common-floating-point-type */</span></span> is the floating-point type with the greatest <a href="../language/usual_arithmetic_conversions.html#Floating-point_conversion_rank" title="cpp/language/usual arithmetic conversions">floating-point conversion rank</a> and greatest <a href="../language/usual_arithmetic_conversions.html#Floating-point_conversion_subrank" title="cpp/language/usual arithmetic conversions">floating-point conversion subrank</a> among the types of <span class="t-c"><span class="mw-geshi cpp source-cpp">num1</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">num2</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">num3</span></span>, arguments of integer type are considered to have the same floating-point conversion rank as <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span>.
+</p><p>If no such floating-point type with the greatest rank and subrank exists, then <a href="../language/overload_resolution.html" title="cpp/language/overload resolution">overload resolution</a> does not result in a usable candidate from the overloads provided.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx23">(since C++23)</span></td></tr>
+</table>
+<table class="wikitable ftm-begin ftm-has-value">
+
+<tr>
+<th><a href="../utility/feature_test.html" title="cpp/utility/feature test">Feature-test</a> macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Feature
+</th></tr>
+<tr>
+<td><a href="../feature_test.html#cpp_lib_interpolate" title="cpp/feature test"><code>__cpp_lib_interpolate</code></a></td>
+<td><span class="mw-geshi cpp source-cpp"><span class="nu0">201902L</span></span></td>
+<td><span class="t-mark">(C++20)</span></td>
+<td><code>std::lerp</code>, <span class="t-lc"><a href="midpoint.html" title="cpp/numeric/midpoint">std::midpoint</a></span>
+</td></tr></table>
+<h3><span class="mw-headline" id="Example">Example</span></h3>
+<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;cassert&gt;</span>
+<span class="co2">#include &lt;cmath&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
+ 
+<span class="kw4">float</span> naive_lerp<span class="br0">(</span><span class="kw4">float</span> a, <span class="kw4">float</span> b, <span class="kw4">float</span> t<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">return</span> a <span class="sy2">+</span> t <span class="sy2">*</span> <span class="br0">(</span>b <span class="sy2">-</span> a<span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/boolalpha.html"><span class="kw1781">std::<span class="me2">boolalpha</span></span></a><span class="sy4">;</span>
+ 
+    <span class="kw4">const</span> <span class="kw4">float</span> a <span class="sy1">=</span> 1e8f, b <span class="sy1">=</span> <span class="nu17">1.0f</span><span class="sy4">;</span>
+    <span class="kw4">const</span> <span class="kw4">float</span> midpoint <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">lerp</span><span class="br0">(</span>a, b, <span class="nu17">0.5f</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+    <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"a = "</span> <span class="sy1">&lt;&lt;</span> a <span class="sy1">&lt;&lt;</span> <span class="st0">", "</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"b = "</span> <span class="sy1">&lt;&lt;</span> b <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
+              <span class="sy1">&lt;&lt;</span> <span class="st0">"midpoint = "</span> <span class="sy1">&lt;&lt;</span> midpoint <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+ 
+    <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"std::lerp is exact: "</span>
+              <span class="sy1">&lt;&lt;</span> <span class="br0">(</span>a <span class="sy1">==</span> std<span class="sy4">::</span><span class="me2">lerp</span><span class="br0">(</span>a, b, <span class="nu17">0.0f</span><span class="br0">)</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span>
+              <span class="sy1">&lt;&lt;</span> <span class="br0">(</span>b <span class="sy1">==</span> std<span class="sy4">::</span><span class="me2">lerp</span><span class="br0">(</span>a, b, <span class="nu17">1.0f</span><span class="br0">)</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+ 
+    <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"naive_lerp is exact: "</span>
+              <span class="sy1">&lt;&lt;</span> <span class="br0">(</span>a <span class="sy1">==</span> naive_lerp<span class="br0">(</span>a, b, <span class="nu17">0.0f</span><span class="br0">)</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span>
+              <span class="sy1">&lt;&lt;</span> <span class="br0">(</span>b <span class="sy1">==</span> naive_lerp<span class="br0">(</span>a, b, <span class="nu17">1.0f</span><span class="br0">)</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+ 
+    <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"std::lerp(a, b, 1.0f) = "</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">lerp</span><span class="br0">(</span>a, b, <span class="nu17">1.0f</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
+              <span class="sy1">&lt;&lt;</span> <span class="st0">"naive_lerp(a, b, 1.0f) = "</span> <span class="sy1">&lt;&lt;</span> naive_lerp<span class="br0">(</span>a, b, <span class="nu17">1.0f</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+ 
+    <a href="../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span>not <a href="math/isnan.html"><span class="kw1379">std::<span class="me2">isnan</span></span></a><span class="br0">(</span>std<span class="sy4">::</span><span class="me2">lerp</span><span class="br0">(</span>a, b, <a href="math/INFINITY.html"><span class="kw1385">INFINITY</span></a><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// lerp here can be -inf</span>
+ 
+    <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Extrapolation demo, given std::lerp(5, 10, t):<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> t<span class="br0">{</span><span class="sy2">-</span><span class="nu16">2.0</span><span class="br0">}</span><span class="sy4">;</span> t <span class="sy1">&lt;=</span> <span class="nu16">2.0</span><span class="sy4">;</span> t <span class="sy2">+</span><span class="sy1">=</span> <span class="nu16">0.5</span><span class="br0">)</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">lerp</span><span class="br0">(</span><span class="nu16">5.0</span>, <span class="nu16">10.0</span>, t<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<p>Possible output:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">a = 1e+08, b = 1
+midpoint = 5e+07
+std::lerp is exact?: true true
+naive_lerp is exact?: true false
+std::lerp(a, b, 1.0f) = 1
+naive_lerp(a, b, 1.0f) = 0
+Extrapolation demo, given std::lerp(5, 10, t):
+-5 -2.5 0 2.5 5 7.5 10 12.5 15</pre></div></div> 
+</div>
+<h3><span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="midpoint.html" title="cpp/numeric/midpoint"> <span class="t-lines"><span>midpoint</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div>
+</td>
+<td>  midpoint between two numbers or pointers <br> <span class="t-mark">(function template)</span> </td></tr>
+</table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3077/1000000
-Preprocessor generated node count: 9535/1000000
-Post‐expand include size: 73440/2097152 bytes
-Template argument size: 12076/2097152 bytes
-Highest expansion depth: 19/40
+Preprocessor visited node count: 6224/1000000
+Preprocessor generated node count: 14873/1000000
+Post‐expand include size: 154531/4194304 bytes
+Template argument size: 33278/4194304 bytes
+Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:18425-0!*!0!!*!*!* and timestamp 20190318071402 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:18425-0!*!0!!en!*!* and timestamp 20241003214347 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/lerp&amp;oldid=109963">https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/lerp&amp;oldid=109963</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/lerp&amp;oldid=160721">https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/lerp&amp;oldid=160721</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -234,21 +424,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/numeric/lerp">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 15 October 2023, at 09:32.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../common/skin_scripts.js"></script>
+<script src="../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 0.038 secs. -->
+<script src="../.././common/site_scripts.js"></script>
+<!-- Served in 6.185 secs. -->
 	</body>
-<!-- Cached 20190318084000 -->
+<!-- Cached 20241003214348 -->
 </html>

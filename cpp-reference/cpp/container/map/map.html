@@ -4,20 +4,20 @@
 <title>std::map&lt;Key,T,Compare,Allocator&gt;::map - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../../common/favicon.ico">
-<link rel="stylesheet" href="../../../common/ext.css">
+<link rel="shortcut icon" href="../../.././common/favicon.ico">
+<link rel="stylesheet" href="../../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../../common/site_modules.css">
+<link rel="stylesheet" href="../../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../../common/startup_scripts.js"></script>
+<script src="../../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/container/map/map","wgTitle":"cpp/container/map/map","wgCurRevisionId":50563,"wgArticleId":974,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/container/map/map","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/container/map/map","wgTitle":"cpp/container/map/map","wgCurRevisionId":135939,"wgArticleId":974,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/container/map/map","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -108,7 +108,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::map&lt;Key,T,Compare,Allocator&gt;::</span>map</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::map&lt;Key,T,Compare,Allocator&gt;::</span>map</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -123,213 +131,324 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>
 </p>
 </div>
-<div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../container.html" title="cpp/container"> Containers library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../container.html" title="cpp/container">Containers library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Sequence_containers" title="cpp/container">Sequence</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../array.html" title="cpp/container/array"><span class="t-lines"><span>array</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../vector.html" title="cpp/container/vector"><span class="t-lines"><span>vector</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../vector.html" title="cpp/container/vector"><span class="t-lines"><span>vector<span class="t-dsc-small">&lt;bool&gt;</span></span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../inplace_vector.html" title="cpp/container/inplace vector"><span class="t-lines"><span>inplace_vector</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../deque.html" title="cpp/container/deque"><span class="t-lines"><span>deque</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../forward_list.html" title="cpp/container/forward list"><span class="t-lines"><span>forward_list</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../list.html" title="cpp/container/list"><span class="t-lines"><span>list</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Associative_containers" title="cpp/container">Associative</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../set.html" title="cpp/container/set"><span class="t-lines"><span>set</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../multiset.html" title="cpp/container/multiset"><span class="t-lines"><span>multiset</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../map.html" title="cpp/container/map"><span class="t-lines"><span>map</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../multimap.html" title="cpp/container/multimap"><span class="t-lines"><span>multimap</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Unordered_associative_containers_.28since_C.2B.2B11.29" title="cpp/container">Unordered associative</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_set.html" title="cpp/container/unordered set"><span class="t-lines"><span>unordered_set</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_multiset.html" title="cpp/container/unordered multiset"><span class="t-lines"><span>unordered_multiset</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_map.html" title="cpp/container/unordered map"><span class="t-lines"><span>unordered_map</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_multimap.html" title="cpp/container/unordered multimap"><span class="t-lines"><span>unordered_multimap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Container_adaptors" title="cpp/container">Adaptors</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../stack.html" title="cpp/container/stack"><span class="t-lines"><span>stack</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../queue.html" title="cpp/container/queue"><span class="t-lines"><span>queue</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../priority_queue.html" title="cpp/container/priority queue"><span class="t-lines"><span>priority_queue</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_set.html" title="cpp/container/flat set"><span class="t-lines"><span>flat_set</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_multiset.html" title="cpp/container/flat multiset"><span class="t-lines"><span>flat_multiset</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_map.html" title="cpp/container/flat map"><span class="t-lines"><span>flat_map</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_multimap.html" title="cpp/container/flat multimap"><span class="t-lines"><span>flat_multimap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Views" title="cpp/container">Views</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../span.html" title="cpp/container/span"><span class="t-lines"><span>span</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><code><a href="../map.html" title="cpp/container/map"> std::map</a></code><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5"> Member functions</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../mdspan.html" title="cpp/container/mdspan"><span class="t-lines"><span>mdspan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Tables</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../../container.html#Iterator_invalidation" title="cpp/container">Iterator invalidation</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../../container.html#Member_function_table" title="cpp/container">Member function table</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../../container.html#Non-member_function_table" title="cpp/container">Non-member function table</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><code><a href="../map.html" title="cpp/container/map">std::map</a></code><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../map.html#Member_functions" title="cpp/container/map">Member functions</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>map::map</span></span></strong></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="%7Emap.html" title="cpp/container/map/~map"><span class="t-lines"><span>map::~map</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="~map.html" title="cpp/container/map/~map"><span class="t-lines"><span>map::~map</span></span></a></div><div><span class="t-lines"><span><code>             </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator%3D.html" title="cpp/container/map/operator="><span class="t-lines"><span>map::operator=</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="get_allocator.html" title="cpp/container/map/get allocator"><span class="t-lines"><span>map::get_allocator</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Element access</td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../map.html#Element_access" title="cpp/container/map">Element access</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="at.html" title="cpp/container/map/at"><span class="t-lines"><span>map::at</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_at.html" title="cpp/container/map/operator at"><span class="t-lines"><span>map::operator[]</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Iterators</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../map.html#Iterators" title="cpp/container/map">Iterators</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="begin.html" title="cpp/container/map/begin"><span class="t-lines"><span>map::begin</span><span>map::cbegin</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="end.html" title="cpp/container/map/end"><span class="t-lines"><span>map::end</span><span>map::cend</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rbegin.html" title="cpp/container/map/rbegin"><span class="t-lines"><span>map::rbegin</span><span>map::crbegin</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rbegin.html" title="cpp/container/map/rbegin"><span class="t-lines"><span>map::rbegin</span><span>map::crbegin</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span><code>     </code></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rend.html" title="cpp/container/map/rend"><span class="t-lines"><span>map::rend</span><span>map::crend</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Capacity</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="empty.html" title="cpp/container/map/empty"><span class="t-lines"><span>map::empty</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../map.html#Capacity" title="cpp/container/map">Capacity</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="size.html" title="cpp/container/map/size"><span class="t-lines"><span>map::size</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="max_size.html" title="cpp/container/map/max size"><span class="t-lines"><span>map::max_size</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Modifiers</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="empty.html" title="cpp/container/map/empty"><span class="t-lines"><span>map::empty</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../map.html#Observers" title="cpp/container/map">Observers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="key_comp.html" title="cpp/container/map/key comp"><span class="t-lines"><span>map::key_comp</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="value_comp.html" title="cpp/container/map/value comp"><span class="t-lines"><span>map::value_comp</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../map.html#Modifiers" title="cpp/container/map">Modifiers</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="clear.html" title="cpp/container/map/clear"><span class="t-lines"><span>map::clear</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="insert.html" title="cpp/container/map/insert"><span class="t-lines"><span>map::insert</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="insert_or_assign.html" title="cpp/container/map/insert or assign"><span class="t-lines"><span>map::insert_or_assign</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="emplace.html" title="cpp/container/map/emplace"><span class="t-lines"><span>map::emplace</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="emplace_hint.html" title="cpp/container/map/emplace hint"><span class="t-lines"><span>map::emplace_hint</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="try_emplace.html" title="cpp/container/map/try emplace"><span class="t-lines"><span>map::try_emplace</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="erase.html" title="cpp/container/map/erase"><span class="t-lines"><span>map::erase</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap.html" title="cpp/container/map/swap"><span class="t-lines"><span>map::swap</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="extract.html" title="cpp/container/map/extract"><span class="t-lines"><span>map::extract</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="merge.html" title="cpp/container/map/merge"><span class="t-lines"><span>map::merge</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Lookup</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="insert_range.html" title="cpp/container/map/insert range"><span class="t-lines"><span>map::insert_range</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="insert_or_assign.html" title="cpp/container/map/insert or assign"><span class="t-lines"><span>map::insert_or_assign</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="emplace.html" title="cpp/container/map/emplace"><span class="t-lines"><span>map::emplace</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="emplace_hint.html" title="cpp/container/map/emplace hint"><span class="t-lines"><span>map::emplace_hint</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="try_emplace.html" title="cpp/container/map/try emplace"><span class="t-lines"><span>map::try_emplace</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../map.html#Lookup" title="cpp/container/map">Lookup</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="count.html" title="cpp/container/map/count"><span class="t-lines"><span>map::count</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="find.html" title="cpp/container/map/find"><span class="t-lines"><span>map::find</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="contains.html" title="cpp/container/map/contains"><span class="t-lines"><span>map::contains</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="equal_range.html" title="cpp/container/map/equal range"><span class="t-lines"><span>map::equal_range</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="lower_bound.html" title="cpp/container/map/lower bound"><span class="t-lines"><span>map::lower_bound</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="upper_bound.html" title="cpp/container/map/upper bound"><span class="t-lines"><span>map::upper_bound</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Observers</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="key_comp.html" title="cpp/container/map/key comp"><span class="t-lines"><span>map::key_comp</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="value_comp.html" title="cpp/container/map/value comp"><span class="t-lines"><span>map::value_comp</span></span></a></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> <a href="deduction_guides.html" title="cpp/container/map/deduction guides">Deduction guides</a><span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../map.html#Non-member_functions" title="cpp/container/map">Non-member functions</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_cmp.html" title="cpp/container/map/operator cmp"><span class="t-lines"><span>operator==</span><span>operator&lt;=&gt;</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap2.html" title="cpp/container/map/swap2"><span class="t-lines"><span>std::swap<span class="t-dsc-small">(std::map)</span></span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="erase_if.html" title="cpp/container/map/erase if"><span class="t-lines"><span>erase_if<span class="t-dsc-small">(std::map)</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span><code>  </code></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_cmp.html" title="cpp/container/map/operator cmp"><span class="t-lines"><span>operator!=</span><span>operator&lt;</span><span>operator&gt;</span><span>operator&lt;=</span><span>operator&gt;=</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="deduction_guides.html" title="cpp/container/map/deduction guides">Deduction guides</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <table class="t-dcl-begin"><tbody>
+</tbody>
+<tbody class="t-dcl-rev">
+</tbody>
+<tbody class="t-dcl-rev t-dcl-rev-num"><tr class="t-dcl-rev-aux">
+<td></td>
+<td rowspan="142">(1)</td>
+<td></td>
+</tr>
+<tr class="t-dcl t-until-cxx11">
+<td><div><span class="mw-geshi cpp source-cpp">map<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad"> </td>
+<td><span class="t-mark-rev t-until-cxx11">(until C++11)</span></td>
+</tr>
+<tr class="t-dcl t-since-cxx11">
+<td> <div><span class="mw-geshi cpp source-cpp">map<span class="br0">(</span><span class="br0">)</span><br>
+    <span class="sy4">:</span> map<span class="br0">(</span>Compare<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
+</tr>
+</tbody><tbody>
 <tr class="t-dcl">
-<td> <div><span class="mw-geshi cpp source-cpp">map<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span><br>
-<p><span class="kw1">explicit</span> map<span class="br0">(</span> <span class="kw4">const</span> Compare<span class="sy3">&amp;</span> comp, <br>
-</p>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">explicit</span> map<span class="br0">(</span> <span class="kw4">const</span> Compare<span class="sy3">&amp;</span> comp,<br>
               <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (1) </td>
+<td> (2) </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl t-since-cxx11">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">explicit</span> map<span class="br0">(</span> <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (1) </td>
+<td> (3) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
+</tbody><tbody>
 </tbody>
-<tbody class="t-dcl-rev t-dcl-rev-num"><tr class="t-dcl-rev-aux">
-<td></td>
-<td rowspan="142">(2)</td>
-<td></td>
-</tr>
+<tbody class="t-dcl-rev">
 <tr class="t-dcl t-since-cxx98">
-<td class="t-dcl-nopad"> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt <span class="sy1">&gt;</span><br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt <span class="sy1">&gt;</span><br>
 <p>map<span class="br0">(</span> InputIt first, InputIt last,<br>
      <span class="kw4">const</span> Compare<span class="sy3">&amp;</span> comp <span class="sy1">=</span> Compare<span class="br0">(</span><span class="br0">)</span>,<br>
 </p>
      <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td class="t-dcl-nopad">  </td>
+<td> (4) </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl t-since-cxx14">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt <span class="sy1">&gt;</span><br>
 <p>map<span class="br0">(</span> InputIt first, InputIt last,<br>
+     <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><br>
 </p>
-     <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td class="t-dcl-nopad">  </td>
+    <span class="sy4">:</span> map<span class="br0">(</span>first, last, Compare<span class="br0">(</span><span class="br0">)</span>, alloc<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span></span></div></td>
+<td> (5) </td>
 <td> <span class="t-mark-rev t-since-cxx14">(since C++14)</span> </td>
 </tr>
 </tbody><tbody>
+</tbody>
+<tbody class="t-dcl-rev">
 <tr class="t-dcl t-since-cxx98">
 <td> <div><span class="mw-geshi cpp source-cpp">map<span class="br0">(</span> <span class="kw4">const</span> map<span class="sy3">&amp;</span> other <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (3) </td>
+<td> (6) </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl t-since-cxx11">
 <td> <div><span class="mw-geshi cpp source-cpp">map<span class="br0">(</span> <span class="kw4">const</span> map<span class="sy3">&amp;</span> other, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (3) </td>
+<td> (7) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
+</tbody><tbody>
+</tbody>
+<tbody class="t-dcl-rev">
 <tr class="t-dcl t-since-cxx11">
 <td> <div><span class="mw-geshi cpp source-cpp">map<span class="br0">(</span> map<span class="sy3">&amp;&amp;</span> other <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (4) </td>
+<td> (8) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx11">
 <td> <div><span class="mw-geshi cpp source-cpp">map<span class="br0">(</span> map<span class="sy3">&amp;&amp;</span> other, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (4) </td>
+<td> (9) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
+</tbody><tbody>
 </tbody>
-<tbody class="t-dcl-rev t-dcl-rev-num"><tr class="t-dcl-rev-aux">
-<td></td>
-<td rowspan="142">(5)</td>
-<td></td>
-</tr>
+<tbody class="t-dcl-rev">
 <tr class="t-dcl t-since-cxx11">
-<td> <div><span class="mw-geshi cpp source-cpp">map<span class="br0">(</span> <a href="../../utility/initializer_list.html"><span class="kw955">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> init,<br>
+<td> <div><span class="mw-geshi cpp source-cpp">map<span class="br0">(</span> <a href="../../utility/initializer_list.html"><span class="kw964">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> init,<br>
 <p>     <span class="kw4">const</span> Compare<span class="sy3">&amp;</span> comp <span class="sy1">=</span> Compare<span class="br0">(</span><span class="br0">)</span>,<br>
 </p>
      <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td class="t-dcl-nopad">  </td>
+<td> (10) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx14">
-<td> <div><span class="mw-geshi cpp source-cpp">map<span class="br0">(</span> <a href="../../utility/initializer_list.html"><span class="kw955">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> init,<br>
-     <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td class="t-dcl-nopad">  </td>
+<td> <div><span class="mw-geshi cpp source-cpp">map<span class="br0">(</span> <a href="../../utility/initializer_list.html"><span class="kw964">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> init,<br>
+<p>     <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><br>
+</p>
+    <span class="sy4">:</span> map<span class="br0">(</span>init, Compare<span class="br0">(</span><span class="br0">)</span>, alloc<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span></span></div></td>
+<td> (11) </td>
 <td> <span class="t-mark-rev t-since-cxx14">(since C++14)</span> </td>
 </tr>
 </tbody><tbody>
+<tr class="t-dcl t-since-cxx23">
+<td><div><span id="Version_12"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../../ranges/to.html"><span class="kw100">container-compatible-range</span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> R <span class="sy1">&gt;</span><br>
+<p>map<span class="br0">(</span> <a href="../../ranges/from_range.html"><span class="kw3603">std::<span class="me2">from_range_t</span></span></a>, R<span class="sy3">&amp;&amp;</span> rg,<br>
+     <span class="kw4">const</span> Compare<span class="sy3">&amp;</span> comp <span class="sy1">=</span> Compare<span class="br0">(</span><span class="br0">)</span>,<br>
+</p>
+     <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (12)</td>
+<td><span class="t-mark-rev t-since-cxx23">(since C++23)</span></td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../../ranges/to.html"><span class="kw100">container-compatible-range</span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> R <span class="sy1">&gt;</span><br>
+<p>map<span class="br0">(</span> <a href="../../ranges/from_range.html"><span class="kw3603">std::<span class="me2">from_range_t</span></span></a>, R<span class="sy3">&amp;&amp;</span> rg,<br>
+     <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><br>
+</p>
+    <span class="sy4">:</span> map<span class="br0">(</span><a href="../../ranges/from_range.html"><span class="kw3602">std::<span class="me2">from_range</span></span></a>, <a href="../../utility/forward.html"><span class="kw1125">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span><span class="br0">(</span>rg<span class="br0">)</span>, Compare<span class="br0">(</span><span class="br0">)</span>, alloc<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span></span></div></td>
+<td> (13) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Constructs new container from a variety of data sources and optionally using user supplied allocator <code>alloc</code> or comparison function object <code>comp</code>.
+<p>Constructs new container from a variety of data sources and optionally using user supplied allocator <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc</span></span> or comparison function object <span class="t-c"><span class="mw-geshi cpp source-cpp">comp</span></span>.
 </p>
-<div class="t-li1"><span class="t-li">1)</span> Constructs an empty container.</div>
-<div class="t-li1"><span class="t-li">2)</span> Constructs the container with the contents of the range <code>[first, last)</code>. If multiple elements in the range have keys that compare equivalent, it is unspecified which element is inserted (pending <a rel="nofollow" class="external text" href="http://wg21.link/lwg2844">LWG2844</a>).</div>
-<div class="t-li1"><span class="t-li">3)</span> Copy constructor. Constructs the container with the copy of the contents of <code>other</code>. If <code>alloc</code> is not provided, allocator is obtained by calling <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../memory/allocator_traits.html"><span class="kw696">std::<span class="me2">allocator_traits</span></span></a><span class="sy1">&lt;</span>allocator_type<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">select_on_container_copy_construction</span><span class="br0">(</span>other.<span class="me1">get_allocator</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span></span></span>.</div>
-<div class="t-li1"><span class="t-li">4)</span> Move constructor. Constructs the container with the contents of <code>other</code> using move semantics. If <code>alloc</code> is not provided, allocator is obtained by move-construction from the allocator belonging to <code>other</code>.</div>
-<div class="t-li1"><span class="t-li">5)</span> Constructs the container with the contents of the initializer list <code>init</code>. If multiple elements in the range have keys that compare equivalent, it is unspecified which element is inserted (pending <a rel="nofollow" class="external text" href="http://wg21.link/lwg2844">LWG2844</a>).</div>
+<div class="t-li1"><span class="t-li">1-3)</span> Constructs an empty container.</div>
+<div class="t-li1"><span class="t-li">4,5)</span> Constructs the container with the contents of the range <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span><code>)</code>. If multiple elements in the range have keys that compare equivalent, it is unspecified which element is inserted (pending <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2844">LWG2844</a>).</div>
+<div class="t-li1"><span class="t-li"></span> If <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span><code>)</code> is not a <a href="../../iterator.html#Ranges" title="cpp/iterator">valid range</a>, the behavior is undefined.</div>
+<div class="t-li1"><span class="t-li">6,7)</span> <a href="../../language/copy_constructor.html" title="cpp/language/copy constructor">Copy constructor</a>. Constructs the container with the copy of the contents of <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span>.
+<table class="t-rev-begin">
+<tr class="t-rev t-since-cxx11"><td>
+<p>If <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc</span></span> is not provided, allocator is obtained by calling <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../memory/allocator_traits.html"><span class="kw705">std::<span class="me2">allocator_traits</span></span></a><span class="sy1">&lt;</span>allocator_type<span class="sy1">&gt;</span><span class="sy4">::</span></span><br><span class="mw-geshi cpp source-cpp">    select_on_container_copy_construction<span class="br0">(</span>other.<span class="me1">get_allocator</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
+<tr class="t-rev t-since-cxx23"><td>
+<p>During <a href="../../language/ctad.html" title="cpp/language/class template argument deduction">class template argument deduction</a>, only the first argument contributes to the deduction of the container's <code>Allocator</code> template parameter.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx23">(since C++23)</span></td></tr>
+</table></div>
+<div class="t-li1"><span class="t-li">8,9)</span> <a href="../../language/move_constructor.html" title="cpp/language/move constructor">Move constructor</a>. Constructs the container with the contents of <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span> using move semantics. If <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc</span></span> is not provided, allocator is obtained by move-construction from the allocator belonging to <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span>.
+<table class="t-rev-begin">
+<tr class="t-rev t-since-cxx23"><td>
+<p>During <a href="../../language/ctad.html" title="cpp/language/class template argument deduction">class template argument deduction</a>, only the first argument contributes to the deduction of the container's <code>Allocator</code> template parameter.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx23">(since C++23)</span></td></tr>
+</table></div>
+<div class="t-li1"><span class="t-li">10,11)</span> <a href="../../language/list_initialization.html" title="cpp/language/list initialization">Initializer-list constructor</a>. Constructs the container with the contents of the initializer list <span class="t-c"><span class="mw-geshi cpp source-cpp">init</span></span>.If multiple elements in the range have keys that compare equivalent, it is unspecified which element is inserted (pending <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2844">LWG2844</a>).</div>
+<div class="t-li1"><span class="t-li">12,13)</span> Constructs the container with the contents of <span class="t-c"><span class="mw-geshi cpp source-cpp">rg</span></span>. If multiple elements in the range have keys that compare equivalent, it is unspecified which element is inserted (pending <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2844">LWG2844</a>).</div>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  alloc
+<td> alloc
 </td>
 <td> -
 </td>
-<td>  allocator to use for all memory allocations of this container
+<td> allocator to use for all memory allocations of this container
 </td></tr>
 <tr class="t-par">
-<td>  comp
+<td> comp
 </td>
 <td> -
 </td>
-<td>  comparison function object to use for all comparisons of keys
+<td> comparison function object to use for all comparisons of keys
 </td></tr>
 <tr class="t-par">
-<td>  first, last
+<td> first, last
 </td>
 <td> -
 </td>
-<td>  the range to copy the elements from
+<td> the range to copy the elements from
 </td></tr>
 <tr class="t-par">
-<td>  other
+<td> other
 </td>
 <td> -
 </td>
-<td>  another container to be used as source to initialize the elements of the container with
+<td> another container to be used as source to initialize the elements of the container with
 </td></tr>
 <tr class="t-par">
-<td>  init
+<td> init
 </td>
 <td> -
 </td>
-<td>  initializer list to initialize the elements of the container with
+<td> initializer list to initialize the elements of the container with
+</td></tr>
+<tr class="t-par">
+<td> rg
+</td>
+<td> -
+</td>
+<td> a <a href="../../ranges/to.html#container_compatible_range" title="cpp/ranges/to">container compatible range</a>, that is, an <a href="../../ranges/input_range.html" title="cpp/ranges/input range"><code>input_range</code></a> whose elements are convertible to <a href="../map.html#Member_types" title="cpp/container/map"><code>value_type</code></a>
 </td></tr>
 <tr class="t-par-hitem">
 <td colspan="3"> Type requirements
@@ -344,150 +463,194 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="3"> -<div class="spacer"></div><code>Allocator</code> must meet the requirements of <a href="../../named_req/Allocator.html" title="cpp/named req/Allocator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Allocator</span></a>.
 </td></tr></table>
 <h3><span class="mw-headline" id="Complexity">Complexity</span></h3>
-<div class="t-li1"><span class="t-li">1)</span> Constant</div>
-<div class="t-li1"><span class="t-li">2)</span> <span class="texhtml" style="white-space: nowrap;">N log(N)</span> where <span class="t-c"><span class="mw-geshi cpp source-cpp">N <span class="sy1">=</span> <a href="../../iterator/distance.html"><span class="kw669">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first, last<span class="br0">)</span></span></span> in general, linear in <code>N</code> if the range is already sorted by <code>value_comp()</code>.</div>
-<div class="t-li1"><span class="t-li">3)</span> Linear in size of <code>other</code></div>
-<div class="t-li1"><span class="t-li">4)</span> Constant. If <code>alloc</code> is given and <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc <span class="sy3">!</span><span class="sy1">=</span> other.<span class="me1">get_allocator</span><span class="br0">(</span><span class="br0">)</span></span></span>, then linear.</div>
-<div class="t-li1"><span class="t-li">5)</span> <span class="texhtml" style="white-space: nowrap;">N log(N)</span> where <span class="t-c"><span class="mw-geshi cpp source-cpp">N <span class="sy1">=</span> init.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span></span></span> in general, linear in <code>N</code> if <code>init</code> is already sorted by <code>value_comp()</code>.</div>
+<div class="t-li1"><span class="t-li">1-3)</span> Constant.</div>
+<div class="t-li1"><span class="t-li">4,5)</span> <span class="mjax" style="display:none">\(\scriptsize N \cdot log(N)\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N·log(N)</span> where <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../iterator/distance.html"><span class="kw678">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first, last<span class="br0">)</span></span></span> in general, linear in <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> if <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span><code>)</code> is already sorted by <span class="t-c"><span class="mw-geshi cpp source-cpp">value_comp<span class="br0">(</span><span class="br0">)</span></span></span>.</div>
+<div class="t-li1"><span class="t-li">6,7)</span> Linear in size of <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span>.</div>
+<div class="t-li1"><span class="t-li">8,9)</span> Constant. If <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc</span></span> is given and <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc <span class="sy3">!</span><span class="sy1">=</span> other.<span class="me1">get_allocator</span><span class="br0">(</span><span class="br0">)</span></span></span>, then linear.</div>
+<div class="t-li1"><span class="t-li">10,11)</span> <span class="mjax" style="display:none">\(\scriptsize N \cdot log(N)\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N·log(N)</span> where <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> is <span class="t-c"><span class="mw-geshi cpp source-cpp">init.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span></span></span> in general, linear in <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">init</span></span> is already sorted by <span class="t-c"><span class="mw-geshi cpp source-cpp">value_comp<span class="br0">(</span><span class="br0">)</span></span></span>.</div>
+<div class="t-li1"><span class="t-li">12,13)</span> <span class="mjax" style="display:none">\(\scriptsize N \cdot log(N)\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N·log(N)</span> where <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../iterator/ranges/distance.html"><span class="kw3160">ranges::<span class="me2">distance</span></span></a><span class="br0">(</span>rg<span class="br0">)</span></span></span> in general, linear in <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">rg</span></span> is already sorted by <span class="t-c"><span class="mw-geshi cpp source-cpp">value_comp<span class="br0">(</span><span class="br0">)</span></span></span>.</div>
 <h3><span class="mw-headline" id="Exceptions">Exceptions</span></h3>
 <p>Calls to <code>Allocator::allocate</code> may throw.
 </p>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p>After container move construction (overload <span class="t-v">(4)</span>), references, pointers, and iterators (other than the end iterator) to <code>other</code> remain valid, but refer to elements that are now in <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. The current standard makes this guarantee via the blanket statement in §23.2.1[container.requirements.general]/12, and a more direct guarantee is under consideration via <a rel="nofollow" class="external text" href="http://www.open-std.org/JTC1/SC22/WG21/docs/lwg-active.html#2321">LWG 2321</a>.
+<p>After container move construction (overload <span class="t-v">(8,9)</span>), references, pointers, and iterators (other than the end iterator) to <code>other</code> remain valid, but refer to elements that are now in <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. The current standard makes this guarantee via the blanket statement in <a rel="nofollow" class="external text" href="https://eel.is/c++draft/container.reqmts#67">[container.reqmts]/67</a>, and a more direct guarantee is under consideration via <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2321">LWG issue 2321</a>.
+</p><p>Although not formally required until C++23, some implementations has already put the template parameter <code>Allocator</code> into <a href="../../language/template_argument_deduction.html#Non-deduced_contexts" title="cpp/language/template argument deduction">non-deduced contexts</a> in earlier modes.
 </p>
+<table class="wikitable ftm-begin ftm-has-value">
+
+<tr>
+<th><a href="../../utility/feature_test.html" title="cpp/utility/feature test">Feature-test</a> macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Feature
+</th></tr>
+<tr>
+<td><a href="../../feature_test.html#cpp_lib_containers_ranges" title="cpp/feature test"><code>__cpp_lib_containers_ranges</code></a></td>
+<td><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></td>
+<td><span class="t-mark">(C++23)</span></td>
+<td><a href="../../ranges/to.html#container_compatible_range" title="cpp/ranges/to">Ranges-aware</a> construction and insertion; overloads <span class="t-v">(<a href="map.html#Version_12">12,13</a>)</span>
+</td></tr></table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
-<span class="co2">#include &lt;string&gt;</span>
-<span class="co2">#include &lt;iomanip&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iomanip&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;map&gt;</span>
+<span class="co2">#include &lt;string&gt;</span>
  
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> Map<span class="sy1">&gt;</span>
-<span class="kw4">void</span> print_map<span class="br0">(</span>Map<span class="sy3">&amp;</span> m<span class="br0">)</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> Key, <span class="kw1">typename</span> Value, <span class="kw1">typename</span> Cmp<span class="sy1">&gt;</span>
+<a href="../../io/basic_ostream.html"><span class="kw1746">std::<span class="me2">ostream</span></span></a><span class="sy3">&amp;</span> operator<span class="sy1">&lt;&lt;</span><span class="br0">(</span><a href="../../io/basic_ostream.html"><span class="kw1746">std::<span class="me2">ostream</span></span></a><span class="sy3">&amp;</span> os, <a href="../map.html"><span class="kw1289">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span>Key, Value, Cmp<span class="sy1">&gt;</span> <span class="kw4">const</span><span class="sy3">&amp;</span> map<span class="br0">)</span>
 <span class="br0">{</span>
-   <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'{'</span><span class="sy4">;</span>
-   <span class="kw1">for</span><span class="br0">(</span><span class="kw4">auto</span><span class="sy3">&amp;</span> p<span class="sy4">:</span> m<span class="br0">)</span>
-        <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> p.<span class="me1">first</span> <span class="sy1">&lt;&lt;</span> <span class="st0">':'</span> <span class="sy1">&lt;&lt;</span> p.<span class="me1">second</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
-   <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"}<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    os <span class="sy1">&lt;&lt;</span> <span class="st0">"{ "</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> comma<span class="br0">{</span>map.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="br0">}</span><span class="sy4">;</span> <span class="kw4">auto</span> <span class="kw4">const</span><span class="sy3">&amp;</span> p <span class="sy4">:</span> map<span class="br0">)</span>
+        os <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\'</span>'</span> <span class="sy1">&lt;&lt;</span> p.<span class="me1">first</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"' is "</span> <span class="sy1">&lt;&lt;</span> p.<span class="me1">second</span> <span class="sy1">&lt;&lt;</span> <span class="br0">(</span><span class="sy2">--</span>comma <span class="sy4">?</span> <span class="st0">", "</span> <span class="sy4">:</span> <span class="st0">" "</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">return</span> os <span class="sy1">&lt;&lt;</span> <span class="st0">"}<span class="es1">\n</span>"</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
-<span class="kw1">struct</span> Point <span class="br0">{</span> <span class="kw4">double</span> x, y<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw1">struct</span> PointCmp <span class="br0">{</span>
-    <span class="kw4">bool</span> operator<span class="br0">(</span><span class="br0">)</span><span class="br0">(</span><span class="kw4">const</span> Point<span class="sy3">&amp;</span> lhs, <span class="kw4">const</span> Point<span class="sy3">&amp;</span> rhs<span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> 
-        <span class="kw1">return</span> lhs.<span class="me1">x</span> <span class="sy1">&lt;</span> rhs.<span class="me1">x</span><span class="sy4">;</span> <span class="co1">// NB. intentionally ignores y</span>
+<span class="kw1">struct</span> Point
+<span class="br0">{</span>
+    <span class="kw4">double</span> x, y<span class="sy4">;</span>
+ 
+    <span class="kw1">friend</span> <a href="../../io/basic_ostream.html"><span class="kw1746">std::<span class="me2">ostream</span></span></a><span class="sy3">&amp;</span> operator<span class="sy1">&lt;&lt;</span><span class="br0">(</span><a href="../../io/basic_ostream.html"><span class="kw1746">std::<span class="me2">ostream</span></span></a><span class="sy3">&amp;</span> os, Point pt<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">return</span> os <span class="sy1">&lt;&lt;</span> <span class="st0">'('</span> <span class="sy1">&lt;&lt;</span> pt.<span class="me1">x</span> <span class="sy1">&lt;&lt;</span> <span class="st0">", "</span> <span class="sy1">&lt;&lt;</span> pt.<span class="me1">y</span> <span class="sy1">&lt;&lt;</span> <span class="st0">')'</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+<span class="br0">}</span><span class="sy4">;</span>
+ 
+<span class="kw1">struct</span> PointCmp
+<span class="br0">{</span>
+    <span class="kw4">bool</span> operator<span class="br0">(</span><span class="br0">)</span><span class="br0">(</span><span class="kw4">const</span> Point<span class="sy3">&amp;</span> lhs, <span class="kw4">const</span> Point<span class="sy3">&amp;</span> rhs<span class="br0">)</span> <span class="kw4">const</span>
+    <span class="br0">{</span>
+        <span class="kw1">return</span> lhs.<span class="me1">x</span> <span class="sy1">&lt;</span> rhs.<span class="me1">x</span><span class="sy4">;</span> <span class="co1">// NB: y is intentionally ignored</span>
     <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-  <span class="co1">// (1) Default constructor</span>
-  <a href="../map.html"><span class="kw1278">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span><a href="../../string/basic_string.html"><span class="kw1227">std::<span class="me2">string</span></span></a>, <span class="kw4">int</span><span class="sy1">&gt;</span> map1<span class="sy4">;</span>
-  map1<span class="br0">[</span><span class="st0">"something"</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">69</span><span class="sy4">;</span>
-  map1<span class="br0">[</span><span class="st0">"anything"</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">199</span><span class="sy4">;</span>
-  map1<span class="br0">[</span><span class="st0">"that thing"</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">50</span><span class="sy4">;</span>
-  <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"map1 = "</span><span class="sy4">;</span> print_map<span class="br0">(</span>map1<span class="br0">)</span><span class="sy4">;</span>
+    <span class="co1">// (1) Default constructor</span>
+    <a href="../map.html"><span class="kw1289">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span><a href="../../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a>, <span class="kw4">int</span><span class="sy1">&gt;</span> map1<span class="sy4">;</span>
+    map1<span class="br0">[</span><span class="st0">"something"</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">69</span><span class="sy4">;</span>
+    map1<span class="br0">[</span><span class="st0">"anything"</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">199</span><span class="sy4">;</span>
+    map1<span class="br0">[</span><span class="st0">"that thing"</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">50</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"map1 = "</span> <span class="sy1">&lt;&lt;</span> map1<span class="sy4">;</span>
  
-  <span class="co1">// (2) Range constructor</span>
-  <a href="../map.html"><span class="kw1278">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span><a href="../../string/basic_string.html"><span class="kw1227">std::<span class="me2">string</span></span></a>, <span class="kw4">int</span><span class="sy1">&gt;</span> iter<span class="br0">(</span>map1.<span class="me1">find</span><span class="br0">(</span><span class="st0">"anything"</span><span class="br0">)</span>, map1.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-  <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>iter = "</span><span class="sy4">;</span> print_map<span class="br0">(</span>iter<span class="br0">)</span><span class="sy4">;</span>
-  <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"map1 = "</span><span class="sy4">;</span> print_map<span class="br0">(</span>map1<span class="br0">)</span><span class="sy4">;</span>
+    <span class="co1">// (4) Range constructor</span>
+    <a href="../map.html"><span class="kw1289">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span><a href="../../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a>, <span class="kw4">int</span><span class="sy1">&gt;</span> iter<span class="br0">(</span>map1.<span class="me1">find</span><span class="br0">(</span><span class="st0">"anything"</span><span class="br0">)</span>, map1.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>iter = "</span> <span class="sy1">&lt;&lt;</span> iter<span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"map1 = "</span> <span class="sy1">&lt;&lt;</span> map1<span class="sy4">;</span>
  
-  <span class="co1">// (3) Copy constructor</span>
-  <a href="../map.html"><span class="kw1278">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span><a href="../../string/basic_string.html"><span class="kw1227">std::<span class="me2">string</span></span></a>, <span class="kw4">int</span><span class="sy1">&gt;</span> copied<span class="br0">(</span>map1<span class="br0">)</span><span class="sy4">;</span>
-  <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>copied = "</span><span class="sy4">;</span> print_map<span class="br0">(</span>copied<span class="br0">)</span><span class="sy4">;</span>
-  <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"map1 = "</span><span class="sy4">;</span> print_map<span class="br0">(</span>map1<span class="br0">)</span><span class="sy4">;</span>
+    <span class="co1">// (6) Copy constructor</span>
+    <a href="../map.html"><span class="kw1289">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span><a href="../../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a>, <span class="kw4">int</span><span class="sy1">&gt;</span> copied<span class="br0">(</span>map1<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>copied = "</span> <span class="sy1">&lt;&lt;</span> copied<span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"map1 = "</span> <span class="sy1">&lt;&lt;</span> map1<span class="sy4">;</span>
  
-  <span class="co1">// (4) Move constructor</span>
-  <a href="../map.html"><span class="kw1278">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span><a href="../../string/basic_string.html"><span class="kw1227">std::<span class="me2">string</span></span></a>, <span class="kw4">int</span><span class="sy1">&gt;</span> moved<span class="br0">(</span>std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>map1<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-  <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>moved = "</span><span class="sy4">;</span> print_map<span class="br0">(</span>moved<span class="br0">)</span><span class="sy4">;</span>
-  <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"map1 = "</span><span class="sy4">;</span> print_map<span class="br0">(</span>map1<span class="br0">)</span><span class="sy4">;</span>
+    <span class="co1">// (8) Move constructor</span>
+    <a href="../map.html"><span class="kw1289">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span><a href="../../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a>, <span class="kw4">int</span><span class="sy1">&gt;</span> moved<span class="br0">{</span>std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>map1<span class="br0">)</span><span class="br0">}</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>moved = "</span> <span class="sy1">&lt;&lt;</span> moved<span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"map1 = "</span> <span class="sy1">&lt;&lt;</span> map1<span class="sy4">;</span>
  
-  <span class="co1">// (5) Initializer list constructor</span>
-  <span class="kw4">const</span> <a href="../map.html"><span class="kw1278">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span><a href="../../string/basic_string.html"><span class="kw1227">std::<span class="me2">string</span></span></a>, <span class="kw4">int</span><span class="sy1">&gt;</span> init <span class="br0">{</span>
-    <span class="br0">{</span><span class="st0">"this"</span>, <span class="nu0">100</span><span class="br0">}</span>,
-    <span class="br0">{</span><span class="st0">"can"</span>, <span class="nu0">100</span><span class="br0">}</span>,
-    <span class="br0">{</span><span class="st0">"be"</span>, <span class="nu0">100</span><span class="br0">}</span>,
-    <span class="br0">{</span><span class="st0">"const"</span>, <span class="nu0">100</span><span class="br0">}</span>,
-  <span class="br0">}</span><span class="sy4">;</span>
-  <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>init = "</span><span class="sy4">;</span> print_map<span class="br0">(</span>init<span class="br0">)</span><span class="sy4">;</span>
+    <span class="co1">// (10) Initializer list constructor</span>
+    <span class="kw4">const</span> <a href="../map.html"><span class="kw1289">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span><a href="../../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a>, <span class="kw4">int</span><span class="sy1">&gt;</span> init
+    <span class="br0">{</span>
+        <span class="br0">{</span><span class="st0">"this"</span>, <span class="nu0">100</span><span class="br0">}</span>,
+        <span class="br0">{</span><span class="st0">"can"</span>, <span class="nu0">100</span><span class="br0">}</span>,
+        <span class="br0">{</span><span class="st0">"be"</span>, <span class="nu0">100</span><span class="br0">}</span>,
+        <span class="br0">{</span><span class="st0">"const"</span>, <span class="nu0">100</span><span class="br0">}</span>
+    <span class="br0">}</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>init = "</span> <span class="sy1">&lt;&lt;</span> init<span class="sy4">;</span>
  
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>Custom Key class option 1:<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    <span class="co1">// Use a comparison struct</span>
+    <a href="../map.html"><span class="kw1289">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span>Point, <span class="kw4">double</span>, PointCmp<span class="sy1">&gt;</span> mag <span class="sy1">=</span>
+    <span class="br0">{</span>
+        <span class="br0">{</span><span class="br0">{</span><span class="nu0">5</span>, <span class="sy2">-</span><span class="nu0">12</span><span class="br0">}</span>, <span class="nu0">13</span><span class="br0">}</span>,
+        <span class="br0">{</span><span class="br0">{</span><span class="nu0">3</span>, <span class="nu0">4</span><span class="br0">}</span>, <span class="nu0">5</span><span class="br0">}</span>,
+        <span class="br0">{</span><span class="br0">{</span><span class="sy2">-</span><span class="nu0">8</span>, <span class="sy2">-</span><span class="nu0">15</span><span class="br0">}</span>, <span class="nu0">17</span><span class="br0">}</span>
+    <span class="br0">}</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"mag = "</span> <span class="sy1">&lt;&lt;</span> mag <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
  
-  <span class="co1">// Custom Key class option 1:</span>
-  <span class="co1">// Use a comparison struct</span>
-  <a href="../map.html"><span class="kw1278">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span>Point, <span class="kw4">double</span>, PointCmp<span class="sy1">&gt;</span> mag <span class="sy1">=</span> <span class="br0">{</span>
-      <span class="br0">{</span> <span class="br0">{</span><span class="nu0">5</span>, <span class="sy2">-</span><span class="nu0">12</span><span class="br0">}</span>, <span class="nu0">13</span> <span class="br0">}</span>,
-      <span class="br0">{</span> <span class="br0">{</span><span class="nu0">3</span>, <span class="nu0">4</span><span class="br0">}</span>,   <span class="nu0">5</span> <span class="br0">}</span>,
-      <span class="br0">{</span> <span class="br0">{</span><span class="sy2">-</span><span class="nu0">8</span>, <span class="sy2">-</span><span class="nu0">15</span><span class="br0">}</span>, <span class="nu0">17</span> <span class="br0">}</span>
-  <span class="br0">}</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Custom Key class option 2:<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    <span class="co1">// Use a comparison lambda</span>
+    <span class="co1">// This lambda sorts points according to their magnitudes, where</span>
+    <span class="co1">// these magnitudes are taken from the local variable mag.</span>
+    <span class="kw4">auto</span> cmpLambda <span class="sy1">=</span> <span class="br0">[</span><span class="sy3">&amp;</span>mag<span class="br0">]</span><span class="br0">(</span><span class="kw4">const</span> Point<span class="sy3">&amp;</span> lhs, <span class="kw4">const</span> Point<span class="sy3">&amp;</span> rhs<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">return</span> mag<span class="br0">[</span>lhs<span class="br0">]</span> <span class="sy1">&lt;</span> mag<span class="br0">[</span>rhs<span class="br0">]</span><span class="sy4">;</span>
+    <span class="br0">}</span><span class="sy4">;</span>
  
-  <span class="kw1">for</span><span class="br0">(</span><span class="kw4">auto</span> p <span class="sy4">:</span> mag<span class="br0">)</span>
-      <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"The magnitude of ("</span> <span class="sy1">&lt;&lt;</span> p.<span class="me1">first</span>.<span class="me1">x</span>
-                <span class="sy1">&lt;&lt;</span> <span class="st0">", "</span> <span class="sy1">&lt;&lt;</span> p.<span class="me1">first</span>.<span class="me1">y</span> <span class="sy1">&lt;&lt;</span> <span class="st0">") is "</span>
-                <span class="sy1">&lt;&lt;</span> p.<span class="me1">second</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <span class="co1">// You could also use a lambda that is not dependent on local variables, like this:</span>
+    <span class="co1">// auto cmpLambda = [](const Point&amp; lhs, const Point&amp; rhs){ return lhs.y &lt; rhs.y; };</span>
+    <a href="../map.html"><span class="kw1289">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span>Point, <span class="kw4">double</span>, decltype<span class="br0">(</span>cmpLambda<span class="br0">)</span><span class="sy1">&gt;</span> magy<span class="br0">(</span>cmpLambda<span class="br0">)</span><span class="sy4">;</span>
  
-  <span class="co1">// Custom Key class option 2:    </span>
-  <span class="co1">// Use a comparison lambda</span>
-  <span class="co1">// This lambda sorts points according to their magnitudes, where note that</span>
-  <span class="co1">//  these magnitudes are taken from the local variable mag</span>
-  <span class="kw4">auto</span> cmpLambda <span class="sy1">=</span> <span class="br0">[</span><span class="sy3">&amp;</span>mag<span class="br0">]</span><span class="br0">(</span><span class="kw4">const</span> Point <span class="sy3">&amp;</span>lhs, <span class="kw4">const</span> Point <span class="sy3">&amp;</span>rhs<span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> mag<span class="br0">[</span>lhs<span class="br0">]</span> <span class="sy1">&lt;</span> mag<span class="br0">[</span>rhs<span class="br0">]</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
-  <span class="co1">//You could also use a lambda that is not dependent on local variables, like this:</span>
-  <span class="co1">//auto cmpLambda = [](const Point &amp;lhs, const Point &amp;rhs) { return lhs.y &lt; rhs.y; };</span>
-  <a href="../map.html"><span class="kw1278">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span>Point, <span class="kw4">double</span>, decltype<span class="br0">(</span>cmpLambda<span class="br0">)</span><span class="sy1">&gt;</span> magy<span class="br0">(</span>cmpLambda<span class="br0">)</span><span class="sy4">;</span>
+    <span class="co1">// Various ways of inserting elements:</span>
+    magy.<span class="me1">insert</span><span class="br0">(</span><a href="../../utility/pair.html"><span class="kw1104">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span>Point, <span class="kw4">double</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">{</span><span class="nu0">5</span>, <span class="sy2">-</span><span class="nu0">12</span><span class="br0">}</span>, <span class="nu0">13</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    magy.<span class="me1">insert</span><span class="br0">(</span><span class="br0">{</span><span class="br0">{</span><span class="nu0">3</span>, <span class="nu0">4</span><span class="br0">}</span>, <span class="nu0">5</span><span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span>
+    magy.<span class="me1">insert</span><span class="br0">(</span><span class="br0">{</span>Point<span class="br0">{</span><span class="sy2">-</span><span class="nu16">8.0</span>, <span class="sy2">-</span><span class="nu16">15.0</span><span class="br0">}</span>, <span class="nu0">17</span><span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span>    
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"magy = "</span> <span class="sy1">&lt;&lt;</span> magy <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
  
-  <span class="co1">//Various ways of inserting elements:</span>
-  magy.<span class="me1">insert</span><span class="br0">(</span><a href="../../utility/pair.html"><span class="kw1093">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span>Point, <span class="kw4">double</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">{</span><span class="nu0">5</span>, <span class="sy2">-</span><span class="nu0">12</span><span class="br0">}</span>, <span class="nu0">13</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-  magy.<span class="me1">insert</span><span class="br0">(</span><span class="br0">{</span> <span class="br0">{</span><span class="nu0">3</span>, <span class="nu0">4</span><span class="br0">}</span>, <span class="nu0">5</span><span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span>
-  magy.<span class="me1">insert</span><span class="br0">(</span><span class="br0">{</span>Point<span class="br0">{</span><span class="sy2">-</span><span class="nu16">8.0</span>, <span class="sy2">-</span><span class="nu16">15.0</span><span class="br0">}</span>, <span class="nu0">17</span><span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span>
- 
-  <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-  <span class="kw1">for</span><span class="br0">(</span><span class="kw4">auto</span> p <span class="sy4">:</span> magy<span class="br0">)</span>
-      <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"The magnitude of ("</span> <span class="sy1">&lt;&lt;</span> p.<span class="me1">first</span>.<span class="me1">x</span>
-                <span class="sy1">&lt;&lt;</span> <span class="st0">", "</span> <span class="sy1">&lt;&lt;</span> p.<span class="me1">first</span>.<span class="me1">y</span> <span class="sy1">&lt;&lt;</span> <span class="st0">") is "</span>
-                <span class="sy1">&lt;&lt;</span> p.<span class="me1">second</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Construction from a range:<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    <span class="kw1">using</span> PS <span class="sy1">=</span> <a href="../../utility/pair.html"><span class="kw1104">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> <a href="../../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a>, <span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw4">const</span> <span class="kw4">auto</span> rg <span class="sy1">=</span> <span class="br0">{</span>PS<span class="br0">{</span><span class="st0">"one"</span>, <span class="nu0">1</span><span class="br0">}</span>, <span class="br0">{</span><span class="st0">"one"</span>, <span class="nu0">101</span><span class="br0">}</span>, <span class="br0">{</span><span class="st0">"two"</span>, <span class="nu0">2</span><span class="br0">}</span>, <span class="br0">{</span><span class="st0">"three"</span>, <span class="nu0">3</span><span class="br0">}</span><span class="br0">}</span><span class="sy4">;</span>
+<span class="co2">#if __cpp_lib_containers_ranges</span>
+    <a href="../map.html"><span class="kw1289">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span><a href="../../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a>, <span class="kw4">int</span><span class="sy1">&gt;</span> nums<span class="br0">(</span><a href="../../ranges/from_range.html"><span class="kw3602">std::<span class="me2">from_range</span></span></a>, rg<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// overload (12)</span>
+<span class="co2">#else</span>
+    <a href="../map.html"><span class="kw1289">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span><a href="../../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a>, <span class="kw4">int</span><span class="sy1">&gt;</span> nums<span class="br0">(</span>rg.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, rg.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// fallback to (4)</span>
+<span class="co2">#endif</span>
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"nums = "</span> <span class="sy1">&lt;&lt;</span> nums <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">map1 = {anything:199 something:69 that thing:50 }
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">map1 = { 'anything' is 199, 'something' is 69, 'that thing' is 50 }
  
-iter = {anything:199 something:69 that thing:50 }
-map1 = {anything:199 something:69 that thing:50 }
+iter = { 'anything' is 199, 'something' is 69, 'that thing' is 50 }
+map1 = { 'anything' is 199, 'something' is 69, 'that thing' is 50 }
  
-copied = {anything:199 something:69 that thing:50 }
-map1 = {anything:199 something:69 that thing:50 }
+copied = { 'anything' is 199, 'something' is 69, 'that thing' is 50 }
+map1 = { 'anything' is 199, 'something' is 69, 'that thing' is 50 }
  
-moved = {anything:199 something:69 that thing:50 }
-map1 = {}
+moved = { 'anything' is 199, 'something' is 69, 'that thing' is 50 }
+map1 = { }
  
-init = {be:100 can:100 const:100 this:100 }
-The magnitude of (-8, -15) is 17
-The magnitude of (3, 4) is 5
-The magnitude of (5, -12) is 13
+init = { 'be' is 100, 'can' is 100, 'const' is 100, 'this' is 100 }
  
-The magnitude of (3, 4) is 5
-The magnitude of (5, -12) is 13
-The magnitude of (-8, -15) is 17</pre></div></div> 
+Custom Key class option 1:
+mag = { '(-8, -15)' is 17, '(3, 4)' is 5, '(5, -12)' is 13 }
+ 
+Custom Key class option 2:
+magy = { '(3, 4)' is 5, '(5, -12)' is 13, '(-8, -15)' is 17 }
+ 
+Construction from a range:
+nums = { 'one' is 1, 'three' is 3, 'two' is 2 }</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
 <p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
 </p>
 <table class="dsctable" style="font-size:0.8em">
 <tr>
-<th> DR
+<th>DR
 </th>
-<th> Applied to
+<th>Applied to
 </th>
-<th> Behavior as published
+<th>Behavior as published
 </th>
-<th> Correct behavior
+<th>Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2193">LWG 2193</a>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2076">LWG 2076</a>
 </td>
-<td> C++11
+<td>C++11
 </td>
-<td> the default constructor is explicit
+<td>overload <span class="t-v">(4)</span> conditionally required <code>Key</code>and <code>T</code> to be <a href="../../named_req/CopyInsertable.html" title="cpp/named req/CopyInsertable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CopyInsertable</span></a> into <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>
 </td>
-<td> made non-explicit
+<td>not required
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2193">LWG 2193</a>
+</td>
+<td>C++11
+</td>
+<td>the default constructor was explicit
+</td>
+<td>made non-explicit
 </td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
@@ -495,24 +658,24 @@ The magnitude of (-8, -15) is 17</pre></div></div>
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="operator%3D.html" title="cpp/container/map/operator="> <span class="t-lines"><span>operator=</span></span></a></div></div>
 </td>
-<td>   assigns values to the container  <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  assigns values to the container <br> <span class="t-mark">(public member function)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 6200/1000000
-Preprocessor generated node count: 11412/1000000
-Post‐expand include size: 193365/2097152 bytes
-Template argument size: 33882/2097152 bytes
-Highest expansion depth: 24/40
+Preprocessor visited node count: 9875/1000000
+Preprocessor generated node count: 18575/1000000
+Post‐expand include size: 302801/4194304 bytes
+Template argument size: 51385/4194304 bytes
+Highest expansion depth: 23/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:974-0!*!0!!en!*!* and timestamp 20190601175437 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:974-0!*!0!!en!*!* and timestamp 20241109031906 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/map/map&amp;oldid=50563">https://en.cppreference.com/mwiki/index.php?title=cpp/container/map/map&amp;oldid=50563</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/map/map&amp;oldid=135939">https://en.cppreference.com/mwiki/index.php?title=cpp/container/map/map&amp;oldid=135939</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -525,21 +688,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/container/map/map">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 29 November 2021, at 18:53.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../../common/skin_scripts.js"></script>
+<script src="../../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 2.123 secs. -->
+<script src="../../.././common/site_scripts.js"></script>
+<!-- Served in 5.197 secs. -->
 	</body>
-<!-- Cached 20190601175437 -->
+<!-- Cached 20241109031906 -->
 </html>

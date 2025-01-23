@@ -4,20 +4,20 @@
 <title>Arithmetic operators - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../common/favicon.ico">
-<link rel="stylesheet" href="../../common/ext.css">
+<link rel="shortcut icon" href="../.././common/favicon.ico">
+<link rel="stylesheet" href="../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../common/site_modules.css">
+<link rel="stylesheet" href="../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../common/startup_scripts.js"></script>
+<script src="../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/operator_arithmetic","wgTitle":"c/language/operator arithmetic","wgCurRevisionId":104456,"wgArticleId":9564,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/operator_arithmetic","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/operator_arithmetic","wgTitle":"c/language/operator arithmetic","wgCurRevisionId":176253,"wgArticleId":9564,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/operator_arithmetic","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -108,7 +108,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading">Arithmetic operators</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading">Arithmetic operators</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -120,34 +128,35 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../language.html" title="c/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="c/header"> Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../types.html" title="c/types"> Type support</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../program.html" title="c/program"> Program utilities</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../variadic.html" title="c/variadic"> Variadic function support</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="c/error"> Error handling</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../memory.html" title="c/memory"> Dynamic memory management</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../chrono.html" title="c/chrono"> Date and time utilities</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../string.html" title="c/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="c/algorithm"> Algorithms</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="c/numeric"> Numerics</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../io.html" title="c/io"> Input/output support</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="c/locale"> Localization support</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="c/atomic"> Atomic operations</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="c/thread"> Thread support</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="c/experimental"> Technical Specifications</a> </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="c/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../language.html" title="c/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../header.html" title="c/header">Headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../types.html" title="c/types">Type support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../program.html" title="c/program">Program utilities</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../variadic.html" title="c/variadic">Variadic function support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../error.html" title="c/error">Error handling</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../memory.html" title="c/memory">Dynamic memory management</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../string.html" title="c/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="c/algorithm">Algorithms</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="c/numeric">Numerics</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../chrono.html" title="c/chrono">Date and time utilities</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../io.html" title="c/io">Input/output support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="c/locale">Localization support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="c/thread">Concurrency support</a> <span class="t-mark-rev t-since-c11">(C11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="c/experimental">Technical Specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../index.html" title="c/symbol index">Symbol index</a></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../language.html" title="c/language"> C language</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"> <a href="basic_concepts.html" title="c/language/basic concepts">Basic concepts</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="../keyword.html" title="c/keyword"> Keywords</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="../preprocessor.html" title="c/preprocessor"> Preprocessor</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="statements.html" title="c/language/statements"> Statements</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="expressions.html" title="c/language/expressions"> Expressions</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="initialization.html" title="c/language/initialization"> Initialization</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="declarations.html" title="c/language/declarations"> Declarations</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="functions.html" title="c/language/functions"> Functions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> Miscellaneous</td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="history.html" title="c/language/history"> History of C</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="../experimental.html" title="c/experimental">Technical Specifications</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="basic_concepts.html" title="c/language/basic concepts">Basic concepts</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../keyword.html" title="c/keyword"> Keywords</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../preprocessor.html" title="c/preprocessor"> Preprocessor</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="statements.html" title="c/language/statements"> Statements</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="expressions.html" title="c/language/expressions"> Expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="initialization.html" title="c/language/initialization"> Initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="declarations.html" title="c/language/declarations"> Declarations</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="functions.html" title="c/language/functions"> Functions</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Miscellaneous</td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="history.html" title="c/language/history"> History of C</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="c/experimental">Technical Specifications</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="expressions.html" title="c/language/expressions"> Expressions</a><div class="t-navbar-menu"><div><div style="display:inline-block">
 <div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h2"><td colspan="5"> General </td></tr>
@@ -155,13 +164,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="eval_order.html" title="c/language/eval order"> evaluation order and sequence points</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="constant_expression.html" title="c/language/constant expression">constant expressions</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="conversion.html" title="c/language/conversion">implicit conversions</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="generic.html" title="c/language/generic">generic selection</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="generic.html" title="c/language/generic">generic selection</a> <span class="t-mark-rev t-since-c11">(C11)</span></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="expressions.html#Constants_and_literals" title="c/language/expressions">constants and literals</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="integer_constant.html" title="c/language/integer constant"> integer constant</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="floating_constant.html" title="c/language/floating constant"> floating constant</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="character_constant.html" title="c/language/character constant"> character constant</a> </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="bool_constant.html" title="c/language/bool constant"><span class="t-lines"><span>true/false</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="nullptr.html" title="c/language/nullptr"><span class="t-lines"><span>nullptr</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="string_literal.html" title="c/language/string literal"> string literal</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="compound_literal.html" title="c/language/compound literal"> compound literal</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="compound_literal.html" title="c/language/compound literal"> compound literal</a> <span class="t-mark-rev t-since-c99">(C99)</span></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="expressions.html#Operators" title="c/language/expressions">operators</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="operator_precedence.html" title="c/language/operator precedence">operator precedence</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="operator_member_access.html" title="c/language/operator member access">member access and indirection</a> </td></tr>
@@ -247,7 +258,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr style="text-align:center">
 <td> <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span></span></span>
 </td>
-<td> modulo
+<td> remainder
 </td>
 <td> <span class="t-c"><span class="mw-geshi c source-c">a <span class="sy2">%</span> b</span></span>
 </td>
@@ -355,9 +366,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="10" class="t-sdsc-sep">
 </td></tr></table>
 <div class="t-li1"><span class="t-li">1)</span> unary plus (promotion)</div>
-<div class="t-li1"><span class="t-li">2)</span> unary minus (negation)
-<p>where 
-</p>
+<div class="t-li1"><span class="t-li">2)</span> unary minus (negation)</div>
 <table class="t-par-begin">
 
 
@@ -367,7 +376,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> -
 </td>
 <td>  expression of any <a href="arithmetic_types.html" title="c/language/arithmetic types">arithmetic type</a>
-</td></tr></table></div>
+</td></tr></table>
 <p>Both unary plus and unary minus first apply <a href="conversion.html" title="c/language/conversion">integral promotions</a> to their operand, and then
 </p>
 <ul><li> unary plus returns the value after promotion
@@ -377,18 +386,40 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <h4><span class="mw-headline" id="Notes">Notes</span></h4>
 <p>The unary minus invokes undefined behavior due to signed integer overflow when applied to <span class="t-lc"><a href="../types/limits.html" title="c/types/limits">INT_MIN</a></span>, <span class="t-lc"><a href="../types/limits.html" title="c/types/limits">LONG_MIN</a></span>, or <span class="t-lc"><a href="../types/limits.html" title="c/types/limits">LLONG_MIN</a></span>, on typical (2's complement) platforms.
-</p><p>In C++, unary operator + can also be used with other built-in types such as arrays and functions, not so in C.
+</p><p>In C++, unary operator <code><b>+</b></code> can also be used with other built-in types such as arrays and functions, not so in C.
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
 <span class="co2">#include &lt;complex.h&gt;</span>
+<span class="co2">#include &lt;limits.h&gt;</span>
+ 
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">char</span> c <span class="sy1">=</span> <span class="st0">'a'</span><span class="sy4">;</span>
     <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof char: %zu sizeof int: %zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> c, <span class="kw4">sizeof</span> <span class="sy2">+</span>c<span class="br0">)</span><span class="sy4">;</span>
  
     <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"-1, where 1 is signed: %d<span class="es1">\n</span>"</span>, <span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"-1, where 1 is unsigned: %u<span class="es1">\n</span>"</span>, <span class="sy2">-</span>1u<span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="co1">// Defined behavior since arithmetic is performed for unsigned integer.</span>
+    <span class="co1">// Hence, the calculation is (-1) modulo (2 raised to n) = UINT_MAX, where n is</span>
+    <span class="co1">// the number of bits of unsigned int. If unsigned int is 32-bit long, then this</span>
+    <span class="co1">// gives (-1) modulo (2 raised to 32) = 4294967295</span>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"-1, where 1 is unsigned: %u<span class="es1">\n</span>"</span>, <span class="sy2">-</span>1u<span class="br0">)</span><span class="sy4">;</span> 
+ 
+    <span class="co1">// Undefined behavior because the mathematical value of -INT_MIN = INT_MAX + 1</span>
+    <span class="co1">// (i.e. 1 more than the maximum possible value for signed int)</span>
+    <span class="co1">//</span>
+    <span class="co1">// printf("%d\n", -INT_MIN);</span>
+ 
+    <span class="co1">// Undefined behavior because the mathematical value of -LONG_MIN = LONG_MAX + 1</span>
+    <span class="co1">// (i.e. 1 more than the maximum possible value for signed long)</span>
+    <span class="co1">//</span>
+    <span class="co1">// printf("%ld\n", -LONG_MIN);</span>
+ 
+    <span class="co1">// Undefined behavior because the mathematical value of -LLONG_MIN = LLONG_MAX + 1</span>
+    <span class="co1">// (i.e. 1 more than the maximum possible value for signed long long)</span>
+    <span class="co1">//</span>
+    <span class="co1">// printf("%lld\n", -LLONG_MIN);</span>
  
     <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z <span class="sy1">=</span> <span class="nu0">1</span> <span class="sy2">+</span> <span class="nu0">2</span><span class="sy2">*</span>I<span class="sy4">;</span>
     <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"-(1+2i) = %.1f%+.1f<span class="es1">\n</span>"</span>, <a href="../numeric/complex/creal.html"><span class="kw754">creal</span></a><span class="br0">(</span><span class="sy2">-</span>z<span class="br0">)</span>, <a href="../numeric/complex/cimag.html"><span class="kw751">cimag</span></a><span class="br0">(</span><span class="sy2">-</span>z<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
@@ -501,21 +532,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co1">// work in progress</span>
 <span class="co1">// note: take part of the c/language/conversion example</span></pre></div></div>
-<p><br> 
-</p>
 </div>
 <h4><span class="mw-headline" id="Pointer_arithmetic">Pointer arithmetic</span></h4>
 <ul><li> If the pointer <code>P</code> points at an element of an array with index <code>I</code>, then
 </li></ul>
 <dl><dd><ul><li> <span class="t-c"><span class="mw-geshi c source-c">P<span class="sy2">+</span>N</span></span> and <span class="t-c"><span class="mw-geshi c source-c">N<span class="sy2">+</span>P</span></span> are pointers that point at an element of the same array with index <code>I+N</code>
-</li><li> <span class="t-c"><span class="mw-geshi c source-c">P<span class="sy2">-</span>N</span></span> is a pointer that points at an element of the same array with index {tt|I-N}}
+</li><li> <span class="t-c"><span class="mw-geshi c source-c">P<span class="sy2">-</span>N</span></span> is a pointer that points at an element of the same array with index <code>I-N</code>
 </li></ul>
 </dd></dl>
 <p>The behavior is defined only if both the original pointer and the result pointer are pointing at elements of the same array or one past the end of that array. Note that executing p-1 when p points at the first element of an array is undefined behavior and may fail on some platforms.
 </p>
 <ul><li> If the pointer <code>P1</code> points at an element of an array with index <code>I</code> (or one past the end) and <code>P2</code> points at an element of the same array with index <code>J</code> (or one past the end), then
 </li></ul>
-<dl><dd><ul><li> <span class="t-c"><span class="mw-geshi c source-c">P1<span class="sy2">-</span>P2</span></span> has the value equal to <span class="t-c"><span class="mw-geshi c source-c">J<span class="sy2">-</span>I</span></span> and the type <span class="t-lc"><a href="../types/ptrdiff_t.html" title="c/types/ptrdiff t">ptrdiff_t</a></span> (which is a signed integer type, typically half as large as the size of the largest object that can be declared)
+<dl><dd><ul><li> <span class="t-c"><span class="mw-geshi c source-c">P1<span class="sy2">-</span>P2</span></span> has the value equal to <span class="t-c"><span class="mw-geshi c source-c">I<span class="sy2">-</span>J</span></span> and the type <span class="t-lc"><a href="../types/ptrdiff_t.html" title="c/types/ptrdiff t">ptrdiff_t</a></span> (which is a signed integer type, typically half as large as the size of the largest object that can be declared)
 </li></ul>
 </dd></dl>
 <p>The behavior is defined only if the result fits in <span class="t-lc"><a href="../types/ptrdiff_t.html" title="c/types/ptrdiff t">ptrdiff_t</a></span>.
@@ -528,8 +557,6 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>p<span class="br0">)</span><span class="br0">[</span>m<span class="br0">]</span> <span class="sy1">=</span> a<span class="sy4">;</span> <span class="co1">// p == &amp;a[0] </span>
 p <span class="sy1">=</span> p <span class="sy2">+</span> <span class="nu0">1</span><span class="sy4">;</span>       <span class="co1">// p == &amp;a[1] (pointer arithmetic works with VLAs just the same)</span>
 <span class="br0">(</span><span class="sy2">*</span>p<span class="br0">)</span><span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">99</span><span class="sy4">;</span>    <span class="co1">// changes a[1][2]</span></pre></div></div>
-<p><br> 
-</p>
 </div>
 <h3><span class="mw-headline" id="Multiplicative_operators">Multiplicative operators</span></h3>
 <p>The binary multiplicative arithmetic operator expressions have the form 
@@ -587,10 +614,10 @@ p <span class="sy1">=</span> p <span class="sy2">+</span> <span class="nu0">1</s
 <p>The binary operator * performs multiplication of its operands (after usual arithmetic conversions) following the usual arithmetic definitions, except that
 </p>
 <ul><li> if one operand is a NaN, the result is a NaN
-</li><li> multiplication if infinity by zero gives NaN and <span class="t-lc"><a href="../numeric/fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span> is raised
+</li><li> multiplication of infinity by zero gives NaN and <span class="t-lc"><a href="../numeric/fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span> is raised
 </li><li> multiplication of infinity by a nonzero gives infinity (even for complex arguments)
 </li></ul>
-<p>Because in C, any <a href="arithmetic_types.html" title="c/language/arithmetic types">complex value</a> with at least one infinite part as an infinity even if its other part is a NaN, the usual arithmetic rules do not apply to complex-complex multiplication. Other combinations of floating operands follow the following table:
+<p>Because in C, any <a href="arithmetic_types.html" title="c/language/arithmetic types">complex value</a> with at least one infinite part is an infinity even if its other part is a NaN, the usual arithmetic rules do not apply to complex-complex multiplication. Other combinations of floating operands follow the following table:
 </p>
 <table class="wikitable" style="text-align:center; font-size:85%; max-width:90em;">
 
@@ -635,7 +662,7 @@ p <span class="sy1">=</span> p <span class="sy2">+</span> <span class="nu0">1</s
 </p><p>Despite disallowing undue overflow, complex multiplication may raise spurious floating-point exceptions (otherwise it is prohibitively difficult to implement non-overflowing versions)
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include&lt;stdio.h&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
 <span class="co2">#include &lt;stdio.h&gt;</span>
 <span class="co2">#include &lt;complex.h&gt;</span>
 <span class="co2">#include &lt;math.h&gt;</span>
@@ -665,18 +692,14 @@ p <span class="sy1">=</span> p <span class="sy2">+</span> <span class="nu0">1</s
 inf + i*nan</pre></div></div> 
 </div>
 <h4><span class="mw-headline" id="Division">Division</span></h4>
-<p>The binary operator / divides the first operand by the second (after usual arithmetic conversions) following the usual arithmetics definitions, except that
+<p>The binary operator <code><b>/</b></code> divides the first operand by the second (after usual arithmetic conversions) following the usual arithmetic definitions, except that
 </p>
-<ul><li> when the type after usual arithmetic conversions is an integer type, the result is the algebraic quotient (not a fraction), <span class="t-rev-inl t-until-c99"><span>rounded in implementation-defined direction</span> <span><span class="t-mark">(until C99)</span></span></span><span class="t-rev-inl t-since-c99"><span>truncated towards zero</span> <span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>
+<ul><li> when the type after usual arithmetic conversions is an integer type, the result is the algebraic quotient (not a fraction), <span class="t-rev-inl t-until-c99"><span>rounded in implementation-defined direction</span><span><span class="t-mark-rev t-until-c99">(until C99)</span></span></span><span class="t-rev-inl t-since-c99"><span>truncated towards zero</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>
 </li><li> if one operand is a NaN, the result is a NaN
-</li><li> if the first operand is a complex infinity and the second operand is finite, then the
+</li><li> if the first operand is a complex infinity and the second operand is finite, then the result of the <code><b>/</b></code> operator is a complex infinity
+</li><li> if the first operand is finite and the second operand is a complex infinity, then the result of the <code><b>/</b></code> operator is a zero.
 </li></ul>
-<p>result of the / operator is a complex infinity
-</p>
-<ul><li> if the first operand is finite and the second operand is a complex infinity, then the
-</li></ul>
-<p>result of the / operator is a zero
-</p><p>Because in C, any <a href="arithmetic_types.html" title="c/language/arithmetic types">complex value</a> with at least one infinite part as an infinity even if its other part is a NaN, the usual arithmetic rules do not apply to complex-complex division. Other combinations of floating operands follow the following table:
+<p>Because in C, any <a href="arithmetic_types.html" title="c/language/arithmetic types">complex value</a> with at least one infinite part as an infinity even if its other part is a NaN, the usual arithmetic rules do not apply to complex-complex division. Other combinations of floating operands follow the following table:
 </p>
 <table class="wikitable" style="text-align:center; font-size:85%; max-width:90em;">
 
@@ -799,30 +822,39 @@ inf + i*nan</pre></div></div>
 </td>
 <td>  expressions of integer type
 </td></tr></table></div>
-<p>First, operators &amp;, ^, and | perform <a href="conversion.html#Usual_arithmetic_conversions" title="c/language/conversion">usual arithmetic conversions</a> on both operands and the operator ~ performs <a href="conversion.html#Integer_promotions" title="c/language/conversion">integer promotions</a> on its only operand.
+<p>First, operators <span class="t-c"><span class="mw-geshi c source-c"><span class="sy3">&amp;</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="sy3">^</span></span></span>, and <span class="t-c"><span class="mw-geshi c source-c"><span class="sy3">|</span></span></span> perform <a href="conversion.html#Usual_arithmetic_conversions" title="c/language/conversion">usual arithmetic conversions</a> on both operands and the operator <span class="t-c"><span class="mw-geshi c source-c">~</span></span> performs <a href="conversion.html#Integer_promotions" title="c/language/conversion">integer promotions</a> on its only operand.
 </p><p>Then, the corresponding binary logic operators are applied bitwise; that is, each bit of the result is set or cleared according to the logic operation (NOT, AND, OR, or XOR), applied to the corresponding bits of the operands.
 </p><p>Note: bitwise operators are commonly used to manipulate bit sets and bit masks.
-</p><p>Note: for unsigned types (after promotion), the expression ~E is equivalent to the maximum value representable by the result type minus the original value of E.
+</p><p>Note: for unsigned types (after promotion), the expression <span class="t-c"><span class="mw-geshi c source-c">~E</span></span> is equivalent to the maximum value representable by the result type minus the original value of <span class="t-c"><span class="mw-geshi c source-c">E</span></span>.
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
 <span class="co2">#include &lt;stdint.h&gt;</span>
+ 
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../types/integer.html"><span class="kw121">uint16_t</span></a> mask <span class="sy1">=</span> <span class="nu12">0x00f0</span><span class="sy4">;</span>
     <a href="../types/integer.html"><span class="kw122">uint32_t</span></a> a <span class="sy1">=</span> <span class="nu12">0x12345678</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"Value: %#x mask: %#x<span class="es1">\n</span>"</span>
-           <span class="st0">"Setting bits:   %#x<span class="es1">\n</span>"</span>
-           <span class="st0">"Clearing bits:  %#x<span class="es1">\n</span>"</span>
-           <span class="st0">"Selecting bits: %#x<span class="es1">\n</span>"</span>,
-           a,mask,<span class="br0">(</span>a<span class="sy3">|</span>mask<span class="br0">)</span>,<span class="br0">(</span>a<span class="sy3">&amp;</span>~mask<span class="br0">)</span>,<span class="br0">(</span>a<span class="sy3">&amp;</span>mask<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../types/integer.html"><span class="kw121">uint16_t</span></a> mask <span class="sy1">=</span> <span class="nu12">0x00f0</span><span class="sy4">;</span>
+ 
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"Promoted mask:<span class="es1">\t</span>%#010x<span class="es1">\n</span>"</span>
+           <span class="st0">"Value:<span class="es1">\t</span><span class="es1">\t</span>%#x<span class="es1">\n</span>"</span>
+           <span class="st0">"Setting bits:<span class="es1">\t</span>%#x<span class="es1">\n</span>"</span>
+           <span class="st0">"Clearing bits:<span class="es1">\t</span>%#x<span class="es1">\n</span>"</span>
+           <span class="st0">"Selecting bits:<span class="es1">\t</span>%#010x<span class="es1">\n</span>"</span>
+           , mask
+           , a
+           , a <span class="sy3">|</span> mask
+           , a <span class="sy3">&amp;</span> ~mask
+           , a <span class="sy3">&amp;</span> mask
+    <span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Value: 0x12345678 mask: 0xf0
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Promoted mask:  0x000000f0
+Value:          0x12345678
 Setting bits:   0x123456f8
 Clearing bits:  0x12345608
-Selecting bits: 0x70</pre></div></div> 
+Selecting bits: 0x00000070</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="Shift_operators">Shift operators</span></h3>
 <p>The bitwise shift operator expressions have the form 
@@ -873,9 +905,9 @@ Selecting bits: 0x70</pre></div></div>
 <td>  expressions of integer type
 </td></tr></table></div>
 <p>First, <a href="conversion.html" title="c/language/conversion">integer promotions</a> are performed, individually, on each operand (Note: this is unlike other binary arithmetic operators, which all perform usual arithmetic conversions). The type of the result is the type of <span class="t-spar">lhs</span> after promotion. 
+</p><p>The behavior is undefined if <span class="t-spar">rhs</span> is negative or is greater or equal the number of bits in the promoted <span class="t-spar">lhs</span>.
 </p><p>For unsigned <span class="t-spar">lhs</span>, the value of <code>LHS &lt;&lt; RHS</code> is the value of <span class="texhtml" style="white-space: nowrap;">LHS * 2<span class="t-su">RHS<br></span></span>, reduced modulo maximum value of the return type plus 1 (that is, bitwise left shift is performed and the bits that get shifted out of the destination type are discarded). For signed <span class="t-spar">lhs</span> with nonnegative values, the value of <code>LHS &lt;&lt; RHS</code> is <span class="texhtml" style="white-space: nowrap;">LHS * 2<span class="t-su">RHS<br></span></span> if it is representable in the promoted type of <span class="t-spar">lhs</span>, otherwise the behavior is undefined.
 </p><p>For unsigned <span class="t-spar">lhs</span> and for signed <span class="t-spar">lhs</span> with nonnegative values, the value of <code>LHS &gt;&gt; RHS</code> is the integer part of <span class="texhtml" style="white-space: nowrap;">LHS / 2<span class="t-su">RHS<br></span></span>. For negative <code>LHS</code>, the value of <code>LHS &gt;&gt; RHS</code> is implementation-defined where in most implementations, this performs arithmetic right shift (so that the result remains negative). Thus in most implementations, right shifting a signed <code>LHS</code> fills the new higher-order bits with the original sign bit (i.e. with 0 if it was non-negative and 1 if it was negative).
-</p><p>In any case, the behavior is undefined if <span class="t-spar">rhs</span> is negative or is greater or equal the number of bits in the promoted <span class="t-spar">lhs</span>.
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
@@ -899,6 +931,31 @@ Selecting bits: 0x70</pre></div></div>
 -1000 &gt;&gt; 1 = -500</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-17">
+<ul><li> C17 standard (ISO/IEC 9899:2018): 
+</li></ul>
+<dl><dd><ul><li> 6.5.3.3 Unary arithmetic operators (p: 64)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 6.5.5 Multiplicative operators (p: 66)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 6.5.6 Additive operators (p: 66-68)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 6.5.7 Bitwise shift operators (p: 68)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 6.5.10 Bitwise AND operator (p: 70)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 6.5.11 Bitwise exclusive OR operator (p: 70)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 6.5.12 Bitwise inclusive OR operator (p: 70-71)
+</li></ul>
+</dd></dl>
+</div>
 <div class="t-ref-std-11">
 <ul><li> C11 standard (ISO/IEC 9899:2011): 
 </li></ul>
@@ -923,6 +980,7 @@ Selecting bits: 0x70</pre></div></div>
 <dl><dd><ul><li> 6.5.12 Bitwise inclusive OR operator (p: 98)
 </li></ul>
 </dd></dl>
+</div>
 <div class="t-ref-std-c99">
 <ul><li> C99 standard (ISO/IEC 9899:1999): 
 </li></ul>
@@ -947,6 +1005,7 @@ Selecting bits: 0x70</pre></div></div>
 <dl><dd><ul><li> 6.5.12 Bitwise inclusive OR operator (p: 88)
 </li></ul>
 </dd></dl>
+</div>
 <div class="t-ref-std-c89">
 <ul><li> C89/C90 standard (ISO/IEC 9899:1990): 
 </li></ul>
@@ -1060,32 +1119,35 @@ a.<span class="me1">b</span></span></span>
 <p><span class="t-c"><span class="mw-geshi c source-c">a<span class="br0">(</span>...<span class="br0">)</span><br>
 a, b<br>
 <span class="br0">(</span>type<span class="br0">)</span> a<br>
-<span class="sy4">?</span> <span class="sy4">:</span><br>
-<span class="kw4">sizeof</span><br>
-_Alignof</span></span> <span class="t-mark-rev t-since-c11">(since C11)</span>
+a <span class="sy4">?</span> b <span class="sy4">:</span> c<br>
+<span class="kw4">sizeof</span></span></span><br><br>
+<span class="t-c"><span class="mw-geshi c source-c">_Alignof</span></span><br><span class="t-mark-rev t-since-c11">(since C11)</span>
 </p>
 </td></tr>
 </table>
 <table class="t-dsc-begin">
 
-</table></div>
-</div>
+<tr class="t-dsc">
+<td colspan="2"> <div class="t-dsc-see"><span><a href="../../cpp/language/operator_arithmetic.html" title="cpp/language/operator arithmetic">C++ documentation</a></span> for <span class=""><span>Arithmetic operators</span></span></div>
+</td></tr>
+
+</table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5125/1000000
-Preprocessor generated node count: 13430/1000000
-Post‐expand include size: 69361/2097152 bytes
-Template argument size: 18774/2097152 bytes
+Preprocessor visited node count: 5651/1000000
+Preprocessor generated node count: 14138/1000000
+Post‐expand include size: 75739/4194304 bytes
+Template argument size: 23089/4194304 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9564-0!*!0!!en!*!* and timestamp 20190407151319 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9564-0!*!0!!en!*!* and timestamp 20240917173111 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/operator_arithmetic&amp;oldid=104456">https://en.cppreference.com/mwiki/index.php?title=c/language/operator_arithmetic&amp;oldid=104456</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/operator_arithmetic&amp;oldid=176253">https://en.cppreference.com/mwiki/index.php?title=c/language/operator_arithmetic&amp;oldid=176253</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -1098,21 +1160,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/c/language/operator_arithmetic">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 17 September 2024, at 10:31.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../common/skin_scripts.js"></script>
+<script src="../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 1.704 secs. -->
+<script src="../.././common/site_scripts.js"></script>
+<!-- Served in 0.061 secs. -->
 	</body>
-<!-- Cached 20190407151319 -->
+<!-- Cached 20240917174518 -->
 </html>

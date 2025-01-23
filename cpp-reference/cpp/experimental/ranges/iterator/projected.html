@@ -4,20 +4,20 @@
 <title>std::experimental::ranges::projected - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../../../common/favicon.ico">
-<link rel="stylesheet" href="../../../../common/ext.css">
+<link rel="shortcut icon" href="../../../.././common/favicon.ico">
+<link rel="stylesheet" href="../../../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../../../common/site_modules.css">
+<link rel="stylesheet" href="../../../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../../../common/startup_scripts.js"></script>
+<script src="../../../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/experimental/ranges/iterator/projected","wgTitle":"cpp/experimental/ranges/iterator/projected","wgCurRevisionId":105858,"wgArticleId":16145,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/experimental/ranges/iterator/projected","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/experimental/ranges/iterator/projected","wgTitle":"cpp/experimental/ranges/iterator/projected","wgCurRevisionId":155546,"wgArticleId":16145,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/experimental/ranges/iterator/projected","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -84,7 +84,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::experimental::ranges::</span>projected</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::experimental::ranges::</span>projected</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -95,39 +103,55 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../../../cpp.html" title="cpp">cpp</a>‎ | <a href="../../../experimental.html" title="cpp/experimental">experimental</a>‎ | <a href="../../ranges.html" title="cpp/experimental/ranges">ranges</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../experimental.html" title="cpp/experimental"> Technical specifications</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="../../fs.html" title="cpp/experimental/fs">Filesystem library</a> <span class="t-mark-rev t-since-fs-ts t-mark-ts">(filesystem TS)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../memory.html" title="cpp/experimental/lib extensions">Library fundamentals</a> <span class="t-mark-rev t-since-libfund-ts t-mark-ts">(library fundamentals TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../lib_extensions_2.html" title="cpp/experimental/lib extensions 2">Library fundamentals 2</a> <span class="t-mark-rev t-since-libfund-2-ts t-mark-ts">(library fundamentals 2 TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../parallelism.html" title="cpp/experimental/parallelism">Extensions for parallelism</a> <span class="t-mark-rev t-since-parallelism-ts t-mark-ts">(parallelism TS)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../parallelism_2.html" title="cpp/experimental/parallelism 2">Extensions for parallelism 2</a> <span class="t-mark-rev t-since-parallelism-ts-2 t-mark-ts">(parallelism TS v2)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../concurrency.html" title="cpp/experimental/concurrency">Extensions for concurrency</a> <span class="t-mark-rev t-since-concurrency-ts t-mark-ts">(concurrency TS)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../constraints.html" title="cpp/experimental/constraints">Concepts</a> <span class="t-mark-rev t-since-concepts-ts t-mark-ts">(concepts TS)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../ranges.html" title="cpp/experimental/ranges">Ranges</a> <span class="t-mark-rev t-since-ranges-ts t-mark-ts">(ranges TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../special_math.html" title="cpp/experimental/special math">Special mathematical functions</a> <span class="t-mark-rev t-since-special-math-tr t-mark-ts">(special math TR)</span></td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../ranges.html" title="cpp/experimental/ranges"> Ranges</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../../../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../experimental.html" title="cpp/experimental">Experimental</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../../../experimental.html#Technical_Specification" title="cpp/experimental">Technical Specification</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../fs.html" title="cpp/experimental/fs">Filesystem library</a> <span class="t-mark-rev t-since-fs-ts t-mark-ts">(filesystem TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../memory.html" title="cpp/experimental/lib extensions">Library fundamentals</a> <span class="t-mark-rev t-since-libfund-ts t-mark-ts">(library fundamentals TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../lib_extensions_2.html" title="cpp/experimental/lib extensions 2">Library fundamentals 2</a> <span class="t-mark-rev t-since-libfund-ts-2 t-mark-ts">(library fundamentals TS v2)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../lib_extensions_3.html" title="cpp/experimental/lib extensions 3">Library fundamentals 3</a> <span class="t-mark-rev t-since-libfund-ts-3 t-mark-ts">(library fundamentals TS v3)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../parallelism.html" title="cpp/experimental/parallelism">Extensions for parallelism</a> <span class="t-mark-rev t-since-parallelism-ts t-mark-ts">(parallelism TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../parallelism_2.html" title="cpp/experimental/parallelism 2">Extensions for parallelism 2</a> <span class="t-mark-rev t-since-parallelism-ts-2 t-mark-ts">(parallelism TS v2)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../concurrency.html" title="cpp/experimental/concurrency">Extensions for concurrency</a> <span class="t-mark-rev t-since-concurrency-ts t-mark-ts">(concurrency TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/concurrency_2&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/concurrency 2 (page does not exist)">Extensions for concurrency 2</a> <span class="t-mark-rev t-since-concurrency-ts-2 t-mark-ts">(concurrency TS v2)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../constraints.html" title="cpp/experimental/constraints">Concepts</a> <span class="t-mark-rev t-since-concepts-ts t-mark-ts">(concepts TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../ranges.html" title="cpp/experimental/ranges">Ranges</a> <span class="t-mark-rev t-since-ranges-ts t-mark-ts">(ranges TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../reflect.html" title="cpp/experimental/reflect">Reflection</a> <span class="t-mark-rev t-since-reflection-ts t-mark-ts">(reflection TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../special_math.html" title="cpp/experimental/special functions">Mathematical special functions</a> <span class="t-mark-rev t-since-special-math-tr t-mark-ts">(special functions TR)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../../../experimental.html#Experimental_Non-TS" title="cpp/experimental">Experimental Non-TS</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/pm&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/pm (page does not exist)">Pattern Matching</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/la&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/la (page does not exist)">Linear Algebra</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../execution.html" title="cpp/experimental/execution" class="mw-redirect">std::execution</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/contracts&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/contracts (page does not exist)">Contracts</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/2dgraphics&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/2dgraphics (page does not exist)">2D Graphics</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../ranges.html" title="cpp/experimental/ranges">Ranges</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../../ranges.html#Concepts" title="cpp/experimental/ranges"><span class="t-lines"><span>Concepts</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../../ranges.html#General_utilities" title="cpp/experimental/ranges"><span class="t-lines"><span>General utilities</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../../ranges.html#Iterators" title="cpp/experimental/ranges"><span class="t-lines"><span>Iterators</span></span></a></div></div></td></tr>
@@ -144,7 +168,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="Iterator.html" title="cpp/experimental/ranges/iterator/Iterator"><span class="t-lines"><span>Iterator</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="Sentinel.html" title="cpp/experimental/ranges/iterator/Sentinel"><span class="t-lines"><span>Sentinel</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="SizedSentinel.html" title="cpp/experimental/ranges/iterator/SizedSentinel"><span class="t-lines"><span>SizedSentinel</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
+<tr class="t-nv"><td colspan="5"><br>
 </td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="InputIterator.html" title="cpp/experimental/ranges/iterator/InputIterator"><span class="t-lines"><span>InputIterator</span></span></a></div></div></td></tr>
@@ -153,11 +177,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="RandomAccessIterator.html" title="cpp/experimental/ranges/iterator/RandomAccessIterator"><span class="t-lines"><span>RandomAccessIterator</span></span></a></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="OutputIterator.html" title="cpp/experimental/ranges/iterator/OutputIterator"><span class="t-lines"><span>OutputIterator</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
+<tr class="t-nv"><td colspan="5"><br>
 </td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
+<tr class="t-nv"><td colspan="5"><br>
 </td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
+<tr class="t-nv"><td colspan="5"><br>
 </td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Indirect callable concepts</td></tr>
@@ -181,12 +205,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="IndirectlyCopyable.html" title="cpp/experimental/ranges/iterator/IndirectlyCopyable"><span class="t-lines"><span>IndirectlyCopyable</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="IndirectlyCopyableStorable.html" title="cpp/experimental/ranges/iterator/IndirectlyCopyableStorable"><span class="t-lines"><span>IndirectlyCopyableStorable</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
+<tr class="t-nv"><td colspan="5"><br>
 </td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="IndirectlySwappable.html" title="cpp/experimental/ranges/iterator/IndirectlySwappable"><span class="t-lines"><span>IndirectlySwappable</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="IndirectlyComparable.html" title="cpp/experimental/ranges/iterator/IndirectlyComparable"><span class="t-lines"><span>IndirectlyComparable</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
+<tr class="t-nv"><td colspan="5"><br>
 </td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="Permutable.html" title="cpp/experimental/ranges/iterator/Permutable"><span class="t-lines"><span>Permutable</span></span></a></div></div></td></tr>
@@ -218,16 +242,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="iterator_category.html" title="cpp/experimental/ranges/iterator/iterator category"><span class="t-lines"><span>iterator_category</span></span></a></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="iterator_tags.html" title="cpp/experimental/ranges/iterator/iterator tags"><span class="t-lines"><span>input_iterator_tag</span><span>output_iterator_tag</span><span>forward_iterator_tag</span><span>bidirectional_iterator_tag</span><span>random_access_iterator_tag</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
+<tr class="t-nv"><td colspan="5"><br>
 </td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/iterator/iterator_traits&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/ranges/iterator/iterator traits (page does not exist)"><span class="t-lines"><span>ranges::iterator_traits</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/iterator/std_iter_traits&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/ranges/iterator/std iter traits (page does not exist)"><span class="t-lines"><span>std::iterator_traits<span style="font-size:0.7em; line-height:130%">&lt;InputIterator&gt;</span></span><span>std::iterator_traits<span style="font-size:0.7em; line-height:130%">&lt;OutputIterator&gt;</span></span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
+<tr class="t-nv"><td colspan="5"><br>
 </td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
+<tr class="t-nv"><td colspan="5"><br>
 </td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
+<tr class="t-nv"><td colspan="5"><br>
 </td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Iterator adaptors</td></tr>
@@ -244,7 +268,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/iterator/counted_iterator&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/ranges/iterator/counted iterator (page does not exist)"><span class="t-lines"><span>counted_iterator</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/iterator/default_sentinel&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/ranges/iterator/default sentinel (page does not exist)"><span class="t-lines"><span>default_sentinel</span></span></a></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="dangling.html" title="cpp/experimental/ranges/iterator/dangling"><span class="t-lines"><span>dangling</span><span>safe_iterator_t</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="dangling.html" title="cpp/experimental/ranges/iterator/dangling"><span class="t-lines"><span>dangling</span><span>borrowed_iterator_t</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/iterator/unreachable&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/ranges/iterator/unreachable (page does not exist)"><span class="t-lines"><span>unreachable</span></span></a></div></div></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Stream iterators</td></tr>
@@ -266,15 +290,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-since-ranges">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span> <span class="sy1">&lt;</span><a href="Readable.html"><span class="kw2712">Readable</span></a> I, <a href="IndirectUnaryInvocable.html"><span class="kw2725">IndirectRegularUnaryInvocable</span></a><span class="sy1">&lt;</span>I<span class="sy1">&gt;</span> Proj<span class="sy1">&gt;</span><br>
-<p><span class="kw1">struct</span> <a href="projected.html"><span class="kw2747">projected</span></a> <span class="br0">{</span><br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> Readable I, IndirectRegularUnaryInvocable<span class="sy1">&lt;</span>I<span class="sy1">&gt;</span> Proj <span class="sy1">&gt;</span><br>
+<p><span class="kw1">struct</span> <a href="projected.html"><span class="kw2695">projected</span></a> <span class="br0">{</span><br>
     <span class="kw1">using</span> value_type <span class="sy1">=</span><br>
-        <a href="../../../types/remove_cv.html"><span class="kw593">std::<span class="me2">remove_cv_t</span></span></a><span class="sy1">&lt;</span><a href="../../../types/remove_reference.html"><span class="kw603">std::<span class="me2">remove_reference_t</span></span></a><span class="sy1">&lt;</span>ranges<span class="sy4">::</span><span class="me2">indirect_result_of_t</span><span class="sy1">&lt;</span>Proj<span class="sy3">&amp;</span><span class="br0">(</span>I<span class="br0">)</span><span class="sy1">&gt;&gt;&gt;</span><span class="sy4">;</span><br>
+        <a href="../../../types/remove_cv.html"><span class="kw602">std::<span class="me2">remove_cv_t</span></span></a><span class="sy1">&lt;</span><a href="../../../types/remove_reference.html"><span class="kw612">std::<span class="me2">remove_reference_t</span></span></a><span class="sy1">&lt;</span>ranges<span class="sy4">::</span><span class="me2">indirect_result_of_t</span><span class="sy1">&lt;</span>Proj<span class="sy3">&amp;</span><span class="br0">(</span>I<span class="br0">)</span><span class="sy1">&gt;&gt;&gt;</span><span class="sy4">;</span><br>
     ranges<span class="sy4">::</span><span class="me2">indirect_result_of_t</span><span class="sy1">&lt;</span>Proj<span class="sy3">&amp;</span><span class="br0">(</span>I<span class="br0">)</span><span class="sy1">&gt;</span> operator<span class="sy2">*</span><span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span><span class="sy4">;</span><br>
 <span class="br0">}</span><span class="sy4">;</span><br>
 <br>
-<span class="kw1">template</span> <span class="sy1">&lt;</span><a href="WeaklyIncrementable.html"><span class="kw2714">WeaklyIncrementable</span></a> I, <span class="kw1">class</span> Proj<span class="sy1">&gt;</span><br>
-<span class="kw1">struct</span> difference_type<span class="sy1">&lt;</span><a href="projected.html"><span class="kw2747">projected</span></a><span class="sy1">&lt;</span>I, Proj<span class="sy1">&gt;&gt;</span> <span class="br0">{</span><br>
+<span class="kw1">template</span><span class="sy1">&lt;</span> WeaklyIncrementable I, <span class="kw1">class</span> Proj <span class="sy1">&gt;</span><br>
+<span class="kw1">struct</span> difference_type<span class="sy1">&lt;</span><a href="projected.html"><span class="kw2695">projected</span></a><span class="sy1">&lt;</span>I, Proj<span class="sy1">&gt;&gt;</span> <span class="br0">{</span><br>
     <span class="kw1">using</span> type <span class="sy1">=</span> ranges<span class="sy4">::</span><span class="me2">difference_type_t</span><span class="sy1">&lt;</span>I<span class="sy1">&gt;</span><span class="sy4">;</span><br>
 </p>
 <span class="br0">}</span><span class="sy4">;</span></span></div></td>
@@ -287,19 +311,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4729/1000000
-Preprocessor generated node count: 7645/1000000
-Post‐expand include size: 160513/2097152 bytes
-Template argument size: 26771/2097152 bytes
+Preprocessor visited node count: 5026/1000000
+Preprocessor generated node count: 8299/1000000
+Post‐expand include size: 171284/4194304 bytes
+Template argument size: 28486/4194304 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:16145-0!*!0!*!*!*!* and timestamp 20190111210428 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:16145-0!*!0!*!*!*!* and timestamp 20241004083715 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/iterator/projected&amp;oldid=105858">https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/iterator/projected&amp;oldid=105858</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/iterator/projected&amp;oldid=155546">https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/iterator/projected&amp;oldid=155546</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -312,21 +336,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/experimental/ranges/iterator/projected">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 26 July 2023, at 23:54.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../../../common/skin_scripts.js"></script>
+<script src="../../../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 0.649 secs. -->
+<script src="../../../.././common/site_scripts.js"></script>
+<!-- Served in 0.581 secs. -->
 	</body>
-<!-- Cached 20190111210428 -->
+<!-- Cached 20241004083715 -->
 </html>

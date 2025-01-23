@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Binary resource inclusion (since C23) - cppreference.com</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="shortcut icon" href="../.././common/favicon.ico">
+<link rel="stylesheet" href="../.././common/ext.css">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="../.././common/site_modules.css">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="../.././common/startup_scripts.js"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/preprocessor/embed","wgTitle":"c/preprocessor/embed","wgCurRevisionId":160331,"wgArticleId":21608,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/preprocessor/embed","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #0000dd;}
+.c.source-c .kw2 {color: #0000ff;}
+.c.source-c .kw3 {color: #0000dd;}
+.c.source-c .kw4 {color: #0000ff;}
+.c.source-c .co1 {color: #909090;}
+.c.source-c .co2 {color: #339900;}
+.c.source-c .coMULTI {color: #ff0000; font-style: italic;}
+.c.source-c .es0 {color: #008000; font-weight: bold;}
+.c.source-c .es1 {color: #008000; font-weight: bold;}
+.c.source-c .es2 {color: #008000; font-weight: bold;}
+.c.source-c .es3 {color: #008000; font-weight: bold;}
+.c.source-c .es4 {color: #008000; font-weight: bold;}
+.c.source-c .es5 {color: #008000; font-weight: bold;}
+.c.source-c .br0 {color: #008000;}
+.c.source-c .sy0 {color: #008000;}
+.c.source-c .sy1 {color: #000080;}
+.c.source-c .sy2 {color: #000040;}
+.c.source-c .sy3 {color: #000040;}
+.c.source-c .sy4 {color: #008080;}
+.c.source-c .st0 {color: #008000;}
+.c.source-c .nu0 {color: #000080;}
+.c.source-c .nu6 {color:#000080;}
+.c.source-c .nu8 {color:#000080;}
+.c.source-c .nu12 {color:#000080;}
+.c.source-c .nu16 {color:#000080;}
+.c.source-c .nu17 {color:#000080;}
+.c.source-c .nu18 {color:#000080;}
+.c.source-c .nu19 {color:#000080;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-text {line-height: normal;}
+.source-text li, .source-text pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for text
+ * CSS class: source-text, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.text.source-text .de1, .text.source-text .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.text.source-text  {font-family:monospace;}
+.text.source-text .imp {font-weight: bold; color: red;}
+.text.source-text li, .text.source-text .li1 {font-weight: normal; vertical-align:top;}
+.text.source-text .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.text.source-text .li2 {font-weight: bold; vertical-align:top;}
+.text.source-text .ln-xtra, .text.source-text li.ln-xtra, .text.source-text div.ln-xtra {background-color: #ffc;}
+.text.source-text span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_preprocessor_embed skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        <!-- /header -->
+        <!-- content -->
+<div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading">Binary resource inclusion <span class="t-mark-rev t-since-c23">(since C23)</span></h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../c.html" title="c">c</a>‎ | <a href="../preprocessor.html" title="c/preprocessor">preprocessor</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="c/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../language.html" title="c/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../header.html" title="c/header">Headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../types.html" title="c/types">Type support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../program.html" title="c/program">Program utilities</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../variadic.html" title="c/variadic">Variadic function support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../error.html" title="c/error">Error handling</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../memory.html" title="c/memory">Dynamic memory management</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../string.html" title="c/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="c/algorithm">Algorithms</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="c/numeric">Numerics</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../chrono.html" title="c/chrono">Date and time utilities</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../io.html" title="c/io">Input/output support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="c/locale">Localization support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="c/thread">Concurrency support</a> <span class="t-mark-rev t-since-c11">(C11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="c/experimental">Technical Specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../index.html" title="c/symbol index">Symbol index</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../language.html" title="c/language"> C language</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"> <a href="../language/basic_concepts.html" title="c/language/basic concepts">Basic concepts</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../keyword.html" title="c/keyword"> Keywords</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../preprocessor.html" title="c/preprocessor"> Preprocessor</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../language/statements.html" title="c/language/statements"> Statements</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../language/expressions.html" title="c/language/expressions"> Expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../language/initialization.html" title="c/language/initialization"> Initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../language/declarations.html" title="c/language/declarations"> Declarations</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../language/functions.html" title="c/language/functions"> Functions</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Miscellaneous</td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../language/history.html" title="c/language/history"> History of C</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="c/experimental">Technical Specifications</a> </td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../preprocessor.html" title="c/preprocessor"> Preprocessor</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="conditional.html" title="c/preprocessor/conditional"><span class="t-lines"><span>#if</span><span>#ifdef</span><span>#ifndef</span><span>#else</span><span>#elif</span><span>#elifdef</span><span>#elifndef</span><span>#endif</span></span></a></div><div><span class="t-lines"><span></span><span></span><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="replace.html" title="c/preprocessor/replace"><span class="t-lines"><span>#define</span><span>#undef</span><span>#,## operators</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="include.html" title="c/preprocessor/include"><span class="t-lines"><span>#include</span><span>__has_include</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="error.html" title="c/preprocessor/error"><span class="t-lines"><span>#error</span><span>#warning</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../../cpp/preprocessor/impl.html" title="cpp/preprocessor/impl"><span class="t-lines"><span>#pragma</span><span>_Pragma</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="line.html" title="c/preprocessor/line"><span class="t-lines"><span>#line</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>#embed</span><span>__has_embed</span></span></strong></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
+<p><span class="mw-geshi c source-c"><span class="co2">#embed</span></span> is a preprocessor directive to include (binary) resources in the build, where a resource is defined as a source of data accessible from the translation environment.
+</p>
+<h3><span class="mw-headline" id="Syntax">Syntax</span></h3>
+<table class="t-sdsc-begin">
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <code><b>#embed &lt;</b></code> <span class="t-spar">h-char-sequence</span> <code><b>&gt;</b></code> <span class="t-spar">embed-parameter-sequence</span> ﻿<span class="t-mark">(optional)</span> <span class="t-spar">new-line</span>
+</td>
+<td> (1)
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <code><b>#embed "</b></code> <span class="t-spar">q-char-sequence</span> <code><b>"</b></code> <span class="t-spar">embed-parameter-sequence</span> ﻿<span class="t-mark">(optional)</span> <span class="t-spar">new-line</span>
+</td>
+<td> (2)
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <code><b>#embed</b></code> <span class="t-spar">pp-tokens</span> <span class="t-spar">new-line</span>
+</td>
+<td> (3)
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <code><b>__has_embed</b></code> <code><b>(</b></code> <code><b>"</b></code> <span class="t-spar">q-char-sequence</span> <code><b>"</b></code> <span class="t-spar">embed-parameter-sequence</span> ﻿<span class="t-mark">(optional)</span> <code><b>)</b></code><br><code><b>__has_embed</b></code> <code><b>(</b></code> <code><b>&lt;</b></code> <span class="t-spar">h-char-sequence</span> <code><b>&gt;</b></code> <span class="t-spar">embed-parameter-sequence</span> ﻿<span class="t-mark">(optional)</span> <code><b>)</b></code>
+</td>
+<td> (4)
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <code><b>__has_embed</b></code> <code><b>(</b></code> <span class="t-spar">string-literal</span> <span class="t-spar">pp-balanced-token-sequence</span> ﻿<span class="t-mark">(optional)</span> <code><b>)</b></code><br><code><b>__has_embed</b></code> <code><b>(</b></code> <code><b>&lt;</b></code> <span class="t-spar">h-pp-tokens</span> <code><b>&gt;</b></code> <span class="t-spar">pp-balanced-token-sequence</span> ﻿<span class="t-mark">(optional)</span> <code><b>)</b></code>
+</td>
+<td> (5)
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr></table>
+<div class="t-li1"><span class="t-li">1)</span> Searches for a resource identified uniquely by <span class="t-spar">h-char-sequence</span> and replaces the directive by a comma separated list of integers corresponding to the data of the resource.</div>
+<div class="t-li1"><span class="t-li">2)</span> Searches for a resource identified by <span class="t-spar">q-char-sequence</span> and replaces the directive by a list of integers corresponding to the data of the resource. It may fallback to <span class="t-v">(1)</span>.</div>
+<div class="t-li1"><span class="t-li">3)</span> If neither <span class="t-v">(1)</span> nor <span class="t-v">(2)</span> is matched, <span class="t-spar">pp-tokens</span> will undergo macro replacement. The directive after replacement will be tried to match with <span class="t-v">(1)</span> or <span class="t-v">(2)</span> again.</div>
+<div class="t-li1"><span class="t-li">4)</span> Checks whether a resource is available for embedding, whether it is empty or not and whether the parameters passed are supported by the implementation.</div>
+<div class="t-li1"><span class="t-li">5)</span> If <span class="t-v">(4)</span> is not matched, <span class="t-spar">h-pp-tokens</span> and <span class="t-spar">pp-balanced-token-sequence</span> will undergo macro replacement. The directive after replacement will be tried to match with <span class="t-v">(4)</span> again.</div>
+<table class="t-par-begin">
+
+
+
+<tr class="t-par">
+<td> <span class="t-spar">new-line</span>
+</td>
+<td> -
+</td>
+<td> The new-line character
+</td></tr>
+<tr class="t-par">
+<td> <span class="t-spar">h-char-sequence</span>
+</td>
+<td> -
+</td>
+<td> A sequence of one or more <span class="t-spar">h-char</span>s, where the appearance of any of the following causes undefined behavior:
+<ul><li> the character <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'</span></span></span>
+</li><li> the character <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"</span></span></span>
+</li><li> the character <span class="t-c"><span class="mw-geshi c source-c">\</span></span>
+</li><li> the character sequence <span class="t-c"><span class="mw-geshi c source-c"><span class="co1">//</span></span></span>
+</li><li> the character sequence <span class="t-c"><span class="mw-geshi c source-c"><span class="coMULTI">/*</span></span></span>
+</li></ul>
+</td></tr>
+<tr class="t-par">
+<td> <span class="t-spar">h-char</span>
+</td>
+<td> -
+</td>
+<td> Any member of the <a href="../language/translation_phases.html#Phase_5" title="c/language/translation phases">source character set</a> except new-line and <span class="t-c"><span class="mw-geshi c source-c"><span class="sy1">&gt;</span></span></span>
+</td></tr>
+<tr class="t-par">
+<td> <span class="t-spar">q-char-sequence</span>
+</td>
+<td> -
+</td>
+<td> A sequence of one or more <span class="t-spar">q-char</span>s, where the appearance of any of the following causes undefined behavior:
+<ul><li> the character <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'</span></span></span>
+</li><li> the character <span class="t-c"><span class="mw-geshi c source-c">\</span></span>
+</li><li> the character sequence <span class="t-c"><span class="mw-geshi c source-c"><span class="co1">//</span></span></span>
+</li><li> the character sequence <span class="t-c"><span class="mw-geshi c source-c"><span class="coMULTI">/*</span></span></span>
+</li></ul>
+</td></tr>
+<tr class="t-par">
+<td> <span class="t-spar">q-char</span>
+</td>
+<td> -
+</td>
+<td> Any member of the <a href="../language/translation_phases.html#Phase_5" title="c/language/translation phases">source character set</a> except new-line and <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"</span></span></span>
+</td></tr>
+<tr class="t-par">
+<td> <span class="t-spar">pp-tokens</span>
+</td>
+<td> -
+</td>
+<td> A sequence of one or more <a href="../language/translation_phases.html#Phase_3" title="c/language/translation phases">preprocessing tokens</a>
+</td></tr>
+<tr class="t-par">
+<td> <span class="t-spar">string-literal</span>
+</td>
+<td> -
+</td>
+<td> A <a href="../language/string_literal.html" title="c/language/string literal">string literal</a>
+</td></tr>
+<tr class="t-par">
+<td> <span class="t-spar">h-pp-tokens</span>
+</td>
+<td> -
+</td>
+<td> A sequence of one or more <a href="../language/translation_phases.html#Phase_3" title="c/language/translation phases">preprocessing tokens</a> except <span class="t-c"><span class="mw-geshi c source-c"><span class="sy1">&gt;</span></span></span>
+</td></tr>
+<tr class="t-par">
+<td> <span class="t-spar">embed-parameter-sequence</span>
+</td>
+<td> -
+</td>
+<td> A sequence of one or more <span class="t-spar">pp-parameter</span> ﻿s. Note that unlike an <span class="t-spar">attribute-list</span>, this sequence is not comma separated.
+</td></tr>
+<tr class="t-par">
+<td> <span class="t-spar">pp-parameter</span>
+</td>
+<td> -
+</td>
+<td> An <span class="t-spar">attribute-token</span> (see: <a href="../language/attributes.html" title="c/language/attributes">attributes</a>) but comprised of preprocessing tokens instead of tokens.
+</td></tr>
+<tr class="t-par">
+<td> <span class="t-spar">pp-balanced-token-sequence</span>
+</td>
+<td> -
+</td>
+<td> A <span class="t-spar">balanced-token-sequence</span> (see: <a href="../language/attributes.html" title="c/language/attributes">attributes</a>) but comprised of preprocessing tokens instead of tokens
+</td></tr></table>
+<h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
+<div class="t-li1"><span class="t-li">1)</span> Searches for the resource identified by <span class="t-spar">h-char-sequence</span> in implementation-defined manner.</div>
+<div class="t-li1"><span class="t-li">2)</span> Searches for the resource identified by <span class="t-spar">q-char-sequence</span> in implementation-defined manner. For <span class="t-v">(1,2)</span>, the implementations typically use a mechanism similar to, but distinct from, the implementation-defined search paths used for <a href="include.html" title="c/preprocessor/include">source file inclusion</a>. The construct <span class="t-c"><span class="mw-geshi c source-c">__has_embed<span class="br0">(</span>__FILE__ ...</span></span> appears in one of the examples in the standard, suggesting, in case <span class="t-v">(2)</span> at least, that the directory where the current file resides is expected to be searched.</div>
+<div class="t-li1"><span class="t-li">3)</span> The preprocessing tokens after <code><b>embed</b></code> in the directive are processed just as in normal text (i.e., each identifier currently defined as a macro name is replaced by its replacement list of preprocessing tokens). The directive resulting after all replacements shall match one of the two previous forms. The method by which a sequence of preprocessing tokens between <span class="t-c"><span class="mw-geshi c source-c"><span class="sy1">&lt;</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="sy1">&gt;</span></span></span> preprocessing token pair or a pair of <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"</span></span></span> characters is combined into a single header name preprocessing token is implementation-defined.</div>
+<div class="t-li1"><span class="t-li">4)</span> The resource identified by <span class="t-spar">h-char-sequence</span> or <span class="t-spar">q-char-sequence</span> is searched for as if that preprocessing token sequence were the <span class="t-spar">pp-tokens</span> in syntax <span class="t-v">(3)</span>, except that no further macro expansion is performed. If such a directive would not satisfy the
+syntactic requirements of an <span class="mw-geshi c source-c"><span class="co2">#embed</span></span> directive, the program is ill-formed. The <code>__has__embed</code> expression evaluates to <span class="t-lc">__STDC_EMBED_FOUND__</span> if the search for the resource succeeds, the resource is non empty and all the parameters are supported, to <span class="t-lc">__STDC_EMBED_EMPTY__</span> if the resource is empty and all the parameters are supported, and to <span class="t-lc">__STDC_EMBED_NOT_FOUND__</span> if the search fails or one of the parameters passed is not supported by the implementation.</div>
+<div class="t-li1"><span class="t-li">5)</span> This form is considered only if syntax <span class="t-v">(4)</span> does not match, in which case the preprocessing tokens are processed just as in normal text.</div>
+<p>In the case the resource is not found or one of the parameters is not supported by the implementation, the program is ill-formed.
+</p><p><code>__has_embed</code> can be expanded in the expression of <a href="conditional.html" title="c/preprocessor/conditional"><tt>
+#if</tt></a> and <a href="conditional.html" title="c/preprocessor/conditional"><tt>
+#elif</tt></a>. It is treated as a defined macro by <a href="conditional.html" title="c/preprocessor/conditional"><tt>
+#ifdef</tt></a>, <a href="conditional.html" title="c/preprocessor/conditional"><tt>
+#ifndef</tt></a>, <a href="conditional.html" title="c/preprocessor/conditional"><tt>
+#elifdef</tt></a>, <a href="conditional.html" title="c/preprocessor/conditional"><tt>
+#elifndef</tt></a> and <a href="conditional.html" title="c/preprocessor/conditional"><tt>defined</tt></a> but cannot be used anywhere else.
+</p><p>A resource has an <i>implementation resource width</i> which is the implementation-defined size in bits of the located resource. Its <i>resource width</i> is the implementation resource width unless modified by a <code>limit</code> parameter. If the resource width is 0, the resource is considered empty. The <i>embed element width</i> is equal to <span class="t-lc"><a href="../types/limits.html" title="c/types/limits">CHAR_BIT</a></span> unless modified by an implementation defined parameter. The resource width must be divisible by the embed element width.
+</p><p>The expansion of a #embed directive is a token sequence formed from the list of integer <a href="../language/constant_expression.html" title="c/language/constant expression">constant expressions</a> described below. The group of tokens for each integer constant expression in the list is separated in the token sequence from the group of tokens for the previous integer constant expression in the list by a comma. The sequence neither begins nor ends in a comma. If the list of integer constant expressions is empty, the token sequence is empty. The directive is replaced by its expansion and, with the presence of certain embed parameters, additional or replacement token sequences.
+</p><p>The values of the integer constant expressions in the expanded sequence are determined by an implementation-defined mapping of the resource’s data. Each integer constant expression’s value is in the range <code>[</code>0<code>, </code>2<sup>embed element width</sup><code>)</code>. If:
+</p>
+<ol><li> The list of integer constant expressions is used to initialize an array of a type compatible with <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span>, or compatible with <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">char</span></span></span> if <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">char</span></span></span> cannot hold negative values, and
+</li><li> The embed element width is equal to <span class="t-lc"><a href="../types/limits.html" title="c/types/limits">CHAR_BIT</a></span>,
+</li></ol>
+<p>then the contents of the initialized elements of the array are as-if the resource’s binary data is <span class="t-lc"><a href="../io/fread.html" title="c/io/fread">fread</a></span> into the array at translation time.
+</p><p>Implementations are encouraged to take into account translation-time bit and byte orders as well as execution-time bit and byte orders to more appropriately represent the resource’s binary data from the directive. This maximizes the chance that, if the resource referenced at translation time through the <span class="mw-geshi c source-c"><span class="co2">#embed</span></span> directive is the same one accessed through execution-time means, the data that is e.g. <span class="t-lc"><a href="../io/fread.html" title="c/io/fread">fread</a></span> or similar into contiguous storage will compare bit-for-bit equal to an array of character type initialized from an <span class="mw-geshi c source-c"><span class="co2">#embed</span></span> directive’s expanded contents.
+</p>
+<h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
+<p>The standard defines the parameters <code>limit</code>, <code>prefix</code>, <code>suffix</code> and <code>if_empty</code>. Any other parameter that appears in the directive must be implementation-defined, or the program is ill-formed. Implementation-defined embed parameters may change the semantics of the directive.
+</p>
+<h4><span class="mw-headline" id="limit">limit</span></h4>
+<table class="t-sdsc-begin">
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <code><b>limit(</b></code> <span class="t-spar">constant-expression</span> <code><b>)</b></code>
+</td>
+<td> (1)
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <code><b>__limit__(</b></code> <span class="t-spar">constant-expression</span> <code><b>)</b></code>
+</td>
+<td> (2)
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr></table>
+<p>The <code>limit</code> embed parameter can appear at most once in the embed parameter sequence. It must have an argument, which must be an integer (preprocessor) <a href="../language/constant_expression.html" title="c/language/constant expression">constant expression</a> that evaluates to a non negative number and does not contain the token <span class="t-lc">defined</span>. The resource width is set to the minimum of the integer constant expression multiplied by the embed element width and the implementation resource width.
+</p>
+<h4><span class="mw-headline" id="suffix">suffix</span></h4>
+<table class="t-sdsc-begin">
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <code><b>suffix(</b></code> <span class="t-spar">pp-balanced-token-sequence</span> ﻿<span class="t-mark">(optional)</span> <code><b>)</b></code>
+</td>
+<td> (1)
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <code><b>__suffix__(</b></code> <span class="t-spar">pp-balanced-token-sequence</span> ﻿<span class="t-mark">(optional)</span> <code><b>)</b></code>
+</td>
+<td> (2)
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr></table>
+<p>The <code>suffix</code> embed parameter can appear at most once in the embed parameter sequence. It must have a (possibly empty) preprocessor argument clause. If the resource is non empty, the contents of the parameter clause are placed immediately after the expansion of the directive. Otherwise, it has no effect.
+</p>
+<h4><span class="mw-headline" id="prefix">prefix</span></h4>
+<table class="t-sdsc-begin">
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <code><b>prefix(</b></code> <span class="t-spar">pp-balanced-token-sequence</span> ﻿<span class="t-mark">(optional)</span> <code><b>)</b></code>
+</td>
+<td> (1)
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <code><b>__prefix__(</b></code> <span class="t-spar">pp-balanced-token-sequence</span> ﻿<span class="t-mark">(optional)</span> <code><b>)</b></code>
+</td>
+<td> (2)
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr></table>
+<p>The <code>prefix</code> embed parameter can appear at most once in the embed parameter sequence. It must have a (possibly empty) preprocessor argument clause. If the resource is non empty, the contents of the parameter clause are placed immediately before the expansion of the directive. Otherwise, it has no effect.
+</p>
+<h4><span class="mw-headline" id="if_empty">if_empty</span></h4>
+<table class="t-sdsc-begin">
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <code><b>if_empty(</b></code> <span class="t-spar">pp-balanced-token-sequence</span> ﻿<span class="t-mark">(optional)</span> <code><b>)</b></code>
+</td>
+<td> (1)
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <code><b>__if_empty__(</b></code> <span class="t-spar">pp-balanced-token-sequence</span> ﻿<span class="t-mark">(optional)</span> <code><b>)</b></code>
+</td>
+<td> (2)
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr></table>
+<p>The <code>if_empty</code> embed parameter can appear at most once in the embed parameter sequence.  It must have a (possibly empty) preprocessor argument clause. If the resource is empty, the contents of the parameter clause replace the directive. Otherwise, it has no effect.
+</p>
+<h3><span class="mw-headline" id="Example">Example</span></h3>
+<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdint.h&gt;</span>
+<span class="co2">#include &lt;stdio.h&gt;</span>
+ 
+<span class="kw4">const</span> <a href="../types/integer.html"><span class="kw120">uint8_t</span></a> image_data<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
+<span class="co2">#embed "image.png"</span>
+<span class="br0">}</span><span class="sy4">;</span>
+ 
+<span class="kw4">const</span> <span class="kw4">char</span> message<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
+<span class="co2">#embed "message.txt" if_empty('M', 'i', 's', 's', 'i', 'n', 'g', '\n')</span>
+,<span class="st0">'<span class="es5">\0</span>'</span> <span class="co1">// null terminator</span>
+<span class="br0">}</span><span class="sy4">;</span>
+ 
+<span class="kw4">void</span> dump<span class="br0">(</span><span class="kw4">const</span> <a href="../types/integer.html"><span class="kw120">uint8_t</span></a> arr<span class="br0">[</span><span class="br0">]</span>, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> size<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../types/size_t.html"><span class="kw100">size_t</span></a> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy3">!</span><span class="sy1">=</span> size<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
+        <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%02X%c"</span>, arr<span class="br0">[</span>i<span class="br0">]</span>, <span class="br0">(</span>i <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">)</span> <span class="sy2">%</span> <span class="nu0">16</span> <span class="sy4">?</span> <span class="st0">' '</span> <span class="sy4">:</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">""</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"image_data[]:"</span><span class="br0">)</span><span class="sy4">;</span>
+    dump<span class="br0">(</span>image_data, <span class="kw4">sizeof</span> image_data<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"message[]:"</span><span class="br0">)</span><span class="sy4">;</span>
+    dump<span class="br0">(</span><span class="br0">(</span><span class="kw4">const</span> <a href="../types/integer.html"><span class="kw120">uint8_t</span></a><span class="sy2">*</span><span class="br0">)</span>message, <span class="kw4">sizeof</span> message<span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<p>Possible output:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">image_data[]:
+89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52
+00 00 00 01 00 00 00 01 01 03 00 00 00 25 DB 56
+...
+message[]:
+4D 69 73 73 69 6E 67 0A 00</pre></div></div> 
+</div>
+<h3><span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-23">
+<ul><li> C23 standard (ISO/IEC 9899:2024): 
+</li></ul>
+<dl><dd><ul><li> 6.4.7 Header names (p: 69)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 6.10.1 Conditional inclusion (p: 165-169)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 6.10.2 Binary resource inclusion (p: 170-177)
+</li></ul>
+</dd></dl>
+</div>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 3931/1000000
+Preprocessor generated node count: 8210/1000000
+Post‐expand include size: 72246/4194304 bytes
+Template argument size: 20816/4194304 bytes
+Highest expansion depth: 16/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:21608-0!*!0!!en!*!* and timestamp 20240801012519 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/embed&amp;oldid=160331">https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/embed&amp;oldid=160331</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/c/preprocessor/embed">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 8 October 2023, at 14:40.</li>
+                            </ul>
+                    </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="../.././common/skin_scripts.js"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
+}</script>
+<script src="../.././common/site_scripts.js"></script>
+<!-- Served in 0.901 secs. -->
+	</body>
+<!-- Cached 20240801012519 -->
+</html>

@@ -4,20 +4,20 @@
 <title>std::basic_filebuf&lt;CharT,Traits&gt;::seekoff - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../../common/favicon.ico">
-<link rel="stylesheet" href="../../../common/ext.css">
+<link rel="shortcut icon" href="../../.././common/favicon.ico">
+<link rel="stylesheet" href="../../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../../common/site_modules.css">
+<link rel="stylesheet" href="../../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../../common/startup_scripts.js"></script>
+<script src="../../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/io/basic_filebuf/seekoff","wgTitle":"cpp/io/basic filebuf/seekoff","wgCurRevisionId":80459,"wgArticleId":5674,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/io/basic_filebuf/seekoff","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/io/basic_filebuf/seekoff","wgTitle":"cpp/io/basic filebuf/seekoff","wgCurRevisionId":158142,"wgArticleId":5674,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/io/basic_filebuf/seekoff","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -108,7 +108,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::basic_filebuf&lt;CharT,Traits&gt;::</span>seekoff</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::basic_filebuf&lt;CharT,Traits&gt;::</span>seekoff</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -119,75 +127,87 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../../cpp.html" title="cpp">cpp</a>‎ | <a href="../../io.html" title="cpp/io">io</a>‎ | <a href="../basic_filebuf.html" title="cpp/io/basic filebuf">basic filebuf</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../io.html" title="cpp/io"> Input/output library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="../manip.html" title="cpp/io/manip"> I/O manipulators</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../c.html" title="cpp/io/c"> C-style I/O</a></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Buffers </td></tr>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../io.html" title="cpp/io">Input/output library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="../manip.html" title="cpp/io/manip">I/O manipulators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../io.html#Print_functions_.28since_C.2B.2B23.29" title="cpp/io">Print functions</a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../c.html" title="cpp/io/c">C-style I/O</a></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Buffers</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_streambuf.html" title="cpp/io/basic streambuf"><span class="t-lines"><span>basic_streambuf</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_filebuf.html" title="cpp/io/basic filebuf"><span class="t-lines"><span>basic_filebuf</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_stringbuf.html" title="cpp/io/basic stringbuf"><span class="t-lines"><span>basic_stringbuf</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../strstreambuf.html" title="cpp/io/strstreambuf"><span class="t-lines"><span>strstreambuf</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-deprecated-cxx98">(deprecated in C++98)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_spanbuf.html" title="cpp/io/basic spanbuf"><span class="t-lines"><span>basic_spanbuf</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../strstreambuf.html" title="cpp/io/strstreambuf"><span class="t-lines"><span>strstreambuf</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++98, removed in C++26">C++98/26*</span>)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_syncbuf.html" title="cpp/io/basic syncbuf"><span class="t-lines"><span>basic_syncbuf</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Streams </td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Abstractions </td></tr>
+<tr class="t-nv-h1"><td colspan="5">Streams</td></tr>
+<tr class="t-nv-h2"><td colspan="5">Abstractions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ios_base.html" title="cpp/io/ios base"><span class="t-lines"><span>ios_base</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ios.html" title="cpp/io/basic ios"><span class="t-lines"><span>basic_ios</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_istream.html" title="cpp/io/basic istream"><span class="t-lines"><span>basic_istream</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ostream.html" title="cpp/io/basic ostream"><span class="t-lines"><span>basic_ostream</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_iostream.html" title="cpp/io/basic iostream"><span class="t-lines"><span>basic_iostream</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> File I/O </td></tr>
+<tr class="t-nv-h2"><td colspan="5">File I/O</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ifstream.html" title="cpp/io/basic ifstream"><span class="t-lines"><span>basic_ifstream</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ofstream.html" title="cpp/io/basic ofstream"><span class="t-lines"><span>basic_ofstream</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_fstream.html" title="cpp/io/basic fstream"><span class="t-lines"><span>basic_fstream</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> String I/O </td></tr>
+<tr class="t-nv-h2"><td colspan="5">String I/O</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_istringstream.html" title="cpp/io/basic istringstream"><span class="t-lines"><span>basic_istringstream</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ostringstream.html" title="cpp/io/basic ostringstream"><span class="t-lines"><span>basic_ostringstream</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_stringstream.html" title="cpp/io/basic stringstream"><span class="t-lines"><span>basic_stringstream</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Array I/O </td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../istrstream.html" title="cpp/io/istrstream"><span class="t-lines"><span>istrstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-deprecated-cxx98">(deprecated in C++98)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ostrstream.html" title="cpp/io/ostrstream"><span class="t-lines"><span>ostrstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-deprecated-cxx98">(deprecated in C++98)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../strstream.html" title="cpp/io/strstream"><span class="t-lines"><span>strstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-deprecated-cxx98">(deprecated in C++98)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Synchronized Output</td></tr>
+<tr class="t-nv-h2"><td colspan="5">Array I/O</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ispanstream.html" title="cpp/io/basic ispanstream"><span class="t-lines"><span>basic_ispanstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_ospanstream.html" title="cpp/io/basic ospanstream"><span class="t-lines"><span>basic_ospanstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_spanstream.html" title="cpp/io/basic spanstream"><span class="t-lines"><span>basic_spanstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../istrstream.html" title="cpp/io/istrstream"><span class="t-lines"><span>istrstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++98, removed in C++26">C++98/26*</span>)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ostrstream.html" title="cpp/io/ostrstream"><span class="t-lines"><span>ostrstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++98, removed in C++26">C++98/26*</span>)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../strstream.html" title="cpp/io/strstream"><span class="t-lines"><span>strstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++98, removed in C++26">C++98/26*</span>)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Synchronized Output</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_osyncstream.html" title="cpp/io/basic osyncstream"><span class="t-lines"><span>basic_osyncstream</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Types </td></tr>
+<tr class="t-nv-h1"><td colspan="5">Types</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../streamoff.html" title="cpp/io/streamoff"><span class="t-lines"><span>streamoff</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../streamsize.html" title="cpp/io/streamsize"><span class="t-lines"><span>streamsize</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../fpos.html" title="cpp/io/fpos"><span class="t-lines"><span>fpos</span></span></a></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Error category interface </td></tr>
+<tr class="t-nv-h1"><td colspan="5">Error category interface</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../iostream_category.html" title="cpp/io/iostream category"><span class="t-lines"><span>iostream_category</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../io_errc.html" title="cpp/io/io errc"><span class="t-lines"><span>io_errc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../basic_filebuf.html" title="cpp/io/basic filebuf"><tt>std::basic_filebuf</tt></a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5"> Public member functions</td></tr>
+<tr class="t-nv-h1"><td colspan="5">Public member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_filebuf.html" title="cpp/io/basic filebuf/basic filebuf"><span class="t-lines"><span>basic_filebuf::basic_filebuf</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="%7Ebasic_filebuf.html" title="cpp/io/basic filebuf/~basic filebuf"><span class="t-lines"><span>basic_filebuf::~basic_filebuf</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="~basic_filebuf.html" title="cpp/io/basic filebuf/~basic filebuf"><span class="t-lines"><span>basic_filebuf::~basic_filebuf</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator%3D.html" title="cpp/io/basic filebuf/operator="><span class="t-lines"><span>basic_filebuf::operator=</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap.html" title="cpp/io/basic filebuf/swap"><span class="t-lines"><span>basic_filebuf::swap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="native_handle.html" title="cpp/io/basic filebuf/native handle"><span class="t-lines"><span>basic_filebuf::native_handle</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="is_open.html" title="cpp/io/basic filebuf/is open"><span class="t-lines"><span>basic_filebuf::is_open</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="open.html" title="cpp/io/basic filebuf/open"><span class="t-lines"><span>basic_filebuf::open</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="close.html" title="cpp/io/basic filebuf/close"><span class="t-lines"><span>basic_filebuf::close</span></span></a></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Protected member functions</td></tr>
+<tr class="t-nv-h1"><td colspan="5">Protected member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="showmanyc.html" title="cpp/io/basic filebuf/showmanyc"><span class="t-lines"><span>basic_filebuf::showmanyc</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="underflow.html" title="cpp/io/basic filebuf/underflow"><span class="t-lines"><span>basic_filebuf::underflow</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="uflow.html" title="cpp/io/basic filebuf/uflow"><span class="t-lines"><span>basic_filebuf::uflow</span></span></a></div></div></td></tr>
@@ -198,7 +218,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="seekpos.html" title="cpp/io/basic filebuf/seekpos"><span class="t-lines"><span>basic_filebuf::seekpos</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="sync.html" title="cpp/io/basic filebuf/sync"><span class="t-lines"><span>basic_filebuf::sync</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="imbue.html" title="cpp/io/basic filebuf/imbue"><span class="t-lines"><span>basic_filebuf::imbue</span></span></a></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Non-member functions</td></tr>
+<tr class="t-nv-h1"><td colspan="5">Non-member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap2.html" title="cpp/io/basic filebuf/swap2"><span class="t-lines"><span>swap<span class="t-dsc-small">(std::basic_filebuf)</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <table class="t-dcl-begin"><tbody>
@@ -206,52 +226,52 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dcl">
 <td class="t-dcl-nopad"> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">protected</span><span class="sy4">:</span><br>
 <p><span class="kw1">virtual</span> pos_type seekoff<span class="br0">(</span> off_type off,<br>
-                          <a href="../ios_base/seekdir.html"><span class="kw1699">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">seekdir</span></span></a> dir,<br>
+                          <a href="../ios_base/seekdir.html"><span class="kw1719">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">seekdir</span></span></a> dir,<br>
 </p>
-                          <a href="../ios_base/openmode.html"><span class="kw1668">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">openmode</span></span></a> which <span class="sy1">=</span> <a href="../ios_base/openmode.html"><span class="kw1671">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">in</span></span></a> <span class="sy3">|</span> <a href="../ios_base/openmode.html"><span class="kw1672">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">out</span></span></a> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                          <a href="../ios_base/openmode.html"><span class="kw1688">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">openmode</span></span></a> which <span class="sy1">=</span> <a href="../ios_base/openmode.html"><span class="kw1691">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">in</span></span></a> <span class="sy3">|</span> <a href="../ios_base/openmode.html"><span class="kw1692">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">out</span></span></a> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Repositions the file pointer, if possible, to the position that corresponds to exactly <code>off</code> characters from beginning, end, or current position of the file (depending on the value of <code>dir</code>.
-</p><p>If the associated file is not open (<span class="t-c"><span class="mw-geshi cpp source-cpp">is_open<span class="br0">(</span><span class="br0">)</span><span class="sy1">==</span><span class="kw2">false</span></span></span>, fails immediately.
-</p><p>If the multibyte character encoding is state-dependent (<a href="../../locale/codecvt/encoding.html" title="cpp/locale/codecvt/encoding"><tt>codecvt::encoding()</tt></a> returned <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">-</span><span class="nu0">1</span></span></span>) or variable-length (<code>codecvt::encoding()</code> returned <span class="t-c"><span class="mw-geshi cpp source-cpp">​<span class="nu0">0</span>​</span></span>) and the offset <code>off</code> is not <span class="t-c"><span class="mw-geshi cpp source-cpp">​<span class="nu0">0</span>​</span></span>, fails immediately: this function cannot determine the number of bytes that correspond to <code>off</code> characters.
-</p><p>If <code>dir</code> is not <span class="t-lc"><a href="../ios_base/seekdir.html" title="cpp/io/ios base/seekdir">std::basic_ios::cur</a></span> or the offset <code>off</code> is not <span class="t-c"><span class="mw-geshi cpp source-cpp">​<span class="nu0">0</span>​</span></span>, and the most resent operation done on this filebuf object was output (that is, either the put buffer is not empty, or the most recently called function was <span class="t-lc"><a href="../basic_streambuf/overflow.html" title="cpp/io/basic streambuf/overflow">overflow()</a></span>), then calls <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">codecvt</span><span class="sy4">::</span><span class="me2">unshift</span></span></span> to determine the unshift sequence necessary, and writes that sequence to the file by calling <span class="t-lc"><a href="../basic_streambuf/overflow.html" title="cpp/io/basic streambuf/overflow">overflow()</a></span>.
-</p><p>Then converts the argument <code>dir</code> to a value <code>whence</code> of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span> as follows:
+<p>Repositions the file pointer, if possible, to the position that corresponds to exactly <span class="t-c"><span class="mw-geshi cpp source-cpp">off</span></span> characters from beginning, end, or current position of the file (depending on the value of <span class="t-c"><span class="mw-geshi cpp source-cpp">dir</span></span>).
+</p><p>If the associated file is not open (<span class="t-c"><span class="mw-geshi cpp source-cpp">is_open<span class="br0">(</span><span class="br0">)</span> <span class="sy1">==</span> <span class="kw2">false</span></span></span>), fails immediately.
+</p><p>If the multibyte character encoding is state-dependent (<a href="../../locale/codecvt/encoding.html" title="cpp/locale/codecvt/encoding"><tt>codecvt::encoding()</tt></a> returned <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">-</span><span class="nu0">1</span></span></span>) or variable-length (<code>codecvt::encoding()</code> returned <span class="t-c"><span class="mw-geshi cpp source-cpp">​<span class="nu0">0</span>​</span></span>) and the offset <span class="t-c"><span class="mw-geshi cpp source-cpp">off</span></span> is not <span class="t-c"><span class="mw-geshi cpp source-cpp">​<span class="nu0">0</span>​</span></span>, fails immediately: this function cannot determine the number of bytes that correspond to <span class="t-c"><span class="mw-geshi cpp source-cpp">off</span></span> characters.
+</p><p>If <span class="t-c"><span class="mw-geshi cpp source-cpp">dir</span></span> is not <span class="t-lc"><a href="../ios_base/seekdir.html" title="cpp/io/ios base/seekdir">std::basic_ios::cur</a></span> or the offset <span class="t-c"><span class="mw-geshi cpp source-cpp">off</span></span> is not <span class="t-c"><span class="mw-geshi cpp source-cpp">​<span class="nu0">0</span>​</span></span>, and the most recent operation done on this filebuf object was output (that is, either the put buffer is not empty, or the most recently called function was <span class="t-lc"><a href="../basic_streambuf/overflow.html" title="cpp/io/basic streambuf/overflow">overflow()</a></span>), then calls <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">codecvt</span><span class="sy4">::</span><span class="me2">unshift</span></span></span> to determine the unshift sequence necessary, and writes that sequence to the file by calling <span class="t-lc"><a href="../basic_streambuf/overflow.html" title="cpp/io/basic streambuf/overflow">overflow()</a></span>.
+</p><p>Then converts the argument <span class="t-c"><span class="mw-geshi cpp source-cpp">dir</span></span> to a value <span class="t-c"><span class="mw-geshi cpp source-cpp">whence</span></span> of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span> as follows:
 </p>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  value of <code>dir</code>
+<td> value of <span class="t-c"><span class="mw-geshi cpp source-cpp">dir</span></span>
 </td>
-<td>  value of <code>whence</code>
+<td> value of <span class="t-c"><span class="mw-geshi cpp source-cpp">whence</span></span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">basic_ios</span><span class="sy4">::</span><span class="me2">beg</span></span></span>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">basic_ios</span><span class="sy4">::</span><span class="me2">beg</span></span></span>
 </td>
-<td>  <span class="t-lc"><a href="../c.html" title="cpp/io/c">SEEK_SET</a></span>
+<td> <span class="t-lc"><a href="../c.html" title="cpp/io/c">SEEK_SET</a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">basic_ios</span><span class="sy4">::</span><span class="me2">end</span></span></span>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">basic_ios</span><span class="sy4">::</span><span class="me2">end</span></span></span>
 </td>
-<td>  <span class="t-lc"><a href="../c.html" title="cpp/io/c">SEEK_END</a></span>
+<td> <span class="t-lc"><a href="../c.html" title="cpp/io/c">SEEK_END</a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">basic_ios</span><span class="sy4">::</span><span class="me2">cur</span></span></span>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">basic_ios</span><span class="sy4">::</span><span class="me2">cur</span></span></span>
 </td>
-<td>  <span class="t-lc"><a href="../c.html" title="cpp/io/c">SEEK_CUR</a></span>
+<td> <span class="t-lc"><a href="../c.html" title="cpp/io/c">SEEK_CUR</a></span>
 </td></tr>
 
 </table>
-<p>Then, if the character encoding is fixed-width (<code>codecvt::encoding()</code> returns some positive number <code>width</code>, moves the file pointer as if by <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../c/fseek.html"><span class="kw1864">std::<span class="me2">fseek</span></span></a><span class="br0">(</span>file, width<span class="sy2">*</span>off, whence<span class="br0">)</span></span></span>.
-</p><p>Otherwise, moves the file pointer as if by <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../c/fseek.html"><span class="kw1864">std::<span class="me2">fseek</span></span></a><span class="br0">(</span>file, <span class="nu0">0</span>, whence<span class="br0">)</span></span></span>.
+<p>Then, if the character encoding is fixed-width (<code>codecvt::encoding()</code> returns some positive number <span class="t-c"><span class="mw-geshi cpp source-cpp">width</span></span>), moves the file pointer as if by <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../c/fseek.html"><span class="kw1884">std::<span class="me2">fseek</span></span></a><span class="br0">(</span>file, width<span class="sy2">*</span>off, whence<span class="br0">)</span></span></span>.
+</p><p>Otherwise, moves the file pointer as if by <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../c/fseek.html"><span class="kw1884">std::<span class="me2">fseek</span></span></a><span class="br0">(</span>file, <span class="nu0">0</span>, whence<span class="br0">)</span></span></span>.
 </p><p>The <code>openmode</code> argument, required by the base class function signature, is usually ignored, because <code>std::basic_filebuf</code> maintains only one file position.
 </p>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -259,55 +279,55 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  off
+<td> off
 </td>
 <td> -
 </td>
-<td>  relative position to set the position indicator to.
+<td> relative position to set the position indicator to
 </td></tr>
 <tr class="t-par">
-<td>  dir
+<td> dir
 </td>
 <td> -
 </td>
-<td>  defines base position to apply the relative offset to. It can be one of the following constants:
+<td> defines base position to apply the relative offset to. It can be one of the following constants:
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Constant
+<td> Constant
 </td>
-<td>  Explanation
+<td> Explanation
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="../ios_base/seekdir.html" title="cpp/io/ios base/seekdir"><tt>beg</tt></a>
+<td> <a href="../ios_base/seekdir.html" title="cpp/io/ios base/seekdir"><tt>beg</tt></a>
 </td>
-<td>  the beginning of a stream
+<td> the beginning of a stream
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="../ios_base/seekdir.html" title="cpp/io/ios base/seekdir"><tt>end</tt></a>
+<td> <a href="../ios_base/seekdir.html" title="cpp/io/ios base/seekdir"><tt>end</tt></a>
 </td>
-<td>  the ending of a stream
+<td> the ending of a stream
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="../ios_base/seekdir.html" title="cpp/io/ios base/seekdir"><tt>cur</tt></a>
+<td> <a href="../ios_base/seekdir.html" title="cpp/io/ios base/seekdir"><tt>cur</tt></a>
 </td>
-<td>  the current position of stream position indicator
+<td> the current position of stream position indicator
 </td></tr>
 
 </table>
 </td></tr>
 <tr class="t-par">
-<td>  which
+<td> which
 </td>
 <td> -
 </td>
-<td>  defines which of the input and/or output sequences to affect. It can be one or a combination of the following constants:
+<td> defines which of the input and/or output sequences to affect. It can be one or a combination of the following constants:
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
@@ -336,34 +356,44 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>A newly constructed object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">pos_type</span></span> which stores the resulting file position, or <span class="t-c"><span class="mw-geshi cpp source-cpp">pos_type<span class="br0">(</span>off_type<span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span></span></span> on failure.
 </p>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p><code>seekoff()</code> is called by <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">basic_streambuf</span><span class="sy4">::</span><span class="me2">pubseekoff</span></span></span>, which is called by <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">basic_istream</span><span class="sy4">::</span><span class="me2">seekg</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">basic_ostream</span><span class="sy4">::</span><span class="me2">seekp</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">basic_istream</span><span class="sy4">::</span><span class="me2">tellg</span></span></span>, and <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">basic_ostream</span><span class="sy4">::</span><span class="me2">tellp</span></span></span>
+<p><code>seekoff()</code> is called by <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">basic_streambuf</span><span class="sy4">::</span><span class="me2">pubseekoff</span></span></span>, which is called by <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">basic_istream</span><span class="sy4">::</span><span class="me2">seekg</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">basic_ostream</span><span class="sy4">::</span><span class="me2">seekp</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">basic_istream</span><span class="sy4">::</span><span class="me2">tellg</span></span></span>, and <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">basic_ostream</span><span class="sy4">::</span><span class="me2">tellp</span></span></span>.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
-<span class="co2">#include &lt;fstream&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;fstream&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;locale&gt;</span>
+ 
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> CharT<span class="sy1">&gt;</span>
+<span class="kw4">int</span> get_encoding<span class="br0">(</span><span class="kw4">const</span> <a href="../basic_istream.html"><span class="kw1730">std::<span class="me2">basic_istream</span></span></a><span class="sy1">&lt;</span>CharT<span class="sy1">&gt;</span><span class="sy3">&amp;</span> stream<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">using</span> Facet <span class="sy1">=</span> <a href="../../locale/codecvt.html"><span class="kw1956">std::<span class="me2">codecvt</span></span></a><span class="sy1">&lt;</span>CharT, <span class="kw4">char</span>, <a href="../../string/multibyte/mbstate_t.html"><span class="kw1187">std::<span class="me2">mbstate_t</span></span></a><span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw1">return</span> <a href="../../locale/use_facet.html"><span class="kw1914">std::<span class="me2">use_facet</span></span></a><span class="sy1">&lt;</span>Facet<span class="sy1">&gt;</span><span class="br0">(</span>stream.<span class="me1">getloc</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>.<span class="me1">encoding</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span>
+ 
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="co1">// prepare a 10-byte file holding 4 characters in UTF8</span>
-    <a href="../basic_ofstream.html"><span class="kw1730">std::<span class="me2">ofstream</span></span></a><span class="br0">(</span><span class="st0">"text.txt"</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> u8<span class="st0">"z<span class="es3">\u00df</span><span class="es3">\u6c34</span><span class="es4">\U0001d10b</span>"</span><span class="sy4">;</span> <span class="co1">// or u8"zß水𝄋"</span>
-                                           <span class="co1">// or "\x7a\xc3\x9f\xe6\xb0\xb4\xf0\x9d\x84\x8b";</span>
+    <span class="co1">// prepare a 10-byte file holding 4 characters ("zß水𝄋") in UTF-8</span>
+    <a href="../basic_ofstream.html"><span class="kw1750">std::<span class="me2">ofstream</span></span></a><span class="br0">(</span><span class="st0">"text.txt"</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es2">\x7a</span><span class="es2">\xc3</span><span class="es2">\x9f</span><span class="es2">\xe6</span><span class="es2">\xb0</span><span class="es2">\xb4</span><span class="es2">\xf0</span><span class="es2">\x9d</span><span class="es2">\x84</span><span class="es2">\x8b</span>"</span><span class="sy4">;</span>
  
     <span class="co1">// open using a non-converting encoding</span>
-    <a href="../basic_ifstream.html"><span class="kw1729">std::<span class="me2">ifstream</span></span></a> f1<span class="br0">(</span><span class="st0">"text.txt"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"f1's locale's encoding() returns "</span>
-              <span class="sy1">&lt;&lt;</span> <a href="../../locale/use_facet.html"><span class="kw1894">std::<span class="me2">use_facet</span></span></a><span class="sy1">&lt;</span><a href="../../locale/codecvt.html"><span class="kw1936">std::<span class="me2">codecvt</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span>, <span class="kw4">char</span>, <a href="../../string/multibyte/mbstate_t.html"><span class="kw1176">std::<span class="me2">mbstate_t</span></span></a><span class="sy1">&gt;&gt;</span><span class="br0">(</span>f1.<span class="me1">getloc</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>.<span class="me1">encoding</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-              <span class="sy1">&lt;&lt;</span> <span class="st0">"pubseekoff(3, beg) returns "</span> <span class="sy1">&lt;&lt;</span> f1.<span class="me1">rdbuf</span><span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>pubseekoff<span class="br0">(</span><span class="nu0">3</span>, <a href="../ios_base/seekdir.html"><span class="kw1700">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">beg</span></span></a><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-              <span class="sy1">&lt;&lt;</span> <span class="st0">"pubseekoff(0, end) returns "</span> <span class="sy1">&lt;&lt;</span> f1.<span class="me1">rdbuf</span><span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>pubseekoff<span class="br0">(</span><span class="nu0">0</span>, <a href="../ios_base/seekdir.html"><span class="kw1702">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">end</span></span></a><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;;</span>
+    <a href="../basic_ifstream.html"><span class="kw1749">std::<span class="me2">ifstream</span></span></a> f1<span class="br0">(</span><span class="st0">"text.txt"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"f1's locale's encoding() returns "</span>
+              <span class="sy1">&lt;&lt;</span> get_encoding<span class="br0">(</span>f1<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
+              <span class="sy1">&lt;&lt;</span> <span class="st0">"pubseekoff(3, beg) returns "</span>
+              <span class="sy1">&lt;&lt;</span> f1.<span class="me1">rdbuf</span><span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>pubseekoff<span class="br0">(</span><span class="nu0">3</span>, <a href="../ios_base/seekdir.html"><span class="kw1720">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">beg</span></span></a><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
+              <span class="sy1">&lt;&lt;</span> <span class="st0">"pubseekoff(0, end) returns "</span>
+              <span class="sy1">&lt;&lt;</span> f1.<span class="me1">rdbuf</span><span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>pubseekoff<span class="br0">(</span><span class="nu0">0</span>, <a href="../ios_base/seekdir.html"><span class="kw1722">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">end</span></span></a><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
  
     <span class="co1">// open using UTF-8</span>
-    <a href="../basic_ifstream.html"><span class="kw1743">std::<span class="me2">wifstream</span></span></a> f2<span class="br0">(</span><span class="st0">"text.txt"</span><span class="br0">)</span><span class="sy4">;</span>
-    f2.<span class="me1">imbue</span><span class="br0">(</span><a href="../../locale/locale.html"><span class="kw1891">std::<span class="me2">locale</span></span></a><span class="br0">(</span><span class="st0">"en_US.UTF-8"</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"f2's locale's encoding() returns "</span>
-              <span class="sy1">&lt;&lt;</span> <a href="../../locale/use_facet.html"><span class="kw1894">std::<span class="me2">use_facet</span></span></a><span class="sy1">&lt;</span><a href="../../locale/codecvt.html"><span class="kw1936">std::<span class="me2">codecvt</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span>, <span class="kw4">char</span>, <a href="../../string/multibyte/mbstate_t.html"><span class="kw1176">std::<span class="me2">mbstate_t</span></span></a><span class="sy1">&gt;&gt;</span><span class="br0">(</span>f2.<span class="me1">getloc</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>.<span class="me1">encoding</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-              <span class="sy1">&lt;&lt;</span> <span class="st0">"pubseekoff(3, beg) returns "</span> <span class="sy1">&lt;&lt;</span> f2.<span class="me1">rdbuf</span><span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>pubseekoff<span class="br0">(</span><span class="nu0">3</span>, <a href="../ios_base/seekdir.html"><span class="kw1700">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">beg</span></span></a><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-              <span class="sy1">&lt;&lt;</span> <span class="st0">"pubseekoff(0, end) returns "</span> <span class="sy1">&lt;&lt;</span> f2.<span class="me1">rdbuf</span><span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>pubseekoff<span class="br0">(</span><span class="nu0">0</span>, <a href="../ios_base/seekdir.html"><span class="kw1702">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">end</span></span></a><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
- 
+    <a href="../basic_ifstream.html"><span class="kw1763">std::<span class="me2">wifstream</span></span></a> f2<span class="br0">(</span><span class="st0">"text.txt"</span><span class="br0">)</span><span class="sy4">;</span>
+    f2.<span class="me1">imbue</span><span class="br0">(</span><a href="../../locale/locale.html"><span class="kw1911">std::<span class="me2">locale</span></span></a><span class="br0">(</span><span class="st0">"en_US.UTF-8"</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"f2's locale's encoding() returns "</span>
+              <span class="sy1">&lt;&lt;</span> get_encoding<span class="br0">(</span>f2<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
+              <span class="sy1">&lt;&lt;</span> <span class="st0">"pubseekoff(3, beg) returns "</span>
+              <span class="sy1">&lt;&lt;</span> f2.<span class="me1">rdbuf</span><span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>pubseekoff<span class="br0">(</span><span class="nu0">3</span>, <a href="../ios_base/seekdir.html"><span class="kw1720">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">beg</span></span></a><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
+              <span class="sy1">&lt;&lt;</span> <span class="st0">"pubseekoff(0, end) returns "</span>
+              <span class="sy1">&lt;&lt;</span> f2.<span class="me1">rdbuf</span><span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>pubseekoff<span class="br0">(</span><span class="nu0">0</span>, <a href="../ios_base/seekdir.html"><span class="kw1722">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">end</span></span></a><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -374,40 +404,62 @@ f2's locale's encoding() returns 0
 pubseekoff(3, beg) returns -1
 pubseekoff(0, end) returns 10</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th>DR
+</th>
+<th>Applied to
+</th>
+<th>Behavior as published
+</th>
+<th>Correct behavior
+</th></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue55">LWG 55</a>
+</td>
+<td>C++98
+</td>
+<td><code>seekoff</code> returned an undefined<br>invalid stream position on failure
+</td>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">pos_type<span class="br0">(</span>off_type<span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span></span></span><br>is returned on failure
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../basic_streambuf/pubseekoff.html" title="cpp/io/basic streambuf/pubseekoff"> <span class="t-lines"><span>pubseekoff</span></span></a></div></div>
 </td>
-<td>   invokes <span class="t-c"><span class="mw-geshi cpp source-cpp">seekoff<span class="br0">(</span><span class="br0">)</span></span></span> <br> <span class="t-mark">(public member function of <code>std::basic_streambuf&lt;CharT,Traits&gt;</code>)</span> </td></tr>
+<td>  invokes <span class="t-c"><span class="mw-geshi cpp source-cpp">seekoff<span class="br0">(</span><span class="br0">)</span></span></span> <br> <span class="t-mark">(public member function of <code>std::basic_streambuf&lt;CharT,Traits&gt;</code>)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="seekpos.html" title="cpp/io/basic filebuf/seekpos"> <span class="t-lines"><span>seekpos</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
 </td>
-<td>   repositions the file position, using absolute addressing <br> <span class="t-mark">(virtual protected member function)</span> </td></tr>
+<td>  repositions the file position, using absolute addressing <br> <span class="t-mark">(virtual protected member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../c/fseek.html" title="cpp/io/c/fseek"> <span class="t-lines"><span>fseek</span></span></a></div></div>
 </td>
-<td>   moves the file position indicator to a specific location in a file <br> <span class="t-mark">(function)</span> </td></tr>
+<td>  moves the file position indicator to a specific location in a file <br> <span class="t-mark">(function)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5032/1000000
-Preprocessor generated node count: 9915/1000000
-Post‐expand include size: 120509/2097152 bytes
-Template argument size: 27061/2097152 bytes
+Preprocessor visited node count: 5984/1000000
+Preprocessor generated node count: 11176/1000000
+Post‐expand include size: 142030/4194304 bytes
+Template argument size: 31405/4194304 bytes
 Highest expansion depth: 32/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5674-0!*!0!!en!*!* and timestamp 20190601211604 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5674-0!*!0!!en!*!* and timestamp 20241003221426 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/io/basic_filebuf/seekoff&amp;oldid=80459">https://en.cppreference.com/mwiki/index.php?title=cpp/io/basic_filebuf/seekoff&amp;oldid=80459</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/io/basic_filebuf/seekoff&amp;oldid=158142">https://en.cppreference.com/mwiki/index.php?title=cpp/io/basic_filebuf/seekoff&amp;oldid=158142</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -420,21 +472,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/io/basic_filebuf/seekoff">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 6 September 2023, at 23:45.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../../common/skin_scripts.js"></script>
+<script src="../../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 1.976 secs. -->
+<script src="../../.././common/site_scripts.js"></script>
+<!-- Served in 3.271 secs. -->
 	</body>
-<!-- Cached 20190601211604 -->
+<!-- Cached 20241003221426 -->
 </html>

@@ -4,20 +4,20 @@
 <title>std::experimental::ranges::find, std::experimental::ranges::find_if, std::experimental::ranges::find_if_not - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../../../common/favicon.ico">
-<link rel="stylesheet" href="../../../../common/ext.css">
+<link rel="shortcut icon" href="../../../.././common/favicon.ico">
+<link rel="stylesheet" href="../../../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../../../common/site_modules.css">
+<link rel="stylesheet" href="../../../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../../../common/startup_scripts.js"></script>
+<script src="../../../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/experimental/ranges/algorithm/find","wgTitle":"cpp/experimental/ranges/algorithm/find","wgCurRevisionId":106773,"wgArticleId":17932,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo no example"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/experimental/ranges/algorithm/find","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/experimental/ranges/algorithm/find","wgTitle":"cpp/experimental/ranges/algorithm/find","wgCurRevisionId":155244,"wgArticleId":17932,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo no example"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/experimental/ranges/algorithm/find","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -84,7 +84,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::experimental::ranges::</span>find, <span style="font-size:0.7em; line-height:130%">std::experimental::ranges::</span>find_if, <span style="font-size:0.7em; line-height:130%">std::experimental::ranges::</span>find_if_not</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::experimental::ranges::</span>find, <span style="font-size:0.7em; line-height:130%">std::experimental::ranges::</span>find_if, <span style="font-size:0.7em; line-height:130%">std::experimental::ranges::</span>find_if_not</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -95,39 +103,55 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../../../cpp.html" title="cpp">cpp</a>‎ | <a href="../../../experimental.html" title="cpp/experimental">experimental</a>‎ | <a href="../../ranges.html" title="cpp/experimental/ranges">ranges</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../experimental.html" title="cpp/experimental"> Technical specifications</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="../../fs.html" title="cpp/experimental/fs">Filesystem library</a> <span class="t-mark-rev t-since-fs-ts t-mark-ts">(filesystem TS)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../memory.html" title="cpp/experimental/lib extensions">Library fundamentals</a> <span class="t-mark-rev t-since-libfund-ts t-mark-ts">(library fundamentals TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../lib_extensions_2.html" title="cpp/experimental/lib extensions 2">Library fundamentals 2</a> <span class="t-mark-rev t-since-libfund-2-ts t-mark-ts">(library fundamentals 2 TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../parallelism.html" title="cpp/experimental/parallelism">Extensions for parallelism</a> <span class="t-mark-rev t-since-parallelism-ts t-mark-ts">(parallelism TS)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../parallelism_2.html" title="cpp/experimental/parallelism 2">Extensions for parallelism 2</a> <span class="t-mark-rev t-since-parallelism-ts-2 t-mark-ts">(parallelism TS v2)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../concurrency.html" title="cpp/experimental/concurrency">Extensions for concurrency</a> <span class="t-mark-rev t-since-concurrency-ts t-mark-ts">(concurrency TS)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../constraints.html" title="cpp/experimental/constraints">Concepts</a> <span class="t-mark-rev t-since-concepts-ts t-mark-ts">(concepts TS)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../ranges.html" title="cpp/experimental/ranges">Ranges</a> <span class="t-mark-rev t-since-ranges-ts t-mark-ts">(ranges TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../special_math.html" title="cpp/experimental/special math">Special mathematical functions</a> <span class="t-mark-rev t-since-special-math-tr t-mark-ts">(special math TR)</span></td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../ranges.html" title="cpp/experimental/ranges"> Ranges</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../../../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../experimental.html" title="cpp/experimental">Experimental</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../../../experimental.html#Technical_Specification" title="cpp/experimental">Technical Specification</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../fs.html" title="cpp/experimental/fs">Filesystem library</a> <span class="t-mark-rev t-since-fs-ts t-mark-ts">(filesystem TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../memory.html" title="cpp/experimental/lib extensions">Library fundamentals</a> <span class="t-mark-rev t-since-libfund-ts t-mark-ts">(library fundamentals TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../lib_extensions_2.html" title="cpp/experimental/lib extensions 2">Library fundamentals 2</a> <span class="t-mark-rev t-since-libfund-ts-2 t-mark-ts">(library fundamentals TS v2)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../lib_extensions_3.html" title="cpp/experimental/lib extensions 3">Library fundamentals 3</a> <span class="t-mark-rev t-since-libfund-ts-3 t-mark-ts">(library fundamentals TS v3)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../parallelism.html" title="cpp/experimental/parallelism">Extensions for parallelism</a> <span class="t-mark-rev t-since-parallelism-ts t-mark-ts">(parallelism TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../parallelism_2.html" title="cpp/experimental/parallelism 2">Extensions for parallelism 2</a> <span class="t-mark-rev t-since-parallelism-ts-2 t-mark-ts">(parallelism TS v2)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../concurrency.html" title="cpp/experimental/concurrency">Extensions for concurrency</a> <span class="t-mark-rev t-since-concurrency-ts t-mark-ts">(concurrency TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/concurrency_2&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/concurrency 2 (page does not exist)">Extensions for concurrency 2</a> <span class="t-mark-rev t-since-concurrency-ts-2 t-mark-ts">(concurrency TS v2)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../constraints.html" title="cpp/experimental/constraints">Concepts</a> <span class="t-mark-rev t-since-concepts-ts t-mark-ts">(concepts TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../ranges.html" title="cpp/experimental/ranges">Ranges</a> <span class="t-mark-rev t-since-ranges-ts t-mark-ts">(ranges TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../reflect.html" title="cpp/experimental/reflect">Reflection</a> <span class="t-mark-rev t-since-reflection-ts t-mark-ts">(reflection TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../special_math.html" title="cpp/experimental/special functions">Mathematical special functions</a> <span class="t-mark-rev t-since-special-math-tr t-mark-ts">(special functions TR)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../../../experimental.html#Experimental_Non-TS" title="cpp/experimental">Experimental Non-TS</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/pm&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/pm (page does not exist)">Pattern Matching</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/la&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/la (page does not exist)">Linear Algebra</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../execution.html" title="cpp/experimental/execution" class="mw-redirect">std::execution</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/contracts&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/contracts (page does not exist)">Contracts</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/2dgraphics&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/2dgraphics (page does not exist)">2D Graphics</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../ranges.html" title="cpp/experimental/ranges">Ranges</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../../ranges.html#Concepts" title="cpp/experimental/ranges"><span class="t-lines"><span>Concepts</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../../ranges.html#General_utilities" title="cpp/experimental/ranges"><span class="t-lines"><span>General utilities</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../../ranges.html#Iterators" title="cpp/experimental/ranges"><span class="t-lines"><span>Iterators</span></span></a></div></div></td></tr>
@@ -152,9 +176,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="equal.html" title="cpp/experimental/ranges/algorithm/equal"><span class="t-lines"><span>equal</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="for_each.html" title="cpp/experimental/ranges/algorithm/for each"><span class="t-lines"><span>for_each</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="lexicographical_compare.html" title="cpp/experimental/ranges/algorithm/lexicographical compare"><span class="t-lines"><span>lexicographical_compare</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
+<tr class="t-nv"><td colspan="5"><br>
 </td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
+<tr class="t-nv"><td colspan="5"><br>
 </td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Modifying sequence operations </td></tr>
@@ -195,7 +219,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/algorithm/partition_copy&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/ranges/algorithm/partition copy (page does not exist)"><span class="t-lines"><span>partition_copy</span></span></a></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/algorithm/stable_partition&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/ranges/algorithm/stable partition (page does not exist)"><span class="t-lines"><span>stable_partition</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
+<tr class="t-nv"><td colspan="5"><br>
 </td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Sorting operations </td></tr>
@@ -210,7 +234,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/algorithm/partial_sort_copy&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/ranges/algorithm/partial sort copy (page does not exist)"><span class="t-lines"><span>partial_sort_copy</span></span></a></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/algorithm/nth_element&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/ranges/algorithm/nth element (page does not exist)"><span class="t-lines"><span>nth_element</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
+<tr class="t-nv"><td colspan="5"><br>
 </td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Binary search operations</td></tr>
@@ -276,62 +300,62 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-since-ranges">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../iterator/InputIterator.html"><span class="kw2719">InputIterator</span></a> I, <a href="../iterator/Sentinel.html"><span class="kw2717">Sentinel</span></a><span class="sy1">&lt;</span>I<span class="sy1">&gt;</span> S, <span class="kw1">class</span> T, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2909">ranges::<span class="me2">identity</span></span></a> <span class="sy1">&gt;</span><br>
-<p>  requires <a href="../iterator/IndirectRelation.html"><span class="kw2727">IndirectRelation</span></a><span class="sy1">&lt;</span><a href="../functional/equal_to.html"><span class="kw2911">ranges::<span class="me2">equal_to</span></span></a><span class="sy1">&lt;&gt;</span>, <a href="../iterator/projected.html"><span class="kw2747">projected</span></a><span class="sy1">&lt;</span>I, Proj<span class="sy1">&gt;</span>, <span class="kw4">const</span> T<span class="sy2">*</span><span class="sy1">&gt;</span><br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> InputIterator I, Sentinel<span class="sy1">&lt;</span>I<span class="sy1">&gt;</span> S, <span class="kw1">class</span> T, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2857">ranges::<span class="me2">identity</span></span></a> <span class="sy1">&gt;</span><br>
+<p>    requires IndirectRelation<span class="sy1">&lt;</span><a href="../functional/equal_to.html"><span class="kw2859">ranges::<span class="me2">equal_to</span></span></a><span class="sy1">&lt;&gt;</span>, <a href="../iterator/projected.html"><span class="kw2695">projected</span></a><span class="sy1">&lt;</span>I, Proj<span class="sy1">&gt;</span>, <span class="kw4">const</span> T<span class="sy2">*</span><span class="sy1">&gt;</span><br>
 </p>
-I find<span class="br0">(</span>I first, S last, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, Proj proj <span class="sy1">=</span> Proj<span class="br0">{</span><span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span></span></div></td>
+I find<span class="br0">(</span> I first, S last, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, Proj proj <span class="sy1">=</span> Proj<span class="br0">{</span><span class="br0">}</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (1) </td>
 <td> <span class="t-mark-rev t-since-ranges-ts t-mark-ts">(ranges TS)</span> </td>
 </tr>
 <tr class="t-dcl t-since-ranges">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../range/InputRange.html"><span class="kw2742">InputRange</span></a> R, <span class="kw1">class</span> T, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2909">ranges::<span class="me2">identity</span></span></a> <span class="sy1">&gt;</span><br>
-<p>  requires <a href="../iterator/IndirectRelation.html"><span class="kw2727">IndirectRelation</span></a><span class="sy1">&lt;</span><a href="../functional/equal_to.html"><span class="kw2911">ranges::<span class="me2">equal_to</span></span></a><span class="sy1">&lt;&gt;</span>, <br>
-                            <a href="../iterator/projected.html"><span class="kw2747">projected</span></a><span class="sy1">&lt;</span>ranges<span class="sy4">::</span><span class="me2">iterator_t</span><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span>, Proj<span class="sy1">&gt;</span>, <span class="kw4">const</span> T<span class="sy2">*</span><span class="sy1">&gt;</span><br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> InputRange R, <span class="kw1">class</span> T, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2857">ranges::<span class="me2">identity</span></span></a> <span class="sy1">&gt;</span><br>
+<p>    requires IndirectRelation<span class="sy1">&lt;</span><a href="../functional/equal_to.html"><span class="kw2859">ranges::<span class="me2">equal_to</span></span></a><span class="sy1">&lt;&gt;</span>, <br>
+                              <a href="../iterator/projected.html"><span class="kw2695">projected</span></a><span class="sy1">&lt;</span><a href="../../../ranges/iterator_t.html"><span class="kw2908">ranges::<span class="me2">iterator_t</span></span></a><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span>, Proj<span class="sy1">&gt;</span>, <span class="kw4">const</span> T<span class="sy2">*</span><span class="sy1">&gt;</span><br>
 </p>
-<a href="../iterator/dangling.html"><span class="kw2924">ranges::<span class="me2">safe_iterator_t</span></span></a><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span> find<span class="br0">(</span>R<span class="sy3">&amp;&amp;</span> r, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, Proj proj <span class="sy1">=</span> Proj<span class="br0">{</span><span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<a href="../iterator/dangling.html"><span class="kw2872">ranges::<span class="me2">safe_iterator_t</span></span></a><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span> find<span class="br0">(</span> R<span class="sy3">&amp;&amp;</span> r, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, Proj proj <span class="sy1">=</span> Proj<span class="br0">{</span><span class="br0">}</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
 <td> <span class="t-mark-rev t-since-ranges-ts t-mark-ts">(ranges TS)</span> </td>
 </tr>
 <tr class="t-dcl t-since-ranges">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../iterator/InputIterator.html"><span class="kw2719">InputIterator</span></a> I, <a href="../iterator/Sentinel.html"><span class="kw2717">Sentinel</span></a><span class="sy1">&lt;</span>I<span class="sy1">&gt;</span> S, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2909">ranges::<span class="me2">identity</span></span></a>,<br>
-<p>          <a href="../iterator/IndirectUnaryPredicate.html"><span class="kw2726">IndirectUnaryPredicate</span></a><span class="sy1">&lt;</span><a href="../iterator/projected.html"><span class="kw2747">projected</span></a><span class="sy1">&lt;</span>I, Proj<span class="sy1">&gt;&gt;</span> Pred <span class="sy1">&gt;</span><br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> InputIterator I, Sentinel<span class="sy1">&lt;</span>I<span class="sy1">&gt;</span> S, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2857">ranges::<span class="me2">identity</span></span></a>,<br>
+<p>          IndirectUnaryPredicate<span class="sy1">&lt;</span><a href="../iterator/projected.html"><span class="kw2695">projected</span></a><span class="sy1">&lt;</span>I, Proj<span class="sy1">&gt;&gt;</span> Pred <span class="sy1">&gt;</span><br>
 </p>
-I find_if<span class="br0">(</span>I first, S last, Pred pred, Proj proj <span class="sy1">=</span> Proj<span class="br0">{</span><span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span></span></div></td>
+I find_if<span class="br0">(</span> I first, S last, Pred pred, Proj proj <span class="sy1">=</span> Proj<span class="br0">{</span><span class="br0">}</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (3) </td>
 <td> <span class="t-mark-rev t-since-ranges-ts t-mark-ts">(ranges TS)</span> </td>
 </tr>
 <tr class="t-dcl t-since-ranges">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../range/InputRange.html"><span class="kw2742">InputRange</span></a> R, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2909">ranges::<span class="me2">identity</span></span></a>,<br>
-<p>          <a href="../iterator/IndirectUnaryPredicate.html"><span class="kw2726">IndirectUnaryPredicate</span></a><span class="sy1">&lt;</span><a href="../iterator/projected.html"><span class="kw2747">projected</span></a><span class="sy1">&lt;</span>ranges<span class="sy4">::</span><span class="me2">iterator_t</span><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span>, Proj<span class="sy1">&gt;&gt;</span> Pred <span class="sy1">&gt;</span><br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> InputRange R, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2857">ranges::<span class="me2">identity</span></span></a>,<br>
+<p>          IndirectUnaryPredicate<span class="sy1">&lt;</span><a href="../iterator/projected.html"><span class="kw2695">projected</span></a><span class="sy1">&lt;</span><a href="../../../ranges/iterator_t.html"><span class="kw2908">ranges::<span class="me2">iterator_t</span></span></a><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span>, Proj<span class="sy1">&gt;&gt;</span> Pred <span class="sy1">&gt;</span><br>
 </p>
-<a href="../iterator/dangling.html"><span class="kw2924">ranges::<span class="me2">safe_iterator_t</span></span></a><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span> find_if<span class="br0">(</span>R<span class="sy3">&amp;&amp;</span> r, Pred pred, Proj proj <span class="sy1">=</span> Proj<span class="br0">{</span><span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<a href="../iterator/dangling.html"><span class="kw2872">ranges::<span class="me2">safe_iterator_t</span></span></a><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span> find_if<span class="br0">(</span> R<span class="sy3">&amp;&amp;</span> r, Pred pred, Proj proj <span class="sy1">=</span> Proj<span class="br0">{</span><span class="br0">}</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (4) </td>
 <td> <span class="t-mark-rev t-since-ranges-ts t-mark-ts">(ranges TS)</span> </td>
 </tr>
 <tr class="t-dcl t-since-ranges">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../iterator/InputIterator.html"><span class="kw2719">InputIterator</span></a> I, <a href="../iterator/Sentinel.html"><span class="kw2717">Sentinel</span></a><span class="sy1">&lt;</span>I<span class="sy1">&gt;</span> S, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2909">ranges::<span class="me2">identity</span></span></a>,<br>
-<p>          <a href="../iterator/IndirectUnaryPredicate.html"><span class="kw2726">IndirectUnaryPredicate</span></a><span class="sy1">&lt;</span><a href="../iterator/projected.html"><span class="kw2747">projected</span></a><span class="sy1">&lt;</span>I, Proj<span class="sy1">&gt;&gt;</span> Pred <span class="sy1">&gt;</span><br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> InputIterator I, Sentinel<span class="sy1">&lt;</span>I<span class="sy1">&gt;</span> S, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2857">ranges::<span class="me2">identity</span></span></a>,<br>
+<p>          IndirectUnaryPredicate<span class="sy1">&lt;</span><a href="../iterator/projected.html"><span class="kw2695">projected</span></a><span class="sy1">&lt;</span>I, Proj<span class="sy1">&gt;&gt;</span> Pred <span class="sy1">&gt;</span><br>
 </p>
-I find_if_not<span class="br0">(</span>I first, S last, Pred pred, Proj proj <span class="sy1">=</span> Proj<span class="br0">{</span><span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span></span></div></td>
+I find_if_not<span class="br0">(</span> I first, S last, Pred pred, Proj proj <span class="sy1">=</span> Proj<span class="br0">{</span><span class="br0">}</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (5) </td>
 <td> <span class="t-mark-rev t-since-ranges-ts t-mark-ts">(ranges TS)</span> </td>
 </tr>
 <tr class="t-dcl t-since-ranges">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../range/InputRange.html"><span class="kw2742">InputRange</span></a> R, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2909">ranges::<span class="me2">identity</span></span></a>,<br>
-<p>          <a href="../iterator/IndirectUnaryPredicate.html"><span class="kw2726">IndirectUnaryPredicate</span></a><span class="sy1">&lt;</span><a href="../iterator/projected.html"><span class="kw2747">projected</span></a><span class="sy1">&lt;</span>ranges<span class="sy4">::</span><span class="me2">iterator_t</span><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span>, Proj<span class="sy1">&gt;&gt;</span> Pred <span class="sy1">&gt;</span><br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> InputRange R, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2857">ranges::<span class="me2">identity</span></span></a>,<br>
+<p>          IndirectUnaryPredicate<span class="sy1">&lt;</span><a href="../iterator/projected.html"><span class="kw2695">projected</span></a><span class="sy1">&lt;</span><a href="../../../ranges/iterator_t.html"><span class="kw2908">ranges::<span class="me2">iterator_t</span></span></a><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span>, Proj<span class="sy1">&gt;&gt;</span> Pred <span class="sy1">&gt;</span><br>
 </p>
-<a href="../iterator/dangling.html"><span class="kw2924">ranges::<span class="me2">safe_iterator_t</span></span></a><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span> find_if_not<span class="br0">(</span>R<span class="sy3">&amp;&amp;</span> r, Pred pred, Proj proj <span class="sy1">=</span> Proj<span class="br0">{</span><span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<a href="../iterator/dangling.html"><span class="kw2872">ranges::<span class="me2">safe_iterator_t</span></span></a><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span> find_if_not<span class="br0">(</span> R<span class="sy3">&amp;&amp;</span> r, Pred pred, Proj proj <span class="sy1">=</span> Proj<span class="br0">{</span><span class="br0">}</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (6) </td>
 <td> <span class="t-mark-rev t-since-ranges-ts t-mark-ts">(ranges TS)</span> </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Returns the first element in the range <code>[first, last)</code> that satisfies specific criteria:
+<p>Returns the first element in the range <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span><code>)</code> that satisfies specific criteria:
 </p>
-<div class="t-li1"><span class="t-li">1)</span> <code>find</code> searches for an element whose projected value is equal to <code>value</code> (i.e., <span class="t-c"><span class="mw-geshi cpp source-cpp">value <span class="sy1">==</span> <a href="../functional/invoke.html"><span class="kw2910">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>proj, <span class="sy2">*</span>i<span class="br0">)</span></span></span>).</div>
-<div class="t-li1"><span class="t-li">3)</span> <code>find_if</code> searches for an element for whose projected value predicate <code>p</code> returns <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> (i.e., <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../functional/invoke.html"><span class="kw2910">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>pred, <a href="../functional/invoke.html"><span class="kw2910">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>proj, <span class="sy2">*</span>i<span class="br0">)</span><span class="br0">)</span></span></span>) is true).</div>
-<div class="t-li1"><span class="t-li">5)</span> <code>find_if_not</code> searches for an element for whose projected value predicate <code>q</code> returns <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> (i.e., <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../functional/invoke.html"><span class="kw2910">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>pred, <a href="../functional/invoke.html"><span class="kw2910">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>proj, <span class="sy2">*</span>i<span class="br0">)</span><span class="br0">)</span></span></span>) is false).</div>
-<div class="t-li1"><span class="t-li">2,4,6)</span> Same as <span class="t-v">(1,3,5)</span>, but uses <code>r</code> as the source range, as if using <span class="t-c"><span class="mw-geshi cpp source-cpp">ranges<span class="sy4">::</span><span class="me2">begin</span><span class="br0">(</span>r<span class="br0">)</span></span></span> as <code>first</code> and <span class="t-c"><span class="mw-geshi cpp source-cpp">ranges<span class="sy4">::</span><span class="me2">end</span><span class="br0">(</span>r<span class="br0">)</span></span></span> as <code>last</code>.</div>
+<div class="t-li1"><span class="t-li">1)</span> <code>find</code> searches for an element whose projected value is equal to <span class="t-c"><span class="mw-geshi cpp source-cpp">value</span></span> (i.e., <span class="t-c"><span class="mw-geshi cpp source-cpp">value <span class="sy1">==</span> <a href="../functional/invoke.html"><span class="kw2858">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>proj, <span class="sy2">*</span>i<span class="br0">)</span></span></span>).</div>
+<div class="t-li1"><span class="t-li">3)</span> <code>find_if</code> searches for an element for whose projected value predicate <span class="t-c"><span class="mw-geshi cpp source-cpp">p</span></span> returns <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> (i.e., <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../functional/invoke.html"><span class="kw2858">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>pred, <a href="../functional/invoke.html"><span class="kw2858">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>proj, <span class="sy2">*</span>i<span class="br0">)</span><span class="br0">)</span></span></span>) is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>).</div>
+<div class="t-li1"><span class="t-li">5)</span> <code>find_if_not</code> searches for an element for whose projected value predicate <span class="t-c"><span class="mw-geshi cpp source-cpp">q</span></span> returns <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> (i.e., <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../functional/invoke.html"><span class="kw2858">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>pred, <a href="../functional/invoke.html"><span class="kw2858">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>proj, <span class="sy2">*</span>i<span class="br0">)</span><span class="br0">)</span></span></span>) is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>).</div>
+<div class="t-li1"><span class="t-li">2,4,6)</span> Same as <span class="t-v">(1,3,5)</span>, but uses <span class="t-c"><span class="mw-geshi cpp source-cpp">r</span></span> as the source range, as if using <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../../ranges/begin.html"><span class="kw2900">ranges::<span class="me2">begin</span></span></a><span class="br0">(</span>r<span class="br0">)</span></span></span> as <span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../../ranges/end.html"><span class="kw2902">ranges::<span class="me2">end</span></span></a><span class="br0">(</span>r<span class="br0">)</span></span></span> as <span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span>.</div>
 <p>Notwithstanding the declarations depicted above, the actual number and order of template parameters for algorithm declarations is unspecified. Thus, if explicit template arguments are used when calling an algorithm, the program is probably non-portable.
 </p>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -339,45 +363,45 @@ I find_if_not<span class="br0">(</span>I first, S last, Pred pred, Proj proj <sp
 
 
 <tr class="t-par">
-<td>  first, last
+<td> first, last
 </td>
 <td> -
 </td>
-<td>  the range of elements to examine
+<td> the range of elements to examine
 </td></tr>
 <tr class="t-par">
-<td>  r
+<td> r
 </td>
 <td> -
 </td>
-<td>  the range of elements to examine
+<td> the range of elements to examine
 </td></tr>
 <tr class="t-par">
-<td>  value
+<td> value
 </td>
 <td> -
 </td>
-<td>  value to compare the projected elements to
+<td> value to compare the projected elements to
 </td></tr>
 <tr class="t-par">
-<td>  pred
+<td> pred
 </td>
 <td> -
 </td>
-<td>  predicate to apply to the projected elements
+<td> predicate to apply to the projected elements
 </td></tr>
 <tr class="t-par">
-<td>  proj
+<td> proj
 </td>
 <td> -
 </td>
-<td>  projection to apply to the elements
+<td> projection to apply to the elements
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
-<p>Iterator to the first element satisfying the condition. If no such element is found, returns an iterator that compares equal to <code>last</code>.
+<p>Iterator to the first element satisfying the condition. If no such element is found, returns an iterator that compares equal to <span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span>.
 </p>
 <h3><span class="mw-headline" id="Complexity">Complexity</span></h3>
-<p>At most <code>last</code> - <code>first</code> applications of the predicate and projection.
+<p>At most <span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span> - <span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span> applications of the predicate and projection.
 </p>
 <h3><span class="mw-headline" id="Possible_implementation">Possible implementation</span></h3>
 <table class="eq-fun-cpp-table">
@@ -387,13 +411,13 @@ I find_if_not<span class="br0">(</span>I first, S last, Pred pred, Proj proj <sp
 </th></tr>
 <tr>
 <td>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../iterator/InputIterator.html"><span class="kw2719">InputIterator</span></a> I, <a href="../iterator/Sentinel.html"><span class="kw2717">Sentinel</span></a><span class="sy1">&lt;</span>I<span class="sy1">&gt;</span> S, <span class="kw1">class</span> T, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2909">ranges::<span class="me2">identity</span></span></a> <span class="sy1">&gt;</span>
-  requires <a href="../iterator/IndirectRelation.html"><span class="kw2727">IndirectRelation</span></a><span class="sy1">&lt;</span><a href="../functional/equal_to.html"><span class="kw2911">ranges::<span class="me2">equal_to</span></span></a><span class="sy1">&lt;&gt;</span>, <a href="../iterator/projected.html"><span class="kw2747">projected</span></a><span class="sy1">&lt;</span>I, Proj<span class="sy1">&gt;</span>, <span class="kw4">const</span> T<span class="sy2">*</span><span class="sy1">&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span>InputIterator I, Sentinel<span class="sy1">&lt;</span>I<span class="sy1">&gt;</span> S, <span class="kw1">class</span> T, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2857">ranges::<span class="me2">identity</span></span></a><span class="sy1">&gt;</span>
+    requires IndirectRelation<span class="sy1">&lt;</span><a href="../functional/equal_to.html"><span class="kw2859">ranges::<span class="me2">equal_to</span></span></a><span class="sy1">&lt;&gt;</span>, <a href="../iterator/projected.html"><span class="kw2695">projected</span></a><span class="sy1">&lt;</span>I, Proj<span class="sy1">&gt;</span>, <span class="kw4">const</span> T<span class="sy2">*</span><span class="sy1">&gt;</span>
 I find<span class="br0">(</span>I first, S last, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, Proj proj <span class="sy1">=</span> Proj<span class="br0">{</span><span class="br0">}</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">if</span> <span class="br0">(</span><a href="../functional/invoke.html"><span class="kw2910">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>proj, <span class="sy2">*</span>first<span class="br0">)</span> <span class="sy1">==</span> value<span class="br0">)</span> <span class="kw1">break</span><span class="sy4">;</span>
-    <span class="br0">}</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">)</span>
+        <span class="kw1">if</span> <span class="br0">(</span><a href="../functional/invoke.html"><span class="kw2858">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>proj, <span class="sy2">*</span>first<span class="br0">)</span> <span class="sy1">==</span> value<span class="br0">)</span>
+            <span class="kw1">break</span><span class="sy4">;</span>
     <span class="kw1">return</span> first<span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </td></tr>
@@ -402,13 +426,13 @@ I find<span class="br0">(</span>I first, S last, <span class="kw4">const</span> 
 </th></tr>
 <tr>
 <td>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../iterator/InputIterator.html"><span class="kw2719">InputIterator</span></a> I, <a href="../iterator/Sentinel.html"><span class="kw2717">Sentinel</span></a><span class="sy1">&lt;</span>I<span class="sy1">&gt;</span> S, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2909">ranges::<span class="me2">identity</span></span></a>,
-          <a href="../iterator/IndirectUnaryPredicate.html"><span class="kw2726">IndirectUnaryPredicate</span></a><span class="sy1">&lt;</span><a href="../iterator/projected.html"><span class="kw2747">projected</span></a><span class="sy1">&lt;</span>I, Proj<span class="sy1">&gt;&gt;</span> Pred <span class="sy1">&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span>InputIterator I, Sentinel<span class="sy1">&lt;</span>I<span class="sy1">&gt;</span> S, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2857">ranges::<span class="me2">identity</span></span></a>,
+         IndirectUnaryPredicate<span class="sy1">&lt;</span><a href="../iterator/projected.html"><span class="kw2695">projected</span></a><span class="sy1">&lt;</span>I, Proj<span class="sy1">&gt;&gt;</span> Pred<span class="sy1">&gt;</span>
 I find_if<span class="br0">(</span>I first, S last, Pred pred, Proj proj <span class="sy1">=</span> Proj<span class="br0">{</span><span class="br0">}</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">if</span> <span class="br0">(</span><a href="../functional/invoke.html"><span class="kw2910">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>pred, <a href="../functional/invoke.html"><span class="kw2910">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>proj, <span class="sy2">*</span>first<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span> <span class="kw1">break</span><span class="sy4">;</span>
-    <span class="br0">}</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">)</span>
+        <span class="kw1">if</span> <span class="br0">(</span><a href="../functional/invoke.html"><span class="kw2858">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>pred, <a href="../functional/invoke.html"><span class="kw2858">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>proj, <span class="sy2">*</span>first<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+            <span class="kw1">break</span><span class="sy4">;</span>
     <span class="kw1">return</span> first<span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </td></tr>
@@ -417,69 +441,67 @@ I find_if<span class="br0">(</span>I first, S last, Pred pred, Proj proj <span c
 </th></tr>
 <tr>
 <td>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../iterator/InputIterator.html"><span class="kw2719">InputIterator</span></a> I, <a href="../iterator/Sentinel.html"><span class="kw2717">Sentinel</span></a><span class="sy1">&lt;</span>I<span class="sy1">&gt;</span> S, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2909">ranges::<span class="me2">identity</span></span></a>,
-          <a href="../iterator/IndirectUnaryPredicate.html"><span class="kw2726">IndirectUnaryPredicate</span></a><span class="sy1">&lt;</span><a href="../iterator/projected.html"><span class="kw2747">projected</span></a><span class="sy1">&lt;</span>I, Proj<span class="sy1">&gt;&gt;</span> Pred <span class="sy1">&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span>InputIterator I, Sentinel<span class="sy1">&lt;</span>I<span class="sy1">&gt;</span> S, <span class="kw1">class</span> Proj <span class="sy1">=</span> <a href="../functional/identity.html"><span class="kw2857">ranges::<span class="me2">identity</span></span></a>,
+         IndirectUnaryPredicate<span class="sy1">&lt;</span><a href="../iterator/projected.html"><span class="kw2695">projected</span></a><span class="sy1">&lt;</span>I, Proj<span class="sy1">&gt;&gt;</span> Pred<span class="sy1">&gt;</span>
 I find_if_not<span class="br0">(</span>I first, S last, Pred pred, Proj proj <span class="sy1">=</span> Proj<span class="br0">{</span><span class="br0">}</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span><a href="../functional/invoke.html"><span class="kw2910">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>pred, <a href="../functional/invoke.html"><span class="kw2910">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>proj, <span class="sy2">*</span>first<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span> <span class="kw1">break</span><span class="sy4">;</span>
-    <span class="br0">}</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">)</span>
+        <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span><a href="../functional/invoke.html"><span class="kw2858">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>pred, <a href="../functional/invoke.html"><span class="kw2858">ranges::<span class="me2">invoke</span></span></a><span class="br0">(</span>proj, <span class="sy2">*</span>first<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+            <span class="kw1">break</span><span class="sy4">;</span>
     <span class="kw1">return</span> first<span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </td></tr></table>
-<p><br>
-</p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: no example </td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../../../algorithm/find_if_not.html" title="cpp/algorithm/find"> <span class="t-lines"><span>find</span><span>find_if</span><span>find_if_not</span></span></a></div><div><span class="t-lines"><span></span><span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../../../algorithm/find.html" title="cpp/algorithm/find"> <span class="t-lines"><span>find</span><span>find_if</span><span>find_if_not</span></span></a></div><div><span class="t-lines"><span></span><span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   finds the first element satisfying specific criteria  <br> <span class="t-mark">(function template)</span> </td></tr>
+<td>  finds the first element satisfying specific criteria <br> <span class="t-mark">(function template)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="adjacent_find.html" title="cpp/experimental/ranges/algorithm/adjacent find"> <span class="t-lines"><span>adjacent_find</span></span></a></div></div>
 </td>
-<td>   finds the first two adjacent items that are equal (or satisfy a given predicate)  <br> <span class="t-mark">(function template)</span> </td></tr>
+<td>  finds the first two adjacent items that are equal (or satisfy a given predicate) <br> <span class="t-mark">(function template)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="find_end.html" title="cpp/experimental/ranges/algorithm/find end"> <span class="t-lines"><span>find_end</span></span></a></div></div>
 </td>
-<td>   finds the last sequence of elements in a certain range  <br> <span class="t-mark">(function template)</span> </td></tr>
+<td>  finds the last sequence of elements in a certain range <br> <span class="t-mark">(function template)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="find_first_of.html" title="cpp/experimental/ranges/algorithm/find first of"> <span class="t-lines"><span>find_first_of</span></span></a></div></div>
 </td>
-<td>   searches for any one of a set of elements  <br> <span class="t-mark">(function template)</span> </td></tr>
+<td>  searches for any one of a set of elements <br> <span class="t-mark">(function template)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="mismatch.html" title="cpp/experimental/ranges/algorithm/mismatch"> <span class="t-lines"><span>mismatch</span></span></a></div></div>
 </td>
-<td>   finds the first position where two ranges differ  <br> <span class="t-mark">(function template)</span> </td></tr>
+<td>  finds the first position where two ranges differ <br> <span class="t-mark">(function template)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="search.html" title="cpp/experimental/ranges/algorithm/search"> <span class="t-lines"><span>search</span></span></a></div></div>
 </td>
-<td>   searches for a range of elements  <br> <span class="t-mark">(function template)</span> </td></tr>
+<td>  searches for a range of elements <br> <span class="t-mark">(function template)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 7327/1000000
-Preprocessor generated node count: 12465/1000000
-Post‐expand include size: 206665/2097152 bytes
-Template argument size: 40596/2097152 bytes
+Preprocessor visited node count: 7934/1000000
+Preprocessor generated node count: 13383/1000000
+Post‐expand include size: 220126/4194304 bytes
+Template argument size: 42365/4194304 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:17932-0!*!0!!en!*!* and timestamp 20190111210458 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:17932-0!*!0!!en!*!* and timestamp 20241004054648 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/algorithm/find&amp;oldid=106773">https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/algorithm/find&amp;oldid=106773</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/algorithm/find&amp;oldid=155244">https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/ranges/algorithm/find&amp;oldid=155244</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -492,21 +514,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/experimental/ranges/algorithm/find">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 20 July 2023, at 02:47.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../../../common/skin_scripts.js"></script>
+<script src="../../../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 1.535 secs. -->
+<script src="../../../.././common/site_scripts.js"></script>
+<!-- Served in 2.538 secs. -->
 	</body>
-<!-- Cached 20190111210458 -->
+<!-- Cached 20241004054648 -->
 </html>

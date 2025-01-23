@@ -4,20 +4,20 @@
 <title>std::multiset&lt;Key,Compare,Allocator&gt;::multiset - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../../common/favicon.ico">
-<link rel="stylesheet" href="../../../common/ext.css">
+<link rel="shortcut icon" href="../../.././common/favicon.ico">
+<link rel="stylesheet" href="../../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../../common/site_modules.css">
+<link rel="stylesheet" href="../../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../../common/startup_scripts.js"></script>
+<script src="../../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/container/multiset/multiset","wgTitle":"cpp/container/multiset/multiset","wgCurRevisionId":50614,"wgArticleId":1026,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo no example"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/container/multiset/multiset","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/container/multiset/multiset","wgTitle":"cpp/container/multiset/multiset","wgCurRevisionId":135716,"wgArticleId":1026,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/container/multiset/multiset","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -74,6 +74,30 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 .cpp.source-cpp span.xtra { display:block; }
 
 /*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-text {line-height: normal;}
+.source-text li, .source-text pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for text
+ * CSS class: source-text, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.text.source-text .de1, .text.source-text .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.text.source-text  {font-family:monospace;}
+.text.source-text .imp {font-weight: bold; color: red;}
+.text.source-text li, .text.source-text .li1 {font-weight: normal; vertical-align:top;}
+.text.source-text .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.text.source-text .li2 {font-weight: bold; vertical-align:top;}
+.text.source-text .ln-xtra, .text.source-text li.ln-xtra, .text.source-text div.ln-xtra {background-color: #ffc;}
+.text.source-text span.xtra { display:block; }
+
+/*]]>*/
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_container_multiset_multiset skin-cppreference2 action-view cpp-page-template cpp-navbar">
         <!-- header -->
@@ -84,7 +108,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::multiset&lt;Key,Compare,Allocator&gt;::</span>multiset</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::multiset&lt;Key,Compare,Allocator&gt;::</span>multiset</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -99,208 +131,319 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>
 </p>
 </div>
-<div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../container.html" title="cpp/container"> Containers library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../container.html" title="cpp/container">Containers library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Sequence_containers" title="cpp/container">Sequence</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../array.html" title="cpp/container/array"><span class="t-lines"><span>array</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../vector.html" title="cpp/container/vector"><span class="t-lines"><span>vector</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../vector.html" title="cpp/container/vector"><span class="t-lines"><span>vector<span class="t-dsc-small">&lt;bool&gt;</span></span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../inplace_vector.html" title="cpp/container/inplace vector"><span class="t-lines"><span>inplace_vector</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../deque.html" title="cpp/container/deque"><span class="t-lines"><span>deque</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../forward_list.html" title="cpp/container/forward list"><span class="t-lines"><span>forward_list</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../list.html" title="cpp/container/list"><span class="t-lines"><span>list</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Associative_containers" title="cpp/container">Associative</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../set.html" title="cpp/container/set"><span class="t-lines"><span>set</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../multiset.html" title="cpp/container/multiset"><span class="t-lines"><span>multiset</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../map.html" title="cpp/container/map"><span class="t-lines"><span>map</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../multimap.html" title="cpp/container/multimap"><span class="t-lines"><span>multimap</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Unordered_associative_containers_.28since_C.2B.2B11.29" title="cpp/container">Unordered associative</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_set.html" title="cpp/container/unordered set"><span class="t-lines"><span>unordered_set</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_multiset.html" title="cpp/container/unordered multiset"><span class="t-lines"><span>unordered_multiset</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_map.html" title="cpp/container/unordered map"><span class="t-lines"><span>unordered_map</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_multimap.html" title="cpp/container/unordered multimap"><span class="t-lines"><span>unordered_multimap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Container_adaptors" title="cpp/container">Adaptors</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../stack.html" title="cpp/container/stack"><span class="t-lines"><span>stack</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../queue.html" title="cpp/container/queue"><span class="t-lines"><span>queue</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../priority_queue.html" title="cpp/container/priority queue"><span class="t-lines"><span>priority_queue</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_set.html" title="cpp/container/flat set"><span class="t-lines"><span>flat_set</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_multiset.html" title="cpp/container/flat multiset"><span class="t-lines"><span>flat_multiset</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_map.html" title="cpp/container/flat map"><span class="t-lines"><span>flat_map</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_multimap.html" title="cpp/container/flat multimap"><span class="t-lines"><span>flat_multimap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Views" title="cpp/container">Views</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../span.html" title="cpp/container/span"><span class="t-lines"><span>span</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../mdspan.html" title="cpp/container/mdspan"><span class="t-lines"><span>mdspan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Tables</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../../container.html#Iterator_invalidation" title="cpp/container">Iterator invalidation</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../../container.html#Member_function_table" title="cpp/container">Member function table</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../../container.html#Non-member_function_table" title="cpp/container">Non-member function table</a></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../multiset.html" title="cpp/container/multiset"><tt>std::multiset</tt></a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5"> Member functions</td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../multiset.html#Member_functions" title="cpp/container/multiset">Member functions</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>multiset::multiset</span></span></strong></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="%7Emultiset.html" title="cpp/container/multiset/~multiset"><span class="t-lines"><span>multiset::~multiset</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="~multiset.html" title="cpp/container/multiset/~multiset"><span class="t-lines"><span>multiset::~multiset</span></span></a></div><div><span class="t-lines"><span><code>       </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator%3D.html" title="cpp/container/multiset/operator="><span class="t-lines"><span>multiset::operator=</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="get_allocator.html" title="cpp/container/multiset/get allocator"><span class="t-lines"><span>multiset::get_allocator</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Iterators</td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../multiset.html#Iterators" title="cpp/container/multiset">Iterators</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="begin.html" title="cpp/container/multiset/begin"><span class="t-lines"><span>multiset::begin</span><span>multiset::cbegin</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="end.html" title="cpp/container/multiset/end"><span class="t-lines"><span>multiset::end</span><span>multiset::cend</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rbegin.html" title="cpp/container/multiset/rbegin"><span class="t-lines"><span>multiset::rbegin</span><span>multiset::crbegin</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rbegin.html" title="cpp/container/multiset/rbegin"><span class="t-lines"><span>multiset::rbegin</span><span>multiset::crbegin</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span><code>    </code></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rend.html" title="cpp/container/multiset/rend"><span class="t-lines"><span>multiset::rend</span><span>multiset::crend</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Capacity</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="empty.html" title="cpp/container/multiset/empty"><span class="t-lines"><span>multiset::empty</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../multiset.html#Capacity" title="cpp/container/multiset">Capacity</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="size.html" title="cpp/container/multiset/size"><span class="t-lines"><span>multiset::size</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="max_size.html" title="cpp/container/multiset/max size"><span class="t-lines"><span>multiset::max_size</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Modifiers</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="empty.html" title="cpp/container/multiset/empty"><span class="t-lines"><span>multiset::empty</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../multiset.html#Observers" title="cpp/container/multiset">Observers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="key_comp.html" title="cpp/container/multiset/key comp"><span class="t-lines"><span>multiset::key_comp</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="value_comp.html" title="cpp/container/multiset/value comp"><span class="t-lines"><span>multiset::value_comp</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../multiset.html#Modifiers" title="cpp/container/multiset">Modifiers</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="clear.html" title="cpp/container/multiset/clear"><span class="t-lines"><span>multiset::clear</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="insert.html" title="cpp/container/multiset/insert"><span class="t-lines"><span>multiset::insert</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="emplace.html" title="cpp/container/multiset/emplace"><span class="t-lines"><span>multiset::emplace</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="emplace_hint.html" title="cpp/container/multiset/emplace hint"><span class="t-lines"><span>multiset::emplace_hint</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="erase.html" title="cpp/container/multiset/erase"><span class="t-lines"><span>multiset::erase</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap.html" title="cpp/container/multiset/swap"><span class="t-lines"><span>multiset::swap</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="extract.html" title="cpp/container/multiset/extract"><span class="t-lines"><span>multiset::extract</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="merge.html" title="cpp/container/multiset/merge"><span class="t-lines"><span>multiset::merge</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Lookup</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="insert.html" title="cpp/container/multiset/insert"><span class="t-lines"><span>multiset::insert</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="insert_range.html" title="cpp/container/multiset/insert range"><span class="t-lines"><span>multiset::insert_range</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="emplace.html" title="cpp/container/multiset/emplace"><span class="t-lines"><span>multiset::emplace</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="emplace_hint.html" title="cpp/container/multiset/emplace hint"><span class="t-lines"><span>multiset::emplace_hint</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../multiset.html#Lookup" title="cpp/container/multiset">Lookup</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="count.html" title="cpp/container/multiset/count"><span class="t-lines"><span>multiset::count</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="find.html" title="cpp/container/multiset/find"><span class="t-lines"><span>multiset::find</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="contains.html" title="cpp/container/multiset/contains"><span class="t-lines"><span>multiset::contains</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="equal_range.html" title="cpp/container/multiset/equal range"><span class="t-lines"><span>multiset::equal_range</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="lower_bound.html" title="cpp/container/multiset/lower bound"><span class="t-lines"><span>multiset::lower_bound</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="upper_bound.html" title="cpp/container/multiset/upper bound"><span class="t-lines"><span>multiset::upper_bound</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Observers</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="key_comp.html" title="cpp/container/multiset/key comp"><span class="t-lines"><span>multiset::key_comp</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="value_comp.html" title="cpp/container/multiset/value comp"><span class="t-lines"><span>multiset::value_comp</span></span></a></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> <a href="deduction_guides.html" title="cpp/container/multiset/deduction guides">Deduction guides</a><span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../multiset.html#Non-member_functions" title="cpp/container/multiset">Non-member functions</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap2.html" title="cpp/container/multiset/swap2"><span class="t-lines"><span>std::swap<span class="t-dsc-small">(std::multiset)</span></span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="erase_if.html" title="cpp/container/multiset/erase if"><span class="t-lines"><span>erase_if<span class="t-dsc-small">(std::multiset)</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span><code>  </code></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_cmp.html" title="cpp/container/multiset/operator cmp"><span class="t-lines"><span>operator==</span><span>operator&lt;=&gt;</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_cmp.html" title="cpp/container/multiset/operator cmp"><span class="t-lines"><span>operator!=</span><span>operator&lt;</span><span>operator&gt;</span><span>operator&lt;=</span><span>operator&gt;=</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="deduction_guides.html" title="cpp/container/multiset/deduction guides">Deduction guides</a><span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <table class="t-dcl-begin"><tbody>
+</tbody>
+<tbody class="t-dcl-rev">
+</tbody>
+<tbody class="t-dcl-rev t-dcl-rev-num"><tr class="t-dcl-rev-aux">
+<td></td>
+<td rowspan="142">(1)</td>
+<td></td>
+</tr>
+<tr class="t-dcl t-until-cxx11">
+<td><div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad"> </td>
+<td><span class="t-mark-rev t-until-cxx11">(until C++11)</span></td>
+</tr>
+<tr class="t-dcl t-since-cxx11">
+<td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span><span class="br0">)</span><br>
+    <span class="sy4">:</span> multiset<span class="br0">(</span>Compare<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
+</tr>
+</tbody><tbody>
 <tr class="t-dcl">
-<td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span><br>
-<p><span class="kw1">explicit</span> multiset<span class="br0">(</span> <span class="kw4">const</span> Compare<span class="sy3">&amp;</span> comp, <br>
-</p>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">explicit</span> multiset<span class="br0">(</span> <span class="kw4">const</span> Compare<span class="sy3">&amp;</span> comp,<br>
                    <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (1) </td>
+<td> (2) </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl t-since-cxx11">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">explicit</span> multiset<span class="br0">(</span> <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (1) </td>
+<td> (3) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
+</tbody><tbody>
 </tbody>
-<tbody class="t-dcl-rev t-dcl-rev-num"><tr class="t-dcl-rev-aux">
-<td></td>
-<td rowspan="142">(2)</td>
-<td></td>
-</tr>
+<tbody class="t-dcl-rev">
 <tr class="t-dcl t-since-cxx98">
-<td class="t-dcl-nopad"> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt <span class="sy1">&gt;</span><br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt <span class="sy1">&gt;</span><br>
 <p>multiset<span class="br0">(</span> InputIt first, InputIt last,<br>
           <span class="kw4">const</span> Compare<span class="sy3">&amp;</span> comp <span class="sy1">=</span> Compare<span class="br0">(</span><span class="br0">)</span>,<br>
 </p>
           <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td class="t-dcl-nopad">  </td>
+<td> (4) </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl t-since-cxx14">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt <span class="sy1">&gt;</span><br>
 <p>multiset<span class="br0">(</span> InputIt first, InputIt last,<br>
+          <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><br>
 </p>
-          <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td class="t-dcl-nopad">  </td>
+    <span class="sy4">:</span> multiset<span class="br0">(</span>first, last, Compare<span class="br0">(</span><span class="br0">)</span>, alloc<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span></span></div></td>
+<td> (5) </td>
 <td> <span class="t-mark-rev t-since-cxx14">(since C++14)</span> </td>
 </tr>
 </tbody><tbody>
+</tbody>
+<tbody class="t-dcl-rev">
 <tr class="t-dcl t-since-cxx98">
 <td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span> <span class="kw4">const</span> multiset<span class="sy3">&amp;</span> other <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (3) </td>
+<td> (6) </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl t-since-cxx11">
 <td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span> <span class="kw4">const</span> multiset<span class="sy3">&amp;</span> other, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (3) </td>
+<td> (7) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
+</tbody><tbody>
+</tbody>
+<tbody class="t-dcl-rev">
 <tr class="t-dcl t-since-cxx11">
 <td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span> multiset<span class="sy3">&amp;&amp;</span> other <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (4) </td>
+<td> (8) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx11">
 <td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span> multiset<span class="sy3">&amp;&amp;</span> other, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (4) </td>
+<td> (9) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
+</tbody><tbody>
 </tbody>
-<tbody class="t-dcl-rev t-dcl-rev-num"><tr class="t-dcl-rev-aux">
-<td></td>
-<td rowspan="142">(5)</td>
-<td></td>
-</tr>
+<tbody class="t-dcl-rev">
 <tr class="t-dcl t-since-cxx11">
-<td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span> <a href="../../utility/initializer_list.html"><span class="kw955">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> init,<br>
+<td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span> <a href="../../utility/initializer_list.html"><span class="kw964">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> init,<br>
 <p>          <span class="kw4">const</span> Compare<span class="sy3">&amp;</span> comp <span class="sy1">=</span> Compare<span class="br0">(</span><span class="br0">)</span>,<br>
 </p>
           <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td class="t-dcl-nopad">  </td>
+<td> (10) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx14">
-<td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span> <a href="../../utility/initializer_list.html"><span class="kw955">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> init,<br>
-          <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td class="t-dcl-nopad">  </td>
+<td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span> <a href="../../utility/initializer_list.html"><span class="kw964">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> init,<br>
+<p>          <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><br>
+</p>
+    <span class="sy4">:</span> multiset<span class="br0">(</span>init, Compare<span class="br0">(</span><span class="br0">)</span>, alloc<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span></span></div></td>
+<td> (11) </td>
 <td> <span class="t-mark-rev t-since-cxx14">(since C++14)</span> </td>
 </tr>
 </tbody><tbody>
+<tr class="t-dcl t-since-cxx23">
+<td><div><span id="Version_12"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../../ranges/to.html"><span class="kw100">container-compatible-range</span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> R <span class="sy1">&gt;</span><br>
+<p>multiset<span class="br0">(</span> <a href="../../ranges/from_range.html"><span class="kw3603">std::<span class="me2">from_range_t</span></span></a>, R<span class="sy3">&amp;&amp;</span> rg,<br>
+          <span class="kw4">const</span> Compare<span class="sy3">&amp;</span> comp <span class="sy1">=</span> Compare<span class="br0">(</span><span class="br0">)</span>,<br>
+</p>
+          <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (12)</td>
+<td><span class="t-mark-rev t-since-cxx23">(since C++23)</span></td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../../ranges/to.html"><span class="kw100">container-compatible-range</span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> R <span class="sy1">&gt;</span><br>
+<p>multiset<span class="br0">(</span> <a href="../../ranges/from_range.html"><span class="kw3603">std::<span class="me2">from_range_t</span></span></a>, R<span class="sy3">&amp;&amp;</span> rg,<br>
+          <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><br>
+</p>
+    <span class="sy4">:</span> multiset<span class="br0">(</span><a href="../../ranges/from_range.html"><span class="kw3602">std::<span class="me2">from_range</span></span></a>, <a href="../../utility/forward.html"><span class="kw1125">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>R<span class="sy1">&gt;</span><span class="br0">(</span>rg<span class="br0">)</span>, Compare<span class="br0">(</span><span class="br0">)</span>, alloc<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span></span></div></td>
+<td> (13) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Constructs new container from a variety of data sources and optionally using user supplied allocator <code>alloc</code> or comparison function object <code>comp</code>.
+<p>Constructs new container from a variety of data sources and optionally using user supplied allocator <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc</span></span> or comparison function object <span class="t-c"><span class="mw-geshi cpp source-cpp">comp</span></span>.
 </p>
-<div class="t-li1"><span class="t-li">1)</span> Constructs an empty container.</div>
-<div class="t-li1"><span class="t-li">2)</span> Constructs the container with the contents of the range <code>[first, last)</code>. </div>
-<div class="t-li1"><span class="t-li">3)</span> Copy constructor. Constructs the container with the copy of the contents of <code>other</code>. If <code>alloc</code> is not provided, allocator is obtained by calling <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../memory/allocator_traits.html"><span class="kw696">std::<span class="me2">allocator_traits</span></span></a><span class="sy1">&lt;</span>allocator_type<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">select_on_container_copy_construction</span><span class="br0">(</span>other.<span class="me1">get_allocator</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span></span></span>.</div>
-<div class="t-li1"><span class="t-li">4)</span> Move constructor. Constructs the container with the contents of <code>other</code> using move semantics. If <code>alloc</code> is not provided, allocator is obtained by move-construction from the allocator belonging to <code>other</code>.</div>
-<div class="t-li1"><span class="t-li">5)</span> Constructs the container with the contents of the initializer list <code>init</code>. </div>
+<div class="t-li1"><span class="t-li">1-3)</span> Constructs an empty container.</div>
+<div class="t-li1"><span class="t-li">4,5)</span> Constructs the container with the contents of the range <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span><code>)</code>. </div>
+<div class="t-li1"><span class="t-li"></span> If <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span><code>)</code> is not a <a href="../../iterator.html#Ranges" title="cpp/iterator">valid range</a>, the behavior is undefined.</div>
+<div class="t-li1"><span class="t-li">6,7)</span> <a href="../../language/copy_constructor.html" title="cpp/language/copy constructor">Copy constructor</a>. Constructs the container with the copy of the contents of <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span>.
+<table class="t-rev-begin">
+<tr class="t-rev t-since-cxx11"><td>
+<p>If <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc</span></span> is not provided, allocator is obtained by calling <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../memory/allocator_traits.html"><span class="kw705">std::<span class="me2">allocator_traits</span></span></a><span class="sy1">&lt;</span>allocator_type<span class="sy1">&gt;</span><span class="sy4">::</span></span><br><span class="mw-geshi cpp source-cpp">    select_on_container_copy_construction<span class="br0">(</span>other.<span class="me1">get_allocator</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
+<tr class="t-rev t-since-cxx23"><td>
+<p>During <a href="../../language/ctad.html" title="cpp/language/class template argument deduction">class template argument deduction</a>, only the first argument contributes to the deduction of the container's <code>Allocator</code> template parameter.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx23">(since C++23)</span></td></tr>
+</table></div>
+<div class="t-li1"><span class="t-li">8,9)</span> <a href="../../language/move_constructor.html" title="cpp/language/move constructor">Move constructor</a>. Constructs the container with the contents of <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span> using move semantics. If <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc</span></span> is not provided, allocator is obtained by move-construction from the allocator belonging to <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span>.
+<table class="t-rev-begin">
+<tr class="t-rev t-since-cxx23"><td>
+<p>During <a href="../../language/ctad.html" title="cpp/language/class template argument deduction">class template argument deduction</a>, only the first argument contributes to the deduction of the container's <code>Allocator</code> template parameter.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx23">(since C++23)</span></td></tr>
+</table></div>
+<div class="t-li1"><span class="t-li">10,11)</span> <a href="../../language/list_initialization.html" title="cpp/language/list initialization">Initializer-list constructor</a>. Constructs the container with the contents of the initializer list <span class="t-c"><span class="mw-geshi cpp source-cpp">init</span></span>.</div>
+<div class="t-li1"><span class="t-li">12,13)</span> Constructs the container with the contents of <span class="t-c"><span class="mw-geshi cpp source-cpp">rg</span></span>. </div>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  alloc
+<td> alloc
 </td>
 <td> -
 </td>
-<td>  allocator to use for all memory allocations of this container
+<td> allocator to use for all memory allocations of this container
 </td></tr>
 <tr class="t-par">
-<td>  comp
+<td> comp
 </td>
 <td> -
 </td>
-<td>  comparison function object to use for all comparisons of keys
+<td> comparison function object to use for all comparisons of keys
 </td></tr>
 <tr class="t-par">
-<td>  first, last
+<td> first, last
 </td>
 <td> -
 </td>
-<td>  the range to copy the elements from
+<td> the range to copy the elements from
 </td></tr>
 <tr class="t-par">
-<td>  other
+<td> other
 </td>
 <td> -
 </td>
-<td>  another container to be used as source to initialize the elements of the container with
+<td> another container to be used as source to initialize the elements of the container with
 </td></tr>
 <tr class="t-par">
-<td>  init
+<td> init
 </td>
 <td> -
 </td>
-<td>  initializer list to initialize the elements of the container with
+<td> initializer list to initialize the elements of the container with
+</td></tr>
+<tr class="t-par">
+<td> rg
+</td>
+<td> -
+</td>
+<td> a <a href="../../ranges/to.html#container_compatible_range" title="cpp/ranges/to">container compatible range</a>, that is, an <a href="../../ranges/input_range.html" title="cpp/ranges/input range"><code>input_range</code></a> whose elements are convertible to <a href="../multiset.html#Member_types" title="cpp/container/multiset"><code>value_type</code></a>
 </td></tr>
 <tr class="t-par-hitem">
 <td colspan="3"> Type requirements
@@ -315,40 +458,122 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="3"> -<div class="spacer"></div><code>Allocator</code> must meet the requirements of <a href="../../named_req/Allocator.html" title="cpp/named req/Allocator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Allocator</span></a>.
 </td></tr></table>
 <h3><span class="mw-headline" id="Complexity">Complexity</span></h3>
-<div class="t-li1"><span class="t-li">1)</span> Constant</div>
-<div class="t-li1"><span class="t-li">2)</span> <span class="texhtml" style="white-space: nowrap;">N log(N)</span> where <span class="t-c"><span class="mw-geshi cpp source-cpp">N <span class="sy1">=</span> <a href="../../iterator/distance.html"><span class="kw669">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first, last<span class="br0">)</span></span></span> in general, linear in <code>N</code> if the range is already sorted by <code>value_comp()</code>.</div>
-<div class="t-li1"><span class="t-li">3)</span> Linear in size of <code>other</code></div>
-<div class="t-li1"><span class="t-li">4)</span> Constant. If <code>alloc</code> is given and <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc <span class="sy3">!</span><span class="sy1">=</span> other.<span class="me1">get_allocator</span><span class="br0">(</span><span class="br0">)</span></span></span>, then linear.</div>
-<div class="t-li1"><span class="t-li">5)</span> <span class="texhtml" style="white-space: nowrap;">N log(N)</span> where <span class="t-c"><span class="mw-geshi cpp source-cpp">N <span class="sy1">=</span> init.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span></span></span> in general, linear in <code>N</code> if <code>init</code> is already sorted by <code>value_comp()</code>.</div>
+<div class="t-li1"><span class="t-li">1-3)</span> Constant.</div>
+<div class="t-li1"><span class="t-li">4,5)</span> <span class="mjax" style="display:none">\(\scriptsize N \cdot log(N)\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N·log(N)</span> where <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../iterator/distance.html"><span class="kw678">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first, last<span class="br0">)</span></span></span> in general, linear in <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> if <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span><code>)</code> is already sorted by <span class="t-c"><span class="mw-geshi cpp source-cpp">value_comp<span class="br0">(</span><span class="br0">)</span></span></span>.</div>
+<div class="t-li1"><span class="t-li">6,7)</span> Linear in size of <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span>.</div>
+<div class="t-li1"><span class="t-li">8,9)</span> Constant. If <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc</span></span> is given and <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc <span class="sy3">!</span><span class="sy1">=</span> other.<span class="me1">get_allocator</span><span class="br0">(</span><span class="br0">)</span></span></span>, then linear.</div>
+<div class="t-li1"><span class="t-li">10,11)</span> <span class="mjax" style="display:none">\(\scriptsize N \cdot log(N)\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N·log(N)</span> where <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> is <span class="t-c"><span class="mw-geshi cpp source-cpp">init.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span></span></span> in general, linear in <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">init</span></span> is already sorted by <span class="t-c"><span class="mw-geshi cpp source-cpp">value_comp<span class="br0">(</span><span class="br0">)</span></span></span>.</div>
+<div class="t-li1"><span class="t-li">12,13)</span> <span class="mjax" style="display:none">\(\scriptsize N \cdot log(N)\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N·log(N)</span> where <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../iterator/ranges/distance.html"><span class="kw3160">ranges::<span class="me2">distance</span></span></a><span class="br0">(</span>rg<span class="br0">)</span></span></span> in general, linear in <span class="mjax" style="display:none">\(\scriptsize N\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">rg</span></span> is already sorted by <span class="t-c"><span class="mw-geshi cpp source-cpp">value_comp<span class="br0">(</span><span class="br0">)</span></span></span>.</div>
 <h3><span class="mw-headline" id="Exceptions">Exceptions</span></h3>
 <p>Calls to <code>Allocator::allocate</code> may throw.
 </p>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p>After container move construction (overload <span class="t-v">(4)</span>), references, pointers, and iterators (other than the end iterator) to <code>other</code> remain valid, but refer to elements that are now in <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. The current standard makes this guarantee via the blanket statement in §23.2.1[container.requirements.general]/12, and a more direct guarantee is under consideration via <a rel="nofollow" class="external text" href="http://www.open-std.org/JTC1/SC22/WG21/docs/lwg-active.html#2321">LWG 2321</a>.
+<p>After container move construction (overload <span class="t-v">(8,9)</span>), references, pointers, and iterators (other than the end iterator) to <code>other</code> remain valid, but refer to elements that are now in <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. The current standard makes this guarantee via the blanket statement in <a rel="nofollow" class="external text" href="https://eel.is/c++draft/container.reqmts#67">[container.reqmts]/67</a>, and a more direct guarantee is under consideration via <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2321">LWG issue 2321</a>.
+</p><p>Although not formally required until C++23, some implementations has already put the template parameter <code>Allocator</code> into <a href="../../language/template_argument_deduction.html#Non-deduced_contexts" title="cpp/language/template argument deduction">non-deduced contexts</a> in earlier modes.
 </p>
+<table class="wikitable ftm-begin ftm-has-value">
+
+<tr>
+<th><a href="../../utility/feature_test.html" title="cpp/utility/feature test">Feature-test</a> macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Feature
+</th></tr>
+<tr>
+<td><a href="../../feature_test.html#cpp_lib_containers_ranges" title="cpp/feature test"><code>__cpp_lib_containers_ranges</code></a></td>
+<td><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></td>
+<td><span class="t-mark">(C++23)</span></td>
+<td><a href="../../ranges/to.html#container_compatible_range" title="cpp/ranges/to">Ranges-aware</a> construction and insertion; overloads <span class="t-v">(<a href="multiset.html#Version_12">12,13</a>)</span>
+</td></tr></table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
-<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: no example </td></tr></table>
+<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;set&gt;</span>
+<span class="co2">#include &lt;string_view&gt;</span>
+ 
+<span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
+<span class="kw4">void</span> println<span class="br0">(</span><span class="kw4">const</span> <a href="../../string/basic_string_view.html"><span class="kw1256">std::<span class="me2">string_view</span></span></a> name, <span class="kw4">const</span> <a href="../multiset.html"><span class="kw1287">std::<span class="me2">multiset</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy3">&amp;</span> ms<span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> name <span class="sy1">&lt;&lt;</span> <span class="st0">": "</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">const</span> <span class="kw4">auto</span><span class="sy3">&amp;</span> element <span class="sy4">:</span> ms<span class="br0">)</span>
+        <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> element <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+<span class="br0">}</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="co1">// (1) Default constructor</span>
+    <a href="../multiset.html"><span class="kw1287">std::<span class="me2">multiset</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> a<span class="sy4">;</span>
+    a.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">4</span><span class="br0">)</span><span class="sy4">;</span>
+    a.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">3</span><span class="br0">)</span><span class="sy4">;</span>
+    a.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="sy4">;</span>
+    a.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span><span class="st0">"a"</span>, a<span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="co1">// (4) Range constructor</span>
+    <a href="../multiset.html"><span class="kw1287">std::<span class="me2">multiset</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> b<span class="br0">(</span>a.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, a.<span class="me1">find</span><span class="br0">(</span><span class="nu0">3</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span><span class="st0">"b"</span>, b<span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="co1">// (6) Copy constructor</span>
+    <a href="../multiset.html"><span class="kw1287">std::<span class="me2">multiset</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> c<span class="br0">(</span>a<span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span><span class="st0">"c"</span>, c<span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="co1">// (8) Move constructor</span>
+    <a href="../multiset.html"><span class="kw1287">std::<span class="me2">multiset</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> d<span class="br0">(</span>std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>a<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span><span class="st0">"d"</span>, d<span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="co1">// (10) Initializer list constructor</span>
+    <a href="../multiset.html"><span class="kw1287">std::<span class="me2">multiset</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> e<span class="br0">{</span><span class="nu0">3</span>, <span class="nu0">2</span>, <span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">4</span>, <span class="nu0">7</span>, <span class="nu0">3</span><span class="br0">}</span><span class="sy4">;</span>
+    println<span class="br0">(</span><span class="st0">"e"</span>, e<span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="co1">// (12) Range constructor</span>
+    <span class="kw4">const</span> <span class="kw4">auto</span> w <span class="sy1">=</span> <span class="br0">{</span><span class="st0">"α"</span>, <span class="st0">"β"</span>, <span class="st0">"γ"</span>, <span class="st0">"δ"</span>, <span class="st0">"δ"</span>, <span class="st0">"γ"</span>, <span class="st0">"β"</span>, <span class="st0">"α"</span><span class="br0">}</span><span class="sy4">;</span>
+<span class="co2">#if __cpp_lib_containers_ranges</span>
+    <a href="../multiset.html"><span class="kw1287">std::<span class="me2">multiset</span></span></a><span class="sy1">&lt;</span><a href="../../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span> f<span class="br0">(</span><a href="../../ranges/from_range.html"><span class="kw3602">std::<span class="me2">from_range</span></span></a>, w<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// overload (12)</span>
+<span class="co2">#else</span>
+    <a href="../multiset.html"><span class="kw1287">std::<span class="me2">multiset</span></span></a><span class="sy1">&lt;</span><a href="../../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span> f<span class="br0">(</span>w.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, w.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// fallback to (4)</span>
+<span class="co2">#endif</span>
+    println<span class="br0">(</span><span class="st0">"f"</span>, f<span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<p>Output:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">a: 1 2 3 4
+b: 1 2
+c: 1 2 3 4
+d: 1 2 3 4
+e: 1 2 2 3 3 4 7
+f: α α β β γ γ δ δ</pre></div></div> 
+</div>
 <h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
 <p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
 </p>
 <table class="dsctable" style="font-size:0.8em">
 <tr>
-<th> DR
+<th>DR
 </th>
-<th> Applied to
+<th>Applied to
 </th>
-<th> Behavior as published
+<th>Behavior as published
 </th>
-<th> Correct behavior
+<th>Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2193">LWG 2193</a>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2076">LWG 2076</a>
 </td>
-<td> C++11
+<td>C++11
 </td>
-<td> the default constructor is explicit
+<td>overload <span class="t-v">(4)</span> conditionally required <code>Key</code> to be <a href="../../named_req/CopyInsertable.html" title="cpp/named req/CopyInsertable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CopyInsertable</span></a> into <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>
 </td>
-<td> made non-explicit
+<td>not required
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2193">LWG 2193</a>
+</td>
+<td>C++11
+</td>
+<td>the default constructor was explicit
+</td>
+<td>made non-explicit
 </td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
@@ -356,24 +581,24 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="operator%3D.html" title="cpp/container/multiset/operator="> <span class="t-lines"><span>operator=</span></span></a></div></div>
 </td>
-<td>   assigns values to the container  <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  assigns values to the container <br> <span class="t-mark">(public member function)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 6098/1000000
-Preprocessor generated node count: 14345/1000000
-Post‐expand include size: 185977/2097152 bytes
-Template argument size: 24418/2097152 bytes
-Highest expansion depth: 24/40
+Preprocessor visited node count: 9531/1000000
+Preprocessor generated node count: 18369/1000000
+Post‐expand include size: 292835/4194304 bytes
+Template argument size: 43226/4194304 bytes
+Highest expansion depth: 23/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:1026-0!*!0!!en!*!* and timestamp 20190601181734 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:1026-0!*!0!!en!*!* and timestamp 20241109053232 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/multiset/multiset&amp;oldid=50614">https://en.cppreference.com/mwiki/index.php?title=cpp/container/multiset/multiset&amp;oldid=50614</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/multiset/multiset&amp;oldid=135716">https://en.cppreference.com/mwiki/index.php?title=cpp/container/multiset/multiset&amp;oldid=135716</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -386,21 +611,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/container/multiset/multiset">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 28 November 2021, at 06:38.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../../common/skin_scripts.js"></script>
+<script src="../../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 1.412 secs. -->
+<script src="../../.././common/site_scripts.js"></script>
+<!-- Served in 4.412 secs. -->
 	</body>
-<!-- Cached 20190601181734 -->
+<!-- Cached 20241109053232 -->
 </html>

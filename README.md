@@ -11,17 +11,6 @@ This project is a static version of the cppreference website, providing comprehe
 
 The search functionality is implemented using indices located in the `reference/common/index` folder. It allows users to search for terms and headers within the reference content.
 
-### How to Use
-
-1. **Open the Search Modal**: Click on the search input box at the top of the page to open the search modal.
-2. **Type to Search**: Start typing in the search input box within the modal. The search results will be displayed as you type.
-3. **View Results**: Click on any search result to navigate to the corresponding page.
-
-### Technical Details
-
-- **Indices**: The search functionality uses `searchIndex` and `headersIndex` to find relevant terms and headers.
-- **Debounce**: The search input is debounced to improve performance, reducing the number of search operations performed as the user types.
-
 ## File Structure
 
 - `index.html`: The main entry point for the static site.

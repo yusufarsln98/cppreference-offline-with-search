@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>std::execution::stopped_as_error - cppreference.com</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="shortcut icon" href="../.././common/favicon.ico">
+<link rel="stylesheet" href="../.././common/ext.css">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="../.././common/site_modules.css">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="../.././common/startup_scripts.js"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/execution/stopped_as_error","wgTitle":"cpp/execution/stopped as error","wgCurRevisionId":176766,"wgArticleId":22520,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo no example"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/execution/stopped_as_error","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-cpp {line-height: normal;}
+.source-cpp li, .source-cpp pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for cpp
+ * CSS class: source-cpp, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.cpp.source-cpp .de1, .cpp.source-cpp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.cpp.source-cpp  {font-family:monospace;}
+.cpp.source-cpp .imp {font-weight: bold; color: red;}
+.cpp.source-cpp li, .cpp.source-cpp .li1 {font-weight: normal; vertical-align:top;}
+.cpp.source-cpp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.cpp.source-cpp .li2 {font-weight: bold; vertical-align:top;}
+.cpp.source-cpp .kw1 {color: #0000dd;}
+.cpp.source-cpp .kw2 {color: #0000ff;}
+.cpp.source-cpp .kw3 {color: #0000dd;}
+.cpp.source-cpp .kw4 {color: #0000ff;}
+.cpp.source-cpp .co1 {color: #909090;}
+.cpp.source-cpp .co2 {color: #339900;}
+.cpp.source-cpp .coMULTI {color: #ff0000; font-style: italic;}
+.cpp.source-cpp .es0 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es1 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es2 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es3 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es4 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es5 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .br0 {color: #008000;}
+.cpp.source-cpp .sy0 {color: #008000;}
+.cpp.source-cpp .sy1 {color: #000080;}
+.cpp.source-cpp .sy2 {color: #000040;}
+.cpp.source-cpp .sy3 {color: #000040;}
+.cpp.source-cpp .sy4 {color: #008080;}
+.cpp.source-cpp .st0 {color: #008000;}
+.cpp.source-cpp .nu0 {color: #000080;}
+.cpp.source-cpp .nu6 {color: #000080;}
+.cpp.source-cpp .nu8 {color: #000080;}
+.cpp.source-cpp .nu12 {color: #000080;}
+.cpp.source-cpp .nu16 {color:#000080;}
+.cpp.source-cpp .nu17 {color:#000080;}
+.cpp.source-cpp .nu18 {color:#000080;}
+.cpp.source-cpp .nu19 {color:#000080;}
+.cpp.source-cpp .ln-xtra, .cpp.source-cpp li.ln-xtra, .cpp.source-cpp div.ln-xtra {background-color: #ffc;}
+.cpp.source-cpp span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_execution_stopped_as_error skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        <!-- /header -->
+        <!-- content -->
+<div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::execution::</span>stopped_as_error</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../experimental/execution.html" title="cpp/execution">execution</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../experimental/execution.html" title="cpp/execution">Execution Library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../experimental/execution.html#Execution_concepts" title="cpp/execution">Execution concepts</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="scheduler.html" title="cpp/execution/scheduler"><span class="t-lines"><span>scheduler</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/receiver&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/receiver (page does not exist)"><span class="t-lines"><span>receiver</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/receiver_of&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/receiver of (page does not exist)"><span class="t-lines"><span>receiver_of</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/operation_state&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/operation state (page does not exist)"><span class="t-lines"><span>operation_state</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/sender&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/sender (page does not exist)"><span class="t-lines"><span>sender</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/sender_in&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/sender in (page does not exist)"><span class="t-lines"><span>sender_in</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/sender_to&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/sender to (page does not exist)"><span class="t-lines"><span>sender_to</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../experimental/execution.html#Execution_components" title="cpp/execution">Execution components</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../experimental/execution.html#Execution_contexts" title="cpp/execution">Execution contexts</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/run_loop&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/run loop (page does not exist)"><span class="t-lines"><span>run_loop</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../experimental/execution.html#Execution_domains" title="cpp/execution">Execution domains</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/default_domain&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/default domain (page does not exist)"><span class="t-lines"><span>default_domain</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../experimental/execution.html#Forward_progress_guarantee" title="cpp/execution">Forward progress guarantee</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/forward_progress_guarantee&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/forward progress guarantee (page does not exist)"><span class="t-lines"><span>forward_progress_guarantee</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../experimental/execution.html#Environments" title="cpp/execution">Environments</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/empty_env&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/empty env (page does not exist)"><span class="t-lines"><span>empty_env</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/get_env&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/get env (page does not exist)"><span class="t-lines"><span>get_env</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/env_of_t&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/env of t (page does not exist)"><span class="t-lines"><span>env_of_t</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../experimental/execution.html#Queries" title="cpp/execution">Queries</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/stop_token_of_t&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/stop token of t (page does not exist)"><span class="t-lines"><span>std::stop_token_of_t</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/get_stop_token&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/get stop token (page does not exist)"><span class="t-lines"><span>std::get_stop_token</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/get_allocator&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/get allocator (page does not exist)"><span class="t-lines"><span>std::get_allocator</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/forwarding_query&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/forwarding query (page does not exist)"><span class="t-lines"><span>std::forwarding_query</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/get_scheduler&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/get scheduler (page does not exist)"><span class="t-lines"><span>get_scheduler</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/get_domain&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/get domain (page does not exist)"><span class="t-lines"><span>get_domain</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/get_forward_progress_guarantee&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/get forward progress guarantee (page does not exist)"><span class="t-lines"><span>get_forward_progress_guarantee</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/get_delegation_scheduler&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/get delegation scheduler (page does not exist)"><span class="t-lines"><span>get_delegation_scheduler</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/get_completion_scheduler&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/get completion scheduler (page does not exist)"><span class="t-lines"><span>get_completion_scheduler</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../experimental/execution.html#Completion_signatures" title="cpp/execution">Completion signatures</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/completion_signatures&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/completion signatures (page does not exist)"><span class="t-lines"><span>completion_signatures</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/completion_signatures_of_t&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/completion signatures of t (page does not exist)"><span class="t-lines"><span>completion_signatures_of_t</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/transform_completion_signatures&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/transform completion signatures (page does not exist)"><span class="t-lines"><span>transform_completion_signatures</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/transform_completion_signatures_of&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/transform completion signatures of (page does not exist)"><span class="t-lines"><span>transform_completion_signatures_of</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/value_types_of_t&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/value types of t (page does not exist)"><span class="t-lines"><span>value_types_of_t</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/error_types_of_t&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/error types of t (page does not exist)"><span class="t-lines"><span>error_types_of_t</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/tag_of_t&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/tag of t (page does not exist)"><span class="t-lines"><span>tag_of_t</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/sends_stopped&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/sends stopped (page does not exist)"><span class="t-lines"><span>sends_stopped</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../experimental/execution.html#Sender_adaptor_closures" title="cpp/execution">Sender adaptor closures</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/sender_adaptor_closure&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/sender adaptor closure (page does not exist)"><span class="t-lines"><span>sender_adaptor_closure</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../experimental/execution.html#Coroutine_utility" title="cpp/execution">Coroutine utility</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/as_awaitable&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/as awaitable (page does not exist)"><span class="t-lines"><span>as_awaitable</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/with_awaitable_senders&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/with awaitable senders (page does not exist)"><span class="t-lines"><span>with_awaitable_senders</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../experimental/execution.html#Core_operations" title="cpp/execution">Core operations</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../experimental/execution.html#Operation_state" title="cpp/execution">Operation state</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/connect&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/connect (page does not exist)"><span class="t-lines"><span>connect<br>connect_result_t</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/start&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/start (page does not exist)"><span class="t-lines"><span>start</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../experimental/execution.html#Completion" title="cpp/execution">Completion</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/set_value&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/set value (page does not exist)"><span class="t-lines"><span>set_value</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/set_error&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/set error (page does not exist)"><span class="t-lines"><span>set_error</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/set_stopped&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/set stopped (page does not exist)"><span class="t-lines"><span>set_stopped</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../experimental/execution.html#Transformation" title="cpp/execution">Transformation</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/transform_env&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/transform env (page does not exist)"><span class="t-lines"><span>transform_env</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/transform_sender&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/transform sender (page does not exist)"><span class="t-lines"><span>transform_sender</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/apply_sender&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/apply sender (page does not exist)"><span class="t-lines"><span>apply_sender</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../experimental/execution.html#Sender_algorithms" title="cpp/execution">Sender algorithms</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../experimental/execution.html#Sender_factories" title="cpp/execution">Sender factories</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="just.html" title="cpp/execution/just"><span class="t-lines"><span>just</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="just_error.html" title="cpp/execution/just error"><span class="t-lines"><span>just_error</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="just_stopped.html" title="cpp/execution/just stopped"><span class="t-lines"><span>just_stopped</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="read_env.html" title="cpp/execution/read env"><span class="t-lines"><span>read_env</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="schedule.html" title="cpp/execution/schedule"><span class="t-lines"><span>schedule<br>schedule_result_t</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../experimental/execution.html#Sender_adaptors" title="cpp/execution">Sender adaptors</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/starts_on&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/starts on (page does not exist)"><span class="t-lines"><span>starts_on</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/continues_on&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/continues on (page does not exist)"><span class="t-lines"><span>continues_on</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="on.html" title="cpp/execution/on"><span class="t-lines"><span>on</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="then.html" title="cpp/execution/then"><span class="t-lines"><span>then</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="upon_error.html" title="cpp/execution/upon error"><span class="t-lines"><span>upon_error</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="upon_stopped.html" title="cpp/execution/upon stopped"><span class="t-lines"><span>upon_stopped</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="let_value.html" title="cpp/execution/let value"><span class="t-lines"><span>let_value</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="let_error.html" title="cpp/execution/let error"><span class="t-lines"><span>let_error</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="let_stopped.html" title="cpp/execution/let stopped"><span class="t-lines"><span>let_stopped</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/schedule_from&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/schedule from (page does not exist)"><span class="t-lines"><span>schedule_from</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="when_all.html" title="cpp/execution/when all"><span class="t-lines"><span>when_all</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/when_all_with_variant&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/when all with variant (page does not exist)"><span class="t-lines"><span>when_all_with_variant</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="into_variant.html" title="cpp/execution/into variant"><span class="t-lines"><span>into_variant</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="stopped_as_optional.html" title="cpp/execution/stopped as optional"><span class="t-lines"><span>stopped_as_optional</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>stopped_as_error</span></span></strong></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/bulk&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/bulk (page does not exist)"><span class="t-lines"><span>bulk</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/split&amp;action=edit&amp;redlink=1" class="new" title="cpp/execution/split (page does not exist)"><span class="t-lines"><span>split</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../experimental/execution.html#Sender_consumers" title="cpp/execution">Sender consumers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../thread/this_thread/sync_wait.html" title="cpp/thread/this thread/sync wait"><span class="t-lines"><span>this_thread::sync_wait</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/thread/this_thread/sync_wait_with_variant&amp;action=edit&amp;redlink=1" class="new" title="cpp/thread/this thread/sync wait with variant (page does not exist)"><span class="t-lines"><span>this_thread::sync_wait_with_variant</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+
+</table></div></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
+<table class="t-dcl-begin"><tbody>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/execution.html" title="cpp/header/execution">&lt;execution&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dcl t-since-cxx26">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="../concepts/move_constructible.html"><span class="kw2966">std::<span class="me2">move_constructible</span></span></a> Error <span class="sy1">&gt;</span><br>
+execution<span class="sy4">::</span><span class="me2">sender</span> <span class="kw4">auto</span> stopped_as_error<span class="br0">(</span> execution<span class="sy4">::</span><span class="me2">sender</span> <span class="kw4">auto</span> snd, Error err <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td> <span class="t-mark-rev t-since-cxx26">(since C++26)</span> </td>
+</tr>
+<tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
+<table class="t-par-begin">
+
+
+<tr class="t-par">
+<td> snd
+</td>
+<td> -
+</td>
+<td> input sender of which the stopped channel is mapped into <span class="t-c"><span class="mw-geshi cpp source-cpp">err</span></span>
+</td></tr>
+<tr class="t-par">
+<td> err
+</td>
+<td> -
+</td>
+<td> error to which the stop channel is mapped into
+</td></tr></table>
+<h3><span class="mw-headline" id="Return_value">Return value</span></h3>
+<p>Returns a sender that maps the stopped channel to an error of <span class="t-c"><span class="mw-geshi cpp source-cpp">err</span></span>.
+</p>
+<h3><span class="mw-headline" id="Example">Example</span></h3>
+<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: no example </td></tr></table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 5776/1000000
+Preprocessor generated node count: 10737/1000000
+Post‐expand include size: 141910/4194304 bytes
+Template argument size: 21573/4194304 bytes
+Highest expansion depth: 19/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:22520-0!*!0!!*!*!* and timestamp 20241012135705 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/execution/stopped_as_error&amp;oldid=176766">https://en.cppreference.com/mwiki/index.php?title=cpp/execution/stopped_as_error&amp;oldid=176766</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/execution/stopped_as_error">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 4 October 2024, at 11:29.</li>
+                            </ul>
+                    </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="../.././common/skin_scripts.js"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
+}</script>
+<script src="../.././common/site_scripts.js"></script>
+<!-- Served in 0.743 secs. -->
+	</body>
+<!-- Cached 20241012135705 -->
+</html>

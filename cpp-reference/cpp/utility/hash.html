@@ -4,20 +4,20 @@
 <title>std::hash - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../common/favicon.ico">
-<link rel="stylesheet" href="../../common/ext.css">
+<link rel="shortcut icon" href="../.././common/favicon.ico">
+<link rel="stylesheet" href="../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../common/site_modules.css">
+<link rel="stylesheet" href="../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../common/startup_scripts.js"></script>
+<script src="../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/utility/hash","wgTitle":"cpp/utility/hash","wgCurRevisionId":108628,"wgArticleId":2990,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/utility/hash","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/utility/hash","wgTitle":"cpp/utility/hash","wgCurRevisionId":172270,"wgArticleId":2990,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/utility/hash","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -108,7 +108,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>hash</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>hash</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -119,98 +127,232 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../utility.html" title="cpp/utility">utility</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../utility.html" title="cpp/utility"> Utilities library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="../types.html" title="cpp/types"> Type support</a> (basic types, RTTI, type traits) </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../memory.html" title="cpp/memory"> Dynamic memory management</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Error handling</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="program.html" title="cpp/utility/program"> Program utilities</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="variadic.html" title="cpp/utility/variadic"> Variadic functions</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="feature_test.html" title="cpp/utility/feature test"> Library feature-test macros </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../chrono.html" title="cpp/chrono"> Date and time</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="functional.html" title="cpp/utility/functional"> Function objects</a> </td></tr>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../utility.html" title="cpp/utility">Utilities library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../types.html" title="cpp/types">Type support</a> (basic types, RTTI)</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="feature_test.html" title="cpp/utility/feature test">Library feature-test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../memory.html" title="cpp/memory">Dynamic memory management</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="program.html" title="cpp/utility/program">Program utilities</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../coroutine.html" title="cpp/coroutine">Coroutine support</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="variadic.html" title="cpp/utility/variadic">Variadic functions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../types/is_constant_evaluated.html" title="cpp/types/is constant evaluated"><span class="t-lines"><span>is_constant_evaluated</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../types/is_within_lifetime.html" title="cpp/types/is within lifetime"><span class="t-lines"><span>is_within_lifetime</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="initializer_list.html" title="cpp/utility/initializer list"><span class="t-lines"><span>initializer_list</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="source_location.html" title="cpp/utility/source location"><span class="t-lines"><span>source_location</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../utility.html#Three-way_comparison" title="cpp/utility">Three-way comparison</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/three_way_comparable.html" title="cpp/utility/compare/three way comparable"><span class="t-lines"><span>three_way_comparable</span><span>three_way_comparable_with</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/strong_ordering.html" title="cpp/utility/compare/strong ordering"><span class="t-lines"><span>strong_ordering</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/weak_ordering.html" title="cpp/utility/compare/weak ordering"><span class="t-lines"><span>weak_ordering</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/partial_ordering.html" title="cpp/utility/compare/partial ordering"><span class="t-lines"><span>partial_ordering</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/common_comparison_category.html" title="cpp/utility/compare/common comparison category"><span class="t-lines"><span>common_comparison_category</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/compare_three_way_result.html" title="cpp/utility/compare/compare three way result"><span class="t-lines"><span>compare_three_way_result</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/compare_three_way.html" title="cpp/utility/compare/compare three way"><span class="t-lines"><span>compare_three_way</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/strong_order.html" title="cpp/utility/compare/strong order"><span class="t-lines"><span>strong_order</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/weak_order.html" title="cpp/utility/compare/weak order"><span class="t-lines"><span>weak_order</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/partial_order.html" title="cpp/utility/compare/partial order"><span class="t-lines"><span>partial_order</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/compare_strong_order_fallback.html" title="cpp/utility/compare/compare strong order fallback"><span class="t-lines"><span>compare_strong_order_fallback</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/compare_weak_order_fallback.html" title="cpp/utility/compare/compare weak order fallback"><span class="t-lines"><span>compare_weak_order_fallback</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/compare_partial_order_fallback.html" title="cpp/utility/compare/compare partial order fallback"><span class="t-lines"><span>compare_partial_order_fallback</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span><code>  </code></span></span></div></div></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/named_comparison_functions.html" title="cpp/utility/compare/named comparison functions"><span class="t-lines"><span>is_eq</span><span>is_lt</span><span>is_lteq</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/named_comparison_functions.html" title="cpp/utility/compare/named comparison functions"><span class="t-lines"><span>is_neq</span><span>is_gt</span><span>is_gteq</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5">General utilities</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="../chrono.html" title="cpp/chrono">Date and time</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="functional.html" title="cpp/utility/functional">Function objects</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="format.html" title="cpp/utility/format">Formatting library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><code>  </code></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="bitset.html" title="cpp/utility/bitset"><span class="t-lines"><span>bitset</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>hash</span></span></strong></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="integer_sequence.html" title="cpp/utility/integer sequence"><span class="t-lines"><span>integer_sequence</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx14">(C++14)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Relational operators <span class="t-mark-rev t-deprecated-cxx20">(deprecated in C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rel_ops/operator_cmp.html" title="cpp/utility/rel ops/operator cmp"><span class="t-lines"><span>rel_ops::operator!=</span><span>rel_ops::operator&gt;</span><span>rel_ops::operator&lt;=</span><span>rel_ops::operator&gt;=</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Comparisons <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/strong_order.html" title="cpp/utility/compare/strong order"><span class="t-lines"><span>strong_order</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/weak_order.html" title="cpp/utility/compare/weak order"><span class="t-lines"><span>weak_order</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/partial_order.html" title="cpp/utility/compare/partial order"><span class="t-lines"><span>partial_order</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
+<tr class="t-nv"><td colspan="5"><br>
 </td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/strong_equal.html" title="cpp/utility/compare/strong equal"><span class="t-lines"><span>strong_equal</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/weak_equal.html" title="cpp/utility/compare/weak equal"><span class="t-lines"><span>weak_equal</span></span></a></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/strong_ordering.html" title="cpp/utility/compare/strong ordering"><span class="t-lines"><span>strong_ordering</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/weak_ordering.html" title="cpp/utility/compare/weak ordering"><span class="t-lines"><span>weak_ordering</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/partial_ordering.html" title="cpp/utility/compare/partial ordering"><span class="t-lines"><span>partial_ordering</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
-</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/strong_equality.html" title="cpp/utility/compare/strong equality"><span class="t-lines"><span>strong_equality</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/weak_equality.html" title="cpp/utility/compare/weak equality"><span class="t-lines"><span>weak_equality</span></span></a></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/named_comparison_functions.html" title="cpp/utility/compare/named comparison functions"><span class="t-lines"><span>is_eq</span><span>is_neq</span><span>is_lt</span><span>is_lteq</span><span>is_gt</span><span>is_gteq</span></span></a></div></div></td></tr>
 </table></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare/common_comparison_category.html" title="cpp/utility/compare/common comparison category"><span class="t-lines"><span>common_comparison_category</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Common vocabulary types </td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../utility.html#Relational_operators" title="cpp/utility">Relational operators</a> <span class="t-mark-rev t-deprecated-cxx20">(deprecated in C++20)</span></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rel_ops/operator_cmp.html" title="cpp/utility/rel ops/operator cmp"><span class="t-lines"><span>rel_ops::operator!=</span><span>rel_ops::operator&gt;</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rel_ops/operator_cmp.html" title="cpp/utility/rel ops/operator cmp"><span class="t-lines"><span>rel_ops::operator&lt;=</span><span>rel_ops::operator&gt;=</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../utility.html#Integer_comparison_functions" title="cpp/utility">Integer comparison functions</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="intcmp.html" title="cpp/utility/intcmp"><span class="t-lines"><span>cmp_equal</span><span>cmp_less</span><span>cmp_less_than</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="intcmp.html" title="cpp/utility/intcmp"><span class="t-lines"><span>cmp_not_equal</span><span>cmp_greater</span><span>cmp_greater_than</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="in_range.html" title="cpp/utility/in range"><span class="t-lines"><span>in_range</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../utility.html#Swap" title="cpp/utility">Swap</a> and <a href="../utility.html#Type_operations" title="cpp/utility">type operations</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap.html" title="cpp/algorithm/swap"><span class="t-lines"><span>swap</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ranges/swap.html" title="cpp/utility/ranges/swap"><span class="t-lines"><span>ranges::swap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="exchange.html" title="cpp/utility/exchange"><span class="t-lines"><span>exchange</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx14">(C++14)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="declval.html" title="cpp/utility/declval"><span class="t-lines"><span>declval</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="to_underlying.html" title="cpp/utility/to underlying"><span class="t-lines"><span>to_underlying</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="forward.html" title="cpp/utility/forward"><span class="t-lines"><span>forward</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="forward_like.html" title="cpp/utility/forward like"><span class="t-lines"><span>forward_like</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="move.html" title="cpp/utility/move"><span class="t-lines"><span>move</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="move_if_noexcept.html" title="cpp/utility/move if noexcept"><span class="t-lines"><span>move_if_noexcept</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="as_const.html" title="cpp/utility/as const"><span class="t-lines"><span>as_const</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Common vocabulary types</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="pair.html" title="cpp/utility/pair"><span class="t-lines"><span>pair</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="tuple.html" title="cpp/utility/tuple"><span class="t-lines"><span>tuple</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="apply.html" title="cpp/utility/apply"><span class="t-lines"><span>apply</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="make_from_tuple.html" title="cpp/utility/make from tuple"><span class="t-lines"><span>make_from_tuple</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="optional.html" title="cpp/utility/optional"><span class="t-lines"><span>optional</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="any.html" title="cpp/utility/any"><span class="t-lines"><span>any</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="variant.html" title="cpp/utility/variant"><span class="t-lines"><span>variant</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
-</td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="tuple_size.html" title="cpp/utility/tuple size"><span class="t-lines"><span>tuple_size</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="tuple_element.html" title="cpp/utility/tuple element"><span class="t-lines"><span>tuple_element</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="apply.html" title="cpp/utility/apply"><span class="t-lines"><span>apply</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="make_from_tuple.html" title="cpp/utility/make from tuple"><span class="t-lines"><span>make_from_tuple</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="expected.html" title="cpp/utility/expected"><span class="t-lines"><span>expected</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Swap, forward and move</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/swap.html" title="cpp/algorithm/swap"><span class="t-lines"><span>swap</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="exchange.html" title="cpp/utility/exchange"><span class="t-lines"><span>exchange</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx14">(C++14)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="forward.html" title="cpp/utility/forward"><span class="t-lines"><span>forward</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="move.html" title="cpp/utility/move"><span class="t-lines"><span>move</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="move_if_noexcept.html" title="cpp/utility/move if noexcept"><span class="t-lines"><span>move_if_noexcept</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Elementary string conversions</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../utility.html#Elementary_string_conversions" title="cpp/utility">Elementary string conversions</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="to_chars.html" title="cpp/utility/to chars"><span class="t-lines"><span>to_chars</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="from_chars.html" title="cpp/utility/from chars"><span class="t-lines"><span>from_chars</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="chars_format.html" title="cpp/utility/chars format"><span class="t-lines"><span>chars_format</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Type operations</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="declval.html" title="cpp/utility/declval"><span class="t-lines"><span>declval</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="as_const.html" title="cpp/utility/as const"><span class="t-lines"><span>as_const</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="launder.html" title="cpp/utility/launder"><span class="t-lines"><span>launder</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="to_chars_result.html" title="cpp/utility/to chars result"><span class="t-lines"><span>to_chars_result</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="from_chars_result.html" title="cpp/utility/from chars result"><span class="t-lines"><span>from_chars_result</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><strong class="selflink"><tt>std::hash</tt></strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="hash/hash.html" title="cpp/utility/hash/hash"><span class="t-lines"><span>hash::hash</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="hash/operator%28%29.html" title="cpp/utility/hash/operator()"><span class="t-lines"><span>hash::operator()</span></span></a></div></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/bitset.html" title="cpp/header/bitset">&lt;bitset&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/coroutine.html" title="cpp/header/coroutine">&lt;coroutine&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/chrono.html" title="cpp/header/chrono">&lt;chrono&gt;</a></code>
+ </div></td>
+<td></td>
+<td><div><span class="t-mark-rev t-since-cxx26">(since C++26)</span></div></td>
+</tr>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/filesystem.html" title="cpp/header/filesystem">&lt;filesystem&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dsc-header">
 <td> <div>Defined in header <code><a href="../header/functional.html" title="cpp/header/functional">&lt;functional&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/memory.html" title="cpp/header/memory">&lt;memory&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/optional.html" title="cpp/header/optional">&lt;optional&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/stacktrace.html" title="cpp/header/stacktrace">&lt;stacktrace&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/string.html" title="cpp/header/string">&lt;string&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/string_view.html" title="cpp/header/string view">&lt;string_view&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/system_error.html" title="cpp/header/system error">&lt;system_error&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/thread.html" title="cpp/header/thread">&lt;thread&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/typeindex.html" title="cpp/header/typeindex">&lt;typeindex&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/variant.html" title="cpp/header/variant">&lt;variant&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/vector.html" title="cpp/header/vector">&lt;vector&gt;</a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -223,54 +365,66 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
- <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx17"><td>
-<p>Each specialization of this template is either <i>enabled</i> ("untainted") or <i>disabled</i> ("poisoned"). For every type <code>Key</code> for which neither the library nor the user provides an enabled specialization <code>std::hash&lt;Key&gt;</code>, that specialization exists and is disabled.  Disabled specializations do not satisfy <a href="../named_req/Hash.html" title="cpp/named req/Hash"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Hash</span></a>, do not satisfy <a href="../named_req/FunctionObject.html" title="cpp/named req/FunctionObject"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">FunctionObject</span></a>, and <span class="t-lc"><a href="../types/is_default_constructible.html" title="cpp/types/is default constructible">std::is_default_constructible_v</a></span>, <span class="t-lc"><a href="../types/is_copy_constructible.html" title="cpp/types/is copy constructible">std::is_copy_constructible_v</a></span>, <span class="t-lc"><a href="../types/is_move_constructible.html" title="cpp/types/is move constructible">std::is_move_constructible_v</a></span>, <span class="t-lc"><a href="../types/is_copy_assignable.html" title="cpp/types/is copy assignable">std::is_copy_assignable_v</a></span>, <span class="t-lc"><a href="../types/is_move_assignable.html" title="cpp/types/is move assignable">std::is_move_assignable_v</a></span> are all <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>. In other words, they exist, but cannot be used.
+<p>The unordered associative containers <span class="t-lc"><a href="../container/unordered_set.html" title="cpp/container/unordered set">std::unordered_set</a></span>, <span class="t-lc"><a href="../container/unordered_multiset.html" title="cpp/container/unordered multiset">std::unordered_multiset</a></span>, <span class="t-lc"><a href="../container/unordered_map.html" title="cpp/container/unordered map">std::unordered_map</a></span>, <span class="t-lc"><a href="../container/unordered_multimap.html" title="cpp/container/unordered multimap">std::unordered_multimap</a></span> use specializations of the template <code>std::hash</code> as the default hash function.
+</p><p>Given a type <code>Key</code>, each specialization <code>std::hash&lt;Key&gt;</code> is either <i>enabled</i> or <i>disabled</i> ﻿:
 </p>
-</td>
-<td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
-</table>
-<p>The <span class="t-rev-inl t-since-cxx17"><span><i>enabled</i> specializations of the</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span> hash template defines a function object that implements a <a href="https://en.wikipedia.org/wiki/Hash_function" class="extiw" title="enwiki:Hash function">hash function</a>.  Instances of this function object satisfy <a href="../named_req/Hash.html" title="cpp/named req/Hash"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Hash</span></a>. In particular, they define an <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span></span></span> that:
-</p><p>1. Accepts a single parameter of type <code>Key</code>.
-</p><p>2. Returns a value of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../types/size_t.html"><span class="kw100">std::<span class="me2">size_t</span></span></a></span></span> that represents the hash value of the parameter.
-</p><p>3. Does not throw exceptions when called.
-</p><p>4. For two parameters <code>k1</code> and <code>k2</code> that are equal, <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span>Key<span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span><span class="br0">(</span>k1<span class="br0">)</span> <span class="sy1">==</span> std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span>Key<span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span><span class="br0">(</span>k2<span class="br0">)</span></span></span>.
-</p><p>5. For two different parameters <code>k1</code> and <code>k2</code> that are not equal, the probability that <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span>Key<span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span><span class="br0">(</span>k1<span class="br0">)</span> <span class="sy1">==</span> std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span>Key<span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span><span class="br0">(</span>k2<span class="br0">)</span></span></span> should be very small, approaching <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu16">1.0</span><span class="sy2">/</span><a href="../types/numeric_limits.html"><span class="kw344">std::<span class="me2">numeric_limits</span></span></a><span class="sy1">&lt;</span><a href="../types/size_t.html"><span class="kw100">std::<span class="me2">size_t</span></span></a><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">max</span><span class="br0">(</span><span class="br0">)</span></span></span>.
-</p><p>All explicit and partial specializations of <code>hash</code> provided by the standard library are <a href="../named_req/DefaultConstructible.html" title="cpp/named req/DefaultConstructible"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">DefaultConstructible</span></a>, <a href="../named_req/CopyAssignable.html" title="cpp/named req/CopyAssignable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CopyAssignable</span></a>, <a href="../named_req/Swappable.html" title="cpp/named req/Swappable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Swappable</span></a> and <a href="../named_req/Destructible.html" title="cpp/named req/Destructible"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Destructible</span></a>. User-provided specializations of <code>hash</code> also must meet those requirements.
-</p><p>The unordered associative containers <span class="t-lc"><a href="../container/unordered_set.html" title="cpp/container/unordered set">std::unordered_set</a></span>, <span class="t-lc"><a href="../container/unordered_multiset.html" title="cpp/container/unordered multiset">std::unordered_multiset</a></span>, <span class="t-lc"><a href="../container/unordered_map.html" title="cpp/container/unordered map">std::unordered_map</a></span>, <span class="t-lc"><a href="../container/unordered_multimap.html" title="cpp/container/unordered multimap">std::unordered_multimap</a></span> use specializations of the template <span class="t-lc"><strong class="selflink">std::hash</strong></span> as the default hash function.
+<ul><li> If <code>std::hash&lt;Key&gt;</code> is not provided by the program or the user, it is disabled.
+</li><li> Otherwise, <code>std::hash&lt;Key&gt;</code> is enabled if all following conditions are satisfied:
+</li></ul>
+<dl><dd><ul><li> All following requirements are satisfied:
+</li></ul>
+<dl><dd><ul><li> <a href="../named_req/Hash.html" title="cpp/named req/Hash"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Hash</span></a> (with <code>Key</code> as the function call argument type)
+</li><li> <a href="../named_req/DefaultConstructible.html" title="cpp/named req/DefaultConstructible"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">DefaultConstructible</span></a>
+</li><li> <a href="../named_req/CopyAssignable.html" title="cpp/named req/CopyAssignable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CopyAssignable</span></a>
+</li><li> <a href="../named_req/Swappable.html" title="cpp/named req/Swappable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Swappable</span></a>
+</li></ul>
+</dd></dl>
+<ul><li> Given the following values:
+</li></ul>
+<dl><dd><ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">h</span></span>, an object of type <code>std::hash&lt;Key&gt;</code>.
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">k1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">k2</span></span>, objects of type <code>Key</code>.
+</li></ul>
+</dd><dd> All following requirements are satisfied:
+<ul><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">k1 <span class="sy1">==</span> k2</span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">h<span class="br0">(</span>k1<span class="br0">)</span> <span class="sy1">==</span> h<span class="br0">(</span>k2<span class="br0">)</span></span></span> is also <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</li><li> Unless <code>std::hash&lt;Key&gt;</code> is a <a href="../language/type-id.html#Program-defined_type" title="cpp/language/type">program-defined specialization</a>, <span class="t-c"><span class="mw-geshi cpp source-cpp">h<span class="br0">(</span>k1<span class="br0">)</span></span></span> will never throw an exception.
+</li></ul>
+</dd></dl>
+</dd></dl>
+<ul><li> Otherwise, <code>std::hash&lt;Key&gt;</code> is disabled.
+</li></ul>
+<p>Disabled specializations do not satisfy <a href="../named_req/Hash.html" title="cpp/named req/Hash"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Hash</span></a>, do not satisfy <a href="../named_req/FunctionObject.html" title="cpp/named req/FunctionObject"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">FunctionObject</span></a>, and following values are all <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>:
 </p>
-<h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p>The actual hash functions are implementation-dependent and are not required to fulfill any other quality criteria except those specified above. Notably, some implementations use trivial (identity) hash functions which map an integer to itself. In other words, these hash functions are designed to work with unordered associative containers, but not as cryptographic hashes, for example.
+<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../types/is_default_constructible.html"><span class="kw533">std::<span class="me2">is_default_constructible</span></span></a><span class="sy1">&lt;</span>std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span>Key<span class="sy1">&gt;&gt;</span><span class="sy4">::</span><span class="me2">value</span></span></span>
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../types/is_copy_constructible.html"><span class="kw539">std::<span class="me2">is_copy_constructible</span></span></a><span class="sy1">&lt;</span>std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span>Key<span class="sy1">&gt;&gt;</span><span class="sy4">::</span><span class="me2">value</span></span></span>
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../types/is_move_constructible.html"><span class="kw545">std::<span class="me2">is_move_constructible</span></span></a><span class="sy1">&lt;</span>std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span>Key<span class="sy1">&gt;&gt;</span><span class="sy4">::</span><span class="me2">value</span></span></span>
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../types/is_copy_assignable.html"><span class="kw557">std::<span class="me2">is_copy_assignable</span></span></a><span class="sy1">&lt;</span>std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span>Key<span class="sy1">&gt;&gt;</span><span class="sy4">::</span><span class="me2">value</span></span></span>
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../types/is_move_assignable.html"><span class="kw563">std::<span class="me2">is_move_assignable</span></span></a><span class="sy1">&lt;</span>std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span>Key<span class="sy1">&gt;&gt;</span><span class="sy4">::</span><span class="me2">value</span></span></span>
+</li></ul>
+<p>In other words, they exist, but cannot be used.
 </p>
- <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx14"><td>Hash functions are only required to produce the same result for the same input within a single execution of a program; this allows salted hashes that prevent collision denial-of-service attacks.</td>
-<td><span class="t-mark-rev t-since-cxx14">(since C++14)</span></td></tr>
-</table>
-<p>There is no specialization for C strings. <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span><span class="sy1">&gt;</span></span></span> produces a hash of the value of the pointer (the memory address), it does not examine the contents of any character array.
-</p>
- <table class="t-rev-begin">
+<table class="t-rev-begin">
 <tr class="t-rev t-until-cxx20"><td>
-<h3> <span class="mw-headline" id="Member_types">Member types</span></h3>
+<h3> <span class="mw-headline" id="Nested_types">Nested types</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Member type
+<td> Name
 </td>
-<td>  Definition
+<td> Definition
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>argument_type</code><span class="t-mark">(deprecated in C++17)</span>
+<td> <code>argument_type</code> <span class="t-mark-rev t-deprecated-cxx17">(deprecated in C++17)</span>
 </td>
-<td>  <code>Key</code>
+<td> <code>Key</code>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>result_type</code><span class="t-mark">(deprecated in C++17)</span>
+<td> <code>result_type</code> <span class="t-mark-rev t-deprecated-cxx17">(deprecated in C++17)</span>
 </td>
-<td>  <span class="t-lc"><a href="../types/size_t.html" title="cpp/types/size t">std::size_t</a></span>
+<td> <span class="t-lc"><a href="../types/size_t.html" title="cpp/types/size t">std::size_t</a></span>
 </td></tr>
 
 </table>
@@ -290,216 +444,411 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="hash/operator%28%29.html" title="cpp/utility/hash/operator()"> <span class="t-lines"><span>operator()</span></span></a></div></div>
 </td>
-<td>   calculate the hash of the argument  <br> <span class="t-mark">(public member function)</span>
+<td>  calculates the hash of the argument <br> <span class="t-mark">(public member function)</span>
 </td></tr>
 
 </table>
-<h3><span class="mw-headline" id="Standard_specializations_for_basic_types">Standard specializations for basic types</span></h3>
-<table class="t-dcl-begin"><tbody>
-<tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/functional.html" title="cpp/header/functional">&lt;functional&gt;</a></code>
- </div></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="t-dcl">
-<td class="t-dcl-nopad"> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">bool</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<p><span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">signed</span> <span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">char16_t</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">char32_t</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">short</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">unsigned</span> <span class="kw4">short</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">unsigned</span> <span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">long</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">long</span> <span class="kw4">long</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">unsigned</span> <span class="kw4">long</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">float</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">double</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span><span class="kw4">long</span> <span class="kw4">double</span><span class="sy1">&gt;</span><span class="sy4">;</span><br>
+<h3><span class="mw-headline" id="Standard_library_specializations">Standard library specializations</span></h3>
+<p>Each header that declares the template <code>std::hash</code> also provides enabled specializations of <code>std::hash</code> for the following types:
 </p>
-<span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> T <span class="sy1">&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span>T<span class="sy2">*</span><span class="sy1">&gt;</span><span class="sy4">;</span></span></div></td>
-<td class="t-dcl-nopad">  </td>
-<td class="t-dcl-nopad">  </td>
-</tr>
-<tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
-</tbody></table>
- <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx14"><td>
-<p>In addition to the above, the standard library provides specializations for all (scoped and unscoped) enumeration types. These may be (but are not required to be) implemented as <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span><a href="../types/underlying_type.html"><span class="kw633">std::<span class="me2">underlying_type</span></span></a><span class="sy1">&lt;</span>Enum<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">type</span><span class="sy1">&gt;</span></span></span>)
+<ul><li> all cv-unqualified <a href="../language/types.html" title="cpp/language/types">arithmetic types</a>
+</li><li> all cv-unqualified <a href="../language/enum.html" title="cpp/language/enum">enumeration types</a>
+</li><li> all cv-unqualified <a href="../language/pointer.html" title="cpp/language/pointer">pointer types</a>
+</li><li> <span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span>
+</li></ul>
+<p>On top of that, some headers also provide other enabled <code>std::hash</code> specializations for library types (see <a href="hash.html#Specializations_for_library_types">below</a>).
 </p>
-</td>
-<td><span class="t-mark-rev t-since-cxx14">(since C++14)</span></td></tr>
+<table class="t-rev-begin">
 <tr class="t-rev t-since-cxx17"><td>
-<p>Each standard library header that declares the template <code>std::hash</code> provides enabled specializations of <code>std::hash</code> for <span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span> and all cv-unqualified arithmetic types (including any extended integer types), all enumeration types, and all pointer types.
-</p><p>All member functions of all standard library specializations of this template are <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span></span></span> except for the member functions of <a href="optional/hash.html" title="cpp/utility/optional/hash"><tt>std::hash&lt;std::optional&gt;</tt></a>, <a href="variant/hash.html" title="cpp/utility/variant/hash"><tt>std::hash&lt;std::variant&gt;</tt></a>, and <a href="../memory/unique_ptr/hash.html" title="cpp/memory/unique ptr/hash"><tt>std::hash&lt;std::unique_ptr&gt;</tt></a>
+<p>For all <code>std::hash</code> specializations provided by the standard library except the following, all their member functions are <span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span></span>:
 </p>
+<ul><li> <a href="optional/hash.html" title="cpp/utility/optional/hash"><tt>std::hash&lt;std::optional&gt;</tt></a>
+</li><li> <a href="variant/hash.html" title="cpp/utility/variant/hash"><tt>std::hash&lt;std::variant&gt;</tt></a>
+</li><li> <a href="../memory/unique_ptr/hash.html" title="cpp/memory/unique ptr/hash"><tt>std::hash&lt;std::unique_ptr&gt;</tt></a>
+</li></ul>
+<table class="t-rev-begin">
+<tr class="t-rev t-since-cxx26"><td>
+<ul><li> <a href="../chrono/duration/hash.html" title="cpp/chrono/duration/hash"><tt>std::hash&lt;std::chrono::duration&gt;</tt></a>
+</li><li> <a href="../chrono/time_point/hash.html" title="cpp/chrono/time point/hash"><tt>std::hash&lt;std::chrono::time_point&gt;</tt></a>
+</li><li> <a href="../chrono/zoned_time/hash.html" title="cpp/chrono/zoned time/hash"><tt>std::hash&lt;std::chrono::zoned_time&gt;</tt></a>
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-since-cxx26">(since C++26)</span></td></tr>
+</table>
 </td>
 <td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
 </table>
-<h3><span class="mw-headline" id="Standard_specializations_for_library_types">Standard specializations for library types</span></h3>
+<h3><span class="mw-headline" id="Specializations_for_library_types">Specializations for library types</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../string/basic_string/hash.html" title="cpp/string/basic string/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::string&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::u8string&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::u16string&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::u32string&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::wstring&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::pmr::string&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::pmr::u8string&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::pmr::u16string&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::pmr::u32string&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::pmr::wstring&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../coroutine/coroutine_handle/hash.html" title="cpp/coroutine/coroutine handle/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::coroutine_handle&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div>
 </td>
-<td>   hash support for strings  <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+<td>  hash support for <a href="../coroutine/coroutine_handle.html" title="cpp/coroutine/coroutine handle"><tt>std::coroutine_handle</tt></a> <br> <span class="t-mark">(class template specialization)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../error/error_code/hash.html" title="cpp/error/error code/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::error_code&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   hash support for <span class="t-lc"><a href="../error/error_code.html" title="cpp/error/error code">std::error_code</a></span>  <br> <span class="t-mark">(class template specialization)</span> </td></tr>
-
-<tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="bitset/hash.html" title="cpp/utility/bitset/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::bitset&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
-</td>
-<td>   hash support for <span class="t-lc"><a href="bitset.html" title="cpp/utility/bitset">std::bitset</a></span>  <br> <span class="t-mark">(class template specialization)</span> </td></tr>
-
-<tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../memory/unique_ptr/hash.html" title="cpp/memory/unique ptr/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::unique_ptr&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
-</td>
-<td>   hash support for <span class="t-lc"><a href="../memory/unique_ptr.html" title="cpp/memory/unique ptr">std::unique_ptr</a></span>  <br> <span class="t-mark">(class template specialization)</span> </td></tr>
-
-<tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../memory/shared_ptr/hash.html" title="cpp/memory/shared ptr/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::shared_ptr&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
-</td>
-<td>   hash support for <span class="t-lc"><a href="../memory/shared_ptr.html" title="cpp/memory/shared ptr">std::shared_ptr</a></span>  <br> <span class="t-mark">(class template specialization)</span> </td></tr>
-
-<tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../types/type_index/hash.html" title="cpp/types/type index/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::type_index&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
-</td>
-<td>   hash support for <span class="t-lc"><a href="../types/type_index.html" title="cpp/types/type index">std::type_index</a></span>  <br> <span class="t-mark">(class template specialization)</span> </td></tr>
-
-<tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../container/vector_bool/hash.html" title="cpp/container/vector bool/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::vector&lt;bool&gt;&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
-</td>
-<td>   hash support for <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../container/vector.html"><span class="kw1265">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">bool</span><span class="sy1">&gt;</span></span></span>  <br> <span class="t-mark">(class template specialization)</span>
-</td></tr>
-
-
-<tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../thread/thread/id/hash.html" title="cpp/thread/thread/id/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::thread::id&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
-</td>
-<td>   hash support for <span class="t-lc"><a href="../thread/thread/id.html" title="cpp/thread/thread/id">std::thread::id</a></span>  <br> <span class="t-mark">(class template specialization)</span>
-</td></tr>
-
-
-<tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="optional/hash.html" title="cpp/utility/optional/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::optional&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div>
-</td>
-<td>   specializes the <span class="t-lc"><strong class="selflink">std::hash</strong></span> algorithm  <br> <span class="t-mark">(class template specialization)</span> </td></tr>
-
-<tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="variant/hash.html" title="cpp/utility/variant/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::variant&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div>
-</td>
-<td>  specializes the <span class="t-lc"><strong class="selflink">std::hash</strong></span> algorithm  <br> <span class="t-mark">(class template specialization)</span> </td></tr>
-
-<tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../string/basic_string_view/hash.html" title="cpp/string/basic string view/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::string_view&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::wstring_view&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::u8string_view&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::u16string_view&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::u32string_view&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div>
-</td>
-<td>   hash support for string views   <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+<td>  hash support for <a href="../error/error_code.html" title="cpp/error/error code"><tt>std::error_code</tt></a> <br> <span class="t-mark">(class template specialization)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../error/error_condition/hash.html" title="cpp/error/error condition/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::error_condition&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div>
 </td>
-<td>   hash support for <span class="t-lc"><a href="../error/error_condition.html" title="cpp/error/error condition">std::error_condition</a></span>  <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+<td>  hash support for <a href="../error/error_condition.html" title="cpp/error/error condition"><tt>std::error_condition</tt></a> <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="stacktrace_entry/hash.html" title="cpp/utility/stacktrace entry/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::stacktrace_entry&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="stacktrace_entry.html" title="cpp/utility/stacktrace entry"><tt>std::stacktrace_entry</tt></a> <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="basic_stacktrace/hash.html" title="cpp/utility/basic stacktrace/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::basic_stacktrace&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="basic_stacktrace.html" title="cpp/utility/basic stacktrace"><tt>std::basic_stacktrace</tt></a> <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="optional/hash.html" title="cpp/utility/optional/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::optional&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="optional.html" title="cpp/utility/optional"><tt>std::optional</tt></a> <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="variant/hash.html" title="cpp/utility/variant/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::variant&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="variant.html" title="cpp/utility/variant"><tt>std::variant</tt></a> <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="variant/monostate.html#Helper_classes" title="cpp/utility/variant/monostate"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::monostate&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div>
+</td>
+<td>  hash support for <span class="t-lc"><a href="variant/monostate.html" title="cpp/utility/variant/monostate">std::monostate</a></span> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="bitset/hash.html" title="cpp/utility/bitset/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::bitset&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="bitset.html" title="cpp/utility/bitset"><tt>std::bitset</tt></a> <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../memory/unique_ptr/hash.html" title="cpp/memory/unique ptr/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::unique_ptr&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../memory/unique_ptr.html" title="cpp/memory/unique ptr"><tt>std::unique_ptr</tt></a> <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../memory/shared_ptr/hash.html" title="cpp/memory/shared ptr/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::shared_ptr&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../memory/shared_ptr.html" title="cpp/memory/shared ptr"><tt>std::shared_ptr</tt></a> <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../types/type_index/hash.html" title="cpp/types/type index/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::type_index&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../types/type_index.html" title="cpp/types/type index"><tt>std::type_index</tt></a> <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/basic_string/hash.html" title="cpp/string/basic string/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::basic_string&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>  hash support for strings <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/basic_string_view/hash.html" title="cpp/string/basic string view/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::string_view&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::wstring_view&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::u8string_view&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::u16string_view&gt;</span></span><span>std::hash<span class="t-dsc-small">&lt;std::u32string_view&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div>
+</td>
+<td>  hash support for string views <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../container/vector_bool/hash.html" title="cpp/container/vector bool/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::vector&lt;bool&gt;&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../container/vector_bool.html" title="cpp/container/vector bool"><tt>std::vector&lt;bool&gt;</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../filesystem/path/hash.html" title="cpp/filesystem/path/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::filesystem::path&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../filesystem/path.html" title="cpp/filesystem/path"><tt>std::filesystem::path</tt></a> <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/thread/id/hash.html" title="cpp/thread/thread/id/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::thread::id&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../thread/thread/id.html" title="cpp/thread/thread/id"><tt>std::thread::id</tt></a> <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/duration/hash.html" title="cpp/chrono/duration/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::duration&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/duration.html" title="cpp/chrono/duration"><tt>std::chrono::duration</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/time_point/hash.html" title="cpp/chrono/time point/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::time_point&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/time_point.html" title="cpp/chrono/time point"><tt>std::chrono::time_point</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/day/hash.html" title="cpp/chrono/day/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::day&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/day.html" title="cpp/chrono/day"><tt>std::chrono::day</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/month/hash.html" title="cpp/chrono/month/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::month&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/month.html" title="cpp/chrono/month"><tt>std::chrono::month</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/year/hash.html" title="cpp/chrono/year/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::year&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/year.html" title="cpp/chrono/year"><tt>std::chrono::year</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/weekday/hash.html" title="cpp/chrono/weekday/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::weekday&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/weekday.html" title="cpp/chrono/weekday"><tt>std::chrono::weekday</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/weekday_indexed/hash.html" title="cpp/chrono/weekday indexed/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::weekday_indexed&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/weekday_indexed.html" title="cpp/chrono/weekday indexed"><tt>std::chrono::weekday_indexed</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/weekday_last/hash.html" title="cpp/chrono/weekday last/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::weekday_last&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/weekday_last.html" title="cpp/chrono/weekday last"><tt>std::chrono::weekday_last</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/month_day/hash.html" title="cpp/chrono/month day/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::month_day&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/month_day.html" title="cpp/chrono/month day"><tt>std::chrono::month_day</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/month_day_last/hash.html" title="cpp/chrono/month day last/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::month_day_last&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/month_day_last.html" title="cpp/chrono/month day last"><tt>std::chrono::month_day_last</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/month_weekday/hash.html" title="cpp/chrono/month weekday/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::month_weekday&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/month_weekday.html" title="cpp/chrono/month weekday"><tt>std::chrono::month_weekday</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/month_weekday_last/hash.html" title="cpp/chrono/month weekday last/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::month_weekday_last&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/month_weekday_last.html" title="cpp/chrono/month weekday last"><tt>std::chrono::month_weekday_last</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/year_month/hash.html" title="cpp/chrono/year month/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::year_month&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/year_month.html" title="cpp/chrono/year month"><tt>std::chrono::year_month</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/year_month_day/hash.html" title="cpp/chrono/year month day/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::year_month_day&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/year_month_day.html" title="cpp/chrono/year month day"><tt>std::chrono::year_month_day</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/year_month_day_last/hash.html" title="cpp/chrono/year month day last/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::year_month_day_last&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/year_month_day_last.html" title="cpp/chrono/year month day last"><tt>std::chrono::year_month_day_last</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/year_month_weekday/hash.html" title="cpp/chrono/year month weekday/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::year_month_weekday&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/year_month_weekday.html" title="cpp/chrono/year month weekday"><tt>std::chrono::year_month_weekday</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/year_month_weekday_last/hash.html" title="cpp/chrono/year month weekday last/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::year_month_weekday_last&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/year_month_weekday_last.html" title="cpp/chrono/year month weekday last"><tt>std::chrono::year_month_weekday_last</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/zoned_time/hash.html" title="cpp/chrono/zoned time/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::zoned_time&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/zoned_time.html" title="cpp/chrono/zoned time"><tt>std::chrono::zoned_time</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../chrono/leap_second/hash.html" title="cpp/chrono/leap second/hash"> <span class="t-lines"><span>std::hash<span class="t-dsc-small">&lt;std::chrono::leap_second&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  hash support for <a href="../chrono/leap_second.html" title="cpp/chrono/leap second"><tt>std::chrono::leap_second</tt></a> <br> <span class="t-mark">(class template specialization)</span>
+</td></tr>
+
 </table>
-<p>Note: additional specializations for <code>std::pair</code> and the standard container types, as well as utility functions to compose hashes are available in <a rel="nofollow" class="external text" href="http://www.boost.org/doc/libs/release/doc/html/hash/reference.html">boost.hash</a>
-</p><p><br>
+<h3><span class="mw-headline" id="Notes">Notes</span></h3>
+<p>The actual hash functions are implementation-dependent and are not required to fulfill any other quality criteria except those specified above. Notably, some implementations use trivial (identity) hash functions which map an integer to itself. In other words, these hash functions are designed to work with unordered associative containers, but not as cryptographic hashes, for example.
+</p><p>Hash functions are only required to produce the same result for the same input within a single execution of a program; this allows salted hashes that prevent collision denial-of-service attacks.
+</p><p>There is no specialization for C strings. <span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span><span class="sy1">&gt;</span></span> produces a hash of the value of the pointer (the memory address), it does not examine the contents of any character array.
+</p><p>Additional specializations for <span class="t-lc"><a href="pair.html" title="cpp/utility/pair">std::pair</a></span> and the standard container types, as well as utility functions to compose hashes are available in <a rel="nofollow" class="external text" href="https://www.boost.org/doc/libs/release/libs/container_hash/doc/html/hash.html#ref"><code>boost::hash</code></a>.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
-<span class="co2">#include &lt;iomanip&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;cstddef&gt;</span>
 <span class="co2">#include &lt;functional&gt;</span>
+<span class="co2">#include &lt;iomanip&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;string&gt;</span>
 <span class="co2">#include &lt;unordered_set&gt;</span>
  
-<span class="kw1">struct</span> S <span class="br0">{</span>
-    <a href="../string/basic_string.html"><span class="kw1226">std::<span class="me2">string</span></span></a> first_name<span class="sy4">;</span>
-    <a href="../string/basic_string.html"><span class="kw1226">std::<span class="me2">string</span></span></a> last_name<span class="sy4">;</span>
+<span class="kw1">struct</span> S
+<span class="br0">{</span>
+    <a href="../string/basic_string.html"><span class="kw1237">std::<span class="me2">string</span></span></a> first_name<span class="sy4">;</span>
+    <a href="../string/basic_string.html"><span class="kw1237">std::<span class="me2">string</span></span></a> last_name<span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">==</span><span class="br0">(</span><span class="kw4">const</span> S<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw4">const</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span> <span class="co1">// since C++20</span>
 <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw4">bool</span> operator<span class="sy1">==</span><span class="br0">(</span><span class="kw4">const</span> S<span class="sy3">&amp;</span> lhs, <span class="kw4">const</span> S<span class="sy3">&amp;</span> rhs<span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw1">return</span> lhs.<span class="me1">first_name</span> <span class="sy1">==</span> rhs.<span class="me1">first_name</span> <span class="sy3">&amp;&amp;</span> lhs.<span class="me1">last_name</span> <span class="sy1">==</span> rhs.<span class="me1">last_name</span><span class="sy4">;</span>
-<span class="br0">}</span>
  
-<span class="co1">// custom hash can be a standalone function object:</span>
+<span class="co1">// Before C++20.</span>
+<span class="co1">// bool operator==(const S&amp; lhs, const S&amp; rhs)</span>
+<span class="co1">// {</span>
+<span class="co1">//     return lhs.first_name == rhs.first_name &amp;&amp; lhs.last_name == rhs.last_name;</span>
+<span class="co1">// }</span>
+ 
+<span class="co1">// Custom hash can be a standalone function object.</span>
 <span class="kw1">struct</span> MyHash
 <span class="br0">{</span>
-    <a href="../types/size_t.html"><span class="kw100">std::<span class="me2">size_t</span></span></a> operator<span class="br0">(</span><span class="br0">)</span><span class="br0">(</span>S <span class="kw4">const</span><span class="sy3">&amp;</span> s<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span>
+    <a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> operator<span class="br0">(</span><span class="br0">)</span><span class="br0">(</span><span class="kw4">const</span> S<span class="sy3">&amp;</span> s<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span>
     <span class="br0">{</span>
-        <a href="../types/size_t.html"><span class="kw100">std::<span class="me2">size_t</span></span></a> h1 <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1226">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">(</span>s.<span class="me1">first_name</span><span class="br0">)</span><span class="sy4">;</span>
-        <a href="../types/size_t.html"><span class="kw100">std::<span class="me2">size_t</span></span></a> h2 <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1226">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">(</span>s.<span class="me1">last_name</span><span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">return</span> h1 <span class="sy3">^</span> <span class="br0">(</span>h2 <span class="sy1">&lt;&lt;</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// or use boost::hash_combine (see Discussion)</span>
+        <a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> h1 <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1237">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">(</span>s.<span class="me1">first_name</span><span class="br0">)</span><span class="sy4">;</span>
+        <a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> h2 <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1237">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">(</span>s.<span class="me1">last_name</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="kw1">return</span> h1 <span class="sy3">^</span> <span class="br0">(</span>h2 <span class="sy1">&lt;&lt;</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// or use boost::hash_combine</span>
     <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
-<span class="co1">// custom specialization of std::hash can be injected in namespace std</span>
-<span class="kw1">namespace</span> std
+<span class="co1">// Custom specialization of std::hash can be injected in namespace std.</span>
+<span class="kw1">template</span><span class="sy1">&lt;&gt;</span>
+<span class="kw1">struct</span> std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span>S<span class="sy1">&gt;</span>
 <span class="br0">{</span>
-    <span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">struct</span> hash<span class="sy1">&lt;</span>S<span class="sy1">&gt;</span>
+    <a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> operator<span class="br0">(</span><span class="br0">)</span><span class="br0">(</span><span class="kw4">const</span> S<span class="sy3">&amp;</span> s<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span>
     <span class="br0">{</span>
-        <span class="kw1">typedef</span> S argument_type<span class="sy4">;</span>
-        <span class="kw1">typedef</span> <a href="../types/size_t.html"><span class="kw100">std::<span class="me2">size_t</span></span></a> result_type<span class="sy4">;</span>
-        result_type operator<span class="br0">(</span><span class="br0">)</span><span class="br0">(</span>argument_type <span class="kw4">const</span><span class="sy3">&amp;</span> s<span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span>
-        <span class="br0">{</span>
-            result_type <span class="kw4">const</span> h1 <span class="br0">(</span> std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1226">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">(</span>s.<span class="me1">first_name</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span>
-            result_type <span class="kw4">const</span> h2 <span class="br0">(</span> std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1226">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">(</span>s.<span class="me1">last_name</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span>
-            <span class="kw1">return</span> h1 <span class="sy3">^</span> <span class="br0">(</span>h2 <span class="sy1">&lt;&lt;</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// or use boost::hash_combine (see Discussion)</span>
-        <span class="br0">}</span>
-    <span class="br0">}</span><span class="sy4">;</span>
-<span class="br0">}</span>
+        <a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> h1 <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1237">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">(</span>s.<span class="me1">first_name</span><span class="br0">)</span><span class="sy4">;</span>
+        <a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> h2 <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1237">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">(</span>s.<span class="me1">last_name</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="kw1">return</span> h1 <span class="sy3">^</span> <span class="br0">(</span>h2 <span class="sy1">&lt;&lt;</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// or use boost::hash_combine</span>
+    <span class="br0">}</span>
+<span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
+    <a href="../string/basic_string.html"><span class="kw1237">std::<span class="me2">string</span></span></a> str <span class="sy1">=</span> <span class="st0">"Meet the new boss..."</span><span class="sy4">;</span>
+    <a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> str_hash <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1237">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">(</span>str<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1774">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"hash("</span> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/quoted.html"><span class="kw1818">std::<span class="me2">quoted</span></span></a><span class="br0">(</span>str<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">") =<span class="es1">\t</span>"</span> <span class="sy1">&lt;&lt;</span> str_hash <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
  
-    <a href="../string/basic_string.html"><span class="kw1226">std::<span class="me2">string</span></span></a> str <span class="sy1">=</span> <span class="st0">"Meet the new boss..."</span><span class="sy4">;</span>
-    <a href="../types/size_t.html"><span class="kw100">std::<span class="me2">size_t</span></span></a> str_hash <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1226">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">(</span>str<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/cout.html"><span class="kw1754">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"hash("</span> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/quoted.html"><span class="kw1798">std::<span class="me2">quoted</span></span></a><span class="br0">(</span>str<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">") = "</span> <span class="sy1">&lt;&lt;</span> str_hash <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    S obj <span class="sy1">=</span> <span class="br0">{</span><span class="st0">"Hubert"</span>, <span class="st0">"Farnsworth"</span><span class="br0">}</span><span class="sy4">;</span>
+    <span class="co1">// Using the standalone function object.</span>
+    <a href="../io/cout.html"><span class="kw1774">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"hash("</span> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/quoted.html"><span class="kw1818">std::<span class="me2">quoted</span></span></a><span class="br0">(</span>obj.<span class="me1">first_name</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">", "</span>
+              <span class="sy1">&lt;&lt;</span> <a href="../io/manip/quoted.html"><span class="kw1818">std::<span class="me2">quoted</span></span></a><span class="br0">(</span>obj.<span class="me1">last_name</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">") =<span class="es1">\t</span>"</span>
+              <span class="sy1">&lt;&lt;</span> MyHash<span class="br0">{</span><span class="br0">}</span><span class="br0">(</span>obj<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" (using MyHash) or<span class="es1">\n</span><span class="es1">\t</span><span class="es1">\t</span><span class="es1">\t</span><span class="es1">\t</span>"</span>
+              <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span>S<span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">(</span>obj<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" (using injected specialization)<span class="es1">\n</span>"</span><span class="sy4">;</span>
  
-    S obj <span class="sy1">=</span> <span class="br0">{</span> <span class="st0">"Hubert"</span>, <span class="st0">"Farnsworth"</span><span class="br0">}</span><span class="sy4">;</span>
-    <span class="co1">// using the standalone function object</span>
-    <a href="../io/cout.html"><span class="kw1754">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"hash("</span> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/quoted.html"><span class="kw1798">std::<span class="me2">quoted</span></span></a><span class="br0">(</span>obj.<span class="me1">first_name</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">','</span> 
-               <span class="sy1">&lt;&lt;</span> <a href="../io/manip/quoted.html"><span class="kw1798">std::<span class="me2">quoted</span></span></a><span class="br0">(</span>obj.<span class="me1">last_name</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">") = "</span>
-               <span class="sy1">&lt;&lt;</span> MyHash<span class="br0">{</span><span class="br0">}</span><span class="br0">(</span>obj<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" (using MyHash)<span class="es1">\n</span>                           or "</span>
-               <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span>S<span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">(</span>obj<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" (using injected std::hash&lt;S&gt; specialization)<span class="es1">\n</span>"</span><span class="sy4">;</span>
- 
-    <span class="co1">// custom hash makes it possible to use custom types in unordered containers</span>
+    <span class="co1">// Custom hash makes it possible to use custom types in unordered containers.</span>
     <span class="co1">// The example will use the injected std::hash&lt;S&gt; specialization above,</span>
-    <span class="co1">// to use MyHash instead, pass it as a second template argument</span>
-    <a href="../container/unordered_set.html"><span class="kw1285">std::<span class="me2">unordered_set</span></span></a><span class="sy1">&lt;</span>S<span class="sy1">&gt;</span> names <span class="sy1">=</span> <span class="br0">{</span>obj, <span class="br0">{</span><span class="st0">"Bender"</span>, <span class="st0">"Rodriguez"</span><span class="br0">}</span>, <span class="br0">{</span><span class="st0">"Turanga"</span>, <span class="st0">"Leela"</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
-    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">auto</span><span class="sy3">&amp;</span> s<span class="sy4">:</span> names<span class="br0">)</span>
-        <a href="../io/cout.html"><span class="kw1754">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/quoted.html"><span class="kw1798">std::<span class="me2">quoted</span></span></a><span class="br0">(</span>s.<span class="me1">first_name</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/quoted.html"><span class="kw1798">std::<span class="me2">quoted</span></span></a><span class="br0">(</span>s.<span class="me1">last_name</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <span class="co1">// to use MyHash instead, pass it as a second template argument.</span>
+    <a href="../container/unordered_set.html"><span class="kw1296">std::<span class="me2">unordered_set</span></span></a><span class="sy1">&lt;</span>S<span class="sy1">&gt;</span> names <span class="sy1">=</span> <span class="br0">{</span>obj, <span class="br0">{</span><span class="st0">"Bender"</span>, <span class="st0">"Rodriguez"</span><span class="br0">}</span>, <span class="br0">{</span><span class="st0">"Turanga"</span>, <span class="st0">"Leela"</span><span class="br0">}</span><span class="br0">}</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> <span class="kw4">const</span><span class="sy3">&amp;</span> s<span class="sy4">:</span> names<span class="br0">)</span>
+        <a href="../io/cout.html"><span class="kw1774">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/quoted.html"><span class="kw1818">std::<span class="me2">quoted</span></span></a><span class="br0">(</span>s.<span class="me1">first_name</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span>
+                  <span class="sy1">&lt;&lt;</span> <a href="../io/manip/quoted.html"><span class="kw1818">std::<span class="me2">quoted</span></span></a><span class="br0">(</span>s.<span class="me1">last_name</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">hash("Meet the new boss...") = 1861821886482076440
-hash("Hubert","Farnsworth") = 17622465712001802105 (using MyHash)
-                           or 17622465712001802105 (using injected std::hash&lt;S&gt; specialization) 
-"Turanga" "Leela"
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">hash("Meet the new boss...") =  10656026664466977650
+hash("Hubert", "Farnsworth") =  12922914235676820612 (using MyHash) or
+                                12922914235676820612 (using injected specialization)
 "Bender" "Rodriguez"
+"Turanga" "Leela"
 "Hubert" "Farnsworth"</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th>DR
+</th>
+<th>Applied to
+</th>
+<th>Behavior as published
+</th>
+<th>Correct behavior
+</th></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2119">LWG 2119</a>
+</td>
+<td>C++11
+</td>
+<td>specializations for extended integer types were missing
+</td>
+<td>provided
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2148">LWG 2148</a>
+</td>
+<td>C++11
+</td>
+<td>specializations for enumerations were missing
+</td>
+<td>provided
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2543">LWG 2543</a>
+</td>
+<td>C++11
+</td>
+<td><code>std::hash</code> might not be SFINAE-friendly
+</td>
+<td>made SFINAE-friendly
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2817">LWG 2817</a>
+</td>
+<td>C++11
+</td>
+<td>specialization for <span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span> was missing
+</td>
+<td>provided
+</td></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 6515/1000000
-Preprocessor generated node count: 12066/1000000
-Post‐expand include size: 216990/2097152 bytes
-Template argument size: 58419/2097152 bytes
-Highest expansion depth: 22/40
+Preprocessor visited node count: 13660/1000000
+Preprocessor generated node count: 16388/1000000
+Post‐expand include size: 401162/4194304 bytes
+Template argument size: 107494/4194304 bytes
+Highest expansion depth: 26/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2990-0!*!0!!en!*!* and timestamp 20190118052149 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2990-0!*!0!!en!*!* and timestamp 20241102202807 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/utility/hash&amp;oldid=108628">https://en.cppreference.com/mwiki/index.php?title=cpp/utility/hash&amp;oldid=108628</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/utility/hash&amp;oldid=172270">https://en.cppreference.com/mwiki/index.php?title=cpp/utility/hash&amp;oldid=172270</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -512,21 +861,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/utility/hash">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 6 June 2024, at 09:23.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../common/skin_scripts.js"></script>
+<script src="../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 0.035 secs. -->
+<script src="../.././common/site_scripts.js"></script>
+<!-- Served in 3.339 secs. -->
 	</body>
-<!-- Cached 20190118052149 -->
+<!-- Cached 20241102202807 -->
 </html>

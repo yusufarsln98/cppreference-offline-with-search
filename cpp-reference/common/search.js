@@ -1,4 +1,4 @@
-window.searchContent = function (query) {
+window.searchContent = function(query) {
     if (!query.trim()) return [];
 
     query = query.toLowerCase();
@@ -31,7 +31,7 @@ window.searchContent = function (query) {
     return results.sort((a, b) => b.score - a.score);
 }
 
-window.extractSnippet = function (text, query) {
+window.extractSnippet = function(text, query) {
     if (!text) return '';
 
     const index = text.indexOf(query);

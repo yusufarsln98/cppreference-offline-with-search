@@ -4,20 +4,20 @@
 <title>std::forward_list&lt;T,Allocator&gt;::splice_after - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../../common/favicon.ico">
-<link rel="stylesheet" href="../../../common/ext.css">
+<link rel="shortcut icon" href="../../.././common/favicon.ico">
+<link rel="stylesheet" href="../../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../../common/site_modules.css">
+<link rel="stylesheet" href="../../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../../common/startup_scripts.js"></script>
+<script src="../../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/container/forward_list/splice_after","wgTitle":"cpp/container/forward list/splice after","wgCurRevisionId":109409,"wgArticleId":2448,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/container/forward_list/splice_after","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/container/forward_list/splice_after","wgTitle":"cpp/container/forward list/splice after","wgCurRevisionId":159713,"wgArticleId":2448,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/container/forward_list/splice_after","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -74,30 +74,6 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 .cpp.source-cpp span.xtra { display:block; }
 
 /*]]>*/
-</style><style type="text/css">/*<![CDATA[*/
-.source-text {line-height: normal;}
-.source-text li, .source-text pre {
-	line-height: normal; border: 0px none white;
-}
-/**
- * GeSHi Dynamically Generated Stylesheet
- * --------------------------------------
- * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
- * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
- * (http://qbnz.com/highlighter/ and http://geshi.org/)
- * --------------------------------------
- */
-.text.source-text .de1, .text.source-text .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
-.text.source-text  {font-family:monospace;}
-.text.source-text .imp {font-weight: bold; color: red;}
-.text.source-text li, .text.source-text .li1 {font-weight: normal; vertical-align:top;}
-.text.source-text .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
-.text.source-text .li2 {font-weight: bold; vertical-align:top;}
-.text.source-text .ln-xtra, .text.source-text li.ln-xtra, .text.source-text div.ln-xtra {background-color: #ffc;}
-.text.source-text span.xtra { display:block; }
-
-/*]]>*/
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_container_forward_list_splice_after skin-cppreference2 action-view cpp-navbar">
         <!-- header -->
@@ -108,7 +84,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::forward_list&lt;T,Allocator&gt;::</span>splice_after</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::forward_list&lt;T,Allocator&gt;::</span>splice_after</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -119,80 +103,116 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../../cpp.html" title="cpp">cpp</a>‎ | <a href="../../container.html" title="cpp/container">container</a>‎ | <a href="../forward_list.html" title="cpp/container/forward list">forward list</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../container.html" title="cpp/container"> Containers library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../container.html" title="cpp/container">Containers library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Sequence_containers" title="cpp/container">Sequence</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../array.html" title="cpp/container/array"><span class="t-lines"><span>array</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../vector.html" title="cpp/container/vector"><span class="t-lines"><span>vector</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../vector.html" title="cpp/container/vector"><span class="t-lines"><span>vector<span class="t-dsc-small">&lt;bool&gt;</span></span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../inplace_vector.html" title="cpp/container/inplace vector"><span class="t-lines"><span>inplace_vector</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../deque.html" title="cpp/container/deque"><span class="t-lines"><span>deque</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../forward_list.html" title="cpp/container/forward list"><span class="t-lines"><span>forward_list</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../list.html" title="cpp/container/list"><span class="t-lines"><span>list</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Associative_containers" title="cpp/container">Associative</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../set.html" title="cpp/container/set"><span class="t-lines"><span>set</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../multiset.html" title="cpp/container/multiset"><span class="t-lines"><span>multiset</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../map.html" title="cpp/container/map"><span class="t-lines"><span>map</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../multimap.html" title="cpp/container/multimap"><span class="t-lines"><span>multimap</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Unordered_associative_containers_.28since_C.2B.2B11.29" title="cpp/container">Unordered associative</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_set.html" title="cpp/container/unordered set"><span class="t-lines"><span>unordered_set</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_multiset.html" title="cpp/container/unordered multiset"><span class="t-lines"><span>unordered_multiset</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_map.html" title="cpp/container/unordered map"><span class="t-lines"><span>unordered_map</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_multimap.html" title="cpp/container/unordered multimap"><span class="t-lines"><span>unordered_multimap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Container_adaptors" title="cpp/container">Adaptors</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../stack.html" title="cpp/container/stack"><span class="t-lines"><span>stack</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../queue.html" title="cpp/container/queue"><span class="t-lines"><span>queue</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../priority_queue.html" title="cpp/container/priority queue"><span class="t-lines"><span>priority_queue</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_set.html" title="cpp/container/flat set"><span class="t-lines"><span>flat_set</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_multiset.html" title="cpp/container/flat multiset"><span class="t-lines"><span>flat_multiset</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_map.html" title="cpp/container/flat map"><span class="t-lines"><span>flat_map</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_multimap.html" title="cpp/container/flat multimap"><span class="t-lines"><span>flat_multimap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Views" title="cpp/container">Views</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../span.html" title="cpp/container/span"><span class="t-lines"><span>span</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../mdspan.html" title="cpp/container/mdspan"><span class="t-lines"><span>mdspan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Tables</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../../container.html#Iterator_invalidation" title="cpp/container">Iterator invalidation</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../../container.html#Member_function_table" title="cpp/container">Member function table</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../../container.html#Non-member_function_table" title="cpp/container">Non-member function table</a></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../forward_list.html" title="cpp/container/forward list"><tt>std::forward_list</tt></a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5"> Member functions</td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../forward_list.html#Member_functions" title="cpp/container/forward list">Member functions</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="forward_list.html" title="cpp/container/forward list/forward list"><span class="t-lines"><span>forward_list::forward_list</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="%7Eforward_list.html" title="cpp/container/forward list/~forward list"><span class="t-lines"><span>forward_list::~forward_list</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="~forward_list.html" title="cpp/container/forward list/~forward list"><span class="t-lines"><span>forward_list::~forward_list</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator%3D.html" title="cpp/container/forward list/operator="><span class="t-lines"><span>forward_list::operator=</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="assign.html" title="cpp/container/forward list/assign"><span class="t-lines"><span>forward_list::assign</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="assign_range.html" title="cpp/container/forward list/assign range"><span class="t-lines"><span>forward_list::assign_range</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span><code>  </code></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="get_allocator.html" title="cpp/container/forward list/get allocator"><span class="t-lines"><span>forward_list::get_allocator</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Element access</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../forward_list.html#Element_access" title="cpp/container/forward list">Element access</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="front.html" title="cpp/container/forward list/front"><span class="t-lines"><span>forward_list::front</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Iterators</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../forward_list.html#Iterators" title="cpp/container/forward list">Iterators</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="before_begin.html" title="cpp/container/forward list/before begin"><span class="t-lines"><span>forward_list::before_begin</span><span>forward_list::cbefore_begin</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="begin.html" title="cpp/container/forward list/begin"><span class="t-lines"><span>forward_list::begin</span><span>forward_list::cbegin</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="end.html" title="cpp/container/forward list/end"><span class="t-lines"><span>forward_list::end</span><span>forward_list::cend</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Capacity</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../forward_list.html#Capacity" title="cpp/container/forward list">Capacity</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="empty.html" title="cpp/container/forward list/empty"><span class="t-lines"><span>forward_list::empty</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="max_size.html" title="cpp/container/forward list/max size"><span class="t-lines"><span>forward_list::max_size</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Modifiers</td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../forward_list.html#Modifiers" title="cpp/container/forward list">Modifiers</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="clear.html" title="cpp/container/forward list/clear"><span class="t-lines"><span>forward_list::clear</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="emplace_front.html" title="cpp/container/forward list/emplace front"><span class="t-lines"><span>forward_list::emplace_front</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="push_front.html" title="cpp/container/forward list/push front"><span class="t-lines"><span>forward_list::push_front</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="insert_after.html" title="cpp/container/forward list/insert after"><span class="t-lines"><span>forward_list::insert_after</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="emplace_after.html" title="cpp/container/forward list/emplace after"><span class="t-lines"><span>forward_list::emplace_after</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="erase_after.html" title="cpp/container/forward list/erase after"><span class="t-lines"><span>forward_list::erase_after</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="push_front.html" title="cpp/container/forward list/push front"><span class="t-lines"><span>forward_list::push_front</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="emplace_front.html" title="cpp/container/forward list/emplace front"><span class="t-lines"><span>forward_list::emplace_front</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="insert_range_after.html" title="cpp/container/forward list/insert range after"><span class="t-lines"><span>forward_list::insert_range_after</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="prepend_range.html" title="cpp/container/forward list/prepend range"><span class="t-lines"><span>forward_list::prepend_range</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="pop_front.html" title="cpp/container/forward list/pop front"><span class="t-lines"><span>forward_list::pop_front</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="resize.html" title="cpp/container/forward list/resize"><span class="t-lines"><span>forward_list::resize</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap.html" title="cpp/container/forward list/swap"><span class="t-lines"><span>forward_list::swap</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Operations</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../forward_list.html#Operations" title="cpp/container/forward list">Operations</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="merge.html" title="cpp/container/forward list/merge"><span class="t-lines"><span>forward_list::merge</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>forward_list::splice_after</span></span></strong></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="remove.html" title="cpp/container/forward list/remove"><span class="t-lines"><span>forward_list::remove</span><span>forward_list::remove_if</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="reverse.html" title="cpp/container/forward list/reverse"><span class="t-lines"><span>forward_list::reverse</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="unique.html" title="cpp/container/forward list/unique"><span class="t-lines"><span>forward_list::unique</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="sort.html" title="cpp/container/forward list/sort"><span class="t-lines"><span>forward_list::sort</span></span></a></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> <a href="deduction_guides.html" title="cpp/container/forward list/deduction guides">Deduction guides</a><span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../forward_list.html#Non-member_functions" title="cpp/container/forward list">Non-member functions</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_cmp.html" title="cpp/container/forward list/operator cmp"><span class="t-lines"><span>operator==</span><span>operator&lt;=&gt;</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap2.html" title="cpp/container/forward list/swap2"><span class="t-lines"><span>swap<span class="t-dsc-small">(std::forward_list)</span></span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="erase2.html" title="cpp/container/forward list/erase2"><span class="t-lines"><span>erase<span class="t-dsc-small">(std::forward_list)</span></span><span>erase_if<span class="t-dsc-small">(std::forward_list)</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_cmp.html" title="cpp/container/forward list/operator cmp"><span class="t-lines"><span>operator!=</span><span>operator&lt;</span><span>operator&gt;</span><span>operator&lt;=</span><span>operator&gt;=</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="deduction_guides.html" title="cpp/container/forward list/deduction guides">Deduction guides</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dcl t-since-cxx11">
@@ -202,72 +222,85 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl t-since-cxx11">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span> splice_after<span class="br0">(</span> const_iterator pos, forward_list<span class="sy3">&amp;&amp;</span> other <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (1) </td>
+<td> (2) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx11">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span> splice_after<span class="br0">(</span> const_iterator pos, forward_list<span class="sy3">&amp;</span> other, <br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span> splice_after<span class="br0">(</span> const_iterator pos, forward_list<span class="sy3">&amp;</span> other,<br>
                    const_iterator it <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (2) </td>
+<td> (3) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx11">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span> splice_after<span class="br0">(</span> const_iterator pos, forward_list<span class="sy3">&amp;&amp;</span> other,<br>
                    const_iterator it <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (2) </td>
+<td> (4) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx11">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span> splice_after<span class="br0">(</span> const_iterator pos, forward_list<span class="sy3">&amp;</span> other, <br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span> splice_after<span class="br0">(</span> const_iterator pos, forward_list<span class="sy3">&amp;</span> other,<br>
                    const_iterator first, const_iterator last <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (3) </td>
+<td> (5) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx11">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span> splice_after<span class="br0">(</span> const_iterator pos, forward_list<span class="sy3">&amp;&amp;</span> other, <br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span> splice_after<span class="br0">(</span> const_iterator pos, forward_list<span class="sy3">&amp;&amp;</span> other,<br>
                    const_iterator first, const_iterator last <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (3) </td>
+<td> (6) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Moves elements from another <code>forward_list</code> to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>.
-</p><p>No elements are copied. <code>pos</code> must be either a deferenceable valid iterator into <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> or the <span class="t-lc"><a href="before_begin.html" title="cpp/container/forward list/before begin">before_begin()</a></span> iterator (in particular, <span class="t-lc"><a href="end.html" title="cpp/container/forward list/end">end()</a></span> is not a valid argument for <code>pos</code>). The behavior is undefined if <span class="t-c"><span class="mw-geshi cpp source-cpp">get_allocator<span class="br0">(</span><span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> other.<span class="me1">get_allocator</span><span class="br0">(</span><span class="br0">)</span></span></span>. No iterators or references become invalidated, the iterators to the moved elements now refer into <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>, not into <code>other</code>.
+<p>Moves elements from another <code>forward_list</code> to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. The elements are inserted after the element pointed to by <span class="t-c"><span class="mw-geshi cpp source-cpp">pos</span></span>.
+</p><p>No elements are copied. No iterators or references become invalidated. The iterators to the moved elements now refer into <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>, not into <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span>.
 </p>
-<div class="t-li1"><span class="t-li">1)</span> Moves all elements from <code>other</code> into <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. The elements are inserted after the element pointed to by <code>pos</code>. The container <code>other</code> becomes empty after the operation. The behavior is undefined if <code>other</code> refers to the same object as <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>.</div>
-<div class="t-li1"><span class="t-li">2)</span> Moves the element pointed to by the iterator following <code>it</code> from <code>other</code> into <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. The element is inserted after the element pointed to by <code>pos</code>. Has no effect if <code>pos==it</code> or if <code>pos==++it</code>.</div>
-<div class="t-li1"><span class="t-li">3)</span> Moves the elements in the range <code>(first, last)</code> from <code>other</code> into <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. The elements are inserted after the element pointed to by <code>pos</code>. The element pointed-to by <code>first</code> is not moved. The behavior is undefined if <code>pos</code> is an iterator in the range <code>(first,last)</code>.</div>
+<div class="t-li1"><span class="t-li">1,2)</span> Moves all elements from <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span> into <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. The container <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span> becomes empty after the operation.</div>
+<div class="t-li1"><span class="t-li">3,4)</span> Moves the element pointed to by the iterator following <span class="t-c"><span class="mw-geshi cpp source-cpp">it</span></span> from <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span> into <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. Has no effect if <span class="t-c"><span class="mw-geshi cpp source-cpp">pos <span class="sy1">==</span> it</span></span> or if <span class="t-c"><span class="mw-geshi cpp source-cpp">pos <span class="sy1">==</span> <span class="sy2">++</span>it</span></span>.</div>
+<div class="t-li1"><span class="t-li">5,6)</span> Moves the elements in the range <code>(</code><span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span><code>)</code> from <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span> into <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. The element pointed-to by <span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span> is not moved.</div>
+<p>The behavior is undefined if
+</p>
+<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">get_allocator<span class="br0">(</span><span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> other.<span class="me1">get_allocator</span><span class="br0">(</span><span class="br0">)</span></span></span>,
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">pos</span></span> is neither <span class="t-c"><span class="mw-geshi cpp source-cpp">before_begin<span class="br0">(</span><span class="br0">)</span></span></span> nor a <a href="../../iterator.html#Dereferenceability_and_validity" title="cpp/iterator">dereferenceable iterator</a> in <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp">begin<span class="br0">(</span><span class="br0">)</span></span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">end<span class="br0">(</span><span class="br0">)</span></span></span><code>)</code>,
+</li><li> for overloads <span class="t-v">(1,2)</span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span> refer to the same object,
+</li><li> for overloads <span class="t-v">(3,4)</span>, the iterator following <span class="t-c"><span class="mw-geshi cpp source-cpp">it</span></span> is not a <a href="../../iterator.html#Dereferenceability_and_validity" title="cpp/iterator">dereferenceable iterator</a> into <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span>, or
+</li><li> for overloads <span class="t-v">(5,6)</span>,
+</li></ul>
+<dl><dd><ul><li> <code>(</code><span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span><code>)</code> is not a <a href="../../iterator.html#Ranges" title="cpp/iterator">valid range</a> in <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span>,
+</li><li> some iterators in <code>(</code><span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span><code>)</code> are not <a href="../../iterator.html#Dereferenceability_and_validity" title="cpp/iterator">dereferenceable</a>, or
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">pos</span></span> is in <code>(</code><span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span><code>)</code>.
+</li></ul>
+</dd></dl>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  pos
+<td> pos
 </td>
 <td> -
 </td>
-<td>  element after which the content will be inserted
+<td> element after which the content will be inserted
 </td></tr>
 <tr class="t-par">
-<td>  other
+<td> other
 </td>
 <td> -
 </td>
-<td>  another container to move the content from
+<td> another container to move the content from
 </td></tr>
 <tr class="t-par">
-<td>  it
+<td> it
 </td>
 <td> -
 </td>
-<td>  iterator preceding the iterator to the element to move from <code>other</code> to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>
+<td> iterator preceding the iterator to the element to move from <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span> to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>
 </td></tr>
 <tr class="t-par">
-<td>  first, last
+<td> first, last
 </td>
 <td> -
 </td>
-<td>  the range of elements to move from <code>other</code> to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>
+<td> the range of elements to move from <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span> to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>(none)
@@ -276,64 +309,109 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>Throws nothing.
 </p>
 <h3><span class="mw-headline" id="Complexity">Complexity</span></h3>
-<div class="t-li1"><span class="t-li">1)</span> Linear in the size of <code>other</code></div>
-<div class="t-li1"><span class="t-li">2)</span> Constant</div>
-<div class="t-li1"><span class="t-li">3)</span> Linear in <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../iterator/distance.html"><span class="kw669">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first, last<span class="br0">)</span></span></span></div>
+<div class="t-li1"><span class="t-li">1,2)</span> Linear in the size of <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span>.</div>
+<div class="t-li1"><span class="t-li">3,4)</span> Constant.</div>
+<div class="t-li1"><span class="t-li">5,6)</span> Linear in <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../iterator/distance.html"><span class="kw678">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first, last<span class="br0">)</span></span></span>.</div>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
-<div class="t-example"><p>Demonstrates the meaning of open interval (first, last) in the third form of splice_after(): the first element of l1 is not moved.</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
+<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;cassert&gt;</span>
 <span class="co2">#include &lt;forward_list&gt;</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../forward_list.html"><span class="kw1270">std::<span class="me2">forward_list</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> l1 <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>,<span class="nu0">2</span>,<span class="nu0">3</span>,<span class="nu0">4</span>,<span class="nu0">5</span><span class="br0">}</span><span class="sy4">;</span>
-    <a href="../forward_list.html"><span class="kw1270">std::<span class="me2">forward_list</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> l2 <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">10</span>,<span class="nu0">11</span>,<span class="nu0">12</span><span class="br0">}</span><span class="sy4">;</span>
+    <span class="kw1">using</span> F <span class="sy1">=</span> <a href="../forward_list.html"><span class="kw1281">std::<span class="me2">forward_list</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">;</span>
+ 
+    <span class="co1">// Demonstrate the meaning of open range (first, last)</span>
+    <span class="co1">// in overload (5): the first element of l1 is not moved.</span>
+    F l1 <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">4</span>, <span class="nu0">5</span><span class="br0">}</span><span class="sy4">;</span>
+    F l2 <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">10</span>, <span class="nu0">11</span>, <span class="nu0">12</span><span class="br0">}</span><span class="sy4">;</span>
  
     l2.<span class="me1">splice_after</span><span class="br0">(</span>l2.<span class="me1">cbegin</span><span class="br0">(</span><span class="br0">)</span>, l1, l1.<span class="me1">cbegin</span><span class="br0">(</span><span class="br0">)</span>, l1.<span class="me1">cend</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="co1">// not equivalent to l2.splice_after(l2.cbegin(), l1);</span>
+    <span class="co1">// Not equivalent to l2.splice_after(l2.cbegin(), l1);</span>
+    <span class="co1">// which is equivalent to</span>
+    <span class="co1">// l2.splice_after(l2.cbegin(), l1, l1.cbefore_begin(), l1.end());</span>
  
-    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> n <span class="sy4">:</span> l1<span class="br0">)</span>
-        <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
-    <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span><span class="br0">(</span>l1 <span class="sy1">==</span> F<span class="br0">{</span><span class="nu0">1</span><span class="br0">}</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span><span class="br0">(</span>l2 <span class="sy1">==</span> F<span class="br0">{</span><span class="nu0">10</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">4</span>, <span class="nu0">5</span>, <span class="nu0">11</span>, <span class="nu0">12</span><span class="br0">}</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
  
-    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> n <span class="sy4">:</span> l2<span class="br0">)</span>
-        <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
-    <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <span class="co1">// Overload (1)</span>
+    F x <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">4</span>, <span class="nu0">5</span><span class="br0">}</span><span class="sy4">;</span>
+    F y <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">10</span>, <span class="nu0">11</span>, <span class="nu0">12</span><span class="br0">}</span><span class="sy4">;</span>
+    x.<span class="me1">splice_after</span><span class="br0">(</span>x.<span class="me1">cbegin</span><span class="br0">(</span><span class="br0">)</span>, y<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span><span class="br0">(</span>x <span class="sy1">==</span> F<span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">10</span>, <span class="nu0">11</span>, <span class="nu0">12</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">4</span>, <span class="nu0">5</span><span class="br0">}</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span><span class="br0">(</span>y <span class="sy1">==</span> F<span class="br0">{</span><span class="br0">}</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="co1">// Overload (3)</span>
+    x <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">4</span>, <span class="nu0">5</span><span class="br0">}</span><span class="sy4">;</span>
+    y <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">10</span>, <span class="nu0">11</span>, <span class="nu0">12</span><span class="br0">}</span><span class="sy4">;</span>
+    x.<span class="me1">splice_after</span><span class="br0">(</span>x.<span class="me1">cbegin</span><span class="br0">(</span><span class="br0">)</span>, y, y.<span class="me1">cbegin</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span><span class="br0">(</span>x <span class="sy1">==</span> F<span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">11</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">4</span>, <span class="nu0">5</span><span class="br0">}</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span><span class="br0">(</span>y <span class="sy1">==</span> F<span class="br0">{</span><span class="nu0">10</span>, <span class="nu0">12</span><span class="br0">}</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="co1">// Overload (5)</span>
+    x <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">4</span>, <span class="nu0">5</span><span class="br0">}</span><span class="sy4">;</span>
+    y <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">10</span>, <span class="nu0">11</span>, <span class="nu0">12</span><span class="br0">}</span><span class="sy4">;</span>
+    x.<span class="me1">splice_after</span><span class="br0">(</span>x.<span class="me1">cbegin</span><span class="br0">(</span><span class="br0">)</span>, y, y.<span class="me1">cbegin</span><span class="br0">(</span><span class="br0">)</span>, y.<span class="me1">cend</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span><span class="br0">(</span>x <span class="sy1">==</span> F<span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">11</span>, <span class="nu0">12</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">4</span>, <span class="nu0">5</span><span class="br0">}</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span><span class="br0">(</span>y <span class="sy1">==</span> F<span class="br0">{</span><span class="nu0">10</span><span class="br0">}</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
-<p>Output:
-</p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">1
-10 2 3 4 5 11 12</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th>DR
+</th>
+<th>Applied to
+</th>
+<th>Behavior as published
+</th>
+<th>Correct behavior
+</th></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2045">LWG 2045</a>
+</td>
+<td>C++11
+</td>
+<td>O(1) splicing could not be guaranteed if<br><span class="t-c"><span class="mw-geshi cpp source-cpp">get_allocator<span class="br0">(</span><span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> other.<span class="me1">get_allocator</span><span class="br0">(</span><span class="br0">)</span></span></span>
+</td>
+<td>the behavior is<br>undefined in this case
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="merge.html" title="cpp/container/forward list/merge"> <span class="t-lines"><span>merge</span></span></a></div></div>
 </td>
-<td>   merges two sorted lists <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  merges two sorted lists <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="remove.html" title="cpp/container/forward list/remove"> <span class="t-lines"><span>remove</span><span>remove_if</span></span></a></div></div>
 </td>
-<td>   removes elements satisfying specific criteria <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  removes elements satisfying specific criteria <br> <span class="t-mark">(public member function)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="before_begin.html" title="cpp/container/forward list/before begin"> <span class="t-lines"><span>before_begin</span><span>cbefore_begin</span></span></a></div></div>
+</td>
+<td>  returns an iterator to the element before beginning <br> <span class="t-mark">(public member function)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4938/1000000
-Preprocessor generated node count: 9143/1000000
-Post‐expand include size: 107366/2097152 bytes
-Template argument size: 22144/2097152 bytes
+Preprocessor visited node count: 7678/1000000
+Preprocessor generated node count: 11676/1000000
+Post‐expand include size: 176219/4194304 bytes
+Template argument size: 37406/4194304 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2448-0!*!0!!en!*!* and timestamp 20190601205847 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2448-0!*!0!!en!*!* and timestamp 20241020182652 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/forward_list/splice_after&amp;oldid=109409">https://en.cppreference.com/mwiki/index.php?title=cpp/container/forward_list/splice_after&amp;oldid=109409</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/forward_list/splice_after&amp;oldid=159713">https://en.cppreference.com/mwiki/index.php?title=cpp/container/forward_list/splice_after&amp;oldid=159713</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -346,21 +424,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/container/forward_list/splice_after">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 27 September 2023, at 10:51.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../../common/skin_scripts.js"></script>
+<script src="../../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 1.650 secs. -->
+<script src="../../.././common/site_scripts.js"></script>
+<!-- Served in 3.762 secs. -->
 	</body>
-<!-- Cached 20190601205847 -->
+<!-- Cached 20241020182652 -->
 </html>

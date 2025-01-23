@@ -4,20 +4,20 @@
 <title>Order of evaluation - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../common/favicon.ico">
-<link rel="stylesheet" href="../../common/ext.css">
+<link rel="shortcut icon" href="../.././common/favicon.ico">
+<link rel="stylesheet" href="../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../common/site_modules.css">
+<link rel="stylesheet" href="../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../common/startup_scripts.js"></script>
+<script src="../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/eval_order","wgTitle":"c/language/eval order","wgCurRevisionId":96894,"wgArticleId":8452,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/eval_order","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/eval_order","wgTitle":"c/language/eval order","wgCurRevisionId":159432,"wgArticleId":8452,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/eval_order","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -84,7 +84,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading">Order of evaluation</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading">Order of evaluation</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -96,34 +104,35 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../language.html" title="c/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="c/header"> Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../types.html" title="c/types"> Type support</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../program.html" title="c/program"> Program utilities</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../variadic.html" title="c/variadic"> Variadic function support</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="c/error"> Error handling</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../memory.html" title="c/memory"> Dynamic memory management</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../chrono.html" title="c/chrono"> Date and time utilities</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../string.html" title="c/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="c/algorithm"> Algorithms</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="c/numeric"> Numerics</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../io.html" title="c/io"> Input/output support</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="c/locale"> Localization support</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="c/atomic"> Atomic operations</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="c/thread"> Thread support</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="c/experimental"> Technical Specifications</a> </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="c/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../language.html" title="c/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../header.html" title="c/header">Headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../types.html" title="c/types">Type support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../program.html" title="c/program">Program utilities</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../variadic.html" title="c/variadic">Variadic function support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../error.html" title="c/error">Error handling</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../memory.html" title="c/memory">Dynamic memory management</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../string.html" title="c/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="c/algorithm">Algorithms</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="c/numeric">Numerics</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../chrono.html" title="c/chrono">Date and time utilities</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../io.html" title="c/io">Input/output support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="c/locale">Localization support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="c/thread">Concurrency support</a> <span class="t-mark-rev t-since-c11">(C11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="c/experimental">Technical Specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../index.html" title="c/symbol index">Symbol index</a></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../language.html" title="c/language"> C language</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"> <a href="basic_concepts.html" title="c/language/basic concepts">Basic concepts</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="../keyword.html" title="c/keyword"> Keywords</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="../preprocessor.html" title="c/preprocessor"> Preprocessor</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="statements.html" title="c/language/statements"> Statements</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="expressions.html" title="c/language/expressions"> Expressions</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="initialization.html" title="c/language/initialization"> Initialization</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="declarations.html" title="c/language/declarations"> Declarations</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="functions.html" title="c/language/functions"> Functions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> Miscellaneous</td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="history.html" title="c/language/history"> History of C</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="../experimental.html" title="c/experimental">Technical Specifications</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="basic_concepts.html" title="c/language/basic concepts">Basic concepts</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../keyword.html" title="c/keyword"> Keywords</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../preprocessor.html" title="c/preprocessor"> Preprocessor</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="statements.html" title="c/language/statements"> Statements</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="expressions.html" title="c/language/expressions"> Expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="initialization.html" title="c/language/initialization"> Initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="declarations.html" title="c/language/declarations"> Declarations</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="functions.html" title="c/language/functions"> Functions</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"> Miscellaneous</td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="history.html" title="c/language/history"> History of C</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="c/experimental">Technical Specifications</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="expressions.html" title="c/language/expressions"> Expressions</a><div class="t-navbar-menu"><div><div style="display:inline-block">
 <div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h2"><td colspan="5"> General </td></tr>
@@ -131,13 +140,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <strong class="selflink"> evaluation order and sequence points</strong> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="constant_expression.html" title="c/language/constant expression">constant expressions</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="conversion.html" title="c/language/conversion">implicit conversions</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="generic.html" title="c/language/generic">generic selection</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="generic.html" title="c/language/generic">generic selection</a> <span class="t-mark-rev t-since-c11">(C11)</span></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="expressions.html#Constants_and_literals" title="c/language/expressions">constants and literals</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="integer_constant.html" title="c/language/integer constant"> integer constant</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="floating_constant.html" title="c/language/floating constant"> floating constant</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="character_constant.html" title="c/language/character constant"> character constant</a> </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="bool_constant.html" title="c/language/bool constant"><span class="t-lines"><span>true/false</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="nullptr.html" title="c/language/nullptr"><span class="t-lines"><span>nullptr</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="string_literal.html" title="c/language/string literal"> string literal</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="compound_literal.html" title="c/language/compound literal"> compound literal</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="compound_literal.html" title="c/language/compound literal"> compound literal</a> <span class="t-mark-rev t-since-c99">(C99)</span></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="expressions.html#Operators" title="c/language/expressions">operators</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="operator_precedence.html" title="c/language/operator precedence">operator precedence</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="operator_member_access.html" title="c/language/operator member access">member access and indirection</a> </td></tr>
@@ -160,16 +171,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>There are two kinds of evaluations performed by the compiler for each expression or subexpression (both of which are optional):
 </p>
 <ul><li> <i>value computation</i>: calculation of the value that is returned by the expression. This may involve determination of the identity of the object (<a href="value_category.html" title="c/language/value category">lvalue evaluation</a>) or reading the value previously assigned to an object (rvalue evaluation) 
-</li><li> <i>side effect</i>: access (read or write) to an object designated by a <a href="volatile.html" title="c/language/volatile">volatile</a> lvalue, modification (writing) to an object<span class="t-rev-inl t-since-c11"><span>, atomic synchronization</span> <span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span>, modifying a file, modifying the floating-point environment (if supported), or calling a function that does any of those operations.
+</li><li> <i>side effect</i>: access (read or write) to an object designated by a <a href="volatile.html" title="c/language/volatile">volatile</a> lvalue, modification (writing) to an object<span class="t-rev-inl t-since-c11"><span>, atomic synchronization</span><span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span>, modifying a file, modifying the floating-point environment (if supported), or calling a function that does any of those operations.
 </li></ul>
-<p>If no side effects are produced by an expression and the compiler can determine that the value is not used, the expression <a href="https://en.cppreference.com/mwiki/index.php?title=c/language/as-if&amp;action=edit&amp;redlink=1" class="new" title="c/language/as-if (page does not exist)">may not be evaluated</a>.
+<p>If no side effects are produced by an expression and the compiler can determine that the value is not used, the expression <a href="as_if.html" title="c/language/as if">may not be evaluated</a>.
 </p>
 <h4><span class="mw-headline" id="Ordering">Ordering</span></h4>
 <p>"sequenced-before" is an asymmetric, transitive, pair-wise relationship between evaluations within the same thread (it may extend across threads if atomic types and memory barriers are involved).
 </p>
 <ul><li> If a <a href="https://en.wikipedia.org/wiki/Sequence_point" class="extiw" title="enwiki:Sequence point"><i>sequence point</i></a> is present between the subexpressions E1 and E2, then both value computation and side effects of E1 are <i>sequenced-before</i> every value computation and side effect of E2
 </li></ul>
- <table class="t-rev-begin">
+<table class="t-rev-begin">
 <tr class="t-rev t-since-c11"><td>
 <ul><li> If evaluation A is sequenced before evaluation B, then evaluation of A will be complete before evaluation of B begins.
 </li><li> If A is not sequenced before B and B is sequenced before A, then evaluation of B will be complete before evaluation of A begins.
@@ -185,8 +196,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="t-li1"><span class="t-li">1)</span> There is a sequence point after the evaluation of all function arguments and of the function designator, and before the actual function call.</div>
 <div class="t-li1"><span class="t-li">2)</span> There is a sequence point after evaluation of the first (left) operand and before evaluation of the second (right) operand of the following binary operators: <code>&amp;&amp;</code> (logical AND), <code>||</code> (logical OR), and <code>,</code> (comma).</div>
 <div class="t-li1"><span class="t-li">3)</span> There is a sequence point after evaluation of the first (left) operand and before evaluation of the second or third operand (whichever is evaluated) of the conditional operator <code>?:</code></div>
-<div class="t-li1"><span class="t-li">4)</span> There is a sequence point after the evaluation of a full expression (an expression that is not a subexpression: typically something that ends with a semicolon or a controlling statement of if/switch/while/do) and before the next full expression.</div>
- <table class="t-rev-begin">
+<div class="t-li1"><span class="t-li">4)</span> There is a sequence point after the evaluation of a full expression (an expression that is not a subexpression: typically something that ends with a semicolon or a <a href="statements.html" title="c/language/statements">controlling statement</a> of <code>if</code>/<code>switch</code>/<code>while</code>/<code>do</code>) and before the next full expression.</div>
+<table class="t-rev-begin">
 <tr class="t-rev t-since-c99"><td>
 <div class="t-li1"><span class="t-li">5)</span> There is a sequence point at the end of a full declarator.</div>
 <div class="t-li1"><span class="t-li">6)</span> There is a sequence point immediately before the return of a library function.</div>
@@ -219,23 +230,27 @@ a<span class="br0">[</span>i<span class="br0">]</span> <span class="sy1">=</span
 </p>
 <table class="t-dsc-begin">
 
+<tr class="t-dsc">
+<td colspan="2"> <div class="t-dsc-see"><span><a href="../../cpp/language/eval_order.html" title="cpp/language/eval order">C++ documentation</a></span> for <span class=""><span>Order of evaluation</span></span></div>
+</td></tr>
+
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 1070/1000000
-Preprocessor generated node count: 4372/1000000
-Post‐expand include size: 43492/2097152 bytes
-Template argument size: 7294/2097152 bytes
-Highest expansion depth: 15/40
+Preprocessor visited node count: 1433/1000000
+Preprocessor generated node count: 5021/1000000
+Post‐expand include size: 49980/4194304 bytes
+Template argument size: 8351/4194304 bytes
+Highest expansion depth: 16/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:8452-0!*!0!!en!*!* and timestamp 20190407035428 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:8452-0!*!0!!en!*!* and timestamp 20240801013421 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/eval_order&amp;oldid=96894">https://en.cppreference.com/mwiki/index.php?title=c/language/eval_order&amp;oldid=96894</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/eval_order&amp;oldid=159432">https://en.cppreference.com/mwiki/index.php?title=c/language/eval_order&amp;oldid=159432</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -248,21 +263,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/c/language/eval_order">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 20 September 2023, at 20:09.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../common/skin_scripts.js"></script>
+<script src="../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 0.310 secs. -->
+<script src="../.././common/site_scripts.js"></script>
+<!-- Served in 0.274 secs. -->
 	</body>
-<!-- Cached 20190407035428 -->
+<!-- Cached 20240801013422 -->
 </html>

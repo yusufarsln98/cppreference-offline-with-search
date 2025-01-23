@@ -2,152 +2,152 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Load your search data source -->
-  <script src="./common/index/search_index.js"></script>
+        <!-- Load your search data source -->
+        <script src="./common/search_index.js"></script>
 
-  <!-- Load search implementation -->
-  <script src="./common/search.js"></script>
-  <!-- Configuration variables - Customize these for your application -->
-  <script>
-    const CONFIG = {
-      title: "C++ Reference",
-      description: "Search through the comprehensive collection.",
-      searchPlaceholder: "Enter a keyword...",
-      searchButtonText: "Search",
-      homeButtonText: "Go to Homepage",
-      homeButtonUrl: "./home.html",
-      // Theme colors
-      colors: {
-        primary: "#4CAF50",
-        secondary: "#19007f",
-        gradient: {
-          from: "#1e3c72",
-          to: "#2a5298"
-        }
-      },
-      // Search settings
-      search: {
-        minQueryLength: 2,
-        loadingDelay: 100, // milliseconds
-        loadingText: "Searching through documents..."
-      },
-    };
-  </script>
-  <title id="pageTitle"></title>
-  <link rel="stylesheet" href="./common/search.css">
+        <!-- Load search implementation -->
+        <script src="./common/search.js"></script>
+        <!-- Configuration variables - Customize these for your application -->
+        <script>
+                const CONFIG = {
+                        title: "C++ Reference",
+                        description: "Search through the comprehensive collection.",
+                        searchPlaceholder: "Enter your search query...",
+                        searchButtonText: "Search",
+                        homeButtonText: "Go to Homepage",
+                        homeButtonUrl: "./Main_Page.html",
+                        // Theme colors
+                        colors: {
+                                primary: "#4CAF50",
+                                secondary: "#2196F3",
+                                gradient: {
+                                        from: "#1e3c72",
+                                        to: "#2a5298"
+                                }
+                        },
+                        // Search settings
+                        search: {
+                                minQueryLength: 2,
+                                loadingDelay: 50, // milliseconds
+                                loadingText: "Searching through documents..."
+                        },
+                };
+        </script>
+        <title id="pageTitle"></title>
+        <link rel="stylesheet" href="./common/styles.css">
 </head>
 
 <body>
-  <!-- Initial loading screen -->
-  <div class="initial-loading" id="initialLoading">
-    <div class="initial-loading-content">
-      <h2>Loading...</h2>
-      <div class="loading"></div>
-    </div>
-  </div>
+        <!-- Initial loading screen -->
+        <div class="initial-loading" id="initialLoading">
+                <div class="initial-loading-content">
+                        <h2>Loading...</h2>
+                        <div class="loading"></div>
+                </div>
+        </div>
 
-  <div class="container">
-    <h1 id="mainTitle"></h1>
-    <div class="description" id="mainDescription"></div>
-    <div class="search-box">
-      <input type="text" id="searchInput">
-    </div>
-    <div class="buttons">
-      <button class="btn btn-primary" id="searchButton"></button>
-      <a href="#" class="btn btn-secondary" id="homeButton"></a>
-    </div>
-    <div class="loading" id="loadingIndicator"></div>
-    <div class="results-count" id="resultsCount"></div>
-    <div id="searchResults"></div>
-  </div>
+        <div class="container">
+                <h1 id="mainTitle"></h1>
+                <div class="description" id="mainDescription"></div>
+                <div class="search-box">
+                        <input type="text" id="searchInput">
+                </div>
+                <div class="buttons">
+                        <button class="btn btn-primary" id="searchButton"></button>
+                        <a href="#" class="btn btn-secondary" id="homeButton"></a>
+                </div>
+                <div class="loading" id="loadingIndicator"></div>
+                <div class="results-count" id="resultsCount"></div>
+                <div id="searchResults"></div>
+        </div>
 
 
-  <script>
-    // Initialize the interface with configuration
-    document.addEventListener('DOMContentLoaded', function () {
-      // Apply configuration
-      document.getElementById('pageTitle').textContent = CONFIG.title;
-      document.getElementById('mainTitle').textContent = CONFIG.title;
-      document.getElementById('mainDescription').textContent = CONFIG.description;
-      document.getElementById('searchInput').placeholder = CONFIG.searchPlaceholder;
-      document.getElementById('searchButton').textContent = CONFIG.searchButtonText;
-      document.getElementById('homeButton').textContent = CONFIG.homeButtonText;
-      document.getElementById('homeButton').href = CONFIG.homeButtonUrl;
-      document.getElementById('loadingIndicator').textContent = CONFIG.search.loadingText;
+        <script>
+                // Initialize the interface with configuration
+                document.addEventListener('DOMContentLoaded', function () {
+                        // Apply configuration
+                        document.getElementById('pageTitle').textContent = CONFIG.title;
+                        document.getElementById('mainTitle').textContent = CONFIG.title;
+                        document.getElementById('mainDescription').textContent = CONFIG.description;
+                        document.getElementById('searchInput').placeholder = CONFIG.searchPlaceholder;
+                        document.getElementById('searchButton').textContent = CONFIG.searchButtonText;
+                        document.getElementById('homeButton').textContent = CONFIG.homeButtonText;
+                        document.getElementById('homeButton').href = CONFIG.homeButtonUrl;
+                        document.getElementById('loadingIndicator').textContent = CONFIG.search.loadingText;
 
-      // Apply theme colors
-      document.documentElement.style.setProperty('--primary-color', CONFIG.colors.primary);
-      document.documentElement.style.setProperty('--secondary-color', CONFIG.colors.secondary);
-      document.documentElement.style.setProperty('--gradient-from', CONFIG.colors.gradient.from);
-      document.documentElement.style.setProperty('--gradient-to', CONFIG.colors.gradient.to);
+                        // Apply theme colors
+                        document.documentElement.style.setProperty('--primary-color', CONFIG.colors.primary);
+                        document.documentElement.style.setProperty('--secondary-color', CONFIG.colors.secondary);
+                        document.documentElement.style.setProperty('--gradient-from', CONFIG.colors.gradient.from);
+                        document.documentElement.style.setProperty('--gradient-to', CONFIG.colors.gradient.to);
 
-      setTimeout(() => {
-        document.getElementById('initialLoading').classList.add('hide');
-        document.querySelector('.container').classList.add('show');
-      }, CONFIG.search.loadingDelay);
-    });
+                        setTimeout(() => {
+                                document.getElementById('initialLoading').classList.add('hide');
+                                document.querySelector('.container').classList.add('show');
+                        }, CONFIG.search.loadingDelay);
+                });
 
-    // Search functionality
-    const searchInput = document.getElementById('searchInput');
-    const searchButton = document.getElementById('searchButton');
-    const resultsContainer = document.getElementById('searchResults');
-    const loadingIndicator = document.getElementById('loadingIndicator');
-    const resultsCount = document.getElementById('resultsCount');
+                // Search functionality
+                const searchInput = document.getElementById('searchInput');
+                const searchButton = document.getElementById('searchButton');
+                const resultsContainer = document.getElementById('searchResults');
+                const loadingIndicator = document.getElementById('loadingIndicator');
+                const resultsCount = document.getElementById('resultsCount');
 
-    function displayResults(results) {
-      resultsContainer.innerHTML = '';
+                function displayResults(results) {
+                        resultsContainer.innerHTML = '';
 
-      if (results.length === 0) {
-        resultsContainer.innerHTML = '<div class="result-item">No results found</div>';
-        resultsCount.style.display = 'none';
-        return;
-      }
+                        if (results.length === 0) {
+                                resultsContainer.innerHTML = '<div class="result-item">No results found</div>';
+                                resultsCount.style.display = 'none';
+                                return;
+                        }
 
-      resultsCount.style.display = 'block';
-      resultsCount.innerHTML = `Found <strong>${results.length}</strong> ${results.length === 1 ? 'result' : 'results'} for "<strong>${searchInput.value}</strong>"`;
+                        resultsCount.style.display = 'block';
+                        resultsCount.innerHTML = `Found <strong>${results.length}</strong> ${results.length === 1 ? 'result' : 'results'} for "<strong>${searchInput.value}</strong>"`;
 
-      results.forEach(result => {
-        const resultElement = document.createElement('div');
-        resultElement.className = 'result-item';
-        resultElement.innerHTML = `
+                        results.forEach(result => {
+                                const resultElement = document.createElement('div');
+                                resultElement.className = 'result-item';
+                                resultElement.innerHTML = `
                     <div class="result-title">${result.title || 'Untitled'}</div>
                     <div class="result-snippet">${result.snippet || ''}</div>
                     <div class="result-path">${result.path || ''}</div>
                 `;
-        resultElement.addEventListener('click', () => {
-          if (result.path) window.location.href = result.path;
-        });
-        resultsContainer.appendChild(resultElement);
-      });
-    }
+                                resultElement.addEventListener('click', () => {
+                                        if (result.path) window.location.href = result.path;
+                                });
+                                resultsContainer.appendChild(resultElement);
+                        });
+                }
 
-    function performSearch() {
-      const query = searchInput.value;
-      if (!query.trim() || query.length < CONFIG.search.minQueryLength) {
-        alert(`Please enter at least ${CONFIG.search.minQueryLength} characters to search`);
-        return;
-      }
+                function performSearch() {
+                        const query = searchInput.value;
+                        if (!query.trim() || query.length < CONFIG.search.minQueryLength) {
+                                alert(`Please enter at least ${CONFIG.search.minQueryLength} characters to search`);
+                                return;
+                        }
 
-      loadingIndicator.style.display = 'block';
-      resultsContainer.innerHTML = '';
+                        loadingIndicator.style.display = 'block';
+                        resultsContainer.innerHTML = '';
 
-      setTimeout(() => {
-        const results = searchContent(query);
-        loadingIndicator.style.display = 'none';
-        displayResults(results);
-      }, CONFIG.search.loadingDelay);
-    }
+                        setTimeout(() => {
+                                const results = searchContent(query);
+                                loadingIndicator.style.display = 'none';
+                                displayResults(results);
+                        }, CONFIG.search.loadingDelay);
+                }
 
-    searchButton.addEventListener('click', performSearch);
-    searchInput.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') {
-        performSearch();
-      }
-    });
-  </script>
+                searchButton.addEventListener('click', performSearch);
+                searchInput.addEventListener('keypress', (e) => {
+                        if (e.key === 'Enter') {
+                                performSearch();
+                        }
+                });
+        </script>
 </body>
 
 </html>

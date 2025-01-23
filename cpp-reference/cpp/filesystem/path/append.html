@@ -4,20 +4,20 @@
 <title>std::filesystem::path::append, std::filesystem::path::operator/= - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../../common/favicon.ico">
-<link rel="stylesheet" href="../../../common/ext.css">
+<link rel="shortcut icon" href="../../.././common/favicon.ico">
+<link rel="stylesheet" href="../../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../../common/site_modules.css">
+<link rel="stylesheet" href="../../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../../common/startup_scripts.js"></script>
+<script src="../../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/filesystem/path/append","wgTitle":"cpp/filesystem/path/append","wgCurRevisionId":106641,"wgArticleId":15305,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/filesystem/path/append","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/filesystem/path/append","wgTitle":"cpp/filesystem/path/append","wgCurRevisionId":158013,"wgArticleId":15305,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/filesystem/path/append","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -108,7 +108,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::filesystem::path::</span>append, <span style="font-size:0.7em; line-height:130%">std::filesystem::path::</span>operator/=</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::filesystem::path::</span>append, <span style="font-size:0.7em; line-height:130%">std::filesystem::path::</span>operator/=</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -119,36 +127,42 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../../cpp.html" title="cpp">cpp</a>‎ | <a href="../../filesystem.html" title="cpp/filesystem">filesystem</a>‎ | <a href="../path.html" title="cpp/filesystem/path">path</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"> Classes</td></tr>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../filesystem.html" title="cpp/filesystem">Filesystem library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5">Classes</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../path.html" title="cpp/filesystem/path"><span class="t-lines"><span>filesystem::path</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../filesystem_error.html" title="cpp/filesystem/filesystem error"><span class="t-lines"><span>filesystem::filesystem_error</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../directory_entry.html" title="cpp/filesystem/directory entry"><span class="t-lines"><span>filesystem::directory_entry</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../directory_iterator.html" title="cpp/filesystem/directory iterator"><span class="t-lines"><span>filesystem::directory_iterator</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../recursive_directory_iterator.html" title="cpp/filesystem/recursive directory iterator"><span class="t-lines"><span>filesystem::recursive_directory_iterator</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../recursive_directory_iterator.html" title="cpp/filesystem/recursive directory iterator"><span class="t-lines"><span>filesystem::recursive_directory_iterator</span></span></a></div><div><span class="t-lines"><span>    </span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../file_status.html" title="cpp/filesystem/file status"><span class="t-lines"><span>filesystem::file_status</span></span></a></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../space_info.html" title="cpp/filesystem/space info"><span class="t-lines"><span>filesystem::space_info</span></span></a></div></div></td></tr>
@@ -159,7 +173,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../directory_options.html" title="cpp/filesystem/directory options"><span class="t-lines"><span>filesystem::directory_options</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../file_time_type.html" title="cpp/filesystem/file time type"><span class="t-lines"><span>filesystem::file_time_type</span></span></a></div></div></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Functions</td></tr>
+<tr class="t-nv-h2"><td colspan="5">Functions</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../absolute.html" title="cpp/filesystem/absolute"><span class="t-lines"><span>filesystem::absolute</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../canonical.html" title="cpp/filesystem/canonical"><span class="t-lines"><span>filesystem::canonical</span><span>filesystem::weakly_canonical</span></span></a></div></div></td></tr>
@@ -201,21 +215,21 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../is_symlink.html" title="cpp/filesystem/is symlink"><span class="t-lines"><span>filesystem::is_symlink</span></span></a></div></div></td></tr>
 </table></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../path.html" title="cpp/filesystem/path"><tt>std::filesystem::path</tt></a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"> Constants</td></tr>
+<tr class="t-nv-h1"><td colspan="5">Constants</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="format.html" title="cpp/filesystem/path/format"><span class="t-lines"><span>path::native_format</span><span>path::generic_format</span><span>path::auto_format</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Member functions</td></tr>
+<tr class="t-nv-h1"><td colspan="5">Member functions</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="path.html" title="cpp/filesystem/path/path"><span class="t-lines"><span>path::path</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="%7Epath.html" title="cpp/filesystem/path/~path"><span class="t-lines"><span>path::~path</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="~path.html" title="cpp/filesystem/path/~path"><span class="t-lines"><span>path::~path</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator%3D.html" title="cpp/filesystem/path/operator="><span class="t-lines"><span>path::operator=</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="assign.html" title="cpp/filesystem/path/assign"><span class="t-lines"><span>path::assign</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>path::append</span><span>path::operator /=</span></span></strong></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="concat.html" title="cpp/filesystem/path/concat"><span class="t-lines"><span>path::concat</span><span>path::operator +=</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>path::append</span><span>path::operator/=</span></span></strong></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="concat.html" title="cpp/filesystem/path/concat"><span class="t-lines"><span>path::concat</span><span>path::operator+=</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="clear.html" title="cpp/filesystem/path/clear"><span class="t-lines"><span>path::clear</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="make_preferred.html" title="cpp/filesystem/path/make preferred"><span class="t-lines"><span>path::make_preferred</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="remove_filename.html" title="cpp/filesystem/path/remove filename"><span class="t-lines"><span>path::remove_filename</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="replace_filename.html" title="cpp/filesystem/path/replace filename"><span class="t-lines"><span>path::replace_filename</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="replace_extension.html" title="cpp/filesystem/path/replace extension"><span class="t-lines"><span>path::replace_extension</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="replace_extension.html" title="cpp/filesystem/path/replace extension"><span class="t-lines"><span>path::replace_extension</span></span></a></div><div><span class="t-lines"><span>    </span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap.html" title="cpp/filesystem/path/swap"><span class="t-lines"><span>path::swap</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="compare.html" title="cpp/filesystem/path/compare"><span class="t-lines"><span>path::compare</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="begin.html" title="cpp/filesystem/path/begin"><span class="t-lines"><span>path::begin</span><span>path::end</span></span></a></div></div></td></tr>
@@ -240,17 +254,23 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="has_path.html" title="cpp/filesystem/path/has path"><span class="t-lines"><span>path::has_root_path</span><span>path::has_root_name</span><span>path::has_root_directory</span><span>path::has_relative_path</span><span>path::has_parent_path</span><span>path::has_filename</span><span>path::has_stem</span><span>path::has_extension</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="is_absrel.html" title="cpp/filesystem/path/is absrel"><span class="t-lines"><span>path::is_absolute</span><span>path::is_relative</span></span></a></div></div></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Non-member functions</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap2.html" title="cpp/filesystem/path/swap2"><span class="t-lines"><span>swap(path)</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="hash_value.html" title="cpp/filesystem/path/hash value"><span class="t-lines"><span>hash_value</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_cmp.html" title="cpp/filesystem/path/operator cmp"><span class="t-lines"><span>operator==</span><span>operator!=</span><span>operator&lt;</span><span>operator&lt;=</span><span>operator&gt;</span><span>operator&gt;=</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Non-member functions</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_cmp.html" title="cpp/filesystem/path/operator cmp"><span class="t-lines"><span>operator==</span><span>operator!=</span><span>operator&lt;</span><span>operator&lt;=</span><span>operator&gt;</span><span>operator&gt;=</span><span>operator&lt;=&gt;</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_slash.html" title="cpp/filesystem/path/operator slash"><span class="t-lines"><span>operator/</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_ltltgtgt.html" title="cpp/filesystem/path/operator ltltgtgt"><span class="t-lines"><span>operator&lt;&lt;</span><span>operator&gt;&gt;</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap2.html" title="cpp/filesystem/path/swap2"><span class="t-lines"><span>swap<span class="t-dsc-small">(std::filesystem::path)</span></span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="hash_value.html" title="cpp/filesystem/path/hash value"><span class="t-lines"><span>hash_value</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="u8path.html" title="cpp/filesystem/path/u8path"><span class="t-lines"><span>u8path</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Helper Classes</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="hash.html" title="cpp/filesystem/path/hash"><span class="t-lines"><span>hash<span class="t-dsc-small">&lt;std::filesystem::path&gt;</span></span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="formatter.html" title="cpp/filesystem/path/formatter"><span class="t-lines"><span>formatter<span class="t-dsc-small">&lt;std::filesystem::path&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dcl t-since-cxx17">
-<td> <div><span class="mw-geshi cpp source-cpp">path<span class="sy3">&amp;</span> operator<span class="sy2">/</span><span class="sy1">=</span><span class="br0">(</span><span class="kw4">const</span> path<span class="sy3">&amp;</span> p<span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi cpp source-cpp">path<span class="sy3">&amp;</span> operator<span class="sy2">/</span><span class="sy1">=</span><span class="br0">(</span> <span class="kw4">const</span> path<span class="sy3">&amp;</span> p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (1) </td>
 <td> <span class="t-mark-rev t-since-cxx17">(since C++17)</span> </td>
 </tr>
@@ -274,11 +294,11 @@ path<span class="sy3">&amp;</span> append<span class="br0">(</span> InputIt firs
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<div class="t-li1"><span class="t-li">1)</span> If <span class="t-c"><span class="mw-geshi cpp source-cpp">p.<span class="me1">is_absolute</span><span class="br0">(</span><span class="br0">)</span> <span class="sy3">||</span> <span class="br0">(</span>p.<span class="me1">has_root_name</span><span class="br0">(</span><span class="br0">)</span> <span class="sy3">&amp;&amp;</span> p.<span class="me1">root_name</span><span class="br0">(</span><span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> root_name<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span></span></span>, then replaces the current path with p as if by <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">=</span><span class="br0">(</span>p<span class="br0">)</span></span></span> and finishes.</div>
-<div class="t-li1"><span class="t-li"></span> * Otherwise, if <span class="t-c"><span class="mw-geshi cpp source-cpp">p.<span class="me1">has_root_directory</span><span class="br0">(</span><span class="br0">)</span></span></span>, then removes any root directory and the entire relative path from the generic format pathname of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span></div>
-<div class="t-li1"><span class="t-li"></span> * Otherwise, if <span class="t-c"><span class="mw-geshi cpp source-cpp">has_filename<span class="br0">(</span><span class="br0">)</span> <span class="sy3">||</span> <span class="br0">(</span><span class="sy3">!</span>has_root_directory<span class="br0">(</span><span class="br0">)</span> <span class="sy3">&amp;&amp;</span> is_absolute<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span></span></span>, then appends <code>path::preferred_separator</code> to the generic format of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span></div>
-<div class="t-li1"><span class="t-li"></span> * Either way, then appends the native format pathname of <code>p</code>, omitting any <span class="t-spar">root-name</span> from its generic format, to the native format of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>.</div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// where "//host" is a root-name</span>
+<div class="t-li1"><span class="t-li">1)</span> If <span class="t-c"><span class="mw-geshi cpp source-cpp">p.<span class="me1">is_absolute</span><span class="br0">(</span><span class="br0">)</span> <span class="sy3">||</span> <span class="br0">(</span>p.<span class="me1">has_root_name</span><span class="br0">(</span><span class="br0">)</span> <span class="sy3">&amp;&amp;</span> p.<span class="me1">root_name</span><span class="br0">(</span><span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> root_name<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span></span></span>, then replaces the current path with <span class="t-c"><span class="mw-geshi cpp source-cpp">p</span></span> as if by <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">=</span><span class="br0">(</span>p<span class="br0">)</span></span></span> and finishes.</div>
+<div class="t-li1"><span class="t-li"></span> * Otherwise, if <span class="t-c"><span class="mw-geshi cpp source-cpp">p.<span class="me1">has_root_directory</span><span class="br0">(</span><span class="br0">)</span></span></span>, then removes any root directory and the entire relative path from the generic format pathname of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>.</div>
+<div class="t-li1"><span class="t-li"></span> * Otherwise, if <span class="t-c"><span class="mw-geshi cpp source-cpp">has_filename<span class="br0">(</span><span class="br0">)</span> <span class="sy3">||</span> <span class="br0">(</span><span class="sy3">!</span>has_root_directory<span class="br0">(</span><span class="br0">)</span> <span class="sy3">&amp;&amp;</span> is_absolute<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span></span></span>, then appends <code>path::preferred_separator</code> to the generic format of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>.</div>
+<div class="t-li1"><span class="t-li"></span> * Either way, then appends the native format pathname of <span class="t-c"><span class="mw-geshi cpp source-cpp">p</span></span>, omitting any <span class="t-spar">root-name</span> from its generic format, to the native format of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>.</div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// Where "//host" is a root-name</span>
 path<span class="br0">(</span><span class="st0">"//host"</span><span class="br0">)</span>  <span class="sy2">/</span> <span class="st0">"foo"</span> <span class="co1">// the result is      "//host/foo" (appends with separator)</span>
 path<span class="br0">(</span><span class="st0">"//host/"</span><span class="br0">)</span> <span class="sy2">/</span> <span class="st0">"foo"</span> <span class="co1">// the result is also "//host/foo" (appends without separator)</span>
  
@@ -293,31 +313,36 @@ path<span class="br0">(</span><span class="st0">"C:"</span><span class="br0">)</
 path<span class="br0">(</span><span class="st0">"C:foo"</span><span class="br0">)</span> <span class="sy2">/</span> <span class="st0">"/bar"</span><span class="sy4">;</span>  <span class="co1">// yields "C:/bar"        (removes relative path, then appends)</span>
 path<span class="br0">(</span><span class="st0">"C:foo"</span><span class="br0">)</span> <span class="sy2">/</span> <span class="st0">"C:bar"</span><span class="sy4">;</span> <span class="co1">// yields "C:foo/bar"     (appends, omitting p's root-name)</span></pre></div></div>
 <div class="t-li1"><span class="t-li">2,3)</span> Same as <span class="t-v">(1)</span>, but accepts any <span class="t-lc"><a href="../../string/basic_string.html" title="cpp/string/basic string">std::basic_string</a></span>, <span class="t-lc"><a href="../../string/basic_string_view.html" title="cpp/string/basic string view">std::basic_string_view</a></span>, null-terminated multicharacter string, or an input iterator pointing to a null-terminated multicharacter sequence. Equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">return</span> operator<span class="sy2">/</span><span class="sy1">=</span><span class="br0">(</span>path<span class="br0">(</span>source<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span></span></span>.</div>
-<div class="t-li1"><span class="t-li">4)</span> Same as <span class="t-v">(1)</span>, but accepts any iterator pair that designates a multicharacter string. Equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">return</span> operator<span class="sy2">/</span><span class="sy1">=</span><span class="br0">(</span>path<span class="br0">(</span>first, last<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span></span></span></div>
+<div class="t-li1"><span class="t-li">4)</span> Same as <span class="t-v">(1)</span>, but accepts any iterator pair that designates a multicharacter string. Equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">return</span> operator<span class="sy2">/</span><span class="sy1">=</span><span class="br0">(</span>path<span class="br0">(</span>first, last<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span></span></span>.</div>
+<p><span class="t-v">(2)</span> and <span class="t-v">(3)</span> participate in overload resolution only if <code>Source</code> and <code>path</code> are not the same type, and either:
+</p>
+<ul><li> <code>Source</code> is a specialization of <span class="t-lc"><a href="../../string/basic_string.html" title="cpp/string/basic string">std::basic_string</a></span> or <span class="t-lc"><a href="../../string/basic_string_view.html" title="cpp/string/basic string view">std::basic_string_view</a></span>, or
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../iterator/iterator_traits.html"><span class="kw656">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span><a href="../../types/decay.html"><span class="kw634">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>Source</span><span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;&gt;</span><span class="sy4">::</span><span class="me2">value_type</span></span></span> is valid and denotes a possibly const-qualified encoding character type (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span>, <span class="t-rev-inl t-since-cxx20"><span><span class="t-c"><span class="mw-geshi cpp source-cpp">char8_t</span></span>, </span><span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char16_t</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char32_t</span></span></span>, or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span>).
+</li></ul>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  p
+<td> p
 </td>
 <td> -
 </td>
-<td>  pathname to append
+<td> pathname to append
 </td></tr>
 <tr class="t-par">
-<td>  source
+<td> source
 </td>
 <td> -
 </td>
-<td>  <span class="t-lc"><a href="../../string/basic_string.html" title="cpp/string/basic string">std::basic_string</a></span>, <span class="t-lc"><a href="../../string/basic_string_view.html" title="cpp/string/basic string view">std::basic_string_view</a></span>, null-terminated multicharacter string, or an input iterator pointing to a null-terminated multicharacter sequence, which represents a path name (either in portable or in native format)
+<td> <span class="t-lc"><a href="../../string/basic_string.html" title="cpp/string/basic string">std::basic_string</a></span>, <span class="t-lc"><a href="../../string/basic_string_view.html" title="cpp/string/basic string view">std::basic_string_view</a></span>, null-terminated multicharacter string, or an input iterator pointing to a null-terminated multicharacter sequence, which represents a path name (either in portable or in native format)
 </td></tr>
 <tr class="t-par">
-<td>  first, last
+<td> first, last
 </td>
 <td> -
 </td>
-<td>  pair of <a href="../../named_req/InputIterator.html" title="cpp/named req/InputIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyInputIterator</span>s</a> that specify a multicharacter sequence that represents a path name
+<td> pair of <a href="../../named_req/InputIterator.html" title="cpp/named req/InputIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyInputIterator</span>s</a> that specify a multicharacter sequence that represents a path name
 </td></tr>
 <tr class="t-par-hitem">
 <td colspan="3"> Type requirements
@@ -326,63 +351,87 @@ path<span class="br0">(</span><span class="st0">"C:foo"</span><span class="br0">
 <td colspan="3"> -<div class="spacer"></div><code>InputIt</code> must meet the requirements of <a href="../../named_req/InputIterator.html" title="cpp/named req/InputIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyInputIterator</span></a>.
 </td></tr>
 <tr class="t-par-req">
-<td colspan="3"> -<div class="spacer"></div>The value type of <code>InputIt</code> must be one of the encoded character types (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char16_t</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char32_t</span></span></span>)
+<td colspan="3"> -<div class="spacer"></div>The value type of <code>InputIt</code> must be one of the encoded character types (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char16_t</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char32_t</span></span></span>).
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
 <p><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>
 </p>
 <h3><span class="mw-headline" id="Exceptions">Exceptions</span></h3>
-<p>May throw <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../memory/new/bad_alloc.html"><span class="kw689">std::<span class="me2">bad_alloc</span></span></a></span></span> if memory allocation fails. 
+<p>May throw <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../memory/new/bad_alloc.html"><span class="kw698">std::<span class="me2">bad_alloc</span></span></a></span></span> if memory allocation fails. 
 </p>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p>These functions effectively yield an approximation of the meaning of the argument path <code>p</code> in an environment where <code>*this</code> is the starting directory. 
+<p>These functions effectively yield an approximation of the meaning of the argument path <span class="t-c"><span class="mw-geshi cpp source-cpp">p</span></span> in an environment where <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> is the starting directory. 
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
-<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
-<span class="co2">#include &lt;filesystem&gt;</span>
+<div class="t-example"><p>The output is produced on Windows.</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;filesystem&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
 <span class="kw1">namespace</span> fs <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">filesystem</span><span class="sy4">;</span>
-<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
     fs<span class="sy4">::</span><span class="me2">path</span> p1 <span class="sy1">=</span> <span class="st0">"C:"</span><span class="sy4">;</span>
     p1 <span class="sy2">/</span><span class="sy1">=</span> <span class="st0">"Users"</span><span class="sy4">;</span> <span class="co1">// does not insert a separator</span>
-    <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\"</span>C:<span class="es1">\"</span> / <span class="es1">\"</span>Users<span class="es1">\"</span> == "</span> <span class="sy1">&lt;&lt;</span> p1 <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\"</span>C:<span class="es1">\"</span> / <span class="es1">\"</span>Users<span class="es1">\"</span> == "</span> <span class="sy1">&lt;&lt;</span> p1 <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
     p1 <span class="sy2">/</span><span class="sy1">=</span> <span class="st0">"batman"</span><span class="sy4">;</span> <span class="co1">// inserts fs::path::preferred_separator, '\' on Windows</span>
-    <a href="../../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\"</span>C:<span class="es1">\"</span> / <span class="es1">\"</span>Users<span class="es1">\"</span> / <span class="es1">\"</span>batman<span class="es1">\"</span> == "</span> <span class="sy1">&lt;&lt;</span> p1 <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\"</span>C:<span class="es1">\"</span> / <span class="es1">\"</span>Users<span class="es1">\"</span> / <span class="es1">\"</span>batman<span class="es1">\"</span> == "</span> <span class="sy1">&lt;&lt;</span> p1 <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">"C:" / "Users" == "C:Users"
 "C:" / "Users" / "batman" == "C:Users\\batman"</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th>DR
+</th>
+<th>Applied to
+</th>
+<th>Behavior as published
+</th>
+<th>Correct behavior
+</th></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue3244">LWG 3244</a>
+</td>
+<td>C++17
+</td>
+<td>constraint that <code>Source</code> cannot be <code>path</code> was missing
+</td>
+<td>added
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="concat.html" title="cpp/filesystem/path/concat"> <span class="t-lines"><span>concat</span><span>operator+=</span></span></a></div></div>
 </td>
-<td>   concatenates two paths without introducing a directory separator <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  concatenates two paths without introducing a directory separator <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="operator_slash.html" title="cpp/filesystem/path/operator slash"> <span class="t-lines"><span>operator/</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="operator_slash.html" title="cpp/filesystem/path/operator slash"> <span class="t-lines"><span>operator/</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div>
 </td>
-<td>   concatenates two paths with a directory separator <br> <span class="t-mark">(function)</span> </td></tr>
+<td>  concatenates two paths with a directory separator <br> <span class="t-mark">(function)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 7371/1000000
-Preprocessor generated node count: 11089/1000000
-Post‐expand include size: 167494/2097152 bytes
-Template argument size: 34278/2097152 bytes
+Preprocessor visited node count: 8121/1000000
+Preprocessor generated node count: 12604/1000000
+Post‐expand include size: 190165/4194304 bytes
+Template argument size: 38375/4194304 bytes
 Highest expansion depth: 21/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:15305-0!*!0!!en!*!* and timestamp 20190111180521 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:15305-0!*!0!!en!*!* and timestamp 20241022003431 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/path/append&amp;oldid=106641">https://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/path/append&amp;oldid=106641</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/path/append&amp;oldid=158013">https://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/path/append&amp;oldid=158013</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -395,21 +444,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/filesystem/path/append">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 5 September 2023, at 11:21.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../../common/skin_scripts.js"></script>
+<script src="../../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 3.060 secs. -->
+<script src="../../.././common/site_scripts.js"></script>
+<!-- Served in 3.315 secs. -->
 	</body>
-<!-- Cached 20190111180521 -->
+<!-- Cached 20241022003431 -->
 </html>

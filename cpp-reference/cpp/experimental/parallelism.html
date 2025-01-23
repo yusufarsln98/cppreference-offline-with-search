@@ -4,20 +4,20 @@
 <title>Extensions for parallelism - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../common/favicon.ico">
-<link rel="stylesheet" href="../../common/ext.css">
+<link rel="shortcut icon" href="../.././common/favicon.ico">
+<link rel="stylesheet" href="../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../common/site_modules.css">
+<link rel="stylesheet" href="../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../common/startup_scripts.js"></script>
+<script src="../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/experimental/parallelism","wgTitle":"cpp/experimental/parallelism","wgCurRevisionId":102407,"wgArticleId":13847,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/experimental/parallelism","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/experimental/parallelism","wgTitle":"cpp/experimental/parallelism","wgCurRevisionId":164226,"wgArticleId":13847,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/experimental/parallelism","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -32,7 +32,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading">Extensions for parallelism</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading">Extensions for parallelism</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -43,48 +51,64 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../experimental.html" title="cpp/experimental">experimental</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../experimental.html" title="cpp/experimental"> Technical specifications</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="fs.html" title="cpp/experimental/fs">Filesystem library</a> <span class="t-mark-rev t-since-fs-ts t-mark-ts">(filesystem TS)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="memory.html" title="cpp/experimental/lib extensions">Library fundamentals</a> <span class="t-mark-rev t-since-libfund-ts t-mark-ts">(library fundamentals TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="lib_extensions_2.html" title="cpp/experimental/lib extensions 2">Library fundamentals 2</a> <span class="t-mark-rev t-since-libfund-2-ts t-mark-ts">(library fundamentals 2 TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <strong class="selflink">Extensions for parallelism</strong> <span class="t-mark-rev t-since-parallelism-ts t-mark-ts">(parallelism TS)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="parallelism_2.html" title="cpp/experimental/parallelism 2">Extensions for parallelism 2</a> <span class="t-mark-rev t-since-parallelism-ts-2 t-mark-ts">(parallelism TS v2)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="concurrency.html" title="cpp/experimental/concurrency">Extensions for concurrency</a> <span class="t-mark-rev t-since-concurrency-ts t-mark-ts">(concurrency TS)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="constraints.html" title="cpp/experimental/constraints">Concepts</a> <span class="t-mark-rev t-since-concepts-ts t-mark-ts">(concepts TS)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="ranges.html" title="cpp/experimental/ranges">Ranges</a> <span class="t-mark-rev t-since-ranges-ts t-mark-ts">(ranges TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="special_math.html" title="cpp/experimental/special math">Special mathematical functions</a> <span class="t-mark-rev t-since-special-math-tr t-mark-ts">(special math TR)</span></td></tr>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../experimental.html" title="cpp/experimental">Experimental</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../experimental.html#Technical_Specification" title="cpp/experimental">Technical Specification</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="fs.html" title="cpp/experimental/fs">Filesystem library</a> <span class="t-mark-rev t-since-fs-ts t-mark-ts">(filesystem TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="memory.html" title="cpp/experimental/lib extensions">Library fundamentals</a> <span class="t-mark-rev t-since-libfund-ts t-mark-ts">(library fundamentals TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="lib_extensions_2.html" title="cpp/experimental/lib extensions 2">Library fundamentals 2</a> <span class="t-mark-rev t-since-libfund-ts-2 t-mark-ts">(library fundamentals TS v2)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="lib_extensions_3.html" title="cpp/experimental/lib extensions 3">Library fundamentals 3</a> <span class="t-mark-rev t-since-libfund-ts-3 t-mark-ts">(library fundamentals TS v3)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><strong class="selflink">Extensions for parallelism</strong> <span class="t-mark-rev t-since-parallelism-ts t-mark-ts">(parallelism TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="parallelism_2.html" title="cpp/experimental/parallelism 2">Extensions for parallelism 2</a> <span class="t-mark-rev t-since-parallelism-ts-2 t-mark-ts">(parallelism TS v2)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="concurrency.html" title="cpp/experimental/concurrency">Extensions for concurrency</a> <span class="t-mark-rev t-since-concurrency-ts t-mark-ts">(concurrency TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/concurrency_2&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/concurrency 2 (page does not exist)">Extensions for concurrency 2</a> <span class="t-mark-rev t-since-concurrency-ts-2 t-mark-ts">(concurrency TS v2)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="constraints.html" title="cpp/experimental/constraints">Concepts</a> <span class="t-mark-rev t-since-concepts-ts t-mark-ts">(concepts TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="ranges.html" title="cpp/experimental/ranges">Ranges</a> <span class="t-mark-rev t-since-ranges-ts t-mark-ts">(ranges TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="reflect.html" title="cpp/experimental/reflect">Reflection</a> <span class="t-mark-rev t-since-reflection-ts t-mark-ts">(reflection TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="special_math.html" title="cpp/experimental/special functions">Mathematical special functions</a> <span class="t-mark-rev t-since-special-math-tr t-mark-ts">(special functions TR)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../experimental.html#Experimental_Non-TS" title="cpp/experimental">Experimental Non-TS</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/pm&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/pm (page does not exist)">Pattern Matching</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/la&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/la (page does not exist)">Linear Algebra</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="execution.html" title="cpp/experimental/execution" class="mw-redirect">std::execution</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/contracts&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/contracts (page does not exist)">Contracts</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/2dgraphics&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/2dgraphics (page does not exist)">2D Graphics</a></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><strong class="selflink">Extensions for parallelism</strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5"> <a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/parallelism/execution_policy&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/parallelism/execution policy (page does not exist)">Execution policies</a></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/parallelism/execution_policy&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/parallelism/execution policy (page does not exist)">Execution policies</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/execution_policy&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/execution policy (page does not exist)"><span class="t-lines"><span>parallel::execution_policy</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="execution_policy_tag_t.html" title="cpp/experimental/execution policy tag t"><span class="t-lines"><span>parallel::sequential_execution_policy</span><span>parallel::parallel_execution_policy</span><span>parallel::parallel_vector_execution_policy</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="execution_policy_tag.html" title="cpp/experimental/execution policy tag"><span class="t-lines"><span>parallel::seq</span><span>parallel::par</span><span>parallel::par_vec</span></span></a></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> <a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/parallelism/parallel_algorithms&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/parallelism/parallel algorithms (page does not exist)">Parallel algorithms</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Parallel exceptions </td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/parallelism/parallel_algorithms&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/parallelism/parallel algorithms (page does not exist)">Parallel algorithms</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Parallel exceptions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/exception_list&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/exception list (page does not exist)"><span class="t-lines"><span>parallel::exception_list</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> <a href="parallelism/existing.html" title="cpp/experimental/parallelism/existing">Parallelized version of existing algorithms</a> </td></tr>
-<tr class="t-nv-h2"><td colspan="5"> New algorithms </td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="parallelism/existing.html" title="cpp/experimental/parallelism/existing">Parallelized version of existing algorithms</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5">New algorithms</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/for_each&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/for each (page does not exist)"><span class="t-lines"><span>parallel::for_each</span><span>parallel::for_each_n</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="reduce.html" title="cpp/experimental/reduce"><span class="t-lines"><span>parallel::reduce</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/exclusive_scan&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/exclusive scan (page does not exist)"><span class="t-lines"><span>parallel::exclusive_scan</span></span></a></div></div></td></tr>
@@ -93,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_exclusive_scan&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/transform exclusive scan (page does not exist)"><span class="t-lines"><span>parallel::transform_exclusive_scan</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_inclusive_scan&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/transform inclusive scan (page does not exist)"><span class="t-lines"><span>parallel::transform_inclusive_scan</span></span></a></div></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
-<p><br>
-The C++ Extensions for Parallelism, ISO/IEC TS 19570:2015 defines the following new components for the C++ standard library:
+<p>The C++ Extensions for Parallelism, ISO/IEC TS 19570:2015 defines the following new components for the C++ standard library:
 </p>
 <h3><span class="mw-headline" id="Execution_policies">Execution policies</span></h3>
 <p>The parallelism TS describes three execution policies: <a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/parallelism/execution_policy&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/parallelism/execution policy (page does not exist)">sequential</a>, <a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/parallelism/execution_policy&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/parallelism/execution policy (page does not exist)">parallel</a>, and <a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/parallelism/execution_policy&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/parallelism/execution policy (page does not exist)">parallel+vector</a>, and provides corresponding execution policy types and objects. Users may select an execution policy statically by invoking a parallel algorithm with the an execution policy object of the corresponding type, or dynamically by using the type-erasing <code>execution_policy</code> class.
@@ -103,48 +126,48 @@ The C++ Extensions for Parallelism, ISO/IEC TS 19570:2015 defines the following 
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-header">
-<td colspan="2"> <div>Defined in header <code>&lt;experimental/execution_policy&gt;</code> </div>
+<td colspan="2"> <div>Defined in header <code><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/header/experimental/execution_policy&amp;action=edit&amp;redlink=1" class="new" title="cpp/header/experimental/execution policy (page does not exist)">&lt;experimental/execution_policy&gt;</a></code> </div>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="execution_policy_tag_t.html" title="cpp/experimental/execution policy tag t"> <span class="t-lines"><span>sequential_execution_policy</span><span>parallel_execution_policy</span><span>parallel_vector_execution_policy</span></span></a></div></div>
 </td>
-<td>   execution policy types <br> <span class="t-mark">(class)</span>
+<td>  execution policy types <br> <span class="t-mark">(class)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="execution_policy_tag.html" title="cpp/experimental/execution policy tag"> <span class="t-lines"><span>seq</span><span>par</span><span>par_vec</span></span></a></div></div>
 </td>
-<td>   global execution policy objects <br> <span class="t-mark">(constant)</span>
+<td>  global execution policy objects <br> <span class="t-mark">(constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/execution_policy&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/execution policy (page does not exist)"> <span class="t-lines"><span>execution_policy</span></span></a></div></div>
 </td>
-<td>   dynamic execution policy <br> <span class="t-mark">(class)</span>
+<td>  dynamic execution policy <br> <span class="t-mark">(class)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="is_execution_policy.html" title="cpp/experimental/is execution policy"> <span class="t-lines"><span>is_execution_policy</span></span></a></div></div>
 </td>
-<td>   test whether a class represents an execution policy <br> <span class="t-mark">(class template)</span>
+<td>  test whether a class represents an execution policy <br> <span class="t-mark">(class template)</span>
 </td></tr>
 
 </table>
-<h3><span class="mw-headline" id="Exception_lists"> Exception lists </span></h3>
+<h3><span class="mw-headline" id="Exception_lists">Exception lists</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-header">
-<td colspan="2"> <div>Defined in header <code>&lt;experimental/exception_list&gt;</code> </div>
+<td colspan="2"> <div>Defined in header <code><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/header/experimental/exception_list&amp;action=edit&amp;redlink=1" class="new" title="cpp/header/experimental/exception list (page does not exist)">&lt;experimental/exception_list&gt;</a></code> </div>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/exception_list&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/exception list (page does not exist)"> <span class="t-lines"><span>exception_list</span></span></a></div></div>
 </td>
-<td>   exceptions raised during parallel executions <br> <span class="t-mark">(class)</span>
+<td>  exceptions raised during parallel executions <br> <span class="t-mark">(class)</span>
 </td></tr>
 
 </table>
@@ -155,7 +178,7 @@ The C++ Extensions for Parallelism, ISO/IEC TS 19570:2015 defines the following 
 <table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
 
 <tr>
-<th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"> <span style="font-size:115%">Standard library algorithms for which parallelized versions are provided</span>
+<th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">Standard library algorithms for which parallelized versions are provided</span>
 </th></tr>
 <tr>
 <td style="border: solid 1px silver; padding: 8px; background: white;">
@@ -167,16 +190,16 @@ The C++ Extensions for Parallelism, ISO/IEC TS 19570:2015 defines the following 
 </li><li> <span class="t-lc"><a href="../algorithm/copy.html" title="cpp/algorithm/copy">std::copy</a></span>
 </li><li> <span class="t-lc"><a href="../algorithm/copy.html" title="cpp/algorithm/copy">std::copy_if</a></span>
 </li><li> <span class="t-lc"><a href="../algorithm/copy_n.html" title="cpp/algorithm/copy n">std::copy_n</a></span>
-</li><li> <span class="t-lc"><a href="../algorithm/count_if.html" title="cpp/algorithm/count">std::count</a></span>
-</li><li> <span class="t-lc"><a href="../algorithm/count_if.html" title="cpp/algorithm/count">std::count_if</a></span>
+</li><li> <span class="t-lc"><a href="../algorithm/count.html" title="cpp/algorithm/count">std::count</a></span>
+</li><li> <span class="t-lc"><a href="../algorithm/count.html" title="cpp/algorithm/count">std::count_if</a></span>
 </li><li> <span class="t-lc"><a href="../algorithm/equal.html" title="cpp/algorithm/equal">std::equal</a></span>
 </li><li> <span class="t-lc"><a href="../algorithm/fill.html" title="cpp/algorithm/fill">std::fill</a></span>
 </li><li> <span class="t-lc"><a href="../algorithm/fill_n.html" title="cpp/algorithm/fill n">std::fill_n</a></span>
-</li><li> <span class="t-lc"><a href="../algorithm/find_if_not.html" title="cpp/algorithm/find">std::find</a></span>
+</li><li> <span class="t-lc"><a href="../algorithm/find.html" title="cpp/algorithm/find">std::find</a></span>
 </li><li> <span class="t-lc"><a href="../algorithm/find_end.html" title="cpp/algorithm/find end">std::find_end</a></span>
 </li><li> <span class="t-lc"><a href="../algorithm/find_first_of.html" title="cpp/algorithm/find first of">std::find_first_of</a></span>
-</li><li> <span class="t-lc"><a href="../algorithm/find_if_not.html" title="cpp/algorithm/find">std::find_if</a></span>
-</li><li> <span class="t-lc"><a href="../algorithm/find_if_not.html" title="cpp/algorithm/find">std::find_if_not</a></span>
+</li><li> <span class="t-lc"><a href="../algorithm/find.html" title="cpp/algorithm/find">std::find_if</a></span>
+</li><li> <span class="t-lc"><a href="../algorithm/find.html" title="cpp/algorithm/find">std::find_if_not</a></span>
 </li><li> <span class="t-lc"><a href="../algorithm/generate.html" title="cpp/algorithm/generate">std::generate</a></span>
 </li><li> <span class="t-lc"><a href="../algorithm/generate_n.html" title="cpp/algorithm/generate n">std::generate_n</a></span>
 </li><li> <span class="t-lc"><a href="../algorithm/includes.html" title="cpp/algorithm/includes">std::includes</a></span>
@@ -205,8 +228,8 @@ The C++ Extensions for Parallelism, ISO/IEC TS 19570:2015 defines the following 
 </li><li> <span class="t-lc"><a href="../algorithm/remove_copy.html" title="cpp/algorithm/remove copy">std::remove_copy_if</a></span>
 </li><li> <span class="t-lc"><a href="../algorithm/remove.html" title="cpp/algorithm/remove">std::remove_if</a></span>
 </li><li> <span class="t-lc"><a href="../algorithm/replace.html" title="cpp/algorithm/replace">std::replace</a></span>
-</li><li> <span class="t-lc"><a href="../algorithm/replace_copy_if.html" title="cpp/algorithm/replace copy">std::replace_copy</a></span>
-</li><li> <span class="t-lc"><a href="../algorithm/replace_copy_if.html" title="cpp/algorithm/replace copy">std::replace_copy_if</a></span>
+</li><li> <span class="t-lc"><a href="../algorithm/replace_copy.html" title="cpp/algorithm/replace copy">std::replace_copy</a></span>
+</li><li> <span class="t-lc"><a href="../algorithm/replace_copy.html" title="cpp/algorithm/replace copy">std::replace_copy_if</a></span>
 </li><li> <span class="t-lc"><a href="../algorithm/replace.html" title="cpp/algorithm/replace">std::replace_if</a></span>
 </li><li> <span class="t-lc"><a href="../algorithm/reverse.html" title="cpp/algorithm/reverse">std::reverse</a></span>
 </li><li> <span class="t-lc"><a href="../algorithm/reverse_copy.html" title="cpp/algorithm/reverse copy">std::reverse_copy</a></span>
@@ -236,81 +259,81 @@ The C++ Extensions for Parallelism, ISO/IEC TS 19570:2015 defines the following 
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-header">
-<td colspan="2"> <div>Defined in header <code>&lt;experimental/algorithm&gt;</code> </div>
+<td colspan="2"> <div>Defined in header <code><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/header/experimental/algorithm&amp;action=edit&amp;redlink=1" class="new" title="cpp/header/experimental/algorithm (page does not exist)">&lt;experimental/algorithm&gt;</a></code> </div>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/for_each&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/for each (page does not exist)"> <span class="t-lines"><span>for_each</span></span></a></div></div>
 </td>
-<td>   similar to <span class="t-lc"><a href="../algorithm/for_each.html" title="cpp/algorithm/for each">std::for_each</a></span> except returns void <br> <span class="t-mark">(function template)</span>
+<td>  similar to <span class="t-lc"><a href="../algorithm/for_each.html" title="cpp/algorithm/for each">std::for_each</a></span> except returns void <br> <span class="t-mark">(function template)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/for_each_n&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/for each n (page does not exist)"> <span class="t-lines"><span>for_each_n</span></span></a></div></div>
 </td>
-<td>   applies a function object to the first n elements of a sequence  <br> <span class="t-mark">(function template)</span>
+<td>  applies a function object to the first n elements of a sequence <br> <span class="t-mark">(function template)</span>
 </td></tr>
 
 
 <tr class="t-dsc-header">
-<td colspan="2"> <div>Defined in header <code>&lt;experimental/numeric&gt;</code> </div>
+<td colspan="2"> <div>Defined in header <code><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/header/experimental/numeric&amp;action=edit&amp;redlink=1" class="new" title="cpp/header/experimental/numeric (page does not exist)">&lt;experimental/numeric&gt;</a></code> </div>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="reduce.html" title="cpp/experimental/reduce"> <span class="t-lines"><span>reduce</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-parallelism-ts t-mark-ts">(parallelism TS)</span></span></span></div></div>
 </td>
-<td>   similar to <span class="t-lc"><a href="../algorithm/accumulate.html" title="cpp/algorithm/accumulate">std::accumulate</a></span>, except out of order  <br> <span class="t-mark">(function template)</span> </td></tr>
+<td>  similar to <span class="t-lc"><a href="../algorithm/accumulate.html" title="cpp/algorithm/accumulate">std::accumulate</a></span>, except out of order <br> <span class="t-mark">(function template)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/exclusive_scan&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/exclusive scan (page does not exist)"> <span class="t-lines"><span>exclusive_scan</span></span></a></div></div>
 </td>
-<td>   similar to <span class="t-lc"><a href="../algorithm/partial_sum.html" title="cpp/algorithm/partial sum">std::partial_sum</a></span>, excludes the ith input element from the ith sum <br> <span class="t-mark">(function template)</span>
+<td>  similar to <span class="t-lc"><a href="../algorithm/partial_sum.html" title="cpp/algorithm/partial sum">std::partial_sum</a></span>, excludes the i<sup>th</sup> input element from the i<sup>th</sup> sum <br> <span class="t-mark">(function template)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/inclusive_scan&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/inclusive scan (page does not exist)"> <span class="t-lines"><span>inclusive_scan</span></span></a></div></div>
 </td>
-<td>   similar to <span class="t-lc"><a href="../algorithm/partial_sum.html" title="cpp/algorithm/partial sum">std::partial_sum</a></span>, includes the ith input element in the ith sum <br> <span class="t-mark">(function template)</span>
+<td>  similar to <span class="t-lc"><a href="../algorithm/partial_sum.html" title="cpp/algorithm/partial sum">std::partial_sum</a></span>, includes the i<sup>th</sup> input element in the i<sup>th</sup> sum <br> <span class="t-mark">(function template)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="transform_reduce.html" title="cpp/experimental/transform reduce"> <span class="t-lines"><span>transform_reduce</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-parallelism-ts t-mark-ts">(parallelism TS)</span></span></span></div></div>
 </td>
-<td>   applies a functor, then reduces out of order  <br> <span class="t-mark">(function template)</span> </td></tr>
+<td>  applies a functor, then reduces out of order <br> <span class="t-mark">(function template)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_exclusive_scan&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/transform exclusive scan (page does not exist)"> <span class="t-lines"><span>transform_exclusive_scan</span></span></a></div></div>
 </td>
-<td>   applies a functor, then calculates exclusive scan  <br> <span class="t-mark">(function template)</span>
+<td>  applies a functor, then calculates exclusive scan <br> <span class="t-mark">(function template)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/transform_inclusive_scan&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/transform inclusive scan (page does not exist)"> <span class="t-lines"><span>transform_inclusive_scan</span></span></a></div></div>
 </td>
-<td>   applies a functor, then calculates inclusive scan <br> <span class="t-mark">(function template)</span>
+<td>  applies a functor, then calculates inclusive scan <br> <span class="t-mark">(function template)</span>
 </td></tr>
 
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3585/1000000
-Preprocessor generated node count: 7915/1000000
-Post‐expand include size: 93821/2097152 bytes
-Template argument size: 20000/2097152 bytes
+Preprocessor visited node count: 3987/1000000
+Preprocessor generated node count: 8804/1000000
+Post‐expand include size: 106620/4194304 bytes
+Template argument size: 22051/4194304 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13847-0!*!0!!en!2!* and timestamp 20190111182348 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13847-0!*!0!!en!2!* and timestamp 20241003235137 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/parallelism&amp;oldid=102407">https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/parallelism&amp;oldid=102407</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/parallelism&amp;oldid=164226">https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/parallelism&amp;oldid=164226</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -323,21 +346,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/experimental/parallelism">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 28 November 2023, at 03:11.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../common/skin_scripts.js"></script>
+<script src="../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 0.615 secs. -->
+<script src="../.././common/site_scripts.js"></script>
+<!-- Served in 0.449 secs. -->
 	</body>
-<!-- Cached 20190111182348 -->
+<!-- Cached 20241003235137 -->
 </html>

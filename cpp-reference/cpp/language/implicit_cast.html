@@ -4,20 +4,20 @@
 <title>Implicit conversions - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../common/favicon.ico">
-<link rel="stylesheet" href="../../common/ext.css">
+<link rel="shortcut icon" href="../.././common/favicon.ico">
+<link rel="stylesheet" href="../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../common/site_modules.css">
+<link rel="stylesheet" href="../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../common/startup_scripts.js"></script>
+<script src="../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/implicit_conversion","wgTitle":"cpp/language/implicit conversion","wgCurRevisionId":108545,"wgArticleId":699,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/implicit_conversion","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/implicit_conversion","wgTitle":"cpp/language/implicit conversion","wgCurRevisionId":175220,"wgArticleId":699,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/implicit_conversion","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -84,7 +84,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading">Implicit conversions</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading">Implicit conversions</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -95,292 +103,344 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../language.html" title="cpp/language">language</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../language.html" title="cpp/language"> C++ language</a><div class="t-navbar-menu"><div><div style="display:inline-block">
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../language.html" title="cpp/language">C++ language</a><div class="t-navbar-menu"><div><div style="display:inline-block">
 <div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5"> General topics</td></tr>
+<tr class="t-nv-h1"><td colspan="5">General topics</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="../preprocessor.html" title="cpp/preprocessor"> Preprocessor</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../comments.html" title="cpp/comment"> Comments</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../preprocessor.html" title="cpp/preprocessor">Preprocessor</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../comments.html" title="cpp/comment">Comments</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="../keywords.html" title="cpp/keyword"> Keywords</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="escape.html" title="cpp/language/escape"> Escape sequences</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../keywords.html" title="cpp/keyword">Keywords</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="escape.html" title="cpp/language/escape">Escape sequences</a></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Flow control</td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Conditional execution statements</td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="statements.html" title="cpp/language/statements">Flow control</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Conditional execution statements</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="if.html" title="cpp/language/if"> <code>if</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="if.html" title="cpp/language/if"><tt>if</tt></a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="switch.html" title="cpp/language/switch"> <code>switch</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="switch.html" title="cpp/language/switch"><tt>switch</tt></a></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Iteration statements (loops)</td></tr>
+<tr class="t-nv-h2"><td colspan="5">Iteration statements (loops)</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="for.html" title="cpp/language/for"> <code>for</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="range-for.html" title="cpp/language/range-for"> range-<code>for</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="for.html" title="cpp/language/for"><tt>for</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="range-for.html" title="cpp/language/range-for">range-<code>for</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="while.html" title="cpp/language/while"> <code>while</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="do.html" title="cpp/language/do"> <code>do-while</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="while.html" title="cpp/language/while"><tt>while</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="do.html" title="cpp/language/do"><code>do-while</code></a></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Jump statements </td></tr>
+<tr class="t-nv-h2"><td colspan="5">Jump statements</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="continue.html" title="cpp/language/continue"> <code>continue</code></a> - <a href="break.html" title="cpp/language/break"> <code>break</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="continue.html" title="cpp/language/continue"><tt>continue</tt></a> - <a href="break.html" title="cpp/language/break"><tt>break</tt></a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="goto.html" title="cpp/language/goto"> <code>goto</code></a> - <a href="return.html" title="cpp/language/return"> <code>return</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="goto.html" title="cpp/language/goto"><tt>goto</tt></a> - <a href="return.html" title="cpp/language/return"><tt>return</tt></a></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Functions</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function declaration</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="lambda.html" title="cpp/language/lambda"> Lambda function declaration</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="inline.html" title="cpp/language/inline"> <code>inline</code> specifier</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="except_spec.html" title="cpp/language/except spec"> Exception specifications</a> <span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="noexcept_spec.html" title="cpp/language/noexcept spec"> <code>noexcept</code> specifier</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Exceptions</td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="functions.html" title="cpp/language/functions">Functions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="function.html" title="cpp/language/function">Function declaration</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="lambda.html" title="cpp/language/lambda">Lambda function expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="inline.html" title="cpp/language/inline"><span class="mw-geshi cpp source-cpp"><span class="kw1">inline</span></span> specifier</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="except_spec.html" title="cpp/language/except spec">Dynamic exception specifications</a> <span class="t-mark">(<span title="deprecated in C++11">until C++17*</span>)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="noexcept_spec.html" title="cpp/language/noexcept spec"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span></span> specifier</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Exceptions</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="throw.html" title="cpp/language/throw"> <code>throw</code>-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="throw.html" title="cpp/language/throw"><span class="mw-geshi cpp source-cpp"><span class="kw1">throw</span></span>-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="try.html" title="cpp/language/try"><span class="mw-geshi cpp source-cpp"><span class="kw1">try</span></span> block</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="try_catch.html" title="cpp/language/try catch"> <code>try</code>-<code>catch</code> block</a></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="catch.html" title="cpp/language/catch">handler</a></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Namespaces</td></tr>
+<tr class="t-nv-h1"><td colspan="5">Namespaces</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="namespace.html" title="cpp/language/namespace"> Namespace declaration</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="namespace.html" title="cpp/language/namespace">Namespace declaration</a><code>  </code></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="namespace_alias.html" title="cpp/language/namespace alias"> Namespace aliases</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="namespace_alias.html" title="cpp/language/namespace alias">Namespace aliases</a></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Types</td></tr>
+<tr class="t-nv-h1"><td colspan="5">Types</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="types.html" title="cpp/language/types"> Fundamental types</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="enum.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="types.html" title="cpp/language/types">Fundamental types</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="enum.html" title="cpp/language/enum">Enumeration types</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="function.html" title="cpp/language/function">Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="class.html" title="cpp/language/class">Class/struct types</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="union.html" title="cpp/language/union">Union types</a></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
+<tr class="t-nv-h2"><td colspan="5">Specifiers</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="decltype.html" title="cpp/language/decltype"> <code>decltype</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="auto.html" title="cpp/language/auto"> <code>auto</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="alignas.html" title="cpp/language/alignas"> <code>alignas</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cv.html" title="cpp/language/cv"><code>const</code>/<code>volatile</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="decltype.html" title="cpp/language/decltype"><tt>decltype</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="auto.html" title="cpp/language/auto"><tt>auto</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="cv.html" title="cpp/language/cv"> <code>const</code>/<code>volatile</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="constexpr.html" title="cpp/language/constexpr"> <code>constexpr</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="constexpr.html" title="cpp/language/constexpr"><tt>constexpr</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="consteval.html" title="cpp/language/consteval"><tt>consteval</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="constinit.html" title="cpp/language/constinit"><tt>constinit</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
 </table></div></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="storage_duration.html" title="cpp/language/storage duration"> Storage duration specifiers</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Initialization</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="storage_duration.html" title="cpp/language/storage duration">Storage duration specifiers</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="initialization.html" title="cpp/language/initialization">Initialization</a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="default_initialization.html" title="cpp/language/default initialization"> Default initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="value_initialization.html" title="cpp/language/value initialization"> Value initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="zero_initialization.html" title="cpp/language/zero initialization"> Zero initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="copy_initialization.html" title="cpp/language/copy initialization"> Copy initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="direct_initialization.html" title="cpp/language/direct initialization"> Direct initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="default_initialization.html" title="cpp/language/default initialization">Default-initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="value_initialization.html" title="cpp/language/value initialization">Value-initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="zero_initialization.html" title="cpp/language/zero initialization">Zero-initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="copy_initialization.html" title="cpp/language/copy initialization">Copy-initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="direct_initialization.html" title="cpp/language/direct initialization">Direct-initialization</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="aggregate_initialization.html" title="cpp/language/aggregate initialization"> Aggregate initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="list_initialization.html" title="cpp/language/list initialization"> List initialization</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="constant_initialization.html" title="cpp/language/constant initialization"> Constant initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="reference_initialization.html" title="cpp/language/reference initialization"> Reference initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="aggregate_initialization.html" title="cpp/language/aggregate initialization">Aggregate initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="list_initialization.html" title="cpp/language/list initialization">List-initialization</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><code>  </code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="constant_initialization.html" title="cpp/language/constant initialization">Constant initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="reference_initialization.html" title="cpp/language/reference initialization">Reference initialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
 </table></div></td></tr>
 </table></div>
 </div>
 <div style="display:inline-block">
 <div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5"> Expressions</td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="expressions.html" title="cpp/language/expressions">Expressions</a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="value_category.html" title="cpp/language/value category"> Value categories</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="eval_order.html" title="cpp/language/eval order"> Order of evaluation</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="value_category.html" title="cpp/language/value category">Value categories</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="eval_order.html" title="cpp/language/eval order">Order of evaluation</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="operators.html" title="cpp/language/operators"> Operators</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_precedence.html" title="cpp/language/operator precedence"> Operator precedence</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operators.html" title="cpp/language/operators">Operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_precedence.html" title="cpp/language/operator precedence">Operator precedence</a></td></tr>
 </table></div></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_alternative.html" title="cpp/language/operator alternative"> Alternative representations</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Literals</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="bool_literal.html" title="cpp/language/bool literal"> Boolean</a> - <a href="integer_literal.html" title="cpp/language/integer literal"> Integer</a> - <a href="floating_literal.html" title="cpp/language/floating literal"> Floating-point</a></td></tr>   
-<tr class="t-nv"><td colspan="5"> <a href="character_literal.html" title="cpp/language/character literal"> Character</a> - <a href="string_literal.html" title="cpp/language/string literal"> String</a> - <a href="nullptr.html" title="cpp/language/nullptr"> <code>nullptr</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr> 
-<tr class="t-nv"><td colspan="5"> <a href="user_literal.html" title="cpp/language/user literal"> User-defined</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Utilities</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="attributes.html" title="cpp/language/attributes"> Attributes</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Types</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="typedef.html" title="cpp/language/typedef"> <code>typedef</code> declaration</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="type_alias.html" title="cpp/language/type alias"> Type alias declaration</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Casts</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="implicit_cast.html" title="cpp/language/implicit cast" class="mw-redirect"> Implicit conversions</a> - <a href="explicit_cast.html" title="cpp/language/explicit cast"> Explicit conversions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="static_cast.html" title="cpp/language/static cast"> <code>static_cast</code></a> - <a href="dynamic_cast.html" title="cpp/language/dynamic cast"> <code>dynamic_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="const_cast.html" title="cpp/language/const cast"> <code>const_cast</code></a> - <a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"> <code>reinterpret_cast</code></a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Memory allocation</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_alternative.html" title="cpp/language/operator alternative">Alternative representations</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="expressions.html#Literals" title="cpp/language/expressions">Literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="bool_literal.html" title="cpp/language/bool literal">Boolean</a> - <a href="integer_literal.html" title="cpp/language/integer literal">Integer</a> - <a href="floating_literal.html" title="cpp/language/floating literal">Floating-point</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="character_literal.html" title="cpp/language/character literal">Character</a> - <a href="string_literal.html" title="cpp/language/string literal">String</a> - <a href="nullptr.html" title="cpp/language/nullptr"><tt>nullptr</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="user_literal.html" title="cpp/language/user literal">User-defined</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Utilities</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="attributes.html" title="cpp/language/attributes">Attributes</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Types</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="typedef.html" title="cpp/language/typedef"><code>typedef</code> declaration</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="type_alias.html" title="cpp/language/type alias">Type alias declaration</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Casts</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="new.html" title="cpp/language/new"> <code>new</code> expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><strong class="selflink">Implicit conversions</strong></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="static_cast.html" title="cpp/language/static cast"><tt>static_cast</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="const_cast.html" title="cpp/language/const cast"><tt>const_cast</tt></a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="delete.html" title="cpp/language/delete"> <code>delete</code> expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="explicit_cast.html" title="cpp/language/explicit cast">Explicit conversions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="dynamic_cast.html" title="cpp/language/dynamic cast"><tt>dynamic_cast</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"><tt>reinterpret_cast</tt></a></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Classes</td></tr>
+<tr class="t-nv-h2"><td colspan="5">Memory allocation</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class declaration</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="constructor.html" title="cpp/language/initializer list"> Initializer lists</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="this.html" title="cpp/language/this"> <code>this</code> pointer</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="new.html" title="cpp/language/new"><code>new</code> expression</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="access.html" title="cpp/language/access"> Access specifiers</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="friend.html" title="cpp/language/friend"> <code>friend</code> specifier</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="delete.html" title="cpp/language/delete"><code>delete</code> expression</a></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Class-specific function properties</td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="classes.html" title="cpp/language/classes">Classes</a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="virtual.html" title="cpp/language/virtual"> Virtual function</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="override.html" title="cpp/language/override"> override specifier</a>  <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="final.html" title="cpp/language/final"> final specifier</a>  <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="class.html" title="cpp/language/class">Class declaration</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="initializer_list.html" title="cpp/language/constructor">Constructors</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="this.html" title="cpp/language/this"><code>this</code> pointer</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="explicit.html" title="cpp/language/explicit"> <code>explicit</code></a>  <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="static.html" title="cpp/language/static"> <code>static</code></a> </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="access.html" title="cpp/language/access">Access specifiers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="friend.html" title="cpp/language/friend"><span class="mw-geshi cpp source-cpp"><span class="kw1">friend</span></span> specifier</a></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Special member functions</td></tr>
+<tr class="t-nv-h2"><td colspan="5">Class-specific function properties</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="default_constructor.html" title="cpp/language/default constructor"> Default constructor</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="copy_constructor.html" title="cpp/language/copy constructor"> Copy constructor</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="move_constructor.html" title="cpp/language/move constructor"> Move constructor</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="virtual.html" title="cpp/language/virtual">Virtual function</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="override.html" title="cpp/language/override"><span class="mw-geshi cpp source-cpp">override</span> specifier</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><code>  </code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="final.html" title="cpp/language/final"><span class="mw-geshi cpp source-cpp">final</span> specifier</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="as_operator.html" title="cpp/language/as operator" class="mw-redirect"> Copy assignment</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="move_operator.html" title="cpp/language/move operator" class="mw-redirect"> Move assignment</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="destructor.html" title="cpp/language/destructor"> Destructor</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="explicit.html" title="cpp/language/explicit"><tt>explicit</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="static.html" title="cpp/language/static"><tt>static</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Templates </td></tr>
+<tr class="t-nv-h2"><td colspan="5">Special member functions</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class_template.html" title="cpp/language/class template"> Class template </a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="function_template.html" title="cpp/language/function template"> Function template </a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="default_constructor.html" title="cpp/language/default constructor">Default constructor</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="copy_constructor.html" title="cpp/language/copy constructor">Copy constructor</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="move_constructor.html" title="cpp/language/move constructor">Move constructor</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="template_specialization.html" title="cpp/language/template specialization"> Template specialization</a></td></tr>   
-<tr class="t-nv"><td colspan="5"> <a href="parameter_pack.html" title="cpp/language/parameter pack"> Parameter packs</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="as_operator.html" title="cpp/language/as operator" class="mw-redirect">Copy assignment</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="move_operator.html" title="cpp/language/move operator" class="mw-redirect">Move assignment</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="destructor.html" title="cpp/language/destructor">Destructor</a></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> Miscellaneous </td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="templates.html" title="cpp/language/templates">Templates</a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="asm.html" title="cpp/language/asm"> Inline assembly</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="class_template.html" title="cpp/language/class template">Class template</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="function_template.html" title="cpp/language/function template">Function template</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="history.html" title="cpp/language/history"> History of C++</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="template_specialization.html" title="cpp/language/template specialization">Template specialization</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="parameter_pack.html" title="cpp/language/parameter pack">Parameter packs</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Miscellaneous</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="asm.html" title="cpp/language/asm">Inline assembly</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="history.html" title="cpp/language/history">History of C++</a></td></tr>
 </table></div></td></tr>
 </table></div>
-</div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="expressions.html" title="cpp/language/expressions"> Expressions</a><div class="t-navbar-menu"><div><div style="display:inline-block">
-<div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"> General </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="value_category.html" title="cpp/language/value category"> value categories</a> (lvalue, rvalue, xvalue)</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="eval_order.html" title="cpp/language/eval order"> order of evaluation</a> (sequence points)</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="constant_expression.html" title="cpp/language/constant expression"> constant expressions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="expressions.html#Unevaluated_expressions" title="cpp/language/expressions"> unevaluated expressions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="expressions.html#Primary_expressions" title="cpp/language/expressions"> primary expressions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="lambda.html" title="cpp/language/lambda">lambda-expression</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Literals </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="integer_literal.html" title="cpp/language/integer literal">integer literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="floating_literal.html" title="cpp/language/floating literal">floating-point literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="bool_literal.html" title="cpp/language/bool literal">boolean literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="character_literal.html" title="cpp/language/character literal">character literals</a> including <a href="escape.html" title="cpp/language/escape">escape sequences</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="string_literal.html" title="cpp/language/string literal">string literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="nullptr.html" title="cpp/language/nullptr">null pointer literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="user_literal.html" title="cpp/language/user literal">user-defined literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Operators </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_assignment.html" title="cpp/language/operator assignment"> Assignment operators</a>: 
-<code>a=b</code>, <code>a+=b</code>, <code>a-=b</code>, <code>a*=b</code>, <code>a/=b</code>, <code>a%=b</code>, <code>a&amp;=b</code>, <code>a|=b</code>, <code>a^=b</code>, <code>a&lt;&lt;=b</code>, <code>a&gt;&gt;=b</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_incdec.html" title="cpp/language/operator incdec"> Increment and decrement</a>: <code>++a</code>, <code>--a</code>, <code>a++</code>, <code>a--</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_arithmetic.html" title="cpp/language/operator arithmetic"> Arithmetic operators</a>:
-<code>+a</code>, <code>-a</code>, <code>a+b</code>, <code>a-b</code>, <code>a*b</code>, <code>a/b</code>, <code>a%b</code>, <code>~a</code>, <code>a&amp;b</code>, <code>a|b</code>, <code>a^b</code>, <code>a&lt;&lt;b</code>, <code>a&gt;&gt;b</code> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_logical.html" title="cpp/language/operator logical"> Logical operators</a>: <code>a||b</code>, <code>a&amp;&amp;b</code>, <code>!a</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_comparison.html" title="cpp/language/operator comparison"> Comparison operators</a>: <code>a==b</code>, <code>a!=b</code>, <code>a&lt;b</code>, <code>a&gt;b</code>, <code>a&lt;=b</code>, <code>a&gt;=b</code>, <code>a&lt;=&gt;b</code><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_member_access.html" title="cpp/language/operator member access"> Member access operators</a>: <code>a[b]</code>, <code>*a</code>, <code>&amp;a</code>, <code>a-&gt;b</code>, <code>a.b</code>, <code>a-&gt;*b</code>, <code>a.*b</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_other.html" title="cpp/language/operator other"> Other operators</a>: <code>a(...)</code>, <code>a,b</code>, <code>a?b:c</code> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="default_comparisons.html" title="cpp/language/default comparisons">Default comparisons</a><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_alternative.html" title="cpp/language/operator alternative">Alternative representations of operators</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_precedence.html" title="cpp/language/operator precedence">Precedence and associativity</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="fold.html" title="cpp/language/fold">Fold expression</a><span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="new.html" title="cpp/language/new">new-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="delete.html" title="cpp/language/delete">delete-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="throw.html" title="cpp/language/throw">throw-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="alignof.html" title="cpp/language/alignof">alignof</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="sizeof.html" title="cpp/language/sizeof">sizeof</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="sizeof....html" title="cpp/language/sizeof...">sizeof...</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="typeid.html" title="cpp/language/typeid">typeid</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="noexcept.html" title="cpp/language/noexcept">noexcept</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operators.html" title="cpp/language/operators">Operator overloading</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Conversions </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="implicit_cast.html" title="cpp/language/implicit cast" class="mw-redirect">Implicit conversions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="const_cast.html" title="cpp/language/const cast">const_cast</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="static_cast.html" title="cpp/language/static cast">static_cast</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="reinterpret_cast.html" title="cpp/language/reinterpret cast">reinterpret_cast</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="dynamic_cast.html" title="cpp/language/dynamic cast">dynamic_cast</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="explicit_cast.html" title="cpp/language/explicit cast">Explicit conversions</a> <code>(T)a</code>, <code>T(a)</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="cast_operator.html" title="cpp/language/cast operator">User-defined conversion</a></td></tr>
-</table></div>
-</div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
+</div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="expressions.html" title="cpp/language/expressions"> Expressions</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5">General</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="value_category.html" title="cpp/language/value category">Value categories</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="eval_order.html" title="cpp/language/eval order">Order of evaluation</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="constant_expression.html" title="cpp/language/constant expression">Constant expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="expressions.html#Primary_expressions" title="cpp/language/expressions">Primary expressions</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="lambda.html" title="cpp/language/lambda">Lambda expressions</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="requires.html" title="cpp/language/requires">Requires expressions</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="pack_indexing.html#Pack_indexing_expression" title="cpp/language/pack indexing">Pack indexing expression</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="expressions.html#Potentially-evaluated_expressions" title="cpp/language/expressions">Potentially-evaluated expressions</a></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Literals</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="integer_literal.html" title="cpp/language/integer literal">Integer literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="floating_literal.html" title="cpp/language/floating literal">Floating-point literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="bool_literal.html" title="cpp/language/bool literal">Boolean literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="character_literal.html" title="cpp/language/character literal">Character literals</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="escape.html" title="cpp/language/escape">Escape sequences</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="string_literal.html" title="cpp/language/string literal">String literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="nullptr.html" title="cpp/language/nullptr">Null pointer literal</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="user_literal.html" title="cpp/language/user literal">User-defined literal</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Operators</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="operator_assignment.html" title="cpp/language/operator assignment">Assignment operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_incdec.html" title="cpp/language/operator incdec">Increment and decrement</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_arithmetic.html" title="cpp/language/operator arithmetic">Arithmetic operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_logical.html" title="cpp/language/operator logical">Logical operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_comparison.html" title="cpp/language/operator comparison">Comparison operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_member_access.html" title="cpp/language/operator member access">Member access operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_other.html" title="cpp/language/operator other">Other operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="new.html" title="cpp/language/new"><code>new</code>-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="delete.html" title="cpp/language/delete"><code>delete</code>-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="throw.html" title="cpp/language/throw"><code>throw</code>-expression</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="alignof.html" title="cpp/language/alignof"><code>alignof</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="sizeof.html" title="cpp/language/sizeof"><code>sizeof</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="sizeof....html" title="cpp/language/sizeof..."><code>sizeof...</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="typeid.html" title="cpp/language/typeid"><code>typeid</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="noexcept.html" title="cpp/language/noexcept"><code>noexcept</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="fold.html" title="cpp/language/fold">Fold expressions</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_alternative.html" title="cpp/language/operator alternative">Alternative representations of operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_precedence.html" title="cpp/language/operator precedence">Precedence and associativity</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operators.html" title="cpp/language/operators">Operator overloading</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="default_comparisons.html" title="cpp/language/default comparisons">Default comparisons</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Conversions</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><strong class="selflink">Implicit conversions</strong></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="explicit_cast.html" title="cpp/language/explicit cast">Explicit conversions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="usual_arithmetic_conversions.html" title="cpp/language/usual arithmetic conversions">Usual arithmetic conversions</a>    </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cast_operator.html" title="cpp/language/cast operator">User-defined conversion</a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="const_cast.html" title="cpp/language/const cast"><code>const_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="static_cast.html" title="cpp/language/static cast"><code>static_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="dynamic_cast.html" title="cpp/language/dynamic cast"><code>dynamic_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"><code>reinterpret_cast</code></a></td></tr>
+</table></div></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <p>Implicit conversions are performed whenever an expression of some type <code>T1</code> is used in context that does not accept that type, but accepts some other type <code>T2</code>; in particular:
 </p>
 <ul><li> when the expression is used as the argument when calling a function that is declared with <code>T2</code> as parameter;
 </li><li> when the expression is used as an operand with an operator that expects <code>T2</code>;
 </li><li> when initializing a new object of type <code>T2</code>, including <code>return</code> statement in a function returning <code>T2</code>;
-</li><li> when the expression is used in a <code>switch</code> statement (<code>T2</code> is integral type);
-</li><li> when the expression is used in an <code>if</code> statement or a loop (<code>T2</code> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span>).
+</li><li> when the expression is used in a <span class="mw-geshi cpp source-cpp"><span class="kw1">switch</span></span> statement (<code>T2</code> is integral type);
+</li><li> when the expression is used in an <span class="mw-geshi cpp source-cpp"><span class="kw1">if</span></span> statement or a loop (<code>T2</code> is <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span>).
 </li></ul>
 <p>The program is well-formed (compiles) only if there exists one unambiguous <i>implicit conversion sequence</i> from <code>T1</code> to <code>T2</code>. 
 </p><p>If there are multiple overloads of the function or operator being called, after the implicit conversion sequence is built from <code>T1</code> to each available <code>T2</code>, <a href="overload_resolution.html" title="cpp/language/overload resolution">overload resolution</a> rules decide which overload is compiled.
-</p><p>Note: in arithmetic expressions, the destination type for the implicit conversions on the operands to binary operators is determined by a separate set of rules,  <a href="operator_arithmetic.html#Conversions" title="cpp/language/operator arithmetic"><i>usual arithmetic conversions</i></a>
+</p><p>Note: in arithmetic expressions, the destination type for the implicit conversions on the operands to binary operators is determined by a separate set of rules: <a href="usual_arithmetic_conversions.html" title="cpp/language/usual arithmetic conversions">usual arithmetic conversions</a>.
 </p>
 <h3><span class="mw-headline" id="Order_of_the_conversions">Order of the conversions</span></h3>
 <p>Implicit conversion sequence consists of the following, in this order:
 </p>
 <div class="t-li1"><span class="t-li">1)</span> zero or one <i>standard conversion sequence</i>;</div>
 <div class="t-li1"><span class="t-li">2)</span> zero or one <i>user-defined conversion</i>;</div>
-<div class="t-li1"><span class="t-li">3)</span> zero or one <i>standard conversion sequence</i>.</div>
-<p>When considering the argument to a constructor or to a user-defined conversion function, only one standard conversion sequence is allowed (otherwise user-defined conversions could be effectively chained). When converting from one built-in type to another built-in type, only one standard conversion sequence is allowed.
+<div class="t-li1"><span class="t-li">3)</span> zero or one <i>standard conversion sequence</i> (only if a user-defined conversion is used).</div>
+<p>When considering the argument to a constructor or to a user-defined conversion function, only one standard conversion sequence is allowed (otherwise user-defined conversions could be effectively chained). When converting from one non-class type to another non-class type, only a standard conversion sequence is allowed.
 </p><p>A standard conversion sequence consists of the following, in this order:
 </p>
-<div class="t-li1"><span class="t-li">1)</span> zero or one <i><a href="value_category.html#lvalue" title="cpp/language/value category">lvalue</a> transformation</i>;</div>
+<div class="t-li1"><span class="t-li">1)</span> zero or one conversion from the following set:
+<ul><li> <i>lvalue-to-rvalue conversion</i>,
+</li><li> <i>array-to-pointer conversion</i>, and
+</li><li> <i>function-to-pointer conversion</i>;</li></ul></div>
+
 <div class="t-li1"><span class="t-li">2)</span> zero or one <i>numeric promotion</i> or <i>numeric conversion</i>;</div>
- <table class="t-rev-begin">
+<table class="t-rev-begin">
 <tr class="t-rev t-since-cxx17"><td>
 <div class="t-li1"><span class="t-li">3)</span> zero or one <i>function pointer conversion</i>;</div>
 </td>
 <td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
 </table>
-<div class="t-li1"><span class="t-li">4)</span> zero or one <i>qualification adjustment</i>.</div>
-<p>A user-defined conversion consists of zero or one non-explicit single-argument constructor or non-explicit <a href="cast_operator.html" title="cpp/language/cast operator">conversion function</a> call
-</p><p>An expression <code>e</code> is said to be <i>implicitly convertible to <code>T2</code></i> if and only if <code>T2</code> can be <a href="copy_initialization.html" title="cpp/language/copy initialization">copy-initialized</a> from <code>e</code>, that is the declaration <span class="t-c"><span class="mw-geshi cpp source-cpp">T2 t <span class="sy1">=</span> e<span class="sy4">;</span></span></span> is well-formed (can be compiled), for some invented temporary <code>t</code>. Note that this is different from <a href="direct_initialization.html" title="cpp/language/direct initialization">direct initialization</a> (<span class="t-c"><span class="mw-geshi cpp source-cpp">T2 t<span class="br0">(</span>e<span class="br0">)</span></span></span>), where explicit constructors and conversion functions would additionally be considered.
+<div class="t-li1"><span class="t-li">4)</span> zero or one <i>qualification conversion</i>.</div>
+<p>A user-defined conversion consists of zero or one non-explicit single-argument <a href="converting_constructor.html" title="cpp/language/converting constructor">converting constructor</a> or non-explicit <a href="cast_operator.html" title="cpp/language/cast operator">conversion function</a> call.
+</p><p>An expression <span class="t-c"><span class="mw-geshi cpp source-cpp">e</span></span> is said to be <i>implicitly convertible to <code>T2</code></i> if and only if <code>T2</code> can be <a href="copy_initialization.html" title="cpp/language/copy initialization">copy-initialized</a> from <span class="t-c"><span class="mw-geshi cpp source-cpp">e</span></span>, that is the declaration <span class="t-c"><span class="mw-geshi cpp source-cpp">T2 t <span class="sy1">=</span> e<span class="sy4">;</span></span></span> is well-formed (can be compiled), for some invented temporary <code>t</code>. Note that this is different from <a href="direct_initialization.html" title="cpp/language/direct initialization">direct initialization</a> (<span class="t-c"><span class="mw-geshi cpp source-cpp">T2 t<span class="br0">(</span>e<span class="br0">)</span></span></span>), where explicit constructors and conversion functions would additionally be considered.
 </p>
 <h4><span class="mw-headline" id="Contextual_conversions">Contextual conversions</span></h4>
- <table class="t-rev-begin">
+<table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
-<p>In the following contexts, the type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span> is expected and the implicit conversion is performed if the declaration <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span> t<span class="br0">(</span>e<span class="br0">)</span><span class="sy4">;</span></span></span> is well-formed (that is, an explicit conversion function such as <code>explicit T::operator bool() const;</code> is considered). Such expression <code>e</code> is said to be <i>contextually converted to bool</i>.
+<p>In the following contexts, the type <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span> is expected and the implicit conversion is performed if the declaration <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span> t<span class="br0">(</span>e<span class="br0">)</span><span class="sy4">;</span></span></span> is well-formed (that is, an explicit conversion function such as <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">explicit</span> T<span class="sy4">::</span><span class="me2">operator</span> <span class="kw4">bool</span><span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span><span class="sy4">;</span></span></span> is considered). Such expression <span class="t-c"><span class="mw-geshi cpp source-cpp">e</span></span> is said to be <i>contextually converted to <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></i>.
 </p>
-<dl><dd><ul><li> the controlling expression of <code>if</code>, <code>while</code>, <code>for</code>;
+<ul><li> the controlling expression of <span class="mw-geshi cpp source-cpp"><span class="kw1">if</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw1">while</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw1">for</span></span>;
 </li><li> the operands of the built-in logical operators <code>!</code>, <code>&amp;&amp;</code> and <code>||</code>;
 </li><li> the first operand of the conditional operator <code>?:</code>;
 </li><li> the predicate in a <a href="static_assert.html" title="cpp/language/static assert"><code>static_assert</code></a> declaration;
 </li><li> the expression in a <a href="noexcept_spec.html" title="cpp/language/noexcept spec"><code>noexcept</code></a> specifier;
 </li></ul>
-</dd></dl>
- <table class="t-rev-begin">
+<table class="t-rev-begin">
 <tr class="t-rev t-since-cxx20"><td>
-<dl><dd><ul><li> the expression in an <a href="explicit.html" title="cpp/language/explicit"><code>explicit</code></a> specifier;
-</li><li> the predicate of a <a href="attributes/contract.html" title="cpp/language/attributes/contract">contract attribute</a>.
+<ul><li> the expression in an <a href="explicit.html" title="cpp/language/explicit"><code>explicit</code></a> specifier;
 </li></ul>
-</dd></dl>
 </td>
 <td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
 </table>
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
-<p>In the following contexts, a context-specific type <code>T</code> is expected, and the expression <code>e</code> of class type <code>E</code> is only allowed if <span class="t-rev-inl t-until-cxx14"><span><code>E</code> has a single non-explicit <a href="cast_operator.html" title="cpp/language/cast operator">user-defined conversion function</a> to an allowable type</span> <span><span class="t-mark-rev t-until-cxx14">(until C++14)</span></span></span><span class="t-rev-inl t-since-cxx14"><span>there is exactly one type <code>T</code> among the allowable types such that <code>E</code> has non-explicit conversion functions whose return types are (possibly cv-qualified) <code>T</code> or reference to (possibly cv-qualified) <code>T</code>, and <code>e</code> is implicitly convertible to <code>T</code></span> <span><span class="t-mark-rev t-since-cxx14">(since C++14)</span></span></span>. Such expression <code>e</code> is said to be <i>contextually implicitly converted</i> to the specified type <code>T</code>. <span class="t-rev-inl t-since-cxx11"><span>Note that explicit conversion functions are not considered, even though they are considered in contextual conversions to bool.</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>
+<p>In the following contexts, a context-specific type <code>T</code> is expected, and the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">e</span></span> of class type <code>E</code> is only allowed if
+</p>
+<table class="t-rev-begin">
+<tr class="t-rev t-until-cxx14"><td>
+<ul><li> <code>E</code> has a single <span class="t-rev-inl t-since-cxx11"><span>non-explicit</span><span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> <a href="cast_operator.html" title="cpp/language/cast operator">user-defined conversion function</a> to an allowable type.
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-until-cxx14">(until C++14)</span></td></tr>
+<tr class="t-rev t-since-cxx14"><td>
+<ul><li> there is exactly one type <code>T</code> among the allowable types such that <code>E</code> has non-explicit conversion functions whose return types are (possibly cv-qualified) <code>T</code> or reference to (possibly cv-qualified) <code>T</code>, and
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">e</span></span> is implicitly convertible to <code>T</code>.
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-since-cxx14">(since C++14)</span></td></tr>
+</table>
+<p>Such expression <span class="t-c"><span class="mw-geshi cpp source-cpp">e</span></span> is said to be <i>contextually implicitly converted</i> to the specified type <code>T</code>. <span class="t-rev-inl t-since-cxx11"><span>Note that explicit conversion functions are not considered, even though they are considered in contextual conversions to <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span>.</span><span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>
 </p>
 <ul><li> the argument of the <a href="delete.html" title="cpp/language/delete">delete-expression</a> (<code>T</code> is any object pointer type);
 </li><li> <a href="constant_expression.html#Integral_constant_expression" title="cpp/language/constant expression">integral constant expression</a>, where a literal class is used (<code>T</code> is any integral or unscoped enumeration type, the selected user-defined conversion function must be <a href="constexpr.html" title="cpp/language/constexpr">constexpr</a>);
@@ -393,70 +453,118 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="br0">{</span>
     T val<span class="sy4">;</span>
 <span class="kw1">public</span><span class="sy4">:</span>
-    zero_init<span class="br0">(</span><span class="br0">)</span> <span class="sy4">:</span> val<span class="br0">(</span><span class="kw1">static_cast</span><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="br0">}</span>
-    zero_init<span class="br0">(</span>T val<span class="br0">)</span> <span class="sy4">:</span> val<span class="br0">(</span>val<span class="br0">)</span> <span class="br0">{</span> <span class="br0">}</span>
+    zero_init<span class="br0">(</span><span class="br0">)</span> <span class="sy4">:</span> val<span class="br0">(</span><span class="kw1">static_cast</span><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
+    zero_init<span class="br0">(</span>T val<span class="br0">)</span> <span class="sy4">:</span> val<span class="br0">(</span>val<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
     operator T<span class="sy3">&amp;</span><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> val<span class="sy4">;</span> <span class="br0">}</span>
     operator T<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> <span class="kw1">return</span> val<span class="sy4">;</span> <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    zero_init<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> i<span class="sy4">;</span> <a href="../error/assert.html"><span class="kw769">assert</span></a><span class="br0">(</span>i <span class="sy1">==</span> <span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
-    i <span class="sy1">=</span> <span class="nu0">7</span><span class="sy4">;</span> <a href="../error/assert.html"><span class="kw769">assert</span></a><span class="br0">(</span>i <span class="sy1">==</span> <span class="nu0">7</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">switch</span><span class="br0">(</span>i<span class="br0">)</span> <span class="br0">{</span> <span class="br0">}</span>     <span class="co1">// error until C++14 (more than one conversion function)</span>
+    zero_init<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> i<span class="sy4">;</span>
+    <a href="../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span>i <span class="sy1">==</span> <span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+    i <span class="sy1">=</span> <span class="nu0">7</span><span class="sy4">;</span>
+    <a href="../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span>i <span class="sy1">==</span> <span class="nu0">7</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="kw1">switch</span> <span class="br0">(</span>i<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>     <span class="co1">// error until C++14 (more than one conversion function)</span>
                       <span class="co1">// OK since C++14 (both functions convert to the same type int)</span>
-    <span class="kw1">switch</span><span class="br0">(</span>i <span class="sy2">+</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span> <span class="br0">}</span> <span class="co1">// always okay (implicit conversion)</span>
+    <span class="kw1">switch</span> <span class="br0">(</span>i <span class="sy2">+</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span> <span class="co1">// always okay (implicit conversion)</span>
 <span class="br0">}</span></pre></div></div>
 <h3><span class="mw-headline" id="Value_transformations">Value transformations</span></h3>
-<p>Value transformations are conversions that change the <a href="value_category.html" title="cpp/language/value category">value category</a> of an expression. They take place whenever an expression appears as an operand of an operator that expects an expression of a different value category.
+<p>Value transformations are conversions that change the <a href="value_category.html" title="cpp/language/value category">value category</a> of an expression. They take place whenever an expression appears as an operand of an operator that expects an expression of a different value category:
 </p>
-<h4><span class="mw-headline" id="Lvalue_to_rvalue_conversion">Lvalue to rvalue conversion</span></h4>
-<p>A <a href="value_category.html#glvalue" title="cpp/language/value category">glvalue</a> of any non-function, non-array type <code>T</code> can be implicitly converted to a <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of the same type. If <code>T</code> is a non-class type, this conversion also removes cv-qualifiers. 
-</p><p>The object denoted by the glvalue is not accessed if:
-</p>
-<ul><li> the conversion occurs in an <a href="expressions.html#Unevaluated_expressions" title="cpp/language/expressions">unevaluated context</a> <span class="t-rev-inl t-since-cxx20"><span>(outside an <a href="consteval.html" title="cpp/language/consteval">immediate invocation</a>)</span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>, such as an operand of <span class="t-c"><span class="mw-geshi cpp source-cpp">sizeof</span></span><span class="t-rev-inl t-since-cxx11"><span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">decltype</span></span>,</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> or the static form of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">typeid</span></span></span>
-</li><li> the glvalue has the type <span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span>: in this case the resulting prvalue is the null pointer constant <span class="t-c"><span class="mw-geshi cpp source-cpp">nullptr</span></span>.
-</li><li> the value stored in the object is a compile-time constant and certain other conditions are satisfied (see <a href="definition.html#ODR-use" title="cpp/language/definition">ODR-use</a>)
+<ul><li> Whenever a glvalue appears as an operand of an operator that requires a prvalue for that operand, the <i>lvalue-to-rvalue</i>, <i>array-to-pointer</i>, or <i>function-to-pointer</i> standard conversions are applied to convert the expression to a prvalue.
 </li></ul>
-<p>If <code>T</code> is a non-class type, the value contained in the object is produced as the prvalue result. For a class type, this conversion
-</p>
- <table class="t-rev-begin">
-<tr class="t-rev t-until-cxx17"><td>
-<p>effectively copy-constructs a temporary object of type <code>T</code> using the original glvalue as the constructor argument, and that temporary object is returned as a prvalue.
-</p>
-</td>
-<td><span class="t-mark-rev t-until-cxx17">(until C++17)</span></td></tr>
+<table class="t-rev-begin">
 <tr class="t-rev t-since-cxx17"><td>
-<p>converts the glvalue to a prvalue whose result object is copy-initialized by the glvalue.
-</p>
+<ul><li> Whenever a prvalue appears as an operand of an operator that expects a glvalue for that operand, the <i>temporary materialization conversion</i> is applied to convert the expression to an xvalue.
+</li></ul>
 </td>
 <td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
 </table>
-<p>This conversion models the act of reading a value from a memory location into a CPU register.
-</p><p>If the object to which the glvalue refers contains an indeterminate value (such as obtained by <a href="default_initialization.html" title="cpp/language/default initialization">default initializing</a> a non-class automatic variable), the behavior is <a href="ub.html" title="cpp/language/ub">undefined</a>
+<p><span id="Lvalue_to_rvalue_conversion"></span>
 </p>
- <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx11"><td>
-<p>except if the indeterminate value is of possibly cv-qualified unsigned character type which was not cached in a CPU register, or, formally:
+<h4><span class="mw-headline" id="Lvalue-to-rvalue_conversion">Lvalue-to-rvalue conversion</span></h4>
+<p><span class="t-rev-inl t-until-cxx11"><span>An <a href="value_category.html#lvalue" title="cpp/language/value category">lvalue</a></span><span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span><span class="t-rev-inl t-since-cxx11"><span>A <a href="value_category.html#glvalue" title="cpp/language/value category">glvalue</a></span><span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> of any non-function, non-array type <code>T</code> can be implicitly converted to <span class="t-rev-inl t-until-cxx11"><span>an <a href="value_category.html#rvalue" title="cpp/language/value category">rvalue</a></span><span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span><span class="t-rev-inl t-since-cxx11"><span>a <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a></span><span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>:
 </p>
-<dl><dd><ul><li> its <a href="storage_duration.html" title="cpp/language/storage duration">storage duration</a> was static or thread-local;
-</li><li> or a pointer to it was constructed;
-</li><li> or it was bound to a reference.
+<ul><li> If <code>T</code> is not a class type, the type of the <span class="t-rev-inl t-until-cxx11"><span>rvalue</span><span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span><span class="t-rev-inl t-since-cxx11"><span>prvalue</span><span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> is the cv-unqualified version of <code>T</code>.
+</li><li> Otherwise, the type of the <span class="t-rev-inl t-until-cxx11"><span>rvalue</span><span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span><span class="t-rev-inl t-since-cxx11"><span>prvalue</span><span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> is <code>T</code>.
 </li></ul>
-</dd></dl>
-<p>The behavior is also implementation-defined (rather than undefined) if the glvalue contains a pointer value that was invalidated.
+<p>If an lvalue-to-rvalue conversion from an <a href="type-id.html#Incomplete_type" title="cpp/language/type">incomplete type</a> is required by a program, that program is ill-formed.
 </p>
+<table class="t-rev-begin">
+<tr class="t-rev t-until-cxx11"><td>
+<p>When an lvalue-to-rvalue conversion occurs within the operand of <a href="sizeof.html" title="cpp/language/sizeof"><code>sizeof</code></a>, the value contained in the referenced object is not accessed, since that operator <a href="expressions.html#Potentially-evaluated_expressions" title="cpp/language/expressions">does not evaluate</a> its operand.
+</p>
+</td>
+<td><span class="t-mark-rev t-until-cxx11">(until C++11)</span></td></tr>
+<tr class="t-rev t-since-cxx11"><td>
+<p>When an lvalue-to-rvalue conversion is applied to an expression <span class="t-c"><span class="mw-geshi cpp source-cpp">E</span></span>, the value contained in the referenced object is not accessed if:
+</p>
+<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">E</span></span> is not <a href="expressions.html#Potentially-evaluated_expressions" title="cpp/language/expressions">potentially evaluated</a>, or
+</li><li> the evaluation of <span class="t-c"><span class="mw-geshi cpp source-cpp">E</span></span> results in the evaluation of a member <span class="t-c"><span class="mw-geshi cpp source-cpp">Ex</span></span> of the set of <a href="definition.html#ODR-use" title="cpp/language/definition">potential results</a> of <span class="t-c"><span class="mw-geshi cpp source-cpp">E</span></span>, and <span class="t-c"><span class="mw-geshi cpp source-cpp">Ex</span></span> names a variable <span class="t-c"><span class="mw-geshi cpp source-cpp">x</span></span> that is not <a href="definition.html#ODR-use" title="cpp/language/definition">odr-used</a> by <span class="t-c"><span class="mw-geshi cpp source-cpp">Ex</span></span>.
+</li></ul>
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
-<h4><span class="mw-headline" id="Array_to_pointer_conversion">Array to pointer conversion</span></h4>
-<p>An <a href="value_category.html#lvalue" title="cpp/language/value category">lvalue</a> or <a href="value_category.html#rvalue" title="cpp/language/value category">rvalue</a> of type "array of <code>N</code> <code>T</code>" or "array of unknown bound of <code>T</code>" can be implicitly converted to a <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of type "pointer to <code>T</code>". <span class="t-rev-inl t-since-cxx17"><span>If the array is a prvalue, <a href="implicit_cast.html#Temporary_materialization">temporary materialization</a> occurs.</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span> The resulting pointer refers to the first element of the array (see <a href="array.html#Array-to-pointer_decay" title="cpp/language/array">array to pointer decay</a> for details)
+<p><br>
 </p>
- <table class="t-rev-begin">
+<table class="t-rev-begin">
+<tr class="t-rev t-until-cxx11"><td>
+<p>The result of the conversion is the value contained in the object indicated by the lvalue.
+</p>
+</td>
+<td><span class="t-mark-rev t-until-cxx11">(until C++11)</span></td></tr>
+<tr class="t-rev t-since-cxx11"><td>
+<p>The result of the conversion is determined according to the following rules:
+</p>
+<ul><li> If <code>T</code> is (possibly cv-qualified) <span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span>, the result is a <a href="pointer.html#Null_pointers" title="cpp/language/pointer">null pointer constant</a>. The object to which the glvalue refers is not accessed by the conversion, so there is no side effect even if <code>T</code> is volatile-qualified, and the glvalue can refer to an inactive member of a union.
+</li><li> Otherwise, if T has a class type,
+</li></ul>
+<table class="t-rev-begin">
+<tr class="t-rev t-until-cxx17"><td>
+<dl><dd><ul><li> the conversion <a href="copy_initialization.html" title="cpp/language/copy initialization">copy-initializes</a> a <a href="lifetime.html#Temporary_object_lifetime" title="cpp/language/lifetime">temporary</a> of type <code>T</code> from the glvalue, and the result of the conversion is a prvalue for the temporary.
+</li></ul>
+</dd></dl>
+</td>
+<td><span class="t-mark-rev t-until-cxx17">(until C++17)</span></td></tr>
+<tr class="t-rev t-since-cxx17"><td>
+<dl><dd><ul><li> the conversion <a href="copy_initialization.html" title="cpp/language/copy initialization">copy-initializes</a> the <a href="implicit_cast.html#Temporary_materialization">result object</a> from the glvalue.
+</li></ul>
+</dd></dl>
+</td>
+<td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
+</table>
+<ul><li> Otherwise, if the object to which the glvalue refers contains an invalid pointer value, the behavior is implementation-defined.
+</li><li> Otherwise, <span class="t-rev-inl t-since-cxx20"><span>the object indicated by the glvalue is read, and</span><span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> the result is the value contained in the object.
+</li></ul>
+<table class="t-rev-begin">
+<tr class="t-rev t-since-cxx26"><td>
+<dl><dd><ul><li> If the result is an <a href="default_initialization.html#Indeterminate_and_erroneous_values" title="cpp/language/default initialization">erroneous value</a> and the bits in the <a href="objects.html#Object_representation_and_value_representation" title="cpp/language/object">value representation</a> are not valid for the object’s type, the behavior is undefined.
+</li></ul>
+</dd></dl>
+</td>
+<td><span class="t-mark-rev t-since-cxx26">(since C++26)</span></td></tr>
+</table>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
+</table>
+<p>This conversion models the act of reading a value from a memory location into a CPU register.
+</p>
+<h4><span class="mw-headline" id="Array-to-pointer_conversion">Array-to-pointer conversion</span></h4>
+<p><span id="Array_to_pointer_conversion"></span>
+An <a href="value_category.html#lvalue" title="cpp/language/value category">lvalue</a> or <a href="value_category.html#rvalue" title="cpp/language/value category">rvalue</a> of type “array of <code>N</code> <code>T</code>” or “array of unknown bound of <code>T</code>” can be implicitly converted to a <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of type “pointer to <code>T</code>”. <span class="t-rev-inl t-since-cxx17"><span>If the array is a prvalue, <a href="implicit_cast.html#Temporary_materialization">temporary materialization</a> occurs.</span><span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span> The resulting pointer refers to the first element of the array (see <a href="array.html#Array-to-pointer_decay" title="cpp/language/array">Array-to-pointer decay</a> for details).
+</p>
+<h4><span class="mw-headline" id="Function-to-pointer_conversion">Function-to-pointer conversion</span></h4>
+<p><span id="Function_to_pointer"></span>
+An <a href="value_category.html#lvalue" title="cpp/language/value category">lvalue</a> of function type can be implicitly converted to a <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> <a href="pointer.html#Pointers_to_functions" title="cpp/language/pointer">pointer to that function</a>. This does not apply to non-static member functions because lvalues that refer to non-static member functions do not exist.
+</p>
+<table class="t-rev-begin">
 <tr class="t-rev t-since-cxx17"><td>
 <h4> <span class="mw-headline" id="Temporary_materialization">Temporary materialization</span></h4>
-<p>A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of any complete type <code>T</code> can be converted to an xvalue of the same type <code>T</code>. This conversion initializes a temporary object of type T from the prvalue by evaluating the prvalue with the temporary object as its result object, and produces an xvalue denoting the temporary object. 
-If <code>T</code> is a class or array of class type, it must have an accessible and non-deleted destructor.
+<p>A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of any complete type <code>T</code> can be converted to an xvalue of the same type <code>T</code>. This conversion initializes a <a href="lifetime.html#Temporary_object_lifetime" title="cpp/language/lifetime">temporary object</a> of type T from the prvalue by evaluating the prvalue with the temporary object as its result object, and produces an xvalue denoting the temporary object.
+</p><p>If <code>T</code> is a class or array of class type, it must have an accessible and non-deleted destructor.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> S <span class="br0">{</span> <span class="kw4">int</span> m<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
 <span class="kw4">int</span> i <span class="sy1">=</span> S<span class="br0">(</span><span class="br0">)</span>.<span class="me1">m</span><span class="sy4">;</span> <span class="co1">// member access expects glvalue as of C++17;</span>
@@ -464,47 +572,91 @@ If <code>T</code> is a class or array of class type, it must have an accessible 
 <p>Temporary materialization occurs in the following situations:
 </p>
 <ul><li> when <a href="reference_initialization.html" title="cpp/language/reference initialization">binding a reference</a> to a prvalue;
-</li><li> when performing a <a href="operator_member_access.html" title="cpp/language/operator member access">member access</a> on a class prvalue;
+</li><li> when <a href="operator_member_access.html" title="cpp/language/operator member access">accessing</a> a non-static <a href="data_members.html" title="cpp/language/data members">data member</a> of a class prvalue;
+</li><li> when <a href="operator_other.html#Built-in_function_call_operator" title="cpp/language/operator other">invoking</a> an <a href="member_functions.html" title="cpp/language/member functions">implicit object member function</a> of a class prvalue;
 </li><li> when performing an array-to-pointer conversion (see above) or <a href="operator_member_access.html#Built-in_subscript_operator" title="cpp/language/operator member access">subscripting</a> on an array prvalue;
-</li><li> when initializing an object of type <span class="t-lc">std::initializer_list&lt;T&gt;</span> from a <a href="list_initialization.html" title="cpp/language/list initialization">braced-init-list</a>;
-</li><li> when <a href="typeid.html" title="cpp/language/typeid"><code>typeid</code></a> is applied to a prvalue (this is part of an unevaluated expression);
-</li><li> when <a href="sizeof.html" title="cpp/language/sizeof"><code>sizeof</code></a> is applied to a prvalue (this is part of an unevaluated expression);
+</li><li> when initializing an object of type <span class="mw-geshi cpp source-cpp"><a href="../utility/initializer_list.html"><span class="kw964">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span></span> from a <a href="initialization.html" title="cpp/language/initialization">braced-enclosed initializer list</a>;
 </li><li> when a prvalue appears as a <a href="expressions.html#Discarded-value_expressions" title="cpp/language/expressions">discarded-value expression</a>.
 </li></ul>
+<p>Note that temporary materialization does <b>not</b> occur when initializing an object from a prvalue of the same type (by <a href="direct_initialization.html" title="cpp/language/direct initialization">direct-initialization</a> or <a href="copy_initialization.html" title="cpp/language/copy initialization">copy-initialization</a>): such object is initialized directly from the initializer. This ensures “guaranteed copy elision”.
+</p>
 </td>
 <td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
 </table>
-<h4><span class="mw-headline" id="Function_to_pointer">Function to pointer</span></h4>
-<p>An <a href="value_category.html#lvalue" title="cpp/language/value category">lvalue</a> of function type <code>T</code> can be implicitly converted to a <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> <a href="pointer.html#Pointers_to_functions" title="cpp/language/pointer">pointer to that function</a>. This does not apply to non-static member functions because lvalues that refer to non-static member functions do not exist.
+<h3><span class="mw-headline" id="Integral_promotion">Integral promotion</span></h3>
+<p><a href="value_category.html#prvalue" title="cpp/language/value category">prvalues</a> of small integral types (such as <span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span>) and unscoped enumeration types may be converted to prvalues of larger integral types (such as <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span>). In particular, <a href="operator_arithmetic.html" title="cpp/language/operator arithmetic">arithmetic operators</a> do not accept types smaller than <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span> as arguments, and integral promotions are automatically applied after lvalue-to-rvalue conversion, if applicable. This conversion always preserves the value.
+</p><p>The following implicit conversions in this section are classified as <i>integral promotions</i>.
 </p>
-<h3><span class="mw-headline" id="Numeric_promotions">Numeric promotions</span></h3>
-<h4><span class="mw-headline" id="Integral_promotion">Integral promotion</span></h4>
-<p><a href="value_category.html#prvalue" title="cpp/language/value category">prvalues</a> of small integral types (such as <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span>) may be converted to prvalues of larger integral types (such as <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span>). In particular, <a href="operator_arithmetic.html" title="cpp/language/operator arithmetic">arithmetic operators</a> do not accept types smaller than <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span> as arguments, and integral promotions are automatically applied after lvalue-to-rvalue conversion, if applicable. This conversion always preserves the value.
-</p><p>The following implicit conversions are classified as integral promotions:
+<h4><span class="mw-headline" id="Promotion_from_integral_types">Promotion from integral types</span></h4>
+<p>A prvalue of type <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span> can be converted to a prvalue of type <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span>, with <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> becoming <span class="t-c"><span class="mw-geshi cpp source-cpp">​<span class="nu0">0</span>​</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> becoming <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span>.
+</p><p>For a prvalue <span class="t-c"><span class="mw-geshi cpp source-cpp">val</span></span> of an integral type <code>T</code> except <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span>:
 </p>
-<dl><dd><ul><li> <code><b>signed char</b></code> or <code><b>signed short</b></code> can be converted to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span>;
-</li><li> <code><b>unsigned char</b></code><span class="t-rev-inl t-since-cxx20"><span>, <code><b>char8_t</b></code></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> or <code><b>unsigned short</b></code> can be converted to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span> if it can hold its entire value range, and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span></span> otherwise;
-</li><li> <code><b>char</b></code> can be converted to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span></span> depending on the underlying type: <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">char</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span> (see above);
-</li><li> <code><b>wchar_t</b></code><span class="t-rev-inl t-since-cxx11"><span>, <code><b>char16_t</b></code>, and <code><b>char32_t</b></code></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> can be converted to the first type from the following list able to hold their entire value range: <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">long</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span></span></span><span class="t-rev-inl t-since-cxx11"><span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">long</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span></span></span></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>;
-</li><li> an <a href="enum.html" title="cpp/language/enum"><i>unscoped enumeration</i></a> type whose underlying type is not fixed can be converted to the first type from the following list able to hold their entire value range: <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">long</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span></span></span><span class="t-rev-inl t-since-cxx11"><span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">long</span></span></span>, or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span></span></span>, extended integer types (in size order, signed given preference over unsigned)</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>. If the value range is greater, no integral promotions apply;
+<div class="t-li1"><span class="t-li">1)</span> If <span class="t-c"><span class="mw-geshi cpp source-cpp">val</span></span> is the result of an lvalue-to-rvalue conversion applied to a <a href="bit_field.html" title="cpp/language/bit field">bit-field</a>,
+<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">val</span></span> can be converted to a prvalue of type <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span> if <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span> can represent all the values of the bit-field;
+</li><li> otherwise, <span class="t-c"><span class="mw-geshi cpp source-cpp">val</span></span> can be converted to <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span> if <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span> can represent all the values of the bit-field;
+</li><li> otherwise, <span class="t-c"><span class="mw-geshi cpp source-cpp">val</span></span> can be converted according to the rules specified in item (3).</li></ul></div>
+
+<div class="t-li1"><span class="t-li">2)</span> Otherwise (<span class="t-c"><span class="mw-geshi cpp source-cpp">val</span></span> is not converted from a bit-field),
+<ul><li> if <code>T</code> is <span class="t-rev-inl t-since-cxx20"><span><span class="mw-geshi cpp source-cpp">char8_t</span>, </span><span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span><span class="t-rev-inl t-since-cxx11"><span><span class="mw-geshi cpp source-cpp"><span class="kw4">char16_t</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">char32_t</span></span> or </span><span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">val</span></span> can be converted according to the rules specified in item (3);
+</li><li> otherwise, if the <a href="usual_arithmetic_conversions.html#Integer_conversion_rank" title="cpp/language/usual arithmetic conversions">integer conversion rank</a> of <code>T</code> is lower than the rank of <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span>:
+</li></ul>
+<dl><dd><ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">val</span></span> can be converted to a prvalue of type <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span> if <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span> can represent all the values of <code>T</code>;
+</li><li> otherwise, <span class="t-c"><span class="mw-geshi cpp source-cpp">val</span></span> can be converted to a prvalue of type <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span>.</li></ul></dd></dl></div>
+
+
+<div class="t-li1"><span class="t-li">3)</span> In the cases specified by item (1) (a converted bit-field not fitting <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span>) or item (2) (<code>T</code> is one of the given character types), <span class="t-c"><span class="mw-geshi cpp source-cpp">val</span></span> can be converted to a prvalue of the first of the following types that can represent all the values of its underlying type:
+<dl><dd><ul><li> <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span>
+</li><li> <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span>
+</li><li> <span class="mw-geshi cpp source-cpp"><span class="kw4">long</span></span>
+</li><li> <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span></span>
 </li></ul>
 </dd></dl>
- <table class="t-rev-begin">
+<table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
-<dl><dd><ul><li> an <i>unscoped enumeration</i> type whose underlying type is fixed can be converted to its underlying type, and, if the underlying type is also subject to integral promotion, to the promoted underlying type. Conversion to the unpromoted underlying type is better for the purposes of <a href="overload_resolution.html" title="cpp/language/overload resolution">overload resolution</a>;
+<dl><dd><ul><li> <span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">long</span></span>
+</li><li> <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span></span>
+</li><li> the underlying type of <code>T</code>
+</li></ul>
+</dd></dl>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
+</table></div>
+<h4><span class="mw-headline" id="Promotion_from_enumeration_types">Promotion from enumeration types</span></h4>
+<p>A prvalue of an unscoped <a href="enum.html" title="cpp/language/enum">enumeration</a> type whose underlying type is not fixed can be converted to a prvalue of the first type from the following list able to hold their entire value range:
+</p>
+<ul><li> <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span>
+</li><li> <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span>
+</li><li> <span class="mw-geshi cpp source-cpp"><span class="kw4">long</span></span>
+</li><li> <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span></span>
+</li></ul>
+<table class="t-rev-begin">
+<tr class="t-rev t-since-cxx11"><td>
+<ul><li> <span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">long</span></span>
+</li><li> <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span></span>
+</li><li> the <a href="types.html#Extended_integer_types" title="cpp/language/types">extended integer type</a> such that
+</li></ul>
+<dl><dd><ul><li> its <a href="usual_arithmetic_conversions.html#Integer_conversion_rank" title="cpp/language/usual arithmetic conversions">integer conversion rank</a> is greater than the rank of <span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">long</span></span>,
+</li><li> its integer conversion rank is the lowest among all extended integer types, and
+</li><li> it is signed if there are two types with the lowest integer conversion rank among all extended integer types.
 </li></ul>
 </dd></dl>
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
-<dl><dd><ul><li> a <a href="bit_field.html" title="cpp/language/bit field"><i>bit field</i></a> type can be converted to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span> if it can represent entire value range of the bit field, otherwise to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span></span> if it can represent entire value range of the bit field, otherwise no integral promotions apply;
-</li><li> the type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span> can be converted to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span> with the value <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> becoming <span class="t-c"><span class="mw-geshi cpp source-cpp">​<span class="nu0">0</span>​</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> becoming <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span>.
-</li></ul>
-</dd></dl>
-<p>Note that all other conversions are not promotions; for example, <a href="overload_resolution.html" title="cpp/language/overload resolution">overload resolution</a> chooses <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span> -&gt; <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span> (promotion) over <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span> -&gt; <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">short</span></span></span> (conversion).
+<p><br>
 </p>
-<h4><span class="mw-headline" id="Floating-point_promotion">Floating-point promotion</span></h4>
-<p>A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">float</span></span></span> can be converted to a prvalue of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span></span>. The value does not change.
+<table class="t-rev-begin">
+<tr class="t-rev t-since-cxx11"><td>
+<p>A prvalue of an unscoped enumeration type whose underlying type is fixed can be converted to its underlying type. Moreover, if the underlying type is also subject to integral promotion, to the promoted underlying type. Conversion to the unpromoted underlying type is better for the purposes of <a href="overload_resolution.html" title="cpp/language/overload resolution">overload resolution</a>.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
+</table>
+<p>Note that all other conversions are not promotions; for example, <a href="overload_resolution.html" title="cpp/language/overload resolution">overload resolution</a> chooses <span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span> -&gt; <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span> (promotion) over <span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span> -&gt; <span class="mw-geshi cpp source-cpp"><span class="kw4">short</span></span> (conversion).
+</p>
+<h3><span class="mw-headline" id="Floating-point_promotion">Floating-point promotion</span></h3>
+<p>A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of type <span class="mw-geshi cpp source-cpp"><span class="kw4">float</span></span> can be converted to a prvalue of type <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span>. The value does not change.
+</p><p>This conversion is called <i>floating-point promotion</i>.
 </p>
 <h3><span class="mw-headline" id="Numeric_conversions">Numeric conversions</span></h3>
 <p>Unlike the promotions, numeric conversions may change the values, with potential loss of precision.
@@ -512,104 +664,227 @@ If <code>T</code> is a class or array of class type, it must have an accessible 
 <h4><span class="mw-headline" id="Integral_conversions">Integral conversions</span></h4>
 <p>A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of an integer type or of an unscoped enumeration type can be converted to any other integer type. If the conversion is listed under integral promotions, it is a promotion and not a conversion.
 </p>
-<dl><dd><ul><li> If the destination type is unsigned, the resulting value is the smallest unsigned value equal to the source value <a href="https://en.wikipedia.org/wiki/Modular_arithmetic" class="extiw" title="enwiki:Modular arithmetic"> modulo</a> <span class="texhtml" style="white-space: nowrap;">2<span class="t-su">n<br></span></span> where <span class="texhtml" style="white-space: nowrap;">n</span> is the number of bits used to represent the destination type.
+<ul><li> If the destination type is unsigned, the resulting value is the smallest unsigned value equal to the source value <a href="https://en.wikipedia.org/wiki/Modular_arithmetic" class="extiw" title="enwiki:Modular arithmetic">modulo</a> <span class="texhtml" style="white-space: nowrap;">2<span class="t-su">n<br></span></span> where <span class="texhtml" style="white-space: nowrap;">n</span> is the number of bits used to represent the destination type.
 </li></ul>
-<dl><dd> That is, depending on whether the destination type is wider or narrower, signed integers are sign-extended<sup id="cite_ref-1" class="reference"><a href="implicit_cast.html#cite_note-1">[footnote 1]</a></sup> or truncated and unsigned integers are zero-extended or truncated respectively.
-</dd></dl>
-<ul><li> If the destination type is signed, the value does not change if the source integer can be represented in the destination type. Otherwise the result is <span class="t-rev-inl t-until-cxx20"><span>implementation-defined</span> <span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span><span class="t-rev-inl t-since-cxx20"><span>the unique value of the destination type equal to the source value modulo <span class="texhtml" style="white-space: nowrap;">2<span class="t-su">n<br></span></span> where <span class="texhtml" style="white-space: nowrap;">n</span> is the number of bits used to represent the destination type.</span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>. (Note that this is different from <a href="operator_arithmetic.html#Overflows" title="cpp/language/operator arithmetic">signed integer arithmetic overflow</a>, which is undefined).
-</li><li> If the source type is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span>, the value <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> is converted to zero and the value <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> is converted to the value one of the destination type (note that if the destination type is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span>, this is an integer promotion, not an integer conversion).
-</li><li> If the destination type is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span>, this is a boolean conversion (see below).
+<dl><dd><ul><li> That is, depending on whether the destination type is wider or narrower, signed integers are sign-extended<sup id="cite_ref-1" class="reference"><a href="implicit_cast.html#cite_note-1">[1]</a></sup> or truncated and unsigned integers are zero-extended or truncated respectively.
 </li></ul>
 </dd></dl>
+<ul><li> If the destination type is signed, the value does not change if the source integer can be represented in the destination type. Otherwise the result is <span class="t-rev-inl t-until-cxx20"><span>implementation-defined</span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span><span class="t-rev-inl t-since-cxx20"><span>the unique value of the destination type equal to the source value modulo <span class="texhtml" style="white-space: nowrap;">2<span class="t-su">n<br></span></span> where <span class="texhtml" style="white-space: nowrap;">n</span> is the number of bits used to represent the destination type</span><span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> (note that this is different from <a href="operator_arithmetic.html#Overflows" title="cpp/language/operator arithmetic">signed integer arithmetic overflow</a>, which is undefined).
+</li><li> If the source type is <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span>, the value <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> is converted to zero and the value <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> is converted to the value one of the destination type (note that if the destination type is <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span>, this is an integer promotion, not an integer conversion).
+</li><li> If the destination type is <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span>, this is a <a href="implicit_cast.html#Boolean_conversions">boolean conversion</a> (see below).
+</li></ul>
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="implicit_cast.html#cite_ref-1">↑</a></span> <span class="reference-text">This only applies if the arithmetic is two's complement which is only required for the <a href="../types/integer.html" title="cpp/types/integer">exact-width integer types</a>. Note, however, that at the moment all platforms with a C++ compiler use two's complement arithmetic.</span>
+</li>
+</ol>
 <h4><span class="mw-headline" id="Floating-point_conversions">Floating-point conversions</span></h4>
-<p>A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of a floating-point type can be converted to a prvalue of any other floating-point type. If the conversion is listed under floating-point promotions, it is a promotion and not a conversion.
+<table class="t-rev-begin">
+<tr class="t-rev t-until-cxx23"><td>
+<p>A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of a floating-point type can be converted to a prvalue of any other floating-point type.
 </p>
-<dl><dd><ul><li> If the source value can be represented exactly in the destination type, it does not change.
+</td>
+<td><span class="t-mark-rev t-until-cxx23">(until C++23)</span></td></tr>
+<tr class="t-rev t-since-cxx23"><td>
+<p>A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of a floating-point type can be converted to a prvalue of any other floating-point type with a greater or equal <a href="usual_arithmetic_conversions.html#Floating-point_conversion_rank" title="cpp/language/usual arithmetic conversions">floating-point conversion rank</a>.
+</p><p>A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of a standard floating-point type can be converted to a prvalue of any other standard floating-point type.
+</p><p><a href="static_cast.html" title="cpp/language/static cast"><code>static_cast</code></a> can be used to explicitly convert a prvalue of floating-point type to any other floating-point type.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx23">(since C++23)</span></td></tr>
+</table>
+<p>If the conversion is listed under floating-point promotions, it is a promotion and not a conversion.
+</p>
+<ul><li> If the source value can be represented exactly in the destination type, it does not change.
 </li><li> If the source value is between two representable values of the destination type, the result is one of those two values (it is implementation-defined which one, although if IEEE arithmetic is supported, rounding defaults <a href="../numeric/fenv/FE_round.html" title="cpp/numeric/fenv/FE round">to nearest</a>).
 </li><li> Otherwise, the behavior is undefined.
 </li></ul>
-</dd></dl>
 <h4><span class="mw-headline" id="Floating.E2.80.93integral_conversions">Floating–integral conversions</span></h4>
-<dl><dd><ul><li> A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of floating-point type can be converted to a prvalue of any integer type. The fractional part is truncated, that is, the fractional part is discarded. If the value cannot fit into the destination type, the behavior is undefined (even when the destination type is unsigned, modulo arithmetic does not apply). If the destination type is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span>, this is a boolean conversion (see below).
-</li><li> A prvalue of integer or unscoped enumeration type can be converted to a prvalue of any floating-point type. If the value cannot be represented correctly, it is implementation defined whether the closest higher or the closest lower representable value will be selected, although if IEEE arithmetic is supported, rounding defaults <a href="../numeric/fenv/FE_round.html" title="cpp/numeric/fenv/FE round">to nearest</a>. If the value cannot fit into the destination type, the behavior is undefined. If the source type is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span>, the value <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> is converted to zero, and the value <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> is converted to one.
+<p>A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of floating-point type can be converted to a prvalue of any integer type. The fractional part is truncated, that is, the fractional part is discarded.
+</p>
+<ul><li> If the truncated value cannot fit into the destination type, the behavior is undefined (even when the destination type is unsigned, modulo arithmetic does not apply).
+</li><li> If the destination type is <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span>, this is a boolean conversion (see <a href="implicit_cast.html#Boolean_conversions">below</a>).
 </li></ul>
-</dd></dl>
+<p>A prvalue of integer or unscoped enumeration type can be converted to a prvalue of any floating-point type. The result is exact if possible.
+</p>
+<ul><li> If the value can fit into the destination type but cannot be represented exactly, it is implementation defined whether the closest higher or the closest lower representable value will be selected, although if IEEE arithmetic is supported, rounding defaults <a href="../numeric/fenv/FE_round.html" title="cpp/numeric/fenv/FE round">to nearest</a>.
+</li><li> If the value cannot fit into the destination type, the behavior is undefined.
+</li><li> If the source type is <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span>, the value <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> is converted to zero, and the value <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> is converted to one.
+</li></ul>
 <h4><span class="mw-headline" id="Pointer_conversions">Pointer conversions</span></h4>
-<dl><dd><ul><li> A <i>null pointer constant</i> (see <span class="t-lc"><a href="../types/NULL.html" title="cpp/types/NULL">NULL</a></span>), can be converted to any pointer type, and the result is the null pointer value of that type. Such conversion (known as <i>null pointer conversion</i>) is allowed to convert to a cv-qualified type as a single conversion, that is, it's not considered a combination of numeric and qualifying conversions.
-</li><li> A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> pointer to any (optionally cv-qualified) object type <code>T</code> can be converted to a prvalue pointer to (identically cv-qualified) <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span>. The resulting pointer represents the same location in memory as the original pointer value. If the original pointer is a null pointer value, the result is a null pointer value of the destination type.
-</li><li> A prvalue pointer to a (optionally cv-qualified) derived class type can be converted to a prvalue pointer to its (identically cv-qualified) base class. If the base class is inaccessible or  ambiguous, the conversion is ill-formed  (won't compile). The result of the conversion is a pointer to the base class subobject within the pointed-to object. The null pointer value is converted to the null pointer value of the destination type.
+<p>A <a href="pointer.html#Null_pointers" title="cpp/language/pointer">null pointer constant</a> can be converted to any pointer type, and the result is the null pointer value of that type. Such conversion (known as <i>null pointer conversion</i>) is allowed to convert to a cv-qualified type as a single conversion, that is, it is not considered a combination of numeric and qualifying conversions.
+</p><p>A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> pointer to any (optionally cv-qualified) object type <code>T</code> can be converted to a prvalue pointer to (identically cv-qualified) <span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span>. The resulting pointer represents the same location in memory as the original pointer value.
+</p>
+<ul><li> If the original pointer is a null pointer value, the result is a null pointer value of the destination type.
 </li></ul>
-</dd></dl>
+<p>A prvalue <span class="t-c"><span class="mw-geshi cpp source-cpp">ptr</span></span> of type “pointer to (possibly cv-qualified) <code>Derived</code>” can be converted to a prvalue of type “pointer to (possibly cv-qualified) <code>Base</code>”, where <code>Base</code> is a <a href="derived_class.html" title="cpp/language/derived class">base class</a> of <code>Derived</code>, and <code>Derived</code> is a <a href="type-id.html#Incomplete_types" title="cpp/language/type">complete</a> class type. If the <code>Base</code> is inaccessible or ambiguous, the program is ill-formed.
+</p>
+<ul><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">ptr</span></span> is a null pointer value, the result is also a null pointer value.
+</li><li> Otherwise, if <code>Base</code> is a <a href="derived_class.html#Virtual_base_classes" title="cpp/language/derived class">virtual base class</a> of <code>Derived</code> and <span class="t-c"><span class="mw-geshi cpp source-cpp">ptr</span></span> does not point to an object whose type is <a href="implicit_cast.html#Similar_types">similar</a> to <code>Derived</code> and that is within its <a href="lifetime.html" title="cpp/language/lifetime">lifetime</a> or within its period of construction or destruction, the behavior is undefined.
+</li><li> Otherwise, the result is a pointer to the base class subobject of the derived class object.
+</li></ul>
 <h4><span class="mw-headline" id="Pointer-to-member_conversions">Pointer-to-member conversions</span></h4>
-<dl><dd><ul><li> A <i>null pointer constant</i> (see <span class="t-lc"><a href="../types/NULL.html" title="cpp/types/NULL">NULL</a></span>) can be converted to any pointer-to-member type, and the result is the null member pointer value of that type. Such conversion (known as <i>null member pointer conversion</i>) is allowed to convert to a cv-qualified type as a single conversion, that is, it's not considered a combination of numeric and qualifying conversions.
-</li><li> A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> pointer to member of some type <code>T</code> in a base class <code>B</code> can be converted to a <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> pointer to member of the same type <code>T</code> in its derived class <code>D</code>. If <code>B</code> is inaccessible, ambiguous, or virtual base of <code>D</code> or is a base of some intermediate virtual base of <code>D</code>, the conversion is ill-formed (won't compile). The resulting pointer can be dereferenced with a <code>D</code> object, and it will access the member within the <code>B</code> base subobject of that <code>D</code> object. The null pointer value is converted to the null pointer value of the destination type.
+<p>A <a href="pointer.html#Null_pointers" title="cpp/language/pointer">null pointer constant</a> can be converted to any pointer-to-member type, and the result is the null member pointer value of that type. Such conversion (known as <i>null member pointer conversion</i>) is allowed to convert to a cv-qualified type as a single conversion, that is, it is not considered a combination of numeric and qualifying conversions.
+</p><p>A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of type “pointer to member of <code>Base</code> of type (possibly cv-qualified) <code>T</code>” can be converted to a prvalue of type “pointer to member of <code>Derived</code> of type (identically cv-qualified) <code>T</code>”, where <code>Base</code> is a base class of <code>Derived</code>, and <code>Derived</code> is a complete class type. If <code>Base</code> is inaccessible, ambiguous, or virtual base of <code>Derived</code> or is a base of some intermediate virtual base of <code>Derived</code>, the program is ill-formed.
+</p>
+<ul><li> If <code>Derived</code> does not contain the original member and is not a base class of the class containing the original member, the behavior is undefined.
+</li><li> Otherwise, the resulting pointer can be dereferenced with a <code>Derived</code> object, and it will access the member within the <code>Base</code> base subobject of that <code>Derived</code> object.
 </li></ul>
-</dd></dl>
 <h4><span class="mw-headline" id="Boolean_conversions">Boolean conversions</span></h4>
-<p>A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of integral, floating-point, unscoped enumeration, pointer, and pointer-to-member types can be converted to a prvalue of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span>.
+<p>A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of integral, floating-point, unscoped enumeration, pointer, and pointer-to-member types can be converted to a prvalue of type <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span>.
 </p><p>The value zero (for integral, floating-point, and unscoped enumeration) and the null pointer and the null pointer-to-member values become <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>. All other values become <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
 </p>
- <table class="t-rev-begin">
+<table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
-<p>In the context of a <a href="direct_initialization.html" title="cpp/language/direct initialization">direct-initialization</a>, a <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span> object may be initialized from a prvalue of type <span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span>, including <span class="t-c"><span class="mw-geshi cpp source-cpp">nullptr</span></span>. The resulting value is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>. However, this is not considered to be an implicit conversion.
+<p>In the context of a <a href="direct_initialization.html" title="cpp/language/direct initialization">direct-initialization</a>, a <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span> object may be initialized from a prvalue of type <span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span>, including <span class="t-c"><span class="mw-geshi cpp source-cpp">nullptr</span></span>. The resulting value is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>. However, this is not considered to be an implicit conversion.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
 <h3><span class="mw-headline" id="Qualification_conversions">Qualification conversions</span></h3>
-<dl><dd><ul><li> A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of type pointer to <a href="cv.html" title="cpp/language/cv">cv-qualified</a> type <code>T</code> can be converted to a prvalue pointer to a more cv-qualified same type <code>T</code> (in other words, constness and volatility can be added).
-</li><li> A prvalue of type pointer to member of cv-qualified type <code>T</code> in class <code>X</code> can be converted to a prvalue pointer to member of more cv-qualified type <code>T</code> in class <code>X</code>.
-</li></ul>
-</dd></dl>
-<p>"More" cv-qualified means that
+<p>Generally speaking:
 </p>
-<dl><dd><ul><li> a pointer to <i>unqualified</i> type can be converted to a pointer to <code>const</code>;
-</li><li> a pointer to <i>unqualified</i> type can be converted to a pointer to <code>volatile</code>;
-</li><li> a pointer to <i>unqualified</i> type can be converted to a pointer to <code>const volatile</code>;
-</li><li> a pointer to <code>const</code> type can be converted to a pointer to <code>const volatile</code>;
-</li><li> a pointer to <code>volatile</code> type can be converted to a pointer to <code>const volatile</code>.
+<ul><li> A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of type pointer to <a href="cv.html" title="cpp/language/cv">cv-qualified</a> type <code>T</code> can be converted to a prvalue pointer to a more cv-qualified same type <code>T</code> (in other words, constness and volatility can be added).
+</li><li> A prvalue of type pointer to member of cv-qualified type <code>T</code> in class <code>X</code> can be converted to a prvalue pointer to member of <a href="cv.html#Conversions" title="cpp/language/cv">more cv-qualified</a> type <code>T</code> in class <code>X</code>.
 </li></ul>
-</dd></dl>
-<p>For multi-level pointers, the following restrictions apply: a multilevel pointer <code>P1</code> which is <span class="texhtml" style="white-space: nowrap;">cv<span class="t-su t-su-b">1<br>0</span></span>-qualified pointer to <span class="texhtml" style="white-space: nowrap;">cv<span class="t-su t-su-b">1<br>1</span></span>-qualified pointer to ... <span class="texhtml" style="white-space: nowrap;">cv<span class="t-su t-su-b">1<br>n-1</span></span>-qualified pointer to <span class="texhtml" style="white-space: nowrap;">cv<span class="t-su t-su-b">1<br>n</span></span>-qualified <code>T</code> is convertible to a multilevel pointer <code>P2</code> which is <span class="texhtml" style="white-space: nowrap;">cv<span class="t-su t-su-b">2<br>0</span></span>-qualified pointer to <span class="texhtml" style="white-space: nowrap;">cv<span class="t-su t-su-b">2<br>1</span></span>-qualified pointer to ... <span class="texhtml" style="white-space: nowrap;">cv<span class="t-su t-su-b">2<br>n-1</span></span>-qualified pointer to <span class="texhtml" style="white-space: nowrap;">cv<span class="t-su t-su-b">2<br>n</span></span>-qualified <code>T</code> only if
+<p>The formal definition of “qualification conversion” is given <a href="implicit_cast.html#Combining_cv-qualifications">below</a>.
 </p>
-<dl><dd><ul><li> the number of levels <code>n</code> is the same for both pointers;
-</li><li> if there is a <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span></span></span> in the <span class="texhtml" style="white-space: nowrap;">cv<span class="t-su t-su-b">1<br>k</span></span> qualification at some level (other than level zero) of P1, there is a <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span></span></span> in the same level <span class="texhtml" style="white-space: nowrap;">cv<span class="t-su t-su-b">2<br>k</span></span> of P2;
-</li><li> if there is a <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">volatile</span></span></span> in the <span class="texhtml" style="white-space: nowrap;">cv<span class="t-su t-su-b">1<br>k</span></span> qualification at some level (other than level zero) of P1, there is a <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">volatile</span></span></span> in the same <span class="texhtml" style="white-space: nowrap;">cv<span class="t-su t-su-b">2<br>k</span></span>level of P2;
-</li><li> if at some level <code>k</code> the <code>P2</code> is <i>more</i> cv-qualified than <code>P1</code>, then there must be a <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span></span></span> at every single level (other than level zero) of <code>P2</code> up until k: <span class="texhtml" style="white-space: nowrap;">cv<span class="t-su t-su-b">2<br>1</span>, cv<span class="t-su t-su-b">2<br>2</span> ... cv<span class="t-su t-su-b">2<br>k</span></span>.
-</li><li> same rules apply to multi-level pointers to members and multi-level mixed pointers to objects and pointers to members;
+<h4><span class="mw-headline" id="Similar_types">Similar types</span></h4>
+<p>Informally, two types are <i>similar</i> if, ignoring top-level cv-qualification:
+</p>
+<ul><li> they are the same type; or
+</li><li> they are both pointers, and the pointed-to types are similar; or
+</li><li> they are both pointers to member of the same class, and the types of the pointed-to members are similar; or
+</li><li> they are both arrays and the array element types are similar.
+</li></ul>
+<p>For example:
+</p>
+<ul><li><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="kw4">int</span><span class="sy2">*</span> <span class="kw4">const</span> <span class="sy2">*</span></span> and <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span><span class="sy2">**</span></span> are similar;
+</li><li><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">(</span><span class="kw4">int</span><span class="sy2">*</span><span class="br0">)</span></span> and <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">int</span><span class="sy2">*</span><span class="br0">)</span></span> are not similar;
+</li><li><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">(</span><span class="kw4">int</span><span class="sy2">*</span><span class="br0">)</span></span> and <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">(</span><span class="kw4">int</span><span class="sy2">*</span><span class="br0">)</span></span> are not similar;
+</li><li><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">(</span><span class="kw4">int</span><span class="sy2">*</span> <span class="kw4">const</span><span class="br0">)</span></span> and <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">(</span><span class="kw4">int</span><span class="sy2">*</span><span class="br0">)</span></span> are similar (they are the same type);
+</li><li><span class="mw-geshi cpp source-cpp"><a href="../utility/pair.html"><span class="kw1104">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span>, <span class="kw4">int</span><span class="sy1">&gt;</span></span> and <span class="mw-geshi cpp source-cpp"><a href="../utility/pair.html"><span class="kw1104">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> <span class="kw4">int</span>, <span class="kw4">int</span><span class="sy1">&gt;</span></span> are not similar.
+</li></ul>
+<p>Formally, type similarity is defined in terms of qualification-decomposition.
+</p><p>A <i>qualification-decomposition</i> of a type <code>T</code> is a sequence of components <code>cv_i</code> and <code>P_i</code> such that <code>T</code> is “<code>cv_0 P_0 cv_1 P_1 ... cv_n−1 P_n−1 cv_n U</code>” for non-negative <span class="t-c"><span class="mw-geshi cpp source-cpp">n</span></span>, where
+</p>
+<ul><li> each <code>cv_i</code> is a set of <span class="mw-geshi cpp source-cpp"><span class="kw4">const</span></span> and <span class="mw-geshi cpp source-cpp"><span class="kw4">volatile</span></span>, and
+</li><li> each <code>P_i</code> is
+</li></ul>
+<dl><dd><ul><li> “pointer to”,
+</li><li> “pointer to member of class <code>C_i</code> of type”,
+</li><li> “array of <span class="t-c"><span class="mw-geshi cpp source-cpp">N_i</span></span>”, or
+</li><li> “array of unknown bound of”.
 </li></ul>
 </dd></dl>
- <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx14"><td>
-<dl><dd><ul><li> same rules apply to multi-level pointers that include pointers to array of known or unknown bound at any level (arrays of cv-qualified elements are considered to be identically cv-qualified themselves);
-</li></ul>
-</dd></dl>
-</td>
-<td><span class="t-mark-rev t-since-cxx14">(since C++14)</span></td></tr>
-</table>
-<dl><dd><ul><li> level zero is addressed by the rules for non-multilevel qualification conversions.
-</li></ul>
-</dd></dl>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">char</span><span class="sy2">**</span> p <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-<span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">**</span> p1 <span class="sy1">=</span> p<span class="sy4">;</span> <span class="co1">// error: level 2 more cv-qualified but level 1 is not const</span>
-<span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">const</span> <span class="sy2">*</span> p2 <span class="sy1">=</span> p<span class="sy4">;</span> <span class="co1">// OK: level 2 more cv-qualified and const added at level 1</span>
-<span class="kw4">volatile</span> <span class="kw4">char</span> <span class="sy2">*</span> <span class="kw4">const</span> <span class="sy2">*</span> p3 <span class="sy1">=</span> p<span class="sy4">;</span> <span class="co1">// OK: level 2 more cv-qual and const added at level 1</span>
-<span class="kw4">volatile</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">const</span><span class="sy2">*</span> p4 <span class="sy1">=</span> p2<span class="sy4">;</span> <span class="co1">// OK: 2 more cv-qual and const was already at 1</span>
+<p>If <code>P_i</code> designates an array, the cv-qualifiers <code>cv_i+1</code> on the element type are also taken as the cv-qualifiers <code>cv_i</code> of the array.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// T is “pointer to pointer to const int”, it has 3 qualification-decompositions:</span>
+<span class="co1">// n = 0 -&gt; cv_0 is empty, U is “pointer to pointer to const int”</span>
+<span class="co1">// n = 1 -&gt; cv_0 is empty, P_0 is “pointer to”,</span>
+<span class="co1">//          cv_1 is empty, U is “pointer to const int”</span>
+<span class="co1">// n = 2 -&gt; cv_0 is empty, P_0 is “pointer to”,</span>
+<span class="co1">//          cv_1 is empty, P_1 is “pointer to”,</span>
+<span class="co1">//          cv_2 is “const", U is “int”</span>
+<span class="kw1">using</span> T <span class="sy1">=</span> <span class="kw4">const</span> <span class="kw4">int</span><span class="sy2">**</span><span class="sy4">;</span>
  
-<span class="kw4">double</span> <span class="sy2">*</span>a<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span><span class="sy4">;</span>
-<span class="kw4">double</span> <span class="kw4">const</span> <span class="sy2">*</span> <span class="kw4">const</span> <span class="br0">(</span><span class="sy2">*</span>ap<span class="br0">)</span><span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span> <span class="sy1">=</span> a<span class="sy4">;</span> <span class="co1">// OK since C++14</span></pre></div></div>
-<p>Note that in the C programming language, const/volatile can be added to the first level only:
+<span class="co1">// substitute any of the following type to U gives one of the decompositions:</span>
+<span class="co1">// U = U0 -&gt; the decomposition with n = 0: U0</span>
+<span class="co1">// U = U1 -&gt; the decomposition with n = 1: pointer to [U1]</span>
+<span class="co1">// U = U2 -&gt; the decomposition with n = 2: pointer to [pointer to [const U2]]</span>
+<span class="kw1">using</span> U2 <span class="sy1">=</span> <span class="kw4">int</span><span class="sy4">;</span>
+<span class="kw1">using</span> U1 <span class="sy1">=</span> <span class="kw4">const</span> U2<span class="sy2">*</span><span class="sy4">;</span>
+<span class="kw1">using</span> U0 <span class="sy1">=</span> U1<span class="sy2">*</span><span class="sy4">;</span></pre></div></div>
+<p>Two types <code>T1</code> and <code>T2</code> are <i>similar</i> if there exists a qualification-decomposition for each of them, where all following conditions are satisfied for the two qualification-decompositions:
+</p>
+<ul><li> They have the same <span class="t-c"><span class="mw-geshi cpp source-cpp">n</span></span>.
+</li><li> The types denoted by <code>U</code> are the same.
+</li><li> The corresponding <code>P_i</code> components are the same <span class="t-rev-inl t-since-cxx20"><span>or one is “array of <span class="t-c"><span class="mw-geshi cpp source-cpp">N_i</span></span>” and the other is “array of unknown bound of”</span><span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> for all <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span>.
+</li></ul>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// the qualification-decomposition with n = 2:</span>
+<span class="co1">// pointer to [volatile pointer to [const int]]</span>
+<span class="kw1">using</span> T1 <span class="sy1">=</span> <span class="kw4">const</span> <span class="kw4">int</span><span class="sy2">*</span> <span class="kw4">volatile</span> <span class="sy2">*</span><span class="sy4">;</span>
+ 
+<span class="co1">// the qualification-decomposition with n = 2:</span>
+<span class="co1">// const pointer to [pointer to [int]]</span>
+<span class="kw1">using</span> T2 <span class="sy1">=</span> <span class="kw4">int</span><span class="sy2">**</span> <span class="kw4">const</span><span class="sy4">;</span>
+ 
+<span class="co1">// For the two qualification-decompositions above</span>
+<span class="co1">// although cv_0, cv_1 and cv_2 are all different,</span>
+<span class="co1">// they have the same n, U, P_0 and P_1,</span>
+<span class="co1">// therefore types T1 and T2 are similar.</span></pre></div></div>
+<h4><span class="mw-headline" id="Combining_cv-qualifications">Combining cv-qualifications</span></h4>
+<p>In the description below, the longest qualification-decomposition of type <code>Tn</code> is denoted as <code>Dn</code>, and its components are denoted as <code>cvn_i</code> and <code>Pn_i</code>.
+</p>
+<table class="t-rev-begin">
+<tr class="t-rev t-until-cxx20"><td>
+<p>A prvalue expression of type <code>T1</code> can be converted to type <code>T2</code> if all following conditions are satisfied:
+</p>
+<ul><li> <code>T1</code> and <code>T2</code> are similar.
+</li><li> For every non-zero <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span>, if <span class="mw-geshi cpp source-cpp"><span class="kw4">const</span></span> is in <code>cv1_i</code>, then <span class="mw-geshi cpp source-cpp"><span class="kw4">const</span></span> is also in <code>cv2_i</code>, and similarly for <span class="mw-geshi cpp source-cpp"><span class="kw4">volatile</span></span>.
+</li><li> For every non-zero <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span>, if <code>cv1_i</code> and <code>cv2_i</code> are different, then <span class="mw-geshi cpp source-cpp"><span class="kw4">const</span></span> is in <code>cv2_k</code> for every <span class="t-c"><span class="mw-geshi cpp source-cpp">k</span></span> in <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span><code>)</code>.
+</li></ul>
+<p>The <i>qualification-combined type</i> of two types <code>T1</code> and <code>T2</code> is a type <code>T3</code> similar to <code>T1</code> such that
+</p>
+<ul><li> <code>cv3_0</code> is empty,
+</li><li> for every non-zero <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span>, <code>cv3_i</code> is the union of <code>cv1_i</code> and <code>cv2_i</code>, and
+</li><li> if <code>cv3_i</code> is different from <code>cv1_i</code> or <code>c2_i</code>, then <span class="mw-geshi cpp source-cpp"><span class="kw4">const</span></span> is added to <code>cv3_k</code> for every <span class="t-c"><span class="mw-geshi cpp source-cpp">k</span></span> in <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span><code>)</code>.
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
+<tr class="t-rev t-since-cxx20"><td>
+<p>The <i>qualification-combined type</i> of two types <code>T1</code> and <code>T2</code> is a type <code>T3</code> similar to <code>T1</code>, where <code>D3</code> satisfies all following conditions:
+</p>
+<ul><li> <code>cv3_0</code> is empty.
+</li><li> For every non-zero <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span>, <code>cv3_i</code> is the union of <code>cv1_i</code> and <code>cv2_i</code>.
+</li><li> If <code>P1_i</code> or <code>P2_i</code> is “array of unknown bound of”, <code>P3_i</code> is “array of unknown bound of”, otherwise it is <code>P1_i</code>.
+</li><li> If <code>cv3_i</code> is different from <code>cv1_i</code> or <code>cv2_i</code>, or <code>P3_i</code> is different from <code>P1_i</code> or <code>P2_i</code>, then <span class="mw-geshi cpp source-cpp"><span class="kw4">const</span></span> is added to <code>cv3_k</code> for every <span class="t-c"><span class="mw-geshi cpp source-cpp">k</span></span> in <code>[</code><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span><code>, </code><span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span><code>)</code>.
+</li></ul>
+<p>A prvalue of type <code>T1</code> can be converted to type <code>T2</code> if the qualification-combined type of <code>T1</code> and <code>T2</code> is cv-unqualified <code>T2</code>.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
+</table>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// longest qualification-decomposition of T1 (n = 2):</span>
+<span class="co1">// pointer to [pointer to [char]]</span>
+<span class="kw1">using</span> T1 <span class="sy1">=</span> <span class="kw4">char</span><span class="sy2">**</span><span class="sy4">;</span>
+ 
+<span class="co1">// longest qualification-decomposition of T2 (n = 2):</span>
+<span class="co1">// pointer to [pointer to [const char]]</span>
+<span class="kw1">using</span> T2 <span class="sy1">=</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">**</span><span class="sy4">;</span>
+ 
+<span class="co1">// Determining the cv3_i and T_i components of D3 (n = 2):</span>
+<span class="co1">// cv3_1 = empty (union of empty cv1_1 and empty cv2_1)</span>
+<span class="co1">// cv3_2 = “const” (union of empty cv1_2 and “const” cv2_2)</span>
+<span class="co1">// P3_0 = “pointer to” (no array of unknown bound, use P1_0)</span>
+<span class="co1">// P3_1 = “pointer to” (no array of unknown bound, use P1_1)</span>
+<span class="co1">// All components except cv_2 are the same, cv3_2 is different from cv1_2,</span>
+<span class="co1">// therefore add “const” to cv3_k for each k in [1, 2): cv3_1 becomes “const”.</span>
+<span class="co1">// T3 is “pointer to const pointer to const char”, i.e., const char* const *.</span>
+<span class="kw1">using</span> T3 <span class="sy1">=</span> <span class="coMULTI">/* the qualification-combined type of T1 and T2 */</span><span class="sy4">;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">const</span> <span class="kw4">char</span> c <span class="sy1">=</span> <span class="st0">'c'</span><span class="sy4">;</span>
+    <span class="kw4">char</span><span class="sy2">*</span> pc<span class="sy4">;</span>
+    T1 ppc <span class="sy1">=</span> <span class="sy3">&amp;</span>pc<span class="sy4">;</span>
+    T2 pcc <span class="sy1">=</span> ppc<span class="sy4">;</span> <span class="co1">// Error: T3 is not the same as cv-unqualified T2,</span>
+                  <span class="co1">//        no implicit conversion.</span>
+ 
+    <span class="sy2">*</span>pcc <span class="sy1">=</span> <span class="sy3">&amp;</span>c<span class="sy4">;</span>
+    <span class="sy2">*</span>pc <span class="sy1">=</span> <span class="st0">'C'</span><span class="sy4">;</span>    <span class="co1">// If the erroneous assignment above is allowed,</span>
+                  <span class="co1">// the const object “c” may be modified.</span>
+<span class="br0">}</span></pre></div></div>
+<p>Note that in the C programming language, <span class="mw-geshi cpp source-cpp"><span class="kw4">const</span></span>/<span class="mw-geshi cpp source-cpp"><span class="kw4">volatile</span></span> can be added to the first level only:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">char</span><span class="sy2">**</span> p <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-<span class="kw4">char</span> <span class="sy2">*</span> <span class="kw4">const</span><span class="sy2">*</span> p1 <span class="sy1">=</span> p<span class="sy4">;</span> <span class="co1">// OK in C and C++</span>
+<span class="kw4">char</span> <span class="sy2">*</span> <span class="kw4">const</span><span class="sy2">*</span> p1 <span class="sy1">=</span> p<span class="sy4">;</span>       <span class="co1">// OK in C and C++</span>
 <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">const</span> <span class="sy2">*</span> p2 <span class="sy1">=</span> p<span class="sy4">;</span> <span class="co1">// error in C, OK in C++</span></pre></div></div>
- <table class="t-rev-begin">
+<table class="t-rev-begin">
 <tr class="t-rev t-since-cxx17"><td>
-<h4> <span class="mw-headline" id="Function_pointer_conversions">Function pointer conversions</span></h4>
-<dl><dd><ul><li> A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of type pointer to non-throwing function can be converted to a prvalue pointer to potentially-throwing function.
+<h3> <span class="mw-headline" id="Function_pointer_conversions">Function pointer conversions</span></h3>
+<ul><li> A <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a> of type pointer to non-throwing function can be converted to a prvalue pointer to potentially-throwing function.
 </li><li> A prvalue of type pointer to non-throwing member function can be converted to a prvalue pointer to potentially-throwing member function.
 </li></ul>
-</dd></dl>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">void</span> <span class="br0">(</span><span class="sy2">*</span>p<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="kw4">void</span> <span class="br0">(</span><span class="sy2">**</span>pp<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span> <span class="sy1">=</span> <span class="sy3">&amp;</span>p<span class="sy4">;</span> <span class="co1">// error: cannot convert to pointer to noexcept function</span>
  
@@ -623,70 +898,185 @@ If <code>T</code> is a class or array of class type, it must have an accessible 
 <td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
 </table>
 <h3><span class="mw-headline" id="The_safe_bool_problem">The safe bool problem</span></h3>
-<p>Until the introduction of explicit conversion functions in C++11, designing a class that should be usable in boolean contexts (e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">if</span><span class="br0">(</span>obj<span class="br0">)</span> <span class="br0">{</span> ... <span class="br0">}</span></span></span>) presented a problem: given a user-defined conversion function, such as <span class="t-c"><span class="mw-geshi cpp source-cpp">T<span class="sy4">::</span><span class="me2">operator</span> <span class="kw4">bool</span><span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span><span class="sy4">;</span></span></span>, the implicit conversion sequence allowed one additional standard conversion sequence after that function call, which means the resultant <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span> could be converted to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span>, allowing such code as <span class="t-c"><span class="mw-geshi cpp source-cpp">obj <span class="sy1">&lt;&lt;</span> <span class="nu0">1</span><span class="sy4">;</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> i <span class="sy1">=</span> obj<span class="sy4">;</span></span></span>.
-</p><p>One early solution for this can be seen in <span class="t-lc"><a href="../io/basic_ios.html" title="cpp/io/basic ios">std::basic_ios</a></span>, which defines <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy3">!</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">operator <span class="kw4">void</span><span class="sy2">*</span></span></span><span class="t-mark-rev t-until-cxx11">(until C++11)</span>, so that the code such as <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">if</span><span class="br0">(</span><a href="../io/cin.html"><span class="kw1753">std::<span class="me2">cin</span></span></a><span class="br0">)</span> <span class="br0">{</span>...<span class="br0">}</span></span></span> compiles because <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span><span class="sy2">*</span></span></span> is convertible to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span>, but <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> n <span class="sy1">=</span> <a href="../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a><span class="sy4">;</span></span></span> does not compile because <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span><span class="sy2">*</span></span></span> is not convertible to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span>. This still allows nonsense code such as <span class="t-c"><span class="mw-geshi cpp source-cpp">delete <a href="../io/cout.html"><span class="kw1755">std::<span class="me2">cout</span></span></a><span class="sy4">;</span></span></span> to compile, and many pre-C++11 third party libraries were designed with a more elaborate solution, known as the <a rel="nofollow" class="external text" href="http://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Safe_bool">Safe Bool idiom</a>.
+<p>Until C++11, designing a class that should be usable in boolean contexts (e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">if</span> <span class="br0">(</span>obj<span class="br0">)</span> <span class="br0">{</span> ... <span class="br0">}</span></span></span>) presented a problem: given a user-defined conversion function, such as <span class="t-c"><span class="mw-geshi cpp source-cpp">T<span class="sy4">::</span><span class="me2">operator</span> <span class="kw4">bool</span><span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span><span class="sy4">;</span></span></span>, the implicit conversion sequence allowed one additional standard conversion sequence after that function call, which means the resultant <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span> could be converted to <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span>, allowing such code as <span class="t-c"><span class="mw-geshi cpp source-cpp">obj <span class="sy1">&lt;&lt;</span> <span class="nu0">1</span><span class="sy4">;</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> i <span class="sy1">=</span> obj<span class="sy4">;</span></span></span>.
+</p><p>One early solution for this can be seen in <span class="t-lc"><a href="../io/basic_ios.html" title="cpp/io/basic ios">std::basic_ios</a></span>, which initially defines <span class="t-c"><span class="mw-geshi cpp source-cpp">operator <span class="kw4">void</span><span class="sy2">*</span></span></span>, so that the code such as <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">if</span> <span class="br0">(</span><a href="../io/cin.html"><span class="kw1773">std::<span class="me2">cin</span></span></a><span class="br0">)</span> <span class="br0">{</span>...<span class="br0">}</span></span></span> compiles because <span class="mw-geshi cpp source-cpp"><span class="kw4">void</span><span class="sy2">*</span></span> is convertible to <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span>, but <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> n <span class="sy1">=</span> <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a><span class="sy4">;</span></span></span> does not compile because <span class="mw-geshi cpp source-cpp"><span class="kw4">void</span><span class="sy2">*</span></span> is not convertible to <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span>. This still allows nonsense code such as <span class="t-c"><span class="mw-geshi cpp source-cpp">delete <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a><span class="sy4">;</span></span></span> to compile.
+</p><p>Many pre-C++11 third party libraries were designed with a more elaborate solution, known as the <a rel="nofollow" class="external text" href="https://en.wikibooks.org/wiki/More_C++_Idioms/Safe_bool">Safe Bool idiom</a>. <span class="t-lc"><a href="../io/basic_ios.html" title="cpp/io/basic ios">std::basic_ios</a></span> also allowed this idiom via <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue468">LWG issue 468</a>, and <span class="t-c"><span class="mw-geshi cpp source-cpp">operator <span class="kw4">void</span><span class="sy2">*</span></span></span> was replaced (see <a href="../io/basic_ios/operator_bool.html#Notes" title="cpp/io/basic ios/operator bool">notes</a>).
+</p><p>Since C++11, <a href="explicit.html" title="cpp/language/explicit">explicit bool conversion</a> can also be used to resolve the safe bool problem.
 </p>
- <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx11"><td>
-<p>The <a href="explicit.html" title="cpp/language/explicit">explicit bool conversion</a> can also be used to resolve the safe bool problem
-</p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">explicit</span> operator <span class="kw4">bool</span><span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> ... <span class="br0">}</span></pre></div></div>
-</td>
-<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
-</table>
-<h3><span class="mw-headline" id="Footnotes">Footnotes</span></h3>
-<ol class="references">
-<li id="cite_note-1"><span class="mw-cite-backlink"><a href="implicit_cast.html#cite_ref-1">↑</a></span> <span class="reference-text">This only applies if the arithmetic is two's complement which is only required for the <a href="../types/integer.html" title="cpp/types/integer">exact-width integer types</a>. Note, however, that at the moment all platforms with a C++ compiler use two's complement arithmetic</span>
-</li>
-</ol>
 <h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
 <p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
 </p>
 <table class="dsctable" style="font-size:0.8em">
 <tr>
-<th> DR
+<th>DR
 </th>
-<th> Applied to
+<th>Applied to
 </th>
-<th> Behavior as published
+<th>Behavior as published
 </th>
-<th> Correct behavior
+<th>Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.link/cwg330">CWG 330</a>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/170.html">CWG 170</a>
 </td>
-<td> C++14
+<td>C++98
 </td>
-<td> conversion from <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">double</span> <span class="sy2">*</span> <span class="kw4">const</span> <span class="br0">(</span><span class="sy2">*</span>p<span class="br0">)</span><span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span></span></span> to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">double</span> <span class="kw4">const</span> <span class="sy2">*</span> <span class="kw4">const</span> <span class="br0">(</span><span class="sy2">*</span>p<span class="br0">)</span><span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span></span></span> invalid
+<td>the behavior of pointer-to-member conversions was unclear<br>if the derived class does not have the original member
 </td>
-<td> conversion valid
+<td>made clear
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.link/cwg616">CWG 616</a>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/172.html">CWG 172</a>
 </td>
-<td> C++11
+<td>C++98
 </td>
-<td> lvalue to rvalue conversion of any uninitialized object was always UB
+<td>enumeration type was promoted based on its underlying type
 </td>
-<td> indeterminate unsigned char is allowed
+<td>based on its value range instead
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.link/cwg1423">CWG 1423</a>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/330.html">CWG 330</a><br>(<a rel="nofollow" class="external text" href="https://wg21.link/N4261">N4261</a>)
 </td>
-<td> C++11
+<td>C++98
 </td>
-<td> <span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span> is convertible to bool in both direct- and copy-initialization
+<td>the conversion from <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span><span class="sy2">*</span> <span class="kw4">const</span> <span class="br0">(</span><span class="sy2">*</span>p<span class="br0">)</span><span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span></span><br>to <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span> <span class="kw4">const</span> <span class="sy2">*</span> <span class="kw4">const</span> <span class="br0">(</span><span class="sy2">*</span>p<span class="br0">)</span><span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span></span> was invalid
 </td>
-<td> direct-initialization only
+<td>made valid
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.link/p1350r0#1781">CWG 1781</a>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/519.html">CWG 519</a>
 </td>
-<td> C++11
+<td>C++98
 </td>
-<td> <span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span> to bool is considered a implicit conversion even though it is only valid for direct-initialization
+<td>null pointer values were not guaranteed to be<br>preserved when converting to another pointer type
 </td>
-<td> no longer considered an implicit conversion
+<td>always preserved
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/616.html">CWG 616</a>
+</td>
+<td>C++98
+</td>
+<td>the behavior of lvalue to rvalue conversion of<br>any uninitialized object and pointer objects<br>of invalid values was always undefined
+</td>
+<td>indeterminate <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">char</span></span><br>is allowed; use of invalid pointers<br>is implementation-defined
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/685.html">CWG 685</a>
+</td>
+<td>C++98
+</td>
+<td>the underlying type of an enumeration type was<br>not prioritized in integral promotion if it is fixed
+</td>
+<td>prioritized
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/707.html">CWG 707</a>
+</td>
+<td>C++98
+</td>
+<td>integer to floating point conversion<br>had defined behavior in all cases
+</td>
+<td>the behavior is undefined if<br>the value being converted is<br>out of the destination range
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1423.html">CWG 1423</a>
+</td>
+<td>C++11
+</td>
+<td><span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span> was convertible to <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span><br>in both direct- and copy-initialization
+</td>
+<td>direct-initialization only
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1773.html">CWG 1773</a>
+</td>
+<td>C++11
+</td>
+<td>a name expression that appears in a potentially-evaluated<br>expression such that the object named is not odr-used might<br>still be evaluated during an lvalue-to-rvalue conversion
+</td>
+<td>not evaluated
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1781.html">CWG 1781</a>
+</td>
+<td>C++11
+</td>
+<td><span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span> to <span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span> was considered an implicit<br>conversion even though it is only valid for direct-initialization
+</td>
+<td>no longer considered<br>an implicit conversion
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1787.html">CWG 1787</a>
+</td>
+<td>C++98
+</td>
+<td>the behavior of reading from an indeterminate<br><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">char</span></span> cached in a register was undefined
+</td>
+<td>made well-defined
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1981.html">CWG 1981</a>
+</td>
+<td>C++11
+</td>
+<td>contextual conversions considered explicit conversion functions
+</td>
+<td>not considered
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2140.html">CWG 2140</a>
+</td>
+<td>C++11
+</td>
+<td>it was unclear whether lvalue-to-rvalue conversions from<br><span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span> lvalues fetch these lvalues from memory
+</td>
+<td>not fetched
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2310.html">CWG 2310</a>
+</td>
+<td>C++98
+</td>
+<td>for derived-to-base pointer conversions and<br>base-to-derived pointer-to-member conversions,<br>the derived class type could be incomplete
+</td>
+<td>must be complete
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2484.html">CWG 2484</a>
+</td>
+<td>C++20
+</td>
+<td><span class="mw-geshi cpp source-cpp">char8_t</span> and <span class="mw-geshi cpp source-cpp"><span class="kw4">char16_t</span></span> had different integral<br>promotion strategies, but they can fit both of them
+</td>
+<td><span class="mw-geshi cpp source-cpp">char8_t</span> should be promoted<br>in the same way as <span class="mw-geshi cpp source-cpp"><span class="kw4">char16_t</span></span>
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2485.html">CWG 2485</a>
+</td>
+<td>C++98
+</td>
+<td>integral promotions involving bit-fields were not specified well
+</td>
+<td>improved the specification
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2813.html">CWG 2813</a>
+</td>
+<td>C++23
+</td>
+<td>temporary materialization would occur when an explicit<br>object member function of a class prvalue is invoked
+</td>
+<td>will not occur<br>in this case
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2861.html">CWG 2861</a>
+</td>
+<td>C++98
+</td>
+<td>a pointer to a type-inaccessible object could be<br>converted a pointer to a base class subobject
+</td>
+<td>the behavior is<br>undefined in this case
 </td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <ul><li> <a href="const_cast.html" title="cpp/language/const cast"><code>const_cast</code></a>
@@ -698,23 +1088,27 @@ If <code>T</code> is a class or array of class type, it must have an accessible 
 </li></ul>
 <table class="t-dsc-begin">
 
+<tr class="t-dsc">
+<td colspan="2"> <div class="t-dsc-see"><span><a href="../../c/language/conversion.html" title="c/language/conversion">C documentation</a></span> for <span class=""><span>Implicit conversions</span></span></div>
+</td></tr>
+
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 7665/1000000
-Preprocessor generated node count: 15336/1000000
-Post‐expand include size: 186841/2097152 bytes
-Template argument size: 33748/2097152 bytes
-Highest expansion depth: 15/40
+Preprocessor visited node count: 11457/1000000
+Preprocessor generated node count: 20288/1000000
+Post‐expand include size: 236516/4194304 bytes
+Template argument size: 55409/4194304 bytes
+Highest expansion depth: 16/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:699-0!*!0!!en!*!* and timestamp 20190507093937 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:699-0!*!0!!en!*!* and timestamp 20241003213351 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/implicit_conversion&amp;oldid=108545">https://en.cppreference.com/mwiki/index.php?title=cpp/language/implicit_conversion&amp;oldid=108545</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/implicit_conversion&amp;oldid=175220">https://en.cppreference.com/mwiki/index.php?title=cpp/language/implicit_conversion&amp;oldid=175220</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -727,21 +1121,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/implicit_cast">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 14 August 2024, at 19:23.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../common/skin_scripts.js"></script>
+<script src="../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 7.387 secs. -->
+<script src="../.././common/site_scripts.js"></script>
+<!-- Served in 16.508 secs. -->
 	</body>
-<!-- Cached 20190507093937 -->
+<!-- Cached 20241003213351 -->
 </html>

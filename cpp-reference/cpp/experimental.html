@@ -4,25 +4,77 @@
 <title>Experimental C++ Features - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../common/favicon.ico">
-<link rel="stylesheet" href="../common/ext.css">
+<link rel="shortcut icon" href=".././common/favicon.ico">
+<link rel="stylesheet" href=".././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../common/site_modules.css">
+<link rel="stylesheet" href=".././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../common/startup_scripts.js"></script>
+<script src=".././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/experimental","wgTitle":"cpp/experimental","wgCurRevisionId":109978,"wgArticleId":13460,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/experimental","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/experimental","wgTitle":"cpp/experimental","wgCurRevisionId":177540,"wgArticleId":13460,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/experimental","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
 }</script>
-<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<style type="text/css">/*<![CDATA[*/
+.source-cpp {line-height: normal;}
+.source-cpp li, .source-cpp pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for cpp
+ * CSS class: source-cpp, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.cpp.source-cpp .de1, .cpp.source-cpp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.cpp.source-cpp  {font-family:monospace;}
+.cpp.source-cpp .imp {font-weight: bold; color: red;}
+.cpp.source-cpp li, .cpp.source-cpp .li1 {font-weight: normal; vertical-align:top;}
+.cpp.source-cpp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.cpp.source-cpp .li2 {font-weight: bold; vertical-align:top;}
+.cpp.source-cpp .kw1 {color: #0000dd;}
+.cpp.source-cpp .kw2 {color: #0000ff;}
+.cpp.source-cpp .kw3 {color: #0000dd;}
+.cpp.source-cpp .kw4 {color: #0000ff;}
+.cpp.source-cpp .co1 {color: #909090;}
+.cpp.source-cpp .co2 {color: #339900;}
+.cpp.source-cpp .coMULTI {color: #ff0000; font-style: italic;}
+.cpp.source-cpp .es0 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es1 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es2 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es3 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es4 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es5 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .br0 {color: #008000;}
+.cpp.source-cpp .sy0 {color: #008000;}
+.cpp.source-cpp .sy1 {color: #000080;}
+.cpp.source-cpp .sy2 {color: #000040;}
+.cpp.source-cpp .sy3 {color: #000040;}
+.cpp.source-cpp .sy4 {color: #008080;}
+.cpp.source-cpp .st0 {color: #008000;}
+.cpp.source-cpp .nu0 {color: #000080;}
+.cpp.source-cpp .nu6 {color: #000080;}
+.cpp.source-cpp .nu8 {color: #000080;}
+.cpp.source-cpp .nu12 {color: #000080;}
+.cpp.source-cpp .nu16 {color:#000080;}
+.cpp.source-cpp .nu17 {color:#000080;}
+.cpp.source-cpp .nu18 {color:#000080;}
+.cpp.source-cpp .nu19 {color:#000080;}
+.cpp.source-cpp .ln-xtra, .cpp.source-cpp li.ln-xtra, .cpp.source-cpp div.ln-xtra {background-color: #ffc;}
+.cpp.source-cpp span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_experimental skin-cppreference2 action-view cpp-navbar">
         <!-- header -->
         <!-- /header -->
@@ -32,7 +84,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading">Experimental C++ Features</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading">Experimental C++ Features</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -43,300 +103,652 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../cpp.html" title="cpp">cpp</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <strong class="selflink"> Technical Specifications</strong> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><strong class="selflink"> Technical specifications</strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="experimental/fs.html" title="cpp/experimental/fs">Filesystem library</a> <span class="t-mark-rev t-since-fs-ts t-mark-ts">(filesystem TS)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="experimental/memory.html" title="cpp/experimental/lib extensions">Library fundamentals</a> <span class="t-mark-rev t-since-libfund-ts t-mark-ts">(library fundamentals TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="experimental/lib_extensions_2.html" title="cpp/experimental/lib extensions 2">Library fundamentals 2</a> <span class="t-mark-rev t-since-libfund-2-ts t-mark-ts">(library fundamentals 2 TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="experimental/parallelism.html" title="cpp/experimental/parallelism">Extensions for parallelism</a> <span class="t-mark-rev t-since-parallelism-ts t-mark-ts">(parallelism TS)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="experimental/parallelism_2.html" title="cpp/experimental/parallelism 2">Extensions for parallelism 2</a> <span class="t-mark-rev t-since-parallelism-ts-2 t-mark-ts">(parallelism TS v2)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="experimental/concurrency.html" title="cpp/experimental/concurrency">Extensions for concurrency</a> <span class="t-mark-rev t-since-concurrency-ts t-mark-ts">(concurrency TS)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="experimental/constraints.html" title="cpp/experimental/constraints">Concepts</a> <span class="t-mark-rev t-since-concepts-ts t-mark-ts">(concepts TS)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="experimental/ranges.html" title="cpp/experimental/ranges">Ranges</a> <span class="t-mark-rev t-since-ranges-ts t-mark-ts">(ranges TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="experimental/special_math.html" title="cpp/experimental/special math">Special mathematical functions</a> <span class="t-mark-rev t-since-special-math-tr t-mark-ts">(special math TR)</span></td></tr>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><strong class="selflink">Technical specifications</strong></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><strong class="selflink">Experimental</strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="experimental.html#Technical_Specification" title="cpp/experimental">Technical Specification</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="experimental/fs.html" title="cpp/experimental/fs">Filesystem library</a> <span class="t-mark-rev t-since-fs-ts t-mark-ts">(filesystem TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="experimental/memory.html" title="cpp/experimental/lib extensions">Library fundamentals</a> <span class="t-mark-rev t-since-libfund-ts t-mark-ts">(library fundamentals TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="experimental/lib_extensions_2.html" title="cpp/experimental/lib extensions 2">Library fundamentals 2</a> <span class="t-mark-rev t-since-libfund-ts-2 t-mark-ts">(library fundamentals TS v2)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="experimental/lib_extensions_3.html" title="cpp/experimental/lib extensions 3">Library fundamentals 3</a> <span class="t-mark-rev t-since-libfund-ts-3 t-mark-ts">(library fundamentals TS v3)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="experimental/parallelism.html" title="cpp/experimental/parallelism">Extensions for parallelism</a> <span class="t-mark-rev t-since-parallelism-ts t-mark-ts">(parallelism TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="experimental/parallelism_2.html" title="cpp/experimental/parallelism 2">Extensions for parallelism 2</a> <span class="t-mark-rev t-since-parallelism-ts-2 t-mark-ts">(parallelism TS v2)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="experimental/concurrency.html" title="cpp/experimental/concurrency">Extensions for concurrency</a> <span class="t-mark-rev t-since-concurrency-ts t-mark-ts">(concurrency TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/concurrency_2&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/concurrency 2 (page does not exist)">Extensions for concurrency 2</a> <span class="t-mark-rev t-since-concurrency-ts-2 t-mark-ts">(concurrency TS v2)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="experimental/constraints.html" title="cpp/experimental/constraints">Concepts</a> <span class="t-mark-rev t-since-concepts-ts t-mark-ts">(concepts TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="experimental/ranges.html" title="cpp/experimental/ranges">Ranges</a> <span class="t-mark-rev t-since-ranges-ts t-mark-ts">(ranges TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="experimental/reflect.html" title="cpp/experimental/reflect">Reflection</a> <span class="t-mark-rev t-since-reflection-ts t-mark-ts">(reflection TS)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="experimental/special_math.html" title="cpp/experimental/special functions">Mathematical special functions</a> <span class="t-mark-rev t-since-special-math-tr t-mark-ts">(special functions TR)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="experimental.html#Experimental_Non-TS" title="cpp/experimental">Experimental Non-TS</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/pm&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/pm (page does not exist)">Pattern Matching</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/la&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/la (page does not exist)">Linear Algebra</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="experimental/execution.html" title="cpp/experimental/execution" class="mw-redirect">std::execution</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/contracts&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/contracts (page does not exist)">Contracts</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/2dgraphics&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/2dgraphics (page does not exist)">2D Graphics</a></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <p>The C++ standards committee publishes experimental C++ language and library extensions for future standardization.
-</p><p>Note: until 2012, these publications used the TR (technical report) format. Since 2012 ISO procedure changed to use the TS (technical specification) format.
+</p><p>Note: until 2012, these publications used the <b>TR</b> (technical report) format. Since 2012 ISO procedure changed to use the <b>TS</b> (technical specification) format.
 </p>
+<h4><span class="mw-headline" id="TR.2FTS_specifications">TR/TS specifications</span></h4>
 <table class="wikitable">
 
 <tr>
 <th>ISO number</th>
 <th>Name</th>
 <th>Status</th>
-<th>links
+<th>Links, headers
 </th></tr>
 <tr>
-<td> ISO/IEC TR 18015:2006
+<td>ISO/IEC TR 18015:2006
 </td>
-<td> Technical Report on C++ Performance
+<td>Technical Report on C++ Performance
 </td>
-<td> Published 2006 (<a rel="nofollow" class="external text" href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=43351">ISO store</a>)
-<p>Draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/TR18015.pdf">TR18015</a> (2006-02-15)<br>
-</p>
-</td>
-<td> <code>std::hardware</code>
-</td></tr>
-<tr>
-<td> ISO/IEC TR 19768:2007
-</td>
-<td> Technical Report on C++ Library Extensions
-</td>
-<td> Published 2007-11-15 (<a rel="nofollow" class="external text" href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=43289">ISO store</a>)
-<p>Draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2005/n1745.pdf">n1745</a> (2005-01-17)<br>
-ISO 29124 split off, the rest merged into C++11
+<td>Published 2006 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/43351.html">ISO store</a>).
+<p>Draft: <a rel="nofollow" class="external text" href="https://www.open-std.org/jtc1/sc22/wg21/docs/TR18015.pdf">TR18015</a> (2006-02-15).
 </p>
 </td>
 <td>
 </td></tr>
 <tr>
-<td> ISO/IEC 29124:2010
+<td>ISO/IEC TR 19768:2007
 </td>
-<td> Extensions to the C++ Library to support mathematical special functions
+<td>Technical Report on C++ Library Extensions
 </td>
-<td> Published 2010-09-03 (<a rel="nofollow" class="external text" href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=50511">ISO Store</a>)
-<p>Final draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2010/n3060.pdf">n3060</a> (2010-03-06).<br>
-Merged into C++17
+<td>Published 2007-11-15 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/43289.html">ISO store</a>).
+<p>Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n1836">N1836</a> (2005-06-24)<br>
+ISO 29124 split off, the rest merged into C++11.
 </p>
 </td>
-<td> <a href="experimental/special_math.html" title="cpp/experimental/special math"><tt>special math</tt></a>
+<td>
 </td></tr>
 <tr>
-<td> ISO/IEC TR 24733:2011
+<td>ISO/IEC 29124:2010
 </td>
-<td> Extensions for the programming language C++ to support decimal floating-point arithmetic
+<td>Extensions to the C++ Library to support mathematical special functions
 </td>
-<td> Published 2011-10-25 (<a rel="nofollow" class="external text" href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=38843">ISO Store</a>)
-<p>Draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2009/n2849.pdf">n2849</a> (2009-03-06)<br>
-May be superseded by a future TS or merged into a future revision of C++ (most recent merge proposal was <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3871.html">n3871</a>)
+<td>Published 2010-09-03 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/50511.html">ISO Store</a>).
+<p>Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n3060">N3060</a> (2010-03-06).<br>
+<span style="font-size:21px;color:green"><b>✔</b></span><a href="numeric/special_functions.html" title="cpp/numeric/special functions">Merged into C++17</a>.
 </p>
 </td>
-<td> <code>decimal32</code><br><code>decimal64</code><br><code>decimal128</code>
+<td><a href="experimental/special_math.html" title="cpp/experimental/special functions">Special functions</a>
 </td></tr>
 <tr>
-<td> ISO/IEC TS 18822:2015
+<td>ISO/IEC TR 24733:2011
 </td>
-<td> C++ File System Technical Specification
+<td>Extensions for the programming language C++ to support decimal floating-point arithmetic
 </td>
-<td> Published 2015-06-18. (<a rel="nofollow" class="external text" href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=63483">ISO store</a>). Final draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf">n4100</a> (2014-07-04).<br>
-<p>Merged into C++17.
+<td>Published 2011-10-25 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/38843.html">ISO Store</a>)
+<p>Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n2849">N2849</a> (2009-03-06).<br>
+May be superseded by a future TS or merged into a future revision of C++ (most recent merge proposal was <a rel="nofollow" class="external text" href="https://wg21.link/n3871">N3871</a>).
 </p>
 </td>
-<td> <a href="experimental/fs.html" title="cpp/experimental/fs"><tt>filesystem</tt></a>
+<td>
 </td></tr>
 <tr>
-<td> ISO/IEC TS 19570:2015
+<td>ISO/IEC TS 18822:2015
 </td>
-<td> C++ Extensions for Parallelism
+<td>C++ File System Technical Specification
 </td>
-<td> Published 2015-06-24. (<a rel="nofollow" class="external text" href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=65241">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4507.pdf">n4507</a> (2015-05-05).<br>
-<p>Merged into C++17.
+<td>Published 2015-06-18 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/63483.html">ISO store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4100">N4100</a> (2014-07-04).<br>
+<p><span style="font-size:21px;color:green"><b>✔</b></span><a href="filesystem.html" title="cpp/filesystem">Merged into C++17</a>.
 </p>
 </td>
-<td> <a href="experimental/parallelism.html" title="cpp/experimental/parallelism"><tt>parallelism</tt></a>
+<td><a href="experimental/fs.html" title="cpp/experimental/fs">Filesystem</a>, <a href="header/filesystem.html" title="cpp/header/filesystem"><tt>&lt;filesystem&gt;</tt></a>
 </td></tr>
 <tr>
-<td> ISO/IEC TS 19841:2015
+<td>ISO/IEC TS 19570:2015
 </td>
-<td> Transactional Memory TS
+<td>C++ Extensions for Parallelism
 </td>
-<td> Published 2015-09-16, (<a rel="nofollow" class="external text" href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=66343">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4514.pdf">n4514</a> (2015-05-08)
-</td>
-<td> <a href="language/transactional_memory.html" title="cpp/language/transactional memory">transactional memory</a>
-</td></tr>
-<tr>
-<td> ISO/IEC TS 19568:2015
-</td>
-<td> C++ Extensions for Library Fundamentals
-</td>
-<td> Published 2015-09-30, (<a rel="nofollow" class="external text" href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=65238">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4480.html">n4480</a> (2015-04-07).<br>
-<p>Merged into C++17 except for invocation traits
+<td>Published 2015-06-24. (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/65241.html">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4507">N4507</a> (2015-05-05).<br>
+<p><span style="font-size:21px;color:green"><b>✔</b></span>Merged into C++17.
 </p>
 </td>
-<td><a href="experimental/memory.html" title="cpp/experimental/lib extensions"><tt>library extensions</tt></a>
+<td><a href="experimental/parallelism.html" title="cpp/experimental/parallelism">Parallelism</a>
 </td></tr>
 <tr>
-<td> ISO/IEC TS 19217:2015
+<td>ISO/IEC TS 19841:2015
 </td>
-<td> C++ Extensions for Concepts
+<td>Transactional Memory TS
 </td>
-<td> Published 2015-11-13. (<a rel="nofollow" class="external text" href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=64031">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4553.pdf">n4553</a> (2015-10-02) Current draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0734r0.pdf">p0734r0</a> (2017-07-14)<br>
-<p>Merged into C++20 (with modifications).
+<td>Published 2015-09-16, (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/66343.html">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4514">N4514</a> (2015-05-08).
+</td>
+<td><a href="language/transactional_memory.html" title="cpp/language/transactional memory">Transactional memory</a>
+</td></tr>
+<tr>
+<td>ISO/IEC TS 19568:2015
+</td>
+<td>C++ Extensions for Library Fundamentals
+</td>
+<td>Published 2015-09-30, (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/65238.html">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4480">N4480</a> (2015-04-07).<br>
+<p><span style="font-size:21px;color:green"><b>✔</b></span>Merged into C++17 except for invocation traits.
 </p>
 </td>
-<td><a href="experimental/constraints.html" title="cpp/experimental/constraints">constraints and concepts</a>
+<td><a href="experimental/memory.html" title="cpp/experimental/lib extensions">Library extensions</a>
 </td></tr>
 <tr>
-<td> ISO/IEC TS 19571:2016
+<td>ISO/IEC TS 19217:2015
 </td>
-<td> C++ Extensions for Concurrency
+<td>C++ Extensions for Concepts
 </td>
-<td> Published 2016-01-19. (<a rel="nofollow" class="external text" href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=65242">ISO Store</a>) Final draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0159r0.html">p0159r0</a> (2015-10-22)
-</td>
-<td> <a href="experimental/concurrency.html" title="cpp/experimental/concurrency"><tt>concurrency</tt></a>
-</td></tr>
-<tr>
-<td> ISO/IEC TS 19568:2017
-</td>
-<td> C++ Extensions for Library Fundamentals, Version 2
-</td>
-<td> Published 2017-03-30. (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/70587.html">ISO Store</a>) Draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/n4617.pdf">n4617</a> (2016-11-28)
-</td>
-<td> <a href="experimental/lib_extensions_2.html" title="cpp/experimental/lib extensions 2"><tt>library extensions 2</tt></a>
-</td></tr>
-<tr>
-<td> ISO/IEC TS 21425:2017
-</td>
-<td> Ranges TS
-</td>
-<td> Published 2017-12-05. (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/70910.html">ISO Store</a>) Draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4685.pdf">n4685</a> (2017-07-31)<br>
-<p>Merged into C++20.
+<td>Published 2015-11-13 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/64031.html">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4553">N4553</a> (2015-10-02). Current draft: <a rel="nofollow" class="external text" href="https://wg21.link/p0734r0">P0734R0</a> (2017-07-14).<br>
+<p><span style="font-size:21px;color:green"><b>✔</b></span><a href="language/constraints.html" title="cpp/language/constraints">Merged into C++20</a> (with modifications).
 </p>
 </td>
-<td> <a href="experimental/ranges.html" title="cpp/experimental/ranges"><tt>ranges</tt></a>
+<td><a href="experimental/constraints.html" title="cpp/experimental/constraints">Constraints and concepts</a>, <a href="header/concepts.html" title="cpp/header/concepts"><tt>&lt;concepts&gt;</tt></a>
 </td></tr>
 <tr>
-<td> ISO/IEC TS 22277:2017
+<td>ISO/IEC TS 19571:2016
 </td>
-<td> Coroutines TS
+<td>C++ Extensions for Concurrency
 </td>
-<td> Published 2017-12-05. (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/73008.html">ISO Store</a>) Draft <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/n4736.pdf">n4736</a> (2018-03-31) Latest draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/n4775.pdf">n4775</a> (2018-10-07)
-</td>
-<td>
-</td></tr>
-<tr>
-<td> ISO/IEC TS 19216:2018
-</td>
-<td> Networking TS
-</td>
-<td> Published 2018-04-24. (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/64030.html">ISO Store</a>) Draft <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/n4734.pdf">n4734</a> (2017-04-04). Latest draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/n4771.pdf">n4771</a> (2018-10-08)
-</td>
-<td>
-</td></tr>
-<tr>
-<td> ISO/IEC TS 21544:2018
-</td>
-<td> Modules TS
-</td>
-<td> Published 2018-05-16. (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/71051.html">ISO Store</a>) Final Draft <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/n4720.pdf">n4720</a> (2018-01-29)
-</td>
-<td>
-</td></tr>
-<tr>
-<td> ISO/IEC TS 19570:2018
-</td>
-<td> Parallelism TS part 2
-</td>
-<td> Published 2018-11-15. (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/70588.html">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/n4793.pdf">n4793</a> (2018-11-26)
-<p>Post-publication draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/n4808.pdf">n4808</a> (2019-03-11)
+<td>Published 2016-01-19 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/65242.html">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/p0159r0">P0159R0</a> (2015-10-22).<br>
+<p><span style="font-size:21px;color:green"><b>✔</b></span>Partially merged into C++20.
 </p>
 </td>
-<td> <a href="experimental/parallelism_2.html" title="cpp/experimental/parallelism 2"><tt>parallelism 2</tt></a>
+<td><a href="experimental/concurrency.html" title="cpp/experimental/concurrency">Concurrency</a>
 </td></tr>
 <tr>
-<td> ISO/IEC PDTS 23619:xxxx
+<td>ISO/IEC TS 19568:2017
 </td>
-<td> Reflection TS
+<td>C++ Extensions for Library Fundamentals, Version 2
 </td>
-<td> Development. Draft <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/n4766.pdf">n4766</a> (2018-08-11)
+<td>Published 2017-03-30 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/70587.html">ISO Store</a>). Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4617">N4617</a> (2016-11-28).<br>
+<p><span style="font-size:21px;color:green"><b>✔</b></span>Partially merged into C++17 and C++20.
+</p>
+</td>
+<td><a href="experimental/lib_extensions_2.html" title="cpp/experimental/lib extensions 2">Library extensions 2</a>
+</td></tr>
+<tr>
+<td>ISO/IEC TS 21425:2017
+</td>
+<td>Ranges TS
+</td>
+<td>Published 2017-12-05 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/70910.html">ISO Store</a>). Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4685">N4685</a> (2017-07-31).<br>
+<p><span style="font-size:21px;color:green"><b>✔</b></span><a href="ranges.html" title="cpp/ranges">Merged into C++20</a>.
+</p>
+</td>
+<td><a href="experimental/ranges.html" title="cpp/experimental/ranges">Ranges</a>, <a href="header/ranges.html" title="cpp/header/ranges"><tt>&lt;ranges&gt;</tt></a>
+</td></tr>
+<tr>
+<td>ISO/IEC TS 22277:2017
+</td>
+<td>Coroutines TS
+</td>
+<td>Published 2017-12-05 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/73008.html">ISO Store</a>). Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4736">N4736</a> (2018-03-31). Latest draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4775">N4775</a> (2018-10-07).<br>
+<p><span style="font-size:21px;color:green"><b>✔</b></span><a href="coroutine.html" title="cpp/coroutine">Merged into C++20</a>.
+</p>
+</td>
+<td><a href="header/coroutine.html" title="cpp/header/coroutine"><tt>&lt;coroutine&gt;</tt></a>
+</td></tr>
+<tr>
+<td>ISO/IEC TS 19216:2018
+</td>
+<td>Networking TS
+</td>
+<td>Published 2018-04-24 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/64030.html">ISO Store</a>). Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4734">N4734</a> (2017-04-04). Latest draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4771">N4771</a> (2018-10-08).
+<div style="margin-left:0px">
+<table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
+
+<tr>
+<th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">See also non-TS proposals</span>
+</th></tr>
+<tr>
+<td style="border: solid 1px silver; padding: 8px; background: white;">
+<ul><li> Standard Secure Networking - <a rel="nofollow" class="external text" href="https://wg21.link/P2586R0">P2586R0</a> (2022-09-13)
+</li><li> Sender-Receiver Interface For Networking - <a rel="nofollow" class="external text" href="https://wg21.link/P2762R2">P2762R2</a> (2023-10-12)
+</li></ul>
+</td></tr></table></div>
+</td>
+<td><a href="experimental/networking.html" title="cpp/experimental/networking">Networking</a>
+</td></tr>
+<tr>
+<td>ISO/IEC TS 21544:2018
+</td>
+<td>Modules TS
+</td>
+<td>Published 2018-05-16 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/71051.html">ISO Store</a>). Final Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4720">N4720</a> (2018-01-29).<br>
+<p><span style="font-size:21px;color:green"><b>✔</b></span><a href="language/modules.html" title="cpp/language/modules">Merged into C++20</a>.
+</p>
 </td>
 <td>
+</td></tr>
+<tr id="Parallelism_TS_Version_2">
+<td>ISO/IEC TS 19570:2018
+</td>
+<td>Parallelism TS Version 2
+</td>
+<td>Published 2018-11-15 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/70588.html">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4793">N4793</a> (2018-11-26). Post-publication draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4808">N4808</a> (2019-03-11). See also non-TS <code>std::simd</code> proposals <a href="experimental.html#SIMD_proposals">below</a>.
+</td>
+<td><a href="experimental/parallelism_2.html" title="cpp/experimental/parallelism 2">Parallelism 2</a>
+</td></tr>
+<tr id="Reflection_TS">
+<td>ISO/IEC TS 23619:2021
+</td>
+<td>Reflection TS
+</td>
+<td>Published 2021-10-11 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/76425.html">ISO store</a>). Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4856">N4856</a> (2020-03-02). See also non-TS proposals <a href="experimental.html#Reflection_proposals">below</a>.
+</td>
+<td><a href="experimental/reflect.html" title="cpp/experimental/reflect">Reflection</a>
 </td></tr>
 <tr>
 <td>
 </td>
-<td> Numerics TS
+<td>Numerics
 </td>
-<td> Early development. Draft <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0101r0.html">p0101</a> (2015-09-27)
-</td>
-<td>
-</td></tr>
-<tr>
-<td> ISO/IEC DTS 19571:xxxx
-</td>
-<td> Concurrency TS part 2
-</td>
-<td> Early development
+<td>Early development. Draft: <a rel="nofollow" class="external text" href="https://wg21.link/p1889r1">P1889R1</a> (2019-12-27).
 </td>
 <td>
 </td></tr>
 <tr>
-<td> ISO/IEC DTS 19568:xxxx
+<td>ISO/IEC TS 9922
 </td>
-<td> C++ Extensions for Library Fundamentals, Version 3
+<td>Concurrency TS Version 2
 </td>
-<td> Early development: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/n4806.html">n4806</a> (2019-03-13)
+<td>Published 2024-10-09 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/83630.html">ISO Store</a>). Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4956">N4956</a> (2023-07-05).
+</td>
+<td><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/concurrency_2&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/concurrency 2 (page does not exist)">Concurrency 2</a>
+</td></tr>
+<tr>
+<td>ISO/IEC TS 19568:2024
+</td>
+<td>C++ Extensions for Library Fundamentals, Version 3
+</td>
+<td>Published 2024-08-26 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/86293.html">ISO Store</a>). Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4948">N4948</a> (2023-05-08).
+</td>
+<td><a href="experimental/lib_extensions_3.html" title="cpp/experimental/lib extensions 3">Library extensions 3</a>
+</td></tr>
+<tr>
+<td>ISO/IEC DTS 12907
+</td>
+<td>Transactional Memory TS, Version 2
+</td>
+<td>Early development. Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4923">N4923</a> (2022-10-14).
 </td>
 <td>
 </td></tr>
 <tr>
-<td> ISO/IEC DTS 19841:xxxx
+<td>ISO/IEC NP 19569
 </td>
-<td> Transactional Memory TS part 2
+<td>Array Extensions TS
 </td>
-<td> Early development
+<td><span style="font-size:21px;color:red"><b>×</b></span> Withdrawn. Abandoned draft: <a rel="nofollow" class="external text" href="https://wg21.link/n3820">N3820</a> (2013-10-10).
+</td>
+<td>
+</td></tr></table>
+<h4><span class="mw-headline" id="Non-TS_proposals">Non-TS proposals</span></h4>
+<table class="wikitable">
+
+<tr>
+<th>Name</th>
+<th>Status</th>
+<th>Links, Headers
+</th></tr>
+<tr>
+<td>Linear Algebra
+</td>
+<td><span style="font-size:21px;color:green"><b>✔</b></span><a href="header/linalg.html" title="cpp/header/linalg">Merged into C++26</a>. Proposal: <a rel="nofollow" class="external text" href="https://wg21.link/P1673R13">P1673R13</a> (2023-11-10).
+<div style="margin-left:0px">
+<table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
+
+<tr>
+<th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
+</th></tr>
+<tr>
+<td style="border: solid 1px silver; padding: 8px; background: white;">
+<ul><li> A proposal to add linear algebra support to the C++ standard library - <a rel="nofollow" class="external text" href="https://wg21.link/P1385R7">P1385R7</a> (2022-10-15)
+</li><li> Evolving a Standard C++ Linear Algebra Library from the <a href="https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms" class="extiw" title="enwiki:Basic Linear Algebra Subprograms">BLAS</a> - <a rel="nofollow" class="external text" href="https://wg21.link/P1674R2">P1674R2</a> (2022-05-15)
+</li><li> Presentation of <a rel="nofollow" class="external text" href="https://wg21.link/P1385R7">P1385R7</a> to LEWG at Issaquah 2023 - <a rel="nofollow" class="external text" href="https://wg21.link/P2802R0">P2802R0</a> (2023-02-09)
+</li><li> Fix C++26 by optimizing <span class="mw-geshi cpp source-cpp"><a href="http://en.cppreference.com/w/cpp/numeric/linalg/conjugated"><span class="kw3547">linalg::<span class="me2">conjugated</span></span></a></span> for non-complex value types - <a rel="nofollow" class="external text" href="https://wg21.link/P3050R2">P3050R2</a> (2024-08-13)
+</li><li> Fix C++26 by making the <a href="https://en.wikipedia.org/wiki/Symmetric_matrix" class="extiw" title="enwiki:Symmetric matrix">symmetric</a> and <a href="https://en.wikipedia.org/wiki/Hermitian_matrix" class="extiw" title="enwiki:Hermitian matrix">Hermitian</a> rank-k and rank-2k updates consistent with the <a href="https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms" class="extiw" title="enwiki:Basic Linear Algebra Subprograms">BLAS</a> - <a rel="nofollow" class="external text" href="https://wg21.link/P3371R2">P3371R2</a> (2024-10-14)
+</li></ul>
+</td></tr></table></div>
+</td>
+<td><a href="header/linalg.html" title="cpp/header/linalg"><tt>&lt;linalg&gt;</tt></a>
+</td></tr>
+<tr>
+<td><span class="t-lc">std::execution</span>
+</td>
+<td>Forwarded to LWG, wording in progress.<br>
+<p><span style="font-size:21px;color:green"><b>✔</b></span><a href="header/execution.html" title="cpp/header/execution">Merged into C++26</a>. Proposal: <a rel="nofollow" class="external text" href="https://wg21.link/P2300R10">P2300R10</a> (2024-06-28).
+</p>
+<div style="margin-left:0px">
+<table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
+
+<tr>
+<th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
+</th></tr>
+<tr>
+<td style="border: solid 1px silver; padding: 8px; background: white;">
+<ul><li> System execution context - <a rel="nofollow" class="external text" href="https://wg21.link/P2079R5">P2079R5</a> (2024-10-16)
+</li><li> Sender-Receiver Interface for Networking - <a rel="nofollow" class="external text" href="https://wg21.link/P2762R2">P2762R2</a> (2023-10-12)
+</li><li> Member customization points for Senders and Receivers - <a rel="nofollow" class="external text" href="https://wg21.link/P2855R1">P2855R1</a> (2024-02-22)
+</li><li> An Event Model for C++ Executors - <a rel="nofollow" class="external text" href="https://wg21.link/P2882R0">P2882R0</a> (2023-05-11)
+</li><li> Sender Algorithm Customization - <a rel="nofollow" class="external text" href="https://wg21.link/P2999R3">P2999R3</a> (2023-12-13)
+</li><li> <span class="t-lc">std::execution</span> introduction - <a rel="nofollow" class="external text" href="https://wg21.link/P3090R0">P3090R0</a> (2024-02-14)
+</li><li> A plan for <span class="t-lc">std::execution</span> for C++26 - <a rel="nofollow" class="external text" href="https://wg21.link/P3109R0">P3109R0</a> (2024-02-12)
+</li><li> Improving diagnostics for Sender expressions - <a rel="nofollow" class="external text" href="https://wg21.link/P3164R0">P3164R0</a> (2024-03-01)
+</li><li> Reconsidering the <span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">execution</span><span class="sy4">::</span><span class="me2">on</span></span> algorithm - <a rel="nofollow" class="external text" href="https://wg21.link/P3175R3">P3175R3</a> (2024-06-25)
+</li><li> <code>finally</code>, <code>write_env</code>, and <code>unstoppable</code> Sender Adaptors - <a rel="nofollow" class="external text" href="https://wg21.link/P3284R1">P3284R1</a> (2024-07-16)
+</li><li> Fixing Lazy Sender Algorithm Customization - <a rel="nofollow" class="external text" href="https://wg21.link/P3303R1">P3303R1</a> (2024-06-25)
+</li><li> A Utility for Creating Execution Environments - <a rel="nofollow" class="external text" href="https://wg21.link/P3325R3">P3325R3</a> (2024-07-23)
+</li><li> When Do You Know <code>connect</code> Doesn't Throw? - <a rel="nofollow" class="external text" href="https://wg21.link/P3388R0">P3388R0</a> (2024-09-10)
+</li><li> <span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">execution</span></span> wording fixes - <a rel="nofollow" class="external text" href="https://wg21.link/P3396R0">P3396R0</a> (2024-09-16)
+</li><li> Enabling more efficient stop-token based cancellation of senders - <a rel="nofollow" class="external text" href="https://wg21.link/P3409R0">P3409R0</a> (2024-10-16)
+</li><li> <code>system_scheduler</code> on Win32, Darwin and Linux - <a rel="nofollow" class="external text" href="https://wg21.link/P3456R0">P3456R0</a> (2024-10-15)
+</li><li> Summarizing <span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">execution</span><span class="sy4">::</span><span class="me2">bulk</span><span class="br0">(</span><span class="br0">)</span></span> issues - <a rel="nofollow" class="external text" href="https://wg21.link/P3481R0">P3481R0</a> (2024-10-16)
+</li></ul>
+</td></tr></table></div>
+</td>
+<td><a href="experimental/execution.html" title="cpp/experimental/execution" class="mw-redirect">Execution</a>, <a href="header/execution.html" title="cpp/header/execution"><tt>&lt;execution&gt;</tt></a>
+</td></tr>
+<tr>
+<td><span class="t-lc">std::inplace_vector</span>
+</td>
+<td><span style="font-size:21px;color:green"><b>✔</b></span><a href="header/inplace_vector.html" title="cpp/header/inplace vector">Merged into C++26</a>. Proposal: <a rel="nofollow" class="external text" href="https://wg21.link/P0843R14">P0843R14</a> (2024-06-26).
+<div style="margin-left:0px">
+<table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
+
+<tr>
+<th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
+</th></tr>
+<tr>
+<td style="border: solid 1px silver; padding: 8px; background: white;">
+<ul><li> <code>inplace_vector</code> - <a rel="nofollow" class="external text" href="https://wg21.link/P0843">P0843</a>(<a rel="nofollow" class="external text" href="https://wg21.link/P0843R7">R7</a>) LEWG presentation - <a rel="nofollow" class="external text" href="https://wg21.link/P2925R0">P2925R0</a> (2023-06-16)
+</li><li> A direction for Vector - <a rel="nofollow" class="external text" href="https://wg21.link/P3147R1">P3147R1</a> (2024-03-18)
+</li><li> An allocator-aware <span class="t-lc">std::inplace_vector</span> - <a rel="nofollow" class="external text" href="https://wg21.link/P3160R2">P3160R2</a> (2024-10-15)
+</li></ul>
+</td></tr></table></div>
+</td>
+<td><a href="header/inplace_vector.html" title="cpp/header/inplace vector"><tt>&lt;inplace_vector&gt;</tt></a>
+</td></tr>
+<tr>
+<td>Pattern Matching
+</td>
+<td>Early development. Draft <a rel="nofollow" class="external text" href="https://wg21.link/P1371R3">P1371R3</a> (2020-09-15).
+<div style="margin-left:0px">
+<table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
+
+<tr>
+<th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
+</th></tr>
+<tr>
+<td style="border: solid 1px silver; padding: 8px; background: white;">
+<ul><li> Pattern Matching using <span class="mw-geshi cpp source-cpp">is</span> and <span class="mw-geshi cpp source-cpp">as</span> - <a rel="nofollow" class="external text" href="https://wg21.link/P2392R3">P2392R3</a> (2024-10-16)
+</li><li> Pattern Matching: <span class="mw-geshi cpp source-cpp">match</span> expression - <a rel="nofollow" class="external text" href="https://wg21.link/P2688R3">P2688R3</a> (2024-10-16)
+</li><li> <span class="mw-geshi cpp source-cpp"><span class="kw1">switch</span></span> for Pattern Matching - <a rel="nofollow" class="external text" href="https://wg21.link/P2940R0">P2940R0</a> (2022-04-18)
+</li><li> Identifiers for Pattern Matching - <a rel="nofollow" class="external text" href="https://wg21.link/P2941R0">P2941R0</a> (2022-02-24)
+</li><li> A Postcondition <i>is</i> a Pattern Match - <a rel="nofollow" class="external text" href="https://wg21.link/P3210R2">P3210R2</a> (2024-09-10)
+</li><li> A unified syntax for Pattern Matching and Contracts when introducing a new name - <a rel="nofollow" class="external text" href="https://wg21.link/P3249R0">P3249R0</a> (2024-05-22)
+</li><li> A simpler notation for PM - <a rel="nofollow" class="external text" href="https://wg21.link/P3332R0">P3332R0</a> (2024-06-18)
+</li><li> Slides for P2688R2 - Pattern Matching: <span class="mw-geshi cpp source-cpp">match</span> Expression - <a rel="nofollow" class="external text" href="https://wg21.link/P3476R0">P3476R0</a> (2024-10-16)
+</li></ul>
+</td></tr></table></div>
+</td>
+<td>
+</td></tr>
+<tr id="Reflection_proposals">
+<td>Reflection
+</td>
+<td>The main document (ISO/IEC TS 23619:2021) is described in <a href="experimental.html#Reflection_TS">Reflection TS</a> above.
+<div style="margin-left:0px">
+<table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
+
+<tr>
+<th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
+</th></tr>
+<tr>
+<td style="border: solid 1px silver; padding: 8px; background: white;">
+<ul><li> Scalable Reflection in C++ - <a rel="nofollow" class="external text" href="https://wg21.link/P1240R2">P1240R2</a> (2022-01-14)
+</li><li> Expansion statements - <a rel="nofollow" class="external text" href="https://wg21.link/P1306R3">P1306R3</a> (2024-10-14)
+</li><li> Reflection on attributes - <a rel="nofollow" class="external text" href="https://wg21.link/P1887R1">P1887R1</a> (2020-01-13)
+</li><li> Metaprogramming - <a rel="nofollow" class="external text" href="https://wg21.link/P2237R0">P2237R0</a> (2020-10-15)
+</li><li> Python Bindings with Value-Based Reflection - <a rel="nofollow" class="external text" href="https://wg21.link/P2911R1">P2911R1</a> (2023-10-13)
+</li><li> Reflection for C++26 - <a rel="nofollow" class="external text" href="https://wg21.link/P2996R7">P2996R7</a> (2024-10-13)
+</li><li> Using Reflection to Replace a Metalanguage for Generating JS Bindings - <a rel="nofollow" class="external text" href="https://wg21.link/P3010R0">P3010R0</a> (2023-10-13)
+</li><li> ABI comparison with reflection - <a rel="nofollow" class="external text" href="https://wg21.link/P3095R0">P3095R0</a> (2024-02-15)
+</li><li> Function Parameter Reflection in Reflection for C++26 - <a rel="nofollow" class="external text" href="https://wg21.link/P3096R3">P3096R3</a> (2024-09-15)
+</li><li> Generative Extensions for Reflection - <a rel="nofollow" class="external text" href="https://wg21.link/P3157R1">P3157R1</a> (2024-05-22)
+</li><li> Syntax for Reflection - <a rel="nofollow" class="external text" href="https://wg21.link/P3381R0">P3381R0</a> (2024-09-17)
+</li><li> Attributes reflection - <a rel="nofollow" class="external text" href="https://wg21.link/P3385R1">P3385R1</a> (2024-10-15)
+</li><li> Annotations for Reflection - <a rel="nofollow" class="external text" href="https://wg21.link/P3394R0">P3394R0</a> (2024-10-14)
+</li><li> Reflection Syntax Options Summary - <a rel="nofollow" class="external text" href="https://wg21.link/P3419R0">P3419R0</a> (2024-10-11)
+</li><li> Reflection of Templates - <a rel="nofollow" class="external text" href="https://wg21.link/P3420R0">P3420R0</a> (2024-10-16)
+</li><li> Reflection header should minimize standard library dependencies - <a rel="nofollow" class="external text" href="https://wg21.link/P3429R0">P3429R0</a> (2024-10-16)
+</li><li> Reflection and meta-programming - <a rel="nofollow" class="external text" href="https://wg21.link/P3435R0">P3435R0</a> (2024-10-14)
+</li><li> Proposed default principles: Reflect C++, Generate C++ - <a rel="nofollow" class="external text" href="https://wg21.link/P3437R0">P3437R0</a> (2024-10-16)
+</li><li> Reflection on SG21 2024 Process - <a rel="nofollow" class="external text" href="https://wg21.link/P3443R0">P3443R0</a> (2024-10-14)
+</li><li> A Suggestion for Reflection Access Control - <a rel="nofollow" class="external text" href="https://wg21.link/P3451R0">P3451R0</a> (2024-10-15)
+</li></ul>
+</td></tr></table></div>
+</td>
+<td> <a href="experimental/reflect.html" title="cpp/experimental/reflect">Reflection</a>
+</td></tr>
+<tr id="SIMD_proposals">
+<td><a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a>
+</td>
+<td>The main document (TS ISO/IEC 19570:2018) is described in <a href="experimental.html#Parallelism_TS_Version_2">"C++ Extensions for Parallelism V2"</a> above.
+<div style="margin-left:0px">
+<table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
+
+<tr>
+<th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
+</th></tr>
+<tr>
+<td style="border: solid 1px silver; padding: 8px; background: white;">
+<ul><li> Expected Feedback from SIMD in Parallelism TS2 - <a rel="nofollow" class="external text" href="https://wg21.link/P1915R0">P1915R0</a> (2019-10-07)
+</li><li> <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> - Merge data-parallel types from the Parallelism TS 2 - <a rel="nofollow" class="external text" href="https://wg21.link/P1928R12">P1928R12</a> (2024-10-11)
+</li><li> Intel's response to <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P2638R0">P2638R0</a> (2022-09-22)
+</li><li> Proposal to support interleaved complex values in <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P2663R5">P2663R5</a> (2023-12-08)
+</li><li> Proposal to extend <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> with permutation API - <a rel="nofollow" class="external text" href="https://wg21.link/P2664R8">P2664R8</a> (2024-10-15)
+</li><li> <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> Intro slides - <a rel="nofollow" class="external text" href="https://wg21.link/P2803R0">P2803R0</a> (2023-02-09)
+</li><li> Issaquah Slides for Intel response to <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P2807R0">P2807R0</a> (2023-02-10)
+</li><li> Proposal to extend <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> with more constructors and accessors - <a rel="nofollow" class="external text" href="https://wg21.link/P2876R1">P2876R1</a> (2024-05-22)
+</li><li> Algorithm-like vs <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> based RNG API - <a rel="nofollow" class="external text" href="https://wg21.link/P2880R0">P2880R0</a> (2023-05-18)
+</li><li> <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> types should be regular - <a rel="nofollow" class="external text" href="https://wg21.link/P2892R0">P2892R0</a> (2023-05-19)
+</li><li> <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> types should be regular - <a rel="nofollow" class="external text" href="https://wg21.link/P2892R0">P2892R0</a> LEWG presentation - <a rel="nofollow" class="external text" href="https://wg21.link/P2926R0">P2926R0</a> (2023-06-19)
+</li><li> <code>simd_invoke</code> - <a rel="nofollow" class="external text" href="https://wg21.link/P2929R0">P2929R0</a> (2023-07-19)
+</li><li> <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> overloads for <a href="header/bit.html" title="cpp/header/bit"><tt>&lt;bit&gt;</tt></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P2933R2">P2933R2</a> (2024-10-16)
+</li><li> Add saturating library support to <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P2956R0">P2956R0</a> (2023-08-01)
+</li><li> Allowing user-defined types in <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P2964R1">P2964R1</a> (2024-05-22)
+</li><li> Interface Directions for <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P3024R0">P3024R0</a> (2023-11-30)
+</li><li> Provide predefined <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> permute generator functions for common operations - <a rel="nofollow" class="external text" href="https://wg21.link/P3067R0">P3067R0</a> (2024-05-22)
+</li><li> Replace <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> <span class="mw-geshi cpp source-cpp">operator<span class="br0">[</span><span class="br0">]</span></span> with getter and setter functions - or not - <a rel="nofollow" class="external text" href="https://wg21.link/P3275R0">P3275R0</a> (2024-05-22)
+</li><li> Exploration of namespaces for <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P3287R1">P3287R1</a> (2024-10-15)
+</li><li> Range constructors for <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P3299R2">P3299R2</a> (2024-10-16)
+</li><li> Add an <code>iota</code> object for <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> (and more) - <a rel="nofollow" class="external text" href="https://wg21.link/P3319R1">P3319R1</a> (2024-06-28)
+</li><li> <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> issues: explicit, unsequenced, identity-element position, and members of disabled simd - <a rel="nofollow" class="external text" href="https://wg21.link/P3430R0">P3430R0</a> (2024-10-15)
+</li><li> Add <code>n_elements</code> named constructor to <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P3440R0">P3440R0</a> (2024-10-15)
+</li><li> Rename <code>simd_split</code> to <code>simd_chunk</code> - <a rel="nofollow" class="external text" href="https://wg21.link/P3441R0">P3441R0</a> (2024-10-15)
+</li><li> Add utilities for easier type-bit casting in <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P3445R0">P3445R0</a> (2024-10-16)
+</li><li> <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> is a <a href="ranges/range.html" title="cpp/ranges/range"><code>range</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P3480R0">P3480R0</a> (2024-10-16)
+</li></ul>
+</td></tr></table></div>
+</td>
+<td><a href="experimental/simd.html" title="cpp/experimental/simd">Data parallel types</a>
+</td></tr>
+<tr>
+<td>Contracts
+</td>
+<td>Early development. Proposal <a rel="nofollow" class="external text" href="https://wg21.link/P2659R2">P2659R2</a> (2022-11-30). Draft <a rel="nofollow" class="external text" href="https://wg21.link/P2660R0">P2660R0</a> (2022-10-14).
+<div style="margin-left:0px">
+<table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
+
+<tr>
+<th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
+</th></tr>
+<tr>
+<td style="border: solid 1px silver; padding: 8px; background: white;">
+<ul><li> A Proposal to Publish a Technical Specification for Contracts - <a rel="nofollow" class="external text" href="https://wg21.link/P2659R2">P2659R2</a> (2022-12-05)
+</li><li> Miscellaneous amendments to the Contracts TS - <a rel="nofollow" class="external text" href="https://wg21.link/P2661R0">P2661R0</a> (2022-10-15)
+</li><li> Contracts for C++: Prioritizing Safety - <a rel="nofollow" class="external text" href="https://wg21.link/P2680R1">P2680R1</a> (2022-12-15)
+</li><li> A proposed plan for contracts in C++ - <a rel="nofollow" class="external text" href="https://wg21.link/P2695R1">P2695R1</a> (2023-02-09)
+</li><li> Proposal of Condition-centric Contracts Syntax - <a rel="nofollow" class="external text" href="https://wg21.link/P2737R0">P2737R0</a> (2022-12-30)
+</li><li> Contracts for C++: Prioritizing Safety - Presentation slides - <a rel="nofollow" class="external text" href="https://wg21.link/P2743R0">P2743R0</a> (2022-12-13)
+</li><li> Evaluation of Checked Contracts - <a rel="nofollow" class="external text" href="https://wg21.link/P2751R1">P2751R1</a> (2023-02-14)
+</li><li> A Bold Plan for a Complete Contracts Facility - <a rel="nofollow" class="external text" href="https://wg21.link/P2755R1">P2755R1</a> (2024-04-11)
+</li><li> The idea behind the contracts MVP - <a rel="nofollow" class="external text" href="https://wg21.link/P2817R0">P2817R0</a> (2023-03-05)
+</li><li> Proposal of Contracts Supporting Const-On-Definition Style - <a rel="nofollow" class="external text" href="https://wg21.link/P2829R0">P2829R0</a> (2023-04-13)
+</li><li> Contract violation handling semantics for the contracts MVP - <a rel="nofollow" class="external text" href="https://wg21.link/P2852R0">P2852R0</a> (2023-04-24)
+</li><li> The Lakos Rule: Narrow Contracts and <span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span></span> Are Inherently Incompatible - <a rel="nofollow" class="external text" href="https://wg21.link/P2861R0">P2861R0</a> (2023-05-19)
+</li><li> Requirements for a Contracts syntax - <a rel="nofollow" class="external text" href="https://wg21.link/P2885R3">P2885R3</a> (2023-10-05)
+</li><li> Contracts on lambdas - <a rel="nofollow" class="external text" href="https://wg21.link/P2890R2">P2890R2</a> (2023-12-13)
+</li><li> Constant evaluation of Contracts - <a rel="nofollow" class="external text" href="https://wg21.link/P2894R2">P2894R2</a> (2024-01-11)
+</li><li> Outstanding design questions for the Contracts MVP - <a rel="nofollow" class="external text" href="https://wg21.link/P2896R0">P2896R0</a> (2023-08-22)
+</li><li> Contracts for C++ - <a rel="nofollow" class="external text" href="https://wg21.link/P2900R10">P2900R10</a> (2024-10-13)
+</li><li> A Principled Approach to Open Design Questions for Contracts - <a rel="nofollow" class="external text" href="https://wg21.link/P2932R3">P2932R3</a> (2024-01-16)
+</li><li> An Attribute-Like Syntax for Contracts - <a rel="nofollow" class="external text" href="https://wg21.link/P2935R4">P2935R4</a> (2023-11-05)
+</li><li> Contracts must avoid disclosing sensitive information - <a rel="nofollow" class="external text" href="https://wg21.link/P2947R0">P2947R0</a> (2023-07-20)
+</li><li> Slides for <a rel="nofollow" class="external text" href="https://wg21.link/P2861R0">P2861R0</a>: Narrow Contracts and <span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span></span> are Inherently Incompatible - <a rel="nofollow" class="external text" href="https://wg21.link/P2949R0">P2949R0</a> (2023-07-14)
+</li><li> Contracts and virtual functions for the Contracts MVP - <a rel="nofollow" class="external text" href="https://wg21.link/P2954R0">P2954R0</a> (2023-08-03)
+</li><li> Contracts and coroutines - <a rel="nofollow" class="external text" href="https://wg21.link/P2957R2">P2957R2</a> (2024-10-14)
+</li><li> A natural syntax for Contracts - <a rel="nofollow" class="external text" href="https://wg21.link/P2961R2">P2961R2</a> (2023-11-08)
+</li><li> An Overview of Syntax Choices for Contracts - <a rel="nofollow" class="external text" href="https://wg21.link/P3028R0">P3028R0</a> (2023-11-05)
+</li><li> Protection against modifications in contracts - <a rel="nofollow" class="external text" href="https://wg21.link/P3071R1">P3071R1</a> (2023-12-17)
+</li><li> Remove <code>evaluation_undefined_behavior</code> and <code>will_continue</code> from the Contracts MVP - <a rel="nofollow" class="external text" href="https://wg21.link/P3073R0">P3073R0</a> (2024-01-27)
+</li><li> Should <code>ignore</code> and <code>observe</code> exist for constant evaluation of contracts? - <a rel="nofollow" class="external text" href="https://wg21.link/P3079R0">P3079R0</a> (2024-01-11)
+</li><li> Contracts for C++: Support for virtual functions - <a rel="nofollow" class="external text" href="https://wg21.link/P3097R0">P3097R0</a> (2024-04-15)
+</li><li> Contracts for C++: Postcondition captures - <a rel="nofollow" class="external text" href="https://wg21.link/P3098R0">P3098R0</a> (2024-10-14)
+</li><li> Undefined and erroneous behavior are contract violations - <a rel="nofollow" class="external text" href="https://wg21.link/P3100R1">P3100R1</a> (2024-10-16)
+</li><li> Tokyo Technical Fixes to Contracts - <a rel="nofollow" class="external text" href="https://wg21.link/P3119R1">P3119R1</a> (2024-05-09)
+</li><li> Contracts on virtual functions for the Contracts MVP - <a rel="nofollow" class="external text" href="https://wg21.link/P3165R0">P3165R0</a> (2024-02-27)
+</li><li> Inherited contracts - <a rel="nofollow" class="external text" href="https://wg21.link/P3169R0">P3169R0</a> (2024-04-14)
+</li><li> Contract testing support - <a rel="nofollow" class="external text" href="https://wg21.link/P3183R1">P3183R1</a> (2024-05-22)
+</li><li> Slides for LEWG presentation of <a rel="nofollow" class="external text" href="https://wg21.link/P2900R6">P2900R6</a>: Contracts for C++ - <a rel="nofollow" class="external text" href="https://wg21.link/P3189R0">P3189R0</a> (2024-03-19)
+</li><li> Slides for LEWG presentation of <a rel="nofollow" class="external text" href="https://wg21.link/P2900R7">P2900R7</a>: Contracts for C++ - <a rel="nofollow" class="external text" href="https://wg21.link/P3190R0">P3190R0</a> (2024-03-20)
+</li><li> A response to the Tokyo EWG polls  on the Contracts MVP (<a rel="nofollow" class="external text" href="https://wg21.link/P2900R6">P2900R6</a>) - <a rel="nofollow" class="external text" href="https://wg21.link/P3197R0">P3197R0</a> (2024-04-12)
+</li><li> A takeaway from the Tokyo LEWG meeting on Contracts MVP - <a rel="nofollow" class="external text" href="https://wg21.link/P3198R0">P3198R0</a> (2024-03-29)
+</li><li> The contract of <span class="t-lc"><a href="algorithm/sort.html" title="cpp/algorithm/sort">sort()</a></span> - <a rel="nofollow" class="external text" href="https://wg21.link/P3212R0">P3212R0</a> (2024-07-03)
+</li><li> Contracts for C++: Naming the <i>Louis semantic</i> - <a rel="nofollow" class="external text" href="https://wg21.link/P3226R0">P3226R0</a> (2024-04-12)
+</li><li> Contracts for C++: Fixing the contract violation handling API - <a rel="nofollow" class="external text" href="https://wg21.link/P3227R0">P3227R0</a> (2024-10-16)
+</li><li> Contracts for C++: Revisiting contract check elision and duplication - <a rel="nofollow" class="external text" href="https://wg21.link/P3228R1">P3228R1</a> (2024-05-21)
+</li><li> An alternate proposal for naming contract semantics - <a rel="nofollow" class="external text" href="https://wg21.link/P3238R0">P3238R0</a> (2024-05-06)
+</li><li> A unified syntax for Pattern Matching and Contracts when introducing a new name - <a rel="nofollow" class="external text" href="https://wg21.link/P3249R0">P3249R0</a> (2024-05-22)
+</li><li> C++ contracts with regards to function pointers - <a rel="nofollow" class="external text" href="https://wg21.link/P3250R0">P3250R0</a> (2024-05-07)
+</li><li> C++ contracts and coroutines - <a rel="nofollow" class="external text" href="https://wg21.link/P3251R0">P3251R0</a> (2024-05-07)
+</li><li> Make the predicate of <code>contract_assert</code> more regular - <a rel="nofollow" class="external text" href="https://wg21.link/P3257R0">P3257R0</a> (2024-04-26)
+</li><li> Ship Contracts in a TS - <a rel="nofollow" class="external text" href="https://wg21.link/P3265R3">P3265R3</a> (2024-05-28)
+</li><li> Approaches to C++ Contracts - <a rel="nofollow" class="external text" href="https://wg21.link/P3267R1">P3267R1</a> (2024-05-22)
+</li><li> C++ Contracts Constification Challenges Concerning Current Code - <a rel="nofollow" class="external text" href="https://wg21.link/P3268R0">P3268R0</a> (2024-05-07)
+</li><li> Do Not Ship Contracts as a TS - <a rel="nofollow" class="external text" href="https://wg21.link/P3269R0">P3269R0</a> (2024-05-21)
+</li><li> Repetition, Elision, and Constification w.r.t. <code>contract_assert</code> - <a rel="nofollow" class="external text" href="https://wg21.link/P3270R0">P3270R0</a> (2024-05-22)
+</li><li> Function Usage Types (Contracts for Function Pointers) - <a rel="nofollow" class="external text" href="https://wg21.link/P3271R1">P3271R1</a> (2024-10-15)
+</li><li> <a rel="nofollow" class="external text" href="https://wg21.link/P2900">P2900</a> Is Superior to a Contracts TS - <a rel="nofollow" class="external text" href="https://wg21.link/P3276R0">P3276R0</a> (2024-05-18)
+</li><li> Contracts: Protecting The Protector - <a rel="nofollow" class="external text" href="https://wg21.link/P3285R0">P3285R0</a> (2024-05-15)
+</li><li> Integrating Existing Assertions With Contracts - <a rel="nofollow" class="external text" href="https://wg21.link/P3290R2">P3290R2</a> (2024-09-06)
+</li><li> C++26 Needs Contract Checking - <a rel="nofollow" class="external text" href="https://wg21.link/P3297R1">P3297R1</a> (2024-06-21)
+</li><li> An opt-in approach for integration of traditional assert facilities in C++ contracts - <a rel="nofollow" class="external text" href="https://wg21.link/P3311R0">P3311R0</a> (2024-05-22)
+</li><li> Compile time resolved contracts - <a rel="nofollow" class="external text" href="https://wg21.link/P3317R0">P3317R0</a> (2024-05-22)
+</li><li> Contracts Interaction With Tooling - <a rel="nofollow" class="external text" href="https://wg21.link/P3321R0">P3321R0</a> (2024-07-12)
+</li><li> Contract assertions on function pointers - <a rel="nofollow" class="external text" href="https://wg21.link/P3327R0">P3327R0</a> (2024-10-16)
+</li><li> Observable Checkpoints During Contract Evaluation - <a rel="nofollow" class="external text" href="https://wg21.link/P3328R0">P3328R0</a> (2024-06-14)
+</li><li> Usage Experience for Contracts with BDE - <a rel="nofollow" class="external text" href="https://wg21.link/P3336R0">P3336R0</a> (2024-06-23)
+</li><li> Contracts - What are we doing here (EWG Presentation) - <a rel="nofollow" class="external text" href="https://wg21.link/P3343R0">P3343R0</a> (2024-06-25)
+</li><li> Virtual Functions on Contracts (EWG - Presentation for <a rel="nofollow" class="external text" href="https://wg21.link/P3097">P3097</a>) - <a rel="nofollow" class="external text" href="https://wg21.link/P3344R0">P3344R0</a> (2024-06-28)
+</li><li> Class invariants and contract checking philosophy - <a rel="nofollow" class="external text" href="https://wg21.link/P3361R1">P3361R1</a> (2024-07-23)
+</li><li> Static analysis and “safety” of Contracts, <a rel="nofollow" class="external text" href="https://wg21.link/P2900">P2900</a> vs <a rel="nofollow" class="external text" href="https://wg21.link/P2680">P2680</a>/<a rel="nofollow" class="external text" href="https://wg21.link/P3285">P3285</a> - <a rel="nofollow" class="external text" href="https://wg21.link/P3362R0">P3362R0</a> (2024-08-13)
+</li><li> Contract assertions versus static analysis and “safety” - <a rel="nofollow" class="external text" href="https://wg21.link/P3376R0">P3376R0</a> (2024-10-14)
+</li><li> Static Analysis of Contracts with P2900 - <a rel="nofollow" class="external text" href="https://wg21.link/P3386R0">P3386R0</a> (2024-10-15)
+</li><li> Contract assertions on coroutines - <a rel="nofollow" class="external text" href="https://wg21.link/P3387R0">P3387R0</a> (2024-10-09)
+</li><li> Improving the handling of exceptions thrown from contract predicates - <a rel="nofollow" class="external text" href="https://wg21.link/P3417R0">P3417R0</a> (2024-10-16)
+</li><li> Contracts Implementors Report - <a rel="nofollow" class="external text" href="https://wg21.link/P3460R0">P3460R0</a> (2024-10-16)
+</li><li> Standard library hardening - <a rel="nofollow" class="external text" href="https://wg21.link/P3471R0">P3471R0</a> (2024-10-16)
+</li><li> Constification should not be part of the MVP (<b>M</b>inimal <b>V</b>iable <b>P</b>roduct) - <a rel="nofollow" class="external text" href="https://wg21.link/P3478R0">P3478R0</a> (2024-10-16)
+</li></ul>
+</td></tr></table></div>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>
+<td>2D Graphics
 </td>
-<td> Graphics TS
-</td>
-<td> Early development. Draft <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0267r8.pdf">p0267r8</a> (2018-06-26)
+<td>Early development. Draft <a rel="nofollow" class="external text" href="https://wg21.link/P0267R10">P0267R10</a> (2019-10-07).
 </td>
 <td>
 </td></tr>
 <tr>
-<td> ISO/IEC DTS 19569:xxxx
+<td>Graph Library
 </td>
-<td> Array Extensions TS
-</td>
-<td> Withdrawn. Abandoned draft: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3820.html">n3820</a> (2013-10-10)
+<td>Early development.
+<div style="margin-left:0px">
+<table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
+
+<tr>
+<th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
+</th></tr>
+<tr>
+<td style="border: solid 1px silver; padding: 8px; background: white;">
+<ul><li> Graph Library: Overview - <a rel="nofollow" class="external text" href="https://wg21.link/P3126R2">P3126R2</a> (2024-08-05)
+</li><li> Graph Library: Algorithms - <a rel="nofollow" class="external text" href="https://wg21.link/P3128R2">P3128R2</a> (2024-09-12)
+</li><li> Graph Library: Graph Container Interface - <a rel="nofollow" class="external text" href="https://wg21.link/P3130R2">P3130R2</a> (2024-08-05)
+</li><li> Graph Library: Graph Containers - <a rel="nofollow" class="external text" href="https://wg21.link/P3131R2">P3131R2</a> (2024-08-05)
+</li></ul>
+</td></tr></table></div>
 </td>
 <td>
 </td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
+<tr class="t-dsc">
+<td colspan="2"> <div class="t-dsc-see"><span><a href="../c/experimental.html" title="c/experimental">C documentation</a></span> for <span class=""><span>Experimental C features</span></span></div>
+</td></tr>
+
 </table>
+<h3><span class="mw-headline" id="External_links">External links</span></h3>
+<table style="border-top:solid 1px;border-bottom:none;border-left:none;border-right:none;">
+
+<tr style="vertical-align:top;">
+<td>1. </td>
+<td><a rel="nofollow" class="external text" href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/sd-1.htm">PL22.16/WG21 document list</a> - All C++ committee documents (TS/proposals) for 2016-2024.
+</td></tr>
+<tr style="vertical-align:top;">
+<td>2. </td>
+<td><a rel="nofollow" class="external text" href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/">JTC1/SC22/WG21 Proposals (mailing) for 2024</a>.
+</td></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 877/1000000
-Preprocessor generated node count: 2815/1000000
-Post‐expand include size: 32089/2097152 bytes
-Template argument size: 4802/2097152 bytes
-Highest expansion depth: 13/40
+Preprocessor visited node count: 7412/1000000
+Preprocessor generated node count: 12970/1000000
+Post‐expand include size: 81051/4194304 bytes
+Template argument size: 13044/4194304 bytes
+Highest expansion depth: 14/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13460-0!*!0!*!*!*!* and timestamp 20190319194808 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13460-0!*!0!!en!*!* and timestamp 20241109040257 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;oldid=109978">https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;oldid=109978</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;oldid=177540">https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;oldid=177540</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -349,21 +761,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/experimental">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 6 November 2024, at 00:18.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../common/skin_scripts.js"></script>
+<script src=".././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 0.042 secs. -->
+<script src=".././common/site_scripts.js"></script>
+<!-- Served in 1.441 secs. -->
 	</body>
-<!-- Cached 20190319195422 -->
+<!-- Cached 20241109040257 -->
 </html>

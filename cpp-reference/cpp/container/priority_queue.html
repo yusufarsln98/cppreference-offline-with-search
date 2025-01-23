@@ -4,20 +4,20 @@
 <title>std::priority_queue - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../common/favicon.ico">
-<link rel="stylesheet" href="../../common/ext.css">
+<link rel="shortcut icon" href="../.././common/favicon.ico">
+<link rel="stylesheet" href="../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../common/site_modules.css">
+<link rel="stylesheet" href="../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../common/startup_scripts.js"></script>
+<script src="../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/container/priority_queue","wgTitle":"cpp/container/priority queue","wgCurRevisionId":103092,"wgArticleId":256,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed LWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/container/priority_queue","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/container/priority_queue","wgTitle":"cpp/container/priority queue","wgCurRevisionId":171902,"wgArticleId":256,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/container/priority_queue","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -108,7 +108,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>priority_queue</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>priority_queue</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -119,62 +127,90 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../container.html" title="cpp/container">container</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../container.html" title="cpp/container"> Containers library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../container.html" title="cpp/container">Containers library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../container.html#Sequence_containers" title="cpp/container">Sequence</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="array.html" title="cpp/container/array"><span class="t-lines"><span>array</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="vector.html" title="cpp/container/vector"><span class="t-lines"><span>vector</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="vector.html" title="cpp/container/vector"><span class="t-lines"><span>vector<span class="t-dsc-small">&lt;bool&gt;</span></span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="inplace_vector.html" title="cpp/container/inplace vector"><span class="t-lines"><span>inplace_vector</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="deque.html" title="cpp/container/deque"><span class="t-lines"><span>deque</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="forward_list.html" title="cpp/container/forward list"><span class="t-lines"><span>forward_list</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="list.html" title="cpp/container/list"><span class="t-lines"><span>list</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../container.html#Associative_containers" title="cpp/container">Associative</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="set.html" title="cpp/container/set"><span class="t-lines"><span>set</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="multiset.html" title="cpp/container/multiset"><span class="t-lines"><span>multiset</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="map.html" title="cpp/container/map"><span class="t-lines"><span>map</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="multimap.html" title="cpp/container/multimap"><span class="t-lines"><span>multimap</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../container.html#Unordered_associative_containers_.28since_C.2B.2B11.29" title="cpp/container">Unordered associative</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="unordered_set.html" title="cpp/container/unordered set"><span class="t-lines"><span>unordered_set</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="unordered_multiset.html" title="cpp/container/unordered multiset"><span class="t-lines"><span>unordered_multiset</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="unordered_map.html" title="cpp/container/unordered map"><span class="t-lines"><span>unordered_map</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="unordered_multimap.html" title="cpp/container/unordered multimap"><span class="t-lines"><span>unordered_multimap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../container.html#Container_adaptors" title="cpp/container">Adaptors</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="stack.html" title="cpp/container/stack"><span class="t-lines"><span>stack</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="queue.html" title="cpp/container/queue"><span class="t-lines"><span>queue</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>priority_queue</span></span></strong></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="flat_set.html" title="cpp/container/flat set"><span class="t-lines"><span>flat_set</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="flat_multiset.html" title="cpp/container/flat multiset"><span class="t-lines"><span>flat_multiset</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="flat_map.html" title="cpp/container/flat map"><span class="t-lines"><span>flat_map</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="flat_multimap.html" title="cpp/container/flat multimap"><span class="t-lines"><span>flat_multimap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../container.html#Views" title="cpp/container">Views</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="span.html" title="cpp/container/span"><span class="t-lines"><span>span</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><code><strong class="selflink"> std::priority_queue</strong></code><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5"> Member functions</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mdspan.html" title="cpp/container/mdspan"><span class="t-lines"><span>mdspan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Tables</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../container.html#Iterator_invalidation" title="cpp/container">Iterator invalidation</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../container.html#Member_function_table" title="cpp/container">Member function table</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../container.html#Non-member_function_table" title="cpp/container">Non-member function table</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><code><strong class="selflink">std::priority_queue</strong></code><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="priority_queue.html#Member_functions" title="cpp/container/priority queue">Member functions</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/priority_queue.html" title="cpp/container/priority queue/priority queue"><span class="t-lines"><span>priority_queue::priority_queue</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/%7Epriority_queue.html" title="cpp/container/priority queue/~priority queue"><span class="t-lines"><span>priority_queue::~priority_queue</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/~priority_queue.html" title="cpp/container/priority queue/~priority queue"><span class="t-lines"><span>priority_queue::~priority_queue</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/operator%3D.html" title="cpp/container/priority queue/operator="><span class="t-lines"><span>priority_queue::operator=</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Element access</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="priority_queue.html#Element_access" title="cpp/container/priority queue">Element access</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/top.html" title="cpp/container/priority queue/top"><span class="t-lines"><span>priority_queue::top</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Capacity</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="priority_queue.html#Capacity" title="cpp/container/priority queue">Capacity</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/empty.html" title="cpp/container/priority queue/empty"><span class="t-lines"><span>priority_queue::empty</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/size.html" title="cpp/container/priority queue/size"><span class="t-lines"><span>priority_queue::size</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Modifiers</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="priority_queue.html#Modifiers" title="cpp/container/priority queue">Modifiers</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/push.html" title="cpp/container/priority queue/push"><span class="t-lines"><span>priority_queue::push</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/emplace.html" title="cpp/container/priority queue/emplace"><span class="t-lines"><span>priority_queue::emplace</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/push_range.html" title="cpp/container/priority queue/push range"><span class="t-lines"><span>priority_queue::push_range</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/emplace.html" title="cpp/container/priority queue/emplace"><span class="t-lines"><span>priority_queue::emplace</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/pop.html" title="cpp/container/priority queue/pop"><span class="t-lines"><span>priority_queue::pop</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/swap.html" title="cpp/container/priority queue/swap"><span class="t-lines"><span>priority_queue::swap</span></span></a></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"> <a href="priority_queue/deduction_guides.html" title="cpp/container/priority queue/deduction guides">Deduction guides</a><span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/swap.html" title="cpp/container/priority queue/swap"><span class="t-lines"><span>priority_queue::swap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="priority_queue.html#Non-member_functions" title="cpp/container/priority queue">Non-member functions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/swap2.html" title="cpp/container/priority queue/swap2"><span class="t-lines"><span>swap<span class="t-dsc-small">(std::priority_queue)</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="priority_queue.html#Helper_classes" title="cpp/container/priority queue">Helper classes</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/uses_allocator.html" title="cpp/container/priority queue/uses allocator"><span class="t-lines"><span>uses_allocator<span class="t-dsc-small">&lt;std::priority_queue&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="priority_queue/formatter.html" title="cpp/container/priority queue/formatter"><span class="t-lines"><span>formatter<span class="t-dsc-small">&lt;std::priority_queue&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="priority_queue/deduction_guides.html" title="cpp/container/priority queue/deduction guides">Deduction guides</a><span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
@@ -186,93 +222,115 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dcl">
 <td class="t-dcl-nopad"> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span><br>
 <p>    <span class="kw1">class</span> T,<br>
-    <span class="kw1">class</span> Container <span class="sy1">=</span> <a href="vector.html"><span class="kw1266">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span>,<br>
-    <span class="kw1">class</span> Compare <span class="sy1">=</span> <a href="../utility/functional/less.html"><span class="kw1038">std::<span class="me2">less</span></span></a><span class="sy1">&lt;</span><span class="kw1">typename</span> Container<span class="sy4">::</span><span class="me2">value_type</span><span class="sy1">&gt;</span><br>
+    <span class="kw1">class</span> Container <span class="sy1">=</span> <a href="vector.html"><span class="kw1277">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span>,<br>
+    <span class="kw1">class</span> Compare <span class="sy1">=</span> <a href="../utility/functional/less.html"><span class="kw1046">std::<span class="me2">less</span></span></a><span class="sy1">&lt;</span><span class="kw1">typename</span> Container<span class="sy4">::</span><span class="me2">value_type</span><span class="sy1">&gt;</span><br>
 </p>
 <span class="sy1">&gt;</span> <span class="kw1">class</span> priority_queue<span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
-</tbody></table> 
-<p>A priority queue is a container adaptor that provides constant time lookup of the largest (by default) element, at the expense of logarithmic insertion and extraction.
-</p><p>A user-provided <code>Compare</code> can be supplied to change the ordering, e.g. using <span class="t-lc">std::greater&lt;T&gt;</span> would cause the smallest element to appear as the <span class="t-lc"><a href="priority_queue/top.html" title="cpp/container/priority queue/top">top()</a></span>.
-</p><p>Working with a <code>priority_queue</code> is similar to managing a <a href="../algorithm/make_heap.html" title="cpp/algorithm/make heap"> heap</a> in some random access container, with the benefit of not being able to accidentally invalidate the heap.
+</tbody></table>
+<p>The <a href="https://en.wikipedia.org/wiki/Queue_(abstract_data_type)" class="extiw" title="enwiki:Queue (abstract data type)">priority queue</a> is a <a href="../container.html#Container_adaptors" title="cpp/container">container adaptor</a> that provides constant time lookup of the largest (by default) element, at the expense of logarithmic insertion and extraction.
+</p><p>A user-provided <code>Compare</code> can be supplied to change the ordering, e.g. using <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../utility/functional/greater.html"><span class="kw1044">std::<span class="me2">greater</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span></span></span> would cause the smallest element to appear as the <span class="t-lc"><a href="priority_queue/top.html" title="cpp/container/priority queue/top">top()</a></span>.
+</p><p>Working with a <code>priority_queue</code> is similar to managing a <a href="../algorithm/make_heap.html" title="cpp/algorithm/make heap">heap</a> in some random access container, with the benefit of not being able to accidentally invalidate the heap.
 </p>
 <h3><span class="mw-headline" id="Template_parameters">Template parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  T
+<td> T
 </td>
 <td> -
 </td>
-<td>  The type of the stored elements. <span class="t-rev-inl t-since-cxx17"><span>The behavior is undefined if <code>T</code> is not the same type as <code>Container::value_type</code>.</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>
+<td> The type of the stored elements. The program is ill-formed if <code>T</code> is not the same type as <code>Container::value_type</code>.
 </td></tr>
 <tr class="t-par">
-<td>  Container
+<td> Container
 </td>
 <td> -
 </td>
-<td>  The type of the underlying container to use to store the elements. The container must satisfy the requirements of <a href="../named_req/SequenceContainer.html" title="cpp/named req/SequenceContainer"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">SequenceContainer</span></a>, and its iterators must satisfy the requirements of <a href="../named_req/RandomAccessIterator.html" title="cpp/named req/RandomAccessIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyRandomAccessIterator</span></a>. Additionally, it must provide the following functions with the usual semantics:
-<ul><li> <code>front()</code>
-</li><li> <code>push_back()</code>
-</li><li> <code>pop_back()</code>
+<td> The type of the underlying container to use to store the elements. The container must satisfy the requirements of <a href="../named_req/SequenceContainer.html" title="cpp/named req/SequenceContainer"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">SequenceContainer</span></a>, and its iterators must satisfy the requirements of <a href="../named_req/RandomAccessIterator.html" title="cpp/named req/RandomAccessIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyRandomAccessIterator</span></a>. Additionally, it must provide the following functions with the <a href="../named_req/SequenceContainer.html#Optional_operations" title="cpp/named req/SequenceContainer">usual semantics</a>:
+<ul><li> <span class="t-lc">front()</span>, e.g., <span class="t-lc"><a href="vector/front.html" title="cpp/container/vector/front">std::vector::front()</a></span>,
+</li><li> <span class="t-lc">push_back()</span>, e.g., <span class="t-lc"><a href="deque/push_back.html" title="cpp/container/deque/push back">std::deque::push_back()</a></span>,
+</li><li> <span class="t-lc">pop_back()</span>, e.g., <span class="t-lc"><a href="vector/pop_back.html" title="cpp/container/vector/pop back">std::vector::pop_back()</a></span>.
 </li></ul>
-<p>The standard containers <span class="t-lc"><a href="vector.html" title="cpp/container/vector">std::vector</a></span> and <span class="t-lc"><a href="deque.html" title="cpp/container/deque">std::deque</a></span> satisfy these requirements.
+<p>The standard containers <span class="t-lc"><a href="vector.html" title="cpp/container/vector">std::vector</a></span> (including <a href="vector_bool.html" title="cpp/container/vector bool"><code>std::vector&lt;bool&gt;</code></a>) and <span class="t-lc"><a href="deque.html" title="cpp/container/deque">std::deque</a></span> satisfy these requirements.
 </p>
 </td></tr>
 <tr class="t-par">
-<td>  Compare
+<td> Compare
 </td>
 <td> -
 </td>
-<td>  A <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a> type providing a strict weak ordering.
-</td></tr></table>
+<td> A <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a> type providing a strict weak ordering.
 <p>Note that the <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a> parameter is defined such that it returns <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> if its first argument comes <i>before</i> its second argument in a weak ordering. But because the priority queue outputs largest elements first, the elements that "come before" are actually output last. That is, the front of the queue contains the "last" element according to the weak ordering imposed by <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a>.
 </p>
+</td></tr></table>
 <h3><span class="mw-headline" id="Member_types">Member types</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Member type
+<td> Member type
 </td>
-<td>  Definition
+<td> Definition
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>container_type</code>
+<td> <code>container_type</code>
 </td>
-<td>  <code>Container</code> </td></tr>
+<td> <code>Container</code></td></tr>
 
 <tr class="t-dsc">
-<td>  <code>value_compare</code> <span class="t-mark-rev t-since-cxx17">(C++17)</span>
+<td> <code>value_compare</code>
 </td>
-<td>  <code>Compare</code>
+<td> <code>Compare</code>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>value_type</code>
+<td> <code>value_type</code>
 </td>
-<td>  <code>Container::value_type</code> </td></tr>
+<td> <code>Container::value_type</code></td></tr>
 
 <tr class="t-dsc">
-<td>  <code>size_type</code>
+<td> <code>size_type</code>
 </td>
-<td>  <code>Container::size_type</code> </td></tr>
+<td> <span class="mw-geshi cpp source-cpp">Container<span class="sy4">::</span><span class="me2">size_type</span></span></td></tr>
 
 <tr class="t-dsc">
-<td>  <code>reference</code>
+<td> <code>reference</code>
 </td>
-<td>  <code>Container::reference</code> </td></tr>
+<td> <code>Container::reference</code></td></tr>
 
 <tr class="t-dsc">
-<td>  <code>const_reference</code>
+<td> <code>const_reference</code>
 </td>
-<td>  <code>Container::const_reference</code> </td></tr>
+<td> <code>Container::const_reference</code></td></tr>
+</table>
+<h3><span class="mw-headline" id="Member_objects">Member objects</span></h3>
+<table class="t-dsc-begin">
+
+<tr class="t-dsc-hitem">
+<td> Member name
+</td>
+<td> Definition
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">Container</span> c</span></span></div></div>
+</td>
+<td>  the underlying container <br> <span class="t-mark">(protected member object)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">Compare</span> comp</span></span></div></div>
+</td>
+<td>  the comparison function object <br> <span class="t-mark">(protected member object)</span>
+</td></tr>
+
 </table>
 <h3><span class="mw-headline" id="Member_functions">Member functions</span></h3>
 <table class="t-dsc-begin">
@@ -283,89 +341,77 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  constructs the <code>priority_queue</code> <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="priority_queue/%7Epriority_queue.html" title="cpp/container/priority queue/~priority queue"> <span class="t-lines"><span>(destructor)</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="priority_queue/~priority_queue.html" title="cpp/container/priority queue/~priority queue"> <span class="t-lines"><span>(destructor)</span></span></a></div></div>
 </td>
 <td>  destructs the <code>priority_queue</code> <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="priority_queue/operator%3D.html" title="cpp/container/priority queue/operator="> <span class="t-lines"><span>operator=</span></span></a></div></div>
 </td>
-<td>   assigns values to the container adaptor <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  assigns values to the container adaptor <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 
 <tr>
-<td colspan="2"> <h5> <span class="mw-headline" id="Element_access">  Element access </span></h5>
+<td colspan="2"> <h5> <span class="mw-headline" id="Element_access"> Element access </span></h5>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="priority_queue/top.html" title="cpp/container/priority queue/top"> <span class="t-lines"><span>top</span></span></a></div></div>
 </td>
-<td>   accesses the top element  <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  accesses the top element <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 
 <tr>
-<td colspan="2"> <h5> <span class="mw-headline" id="Capacity">  Capacity </span></h5>
+<td colspan="2"> <h5> <span class="mw-headline" id="Capacity"> Capacity </span></h5>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="priority_queue/empty.html" title="cpp/container/priority queue/empty"> <span class="t-lines"><span>empty</span></span></a></div></div>
 </td>
-<td>   checks whether the underlying container is empty  <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  checks whether the container adaptor is empty <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="priority_queue/size.html" title="cpp/container/priority queue/size"> <span class="t-lines"><span>size</span></span></a></div></div>
 </td>
-<td>   returns the number of elements  <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  returns the number of elements <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 
 <tr>
-<td colspan="2"> <h5> <span class="mw-headline" id="Modifiers">  Modifiers </span></h5>
+<td colspan="2"> <h5> <span class="mw-headline" id="Modifiers"> Modifiers </span></h5>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="priority_queue/push.html" title="cpp/container/priority queue/push"> <span class="t-lines"><span>push</span></span></a></div></div>
 </td>
-<td>   inserts element and sorts the underlying container <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  inserts element and sorts the underlying container <br> <span class="t-mark">(public member function)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="priority_queue/push_range.html" title="cpp/container/priority queue/push range"> <span class="t-lines"><span>push_range</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div>
+</td>
+<td>  inserts a range of elements and sorts the underlying container <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="priority_queue/emplace.html" title="cpp/container/priority queue/emplace"> <span class="t-lines"><span>emplace</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   constructs element in-place and sorts the underlying container  <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  constructs element in-place and sorts the underlying container <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="priority_queue/pop.html" title="cpp/container/priority queue/pop"> <span class="t-lines"><span>pop</span></span></a></div></div>
 </td>
-<td>   removes the top element  <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  removes the top element <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="priority_queue/swap.html" title="cpp/container/priority queue/swap"> <span class="t-lines"><span>swap</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="priority_queue/swap.html" title="cpp/container/priority queue/swap"> <span class="t-lines"><span>swap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   swaps the contents  <br> <span class="t-mark">(public member function)</span> </td></tr>
-
-
-<tr>
-<td colspan="2"> <h3> <span class="mw-headline" id="Member_objects"> Member objects</span></h3>
-</td></tr>
-
-<tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">Container</span> c</span></span></div></div>
-</td>
-<td>   the underlying container <br> <span class="t-mark">(protected member object)</span> </td></tr>
-
-<tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">Compare</span> comp</span></span></div></div>
-</td>
-<td>   the comparison function object <br> <span class="t-mark">(protected member object)</span>
-</td></tr>
-
+<td>  swaps the contents <br> <span class="t-mark">(public member function)</span> </td></tr>
 </table>
 <h3><span class="mw-headline" id="Non-member_functions">Non-member functions</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="priority_queue/swap2.html" title="cpp/container/priority queue/swap2"> <span class="t-lines"><span>std::swap<span class="t-dsc-small">(std::priority_queue)</span></span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="priority_queue/swap2.html" title="cpp/container/priority queue/swap2"> <span class="t-lines"><span>std::swap<span class="t-dsc-small">(std::priority_queue)</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   specializes the <span class="t-lc"><a href="../algorithm/swap.html" title="cpp/algorithm/swap">std::swap</a></span> algorithm  <br> <span class="t-mark">(function template)</span> </td></tr>
+<td>  specializes the <span class="t-lc"><a href="../utility/swap.html" title="cpp/algorithm/swap">std::swap</a></span> algorithm <br> <span class="t-mark">(function template)</span> </td></tr>
 </table>
 <h3><span class="mw-headline" id="Helper_classes">Helper classes</span></h3>
 <table class="t-dsc-begin">
@@ -373,71 +419,186 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="priority_queue/uses_allocator.html" title="cpp/container/priority queue/uses allocator"> <span class="t-lines"><span>std::uses_allocator<span class="t-dsc-small">&lt;std::priority_queue&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   specializes the <span class="t-lc"><a href="../memory/uses_allocator.html" title="cpp/memory/uses allocator">std::uses_allocator</a></span> type trait  <br> <span class="t-mark">(function template)</span> </td></tr>
+<td>  specializes the <span class="t-lc"><a href="../memory/uses_allocator.html" title="cpp/memory/uses allocator">std::uses_allocator</a></span> type trait <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="priority_queue/formatter.html" title="cpp/container/priority queue/formatter"> <span class="t-lines"><span>std::formatter<span class="t-dsc-small">&lt;std::priority_queue&gt;</span></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div>
+</td>
+<td>  formatting support for <code>std::priority_queue</code> <br> <span class="t-mark">(class template specialization)</span> </td></tr>
 </table>
-<h3><span class="mw-headline" id="Deduction_guides.28since_C.2B.2B17.29"><a href="priority_queue/deduction_guides.html" title="cpp/container/priority queue/deduction guides">Deduction guides</a><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></h3>
+<table class="t-rev-begin">
+<tr class="t-rev t-since-cxx17"><td>
+<h3> <span class="mw-headline" id="Deduction_guides"><a href="priority_queue/deduction_guides.html" title="cpp/container/priority queue/deduction guides">Deduction guides</a></span></h3>
+</td>
+<td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
+</table>
+<h3><span class="mw-headline" id="Notes">Notes</span></h3>
+<table class="wikitable ftm-begin ftm-has-value">
+
+<tr>
+<th><a href="../utility/feature_test.html" title="cpp/utility/feature test">Feature-test</a> macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Feature
+</th></tr>
+<tr>
+<td><a href="../feature_test.html#cpp_lib_containers_ranges" title="cpp/feature test"><code>__cpp_lib_containers_ranges</code></a></td>
+<td><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></td>
+<td><span class="t-mark">(C++23)</span></td>
+<td><a href="../ranges/to.html#container_compatible_range" title="cpp/ranges/to">Ranges-aware</a> construction and insertion for containers
+</td></tr></table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;functional&gt;</span>
-<span class="co2">#include &lt;queue&gt;</span>
-<span class="co2">#include &lt;vector&gt;</span>
 <span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;queue&gt;</span>
+<span class="co2">#include &lt;string_view&gt;</span>
+<span class="co2">#include &lt;vector&gt;</span>
  
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span> <span class="kw4">void</span> print_queue<span class="br0">(</span>T<span class="sy3">&amp;</span> q<span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw1">while</span><span class="br0">(</span><span class="sy3">!</span>q.<span class="me1">empty</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
-        <a href="../io/cout.html"><span class="kw1754">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> q.<span class="me1">top</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" "</span><span class="sy4">;</span>
-        q.<span class="me1">pop</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="br0">}</span>
-    <a href="../io/cout.html"><span class="kw1754">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
+<span class="kw4">void</span> pop_println<span class="br0">(</span><a href="../string/basic_string_view.html"><span class="kw1256">std::<span class="me2">string_view</span></span></a> rem, T<span class="sy3">&amp;</span> pq<span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../io/cout.html"><span class="kw1774">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> rem <span class="sy1">&lt;&lt;</span> <span class="st0">": "</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> <span class="sy3">!</span>pq.<span class="me1">empty</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> pq.<span class="me1">pop</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+        <a href="../io/cout.html"><span class="kw1774">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> pq.<span class="me1">top</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1774">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
-<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
-    std<span class="sy4">::</span><span class="me2">priority_queue</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> q<span class="sy4">;</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
+<span class="kw4">void</span> println<span class="br0">(</span><a href="../string/basic_string_view.html"><span class="kw1256">std::<span class="me2">string_view</span></span></a> rem, <span class="kw4">const</span> T<span class="sy3">&amp;</span> v<span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../io/cout.html"><span class="kw1774">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> rem <span class="sy1">&lt;&lt;</span> <span class="st0">": "</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">const</span> <span class="kw4">auto</span><span class="sy3">&amp;</span> e <span class="sy4">:</span> v<span class="br0">)</span>
+        <a href="../io/cout.html"><span class="kw1774">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> e <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1774">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+<span class="br0">}</span>
  
-    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> n <span class="sy4">:</span> <span class="br0">{</span><span class="nu0">1</span>,<span class="nu0">8</span>,<span class="nu0">5</span>,<span class="nu0">6</span>,<span class="nu0">3</span>,<span class="nu0">4</span>,<span class="nu0">0</span>,<span class="nu0">9</span>,<span class="nu0">7</span>,<span class="nu0">2</span><span class="br0">}</span><span class="br0">)</span>
-        q.<span class="me1">push</span><span class="br0">(</span>n<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">const</span> <span class="kw4">auto</span> data <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">8</span>, <span class="nu0">5</span>, <span class="nu0">6</span>, <span class="nu0">3</span>, <span class="nu0">4</span>, <span class="nu0">0</span>, <span class="nu0">9</span>, <span class="nu0">7</span>, <span class="nu0">2</span><span class="br0">}</span><span class="sy4">;</span>
+    println<span class="br0">(</span><span class="st0">"data"</span>, data<span class="br0">)</span><span class="sy4">;</span>
  
-    print_queue<span class="br0">(</span>q<span class="br0">)</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="me2">priority_queue</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> max_priority_queue<span class="sy4">;</span>
  
-    std<span class="sy4">::</span><span class="me2">priority_queue</span><span class="sy1">&lt;</span><span class="kw4">int</span>, <a href="vector.html"><span class="kw1266">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span>, <a href="../utility/functional/greater.html"><span class="kw1036">std::<span class="me2">greater</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> <span class="sy1">&gt;</span> q2<span class="sy4">;</span>
+    <span class="co1">// Fill the priority queue.</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> n <span class="sy4">:</span> data<span class="br0">)</span>
+        max_priority_queue.<span class="me1">push</span><span class="br0">(</span>n<span class="br0">)</span><span class="sy4">;</span>
  
-    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> n <span class="sy4">:</span> <span class="br0">{</span><span class="nu0">1</span>,<span class="nu0">8</span>,<span class="nu0">5</span>,<span class="nu0">6</span>,<span class="nu0">3</span>,<span class="nu0">4</span>,<span class="nu0">0</span>,<span class="nu0">9</span>,<span class="nu0">7</span>,<span class="nu0">2</span><span class="br0">}</span><span class="br0">)</span>
-        q2.<span class="me1">push</span><span class="br0">(</span>n<span class="br0">)</span><span class="sy4">;</span>
+    pop_println<span class="br0">(</span><span class="st0">"max_priority_queue"</span>, max_priority_queue<span class="br0">)</span><span class="sy4">;</span>
  
-    print_queue<span class="br0">(</span>q2<span class="br0">)</span><span class="sy4">;</span>
+    <span class="co1">// std::greater&lt;int&gt; makes the max priority queue act as a min priority queue.</span>
+    std<span class="sy4">::</span><span class="me2">priority_queue</span><span class="sy1">&lt;</span><span class="kw4">int</span>, <a href="vector.html"><span class="kw1277">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span>, <a href="../utility/functional/greater.html"><span class="kw1044">std::<span class="me2">greater</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;&gt;</span>
+        min_priority_queue1<span class="br0">(</span>data.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, data.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+    pop_println<span class="br0">(</span><span class="st0">"min_priority_queue1"</span>, min_priority_queue1<span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="co1">// Second way to define a min priority queue.</span>
+    std<span class="sy4">::</span><span class="me2">priority_queue</span> min_priority_queue2<span class="br0">(</span>data.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, data.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>, <a href="../utility/functional/greater.html"><span class="kw1044">std::<span class="me2">greater</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+    pop_println<span class="br0">(</span><span class="st0">"min_priority_queue2"</span>, min_priority_queue2<span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="co1">// Using a custom function object to compare elements.</span>
+    <span class="kw1">struct</span>
+    <span class="br0">{</span>
+        <span class="kw4">bool</span> operator<span class="br0">(</span><span class="br0">)</span><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">int</span> l, <span class="kw4">const</span> <span class="kw4">int</span> r<span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> <span class="kw1">return</span> l <span class="sy1">&gt;</span> r<span class="sy4">;</span> <span class="br0">}</span>
+    <span class="br0">}</span> customLess<span class="sy4">;</span>
+ 
+    std<span class="sy4">::</span><span class="me2">priority_queue</span> custom_priority_queue<span class="br0">(</span>data.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, data.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>, customLess<span class="br0">)</span><span class="sy4">;</span>
+ 
+    pop_println<span class="br0">(</span><span class="st0">"custom_priority_queue"</span>, custom_priority_queue<span class="br0">)</span><span class="sy4">;</span>
  
     <span class="co1">// Using lambda to compare elements.</span>
-    <span class="kw4">auto</span> cmp <span class="sy1">=</span> <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><span class="kw4">int</span> left, <span class="kw4">int</span> right<span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="br0">(</span>left <span class="sy3">^</span> <span class="nu0">1</span><span class="br0">)</span> <span class="sy1">&lt;</span> <span class="br0">(</span>right <span class="sy3">^</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span><span class="br0">}</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="me2">priority_queue</span><span class="sy1">&lt;</span><span class="kw4">int</span>, <a href="vector.html"><span class="kw1266">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span>, decltype<span class="br0">(</span>cmp<span class="br0">)</span><span class="sy1">&gt;</span> q3<span class="br0">(</span>cmp<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">auto</span> cmp <span class="sy1">=</span> <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><span class="kw4">int</span> left, <span class="kw4">int</span> right<span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="br0">(</span>left <span class="sy3">^</span> <span class="nu0">1</span><span class="br0">)</span> <span class="sy1">&lt;</span> <span class="br0">(</span>right <span class="sy3">^</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="me2">priority_queue</span><span class="sy1">&lt;</span><span class="kw4">int</span>, <a href="vector.html"><span class="kw1277">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span>, decltype<span class="br0">(</span>cmp<span class="br0">)</span><span class="sy1">&gt;</span> lambda_priority_queue<span class="br0">(</span>cmp<span class="br0">)</span><span class="sy4">;</span>
  
-    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> n <span class="sy4">:</span> <span class="br0">{</span><span class="nu0">1</span>,<span class="nu0">8</span>,<span class="nu0">5</span>,<span class="nu0">6</span>,<span class="nu0">3</span>,<span class="nu0">4</span>,<span class="nu0">0</span>,<span class="nu0">9</span>,<span class="nu0">7</span>,<span class="nu0">2</span><span class="br0">}</span><span class="br0">)</span>
-        q3.<span class="me1">push</span><span class="br0">(</span>n<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> n <span class="sy4">:</span> data<span class="br0">)</span>
+        lambda_priority_queue.<span class="me1">push</span><span class="br0">(</span>n<span class="br0">)</span><span class="sy4">;</span>
  
-    print_queue<span class="br0">(</span>q3<span class="br0">)</span><span class="sy4">;</span>
- 
+    pop_println<span class="br0">(</span><span class="st0">"lambda_priority_queue"</span>, lambda_priority_queue<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">9 8 7 6 5 4 3 2 1 0 
-0 1 2 3 4 5 6 7 8 9 
-8 9 6 7 4 5 2 3 0 1</pre></div></div> 
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">data: 1 8 5 6 3 4 0 9 7 2
+max_priority_queue: 9 8 7 6 5 4 3 2 1 0
+min_priority_queue1: 0 1 2 3 4 5 6 7 8 9
+min_priority_queue2: 0 1 2 3 4 5 6 7 8 9
+custom_priority_queue: 0 1 2 3 4 5 6 7 8 9
+lambda_priority_queue: 8 9 6 7 4 5 2 3 0 1</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th>DR
+</th>
+<th>Applied to
+</th>
+<th>Behavior as published
+</th>
+<th>Correct behavior
+</th></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue307">LWG 307</a>
+</td>
+<td>C++98
+</td>
+<td><code>Container</code> could not be <code>std::vector&lt;bool&gt;</code>
+</td>
+<td>allowed
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2566">LWG 2566</a>
+</td>
+<td>C++98
+</td>
+<td>Missing the requirement for <code>Container::value_type</code>
+</td>
+<td>ill-formed if <code>T</code> is not the same type as <code>Container::value_type</code>
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2684">LWG 2684</a>
+</td>
+<td>C++98
+</td>
+<td><code>priority_queue</code> takes a comparator<br>but lacked member typedef for it
+</td>
+<td>added
+</td></tr></table>
+<h3><span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="vector.html" title="cpp/container/vector"> <span class="t-lines"><span>vector</span></span></a></div></div>
+</td>
+<td>  dynamic contiguous array <br> <span class="t-mark">(class template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="vector_bool.html" title="cpp/container/vector bool"> <span class="t-lines"><span>vector<span class="t-dsc-small">&lt;bool&gt;</span></span></span></a></div></div>
+</td>
+<td>  space-efficient dynamic bitset <br> <span class="t-mark">(class template specialization)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="deque.html" title="cpp/container/deque"> <span class="t-lines"><span>deque</span></span></a></div></div>
+</td>
+<td>  double-ended queue <br> <span class="t-mark">(class template)</span> </td></tr>
+</table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5493/1000000
-Preprocessor generated node count: 13545/1000000
-Post‐expand include size: 149647/2097152 bytes
-Template argument size: 30641/2097152 bytes
+Preprocessor visited node count: 7851/1000000
+Preprocessor generated node count: 15910/1000000
+Post‐expand include size: 223086/4194304 bytes
+Template argument size: 50118/4194304 bytes
 Highest expansion depth: 23/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:256-0!*!0!!en!*!* and timestamp 20190111180541 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:256-0!*!0!!en!*!* and timestamp 20241021233824 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/priority_queue&amp;oldid=103092">https://en.cppreference.com/mwiki/index.php?title=cpp/container/priority_queue&amp;oldid=103092</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/priority_queue&amp;oldid=171902">https://en.cppreference.com/mwiki/index.php?title=cpp/container/priority_queue&amp;oldid=171902</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -450,21 +611,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/container/priority_queue">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 20 May 2024, at 21:39.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../common/skin_scripts.js"></script>
+<script src="../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 1.068 secs. -->
+<script src="../.././common/site_scripts.js"></script>
+<!-- Served in 1.700 secs. -->
 	</body>
-<!-- Cached 20190111180541 -->
+<!-- Cached 20241021233824 -->
 </html>

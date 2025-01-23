@@ -4,20 +4,20 @@
 <title>std::locale - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../common/favicon.ico">
-<link rel="stylesheet" href="../../common/ext.css">
+<link rel="shortcut icon" href="../.././common/favicon.ico">
+<link rel="stylesheet" href="../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../common/site_modules.css">
+<link rel="stylesheet" href="../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../common/startup_scripts.js"></script>
+<script src="../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/locale/locale","wgTitle":"cpp/locale/locale","wgCurRevisionId":82215,"wgArticleId":2786,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/locale/locale","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/locale/locale","wgTitle":"cpp/locale/locale","wgCurRevisionId":173779,"wgArticleId":2786,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/locale/locale","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -108,7 +108,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>locale</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>locale</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -119,127 +127,177 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../locale.html" title="cpp/locale">locale</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../locale.html" title="cpp/locale"> Localizations library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5"> Locales and facets</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>locale</span></span></strong></div></div></td></tr>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../locale.html" title="cpp/locale">Localization library</a><div class="t-navbar-menu"><div><div style="display:inline-block">
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../locale.html#Locales_and_facets" title="cpp/locale">Locales and facets</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#Locales" title="cpp/locale">Locales</a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="has_facet.html" title="cpp/locale/has facet"><span class="t-lines"><span>has_facet</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="use_facet.html" title="cpp/locale/use facet"><span class="t-lines"><span>use_facet</span></span></a></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="has_facet.html" title="cpp/locale/has facet"><span class="t-lines"><span>has_facet</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>locale</span></span></strong></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Character classification</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#Facet_category_base_classes" title="cpp/locale">Facet category base classes</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ctype_base.html" title="cpp/locale/ctype base"><span class="t-lines"><span>ctype_base</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_base.html" title="cpp/locale/codecvt base"><span class="t-lines"><span>codecvt_base</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="messages_base.html" title="cpp/locale/messages base"><span class="t-lines"><span>messages_base</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_base.html" title="cpp/locale/time base"><span class="t-lines"><span>time_base</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="money_base.html" title="cpp/locale/money base"><span class="t-lines"><span>money_base</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#ctype_facets" title="cpp/locale">ctype facets</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ctype.html" title="cpp/locale/ctype"><span class="t-lines"><span>ctype</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ctype_char.html" title="cpp/locale/ctype char"><span class="t-lines"><span>ctype<span style="font-size:0.7em; line-height:130%">&lt;char&gt;</span></span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ctype_byname.html" title="cpp/locale/ctype byname"><span class="t-lines"><span>ctype_byname</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt.html" title="cpp/locale/codecvt"><span class="t-lines"><span>codecvt</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_byname.html" title="cpp/locale/codecvt byname"><span class="t-lines"><span>codecvt_byname</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#numeric_facets" title="cpp/locale">numeric facets</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="num_get.html" title="cpp/locale/num get"><span class="t-lines"><span>num_get</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="num_put.html" title="cpp/locale/num put"><span class="t-lines"><span>num_put</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="numpunct.html" title="cpp/locale/numpunct"><span class="t-lines"><span>numpunct</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="numpunct_byname.html" title="cpp/locale/numpunct byname"><span class="t-lines"><span>numpunct_byname</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#collate_facets" title="cpp/locale">collate facets</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="collate.html" title="cpp/locale/collate"><span class="t-lines"><span>collate</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="collate_byname.html" title="cpp/locale/collate byname"><span class="t-lines"><span>collate_byname</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#time_facets" title="cpp/locale">time facets</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_get.html" title="cpp/locale/time get"><span class="t-lines"><span>time_get</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_put.html" title="cpp/locale/time put"><span class="t-lines"><span>time_put</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_get_byname.html" title="cpp/locale/time get byname"><span class="t-lines"><span>time_get_byname</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_put_byname.html" title="cpp/locale/time put byname"><span class="t-lines"><span>time_put_byname</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#monetary_facets" title="cpp/locale">monetary facets</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="money_get.html" title="cpp/locale/money get"><span class="t-lines"><span>money_get</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="money_put.html" title="cpp/locale/money put"><span class="t-lines"><span>money_put</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="moneypunct.html" title="cpp/locale/moneypunct"><span class="t-lines"><span>moneypunct</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="moneypunct_byname.html" title="cpp/locale/moneypunct byname"><span class="t-lines"><span>moneypunct_byname</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#messages_facets" title="cpp/locale">messages facets</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="messages.html" title="cpp/locale/messages"><span class="t-lines"><span>messages</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="messages_byname.html" title="cpp/locale/messages byname"><span class="t-lines"><span>messages_byname</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+</table></div>
+</div>
+<div style="display:inline-block">
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../locale.html#Character_classification_and_conversion" title="cpp/locale">Character classification and conversion</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#Character_classification" title="cpp/locale">Character classification</a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isspace.html" title="cpp/locale/isspace"><span class="t-lines"><span>isspace</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isblank.html" title="cpp/locale/isblank"><span class="t-lines"><span>isblank</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="iscntrl.html" title="cpp/locale/iscntrl"><span class="t-lines"><span>iscntrl</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isupper.html" title="cpp/locale/isupper"><span class="t-lines"><span>isupper</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="islower.html" title="cpp/locale/islower"><span class="t-lines"><span>islower</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isalpha.html" title="cpp/locale/isalpha"><span class="t-lines"><span>isalpha</span></span></a></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isdigit.html" title="cpp/locale/isdigit"><span class="t-lines"><span>isdigit</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ispunct.html" title="cpp/locale/ispunct"><span class="t-lines"><span>ispunct</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isdigit.html" title="cpp/locale/isdigit"><span class="t-lines"><span>isdigit</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isxdigit.html" title="cpp/locale/isxdigit"><span class="t-lines"><span>isxdigit</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isalnum.html" title="cpp/locale/isalnum"><span class="t-lines"><span>isalnum</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isprint.html" title="cpp/locale/isprint"><span class="t-lines"><span>isprint</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isgraph.html" title="cpp/locale/isgraph"><span class="t-lines"><span>isgraph</span></span></a></div></div></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Conversions</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="toupper.html" title="cpp/locale/toupper"><span class="t-lines"><span>toupper</span></span></a></div></div></td></tr>
+</table></div>
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#Character_conversions" title="cpp/locale">Character conversions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="toupper.html" title="cpp/locale/toupper"><span class="t-lines"><span>toupper</span></span></a></div><div><span class="t-lines"><span>    </span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="tolower.html" title="cpp/locale/tolower"><span class="t-lines"><span>tolower</span></span></a></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wstring_convert.html" title="cpp/locale/wstring convert"><span class="t-lines"><span>wstring_convert</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wbuffer_convert.html" title="cpp/locale/wbuffer convert"><span class="t-lines"><span>wbuffer_convert</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Facet category base classes</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#String_and_stream_conversions" title="cpp/locale">String and stream conversions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wstring_convert.html" title="cpp/locale/wstring convert"><span class="t-lines"><span>wstring_convert</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++17, removed in C++26">C++11/17/26*</span>)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wbuffer_convert.html" title="cpp/locale/wbuffer convert"><span class="t-lines"><span>wbuffer_convert</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++17, removed in C++26">C++11/17/26*</span>)</span></span></span></div></div></td></tr>
+</table></div>
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../locale.html#Text_encoding_identifications" title="cpp/locale">Text encoding identifications</a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ctype_base.html" title="cpp/locale/ctype base"><span class="t-lines"><span>ctype_base</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_base.html" title="cpp/locale/codecvt base"><span class="t-lines"><span>codecvt_base</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="messages_base.html" title="cpp/locale/messages base"><span class="t-lines"><span>messages_base</span></span></a></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_base.html" title="cpp/locale/time base"><span class="t-lines"><span>time_base</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="money_base.html" title="cpp/locale/money base"><span class="t-lines"><span>money_base</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="text_encoding.html" title="cpp/locale/text encoding"><span class="t-lines"><span>text_encoding</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Facet categories</td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../locale.html#Locale-independent_unicode_conversion_facets" title="cpp/locale">Unicode conversion facets</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_utf8.html" title="cpp/locale/codecvt utf8"><span class="t-lines"><span>codecvt_utf8</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++17, removed in C++26">C++11/17/26*</span>)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_utf16.html" title="cpp/locale/codecvt utf16"><span class="t-lines"><span>codecvt_utf16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++17, removed in C++26">C++11/17/26*</span>)</span>    </span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_utf8_utf16.html" title="cpp/locale/codecvt utf8 utf16"><span class="t-lines"><span>codecvt_utf8_utf16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++17, removed in C++26">C++11/17/26*</span>)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_mode.html" title="cpp/locale/codecvt mode"><span class="t-lines"><span>codecvt_mode</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++17, removed in C++26">C++11/17/26*</span>)</span></span></span></div></div></td></tr>
+</table></div>
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../locale.html#C_library_locales" title="cpp/locale">C library locales</a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ctype.html" title="cpp/locale/ctype"><span class="t-lines"><span>ctype</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ctype_char.html" title="cpp/locale/ctype char"><span class="t-lines"><span>ctype&lt;char&gt;</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt.html" title="cpp/locale/codecvt"><span class="t-lines"><span>codecvt</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="collate.html" title="cpp/locale/collate"><span class="t-lines"><span>collate</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="messages.html" title="cpp/locale/messages"><span class="t-lines"><span>messages</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_get.html" title="cpp/locale/time get"><span class="t-lines"><span>time_get</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_put.html" title="cpp/locale/time put"><span class="t-lines"><span>time_put</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="LC_categories.html" title="cpp/locale/LC categories"><span class="t-lines"><span>LC_ALL</span><span>LC_COLLATE</span><span>LC_CTYPE</span><span>LC_MONETARY</span><span>LC_NUMERIC</span><span>LC_TIME</span></span></a></div><div><span class="t-lines"><span>    </span></span></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="num_get.html" title="cpp/locale/num get"><span class="t-lines"><span>num_get</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="num_put.html" title="cpp/locale/num put"><span class="t-lines"><span>num_put</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="numpunct.html" title="cpp/locale/numpunct"><span class="t-lines"><span>numpunct</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="money_get.html" title="cpp/locale/money get"><span class="t-lines"><span>money_get</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="money_put.html" title="cpp/locale/money put"><span class="t-lines"><span>money_put</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="moneypunct.html" title="cpp/locale/moneypunct"><span class="t-lines"><span>moneypunct</span></span></a></div></div></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Locale-specific facets</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ctype_byname.html" title="cpp/locale/ctype byname"><span class="t-lines"><span>ctype_byname</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_byname.html" title="cpp/locale/codecvt byname"><span class="t-lines"><span>codecvt_byname</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="messages_byname.html" title="cpp/locale/messages byname"><span class="t-lines"><span>messages_byname</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="collate_byname.html" title="cpp/locale/collate byname"><span class="t-lines"><span>collate_byname</span></span></a></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_get_byname.html" title="cpp/locale/time get byname"><span class="t-lines"><span>time_get_byname</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_put_byname.html" title="cpp/locale/time put byname"><span class="t-lines"><span>time_put_byname</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="numpunct_byname.html" title="cpp/locale/numpunct byname"><span class="t-lines"><span>numpunct_byname</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="moneypunct_byname.html" title="cpp/locale/moneypunct byname"><span class="t-lines"><span>moneypunct_byname</span></span></a></div></div></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Code conversion facets</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_utf8.html" title="cpp/locale/codecvt utf8"><span class="t-lines"><span>codecvt_utf8</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_utf16.html" title="cpp/locale/codecvt utf16"><span class="t-lines"><span>codecvt_utf16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_utf8_utf16.html" title="cpp/locale/codecvt utf8 utf16"><span class="t-lines"><span>codecvt_utf8_utf16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_mode.html" title="cpp/locale/codecvt mode"><span class="t-lines"><span>codecvt_mode</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> C locale</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="setlocale.html" title="cpp/locale/setlocale"><span class="t-lines"><span>setlocale</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="localeconv.html" title="cpp/locale/localeconv"><span class="t-lines"><span>localeconv</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="lconv.html" title="cpp/locale/lconv"><span class="t-lines"><span>lconv</span></span></a></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="LC_categories.html" title="cpp/locale/LC categories"><span class="t-lines"><span>LC_ALL</span><span>LC_COLLATE</span><span>LC_CTYPE</span><span>LC_MONETARY</span><span>LC_NUMERIC</span><span>LC_TIME</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
 </table></div></td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><strong class="selflink"><tt>std::locale</tt></strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"> Member types</td></tr>
+</table></div>
+</div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><strong class="selflink"><tt>std::locale</tt></strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5">Member types</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="locale/id.html" title="cpp/locale/locale/id"><span class="t-lines"><span>locale::id</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="locale/facet.html" title="cpp/locale/locale/facet"><span class="t-lines"><span>locale::facet</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Member functions</td></tr>
+<tr class="t-nv-h2"><td colspan="5">Member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="locale/locale.html" title="cpp/locale/locale/locale"><span class="t-lines"><span>locale::locale</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="locale/%7Elocale.html" title="cpp/locale/locale/~locale"><span class="t-lines"><span>locale::~locale</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="locale/~locale.html" title="cpp/locale/locale/~locale"><span class="t-lines"><span>locale::~locale</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="locale/operator%3D.html" title="cpp/locale/locale/operator="><span class="t-lines"><span>locale::operator=</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="locale/combine.html" title="cpp/locale/locale/combine"><span class="t-lines"><span>locale::combine</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="locale/name.html" title="cpp/locale/locale/name"><span class="t-lines"><span>locale::name</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="locale/operator_cmp.html" title="cpp/locale/locale/operator cmp"><span class="t-lines"><span>locale::operator==</span><span>locale::operator!=</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="locale/encoding.html" title="cpp/locale/locale/encoding"><span class="t-lines"><span>locale::encoding</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="locale/operator_cmp.html" title="cpp/locale/locale/operator cmp"><span class="t-lines"><span>locale::operator==</span><span>locale::operator!=</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="locale/operator%28%29.html" title="cpp/locale/locale/operator()"><span class="t-lines"><span>locale::operator()</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Static member functions</td></tr>
+<tr class="t-nv-h2"><td colspan="5">Static member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="locale/global.html" title="cpp/locale/locale/global"><span class="t-lines"><span>locale::global</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="locale/classic.html" title="cpp/locale/locale/classic"><span class="t-lines"><span>locale::classic</span></span></a></div></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
@@ -257,154 +315,148 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>An object of class <code>std::locale</code> is an immutable indexed set of immutable facets. Each stream object of the C++ input/output library is associated with an <code>std::locale</code> object and uses its facets for parsing and formatting of all data. In addition, a locale object is associated with each <span class="t-lc"><a href="../regex/basic_regex.html" title="cpp/regex/basic regex">std::basic_regex</a></span> object. Locale objects can also be used as predicates that perform string collation with the standard containers and algorithms and can be accessed directly to obtain or modify the facets they hold.
-</p><p>Each locale constructed in a C++ program holds at least the following standard facets, but a program may define additional specializations or completely new facets and add them to any existing locale object. 
+<p>An object of class <code>std::locale</code> is an immutable indexed set of immutable facets. Each stream object of the C++ input/output library is associated with an <code>std::locale</code> object and uses its facets for parsing and formatting of all data. <span class="t-rev-inl t-since-cxx11"><span>In addition, a locale object is associated with each <span class="t-lc"><a href="../regex/basic_regex.html" title="cpp/regex/basic regex">std::basic_regex</a></span> object.</span><span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> Locale objects can also be used as predicates that perform string collation with the standard containers and algorithms and can be accessed directly to obtain or modify the facets they hold.
+</p><p>Each locale constructed in a C++ program holds at least the following standard facets (i.e. <span class="t-lc"><a href="has_facet.html" title="cpp/locale/has facet">std::has_facet</a></span> returns <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> for all these facet types), but a program may define additional specializations or completely new facets and add them to any existing locale object. 
 </p>
-<table class="wikitable" style="font-size:0.85em">
-<tr>
-<th colspan="2"> Supported facets
+<table class="wikitable">
+
+<tr style="text-align:center; font-size:16px; line-height:16px;">
+<th colspan="2">Supported facets
 </th></tr>
 <tr>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="collate.html"><span class="kw1939">std::<span class="me2">collate</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span></span>
+<td><span class="mw-geshi cpp source-cpp"><a href="ctype.html"><span class="kw1954">std::<span class="me2">ctype</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span><br><span class="mw-geshi cpp source-cpp"><a href="ctype.html"><span class="kw1954">std::<span class="me2">ctype</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span>
 </td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="collate.html"><span class="kw1939">std::<span class="me2">collate</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span></span>
+<td><span class="mw-geshi cpp source-cpp"><a href="codecvt.html"><span class="kw1955">std::<span class="me2">codecvt</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span>, <span class="kw4">char</span>, <a href="../string/multibyte/mbstate_t.html"><span class="kw1187">std::<span class="me2">mbstate_t</span></span></a><span class="sy1">&gt;</span></span><br><span class="mw-geshi cpp source-cpp"><a href="codecvt.html"><span class="kw1955">std::<span class="me2">codecvt</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span>, <span class="kw4">char</span>, <a href="../string/multibyte/mbstate_t.html"><span class="kw1187">std::<span class="me2">mbstate_t</span></span></a><span class="sy1">&gt;</span></span>
 </td></tr>
 <tr>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="ctype.html"><span class="kw1934">std::<span class="me2">ctype</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span></span>
+<td><span class="mw-geshi cpp source-cpp"><a href="num_get.html"><span class="kw1971">std::<span class="me2">num_get</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span><br><span class="mw-geshi cpp source-cpp"><a href="num_get.html"><span class="kw1971">std::<span class="me2">num_get</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span>
 </td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="ctype.html"><span class="kw1934">std::<span class="me2">ctype</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span></span>
+<td rowspan="2"><span class="mw-geshi cpp source-cpp"><a href="numpunct.html"><span class="kw1977">std::<span class="me2">numpunct</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span><br><span class="mw-geshi cpp source-cpp"><a href="numpunct.html"><span class="kw1977">std::<span class="me2">numpunct</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span>
 </td></tr>
 <tr>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="codecvt.html"><span class="kw1935">std::<span class="me2">codecvt</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span>,<span class="kw4">char</span>,mbstate_t<span class="sy1">&gt;</span></span></span><br><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="codecvt.html"><span class="kw1935">std::<span class="me2">codecvt</span></span></a><span class="sy1">&lt;</span><span class="kw4">char16_t</span>,<span class="kw4">char</span>,mbstate_t<span class="sy1">&gt;</span></span></span>
-</td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="codecvt.html"><span class="kw1935">std::<span class="me2">codecvt</span></span></a><span class="sy1">&lt;</span><span class="kw4">char32_t</span>,<span class="kw4">char</span>,mbstate_t<span class="sy1">&gt;</span></span></span><br> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="codecvt.html"><span class="kw1935">std::<span class="me2">codecvt</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span>,<span class="kw4">char</span>,mbstate_t<span class="sy1">&gt;</span></span></span>
+<td><span class="mw-geshi cpp source-cpp"><a href="num_put.html"><span class="kw1974">std::<span class="me2">num_put</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span><br><span class="mw-geshi cpp source-cpp"><a href="num_put.html"><span class="kw1974">std::<span class="me2">num_put</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span>
 </td></tr>
 <tr>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="moneypunct.html"><span class="kw1968">std::<span class="me2">moneypunct</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span></span> <br><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="moneypunct.html"><span class="kw1968">std::<span class="me2">moneypunct</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span>,<span class="kw2">true</span><span class="sy1">&gt;</span></span></span>
+<td><span class="mw-geshi cpp source-cpp"><a href="money_get.html"><span class="kw1980">std::<span class="me2">money_get</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span><br><span class="mw-geshi cpp source-cpp"><a href="money_get.html"><span class="kw1980">std::<span class="me2">money_get</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span>
 </td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="moneypunct.html"><span class="kw1968">std::<span class="me2">moneypunct</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span></span><br> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="moneypunct.html"><span class="kw1968">std::<span class="me2">moneypunct</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span>,<span class="kw2">true</span><span class="sy1">&gt;</span></span></span>
+<td rowspan="2"><span class="mw-geshi cpp source-cpp"><a href="moneypunct.html"><span class="kw1988">std::<span class="me2">moneypunct</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span><br><span class="mw-geshi cpp source-cpp"><a href="moneypunct.html"><span class="kw1988">std::<span class="me2">moneypunct</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span>, <span class="kw2">true</span><span class="sy1">&gt;</span></span><br><span class="mw-geshi cpp source-cpp"><a href="moneypunct.html"><span class="kw1988">std::<span class="me2">moneypunct</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span><br><span class="mw-geshi cpp source-cpp"><a href="moneypunct.html"><span class="kw1988">std::<span class="me2">moneypunct</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span>, <span class="kw2">true</span><span class="sy1">&gt;</span></span>
 </td></tr>
 <tr>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="money_get.html"><span class="kw1960">std::<span class="me2">money_get</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span></span>
-</td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="money_get.html"><span class="kw1960">std::<span class="me2">money_get</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span></span>
+<td><span class="mw-geshi cpp source-cpp"><a href="money_put.html"><span class="kw1984">std::<span class="me2">money_put</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span><br><span class="mw-geshi cpp source-cpp"><a href="money_put.html"><span class="kw1984">std::<span class="me2">money_put</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span>
 </td></tr>
 <tr>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="money_put.html"><span class="kw1964">std::<span class="me2">money_put</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span></span>
+<td><span class="mw-geshi cpp source-cpp"><a href="time_get.html"><span class="kw1965">std::<span class="me2">time_get</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span><br><span class="mw-geshi cpp source-cpp"><a href="time_get.html"><span class="kw1965">std::<span class="me2">time_get</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span>
 </td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="money_put.html"><span class="kw1964">std::<span class="me2">money_put</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span></span>
+<td><span class="mw-geshi cpp source-cpp"><a href="collate.html"><span class="kw1959">std::<span class="me2">collate</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span><br><span class="mw-geshi cpp source-cpp"><a href="collate.html"><span class="kw1959">std::<span class="me2">collate</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span>
 </td></tr>
 <tr>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="numpunct.html"><span class="kw1957">std::<span class="me2">numpunct</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span></span>
+<td><span class="mw-geshi cpp source-cpp"><a href="time_put.html"><span class="kw1968">std::<span class="me2">time_put</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span><br><span class="mw-geshi cpp source-cpp"><a href="time_put.html"><span class="kw1968">std::<span class="me2">time_put</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span>
 </td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="numpunct.html"><span class="kw1957">std::<span class="me2">numpunct</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span></span>
+<td><span class="mw-geshi cpp source-cpp"><a href="messages.html"><span class="kw1962">std::<span class="me2">messages</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span><br><span class="mw-geshi cpp source-cpp"><a href="messages.html"><span class="kw1962">std::<span class="me2">messages</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span>
 </td></tr>
+<tr style="text-align:center">
+<th colspan="2">Deprecated facets
+</th></tr>
 <tr>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="num_get.html"><span class="kw1951">std::<span class="me2">num_get</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span></span>
-</td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="num_get.html"><span class="kw1951">std::<span class="me2">num_get</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span></span>
-</td></tr>
-<tr>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="num_put.html"><span class="kw1954">std::<span class="me2">num_put</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span></span>
-</td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="num_put.html"><span class="kw1954">std::<span class="me2">num_put</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span></span>
-</td></tr>
-<tr>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="time_get.html"><span class="kw1945">std::<span class="me2">time_get</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span></span>
-</td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="time_get.html"><span class="kw1945">std::<span class="me2">time_get</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span></span>
-</td></tr>
-<tr>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="time_put.html"><span class="kw1948">std::<span class="me2">time_put</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span></span>
-</td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="time_put.html"><span class="kw1948">std::<span class="me2">time_put</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span></span>
-</td></tr>
-<tr>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="messages.html"><span class="kw1942">std::<span class="me2">messages</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span></span></span>
-</td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="messages.html"><span class="kw1942">std::<span class="me2">messages</span></span></a><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span></span>
+<td colspan="2"><span class="mw-geshi cpp source-cpp"><a href="codecvt.html"><span class="kw1955">std::<span class="me2">codecvt</span></span></a><span class="sy1">&lt;</span><span class="kw4">char16_t</span>, <span class="kw4">char</span>, <a href="../string/multibyte/mbstate_t.html"><span class="kw1187">std::<span class="me2">mbstate_t</span></span></a><span class="sy1">&gt;</span></span> <span class="t-mark-rev t-since-cxx11">(since C++11)</span><span class="t-mark-rev t-deprecated-cxx20">(deprecated in C++20)</span><br><span class="mw-geshi cpp source-cpp"><a href="codecvt.html"><span class="kw1955">std::<span class="me2">codecvt</span></span></a><span class="sy1">&lt;</span><span class="kw4">char32_t</span>, <span class="kw4">char</span>, <a href="../string/multibyte/mbstate_t.html"><span class="kw1187">std::<span class="me2">mbstate_t</span></span></a><span class="sy1">&gt;</span></span> <span class="t-mark-rev t-since-cxx11">(since C++11)</span><span class="t-mark-rev t-deprecated-cxx20">(deprecated in C++20)</span><br><span class="mw-geshi cpp source-cpp"><a href="codecvt.html"><span class="kw1955">std::<span class="me2">codecvt</span></span></a><span class="sy1">&lt;</span><span class="kw4">char16_t</span>, char8_t, <a href="../string/multibyte/mbstate_t.html"><span class="kw1187">std::<span class="me2">mbstate_t</span></span></a><span class="sy1">&gt;</span></span> <span class="t-mark-rev t-since-cxx20">(since C++20)</span><span class="t-mark">(deprecated)</span><br><span class="mw-geshi cpp source-cpp"><a href="codecvt.html"><span class="kw1955">std::<span class="me2">codecvt</span></span></a><span class="sy1">&lt;</span><span class="kw4">char32_t</span>, char8_t, <a href="../string/multibyte/mbstate_t.html"><span class="kw1187">std::<span class="me2">mbstate_t</span></span></a><span class="sy1">&gt;</span></span> <span class="t-mark-rev t-since-cxx20">(since C++20)</span><span class="t-mark">(deprecated)</span>
 </td></tr></table>
-<p>Internally, a locale object is implemented as-if it is a reference-counted pointer to an array (indexed by <span class="t-lc"><a href="locale/id.html" title="cpp/locale/locale/id">std::locale::id</a></span>) of reference-counted pointers to facets: copying a locale only copies one pointer and increments several reference counts. To maintain the standard C++ library thread safety guarantees (operations on different objects are always thread-safe), both the locale reference count and each facet reference count are updated in thread-safe manner, similar to <span class="t-lc"><a href="../memory/shared_ptr.html" title="cpp/memory/shared ptr">std::shared_ptr</a></span>.
+<p>Internally, a locale object is implemented as if it is a reference-counted pointer to an array (indexed by <span class="t-lc"><a href="locale/id.html" title="cpp/locale/locale/id">std::locale::id</a></span>) of reference-counted pointers to facets: copying a locale only copies one pointer and increments several reference counts. To maintain the standard C++ library thread safety guarantees (operations on different objects are always thread-safe), both the locale reference count and each facet reference count are updated in a thread-safe manner, similar to <span class="t-lc"><a href="../memory/shared_ptr.html" title="cpp/memory/shared ptr">std::shared_ptr</a></span>.
 </p>
 <h3><span class="mw-headline" id="Member_types">Member types</span></h3>
 <table class="t-dsc-begin">
 
+<tr class="t-dsc-hitem">
+<td> Type
+</td>
+<td> Description
+</td></tr>
+
+
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="locale/id.html" title="cpp/locale/locale/id"> <span class="t-lines"><span>id</span></span></a></div></div>
 </td>
-<td>   the facet index type: each facet class must declare or inherit a public static member of this type <br> <span class="t-mark">(class)</span> </td></tr>
+<td>  the facet index type: each facet class must declare or inherit a public static member of this type <br> <span class="t-mark">(class)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="locale/facet.html" title="cpp/locale/locale/facet"> <span class="t-lines"><span>facet</span></span></a></div></div>
 </td>
-<td>   the base class for all facet categories: each facet of any category is derived from this type  <br> <span class="t-mark">(class)</span> </td></tr>
+<td>  the base class for all facet categories: each facet of any category is derived from this type <br> <span class="t-mark">(class)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>category</span></span></div></div>
 </td>
-<td>   <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span>  <br> <span class="t-mark">(typedef)</span>
+<td>  <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span> <br> <span class="t-mark">(typedef)</span>
 </td></tr>
 
 </table>
-<h3><span class="mw-headline" id="Member_objects">Member objects</span></h3>
+<h3><span class="mw-headline" id="Member_constants">Member constants</span></h3>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>none</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
+<tr class="t-dsc-hitem">
+<td> Name
 </td>
-<td>   a zero value of type <code>category</code> indicating no facet category  <br> <span class="t-mark">(public static member constant)</span>
+<td> Explanation
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>collate</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> category</span></span> none</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>   a bitmask value of type <code>category</code> indicating the collate facet category  <br> <span class="t-mark">(public static member constant)</span>
+<td>  a zero value indicating no facet category <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>ctype</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> category</span></span> collate</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>   a bitmask value of type <code>category</code> indicating the ctype facet category  <br> <span class="t-mark">(public static member constant)</span>
+<td>  a bitmask value indicating the collate facet category <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>monetary</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> category</span></span> ctype</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>   a bitmask value of type <code>category</code> indicating the monetary facet category  <br> <span class="t-mark">(public static member constant)</span>
+<td>  a bitmask value indicating the ctype facet category <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>numeric</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> category</span></span> monetary</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>   a bitmask value of type <code>category</code> indicating the numeric facet category  <br> <span class="t-mark">(public static member constant)</span>
+<td>  a bitmask value indicating the monetary facet category <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>time</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> category</span></span> numeric</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>   a bitmask value of type <code>category</code> indicating the time facet category  <br> <span class="t-mark">(public static member constant)</span>
+<td>  a bitmask value indicating the numeric facet category <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>messages</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> category</span></span> time</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>   a bitmask value of type <code>category</code> indicating the messages facet category  <br> <span class="t-mark">(public static member constant)</span>
+<td>  a bitmask value indicating the time facet category <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>all</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> category</span></span> messages</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>   <span class="t-c"><span class="mw-geshi cpp source-cpp">collate <span class="sy3">|</span> ctype <span class="sy3">|</span> monetary <span class="sy3">|</span> numeric <span class="sy3">|</span> time <span class="sy3">|</span> messages</span></span>  <br> <span class="t-mark">(public static member constant)</span>
+<td>  a bitmask value indicating the messages facet category <br> <span class="t-mark">(public static member constant)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> category</span></span> all</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
+</td>
+<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">collate <span class="sy3">|</span> ctype <span class="sy3">|</span> monetary <span class="sy3">|</span> numeric <span class="sy3">|</span> time <span class="sy3">|</span> messages</span></span> <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 </table>
+<p><code>std::locale</code> member functions expecting a <code>category</code> argument require one of the category values defined above, or the union of two or more such values. The <a href="LC_categories.html" title="cpp/locale/LC categories"><code>LC</code> constants</a> are not accepted.
+</p>
 <h3><span class="mw-headline" id="Member_functions">Member functions</span></h3>
 <table class="t-dsc-begin">
 
@@ -414,61 +466,69 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  constructs a new locale <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="locale/%7Elocale.html" title="cpp/locale/locale/~locale"> <span class="t-lines"><span>(destructor)</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="locale/~locale.html" title="cpp/locale/locale/~locale"> <span class="t-lines"><span>(destructor)</span></span></a></div></div>
 </td>
 <td>  destructs the locale and the facets whose reference count becomes zero <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="locale/operator%3D.html" title="cpp/locale/locale/operator="> <span class="t-lines"><span>operator=</span></span></a></div></div>
 </td>
-<td>   replaces a locale  <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  replaces a locale <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="locale/combine.html" title="cpp/locale/locale/combine"> <span class="t-lines"><span>combine</span></span></a></div></div>
 </td>
-<td>   constructs a locale with compile-time identified facet copied from another locale  <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  constructs a locale with compile-time identified facet copied from another locale <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="locale/name.html" title="cpp/locale/locale/name"> <span class="t-lines"><span>name</span></span></a></div></div>
 </td>
-<td>   returns the name of the locale or "*" if unnamed  <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  returns the name of the locale or <span class="mw-geshi cpp source-cpp"><span class="st0">"*"</span></span> if unnamed <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="locale/operator_cmp.html" title="cpp/locale/locale/operator cmp"> <span class="t-lines"><span>operator==</span><span>operator!=</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="locale/encoding.html" title="cpp/locale/locale/encoding"> <span class="t-lines"><span>encoding</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
 </td>
-<td>   equality comparison between locale objects  <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  returns the character encoding scheme associated with the locale <br> <span class="t-mark">(public member function)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="locale/operator_cmp.html" title="cpp/locale/locale/operator cmp"> <span class="t-lines"><span>operator==</span><span>operator!=</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-until-cxx20">(removed in C++20)</span></span></span></div></div>
+</td>
+<td>  equality comparison between locale objects <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="locale/operator%28%29.html" title="cpp/locale/locale/operator()"> <span class="t-lines"><span>operator()</span></span></a></div></div>
 </td>
-<td>   lexicographically compares two strings using this locale's collate facet <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  lexicographically compares two strings using this locale's collate facet <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="locale/global.html" title="cpp/locale/locale/global"> <span class="t-lines"><span>global</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>   changes the global locale  <br> <span class="t-mark">(public static member function)</span> </td></tr>
+<td>  changes the global locale <br> <span class="t-mark">(public static member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="locale/classic.html" title="cpp/locale/locale/classic"> <span class="t-lines"><span>classic</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>   obtains a reference to the "C" locale <br> <span class="t-mark">(public static member function)</span> </td></tr>
+<td>  obtains a reference to the "C" locale <br> <span class="t-mark">(public static member function)</span> </td></tr>
 </table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
-<div class="t-example"><p>Demonstrates the typical prologue of a locale-sensitive program (cross-platform)</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div class="t-example"><p>Demonstrates the typical prologue of a locale-sensitive program (cross-platform).</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;locale&gt;</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../io/cout.html"><span class="kw1756">std::<span class="me2">wcout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"User-preferred locale setting is "</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">locale</span><span class="br0">(</span><span class="st0">""</span><span class="br0">)</span>.<span class="me1">name</span><span class="br0">(</span><span class="br0">)</span>.<span class="me1">c_str</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1776">std::<span class="me2">wcout</span></span></a> <span class="sy1">&lt;&lt;</span> L<span class="st0">"User-preferred locale setting is "</span>
+               <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">locale</span><span class="br0">(</span><span class="st0">""</span><span class="br0">)</span>.<span class="me1">name</span><span class="br0">(</span><span class="br0">)</span>.<span class="me1">c_str</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> L<span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
     <span class="co1">// on startup, the global locale is the "C" locale</span>
-    <a href="../io/cout.html"><span class="kw1756">std::<span class="me2">wcout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="nu16">1000.01</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-    <span class="co1">// replace the C++ global locale as well as the C locale with the user-preferred locale</span>
-    <a href="locale/global.html"><span class="kw2753">std::<span class="me2">locale</span><span class="sy4">::</span><span class="me2">global</span></span></a><span class="br0">(</span>std<span class="sy4">::</span><span class="me2">locale</span><span class="br0">(</span><span class="st0">""</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1776">std::<span class="me2">wcout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="nu16">1000.01</span> <span class="sy1">&lt;&lt;</span> L<span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+ 
+    <span class="co1">// replace the C++ global locale and the "C" locale with the user-preferred locale</span>
+    <a href="locale/global.html"><span class="kw2700">std::<span class="me2">locale</span><span class="sy4">::</span><span class="me2">global</span></span></a><span class="br0">(</span>std<span class="sy4">::</span><span class="me2">locale</span><span class="br0">(</span><span class="st0">""</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="co1">// use the new global locale for future wide character output</span>
-    <a href="../io/cout.html"><span class="kw1756">std::<span class="me2">wcout</span></span></a>.<span class="me1">imbue</span><span class="br0">(</span>std<span class="sy4">::</span><span class="me2">locale</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1776">std::<span class="me2">wcout</span></span></a>.<span class="me1">imbue</span><span class="br0">(</span>std<span class="sy4">::</span><span class="me2">locale</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+ 
     <span class="co1">// output the same number again</span>
-    <a href="../io/cout.html"><span class="kw1756">std::<span class="me2">wcout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="nu16">1000.01</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1776">std::<span class="me2">wcout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="nu16">1000.01</span> <span class="sy1">&lt;&lt;</span> L<span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -476,45 +536,81 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 1000.01
 1,000.01</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th>DR
+</th>
+<th>Applied to
+</th>
+<th>Behavior as published
+</th>
+<th>Correct behavior
+</th></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue340">LWG 340</a>
+</td>
+<td>C++98
+</td>
+<td>the set of standard facets that all locales need to hold was unclear
+</td>
+<td>made clear
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue347">LWG 347</a>
+</td>
+<td>C++98
+</td>
+<td>parameters of type <code>category</code> could accept <code>LC</code> constants
+</td>
+<td>not accepted anymore
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="text_encoding.html" title="cpp/locale/text encoding"> <span class="t-lines"><span>text_encoding</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  describes an interface for accessing the <a rel="nofollow" class="external text" href="https://www.iana.org/assignments/character-sets/character-sets.xhtml">IANA Character Sets registry</a> <br> <span class="t-mark">(class)</span> </td></tr>
+
+<tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="use_facet.html" title="cpp/locale/use facet"> <span class="t-lines"><span>use_facet</span></span></a></div></div>
 </td>
-<td>   obtains a facet from a locale  <br> <span class="t-mark">(function template)</span> </td></tr>
+<td>  obtains a facet from a locale <br> <span class="t-mark">(function template)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="has_facet.html" title="cpp/locale/has facet"> <span class="t-lines"><span>has_facet</span></span></a></div></div>
 </td>
-<td>   checks if a locale implements a specific facet  <br> <span class="t-mark">(function template)</span> </td></tr>
+<td>  checks if a locale implements a specific facet <br> <span class="t-mark">(function template)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../io/ios_base/imbue.html" title="cpp/io/ios base/imbue"> <span class="t-lines"><span>imbue</span></span></a></div></div>
 </td>
-<td>   sets locale  <br> <span class="t-mark">(public member function of <code>std::ios_base</code>)</span> </td></tr>
+<td>  sets locale <br> <span class="t-mark">(public member function of <code>std::ios_base</code>)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../io/ios_base/getloc.html" title="cpp/io/ios base/getloc"> <span class="t-lines"><span>getloc</span></span></a></div></div>
 </td>
-<td>   returns current locale  <br> <span class="t-mark">(public member function of <code>std::ios_base</code>)</span> </td></tr>
+<td>  returns current locale <br> <span class="t-mark">(public member function of <code>std::ios_base</code>)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 8567/1000000
-Preprocessor generated node count: 11642/1000000
-Post‐expand include size: 210192/2097152 bytes
-Template argument size: 39412/2097152 bytes
+Preprocessor visited node count: 10473/1000000
+Preprocessor generated node count: 14855/1000000
+Post‐expand include size: 271570/4194304 bytes
+Template argument size: 54035/4194304 bytes
 Highest expansion depth: 32/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2786-0!*!0!!en!*!* and timestamp 20190111180832 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2786-0!*!0!!en!*!* and timestamp 20241019084114 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/locale/locale&amp;oldid=82215">https://en.cppreference.com/mwiki/index.php?title=cpp/locale/locale&amp;oldid=82215</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/locale/locale&amp;oldid=173779">https://en.cppreference.com/mwiki/index.php?title=cpp/locale/locale&amp;oldid=173779</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -527,21 +623,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/locale/locale">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 18 July 2024, at 07:17.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../common/skin_scripts.js"></script>
+<script src="../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 3.067 secs. -->
+<script src="../.././common/site_scripts.js"></script>
+<!-- Served in 4.537 secs. -->
 	</body>
-<!-- Cached 20190111180832 -->
+<!-- Cached 20241019084114 -->
 </html>

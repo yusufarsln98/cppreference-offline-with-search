@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Basic linear algebra algorithms (since C++26) - cppreference.com</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="shortcut icon" href="../.././common/favicon.ico">
+<link rel="stylesheet" href="../.././common/ext.css">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="../.././common/site_modules.css">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="../.././common/startup_scripts.js"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/numeric/linalg","wgTitle":"cpp/numeric/linalg","wgCurRevisionId":175427,"wgArticleId":22311,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/numeric/linalg","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-cpp {line-height: normal;}
+.source-cpp li, .source-cpp pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for cpp
+ * CSS class: source-cpp, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.cpp.source-cpp .de1, .cpp.source-cpp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.cpp.source-cpp  {font-family:monospace;}
+.cpp.source-cpp .imp {font-weight: bold; color: red;}
+.cpp.source-cpp li, .cpp.source-cpp .li1 {font-weight: normal; vertical-align:top;}
+.cpp.source-cpp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.cpp.source-cpp .li2 {font-weight: bold; vertical-align:top;}
+.cpp.source-cpp .kw1 {color: #0000dd;}
+.cpp.source-cpp .kw2 {color: #0000ff;}
+.cpp.source-cpp .kw3 {color: #0000dd;}
+.cpp.source-cpp .kw4 {color: #0000ff;}
+.cpp.source-cpp .co1 {color: #909090;}
+.cpp.source-cpp .co2 {color: #339900;}
+.cpp.source-cpp .coMULTI {color: #ff0000; font-style: italic;}
+.cpp.source-cpp .es0 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es1 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es2 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es3 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es4 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es5 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .br0 {color: #008000;}
+.cpp.source-cpp .sy0 {color: #008000;}
+.cpp.source-cpp .sy1 {color: #000080;}
+.cpp.source-cpp .sy2 {color: #000040;}
+.cpp.source-cpp .sy3 {color: #000040;}
+.cpp.source-cpp .sy4 {color: #008080;}
+.cpp.source-cpp .st0 {color: #008000;}
+.cpp.source-cpp .nu0 {color: #000080;}
+.cpp.source-cpp .nu6 {color: #000080;}
+.cpp.source-cpp .nu8 {color: #000080;}
+.cpp.source-cpp .nu12 {color: #000080;}
+.cpp.source-cpp .nu16 {color:#000080;}
+.cpp.source-cpp .nu17 {color:#000080;}
+.cpp.source-cpp .nu18 {color:#000080;}
+.cpp.source-cpp .nu19 {color:#000080;}
+.cpp.source-cpp .ln-xtra, .cpp.source-cpp li.ln-xtra, .cpp.source-cpp div.ln-xtra {background-color: #ffc;}
+.cpp.source-cpp span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_numeric_linalg skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        <!-- /header -->
+        <!-- content -->
+<div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading">Basic linear algebra algorithms <span class="t-mark-rev t-since-cxx26">(since C++26)</span></h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../numeric.html" title="cpp/numeric">numeric</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../numeric.html" title="cpp/numeric">Numerics library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="math.html" title="cpp/numeric/math">Common mathematical functions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="special_functions.html" title="cpp/numeric/special functions">Mathematical special functions</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="constants.html" title="cpp/numeric/constants">Mathematical constants</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><strong class="selflink">Basic linear algebra algorithms</strong> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="fenv.html" title="cpp/numeric/fenv">Floating-point environment</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="complex.html" title="cpp/numeric/complex">Complex numbers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="valarray.html" title="cpp/numeric/valarray">Numeric array (<code>valarray</code>)</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="random.html" title="cpp/numeric/random">Pseudo-random number generation</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../numeric.html#Factor_operations" title="cpp/numeric">Factor operations</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="gcd.html" title="cpp/numeric/gcd"><span class="t-lines"><span>gcd</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="lcm.html" title="cpp/numeric/lcm"><span class="t-lines"><span>lcm</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../numeric.html#Interpolation_operations" title="cpp/numeric">Interpolations</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="midpoint.html" title="cpp/numeric/midpoint"><span class="t-lines"><span>midpoint</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="lerp.html" title="cpp/numeric/lerp"><span class="t-lines"><span>lerp</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../numeric.html#Saturation_arithmetic_.28since_C.2B.2B26.29" title="cpp/numeric">Saturation arithmetic</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="add_sat.html" title="cpp/numeric/add sat"><span class="t-lines"><span>add_sat</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="sub_sat.html" title="cpp/numeric/sub sat"><span class="t-lines"><span>sub_sat</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="saturate_cast.html" title="cpp/numeric/saturate cast"><span class="t-lines"><span>saturate_cast</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mul_sat.html" title="cpp/numeric/mul sat"><span class="t-lines"><span>mul_sat</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="div_sat.html" title="cpp/numeric/div sat"><span class="t-lines"><span>div_sat</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../numeric.html#Numeric_operations" title="cpp/numeric">Generic numeric operations</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/iota.html" title="cpp/algorithm/iota"><span class="t-lines"><span>iota</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/ranges/iota.html" title="cpp/algorithm/ranges/iota"><span class="t-lines"><span>ranges::iota</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/accumulate.html" title="cpp/algorithm/accumulate"><span class="t-lines"><span>accumulate</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/inner_product.html" title="cpp/algorithm/inner product"><span class="t-lines"><span>inner_product</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/adjacent_difference.html" title="cpp/algorithm/adjacent difference"><span class="t-lines"><span>adjacent_difference</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/partial_sum.html" title="cpp/algorithm/partial sum"><span class="t-lines"><span>partial_sum</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/reduce.html" title="cpp/algorithm/reduce"><span class="t-lines"><span>reduce</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/transform_reduce.html" title="cpp/algorithm/transform reduce"><span class="t-lines"><span>transform_reduce</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/inclusive_scan.html" title="cpp/algorithm/inclusive scan"><span class="t-lines"><span>inclusive_scan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/exclusive_scan.html" title="cpp/algorithm/exclusive scan"><span class="t-lines"><span>exclusive_scan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/transform_inclusive_scan.html" title="cpp/algorithm/transform inclusive scan"><span class="t-lines"><span>transform_inclusive_scan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../algorithm/transform_exclusive_scan.html" title="cpp/algorithm/transform exclusive scan"><span class="t-lines"><span>transform_exclusive_scan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../numeric.html#Bit_manipulation_.28since_C.2B.2B20.29" title="cpp/numeric">Bit operations</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="has_single_bit.html" title="cpp/numeric/has single bit"><span class="t-lines"><span>has_single_bit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span>    </span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="bit_cast.html" title="cpp/numeric/bit cast"><span class="t-lines"><span>bit_cast</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="bit_ceil.html" title="cpp/numeric/bit ceil"><span class="t-lines"><span>bit_ceil</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="bit_floor.html" title="cpp/numeric/bit floor"><span class="t-lines"><span>bit_floor</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="bit_width.html" title="cpp/numeric/bit width"><span class="t-lines"><span>bit_width</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rotl.html" title="cpp/numeric/rotl"><span class="t-lines"><span>rotl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rotr.html" title="cpp/numeric/rotr"><span class="t-lines"><span>rotr</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="popcount.html" title="cpp/numeric/popcount"><span class="t-lines"><span>popcount</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="countl_zero.html" title="cpp/numeric/countl zero"><span class="t-lines"><span>countl_zero</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="countl_one.html" title="cpp/numeric/countl one"><span class="t-lines"><span>countl_one</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="countr_zero.html" title="cpp/numeric/countr zero"><span class="t-lines"><span>countr_zero</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="countr_one.html" title="cpp/numeric/countr one"><span class="t-lines"><span>countr_one</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="byteswap.html" title="cpp/numeric/byteswap"><span class="t-lines"><span>byteswap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../types/endian.html" title="cpp/types/endian"><span class="t-lines"><span>endian</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><strong class="selflink">Basic linear algebra algorithms</strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="linalg.html#In-place_transformations" title="cpp/numeric/linalg">In-place transformations</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/scaled&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/scaled (page does not exist)"><span class="t-lines"><span>scaled</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/conjugated&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/conjugated (page does not exist)"><span class="t-lines"><span>conjugated</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/transposed&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/transposed (page does not exist)"><span class="t-lines"><span>transposed</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/conjugate_transposed&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/conjugate transposed (page does not exist)"><span class="t-lines"><span>conjugate_transposed</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/scaled_accessor&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/scaled accessor (page does not exist)"><span class="t-lines"><span>scaled_accessor</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/conjugated_accessor&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/conjugated accessor (page does not exist)"><span class="t-lines"><span>conjugated_accessor</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/layout_transpose&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/layout transpose (page does not exist)"><span class="t-lines"><span>layout_transpose</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="linalg.html#BLAS_1_functions" title="cpp/numeric/linalg">BLAS 1 functions</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/setup_givens_rotation&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/setup givens rotation (page does not exist)"><span class="t-lines"><span>setup_givens_rotation</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/apply_givens_rotation&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/apply givens rotation (page does not exist)"><span class="t-lines"><span>apply_givens_rotation</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/swap_element&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/swap element (page does not exist)"><span class="t-lines"><span>swap_element</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/scale&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/scale (page does not exist)"><span class="t-lines"><span>scale</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/copy&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/copy (page does not exist)"><span class="t-lines"><span>copy</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/add&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/add (page does not exist)"><span class="t-lines"><span>add</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/dot&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/dot (page does not exist)"><span class="t-lines"><span>dot</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/dotc&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/dotc (page does not exist)"><span class="t-lines"><span>dotc</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/vector_sum_of_squares&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/vector sum of squares (page does not exist)"><span class="t-lines"><span>vector_sum_of_squares</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/vector_two_norm&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/vector two norm (page does not exist)"><span class="t-lines"><span>vector_two_norm</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/vector_abs_sum&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/vector abs sum (page does not exist)"><span class="t-lines"><span>vector_abs_sum</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/vector_idx_abs_max&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/vector idx abs max (page does not exist)"><span class="t-lines"><span>vector_idx_abs_max</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/matrix_frob_norm&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/matrix frob norm (page does not exist)"><span class="t-lines"><span>matrix_frob_norm</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/matrix_one_norm&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/matrix one norm (page does not exist)"><span class="t-lines"><span>matrix_one_norm</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/matrix_inf_norm&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/matrix inf norm (page does not exist)"><span class="t-lines"><span>matrix_inf_norm</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="linalg.html#BLAS_2_functions" title="cpp/numeric/linalg">BLAS 2 functions</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/matrix_rank_1_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/matrix rank 1 update (page does not exist)"><span class="t-lines"><span>matrix_rank_1_update</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/matrix_rank_1_update_c&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/matrix rank 1 update c (page does not exist)"><span class="t-lines"><span>matrix_rank_1_update_c</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/symmetric_matrix_rank_1_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/symmetric matrix rank 1 update (page does not exist)"><span class="t-lines"><span>symmetric_matrix_rank_1_update</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/hermitian_matrix_rank_1_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/hermitian matrix rank 1 update (page does not exist)"><span class="t-lines"><span>hermitian_matrix_rank_1_update</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/symmetric_matrix_rank_2_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/symmetric matrix rank 2 update (page does not exist)"><span class="t-lines"><span>symmetric_matrix_rank_2_update</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/hermitian_matrix_rank_2_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/hermitian matrix rank 2 update (page does not exist)"><span class="t-lines"><span>hermitian_matrix_rank_2_update</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/matrix_vector_product&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/matrix vector product (page does not exist)"><span class="t-lines"><span>matrix_vector_product</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/symmetric_matrix_vector_product&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/symmetric matrix vector product (page does not exist)"><span class="t-lines"><span>symmetric_matrix_vector_product</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/hermitian_matrix_vector_product&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/hermitian matrix vector product (page does not exist)"><span class="t-lines"><span>hermitian_matrix_vector_product</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/triangular_matrix_vector_product&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/triangular matrix vector product (page does not exist)"><span class="t-lines"><span>triangular_matrix_vector_product</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/triangular_matrix_vector_solve&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/triangular matrix vector solve (page does not exist)"><span class="t-lines"><span>triangular_matrix_vector_solve</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="linalg.html#BLAS_3_functions" title="cpp/numeric/linalg">BLAS 3 functions</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/symmetric_matrix_rank_k_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/symmetric matrix rank k update (page does not exist)"><span class="t-lines"><span>symmetric_matrix_rank_k_update</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/hermitian_matrix_rank_k_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/hermitian matrix rank k update (page does not exist)"><span class="t-lines"><span>hermitian_matrix_rank_k_update</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/symmetric_matrix_rank_2k_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/symmetric matrix rank 2k update (page does not exist)"><span class="t-lines"><span>symmetric_matrix_rank_2k_update</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/hermitian_matrix_rank_2k_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/hermitian matrix rank 2k update (page does not exist)"><span class="t-lines"><span>hermitian_matrix_rank_2k_update</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/triangular_matrix_matrix_solve&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/triangular matrix matrix solve (page does not exist)"><span class="t-lines"><span>triangular_matrix_matrix_left_solve</span><span>triangular_matrix_matrix_right_solve</span></span></a></div><div><span class="t-lines"><span></span><span>    </span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/matrix_product&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/matrix product (page does not exist)"><span class="t-lines"><span>matrix_product</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/symmetric_matrix_product&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/symmetric matrix product (page does not exist)"><span class="t-lines"><span>symmetric_matrix_product</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/hermitian_matrix_product&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/hermitian matrix product (page does not exist)"><span class="t-lines"><span>hermitian_matrix_product</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/triangular_matrix_product&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/triangular matrix product (page does not exist)"><span class="t-lines"><span>triangular_matrix_product</span><span>triangular_matrix_left_product</span><span>triangular_matrix_right_product</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="linalg.html#Helper_items" title="cpp/numeric/linalg">Helper items</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/storage_order_tags&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/storage order tags (page does not exist)"><span class="t-lines"><span>column_major</span><span>row_major</span><span>column_major_t</span><span>row_major_t</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/triangle_tags&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/triangle tags (page does not exist)"><span class="t-lines"><span>upper_triangle</span><span>lower_triangle</span><span>upper_triangle_t</span><span>lower_triangle_t</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/diagonal_tags&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/diagonal tags (page does not exist)"><span class="t-lines"><span>implicit_unit_diagonal</span><span>explicit_diagonal</span><span>implicit_unit_diagonal_t</span><span>explicit_diagonal_t</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/layout_blas_packed&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/layout blas packed (page does not exist)"><span class="t-lines"><span>layout_blas_packed</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
+<p>Basic linear algebra algorithms are based on the dense Basic Linear Algebra Subroutines (<a href="https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms" class="extiw" title="enwiki:Basic Linear Algebra Subprograms">BLAS</a>) which corresponds to a subset of the <a rel="nofollow" class="external text" href="http://www.netlib.org/blas/blast-forum/blas-report.pdf">BLAS Standard</a>. These algorithms that access the elements of arrays view those elements through <span class="t-lc">std::mdspan</span> representing vector or matrix.
+</p><p>The BLAS algorithms are categorized into three sets of operations called <i>levels</i>, which generally correspond to the degree of the polynomial in the complexities of algorithms:
+</p>
+<ul><li> <a href="https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms#Level_1" class="extiw" title="enwiki:Basic Linear Algebra Subprograms">BLAS 1</a>: All algorithms with <span class="t-lc">std::mdspan</span> parameters perform a count of <span class="t-lc">std::mdspan</span> array accesses and arithmetic operations that are linear in the maximum product of extents of any <span class="t-lc">std::mdspan</span> parameter. These algorithms contain <i>vector</i> operations such as dot products, norms, and vector addition.
+</li><li> <a href="https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms#Level_2" class="extiw" title="enwiki:Basic Linear Algebra Subprograms">BLAS 2</a>: All algorithms have general complexity in quadratic time. These algorithms contain <i>matrix-vector</i> operations such as matrix-vector multiplications and a solver of the triangular linear system.
+</li><li> <a href="https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms#Level_3" class="extiw" title="enwiki:Basic Linear Algebra Subprograms">BLAS 3</a>: All algorithms have general complexity in cubic time. These algorithms contain <i>matrix-matrix</i> operations such as matrix-matrix multiplications and a solver of the multiple triangular linear systems.
+</li></ul>
+<table class="t-dsc-begin">
+
+<tr>
+<td colspan="2"> <h3> <span class="mw-headline" id="In-place_transformations">In-place transformations</span></h3>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="../header/linalg.html" title="cpp/header/linalg">&lt;linalg&gt;</a></code> </div>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in  namespace <code>std::linalg</code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/scaled_accessor&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/scaled accessor (page does not exist)"> <span class="t-lines"><span>scaled_accessor</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  <span class="t-lc">std::mdspan</span> accessor policy whose reference represents the product of a scaling factor that is fixed and its nested <span class="t-lc">std::mdspan</span> accessor's reference <br> <span class="t-mark">(class template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/conjugated_accessor&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/conjugated accessor (page does not exist)"> <span class="t-lines"><span>conjugated_accessor</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  <span class="t-lc">std::mdspan</span> accessor policy whose reference represents the complex conjugate of its nested <span class="t-lc">std::mdspan</span> accessor's reference <br> <span class="t-mark">(class template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/layout_transpose&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/layout transpose (page does not exist)"> <span class="t-lines"><span>layout_transpose</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  <span class="t-lc">std::mdspan</span> layout mapping policy that swaps the rightmost two indices, extents, and strides of any unique layout mapping policy <br> <span class="t-mark">(class template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/scaled&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/scaled (page does not exist)"> <span class="t-lines"><span>scaled</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  returns a new read-only <span class="t-lc">std::mdspan</span> computed by the elementwise product of the scaling factor and the corresponding elements of the given <span class="t-lc">std::mdspan</span> <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/conjugated&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/conjugated (page does not exist)"> <span class="t-lines"><span>conjugated</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  returns a new read-only <span class="t-lc">std::mdspan</span> whose elements are the complex conjugates of the corresponding elements of the given <span class="t-lc">std::mdspan</span> <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/transposed&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/transposed (page does not exist)"> <span class="t-lines"><span>transposed</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  returns a new <span class="t-lc">std::mdspan</span> representing the transpose of the input matrix by the given <span class="t-lc">std::mdspan</span> <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/conjugate_transposed&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/conjugate transposed (page does not exist)"> <span class="t-lines"><span>conjugate_transposed</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  returns a conjugate transpose view of an object <br> <span class="t-mark">(function template)</span> </td></tr>
+
+
+<tr>
+<td colspan="2"> <h3> <span class="mw-headline" id="BLAS_1_functions">BLAS 1 functions</span></h3>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="../header/linalg.html" title="cpp/header/linalg">&lt;linalg&gt;</a></code> </div>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in  namespace <code>std::linalg</code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/setup_givens_rotation&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/setup givens rotation (page does not exist)"> <span class="t-lines"><span>setup_givens_rotation</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  generates plane rotation <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/apply_givens_rotation&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/apply givens rotation (page does not exist)"> <span class="t-lines"><span>apply_givens_rotation</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  applies plane rotation to vectors <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/swap_elements&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/swap elements (page does not exist)"> <span class="t-lines"><span>swap_elements</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  swaps all corresponding elements of matrix or vector <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/scale&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/scale (page does not exist)"> <span class="t-lines"><span>scale</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  overwrites matrix or vector with the result of computing the elementwise multiplication by a scalar <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/copy&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/copy (page does not exist)"> <span class="t-lines"><span>copy</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  copies elements of one matrix or vector into another <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/add&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/add (page does not exist)"> <span class="t-lines"><span>add</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  adds vectors or matrices elementwise <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/dot&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/dot (page does not exist)"> <span class="t-lines"><span>dot</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  returns nonconjugated dot product of two vectors <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/dotc&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/dotc (page does not exist)"> <span class="t-lines"><span>dotc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  returns conjugated dot product of two vectors <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/vector_sum_of_squares&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/vector sum of squares (page does not exist)"> <span class="t-lines"><span>vector_sum_of_squares</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  returns scaled sum of squares of the vector elements <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/vector_two_norm&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/vector two norm (page does not exist)"> <span class="t-lines"><span>vector_two_norm</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  returns Euclidean norm of a vector <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/vector_abs_sum&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/vector abs sum (page does not exist)"> <span class="t-lines"><span>vector_abs_sum</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  returns sum of absolute values of the vector elements <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/vector_idx_abs_max&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/vector idx abs max (page does not exist)"> <span class="t-lines"><span>vector_idx_abs_max</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  returns index of maximum absolute value of vector elements <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/matrix_frob_norm&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/matrix frob norm (page does not exist)"> <span class="t-lines"><span>matrix_frob_norm</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  returns Frobenius norm of a matrix <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/matrix_one_norm&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/matrix one norm (page does not exist)"> <span class="t-lines"><span>matrix_one_norm</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  returns one norm of a matrix <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/matrix_inf_norm&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/matrix inf norm (page does not exist)"> <span class="t-lines"><span>matrix_inf_norm</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  returns infinity norm of a matrix <br> <span class="t-mark">(function template)</span> </td></tr>
+
+
+<tr>
+<td colspan="2"> <h3> <span class="mw-headline" id="BLAS_2_functions">BLAS 2 functions</span></h3>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="../header/linalg.html" title="cpp/header/linalg">&lt;linalg&gt;</a></code> </div>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in  namespace <code>std::linalg</code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/matrix_vector_product&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/matrix vector product (page does not exist)"> <span class="t-lines"><span>matrix_vector_product</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  computes matrix-vector product <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/symmetric_matrix_vector_product&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/symmetric matrix vector product (page does not exist)"> <span class="t-lines"><span>symmetric_matrix_vector_product</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  computes symmetric matrix-vector product <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/hermitian_matrix_vector_product&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/hermitian matrix vector product (page does not exist)"> <span class="t-lines"><span>hermitian_matrix_vector_product</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  computes Hermitian matrix-vector product <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/triangular_matrix_vector_product&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/triangular matrix vector product (page does not exist)"> <span class="t-lines"><span>triangular_matrix_vector_product</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  computes triangular matrix-vector product <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/triangular_matrix_vector_solve&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/triangular matrix vector solve (page does not exist)"> <span class="t-lines"><span>triangular_matrix_vector_solve</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  solves a triangular linear system <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/matrix_rank_1_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/matrix rank 1 update (page does not exist)"> <span class="t-lines"><span>matrix_rank_1_update</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  performs nonsymmetric nonconjugated rank-1 update of a matrix <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/matrix_rank_1_update_c&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/matrix rank 1 update c (page does not exist)"> <span class="t-lines"><span>matrix_rank_1_update_c</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  performs nonsymmetric conjugated rank-1 update of a matrix <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/symmetric_matrix_rank_1_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/symmetric matrix rank 1 update (page does not exist)"> <span class="t-lines"><span>symmetric_matrix_rank_1_update</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  performs rank-1 update of a symmetric matrix <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/hermitian_matrix_rank_1_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/hermitian matrix rank 1 update (page does not exist)"> <span class="t-lines"><span>hermitian_matrix_rank_1_update</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  performs rank-1 update of a Hermitian matrix <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/hermitian_matrix_rank_2_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/hermitian matrix rank 2 update (page does not exist)"> <span class="t-lines"><span>hermitian_matrix_rank_2_update</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  performs rank-2 update of a symmetric matrix <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/hermitian_matrix_rank_2_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/hermitian matrix rank 2 update (page does not exist)"> <span class="t-lines"><span>hermitian_matrix_rank_2_update</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  performs rank-2 update of a Hermitian matrix <br> <span class="t-mark">(function template)</span> </td></tr>
+
+
+<tr>
+<td colspan="2"> <h3> <span class="mw-headline" id="BLAS_3_functions">BLAS 3 functions</span></h3>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="../header/linalg.html" title="cpp/header/linalg">&lt;linalg&gt;</a></code> </div>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in  namespace <code>std::linalg</code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/matrix_product&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/matrix product (page does not exist)"> <span class="t-lines"><span>matrix_product</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  computes matrix-matrix product <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/symmetric_matrix_product&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/symmetric matrix product (page does not exist)"> <span class="t-lines"><span>symmetric_matrix_product</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  computes symmetric matrix-matrix product <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/hermitian_matrix_product&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/hermitian matrix product (page does not exist)"> <span class="t-lines"><span>hermitian_matrix_product</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  computes Hermitian matrix-matrix product <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/triangular_matrix_product&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/triangular matrix product (page does not exist)"> <span class="t-lines"><span>triangular_matrix_product</span><span>triangular_matrix_left_product</span><span>triangular_matrix_right_product</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  computes triangular matrix-matrix product <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/symmetric_matrix_rank_k_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/symmetric matrix rank k update (page does not exist)"> <span class="t-lines"><span>symmetric_matrix_rank_k_update</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  performs rank-k update of a symmetric matrix <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/hermitian_matrix_rank_k_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/hermitian matrix rank k update (page does not exist)"> <span class="t-lines"><span>hermitian_matrix_rank_k_update</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  performs rank-k update of a Hermitian matrix <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/symmetric_matrix_rank_2k_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/symmetric matrix rank 2k update (page does not exist)"> <span class="t-lines"><span>symmetric_matrix_rank_2k_update</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  performs rank-2k update of a symmetric matrix <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/hermitian_matrix_rank_2k_update&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/hermitian matrix rank 2k update (page does not exist)"> <span class="t-lines"><span>hermitian_matrix_rank_2k_update</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  performs rank-2k update of a Hermitian matrix <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/triangular_matrix_matrix_solve&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/triangular matrix matrix solve (page does not exist)"> <span class="t-lines"><span>triangular_matrix_matrix_left_solve</span><span>triangular_matrix_matrix_right_solve</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  solves multiple triangular linear systems <br> <span class="t-mark">(function template)</span> </td></tr>
+
+
+<tr>
+<td colspan="2"> <h3> <span class="mw-headline" id="Helper_items">Helper items</span></h3>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="../header/linalg.html" title="cpp/header/linalg">&lt;linalg&gt;</a></code> </div>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in  namespace <code>std::linalg</code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td> <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/storage_order_tags&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/storage order tags (page does not exist)"> <span class="t-lines"><span>column_major</span><span>row_major</span><span>column_major_t</span><span>row_major_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td> describe the order of elements in an <span class="t-lc">std::mdspan</span> with <span class="t-lc">linalg::layout_blas_packed</span> layout<br><span class="t-mark">(tag)</span></td></tr>
+
+<tr class="t-dsc">
+<td> <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/triangle_tags&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/triangle tags (page does not exist)"> <span class="t-lines"><span>upper_triangle</span><span>lower_triangle</span><span>upper_triangle_t</span><span>lower_triangle_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td> specify whether algorithms and other users of a matrix should access the upper triangle or lower triangle of the matrix<br><span class="t-mark">(tag)</span></td></tr>
+
+<tr class="t-dsc">
+<td> <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/diagonal_tags&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/diagonal tags (page does not exist)"> <span class="t-lines"><span>implicit_unit_diagonal</span><span>explicit_diagonal</span><span>implicit_unit_diagonal_t</span><span>explicit_diagonal_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td> specify whether algorithms should access diagonal entries of the matrix<br><span class="t-mark">(tag)</span></td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg/layout_blas_packed&amp;action=edit&amp;redlink=1" class="new" title="cpp/numeric/linalg/layout blas packed (page does not exist)"> <span class="t-lines"><span>layout_blas_packed</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div>
+</td>
+<td>  <span class="t-lc">std::mdspan</span> layout mapping policy that represents a square matrix that stores only the entries in one triangle, in a packed contiguous format <br> <span class="t-mark">(class template)</span> </td></tr>
+</table>
+<h3><span class="mw-headline" id="Notes">Notes</span></h3>
+<table class="wikitable ftm-begin ftm-has-value">
+
+<tr>
+<th><a href="../utility/feature_test.html" title="cpp/utility/feature test">Feature-test</a> macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Feature
+</th></tr>
+<tr>
+<td><a href="../feature_test.html#cpp_lib_linalg" title="cpp/feature test"><code>__cpp_lib_linalg</code></a></td>
+<td><span class="mw-geshi cpp source-cpp"><span class="nu0">202311L</span></span></td>
+<td><span class="t-mark">(C++26)</span></td>
+<td>Basic linear algebra algorithms
+</td></tr></table>
+<h3><span class="mw-headline" id="Example">Example</span></h3>
+<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;cassert&gt;</span>
+<span class="co2">#include &lt;cstddef&gt;</span>
+<span class="co2">#include &lt;execution&gt;</span>
+<span class="co2">#include &lt;linalg&gt;</span>
+<span class="co2">#include &lt;mdspan&gt;</span>
+<span class="co2">#include &lt;numeric&gt;</span>
+<span class="co2">#include &lt;vector&gt;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">constexpr</span> <a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> N <span class="sy1">=</span> <span class="nu0">40</span><span class="sy4">;</span>
+    <a href="../container/vector.html"><span class="kw1277">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">double</span><span class="sy1">&gt;</span> x_vec<span class="br0">(</span>N<span class="br0">)</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><a href="../algorithm/ranges/iota.html"><span class="kw3667">ranges::<span class="me2">iota</span></span></a><span class="br0">(</span>x_vec, <span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+    <a href="../container/mdspan.html"><span class="kw3364">std::<span class="me2">mdspan</span></span></a> x<span class="br0">(</span>x_vec.<span class="me1">data</span><span class="br0">(</span><span class="br0">)</span>, N<span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="co1">// x[i] *= 2.0, executed sequentially</span>
+    std<span class="sy4">::</span><a href="http://en.cppreference.com/w/cpp/numeric/linalg/scale"><span class="kw3575">linalg::<span class="me2">scale</span></span></a><span class="br0">(</span><span class="nu16">2.0</span>, x<span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="co1">// x[i] *= 3.0, executed in parallel</span>
+    std<span class="sy4">::</span><a href="http://en.cppreference.com/w/cpp/numeric/linalg/scale"><span class="kw3575">linalg::<span class="me2">scale</span></span></a><span class="br0">(</span><a href="../algorithm/execution_policy_tag.html"><span class="kw1574">std::<span class="me2">execution</span><span class="sy4">::</span><span class="me2">par_unseq</span></span></a>, <span class="nu16">3.0</span>, x<span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> i<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> i <span class="sy3">!</span><span class="sy1">=</span> N<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
+        <a href="../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span>x<span class="br0">[</span>i<span class="br0">]</span> <span class="sy1">==</span> <span class="nu16">6.0</span> <span class="sy2">*</span> <span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">double</span><span class="sy1">&gt;</span><span class="br0">(</span>i<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+</div>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 12390/1000000
+Preprocessor generated node count: 10857/1000000
+Post‐expand include size: 468654/4194304 bytes
+Template argument size: 90194/4194304 bytes
+Highest expansion depth: 20/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:22311-0!*!0!!en!*!* and timestamp 20241003213920 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg&amp;oldid=175427">https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/linalg&amp;oldid=175427</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/numeric/linalg">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 22 August 2024, at 14:00.</li>
+                            </ul>
+                    </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="../.././common/skin_scripts.js"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
+}</script>
+<script src="../.././common/site_scripts.js"></script>
+<!-- Served in 1.330 secs. -->
+	</body>
+<!-- Cached 20241003213922 -->
+</html>

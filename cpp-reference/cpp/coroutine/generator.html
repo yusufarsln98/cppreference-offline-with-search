@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>std::generator - cppreference.com</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="shortcut icon" href="../.././common/favicon.ico">
+<link rel="stylesheet" href="../.././common/ext.css">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="../.././common/site_modules.css">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="../.././common/startup_scripts.js"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/coroutine/generator","wgTitle":"cpp/coroutine/generator","wgCurRevisionId":176246,"wgArticleId":21359,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/coroutine/generator","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-cpp {line-height: normal;}
+.source-cpp li, .source-cpp pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for cpp
+ * CSS class: source-cpp, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.cpp.source-cpp .de1, .cpp.source-cpp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.cpp.source-cpp  {font-family:monospace;}
+.cpp.source-cpp .imp {font-weight: bold; color: red;}
+.cpp.source-cpp li, .cpp.source-cpp .li1 {font-weight: normal; vertical-align:top;}
+.cpp.source-cpp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.cpp.source-cpp .li2 {font-weight: bold; vertical-align:top;}
+.cpp.source-cpp .kw1 {color: #0000dd;}
+.cpp.source-cpp .kw2 {color: #0000ff;}
+.cpp.source-cpp .kw3 {color: #0000dd;}
+.cpp.source-cpp .kw4 {color: #0000ff;}
+.cpp.source-cpp .co1 {color: #909090;}
+.cpp.source-cpp .co2 {color: #339900;}
+.cpp.source-cpp .coMULTI {color: #ff0000; font-style: italic;}
+.cpp.source-cpp .es0 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es1 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es2 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es3 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es4 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es5 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .br0 {color: #008000;}
+.cpp.source-cpp .sy0 {color: #008000;}
+.cpp.source-cpp .sy1 {color: #000080;}
+.cpp.source-cpp .sy2 {color: #000040;}
+.cpp.source-cpp .sy3 {color: #000040;}
+.cpp.source-cpp .sy4 {color: #008080;}
+.cpp.source-cpp .st0 {color: #008000;}
+.cpp.source-cpp .nu0 {color: #000080;}
+.cpp.source-cpp .nu6 {color: #000080;}
+.cpp.source-cpp .nu8 {color: #000080;}
+.cpp.source-cpp .nu12 {color: #000080;}
+.cpp.source-cpp .nu16 {color:#000080;}
+.cpp.source-cpp .nu17 {color:#000080;}
+.cpp.source-cpp .nu18 {color:#000080;}
+.cpp.source-cpp .nu19 {color:#000080;}
+.cpp.source-cpp .ln-xtra, .cpp.source-cpp li.ln-xtra, .cpp.source-cpp div.ln-xtra {background-color: #ffc;}
+.cpp.source-cpp span.xtra { display:block; }
+
+/*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-text {line-height: normal;}
+.source-text li, .source-text pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for text
+ * CSS class: source-text, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.text.source-text .de1, .text.source-text .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.text.source-text  {font-family:monospace;}
+.text.source-text .imp {font-weight: bold; color: red;}
+.text.source-text li, .text.source-text .li1 {font-weight: normal; vertical-align:top;}
+.text.source-text .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.text.source-text .li2 {font-weight: bold; vertical-align:top;}
+.text.source-text .ln-xtra, .text.source-text li.ln-xtra, .text.source-text div.ln-xtra {background-color: #ffc;}
+.text.source-text span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_coroutine_generator skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        <!-- /header -->
+        <!-- content -->
+<div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>generator</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../coroutine.html" title="cpp/coroutine">coroutine</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../utility.html" title="cpp/utility">Utilities library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../types.html" title="cpp/types">Type support</a> (basic types, RTTI)</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility/feature_test.html" title="cpp/utility/feature test">Library feature-test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../memory.html" title="cpp/memory">Dynamic memory management</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility/program.html" title="cpp/utility/program">Program utilities</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../coroutine.html" title="cpp/coroutine">Coroutine support</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility/variadic.html" title="cpp/utility/variadic">Variadic functions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../types/is_constant_evaluated.html" title="cpp/types/is constant evaluated"><span class="t-lines"><span>is_constant_evaluated</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../types/is_within_lifetime.html" title="cpp/types/is within lifetime"><span class="t-lines"><span>is_within_lifetime</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/initializer_list.html" title="cpp/utility/initializer list"><span class="t-lines"><span>initializer_list</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/source_location.html" title="cpp/utility/source location"><span class="t-lines"><span>source_location</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../utility.html#Three-way_comparison" title="cpp/utility">Three-way comparison</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/compare/three_way_comparable.html" title="cpp/utility/compare/three way comparable"><span class="t-lines"><span>three_way_comparable</span><span>three_way_comparable_with</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/compare/strong_ordering.html" title="cpp/utility/compare/strong ordering"><span class="t-lines"><span>strong_ordering</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/compare/weak_ordering.html" title="cpp/utility/compare/weak ordering"><span class="t-lines"><span>weak_ordering</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/compare/partial_ordering.html" title="cpp/utility/compare/partial ordering"><span class="t-lines"><span>partial_ordering</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/compare/common_comparison_category.html" title="cpp/utility/compare/common comparison category"><span class="t-lines"><span>common_comparison_category</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/compare/compare_three_way_result.html" title="cpp/utility/compare/compare three way result"><span class="t-lines"><span>compare_three_way_result</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/compare/compare_three_way.html" title="cpp/utility/compare/compare three way"><span class="t-lines"><span>compare_three_way</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/compare/strong_order.html" title="cpp/utility/compare/strong order"><span class="t-lines"><span>strong_order</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/compare/weak_order.html" title="cpp/utility/compare/weak order"><span class="t-lines"><span>weak_order</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/compare/partial_order.html" title="cpp/utility/compare/partial order"><span class="t-lines"><span>partial_order</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/compare/compare_strong_order_fallback.html" title="cpp/utility/compare/compare strong order fallback"><span class="t-lines"><span>compare_strong_order_fallback</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/compare/compare_weak_order_fallback.html" title="cpp/utility/compare/compare weak order fallback"><span class="t-lines"><span>compare_weak_order_fallback</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/compare/compare_partial_order_fallback.html" title="cpp/utility/compare/compare partial order fallback"><span class="t-lines"><span>compare_partial_order_fallback</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span><code>  </code></span></span></div></div></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/compare/named_comparison_functions.html" title="cpp/utility/compare/named comparison functions"><span class="t-lines"><span>is_eq</span><span>is_lt</span><span>is_lteq</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/compare/named_comparison_functions.html" title="cpp/utility/compare/named comparison functions"><span class="t-lines"><span>is_neq</span><span>is_gt</span><span>is_gteq</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5">General utilities</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><a href="../chrono.html" title="cpp/chrono">Date and time</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility/functional.html" title="cpp/utility/functional">Function objects</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility/format.html" title="cpp/utility/format">Formatting library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><code>  </code></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/bitset.html" title="cpp/utility/bitset"><span class="t-lines"><span>bitset</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/hash.html" title="cpp/utility/hash"><span class="t-lines"><span>hash</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../utility.html#Relational_operators" title="cpp/utility">Relational operators</a> <span class="t-mark-rev t-deprecated-cxx20">(deprecated in C++20)</span></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/rel_ops/operator_cmp.html" title="cpp/utility/rel ops/operator cmp"><span class="t-lines"><span>rel_ops::operator!=</span><span>rel_ops::operator&gt;</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/rel_ops/operator_cmp.html" title="cpp/utility/rel ops/operator cmp"><span class="t-lines"><span>rel_ops::operator&lt;=</span><span>rel_ops::operator&gt;=</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../utility.html#Integer_comparison_functions" title="cpp/utility">Integer comparison functions</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/intcmp.html" title="cpp/utility/intcmp"><span class="t-lines"><span>cmp_equal</span><span>cmp_less</span><span>cmp_less_than</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/intcmp.html" title="cpp/utility/intcmp"><span class="t-lines"><span>cmp_not_equal</span><span>cmp_greater</span><span>cmp_greater_than</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/in_range.html" title="cpp/utility/in range"><span class="t-lines"><span>in_range</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../utility.html#Swap" title="cpp/utility">Swap</a> and <a href="../utility.html#Type_operations" title="cpp/utility">type operations</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/swap.html" title="cpp/algorithm/swap"><span class="t-lines"><span>swap</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/ranges/swap.html" title="cpp/utility/ranges/swap"><span class="t-lines"><span>ranges::swap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/exchange.html" title="cpp/utility/exchange"><span class="t-lines"><span>exchange</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx14">(C++14)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/declval.html" title="cpp/utility/declval"><span class="t-lines"><span>declval</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/to_underlying.html" title="cpp/utility/to underlying"><span class="t-lines"><span>to_underlying</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/forward.html" title="cpp/utility/forward"><span class="t-lines"><span>forward</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/forward_like.html" title="cpp/utility/forward like"><span class="t-lines"><span>forward_like</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/move.html" title="cpp/utility/move"><span class="t-lines"><span>move</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/move_if_noexcept.html" title="cpp/utility/move if noexcept"><span class="t-lines"><span>move_if_noexcept</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/as_const.html" title="cpp/utility/as const"><span class="t-lines"><span>as_const</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Common vocabulary types</td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/pair.html" title="cpp/utility/pair"><span class="t-lines"><span>pair</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/tuple.html" title="cpp/utility/tuple"><span class="t-lines"><span>tuple</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/optional.html" title="cpp/utility/optional"><span class="t-lines"><span>optional</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/any.html" title="cpp/utility/any"><span class="t-lines"><span>any</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/variant.html" title="cpp/utility/variant"><span class="t-lines"><span>variant</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/tuple_size.html" title="cpp/utility/tuple size"><span class="t-lines"><span>tuple_size</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/tuple_element.html" title="cpp/utility/tuple element"><span class="t-lines"><span>tuple_element</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/apply.html" title="cpp/utility/apply"><span class="t-lines"><span>apply</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/make_from_tuple.html" title="cpp/utility/make from tuple"><span class="t-lines"><span>make_from_tuple</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/expected.html" title="cpp/utility/expected"><span class="t-lines"><span>expected</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../utility.html#Elementary_string_conversions" title="cpp/utility">Elementary string conversions</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/to_chars.html" title="cpp/utility/to chars"><span class="t-lines"><span>to_chars</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/from_chars.html" title="cpp/utility/from chars"><span class="t-lines"><span>from_chars</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/chars_format.html" title="cpp/utility/chars format"><span class="t-lines"><span>chars_format</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/to_chars_result.html" title="cpp/utility/to chars result"><span class="t-lines"><span>to_chars_result</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/from_chars_result.html" title="cpp/utility/from chars result"><span class="t-lines"><span>from_chars_result</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+</table></div></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../coroutine.html" title="cpp/coroutine">Coroutine support</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5">Coroutine traits</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="coroutine_traits.html" title="cpp/coroutine/coroutine traits"><span class="t-lines"><span>coroutine_traits</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Coroutine handle</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="coroutine_handle.html" title="cpp/coroutine/coroutine handle"><span class="t-lines"><span>coroutine_handle</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">No-op coroutines</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="noop_coroutine_promise.html" title="cpp/coroutine/noop coroutine promise"><span class="t-lines"><span>noop_coroutine_promise</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="noop_coroutine.html" title="cpp/coroutine/noop coroutine"><span class="t-lines"><span>noop_coroutine</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Trivial awaitables</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="suspend_never.html" title="cpp/coroutine/suspend never"><span class="t-lines"><span>suspend_never</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="suspend_always.html" title="cpp/coroutine/suspend always"><span class="t-lines"><span>suspend_always</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Range generators</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>generator</span></span></strong></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../ranges.html" title="cpp/ranges">Ranges library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../ranges.html#Range_access" title="cpp/ranges">Range access</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/begin.html" title="cpp/ranges/begin"><span class="t-lines"><span>begin</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/cbegin.html" title="cpp/ranges/cbegin"><span class="t-lines"><span>cbegin</span></span></a></div><div><span class="t-lines"><span><code> </code></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/end.html" title="cpp/ranges/end"><span class="t-lines"><span>end</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/cend.html" title="cpp/ranges/cend"><span class="t-lines"><span>cend</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/rbegin.html" title="cpp/ranges/rbegin"><span class="t-lines"><span>rbegin</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/crbegin.html" title="cpp/ranges/crbegin"><span class="t-lines"><span>crbegin</span></span></a></div><div><span class="t-lines"><span><code> </code></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/rend.html" title="cpp/ranges/rend"><span class="t-lines"><span>rend</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/crend.html" title="cpp/ranges/crend"><span class="t-lines"><span>crend</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/size.html" title="cpp/ranges/size"><span class="t-lines"><span>size</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/ssize.html" title="cpp/ranges/ssize"><span class="t-lines"><span>ssize</span></span></a></div><div><span class="t-lines"><span><code> </code></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/data.html" title="cpp/ranges/data"><span class="t-lines"><span>data</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/cdata.html" title="cpp/ranges/cdata"><span class="t-lines"><span>cdata</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/empty.html" title="cpp/ranges/empty"><span class="t-lines"><span>empty</span></span></a></div><div><span class="t-lines"><span><code>    </code></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../ranges.html#Range_conversions" title="cpp/ranges">Range conversions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/from_range.html" title="cpp/ranges/from range"><span class="t-lines"><span>std::from_range_t<br>std::from_range</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span><code>    </code></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/to.html" title="cpp/ranges/to"><span class="t-lines"><span>to</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../ranges.html#Dangling_iterator_handling" title="cpp/ranges">Dangling iterator handling</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/dangling.html" title="cpp/ranges/dangling"><span class="t-lines"><span>dangling</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/borrowed_iterator_t.html" title="cpp/ranges/borrowed iterator t"><span class="t-lines"><span>borrowed_iterator_t</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/borrowed_iterator_t.html" title="cpp/ranges/borrowed iterator t"><span class="t-lines"><span>borrowed_subrange_t</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+</table></div>
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../ranges.html#Range_primitives" title="cpp/ranges">Range primitives</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/range_size_t.html" title="cpp/ranges/range size t"><span class="t-lines"><span>range_size_t</span><span>range_difference_t</span><span>range_value_t</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/elements_of.html" title="cpp/ranges/elements of"><span class="t-lines"><span>elements_of</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span><code>    </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/iterator_t.html" title="cpp/ranges/iterator t"><span class="t-lines"><span>iterator_t</span><span>const_iterator_t</span><span>sentinel_t</span><span>const_sentinel_t</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/range_reference_t.html" title="cpp/ranges/range reference t"><span class="t-lines"><span>range_reference_t</span><span>range_const_reference_t</span><span>range_rvalue_reference_t</span><span>range_common_reference_t</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+</table></div>
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../ranges.html#Range_concepts" title="cpp/ranges">Range concepts</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/range.html" title="cpp/ranges/range"><span class="t-lines"><span>range</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/borrowed_range.html" title="cpp/ranges/borrowed range"><span class="t-lines"><span>borrowed_range</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/sized_range.html" title="cpp/ranges/sized range"><span class="t-lines"><span>sized_range</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/common_range.html" title="cpp/ranges/common range"><span class="t-lines"><span>common_range</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/view.html" title="cpp/ranges/view"><span class="t-lines"><span>view</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/viewable_range.html" title="cpp/ranges/viewable range"><span class="t-lines"><span>viewable_range</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/input_range.html" title="cpp/ranges/input range"><span class="t-lines"><span>input_range</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/output_range.html" title="cpp/ranges/output range"><span class="t-lines"><span>output_range</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/forward_range.html" title="cpp/ranges/forward range"><span class="t-lines"><span>forward_range</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/bidirectional_range.html" title="cpp/ranges/bidirectional range"><span class="t-lines"><span>bidirectional_range</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/random_access_range.html" title="cpp/ranges/random access range"><span class="t-lines"><span>random_access_range</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/contiguous_range.html" title="cpp/ranges/contiguous range"><span class="t-lines"><span>contiguous_range</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/constant_range.html" title="cpp/ranges/constant range"><span class="t-lines"><span>constant_range</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span><code>  </code></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+</table></div>
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../ranges.html#Views" title="cpp/ranges">Views</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/view_interface.html" title="cpp/ranges/view interface"><span class="t-lines"><span>view_interface</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/subrange.html" title="cpp/ranges/subrange"><span class="t-lines"><span>subrange</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+</table></div>
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../ranges.html#Range_factories" title="cpp/ranges">Range factories</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/empty_view.html" title="cpp/ranges/empty view"><span class="t-lines"><span>empty_view</span><span>views::empty</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/single_view.html" title="cpp/ranges/single view"><span class="t-lines"><span>single_view</span><span>views::single</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/basic_istream_view.html" title="cpp/ranges/basic istream view"><span class="t-lines"><span>basic_istream_view</span><span>views::istream</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/iota_view.html" title="cpp/ranges/iota view"><span class="t-lines"><span>iota_view</span><span>views::iota</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/repeat_view.html" title="cpp/ranges/repeat view"><span class="t-lines"><span>repeat_view</span><span>views::repeat</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+</table></div>
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../ranges.html#Range_adaptors" title="cpp/ranges">Range adaptors</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/all_view.html" title="cpp/ranges/all view"><span class="t-lines"><span>views::all_t</span><span>views::all</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/ref_view.html" title="cpp/ranges/ref view"><span class="t-lines"><span>ref_view</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/owning_view.html" title="cpp/ranges/owning view"><span class="t-lines"><span>owning_view</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/as_rvalue_view.html" title="cpp/ranges/as rvalue view"><span class="t-lines"><span>as_rvalue_view</span><span>views::as_rvalue</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span><code>  </code></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/filter_view.html" title="cpp/ranges/filter view"><span class="t-lines"><span>filter_view</span><span>views::filter</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/transform_view.html" title="cpp/ranges/transform view"><span class="t-lines"><span>transform_view</span><span>views::transform</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/take_view.html" title="cpp/ranges/take view"><span class="t-lines"><span>take_view</span><span>views::take</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/take_while_view.html" title="cpp/ranges/take while view"><span class="t-lines"><span>take_while_view</span><span>views::take_while</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/concat_view.html" title="cpp/ranges/concat view"><span class="t-lines"><span>concat_view</span><span>views::concat</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/drop_view.html" title="cpp/ranges/drop view"><span class="t-lines"><span>drop_view</span><span>views::drop</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/drop_while_view.html" title="cpp/ranges/drop while view"><span class="t-lines"><span>drop_while_view</span><span>views::drop_while</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/join_view.html" title="cpp/ranges/join view"><span class="t-lines"><span>join_view</span><span>views::join</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/join_with_view.html" title="cpp/ranges/join with view"><span class="t-lines"><span>join_with_view</span><span>views::join_with</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span><code>  </code></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/lazy_split_view.html" title="cpp/ranges/lazy split view"><span class="t-lines"><span>lazy_split_view</span><span>views::lazy_split</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/split_view.html" title="cpp/ranges/split view"><span class="t-lines"><span>split_view</span><span>views::split</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/counted_view.html" title="cpp/ranges/view counted"><span class="t-lines"><span>views::counted</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/common_view.html" title="cpp/ranges/common view"><span class="t-lines"><span>common_view</span><span>views::common</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/reverse_view.html" title="cpp/ranges/reverse view"><span class="t-lines"><span>reverse_view</span><span>views::reverse</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/as_const_view.html" title="cpp/ranges/as const view"><span class="t-lines"><span>as_const_view</span><span>views::as_const</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/elements_view.html" title="cpp/ranges/elements view"><span class="t-lines"><span>elements_view</span><span>views::elements</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/keys_view.html" title="cpp/ranges/keys view"><span class="t-lines"><span>keys_view</span><span>views::keys</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/values_view.html" title="cpp/ranges/values view"><span class="t-lines"><span>values_view</span><span>views::values</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/enumerate_view.html" title="cpp/ranges/enumerate view"><span class="t-lines"><span>enumerate_view</span><span>views::enumerate</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/zip_view.html" title="cpp/ranges/zip view"><span class="t-lines"><span>zip_view</span><span>views::zip</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/zip_transform_view.html" title="cpp/ranges/zip transform view"><span class="t-lines"><span>zip_transform_view</span><span>views::zip_transform</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/adjacent_view.html" title="cpp/ranges/adjacent view"><span class="t-lines"><span>adjacent_view</span><span>views::adjacent</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/adjacent_view.html" title="cpp/ranges/adjacent view"><span class="t-lines"><span>views::pairwise</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/adjacent_transform_view.html" title="cpp/ranges/adjacent transform view"><span class="t-lines"><span>adjacent_transform_view</span><span>views::adjacent_transform</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/adjacent_transform_view.html" title="cpp/ranges/adjacent transform view"><span class="t-lines"><span>views::pairwise_transform</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/chunk_view.html" title="cpp/ranges/chunk view"><span class="t-lines"><span>chunk_view</span><span>views::chunk</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/slide_view.html" title="cpp/ranges/slide view"><span class="t-lines"><span>slide_view</span><span>views::slide</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/chunk_by_view.html" title="cpp/ranges/chunk by view"><span class="t-lines"><span>chunk_by_view</span><span>views::chunk_by</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/stride_view.html" title="cpp/ranges/stride view"><span class="t-lines"><span>stride_view</span><span>views::stride</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/cartesian_product_view.html" title="cpp/ranges/cartesian product view"><span class="t-lines"><span>cartesian_product_view</span><span>views::cartesian_product</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+</table></div></td></tr>
+</table></div>
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../ranges.html#Range_generators" title="cpp/ranges">Range generators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>std::generator</span></span></strong></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span><code>    </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../ranges.html#Range_adaptor_closure_objects" title="cpp/ranges">Range adaptor closure objects</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/range_adaptor_closure.html" title="cpp/ranges/range adaptor closure"><span class="t-lines"><span>range_adaptor_closure</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span><code>    </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../ranges.html#Range_adaptor_objects" title="cpp/ranges">Range adaptor objects</a></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+</table></div>
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../ranges.html#Helper_items" title="cpp/ranges">Helper items</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/copyable_wrapper.html" title="cpp/ranges/copyable wrapper"><span class="t-lines"><span><i>copyable-box</i><br><i>movable-box</i></span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-until-cxx23">(until C++23)</span><code>  </code></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges.html#Helper_concepts" title="cpp/ranges"><span class="t-lines"><span><i>simple-view</i></span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/non-propagating-cache.html" title="cpp/ranges/non-propagating-cache"><span class="t-lines"><span><i>non-propagating-cache</i></span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><strong class="selflink"><tt>std::generator</tt></strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="generator.html#Member_functions" title="cpp/coroutine/generator">Member functions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/generator.html" title="cpp/coroutine/generator/generator"><span class="t-lines"><span>generator::generator</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/~generator.html" title="cpp/coroutine/generator/~generator"><span class="t-lines"><span>generator::~generator</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/operator%3D.html" title="cpp/coroutine/generator/operator="><span class="t-lines"><span>generator::operator=</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/begin.html" title="cpp/coroutine/generator/begin"><span class="t-lines"><span>generator::begin</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/end.html" title="cpp/coroutine/generator/end"><span class="t-lines"><span>generator::end</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="generator/promise_type.html" title="cpp/coroutine/generator/promise type">promise_type</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/promise_type/get_return_object.html" title="cpp/coroutine/generator/promise type/get return object"><span class="t-lines"><span>generator::promise_type::get_return_object</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/promise_type/initial_suspend.html" title="cpp/coroutine/generator/promise type/initial suspend"><span class="t-lines"><span>generator::promise_type::initial_suspend</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/promise_type/final_suspend.html" title="cpp/coroutine/generator/promise type/final suspend"><span class="t-lines"><span>generator::promise_type::final_suspend</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/promise_type/yield_value.html" title="cpp/coroutine/generator/promise type/yield value"><span class="t-lines"><span>generator::promise_type::yield_value</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/promise_type/return_void.html" title="cpp/coroutine/generator/promise type/return void"><span class="t-lines"><span>generator::promise_type::return_void</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/promise_type/unhandled_exception.html" title="cpp/coroutine/generator/promise type/unhandled exception"><span class="t-lines"><span>generator::promise_type::unhandled_exception</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/promise_type/operator_new.html" title="cpp/coroutine/generator/promise type/operator new"><span class="t-lines"><span>generator::promise_type::operator new</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/promise_type/operator_delete.html" title="cpp/coroutine/generator/promise type/operator delete"><span class="t-lines"><span>generator::promise_type::operator delete</span></span></a></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="generator/iterator.html" title="cpp/coroutine/generator/iterator"><i>Iterator</i></a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/iterator.html#constructor" title="cpp/coroutine/generator/iterator"><span class="t-lines"><span>generator::<i>iterator</i>::<i>iterator</i></span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/iterator.html#assignment" title="cpp/coroutine/generator/iterator"><span class="t-lines"><span>generator::<i>iterator</i>::operator=</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/iterator.html#dereference" title="cpp/coroutine/generator/iterator"><span class="t-lines"><span>generator::<i>iterator</i>::operator*</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/iterator.html#increment" title="cpp/coroutine/generator/iterator"><span class="t-lines"><span>generator::<i>iterator</i>::operator++<br>generator::<i>iterator</i>::operator++<span class="t-dsc-small">(int)</span></span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="generator/iterator.html#compare" title="cpp/coroutine/generator/iterator"><span class="t-lines"><span>operator==<span class="t-dsc-small">(generator::<i>iterator</i>, std::default_sentinel_t)</span></span></span></a></div></div></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
+<table class="t-dcl-begin"><tbody>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/generator.html" title="cpp/header/generator">&lt;generator&gt;</a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span><br>
+<p>    <span class="kw1">class</span> Ref,<br>
+    <span class="kw1">class</span> V <span class="sy1">=</span> <span class="kw4">void</span>,<br>
+    <span class="kw1">class</span> Allocator <span class="sy1">=</span> <span class="kw4">void</span> <span class="sy1">&gt;</span><br>
+<span class="kw1">class</span> generator<br>
+</p>
+    <span class="sy4">:</span> <span class="kw1">public</span> <a href="../ranges/view_interface.html"><span class="kw3121">ranges::<span class="me2">view_interface</span></span></a><span class="sy1">&lt;</span>generator<span class="sy1">&lt;</span>Ref, V, Allocator<span class="sy1">&gt;&gt;</span></span></div></td>
+<td> (1) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">namespace</span> pmr <span class="br0">{</span><br>
+<p>    <span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> Ref, <span class="kw1">class</span> V <span class="sy1">=</span> <span class="kw4">void</span> <span class="sy1">&gt;</span><br>
+    <span class="kw1">using</span> generator <span class="sy1">=</span><br>
+        std<span class="sy4">::</span><span class="me2">generator</span><span class="sy1">&lt;</span>Ref, V, <a href="../memory/polymorphic_allocator.html"><span class="kw711">std::<span class="me2">pmr</span><span class="sy4">::</span><span class="me2">polymorphic_allocator</span></span></a><span class="sy1">&lt;&gt;&gt;</span><span class="sy4">;</span><br>
+</p>
+<span class="br0">}</span></span></div></td>
+<td> (2) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
+<tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
+</tbody></table>
+<div class="t-li1"><span class="t-li">1)</span> The class template <code>std::generator</code> presents a <a href="../ranges/view.html" title="cpp/ranges/view"><code>view</code></a> of the elements yielded by the evaluation of a <a href="../language/coroutines.html" title="cpp/language/coroutines">coroutine</a>.</div>
+<div class="t-li1"><span class="t-li">2)</span> Convenience alias template for the <code>generator</code> using the <a href="../memory/polymorphic_allocator.html" title="cpp/memory/polymorphic allocator">polymorphic allocator</a>.</div>
+<p>A <code>std::generator</code> generates a sequence of elements by repeatedly resuming the coroutine from which it was returned.
+Each time a <span class="mw-geshi cpp source-cpp">co_yield</span> statement is evaluated, the coroutine produces one element of the sequence.
+When the <span class="mw-geshi cpp source-cpp">co_yield</span> statement is of the form <span class="t-c"><span class="mw-geshi cpp source-cpp">co_yield ranges<span class="sy4">::</span><span class="me2">elements_of</span><span class="br0">(</span>rng<span class="br0">)</span></span></span>, each element of the <a href="../ranges/range.html" title="cpp/ranges/range"><code>range</code></a> <span class="t-c"><span class="mw-geshi cpp source-cpp">rng</span></span> is successively produced as an element of the sequence.
+</p><p><code>std::generator</code> models <a href="../ranges/view.html" title="cpp/ranges/view"><code>view</code></a> and <a href="../ranges/input_range.html" title="cpp/ranges/input range"><code>input_range</code></a>.
+</p><p>The behavior of a program that adds a specialization for <code>std::generator</code> is undefined.
+</p>
+<h3><span class="mw-headline" id="Template_parameters">Template parameters</span></h3>
+<table class="t-par-begin">
+
+
+<tr class="t-par">
+<td> Ref
+</td>
+<td> -
+</td>
+<td> the reference type (<span class="t-lc">ranges::range_reference_t</span>) of the generator. If <code>V</code> is <span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span>, both the reference type and the value type are inferred from <code>Ref</code>
+</td></tr>
+<tr class="t-par">
+<td> V
+</td>
+<td> -
+</td>
+<td> the value type (<span class="t-lc">ranges::range_value_t</span>) of the generator, or <span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span>
+</td></tr>
+<tr class="t-par">
+<td> Allocator
+</td>
+<td> -
+</td>
+<td> an allocator type or <span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span>
+</td></tr></table>
+<p>If <code>Allocator</code> is not <span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span>, then the behavior is undefined if <code>Allocator</code> does not meet the <a href="../named_req/Allocator.html" title="cpp/named req/Allocator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Allocator</span></a> requirements.
+</p>
+<h3><span class="mw-headline" id="Member_types">Member types</span></h3>
+<table class="t-dsc-begin">
+
+<tr class="t-dsc-hitem">
+<td> Member
+</td>
+<td> Definition
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <code><i>value</i></code> <span class="t-mark">(private)</span>
+</td>
+<td> <span class="mw-geshi cpp source-cpp"><a href="../types/conditional.html"><span class="kw639">std::<span class="me2">conditional_t</span></span></a><span class="sy1">&lt;</span><a href="../types/is_void.html"><span class="kw458">std::<span class="me2">is_void_v</span></span></a><span class="sy1">&lt;</span>V<span class="sy1">&gt;</span>, <a href="../types/remove_cvref.html"><span class="kw2661">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>Ref<span class="sy1">&gt;</span>, V<span class="sy1">&gt;</span><span class="sy4">;</span></span><br><span class="t-mark t-mark-expos">(<span title="This definition is for illustration purposes only. An implementation does not need to define an entity in this manner. The name of this entity is unspecified.">exposition-only member type*</span>)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <code><i>reference</i></code> <span class="t-mark">(private)</span>
+</td>
+<td> <span class="mw-geshi cpp source-cpp"><a href="../types/conditional.html"><span class="kw639">std::<span class="me2">conditional_t</span></span></a><span class="sy1">&lt;</span><a href="../types/is_void.html"><span class="kw458">std::<span class="me2">is_void_v</span></span></a><span class="sy1">&lt;</span>V<span class="sy1">&gt;</span>, Ref<span class="sy3">&amp;&amp;</span>, Ref<span class="sy1">&gt;</span><span class="sy4">;</span></span><br><span class="t-mark t-mark-expos">(<span title="This definition is for illustration purposes only. An implementation does not need to define an entity in this manner. The name of this entity is unspecified.">exposition-only member type*</span>)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <code>yielded</code>
+</td>
+<td> <span style="display: inline-block;"><span class="mw-geshi cpp source-cpp"><a href="../types/conditional.html"><span class="kw639">std::<span class="me2">conditional_t</span></span></a><span class="sy1">&lt;</span><a href="../types/is_reference.html"><span class="kw488">std::<span class="me2">is_reference_v</span></span></a><span class="sy1">&lt;</span></span><code><i>reference</i></code> ﻿<span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;</span>,</span><code> </code><code><i>reference</i></code><span class="mw-geshi cpp source-cpp">, <span class="kw4">const</span></span><code> </code><code><i>reference</i></code> ﻿<span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span><span class="sy1">&gt;</span></span></span>
+</td></tr>
+
+</table>
+<table class="t-par-begin">
+
+
+<tr class="t-par-hitem">
+<td colspan="3"> Type requirements
+</td></tr>
+<tr class="t-par-req">
+<td colspan="3"> -<div class="spacer"></div><span class="mw-geshi cpp source-cpp"><a href="../memory/allocator_traits.html"><span class="kw705">std::<span class="me2">allocator_traits</span></span></a><span class="sy1">&lt;</span>Allocator<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">pointer</span></span> is a pointer type.
+</td></tr>
+<tr class="t-par-req">
+<td colspan="3"> -<div class="spacer"></div><code><i>value</i></code> is a cv-unqualified object type.
+</td></tr>
+<tr class="t-par-req">
+<td colspan="3"> -<div class="spacer"></div><code><i>reference</i></code> is either a reference type, or a cv-unqualified object type that models <a href="../concepts/copy_constructible.html" title="cpp/concepts/copy constructible"><code>copy_constructible</code></a>.
+</td></tr>
+<tr class="t-par-req">
+<td colspan="3"> -<div class="spacer"></div>Let <code><i>RRef</i></code> denote <span style="display: inline-block;"><span class="mw-geshi cpp source-cpp"><a href="../types/remove_reference.html"><span class="kw612">std::<span class="me2">remove_reference_t</span></span></a><span class="sy1">&lt;</span></span><code><i>reference</i></code> ﻿<span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;</span><span class="sy3">&amp;&amp;</span></span></span>, if <code><i>reference</i></code> is a reference type, and <code><i>reference</i></code> otherwise.
+<ul><li> <span style="display: inline-block;"><span class="mw-geshi cpp source-cpp"><a href="../concepts/common_reference_with.html"><span class="kw2954">std::<span class="me2">common_reference_with</span></span></a><span class="sy1">&lt;</span></span><code><i>reference</i></code> ﻿<span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;&amp;</span>,</span><code> </code><code><i>value</i></code> ﻿<span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span><span class="sy1">&gt;</span></span></span> is modeled.
+</li><li> <span style="display: inline-block;"><span class="mw-geshi cpp source-cpp"><a href="../concepts/common_reference_with.html"><span class="kw2954">std::<span class="me2">common_reference_with</span></span></a><span class="sy1">&lt;</span></span><code><i>reference</i></code> ﻿<span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;&amp;</span>,</span><code> </code><code><i>RRef</i></code> ﻿<span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;&amp;</span><span class="sy1">&gt;</span></span></span> is modeled.
+</li><li> <span style="display: inline-block;"><span class="mw-geshi cpp source-cpp"><a href="../concepts/common_reference_with.html"><span class="kw2954">std::<span class="me2">common_reference_with</span></span></a><span class="sy1">&lt;</span></span><code><i>RRef</i></code> ﻿<span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;&amp;</span>, <span class="kw4">const</span></span><code> </code><code><i>value</i></code> ﻿<span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span><span class="sy1">&gt;</span></span></span> is modeled.
+</li></ul>
+</td></tr></table>
+<p>The program is ill-formed if any of these type requirements is not satisfied.
+</p>
+<h3><span class="mw-headline" id="Data_members">Data members</span></h3>
+<table class="t-dsc-begin">
+
+<tr class="t-dsc-hitem">
+<td> Member
+</td>
+<td> Definition
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <span class="t-dsc-small"></span> <code><i>active_</i></code> <span class="t-mark">(private)</span>
+</td>
+<td>
+<p>Internally, each active instance of <code>std::generator</code> is associated with a stack (handled as if by object of type <span class="mw-geshi cpp source-cpp"><a href="../memory/unique_ptr.html"><span class="kw737">std::<span class="me2">unique_ptr</span></span></a><span class="sy1">&lt;</span><a href="../container/stack.html"><span class="kw1305">std::<span class="me2">stack</span></span></a><span class="sy1">&lt;</span><a href="coroutine_handle.html"><span class="kw3228">std::<span class="me2">coroutine_handle</span></span></a><span class="sy1">&lt;&gt;&gt;&gt;</span></span>).
+</p>
+<ul><li> When <a href="generator/begin.html" title="cpp/coroutine/generator/begin"><code>begin</code></a> is called, a new stack is created and the generator is added to the stack.
+</li><li> When <span class="t-c"><span class="mw-geshi cpp source-cpp">co_yield ranges<span class="sy4">::</span><span class="me2">elements_of</span><span class="br0">(</span>rng<span class="br0">)</span></span></span> is evaluated in a generator body, <span class="t-c"><span class="mw-geshi cpp source-cpp">rng</span></span> is converted to a generator and added to the stack that contains the enclosing generator.
+</li><li> When a generator iterator is <a href="generator/iterator.html#increment" title="cpp/coroutine/generator/iterator">incremented</a>, the coroutine at the top of the associated stack is resumed.
+</li><li> When a generator finishes (i.e. when <a href="generator/promise_type/final_suspend.html" title="cpp/coroutine/generator/promise type/final suspend"><tt>promise_type::final_suspend</tt></a> is called), it is removed from the stack.<br><span class="t-mark t-mark-expos">(<span title="This definition is for illustration purposes only. An implementation does not need to define an entity in this manner. The name of this entity is unspecified.">exposition-only member object*</span>)</span>
+</li></ul>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <span class="t-dsc-small"></span> <code><i>coroutine_</i></code> <span class="t-mark">(private)</span>
+</td>
+<td> a handle of type <span class="mw-geshi cpp source-cpp"><a href="coroutine_handle.html"><span class="kw3228">std::<span class="me2">coroutine_handle</span></span></a><span class="sy1">&lt;</span>promise_type<span class="sy1">&gt;</span></span><br><span class="t-mark t-mark-expos">(<span title="This definition is for illustration purposes only. An implementation does not need to define an entity in this manner. The name of this entity is unspecified.">exposition-only member object*</span>)</span>
+</td></tr>
+
+</table>
+<h3><span class="mw-headline" id="Member_functions">Member functions</span></h3>
+<table class="t-dsc-begin">
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="generator/generator.html" title="cpp/coroutine/generator/generator"> <span class="t-lines"><span>(constructor)</span></span></a></div></div>
+</td>
+<td>  constructs a <code>generator</code> object <br> <span class="t-mark">(public member function)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="generator/~generator.html" title="cpp/coroutine/generator/~generator"> <span class="t-lines"><span>(destructor)</span></span></a></div></div>
+</td>
+<td>  effectively destroys the entire stack of yielded <code>generator</code>s <br> <span class="t-mark">(public member function)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="generator/operator%3D.html" title="cpp/coroutine/generator/operator="> <span class="t-lines"><span>operator=</span></span></a></div></div>
+</td>
+<td>  assigns a <code>generator</code> object <br> <span class="t-mark">(public member function)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="generator/begin.html" title="cpp/coroutine/generator/begin"> <span class="t-lines"><span>begin</span></span></a></div></div>
+</td>
+<td>  resumes the initially suspended coroutine and returns an iterator to its handle <br> <span class="t-mark">(public member function)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="generator/end.html" title="cpp/coroutine/generator/end"> <span class="t-lines"><span>end</span></span></a></div></div>
+</td>
+<td>  returns <span class="t-lc"><a href="../iterator/default_sentinel.html" title="cpp/iterator/default sentinel" class="mw-redirect">std::default_sentinel</a></span> <br> <span class="t-mark">(public member function)</span> </td></tr>
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Inherited_from_std::ranges::view_interface"> Inherited from <span class="t-lc"><a href="../ranges/view_interface.html" title="cpp/ranges/view interface">std::ranges::view_interface</a></span> </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../ranges/view_interface/empty.html" title="cpp/ranges/view interface/empty"> <span class="t-lines"><span>empty</span></span></a></div></div>
+</td>
+<td>  returns whether the derived view is empty. Provided if it satisfies <a href="../ranges/sized_range.html" title="cpp/ranges/sized range"><code>sized_range</code></a> or <a href="../ranges/forward_range.html" title="cpp/ranges/forward range"><code>forward_range</code></a>. <br> <span class="t-mark">(public member function of <code>std::ranges::view_interface&lt;D&gt;</code>)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../ranges/view_interface/cbegin.html" title="cpp/ranges/view interface/cbegin"> <span class="t-lines"><span>cbegin</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div>
+</td>
+<td>  returns a constant iterator to the beginning of the range. <br> <span class="t-mark">(public member function of <code>std::ranges::view_interface&lt;D&gt;</code>)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../ranges/view_interface/cend.html" title="cpp/ranges/view interface/cend"> <span class="t-lines"><span>cend</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div>
+</td>
+<td>  returns a sentinel for the constant iterator of the range. <br> <span class="t-mark">(public member function of <code>std::ranges::view_interface&lt;D&gt;</code>)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../ranges/view_interface/operator_bool.html" title="cpp/ranges/view interface/operator bool"> <span class="t-lines"><span>operator bool</span></span></a></div></div>
+</td>
+<td>  returns whether the derived view is not empty. Provided if <span class="t-lc"><a href="../ranges/empty.html" title="cpp/ranges/empty">ranges::empty</a></span> is applicable to it. <br> <span class="t-mark">(public member function of <code>std::ranges::view_interface&lt;D&gt;</code>)</span> </td></tr>
+</table>
+<h3><span class="mw-headline" id="Nested_classes">Nested classes</span></h3>
+<table class="t-dsc-begin">
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="generator/promise_type.html" title="cpp/coroutine/generator/promise type"> <span class="t-lines"><span>promise_type</span></span></a></div></div>
+</td>
+<td>  the promise type <br> <span class="t-mark">(public member class)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <div class="t-dsc-member-div"><div><a href="generator/iterator.html" title="cpp/coroutine/generator/iterator"><i><span class="t-lines"><span>iterator</span></span></i></a></div></div>
+</td>
+<td> the iterator type<br><span class="t-mark t-mark-expos">(<span title="This definition is for illustration purposes only. An implementation does not need to define an entity in this manner. The name of this entity is unspecified.">exposition-only member class*</span>)</span>
+</td></tr>
+
+</table>
+<h3><span class="mw-headline" id="Notes">Notes</span></h3>
+<table class="wikitable ftm-begin ftm-has-value">
+
+<tr>
+<th><a href="../utility/feature_test.html" title="cpp/utility/feature test">Feature-test</a> macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Feature
+</th></tr>
+<tr>
+<td><a href="../feature_test.html#cpp_lib_generator" title="cpp/feature test"><code>__cpp_lib_generator</code></a></td>
+<td><span class="mw-geshi cpp source-cpp"><span class="nu0">202207L</span></span></td>
+<td><span class="t-mark">(C++23)</span></td>
+<td><a href="generator.html#top"><code>std::generator</code></a> – synchronous <a href="../coroutine.html" title="cpp/coroutine">coroutine</a> generator for <a href="../ranges.html" title="cpp/ranges">ranges</a>
+</td></tr></table>
+<h3><span class="mw-headline" id="Example">Example</span></h3>
+<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;generator&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
+ 
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
+<span class="kw1">struct</span> Tree
+<span class="br0">{</span>
+    T value<span class="sy4">;</span>
+    Tree <span class="sy2">*</span>left<span class="br0">{</span><span class="br0">}</span>, <span class="sy2">*</span>right<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+ 
+    std<span class="sy4">::</span><span class="me2">generator</span><span class="sy1">&lt;</span><span class="kw4">const</span> T<span class="sy3">&amp;</span><span class="sy1">&gt;</span> traverse_inorder<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span>
+    <span class="br0">{</span>
+        <span class="kw1">if</span> <span class="br0">(</span>left<span class="br0">)</span>
+            <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">const</span> T<span class="sy3">&amp;</span> x <span class="sy4">:</span> left<span class="sy2">-</span><span class="sy1">&gt;</span>traverse_inorder<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+                co_yield x<span class="sy4">;</span>
+ 
+        co_yield value<span class="sy4">;</span>
+        <span class="kw1">if</span> <span class="br0">(</span>right<span class="br0">)</span>
+            <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">const</span> T<span class="sy3">&amp;</span> x <span class="sy4">:</span> right<span class="sy2">-</span><span class="sy1">&gt;</span>traverse_inorder<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+                co_yield x<span class="sy4">;</span>
+    <span class="br0">}</span>
+<span class="br0">}</span><span class="sy4">;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    Tree<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> tree<span class="br0">[</span><span class="br0">]</span>
+    <span class="br0">{</span>
+                                    <span class="br0">{</span><span class="st0">'D'</span>, tree <span class="sy2">+</span> <span class="nu0">1</span>, tree <span class="sy2">+</span> <span class="nu0">2</span><span class="br0">}</span>,
+        <span class="co1">//                            │</span>
+        <span class="co1">//            ┌───────────────┴────────────────┐</span>
+        <span class="co1">//            │                                │</span>
+                    <span class="br0">{</span><span class="st0">'B'</span>, tree <span class="sy2">+</span> <span class="nu0">3</span>, tree <span class="sy2">+</span> <span class="nu0">4</span><span class="br0">}</span>,       <span class="br0">{</span><span class="st0">'F'</span>, tree <span class="sy2">+</span> <span class="nu0">5</span>, tree <span class="sy2">+</span> <span class="nu0">6</span><span class="br0">}</span>,
+        <span class="co1">//            │                                │</span>
+        <span class="co1">//  ┌─────────┴─────────────┐      ┌───────────┴─────────────┐</span>
+        <span class="co1">//  │                       │      │                         │</span>
+          <span class="br0">{</span><span class="st0">'A'</span><span class="br0">}</span>,                  <span class="br0">{</span><span class="st0">'C'</span><span class="br0">}</span>, <span class="br0">{</span><span class="st0">'E'</span><span class="br0">}</span>,                    <span class="br0">{</span><span class="st0">'G'</span><span class="br0">}</span>
+    <span class="br0">}</span><span class="sy4">;</span>
+ 
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">char</span> x <span class="sy4">:</span> tree<span class="sy2">-</span><span class="sy1">&gt;</span>traverse_inorder<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> x <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<p>Output:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">A B C D E F G</pre></div></div> 
+</div>
+<h3><span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-c++23">
+<ul><li> C++23 standard (ISO/IEC 14882:2024): 
+</li></ul>
+<dl><dd><ul><li> 26.8 Range generators [coro.generator] 
+</li></ul>
+</dd></dl>
+</div>
+<h3><span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="noop_coroutine.html" title="cpp/coroutine/noop coroutine"> <span class="t-lines"><span>noop_coroutine</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div>
+</td>
+<td>  creates a coroutine handle that has no observable effects when resumed or destroyed <br> <span class="t-mark">(function)</span> </td></tr>
+</table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 18267/1000000
+Preprocessor generated node count: 21666/1000000
+Post‐expand include size: 538426/4194304 bytes
+Template argument size: 112396/4194304 bytes
+Highest expansion depth: 41/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:21359-0!*!0!!en!*!* and timestamp 20241109033744 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/coroutine/generator&amp;oldid=176246">https://en.cppreference.com/mwiki/index.php?title=cpp/coroutine/generator&amp;oldid=176246</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/coroutine/generator">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 17 September 2024, at 05:01.</li>
+                            </ul>
+                    </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="../.././common/skin_scripts.js"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
+}</script>
+<script src="../.././common/site_scripts.js"></script>
+<!-- Served in 4.026 secs. -->
+	</body>
+<!-- Cached 20241109033744 -->
+</html>

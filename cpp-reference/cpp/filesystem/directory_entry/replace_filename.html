@@ -4,20 +4,20 @@
 <title>std::filesystem::directory_entry::replace_filename - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../../common/favicon.ico">
-<link rel="stylesheet" href="../../../common/ext.css">
+<link rel="shortcut icon" href="../../.././common/favicon.ico">
+<link rel="stylesheet" href="../../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../../common/site_modules.css">
+<link rel="stylesheet" href="../../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../../common/startup_scripts.js"></script>
+<script src="../../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/filesystem/directory_entry/replace_filename","wgTitle":"cpp/filesystem/directory entry/replace filename","wgCurRevisionId":105016,"wgArticleId":15215,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo no example"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/filesystem/directory_entry/replace_filename","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/filesystem/directory_entry/replace_filename","wgTitle":"cpp/filesystem/directory entry/replace filename","wgCurRevisionId":158089,"wgArticleId":15215,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/filesystem/directory_entry/replace_filename","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -74,6 +74,30 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 .cpp.source-cpp span.xtra { display:block; }
 
 /*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-text {line-height: normal;}
+.source-text li, .source-text pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for text
+ * CSS class: source-text, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.text.source-text .de1, .text.source-text .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.text.source-text  {font-family:monospace;}
+.text.source-text .imp {font-weight: bold; color: red;}
+.text.source-text li, .text.source-text .li1 {font-weight: normal; vertical-align:top;}
+.text.source-text .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.text.source-text .li2 {font-weight: bold; vertical-align:top;}
+.text.source-text .ln-xtra, .text.source-text li.ln-xtra, .text.source-text div.ln-xtra {background-color: #ffc;}
+.text.source-text span.xtra { display:block; }
+
+/*]]>*/
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_filesystem_directory_entry_replace_filename skin-cppreference2 action-view cpp-navbar">
         <!-- header -->
@@ -84,7 +108,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::filesystem::directory_entry::</span>replace_filename</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::filesystem::directory_entry::</span>replace_filename</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -95,36 +127,42 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../../cpp.html" title="cpp">cpp</a>‎ | <a href="../../filesystem.html" title="cpp/filesystem">filesystem</a>‎ | <a href="../directory_entry.html" title="cpp/filesystem/directory entry">directory entry</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"> Classes</td></tr>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../filesystem.html" title="cpp/filesystem">Filesystem library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5">Classes</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../path.html" title="cpp/filesystem/path"><span class="t-lines"><span>filesystem::path</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../filesystem_error.html" title="cpp/filesystem/filesystem error"><span class="t-lines"><span>filesystem::filesystem_error</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../directory_entry.html" title="cpp/filesystem/directory entry"><span class="t-lines"><span>filesystem::directory_entry</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../directory_iterator.html" title="cpp/filesystem/directory iterator"><span class="t-lines"><span>filesystem::directory_iterator</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../recursive_directory_iterator.html" title="cpp/filesystem/recursive directory iterator"><span class="t-lines"><span>filesystem::recursive_directory_iterator</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../recursive_directory_iterator.html" title="cpp/filesystem/recursive directory iterator"><span class="t-lines"><span>filesystem::recursive_directory_iterator</span></span></a></div><div><span class="t-lines"><span>    </span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../file_status.html" title="cpp/filesystem/file status"><span class="t-lines"><span>filesystem::file_status</span></span></a></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../space_info.html" title="cpp/filesystem/space info"><span class="t-lines"><span>filesystem::space_info</span></span></a></div></div></td></tr>
@@ -135,7 +173,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../directory_options.html" title="cpp/filesystem/directory options"><span class="t-lines"><span>filesystem::directory_options</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../file_time_type.html" title="cpp/filesystem/file time type"><span class="t-lines"><span>filesystem::file_time_type</span></span></a></div></div></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Functions</td></tr>
+<tr class="t-nv-h2"><td colspan="5">Functions</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../absolute.html" title="cpp/filesystem/absolute"><span class="t-lines"><span>filesystem::absolute</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../canonical.html" title="cpp/filesystem/canonical"><span class="t-lines"><span>filesystem::canonical</span><span>filesystem::weakly_canonical</span></span></a></div></div></td></tr>
@@ -177,11 +215,14 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../is_symlink.html" title="cpp/filesystem/is symlink"><span class="t-lines"><span>filesystem::is_symlink</span></span></a></div></div></td></tr>
 </table></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../directory_entry.html" title="cpp/filesystem/directory entry"><tt>std::filesystem::directory_entry</tt></a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5">Member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="directory_entry.html" title="cpp/filesystem/directory entry/directory entry"><span class="t-lines"><span>directory_entry::directory_entry</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Modifiers</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator%3D.html" title="cpp/filesystem/directory entry/operator="><span class="t-lines"><span>directory_entry::operator=</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="assign.html" title="cpp/filesystem/directory entry/assign"><span class="t-lines"><span>directory_entry::assign</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>directory_entry::replace_filename</span></span></strong></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="refresh.html" title="cpp/filesystem/directory entry/refresh"><span class="t-lines"><span>directory_entry::refresh</span></span></a></div></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Observers</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="path.html" title="cpp/filesystem/directory entry/path"><span class="t-lines"><span>directory_entry::path</span><span>directory_entry::operator const path&amp;</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="exists.html" title="cpp/filesystem/directory entry/exists"><span class="t-lines"><span>directory_entry::exists</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="is_block_file.html" title="cpp/filesystem/directory entry/is block file"><span class="t-lines"><span>directory_entry::is_block_file</span></span></a></div></div></td></tr>
@@ -196,13 +237,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="hard_link_count.html" title="cpp/filesystem/directory entry/hard link count"><span class="t-lines"><span>directory_entry::hard_link_count</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="last_write_time.html" title="cpp/filesystem/directory entry/last write time"><span class="t-lines"><span>directory_entry::last_write_time</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="status.html" title="cpp/filesystem/directory entry/status"><span class="t-lines"><span>directory_entry::status</span><span>directory_entry::symlink_status</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_cmp.html" title="cpp/filesystem/directory entry/operator cmp"><span class="t-lines"><span>directory_entry::operator==</span><span>directory_entry::operator!=</span><span>directory_entry::operator&lt;</span><span>directory_entry::operator&gt;</span><span>directory_entry::operator&lt;=</span><span>directory_entry::operator&gt;=</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_cmp.html" title="cpp/filesystem/directory entry/operator cmp"><span class="t-lines"><span>directory_entry::operator==</span><span>directory_entry::operator!=</span><span>directory_entry::operator&lt;</span><span>directory_entry::operator&gt;</span><span>directory_entry::operator&lt;=</span><span>directory_entry::operator&gt;=</span><span>directory_entry::operator&lt;=&gt;</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5">Non-member functions</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_ltlt.html" title="cpp/filesystem/directory entry/operator ltlt"><span class="t-lines"><span>operator&lt;&lt;</span></span></a></div></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dcl t-since-cxx17">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span> replace_filename<span class="br0">(</span> <span class="kw4">const</span> <a href="../path.html"><span class="kw2196">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">path</span></span></a><span class="sy3">&amp;</span> p <span class="br0">)</span><span class="sy4">;</span><br>
-<span class="kw4">void</span> replace_filename<span class="br0">(</span> <span class="kw4">const</span> <a href="../path.html"><span class="kw2196">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">path</span></span></a><span class="sy3">&amp;</span> p, <a href="../../error/error_code.html"><span class="kw872">std::<span class="me2">error_code</span></span></a><span class="sy3">&amp;</span> ec <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td class="t-dcl-nopad">  </td>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span> replace_filename<span class="br0">(</span> <span class="kw4">const</span> <a href="../path.html"><span class="kw2219">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">path</span></span></a><span class="sy3">&amp;</span> p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (1) </td>
+<td> <span class="t-mark-rev t-since-cxx17">(since C++17)</span> </td>
+</tr>
+<tr class="t-dcl t-since-cxx17">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span> replace_filename<span class="br0">(</span> <span class="kw4">const</span> <a href="../path.html"><span class="kw2219">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">path</span></span></a><span class="sy3">&amp;</span> p, <a href="../../error/error_code.html"><span class="kw881">std::<span class="me2">error_code</span></span></a><span class="sy3">&amp;</span> ec <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (2) </td>
 <td> <span class="t-mark-rev t-since-cxx17">(since C++17)</span> </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
@@ -216,56 +263,84 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  p
+<td> p
 </td>
 <td> -
 </td>
-<td>  the path to append to the parent path of the currently stored path
+<td> the path to append to the parent path of the currently stored path
 </td></tr>
 <tr class="t-par">
-<td>  ec
+<td> ec
 </td>
 <td> -
 </td>
-<td>  out-parameter for error reporting in the non-throwing overload
+<td> out-parameter for error reporting in the non-throwing overload
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>(none)
 </p>
 <h3><span class="mw-headline" id="Exceptions">Exceptions</span></h3>
-<p>The overload that does not take a <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../error/error_code.html"><span class="kw872">std::<span class="me2">error_code</span></span></a><span class="sy3">&amp;</span></span></span> parameter throws <a href="../filesystem_error.html" title="cpp/filesystem/filesystem error"><tt>filesystem_error</tt></a> on underlying OS API errors, constructed with <code>p</code> as the first path argument and the OS error code as the error code argument. The overload taking a <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../error/error_code.html"><span class="kw872">std::<span class="me2">error_code</span></span></a><span class="sy3">&amp;</span></span></span> parameter sets it to the OS API error code if an OS API call fails, and executes <span class="t-c"><span class="mw-geshi cpp source-cpp">ec.<span class="me1">clear</span><span class="br0">(</span><span class="br0">)</span></span></span> if no errors occur. Any overload not marked <code>noexcept</code> may throw  <span class="t-lc"><a href="../../memory/new/bad_alloc.html" title="cpp/memory/new/bad alloc">std::bad_alloc</a></span> if memory allocation fails.
+<p>Any overload not marked <code>noexcept</code> may throw <span class="t-lc"><a href="../../memory/new/bad_alloc.html" title="cpp/memory/new/bad alloc">std::bad_alloc</a></span> if memory allocation fails.<br>
 </p>
+<div class="t-li1"><span class="t-li">1)</span> Throws <span class="t-lc"><a href="../filesystem_error.html" title="cpp/filesystem/filesystem error">std::filesystem::filesystem_error</a></span> on underlying OS API errors, constructed with <span class="t-c"><span class="mw-geshi cpp source-cpp">p</span></span> as the first path argument and the OS error code as the error code argument.</div>
+<div class="t-li1"><span class="t-li">2)</span> Sets a <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../error/error_code.html"><span class="kw881">std::<span class="me2">error_code</span></span></a><span class="sy3">&amp;</span></span></span> parameter to the OS API error code if an OS API call fails, and executes <span class="t-c"><span class="mw-geshi cpp source-cpp">ec.</span><a href="../../error/error_code/clear.html" title="cpp/error/error code/clear"><tt>clear</tt></a><span class="mw-geshi cpp source-cpp"><span class="br0">(</span><span class="br0">)</span></span></span> if no errors occur.</div>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
-<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: no example </td></tr></table>
+<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;filesystem&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">namespace</span> fs <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">filesystem</span><span class="sy4">;</span>
+    <span class="br0">{</span>
+        fs<span class="sy4">::</span><span class="me2">directory_entry</span> entry<span class="br0">{</span><span class="st0">"alpha"</span><span class="br0">}</span><span class="sy4">;</span>
+        <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> entry <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+        entry.<span class="me1">replace_filename</span><span class="br0">(</span><span class="st0">"omega"</span><span class="br0">)</span><span class="sy4">;</span>
+        <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> entry <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+    <span class="br0">{</span>
+        fs<span class="sy4">::</span><span class="me2">directory_entry</span> entry<span class="br0">{</span><span class="st0">"/alpha/"</span><span class="br0">}</span><span class="sy4">;</span>
+        <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> entry <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+        entry.<span class="me1">replace_filename</span><span class="br0">(</span><span class="st0">"omega"</span><span class="br0">)</span><span class="sy4">;</span>
+        <a href="../../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> entry <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+<span class="br0">}</span></pre></div></div>
+<p>Output:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">"alpha"
+"omega"
+"/alpha/"
+"/alpha/omega"</pre></div></div> 
+</div>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="assign.html" title="cpp/filesystem/directory entry/assign"> <span class="t-lines"><span>assign</span></span></a></div></div>
 </td>
-<td>   assigns contents <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  assigns contents <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../path/replace_filename.html" title="cpp/filesystem/path/replace filename"> <span class="t-lines"><span>replace_filename</span></span></a></div></div>
 </td>
-<td>   replaces the last path component with another path <br> <span class="t-mark">(public member function of <code>std::filesystem::path</code>)</span> </td></tr>
+<td>  replaces the last path component with another path <br> <span class="t-mark">(public member function of <code>std::filesystem::path</code>)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5370/1000000
-Preprocessor generated node count: 12109/1000000
-Post‐expand include size: 137301/2097152 bytes
-Template argument size: 25482/2097152 bytes
+Preprocessor visited node count: 5617/1000000
+Preprocessor generated node count: 9956/1000000
+Post‐expand include size: 151979/4194304 bytes
+Template argument size: 29133/4194304 bytes
 Highest expansion depth: 32/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:15215-0!*!0!!en!*!* and timestamp 20190111185014 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:15215-0!*!0!!en!*!* and timestamp 20241004032808 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/replace_filename&amp;oldid=105016">https://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/replace_filename&amp;oldid=105016</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/replace_filename&amp;oldid=158089">https://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/replace_filename&amp;oldid=158089</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -278,21 +353,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/filesystem/directory_entry/replace_filename">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 6 September 2023, at 06:53.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../../common/skin_scripts.js"></script>
+<script src="../../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 0.945 secs. -->
+<script src="../../.././common/site_scripts.js"></script>
+<!-- Served in 1.149 secs. -->
 	</body>
-<!-- Cached 20190111185014 -->
+<!-- Cached 20241004032808 -->
 </html>

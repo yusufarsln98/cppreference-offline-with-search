@@ -4,20 +4,20 @@
 <title>std::wstring_convert - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
-<link rel="shortcut icon" href="../../common/favicon.ico">
-<link rel="stylesheet" href="../../common/ext.css">
+<link rel="shortcut icon" href="../.././common/favicon.ico">
+<link rel="stylesheet" href="../.././common/ext.css">
 <meta name="ResourceLoaderDynamicStyles" content="">
-<link rel="stylesheet" href="../../common/site_modules.css">
+<link rel="stylesheet" href="../.././common/site_modules.css">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="../../common/startup_scripts.js"></script>
+<script src="../.././common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/locale/wstring_convert","wgTitle":"cpp/locale/wstring convert","wgCurRevisionId":94409,"wgArticleId":2956,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/locale/wstring_convert","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/locale/wstring_convert","wgTitle":"cpp/locale/wstring convert","wgCurRevisionId":177197,"wgArticleId":2956,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/locale/wstring_convert","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
 }</script>
 <script>if(window.mw){
 mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
@@ -84,7 +84,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>wstring_convert</h1>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HW0LXMYCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8HW0LXMYCY');
+</script>
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>wstring_convert</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -95,118 +103,167 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../locale.html" title="cpp/locale">locale</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard Library Headers</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted implementations</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> Utilities library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../container.html" title="cpp/container"> Containers library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../iterator.html" title="cpp/iterator"> Iterators library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../ranges.html" title="cpp/ranges"> Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="cpp/algorithm"> Algorithms library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="cpp/numeric"> Numerics library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="cpp/locale"> Localizations library</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical Specifications</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../locale.html" title="cpp/locale"> Localizations library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5"> Locales and facets</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="locale.html" title="cpp/locale/locale"><span class="t-lines"><span>locale</span></span></a></div></div></td></tr>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../headers.html" title="cpp/header">Standard library headers</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="cpp/locale">Localizations library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental/execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../locale.html" title="cpp/locale">Localization library</a><div class="t-navbar-menu"><div><div style="display:inline-block">
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../locale.html#Locales_and_facets" title="cpp/locale">Locales and facets</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#Locales" title="cpp/locale">Locales</a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="has_facet.html" title="cpp/locale/has facet"><span class="t-lines"><span>has_facet</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="use_facet.html" title="cpp/locale/use facet"><span class="t-lines"><span>use_facet</span></span></a></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="has_facet.html" title="cpp/locale/has facet"><span class="t-lines"><span>has_facet</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="locale.html" title="cpp/locale/locale"><span class="t-lines"><span>locale</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Character classification</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#Facet_category_base_classes" title="cpp/locale">Facet category base classes</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ctype_base.html" title="cpp/locale/ctype base"><span class="t-lines"><span>ctype_base</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_base.html" title="cpp/locale/codecvt base"><span class="t-lines"><span>codecvt_base</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="messages_base.html" title="cpp/locale/messages base"><span class="t-lines"><span>messages_base</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_base.html" title="cpp/locale/time base"><span class="t-lines"><span>time_base</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="money_base.html" title="cpp/locale/money base"><span class="t-lines"><span>money_base</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#ctype_facets" title="cpp/locale">ctype facets</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ctype.html" title="cpp/locale/ctype"><span class="t-lines"><span>ctype</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ctype_char.html" title="cpp/locale/ctype char"><span class="t-lines"><span>ctype<span style="font-size:0.7em; line-height:130%">&lt;char&gt;</span></span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ctype_byname.html" title="cpp/locale/ctype byname"><span class="t-lines"><span>ctype_byname</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt.html" title="cpp/locale/codecvt"><span class="t-lines"><span>codecvt</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_byname.html" title="cpp/locale/codecvt byname"><span class="t-lines"><span>codecvt_byname</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#numeric_facets" title="cpp/locale">numeric facets</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="num_get.html" title="cpp/locale/num get"><span class="t-lines"><span>num_get</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="num_put.html" title="cpp/locale/num put"><span class="t-lines"><span>num_put</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="numpunct.html" title="cpp/locale/numpunct"><span class="t-lines"><span>numpunct</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="numpunct_byname.html" title="cpp/locale/numpunct byname"><span class="t-lines"><span>numpunct_byname</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#collate_facets" title="cpp/locale">collate facets</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="collate.html" title="cpp/locale/collate"><span class="t-lines"><span>collate</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="collate_byname.html" title="cpp/locale/collate byname"><span class="t-lines"><span>collate_byname</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#time_facets" title="cpp/locale">time facets</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_get.html" title="cpp/locale/time get"><span class="t-lines"><span>time_get</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_put.html" title="cpp/locale/time put"><span class="t-lines"><span>time_put</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_get_byname.html" title="cpp/locale/time get byname"><span class="t-lines"><span>time_get_byname</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_put_byname.html" title="cpp/locale/time put byname"><span class="t-lines"><span>time_put_byname</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#monetary_facets" title="cpp/locale">monetary facets</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="money_get.html" title="cpp/locale/money get"><span class="t-lines"><span>money_get</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="money_put.html" title="cpp/locale/money put"><span class="t-lines"><span>money_put</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="moneypunct.html" title="cpp/locale/moneypunct"><span class="t-lines"><span>moneypunct</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="moneypunct_byname.html" title="cpp/locale/moneypunct byname"><span class="t-lines"><span>moneypunct_byname</span></span></a></div><div><span class="t-lines"><span><code>  </code></span></span></div></div></td></tr>
+</table></div></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#messages_facets" title="cpp/locale">messages facets</a></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="messages.html" title="cpp/locale/messages"><span class="t-lines"><span>messages</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="messages_byname.html" title="cpp/locale/messages byname"><span class="t-lines"><span>messages_byname</span></span></a></div></div></td></tr>
+</table></div></td></tr>
+</table></div>
+</div>
+<div style="display:inline-block">
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../locale.html#Character_classification_and_conversion" title="cpp/locale">Character classification and conversion</a></td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#Character_classification" title="cpp/locale">Character classification</a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isspace.html" title="cpp/locale/isspace"><span class="t-lines"><span>isspace</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isblank.html" title="cpp/locale/isblank"><span class="t-lines"><span>isblank</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="iscntrl.html" title="cpp/locale/iscntrl"><span class="t-lines"><span>iscntrl</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isupper.html" title="cpp/locale/isupper"><span class="t-lines"><span>isupper</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="islower.html" title="cpp/locale/islower"><span class="t-lines"><span>islower</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isalpha.html" title="cpp/locale/isalpha"><span class="t-lines"><span>isalpha</span></span></a></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isdigit.html" title="cpp/locale/isdigit"><span class="t-lines"><span>isdigit</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ispunct.html" title="cpp/locale/ispunct"><span class="t-lines"><span>ispunct</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isdigit.html" title="cpp/locale/isdigit"><span class="t-lines"><span>isdigit</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isxdigit.html" title="cpp/locale/isxdigit"><span class="t-lines"><span>isxdigit</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isalnum.html" title="cpp/locale/isalnum"><span class="t-lines"><span>isalnum</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isprint.html" title="cpp/locale/isprint"><span class="t-lines"><span>isprint</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="isgraph.html" title="cpp/locale/isgraph"><span class="t-lines"><span>isgraph</span></span></a></div></div></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Conversions</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="toupper.html" title="cpp/locale/toupper"><span class="t-lines"><span>toupper</span></span></a></div></div></td></tr>
+</table></div>
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#Character_conversions" title="cpp/locale">Character conversions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="toupper.html" title="cpp/locale/toupper"><span class="t-lines"><span>toupper</span></span></a></div><div><span class="t-lines"><span>    </span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="tolower.html" title="cpp/locale/tolower"><span class="t-lines"><span>tolower</span></span></a></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>wstring_convert</span></span></strong></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wbuffer_convert.html" title="cpp/locale/wbuffer convert"><span class="t-lines"><span>wbuffer_convert</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Facet category base classes</td></tr>
+<tr class="t-nv-h2"><td colspan="5"><a href="../locale.html#String_and_stream_conversions" title="cpp/locale">String and stream conversions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>wstring_convert</span></span></strong></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++17, removed in C++26">C++11/17/26*</span>)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wbuffer_convert.html" title="cpp/locale/wbuffer convert"><span class="t-lines"><span>wbuffer_convert</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++17, removed in C++26">C++11/17/26*</span>)</span></span></span></div></div></td></tr>
+</table></div>
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../locale.html#Text_encoding_identifications" title="cpp/locale">Text encoding identifications</a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ctype_base.html" title="cpp/locale/ctype base"><span class="t-lines"><span>ctype_base</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_base.html" title="cpp/locale/codecvt base"><span class="t-lines"><span>codecvt_base</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="messages_base.html" title="cpp/locale/messages base"><span class="t-lines"><span>messages_base</span></span></a></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_base.html" title="cpp/locale/time base"><span class="t-lines"><span>time_base</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="money_base.html" title="cpp/locale/money base"><span class="t-lines"><span>money_base</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="text_encoding.html" title="cpp/locale/text encoding"><span class="t-lines"><span>text_encoding</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Facet categories</td></tr>
+<tr class="t-nv-h1"><td colspan="5"><a href="../locale.html#Locale-independent_unicode_conversion_facets" title="cpp/locale">Unicode conversion facets</a></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_utf8.html" title="cpp/locale/codecvt utf8"><span class="t-lines"><span>codecvt_utf8</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++17, removed in C++26">C++11/17/26*</span>)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_utf16.html" title="cpp/locale/codecvt utf16"><span class="t-lines"><span>codecvt_utf16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++17, removed in C++26">C++11/17/26*</span>)</span>    </span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_utf8_utf16.html" title="cpp/locale/codecvt utf8 utf16"><span class="t-lines"><span>codecvt_utf8_utf16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++17, removed in C++26">C++11/17/26*</span>)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_mode.html" title="cpp/locale/codecvt mode"><span class="t-lines"><span>codecvt_mode</span></span></a></div><div><span class="t-lines"><span><span class="t-mark">(<span title="deprecated in C++17, removed in C++26">C++11/17/26*</span>)</span></span></span></div></div></td></tr>
+</table></div>
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h1"><td colspan="5"><a href="../locale.html#C_library_locales" title="cpp/locale">C library locales</a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ctype.html" title="cpp/locale/ctype"><span class="t-lines"><span>ctype</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ctype_char.html" title="cpp/locale/ctype char"><span class="t-lines"><span>ctype&lt;char&gt;</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt.html" title="cpp/locale/codecvt"><span class="t-lines"><span>codecvt</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="collate.html" title="cpp/locale/collate"><span class="t-lines"><span>collate</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="messages.html" title="cpp/locale/messages"><span class="t-lines"><span>messages</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_get.html" title="cpp/locale/time get"><span class="t-lines"><span>time_get</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_put.html" title="cpp/locale/time put"><span class="t-lines"><span>time_put</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="LC_categories.html" title="cpp/locale/LC categories"><span class="t-lines"><span>LC_ALL</span><span>LC_COLLATE</span><span>LC_CTYPE</span><span>LC_MONETARY</span><span>LC_NUMERIC</span><span>LC_TIME</span></span></a></div><div><span class="t-lines"><span>    </span></span></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="num_get.html" title="cpp/locale/num get"><span class="t-lines"><span>num_get</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="num_put.html" title="cpp/locale/num put"><span class="t-lines"><span>num_put</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="numpunct.html" title="cpp/locale/numpunct"><span class="t-lines"><span>numpunct</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="money_get.html" title="cpp/locale/money get"><span class="t-lines"><span>money_get</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="money_put.html" title="cpp/locale/money put"><span class="t-lines"><span>money_put</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="moneypunct.html" title="cpp/locale/moneypunct"><span class="t-lines"><span>moneypunct</span></span></a></div></div></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Locale-specific facets</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ctype_byname.html" title="cpp/locale/ctype byname"><span class="t-lines"><span>ctype_byname</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_byname.html" title="cpp/locale/codecvt byname"><span class="t-lines"><span>codecvt_byname</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="messages_byname.html" title="cpp/locale/messages byname"><span class="t-lines"><span>messages_byname</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="collate_byname.html" title="cpp/locale/collate byname"><span class="t-lines"><span>collate_byname</span></span></a></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_get_byname.html" title="cpp/locale/time get byname"><span class="t-lines"><span>time_get_byname</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="time_put_byname.html" title="cpp/locale/time put byname"><span class="t-lines"><span>time_put_byname</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="numpunct_byname.html" title="cpp/locale/numpunct byname"><span class="t-lines"><span>numpunct_byname</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="moneypunct_byname.html" title="cpp/locale/moneypunct byname"><span class="t-lines"><span>moneypunct_byname</span></span></a></div></div></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Code conversion facets</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_utf8.html" title="cpp/locale/codecvt utf8"><span class="t-lines"><span>codecvt_utf8</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_utf16.html" title="cpp/locale/codecvt utf16"><span class="t-lines"><span>codecvt_utf16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_utf8_utf16.html" title="cpp/locale/codecvt utf8 utf16"><span class="t-lines"><span>codecvt_utf8_utf16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt_mode.html" title="cpp/locale/codecvt mode"><span class="t-lines"><span>codecvt_mode</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> C locale</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="setlocale.html" title="cpp/locale/setlocale"><span class="t-lines"><span>setlocale</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="localeconv.html" title="cpp/locale/localeconv"><span class="t-lines"><span>localeconv</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="lconv.html" title="cpp/locale/lconv"><span class="t-lines"><span>lconv</span></span></a></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="LC_categories.html" title="cpp/locale/LC categories"><span class="t-lines"><span>LC_ALL</span><span>LC_COLLATE</span><span>LC_CTYPE</span><span>LC_MONETARY</span><span>LC_NUMERIC</span><span>LC_TIME</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><br>
+</td></tr>
 </table></div></td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><strong class="selflink"><tt>std::wstring_convert</tt></strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"> Member functions</td></tr>
+</table></div>
+</div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><strong class="selflink"><tt>std::wstring_convert</tt></strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv-h2"><td colspan="5">Member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wstring_convert/wstring_convert.html" title="cpp/locale/wstring convert/wstring convert"><span class="t-lines"><span>wstring_convert::wstring_convert</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wstring_convert/%7Ewstring_convert.html" title="cpp/locale/wstring convert/~wstring convert"><span class="t-lines"><span>wstring_convert::~wstring_convert</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wstring_convert/~wstring_convert.html" title="cpp/locale/wstring convert/~wstring convert"><span class="t-lines"><span>wstring_convert::~wstring_convert</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wstring_convert/from_bytes.html" title="cpp/locale/wstring convert/from bytes"><span class="t-lines"><span>wstring_convert::from_bytes</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wstring_convert/to_bytes.html" title="cpp/locale/wstring convert/to bytes"><span class="t-lines"><span>wstring_convert::to_bytes</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wstring_convert/converted.html" title="cpp/locale/wstring convert/converted"><span class="t-lines"><span>wstring_convert::converted</span></span></a></div></div></td></tr>
@@ -219,55 +276,102 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 <td></td>
 </tr>
-<tr class="t-dcl t-since-cxx11">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> Codecvt,<br>
-<p>          <span class="kw1">class</span> Elem <span class="sy1">=</span> <span class="kw4">wchar_t</span>,<br>
-          <span class="kw1">class</span> Wide_alloc <span class="sy1">=</span> <a href="../memory/allocator.html"><span class="kw695">std::<span class="me2">allocator</span></span></a><span class="sy1">&lt;</span>Elem<span class="sy1">&gt;</span>,<br>
-          <span class="kw1">class</span> Byte_alloc <span class="sy1">=</span> <a href="../memory/allocator.html"><span class="kw695">std::<span class="me2">allocator</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> <span class="sy1">&gt;</span><br>
+<tr class="t-dcl t-since-cxx11 t-until-cxx26">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span><br>
+<p>    <span class="kw1">class</span> Codecvt,<br>
+    <span class="kw1">class</span> Elem <span class="sy1">=</span> <span class="kw4">wchar_t</span>,<br>
+    <span class="kw1">class</span> Wide_alloc <span class="sy1">=</span> <a href="../memory/allocator.html"><span class="kw704">std::<span class="me2">allocator</span></span></a><span class="sy1">&lt;</span>Elem<span class="sy1">&gt;</span>,<br>
+    <span class="kw1">class</span> Byte_alloc <span class="sy1">=</span> <a href="../memory/allocator.html"><span class="kw704">std::<span class="me2">allocator</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><br>
 </p>
-<span class="kw1">class</span> wstring_convert<span class="sy4">;</span></span></div></td>
+<span class="sy1">&gt;</span> <span class="kw1">class</span> wstring_convert<span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
-<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> <br><span class="t-mark">(deprecated in C++17)</span> </td>
+<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> <br><span class="t-mark">(deprecated in C++17)</span> <br><span class="t-mark-rev t-until-cxx26">(removed in C++26)</span> </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Class template <span class="t-lc"><strong class="selflink">std::wstring_convert</strong></span> performs conversions between byte string <span class="t-lc"><a href="../string/basic_string.html" title="cpp/string/basic string">std::string</a></span> and wide string <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../string/basic_string.html"><span class="kw1225">std::<span class="me2">basic_string</span></span></a><span class="sy1">&lt;</span>Elem<span class="sy1">&gt;</span></span></span>, using an individual code conversion facet <code>Codecvt</code>. <span class="t-lc"><strong class="selflink">std::wstring_convert</strong></span> assumes ownership of the conversion facet, and cannot use a facet managed by a locale. The standard facets suitable for use with <span class="t-lc"><strong class="selflink">std::wstring_convert</strong></span> are <span class="t-lc"><a href="codecvt_utf8.html" title="cpp/locale/codecvt utf8">std::codecvt_utf8</a></span> for UTF-8/UCS2 and UTF-8/UCS4 conversions and <span class="t-lc"><a href="codecvt_utf8_utf16.html" title="cpp/locale/codecvt utf8 utf16">std::codecvt_utf8_utf16</a></span> for UTF-8/UTF-16 conversions.
+<p>Class template <code>std::wstring_convert</code> performs conversions between byte string <span class="t-lc"><a href="../string/basic_string.html" title="cpp/string/basic string">std::string</a></span> and wide string <span class="mw-geshi cpp source-cpp"><a href="../string/basic_string.html"><span class="kw1236">std::<span class="me2">basic_string</span></span></a><span class="sy1">&lt;</span>Elem<span class="sy1">&gt;</span></span>, using an individual code conversion facet <code>Codecvt</code>. <code>std::wstring_convert</code> assumes ownership of the conversion facet, and cannot use a facet managed by a locale.
+</p><p>The standard facets suitable for use with <code>std::wstring_convert</code> are <span class="t-lc"><a href="codecvt_utf8.html" title="cpp/locale/codecvt utf8">std::codecvt_utf8</a></span> for UTF-8/UCS-2 and UTF-8/UCS-4 conversions and <span class="t-lc"><a href="codecvt_utf8_utf16.html" title="cpp/locale/codecvt utf8 utf16">std::codecvt_utf8_utf16</a></span> for UTF-8/UTF-16 conversions.
 </p>
-<h3><span class="mw-headline" id="Member_types">Member types</span></h3>
+<h3><span class="mw-headline" id="Nested_types">Nested types</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Member type
+<td> Type
 </td>
-<td>  Definition
+<td> Definition
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>byte_string</code>
+<td> <code>byte_string</code>
 </td>
-<td>  <code>std::basic_string&lt;char, char_traits&lt;char&gt;, Byte_alloc&gt;</code>
+<td> <span class="mw-geshi cpp source-cpp"><a href="../string/basic_string.html"><span class="kw1236">std::<span class="me2">basic_string</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span>, <a href="../string/char_traits.html"><span class="kw1275">std::<span class="me2">char_traits</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span>, Byte_alloc<span class="sy1">&gt;</span></span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>wide_string</code>
+<td> <code>wide_string</code>
 </td>
-<td>  <code>std::basic_string&lt;Elem, char_traits&lt;Elem&gt;, Wide_alloc&gt;</code>
+<td> <span class="mw-geshi cpp source-cpp"><a href="../string/basic_string.html"><span class="kw1236">std::<span class="me2">basic_string</span></span></a><span class="sy1">&lt;</span>Elem, <a href="../string/char_traits.html"><span class="kw1275">std::<span class="me2">char_traits</span></span></a><span class="sy1">&lt;</span>Elem<span class="sy1">&gt;</span>, Wide_alloc<span class="sy1">&gt;</span></span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>state_type</code>
+<td> <code>state_type</code>
 </td>
-<td>  <code>Codecvt::state_type</code>
+<td> <span class="mw-geshi cpp source-cpp"><span class="kw1">typename</span> Codecvt<span class="sy4">::</span><span class="me2">state_type</span></span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>int_type</code>
+<td> <code>int_type</code>
 </td>
-<td>  <code>wide_string::traits_type::int_type</code>
+<td> <span class="mw-geshi cpp source-cpp"><span class="kw1">typename</span> wide_string<span class="sy4">::</span><span class="me2">traits_type</span><span class="sy4">::</span><span class="me2">int_type</span></span>
+</td></tr>
+
+</table>
+<h3><span class="mw-headline" id="Data_members">Data members</span></h3>
+<table class="t-dsc-begin">
+
+<tr class="t-dsc-hitem">
+<td> Member
+</td>
+<td> Description
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <span id="byte_err_string"></span><span class="t-dsc-small"><code>byte_string</code></span> <code><i>byte_err_string</i></code>
+</td>
+<td> the byte string to display on errors<br><span class="t-mark t-mark-expos">(<span title="This definition is for illustration purposes only. An implementation does not need to define an entity in this manner. The name of this entity is unspecified.">exposition-only member object*</span>)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <span id="wide_err_string"></span><span class="t-dsc-small"><code>wide_string</code></span> <code><i>wide_err_string</i></code>
+</td>
+<td> the wide string to display on errors<br><span class="t-mark t-mark-expos">(<span title="This definition is for illustration purposes only. An implementation does not need to define an entity in this manner. The name of this entity is unspecified.">exposition-only member object*</span>)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <span id="cvtptr"></span><span class="t-dsc-small"><span class="mw-geshi cpp source-cpp">Codecvt<span class="sy2">*</span></span></span> <code><i>cvtptr</i></code>
+</td>
+<td> a pointer to the allocated conversion object<br><span class="t-mark t-mark-expos">(<span title="This definition is for illustration purposes only. An implementation does not need to define an entity in this manner. The name of this entity is unspecified.">exposition-only member object*</span>)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <span id="cvtstate"></span><span class="t-dsc-small"><code>state_type</code></span> <code><i>cvtstate</i></code>
+</td>
+<td> the conversion state object<br><span class="t-mark t-mark-expos">(<span title="This definition is for illustration purposes only. An implementation does not need to define an entity in this manner. The name of this entity is unspecified.">exposition-only member object*</span>)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <span id="cvtcount"></span><span class="t-dsc-small"><span class="mw-geshi cpp source-cpp"><a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a></span></span> <code><i>cvtcount</i></code>
+</td>
+<td> the conversion count<br><span class="t-mark t-mark-expos">(<span title="This definition is for illustration purposes only. An implementation does not need to define an entity in this manner. The name of this entity is unspecified.">exposition-only member object*</span>)</span>
 </td></tr>
 
 </table>
@@ -277,138 +381,140 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="wstring_convert/wstring_convert.html" title="cpp/locale/wstring convert/wstring convert"> <span class="t-lines"><span>(constructor)</span></span></a></div></div>
 </td>
-<td>  constructs a new wstring_convert <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  constructs a new <code>wstring_convert</code> <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>operator=</span></span></div></div>
 </td>
-<td>   the copy assignment operator is deleted  <br> <span class="t-mark">(public member function)</span>
+<td>  the copy assignment operator is deleted <br> <span class="t-mark">(public member function)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="wstring_convert/%7Ewstring_convert.html" title="cpp/locale/wstring convert/~wstring convert"> <span class="t-lines"><span>(destructor)</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="wstring_convert/~wstring_convert.html" title="cpp/locale/wstring convert/~wstring convert"> <span class="t-lines"><span>(destructor)</span></span></a></div></div>
 </td>
-<td>  destructs the wstring_convert and its conversion facet <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  destructs the <code>wstring_convert</code> and its conversion facet <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="wstring_convert/from_bytes.html" title="cpp/locale/wstring convert/from bytes"> <span class="t-lines"><span>from_bytes</span></span></a></div></div>
 </td>
-<td>   converts a byte string into a wide string  <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  converts a byte string into a wide string <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="wstring_convert/to_bytes.html" title="cpp/locale/wstring convert/to bytes"> <span class="t-lines"><span>to_bytes</span></span></a></div></div>
 </td>
-<td>   converts a wide string into a byte string  <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  converts a wide string into a byte string <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="wstring_convert/converted.html" title="cpp/locale/wstring convert/converted"> <span class="t-lines"><span>converted</span></span></a></div></div>
 </td>
-<td>   returns the number of characters successfully converted  <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  returns the number of characters successfully converted <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="wstring_convert/state.html" title="cpp/locale/wstring convert/state"> <span class="t-lines"><span>state</span></span></a></div></div>
 </td>
-<td>   returns the current conversion state  <br> <span class="t-mark">(public member function)</span> </td></tr>
+<td>  returns the current conversion state <br> <span class="t-mark">(public member function)</span> </td></tr>
 </table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
-<table class="wikitable" style="font-size:85%; text-align:center;">
+<table class="wikitable" style="font-size:90%; text-align:center;">
 
 <tr>
-<th> Character<br>conversions
+<th>Character<br>conversions
 </th>
-<th> locale-defined multibyte<br>(UTF-8, GB18030)
+<th>locale-defined multibyte<br>(UTF-8, GB18030)
 </th>
-<th> UTF-8<br>
+<th>UTF-8<br>
 </th>
-<th> UTF-16<br>
+<th>UTF-16<br>
 </th></tr>
 <tr>
-<th> UTF-16
+<th>UTF-16
 </th>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><a href="../string/multibyte/mbrtoc16.html" title="cpp/string/multibyte/mbrtoc16"><tt>mbrtoc16</tt></a> / <a href="../string/multibyte/c16rtomb.html" title="cpp/string/multibyte/c16rtomb"><tt>c16rtomb</tt></a><span class="t-mark">(with C11's DR488)</span>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><a href="../string/multibyte/mbrtoc16.html" title="cpp/string/multibyte/mbrtoc16"><tt>mbrtoc16</tt></a> / <a href="../string/multibyte/c16rtomb.html" title="cpp/string/multibyte/c16rtomb"><tt>c16rtomb</tt></a> <span class="t-mark">(with C11's DR488)</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><a href="codecvt.html" title="cpp/locale/codecvt"><tt>codecvt</tt></a>&lt;char16_t, char, mbstate_t&gt;<br><a href="codecvt_utf8_utf16.html" title="cpp/locale/codecvt utf8 utf16"><tt>codecvt_utf8_utf16</tt></a>&lt;char16_t&gt;<br><a href="codecvt_utf8_utf16.html" title="cpp/locale/codecvt utf8 utf16"><tt>codecvt_utf8_utf16</tt></a>&lt;char32_t&gt;<br><a href="codecvt_utf8_utf16.html" title="cpp/locale/codecvt utf8 utf16"><tt>codecvt_utf8_utf16</tt></a>&lt;wchar_t&gt;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><a href="codecvt.html" title="cpp/locale/codecvt"><tt>codecvt</tt></a><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span><span class="kw4">char16_t</span>,<span class="kw4">char</span>,mbstate_t<span class="sy1">&gt;</span></span><br>
+<a href="codecvt_utf8_utf16.html" title="cpp/locale/codecvt utf8 utf16"><tt>codecvt_utf8_utf16</tt></a><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span><span class="kw4">char16_t</span><span class="sy1">&gt;</span></span><br>
+<a href="codecvt_utf8_utf16.html" title="cpp/locale/codecvt utf8 utf16"><tt>codecvt_utf8_utf16</tt></a><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span><span class="kw4">char32_t</span><span class="sy1">&gt;</span></span><br>
+<a href="codecvt_utf8_utf16.html" title="cpp/locale/codecvt utf8 utf16"><tt>codecvt_utf8_utf16</tt></a><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span>
+</p>
 </td>
 <td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
 </td></tr>
 <tr>
-<th> UCS2
+<th>UCS-2
 </th>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><a href="../string/multibyte/c16rtomb.html" title="cpp/string/multibyte/c16rtomb"><tt>c16rtomb</tt></a><span class="t-mark">(without C11's DR488)</span>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><a href="../string/multibyte/c16rtomb.html" title="cpp/string/multibyte/c16rtomb"><tt>c16rtomb</tt></a> <span class="t-mark">(without C11's DR488)</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><a href="codecvt_utf8.html" title="cpp/locale/codecvt utf8"><tt>codecvt_utf8</tt></a>&lt;char16_t&gt;<br>
-<p><a href="codecvt_utf8.html" title="cpp/locale/codecvt utf8"><tt>codecvt_utf8</tt></a>&lt;wchar_t&gt;<span class="t-mark">(Windows)</span>
-</p>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><a href="codecvt_utf8.html" title="cpp/locale/codecvt utf8"><tt>codecvt_utf8</tt></a><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span><span class="kw4">char16_t</span><span class="sy1">&gt;</span></span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><a href="codecvt_utf16.html" title="cpp/locale/codecvt utf16"><tt>codecvt_utf16</tt></a>&lt;char16_t&gt;<br>
-<p><a href="codecvt_utf16.html" title="cpp/locale/codecvt utf16"><tt>codecvt_utf16</tt></a>&lt;wchar_t&gt;<span class="t-mark">(Windows)</span>
-</p>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><a href="codecvt_utf16.html" title="cpp/locale/codecvt utf16"><tt>codecvt_utf16</tt></a><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span><span class="kw4">char16_t</span><span class="sy1">&gt;</span></span>
 </td></tr>
 <tr>
-<th> UTF-32
+<th>UTF-32
 </th>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
 <p><a href="../string/multibyte/mbrtoc32.html" title="cpp/string/multibyte/mbrtoc32"><tt>mbrtoc32</tt></a> / <a href="../string/multibyte/c32rtomb.html" title="cpp/string/multibyte/c32rtomb"><tt>c32rtomb</tt></a>
 </p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
-<p><a href="codecvt.html" title="cpp/locale/codecvt"><tt>codecvt</tt></a>&lt;char32_t, char, mbstate_t&gt;<br>
-<a href="codecvt_utf8.html" title="cpp/locale/codecvt utf8"><tt>codecvt_utf8</tt></a>&lt;char32_t&gt;<br>
-<a href="codecvt_utf8.html" title="cpp/locale/codecvt utf8"><tt>codecvt_utf8</tt></a>&lt;wchar_t&gt;<span class="t-mark">(non-Windows)</span>
+<p><a href="codecvt.html" title="cpp/locale/codecvt"><tt>codecvt</tt></a><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span><span class="kw4">char32_t</span>,<span class="kw4">char</span>,mbstate_t<span class="sy1">&gt;</span></span><br>
+<a href="codecvt_utf8.html" title="cpp/locale/codecvt utf8"><tt>codecvt_utf8</tt></a><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span><span class="kw4">char32_t</span><span class="sy1">&gt;</span></span>
 </p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
-<p><a href="codecvt_utf16.html" title="cpp/locale/codecvt utf16"><tt>codecvt_utf16</tt></a>&lt;char32_t&gt;<br>
-<a href="codecvt_utf16.html" title="cpp/locale/codecvt utf16"><tt>codecvt_utf16</tt></a>&lt;wchar_t&gt;<span class="t-mark">(non-Windows)</span>
+<p><a href="codecvt_utf16.html" title="cpp/locale/codecvt utf16"><tt>codecvt_utf16</tt></a><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span><span class="kw4">char32_t</span><span class="sy1">&gt;</span></span>
 </p>
 </td></tr>
 <tr>
-<th> system wide:<br>UTF-32<span class="t-mark">(non-Windows)</span><br>UCS2<span class="t-mark">(Windows)</span>
+<th>system <span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span>:
+<p>UTF-32 <span class="t-mark">(non-Windows)</span><br>
+UCS-2 <span class="t-mark">(Windows)</span>
+</p>
 </th>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
 <p><a href="../string/multibyte/mbsrtowcs.html" title="cpp/string/multibyte/mbsrtowcs"><tt>mbsrtowcs</tt></a> / <a href="../string/multibyte/wcsrtombs.html" title="cpp/string/multibyte/wcsrtombs"><tt>wcsrtombs</tt></a><br>
-<a href="use_facet.html" title="cpp/locale/use facet"><tt>use_facet</tt></a>&lt;<a href="codecvt.html" title="cpp/locale/codecvt"><tt>codecvt</tt></a><br>
-&lt;wchar_t, char, mbstate_t&gt;&gt;(<a href="locale.html" title="cpp/locale/locale"><tt>locale</tt></a>)
+<a href="use_facet.html" title="cpp/locale/use facet"><tt>use_facet</tt></a><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span></span><a href="codecvt.html" title="cpp/locale/codecvt"><tt>codecvt</tt></a><br>
+<span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span><span class="kw4">wchar_t</span>,<span class="kw4">char</span>,mbstate_t<span class="sy1">&gt;&gt;</span></span>(<a href="locale.html" title="cpp/locale/locale"><tt>locale</tt></a>)
 </p>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no"> No
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><a href="codecvt_utf8.html" title="cpp/locale/codecvt utf8"><tt>codecvt_utf8</tt></a><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no"> No
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><a href="codecvt_utf16.html" title="cpp/locale/codecvt utf16"><tt>codecvt_utf16</tt></a><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span></span>
 </td></tr></table>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="wbuffer_convert.html" title="cpp/locale/wbuffer convert"> <span class="t-lines"><span>wbuffer_convert</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark">(deprecated in C++17)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="wbuffer_convert.html" title="cpp/locale/wbuffer convert"> <span class="t-lines"><span>wbuffer_convert</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-deprecated-cxx17">(deprecated in C++17)</span></span><span><span class="t-mark-rev t-until-cxx26">(removed in C++26)</span></span></span></div></div>
 </td>
-<td>   performs conversion between a byte stream buffer and a wide stream buffer  <br> <span class="t-mark">(class template)</span> </td></tr>
+<td>  performs conversion between a byte stream buffer and a wide stream buffer <br> <span class="t-mark">(class template)</span> </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="codecvt_utf8.html" title="cpp/locale/codecvt utf8"> <span class="t-lines"><span>codecvt_utf8</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark">(deprecated in C++17)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="codecvt_utf8.html" title="cpp/locale/codecvt utf8"> <span class="t-lines"><span>codecvt_utf8</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-deprecated-cxx17">(deprecated in C++17)</span></span><span><span class="t-mark-rev t-until-cxx26">(removed in C++26)</span></span></span></div></div>
 </td>
-<td>   converts between UTF-8 and UCS2/UCS4  <br> <span class="t-mark">(class template)</span> </td></tr>
+<td>  converts between UTF-8 and UCS-2/UCS-4 <br> <span class="t-mark">(class template)</span> </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="codecvt_utf8_utf16.html" title="cpp/locale/codecvt utf8 utf16"> <span class="t-lines"><span>codecvt_utf8_utf16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark">(deprecated in C++17)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="codecvt_utf8_utf16.html" title="cpp/locale/codecvt utf8 utf16"> <span class="t-lines"><span>codecvt_utf8_utf16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-deprecated-cxx17">(deprecated in C++17)</span></span><span><span class="t-mark-rev t-until-cxx26">(removed in C++26)</span></span></span></div></div>
 </td>
-<td>   converts between UTF-8 and UTF-16  <br> <span class="t-mark">(class template)</span> </td></tr>
+<td>  converts between UTF-8 and UTF-16 <br> <span class="t-mark">(class template)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 6588/1000000
-Preprocessor generated node count: 10084/1000000
-Post‐expand include size: 175633/2097152 bytes
-Template argument size: 32235/2097152 bytes
-Highest expansion depth: 20/40
+Preprocessor visited node count: 8775/1000000
+Preprocessor generated node count: 13402/1000000
+Post‐expand include size: 229488/4194304 bytes
+Template argument size: 45850/4194304 bytes
+Highest expansion depth: 22/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2956-0!*!0!!*!*!* and timestamp 20190111181616 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2956-0!*!0!!en!*!* and timestamp 20241021073440 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/locale/wstring_convert&amp;oldid=94409">https://en.cppreference.com/mwiki/index.php?title=cpp/locale/wstring_convert&amp;oldid=94409</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/locale/wstring_convert&amp;oldid=177197">https://en.cppreference.com/mwiki/index.php?title=cpp/locale/wstring_convert&amp;oldid=177197</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -421,21 +527,26 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/locale/wstring_convert">Online version</a></li><li>Offline version retrieved 2024-11-10 03:04.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 21 October 2024, at 00:34.</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
 }</script>
-<script src="../../common/skin_scripts.js"></script>
+<script src="../.././common/skin_scripts.js"></script>
 <script>if(window.mw){
-mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.StandardRevisions","ext.gadget.MathJax"], null, true);
 }</script>
-<script src="../../common/site_scripts.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-2828341-1']);
-_gaq.push(['_setDomainName', 'cppreference.com']);
-_gaq.push(['_trackPageview']);
-</script><!-- Served in 0.849 secs. -->
+<script src="../.././common/site_scripts.js"></script>
+<!-- Served in 0.036 secs. -->
 	</body>
-<!-- Cached 20190111181616 -->
+<!-- Cached 20241021073741 -->
 </html>
